@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "B41525A8337D9C7FBEC68C50D750B1D8",
+  "keywordFileContentHash": "FC66A9FFDFD59AE0D23C0095BB123BFD",
   "keywordClasses": [
     {
       "name": "pkgUtilities.kwyUtility",
@@ -20,8 +20,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "Login",
@@ -65,8 +64,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "fFailStatus",
@@ -84,21 +82,18 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "fPassStatus",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "fLoginPassStatus",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }
