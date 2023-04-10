@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>NCD</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description>Servido con acceso desde Internet</description>
+      <initValue>findTestData('01-Servers/Servers').getValue(2, 1)</initValue>
+      <name>URLInternet</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Servidor F&amp;F</description>
+      <initValue>findTestData('01-Servers/Servers').getValue(2, 2)</initValue>
+      <name>URLFF</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Servidor de RMobile</description>
+      <initValue>findTestData('01-Servers/Servers').getValue(2, 3)</initValue>
+      <name>URLRMob</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Nombre servidor</description>
+      <initValue>findTestData('01-Servers/Servers').getValue(3, 1)</initValue>
+      <name>TestServer</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Server que se va a utilizar</description>
+      <initValue>''</initValue>
+      <name>ServerUsado</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Server qeu se esta utilziando actualmente</description>
+      <initValue>''</initValue>
+      <name>LogServerUsado</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Admin DNI</description>
+      <initValue>''</initValue>
+      <name>AdminDNI</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Cliente1 DNI</description>
+      <initValue>''</initValue>
+      <name>Cliente1DNI</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Cliente2 DNI</description>
+      <initValue>''</initValue>
+      <name>Cliente2DNI</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Cliente3 DNI</description>
+      <initValue>''</initValue>
+      <name>Cliente3DNI</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Cliente4 DNI</description>
+      <initValue>''</initValue>
+      <name>Cliente4DNI</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Admin Clave</description>
+      <initValue>''</initValue>
+      <name>AdminClave</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Cliente1 Clave</description>
+      <initValue>''</initValue>
+      <name>Cliente1Clave</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Cliente2 Clave</description>
+      <initValue>''</initValue>
+      <name>Cliente2Clave</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Cliente3 Clave</description>
+      <initValue>''</initValue>
+      <name>Cliente3Clave</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Cliente4 Clave</description>
+      <initValue>''</initValue>
+      <name>Cliente4Clave</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Admin Usuario</description>
+      <initValue>''</initValue>
+      <name>AdminUsuario</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Cliente1 Usuario</description>
+      <initValue>''</initValue>
+      <name>Cliente1Usuario</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Cliente2 Usuario</description>
+      <initValue>''</initValue>
+      <name>Cliente2Usuario</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Cliente3 Usuario</description>
+      <initValue>''</initValue>
+      <name>Cliente3Usuario</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Cliente4 Usuario</description>
+      <initValue>''</initValue>
+      <name>Cliente4Usuario</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>ByPass del administrador</description>
+      <initValue>''</initValue>
+      <name>AdminByPass</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>ByPass del Cliente 1</description>
+      <initValue>''</initValue>
+      <name>Cliente1ByPass</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>ByPass del Cliente 2</description>
+      <initValue>''</initValue>
+      <name>Cliente2ByPass</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>ByPass del Cliente 3</description>
+      <initValue>''</initValue>
+      <name>Cliente3ByPass</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>ByPass del Cliente 4</description>
+      <initValue>''</initValue>
+      <name>Cliente4ByPass</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

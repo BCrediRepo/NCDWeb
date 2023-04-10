@@ -1,0 +1,18 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Accesibilidad,Chrome 111.0.0.0,,,2023-03-30 16:19:37,2023-03-30 16:20:09,"31,400s",PASSED
+,,,,,,,
+Test Cases/01-Login/LGN01-Login happy case,Chrome 111.0.0.0,,Login,2023-03-30 16:19:38,2023-03-30 16:20:09,"31,002s",PASSED
+"pkgUtilities.kwyUtility.Server(""Internet"")",Chrome 111.0.0.0,,,2023-03-30 16:19:38,2023-03-30 16:19:42,"3,593s",PASSED
+"vDNI = findTestData(""02-Usuarios/SetUsers-FF"").getValue(3, 1)",Chrome 111.0.0.0,,,2023-03-30 16:19:42,2023-03-30 16:19:42,"0,184s",PASSED
+"vClave = findTestData(""02-Usuarios/SetUsers-FF"").getValue(5, 1)",Chrome 111.0.0.0,,,2023-03-30 16:19:42,2023-03-30 16:19:42,"0,124s",PASSED
+"vUsuario = findTestData(""02-Usuarios/SetUsers-FF"").getValue(4, 1)",Chrome 111.0.0.0,,,2023-03-30 16:19:42,2023-03-30 16:19:42,"0,108s",PASSED
+openBrowser(ServerUsado),Chrome 111.0.0.0,,,2023-03-30 16:19:42,2023-03-30 16:19:53,"10,282s",PASSED
+maximizeWindow(),Chrome 111.0.0.0,,,2023-03-30 16:19:53,2023-03-30 16:19:53,"0,239s",PASSED
+"verifyElementVisible(findTestObject(""Object Repository/01-Login/btnLgnCerrarBanner""))",Chrome 111.0.0.0,,,2023-03-30 16:19:53,2023-03-30 16:19:54,"0,587s",PASSED
+"click(findTestObject(""Object Repository/01-Login/btnLgnCerrarBanner""))",Chrome 111.0.0.0,,,2023-03-30 16:19:54,2023-03-30 16:19:54,"0,480s",PASSED
+"setText(findTestObject(""Object Repository/01-Login/txtLgnDNI""), vDNI)",Chrome 111.0.0.0,,,2023-03-30 16:19:54,2023-03-30 16:19:55,"1,019s",PASSED
+"setText(findTestObject(""Object Repository/01-Login/txtLgnClave""), vClave)",Chrome 111.0.0.0,,,2023-03-30 16:19:55,2023-03-30 16:19:56,"0,953s",PASSED
+"setText(findTestObject(""Object Repository/01-Login/txtLgnUsuario""), vUsuario)",Chrome 111.0.0.0,,,2023-03-30 16:19:56,2023-03-30 16:19:57,"0,849s",PASSED
+"click(findTestObject(""Object Repository/01-Login/btnLgnIngresar""))",Chrome 111.0.0.0,,,2023-03-30 16:19:57,2023-03-30 16:19:57,"0,498s",PASSED
+"click(findTestObject(""Object Repository/02-Dashboard/icoDsbSalir""))",Chrome 111.0.0.0,,,2023-03-30 16:19:57,2023-03-30 16:20:08,"10,350s",PASSED
+Start tear down : fPassScript,Chrome 111.0.0.0,,,2023-03-30 16:20:08,2023-03-30 16:20:09,"1,039s",PASSED

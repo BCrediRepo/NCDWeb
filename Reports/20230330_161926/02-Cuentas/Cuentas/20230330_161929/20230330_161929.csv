@@ -1,0 +1,23 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Cuentas,Chrome 111.0.0.0,,,2023-03-30 16:20:14,2023-03-30 16:21:41,"1m - 27,509s",PASSED
+,,,,,,,
+Test Cases/03-Cuentas/CTA01-Acceder Home Cuentas,Chrome 111.0.0.0,,,2023-03-30 16:20:14,2023-03-30 16:21:14,"59,982s",PASSED
+"pkgUtilities.kwyUtility.Server(""Internet"")",Chrome 111.0.0.0,,,2023-03-30 16:20:15,2023-03-30 16:20:18,"3,366s",PASSED
+"pkgUtilities.kwyUtility.Login(AdminDNI, AdminClave, AdminUsuario)",Chrome 111.0.0.0,,,2023-03-30 16:20:18,2023-03-30 16:20:29,"11,194s",PASSED
+"verifyElementVisible(findTestObject(""Object Repository/02-Dashboard/lnkDsbCuentas""))",Chrome 111.0.0.0,,,2023-03-30 16:20:29,2023-03-30 16:20:38,"9,234s",PASSED
+"click(findTestObject(""Object Repository/02-Dashboard/lnkDsbCuentas""))",Chrome 111.0.0.0,,,2023-03-30 16:20:38,2023-03-30 16:20:39,"0,480s",PASSED
+"verifyElementVisible(findTestObject(""Object Repository/03-Cuentas/lblCtasTituloTusCuentasHome""))",Chrome 111.0.0.0,,,2023-03-30 16:20:39,2023-03-30 16:20:41,"2,270s",PASSED
+"verifyElementVisible(findTestObject(""Object Repository/03-Cuentas/lblCtasTituloCuentaTabla""))",Chrome 111.0.0.0,,,2023-03-30 16:20:41,2023-03-30 16:20:41,"0,397s",PASSED
+"verifyElementVisible(findTestObject(""Object Repository/03-Cuentas/lblCtasTituloFavoritaTabla""))",Chrome 111.0.0.0,,,2023-03-30 16:20:41,2023-03-30 16:20:42,"0,358s",PASSED
+"verifyElementVisible(findTestObject(""Object Repository/03-Cuentas/lblCtasTituloMonedaTabla""))",Chrome 111.0.0.0,,,2023-03-30 16:20:42,2023-03-30 16:20:42,"0,347s",PASSED
+"verifyElementVisible(findTestObject(""Object Repository/03-Cuentas/lblCtasTituloSaldoTabla""))",Chrome 111.0.0.0,,,2023-03-30 16:20:42,2023-03-30 16:20:43,"0,382s",PASSED
+Start tear down : fPassScript,Chrome 111.0.0.0,,,2023-03-30 16:20:43,2023-03-30 16:21:14,"31,344s",PASSED
+,,,,,,,
+Test Cases/03-Cuentas/CTA02-Copiar CBU,Chrome 111.0.0.0,,,2023-03-30 16:21:14,2023-03-30 16:21:41,"27,176s",PASSED
+"pkgUtilities.kwyUtility.Server(""Internet"")",Chrome 111.0.0.0,,,2023-03-30 16:21:14,2023-03-30 16:21:16,"1,236s",PASSED
+"pkgUtilities.kwyUtility.Login(AdminDNI, AdminClave, AdminUsuario)",Chrome 111.0.0.0,,,2023-03-30 16:21:16,2023-03-30 16:21:26,"10,692s",PASSED
+"verifyElementVisible(findTestObject(""Object Repository/03-Cuentas/lnkCtasMenuInicio""))",Chrome 111.0.0.0,,,2023-03-30 16:21:26,2023-03-30 16:21:37,"11,053s",PASSED
+"click(findTestObject(""Object Repository/03-Cuentas/lnkCtasMenuInicio""))",Chrome 111.0.0.0,,,2023-03-30 16:21:37,2023-03-30 16:21:38,"0,680s",PASSED
+"click(findTestObject(""Object Repository/03-Cuentas/lnkCopiarCBU""))",Chrome 111.0.0.0,,,2023-03-30 16:21:38,2023-03-30 16:21:39,"0,543s",PASSED
+"verifyElementVisible(findTestObject(""Object Repository/03-Cuentas/lblCtasToastCopiaCBU""))",Chrome 111.0.0.0,,,2023-03-30 16:21:39,2023-03-30 16:21:39,"0,403s",PASSED
+Start tear down : fPassScript,Chrome 111.0.0.0,,,2023-03-30 16:21:39,2023-03-30 16:21:41,"2,127s",PASSED
