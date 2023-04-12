@@ -6,15 +6,19 @@
    <elementGuidId>fd2657c9-ad14-4f9d-9069-6cc87d6574c6</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//div[@id='frmAccountsHome_lblAccountHeader']</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>#frmAccountsHome_lblAccountHeader</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='frmAccountsHome_lblAccountHeader']</value>
+         <key>BASIC</key>
+         <value>//*[@id = 'frmAccountsHome_lblAccountHeader' and (text() = 'Cuenta' or . = 'Cuenta')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>aa119aa8-db82-4d17-93c4-ba6ff78b4801</webElementGuid>
+      <webElementGuid>0fc9afc9-2031-476a-8404-8e75c8a4b60c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +34,7 @@
       <name>id</name>
       <type>Main</type>
       <value>frmAccountsHome_lblAccountHeader</value>
-      <webElementGuid>20ecff8c-c267-4ba0-864e-d9b15c4817bd</webElementGuid>
+      <webElementGuid>67209c08-a8e2-4226-b170-95d68262679d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <name>kwidgettype</name>
       <type>Main</type>
       <value>Label</value>
-      <webElementGuid>df769467-5731-49c0-9dad-7e24a5c23d06</webElementGuid>
+      <webElementGuid>3c4845a6-05c7-4607-9048-01499514e9f9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +50,7 @@
       <name>kformname</name>
       <type>Main</type>
       <value>frmAccountsHome</value>
-      <webElementGuid>3a792661-f75d-4cac-8410-30bd715b8266</webElementGuid>
+      <webElementGuid>49b8f202-41ba-4aa6-9814-e302943f9819</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>class</name>
       <type>Main</type>
       <value> sknLblTableHeader cntmiddleleftalign disableSelection</value>
-      <webElementGuid>2702d4fe-3618-4057-881e-982795c1ff1d</webElementGuid>
+      <webElementGuid>3a21633b-dfba-481e-933a-cc0688ea9155</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +66,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Cuenta</value>
-      <webElementGuid>18ac70ad-2a4e-4639-95de-1760cb464d45</webElementGuid>
+      <webElementGuid>3a6e113c-f7f5-470c-b020-f5684e16b678</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;frmAccountsHome_lblAccountHeader&quot;)</value>
-      <webElementGuid>da82480b-1e9b-4f12-a603-6cfa2127ff03</webElementGuid>
+      <webElementGuid>fd240187-3209-457e-92e5-095c8373eafe</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//div[@id='frmAccountsHome_lblAccountHeader']</value>
-      <webElementGuid>0344049e-0c8c-45d2-a6a2-1ecb7f4b8803</webElementGuid>
+      <webElementGuid>0bbcf56a-abd2-4410-99e5-d10b595879c4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='frmAccountsHome_flxAccountsTableHeader']/div/div</value>
-      <webElementGuid>f6864fff-7463-46f6-9383-fae6422b9e68</webElementGuid>
+      <webElementGuid>24c1c7eb-829c-45ac-8ed7-5df9bdf79d1a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='TUS CUENTAS'])[1]/following::div[5]</value>
-      <webElementGuid>1b2d0f1d-f343-4c0e-ad7d-d39e8d4b91ef</webElementGuid>
+      <webElementGuid>70ef2244-6753-4f83-8f7e-5bb0b8f888c1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Label'])[3]/following::div[17]</value>
-      <webElementGuid>07bd559d-37f7-46d2-991a-928b932c7431</webElementGuid>
+      <webElementGuid>9f741782-f02d-4f1c-aaf2-c0d1a74e582d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Favorita'])[1]/preceding::div[1]</value>
-      <webElementGuid>7b1cdd22-2d67-4899-b915-d1b4b3982d6b</webElementGuid>
+      <webElementGuid>02a852f9-e6ea-4db6-8092-1c878b89a818</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Moneda'])[1]/preceding::div[3]</value>
-      <webElementGuid>594cbf3c-0419-4e99-91e5-1e7b80a1dbfe</webElementGuid>
+      <webElementGuid>e036b330-2834-48b0-997f-cb0cf806bfbb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Cuenta']/parent::*</value>
-      <webElementGuid>383f184d-6f73-4b13-aeb1-cffe84f29ddf</webElementGuid>
+      <webElementGuid>ac3d487e-64b0-4bc1-b230-bae766d87164</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +138,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div/div/div/div/div[3]/div/div/div/div/div/div/div/div/div[2]/div/div/div/div</value>
-      <webElementGuid>2607d05c-31c1-46b4-bf4e-63b95996145f</webElementGuid>
+      <webElementGuid>16214d0b-f066-46c3-8478-669e6778ae67</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,6 +146,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[@id = 'frmAccountsHome_lblAccountHeader' and (text() = 'Cuenta' or . = 'Cuenta')]</value>
-      <webElementGuid>bf791268-f40d-4389-b1cb-28ba81c1ab1c</webElementGuid>
+      <webElementGuid>b1606175-1ef8-4d34-98a1-51a98a33d143</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

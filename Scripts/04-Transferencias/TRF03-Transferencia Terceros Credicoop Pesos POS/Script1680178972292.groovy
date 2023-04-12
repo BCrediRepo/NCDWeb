@@ -20,7 +20,7 @@ import org.openqa.selenium.Keys as Keys
 //def vTipoTrf = findTestData('03-Transferencias/TipoTrf').getValue(2,2)
 def vTipoTrf = 'Terceros'
 def vValorMonto = '1'
-def vClaveBypass = 'Testing7'
+def vClaveBypass = 'Testing8'
 
 //Se selecciona el servidor y se cargan los datos
 CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')

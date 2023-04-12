@@ -17,24 +17,49 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+
+String vCuentasTitulo
+String vCuenta
+String vFavorita
+String vMoneda
+String vSaldo
+
 //Se selecciona el servidor y se cargan los datos
 CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
 
 //Se loguea con el usuario seleccionado
 CustomKeywords.'pkgUtilities.kwyUtility.Login'(GlobalVariable.AdminDNI, GlobalVariable.AdminClave, GlobalVariable.AdminUsuario)
 
-//Ingresa en la sección Cuentas del Dashboard
-WebUI.verifyElementVisible(findTestObject('Object Repository/02-Dashboard/lnkDsbCuentas'))
+//Ingresa al módulo de Cuentas desde menú lateral y mapea los campos
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbCuentas'))
 
-//Valida Home Cuentas
-WebUI.verifyElementVisible(findTestObject('Object Repository/03-Cuentas/lblCtasTituloTusCuentasHome'))
+vCuenta = findTestData('05-Labels/Labels').getValue(2,2)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloCuentaTabla'),vCuenta)
 
-//Valida formato Tabla
-WebUI.verifyElementVisible(findTestObject('Object Repository/03-Cuentas/lblCtasTituloCuentaTabla'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/03-Cuentas/lblCtasTituloFavoritaTabla'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/03-Cuentas/lblCtasTituloMonedaTabla'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/03-Cuentas/lblCtasTituloSaldoTabla'))
+vFavorita = findTestData('05-Labels/Labels').getValue(2,3)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloFavoritaTabla'),vFavorita)
+
+vMoneda = findTestData('05-Labels/Labels').getValue(2,4)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloMonedaTabla'),vMoneda)
+
+vSaldo = findTestData('05-Labels/Labels').getValue(2,5)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloSaldoTabla'),vSaldo)
+
+//Ingresa al módulo de Cuentas desde Inicio y mapea los campos
+WebUI.click(findTestObject('Object Repository/03-Cuentas/icoCtasAtras'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbCuentasInicio'))
+
+vCuenta = findTestData('05-Labels/Labels').getValue(2,2)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloCuentaTabla'),vCuenta)
+
+vFavorita = findTestData('05-Labels/Labels').getValue(2,3)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloFavoritaTabla'),vFavorita)
+
+vMoneda = findTestData('05-Labels/Labels').getValue(2,4)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloMonedaTabla'),vMoneda)
+
+vSaldo = findTestData('05-Labels/Labels').getValue(2,5)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloSaldoTabla'),vSaldo)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

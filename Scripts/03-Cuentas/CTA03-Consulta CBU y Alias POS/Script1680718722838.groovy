@@ -17,6 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+String vCbuCta
+String vALiasCta
 
 //Se selecciona el servidor y se cargan los datos
 CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
@@ -25,7 +27,6 @@ CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
 CustomKeywords.'pkgUtilities.kwyUtility.Login'(GlobalVariable.AdminDNI, GlobalVariable.AdminClave, GlobalVariable.AdminUsuario)
 
 //Cliquea el menú desplegable de Cuentas en el Inicio
-WebUI.verifyElementText(findTestObject('Object Repository/02-Dashboard/lnkDsbCuentas'), 'Cuentas')
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbCuentas'))
 
 //Click en el menú desplegable selecciona Consultar Alias y CBU
@@ -33,8 +34,11 @@ WebUI.click(findTestObject('Object Repository/03-Cuentas/mnuCtasConsultaDesplega
 WebUI.click(findTestObject('Object Repository/03-Cuentas/txtCtaConsultarAliasCBU'))
 
 //Valida datos de la cuenta
-WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/txtCtaNumeroCBU'),'19100018-55000106530096')
-WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/txtCtaNombreAlias'), 'cielo.estrella.mar')
+vCbuCta = findTestData('05-Labels/Labels').getValue(2,6)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/txtCtaNumeroCBU'),vCbuCta)
+
+vAliasCta = findTestData('05-Labels/Labels').getValue(2,7)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/txtCtaNombreAlias'),vAliasCta)
 
 
 //---------------------------------------------------------------------------------------------------------------------

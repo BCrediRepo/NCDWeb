@@ -17,6 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+String vCtaToast
+
 //Se selecciona el servidor y se cargan los datos
 CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
 
@@ -32,22 +34,34 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/03-Cuentas/lblCtasC
 
 //Selecciono una CC como favorita y valido Toast de confirmación
 WebUI.click(findTestObject('Object Repository/03-Cuentas/icoCtaFavoritoCC'))
-//vAlertText = WebUI.getAlertText('Object Repository/03-Cuentas/lblCtaCuentaFavoritaActualizada')
-//WebUI.verifyMatch(vAlertText, 'Tu cuenta favorita fue actualizada.', false)
+vCtaToast = findTestData('06-Toast/Toast').getValue(2,46)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaCuentaFavoritaActualizada'),vCtaToast)
 
 
 //Selecciono una CA como favorita y valido Toast de confirmación
 WebUI.click(findTestObject('Object Repository/03-Cuentas/icoCtaFavoritoCA'))
-//vAlertText = WebUI.getAlertText('Object Repository/03-Cuentas/lblCtaCuentaFavoritaActualizada')
-//WebUI.verifyMatch(vAlertText, 'Tu cuenta favorita fue actualizada.', false)
+vCtaToast = findTestData('06-Toast/Toast').getValue(2,46)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaCuentaFavoritaActualizada'),vCtaToast)
 
 //Selecciono una CAUSD como favorita y valido Toast de confirmación
 WebUI.scrollToElement(findTestObject('Object Repository/03-Cuentas/icoCtaFavoritaCAUSD'), 10)
 WebUI.click(findTestObject('Object Repository/03-Cuentas/icoCtaFavoritaCAUSD'))
-//vAlertText = WebUI.getAlertText('Object Repository/03-Cuentas/lblCtaCuentaFavoritaActualizada')
-//WebUI.verifyMatch(vAlertText, 'Tu cuenta favorita fue actualizada.', false)
+vCtaToast = findTestData('06-Toast/Toast').getValue(2,46)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaCuentaFavoritaActualizada'),vCtaToast)
 
 
+//---------------------------------------------------------------------------------------------------------------------
+//Control de fin de script
+
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/CTA04-MarcarDesmarcarCtaFavorita.png')
+}
+
+@com.kms.katalon.core.annotation.TearDownIfPassed
+void fPassScript() {
+	CustomKeywords.'pkgUtilities.kwyUtility.fPassStatus'()
+}
 
 
 

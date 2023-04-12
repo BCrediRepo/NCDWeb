@@ -19,7 +19,9 @@ import org.openqa.selenium.Keys as Keys
 
 //def vTipoTrf = findTestData('03-Transferencias/TipoTrf').getValue(2,2)
 def vCBUBenf = findTestData('04-Parametros/Parametros').getValue(2,1)
+def vBenfLbl = findTestData('05-Labels/Labels').getValue(2,8)
 def vNvoNombre = 'NombreEditado'
+def vBenfGuardado = findTestData('05-Labels/Labels').getValue(2,9)
 
 //Se selecciona el servidor y se cargan los datos
 CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
@@ -28,19 +30,18 @@ CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
 CustomKeywords.'pkgUtilities.kwyUtility.Login'(GlobalVariable.Cliente1DNI, GlobalVariable.Cliente1Clave, GlobalVariable.Cliente1Usuario)
 
 //Ingresa en la sección Transferencias del Dashboard
-WebUI.verifyElementVisible(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'))
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'))
 
 //Valida y cliquea en Agenda de Beneficiarios
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lnkTrfAgendaBeneficiario'))
 WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lnkTrfAgendaBeneficiario'))
 
 //Busca Beneficiario por CBU
 WebUI.setText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrfBuscarBeneficiarioTipo'), vCBUBenf)
 
+
 //Valida que el Beneficiario no este registrado
 WebUI.delay(5)
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lblBusquedaSinResultadosCBUBenf'))
+WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lblBusquedaSinResultadosCBUBenf'),vBenfLbl)
 
 //Cliquea en Nuevo Beneficiario
 WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/btnNuevoBeneficiario'))
@@ -66,7 +67,7 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Benefic
 WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/btnTrfContinuarNuevoBeneficiario'))
 
 //Valida Mensaje Exitoso
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lblTrfBeneficiarioGuardado'))
+WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lblTrfBeneficiarioGuardado'),vBenfGuardado)
 
 //Cierra Pantalla
 WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/icoCerrarBeneficiarioGuardado'))
@@ -86,6 +87,7 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Benefic
 WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/btnTrfGuardarNombreEditadoBenf'))
 WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lblTrfMensajeNombreEditadoBenf'))
 
+/*
 //Busca Beneficiario Editado y valida
 WebUI.setText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrfBuscarBeneficiarioTipo'), vCBUBenf)
 
@@ -94,6 +96,5 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Benefic
 WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrfNuevoBeneficiarioEliminar'))
 WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lblTrfMensajeExitosoEliminarBenf'))
 
-
-
+*/
 

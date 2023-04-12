@@ -1,0 +1,31 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Cuentas,Chrome 111.0.0.0,,,2023-04-11 14:32:02,2023-04-11 14:33:27,"1m - 25,165s",FAILED
+,,,,,,,
+Test Cases/03-Cuentas/CTA01-Acceder Home Cuentas POS,Chrome 111.0.0.0,,,2023-04-11 14:32:03,2023-04-11 14:33:05,"1m - 2,357s",FAILED
+vCuentasTitulo = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>,Chrome 111.0.0.0,,,2023-04-11 14:32:03,2023-04-11 14:32:03,"0,004s",PASSED
+vCuenta = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>,Chrome 111.0.0.0,,,2023-04-11 14:32:03,2023-04-11 14:32:03,"0,002s",PASSED
+vFavorita = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>,Chrome 111.0.0.0,,,2023-04-11 14:32:03,2023-04-11 14:32:03,"0,001s",PASSED
+vMoneda = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>,Chrome 111.0.0.0,,,2023-04-11 14:32:03,2023-04-11 14:32:03,"0,000s",PASSED
+vSaldo = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>,Chrome 111.0.0.0,,,2023-04-11 14:32:03,2023-04-11 14:32:03,"0,001s",PASSED
+"pkgUtilities.kwyUtility.Server(""Internet"")",Chrome 111.0.0.0,,,2023-04-11 14:32:03,2023-04-11 14:32:07,"4,147s",PASSED
+"pkgUtilities.kwyUtility.Login(AdminDNI, AdminClave, AdminUsuario)",Chrome 111.0.0.0,,,2023-04-11 14:32:07,2023-04-11 14:32:19,"11,666s",PASSED
+"click(findTestObject(""Object Repository/02-Dashboard/lnkDsbCuentas""))",Chrome 111.0.0.0,,,2023-04-11 14:32:19,2023-04-11 14:32:26,"6,766s",PASSED
+"vCuenta = findTestData(""05-Labels/Labels"").getValue(2, 2)",Chrome 111.0.0.0,,,2023-04-11 14:32:26,2023-04-11 14:32:26,"0,116s",PASSED
+"verifyElementText(findTestObject(""Object Repository/03-Cuentas/lblCtasTituloCuentaTabla""), vCuenta)",Chrome 111.0.0.0,,,2023-04-11 14:32:26,2023-04-11 14:32:28,"1,758s",PASSED
+"vFavorita = findTestData(""05-Labels/Labels"").getValue(2, 3)",Chrome 111.0.0.0,,,2023-04-11 14:32:28,2023-04-11 14:32:28,"0,088s",PASSED
+"verifyElementText(findTestObject(""Object Repository/03-Cuentas/lblCtasTituloFavoritaTabla""), vFavorita)",Chrome 111.0.0.0,,,2023-04-11 14:32:28,2023-04-11 14:32:28,"0,370s",PASSED
+"vMoneda = findTestData(""05-Labels/Labels"").getValue(2, 4)",Chrome 111.0.0.0,,,2023-04-11 14:32:28,2023-04-11 14:32:28,"0,079s",PASSED
+"verifyElementText(findTestObject(""Object Repository/03-Cuentas/lblCtasTituloMonedaTabla""), vMoneda)",Chrome 111.0.0.0,,,2023-04-11 14:32:28,2023-04-11 14:32:29,"0,352s",PASSED
+"vSaldo = findTestData(""05-Labels/Labels"").getValue(2, 5)",Chrome 111.0.0.0,,,2023-04-11 14:32:29,2023-04-11 14:32:29,"0,128s",PASSED
+"verifyElementText(findTestObject(""Object Repository/03-Cuentas/lblCtasTituloSaldoTabla""), vSaldo)",Chrome 111.0.0.0,,,2023-04-11 14:32:29,2023-04-11 14:32:29,"0,423s",PASSED
+"click(findTestObject(""Object Repository/02-Dashboard/lnkDsbInicio""))",Chrome 111.0.0.0,,,2023-04-11 14:32:29,2023-04-11 14:33:00,"31,432s",FAILED
+Start tear down : fTakeFailScreenshot,Chrome 111.0.0.0,,,2023-04-11 14:33:00,2023-04-11 14:33:05,"4,393s",PASSED
+,,,,,,,
+Test Cases/03-Cuentas/CTA02-Copiar CBU POS,Chrome 111.0.0.0,,,2023-04-11 14:33:05,2023-04-11 14:33:27,"22,430s",PASSED
+"pkgUtilities.kwyUtility.Server(""Internet"")",Chrome 111.0.0.0,,,2023-04-11 14:33:05,2023-04-11 14:33:07,"1,830s",PASSED
+"pkgUtilities.kwyUtility.Login(AdminDNI, AdminClave, AdminUsuario)",Chrome 111.0.0.0,,,2023-04-11 14:33:07,2023-04-11 14:33:17,"9,881s",PASSED
+"verifyElementVisible(findTestObject(""Object Repository/03-Cuentas/lnkCtasMenuInicio""))",Chrome 111.0.0.0,,,2023-04-11 14:33:17,2023-04-11 14:33:24,"6,540s",PASSED
+"click(findTestObject(""Object Repository/03-Cuentas/lnkCtasMenuInicio""))",Chrome 111.0.0.0,,,2023-04-11 14:33:24,2023-04-11 14:33:24,"0,592s",PASSED
+"click(findTestObject(""Object Repository/03-Cuentas/lnkCopiarCBU""))",Chrome 111.0.0.0,,,2023-04-11 14:33:24,2023-04-11 14:33:25,"0,496s",PASSED
+"verifyElementVisible(findTestObject(""Object Repository/03-Cuentas/lblCtasToastCopiaCBU""))",Chrome 111.0.0.0,,,2023-04-11 14:33:25,2023-04-11 14:33:25,"0,478s",PASSED
+Start tear down : fPassScript,Chrome 111.0.0.0,,,2023-04-11 14:33:25,2023-04-11 14:33:27,"2,163s",PASSED

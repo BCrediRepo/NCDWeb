@@ -17,21 +17,22 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+
+String vCbuToast
+
 //Se selecciona el servidor y se cargan los datos
 CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
 
 //Se loguea con el usuario seleccionado
 CustomKeywords.'pkgUtilities.kwyUtility.Login'(GlobalVariable.AdminDNI, GlobalVariable.AdminClave, GlobalVariable.AdminUsuario)
 
-//Cliquea el menú desplegable de Cuentas en el Inicio
-WebUI.verifyElementVisible(findTestObject('Object Repository/03-Cuentas/lnkCtasMenuInicio'))
+//Cliquea el menú desplegable de Cuentas en el Inicio y copia CBU
 WebUI.click(findTestObject('Object Repository/03-Cuentas/lnkCtasMenuInicio'))
-
-//Selecciona copiar CBU
 WebUI.click(findTestObject('Object Repository/03-Cuentas/lnkCopiarCBU'))
 
 //Valida Toast de Confirmación
-WebUI.verifyElementVisible(findTestObject('Object Repository/03-Cuentas/lblCtasToastCopiaCBU'))
+vCbuToast = findTestData('06-Toast/Toast').getValue(2,5)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasToastCopiaCBU'),vCbuToast)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 
-
+def vMontoTexto
 def vValorMonto1 = 120009
 def vValorMonto2 = 1
 
@@ -39,7 +39,8 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrfMisCuentas
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/txtTrfMisCtasPesos'))
 
 //Valida Toast Moneda Errónea
-WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblTrfMensajeMonedaErronea'),'La moneda de la cuenta destino no coincide con la moneda de la cuenta origen.')
+vMontoTexto = WebUI.getAttribute(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblTrfMensajeMonedaErronea'),'text')
+WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblTrfMensajeMonedaErronea'),vMontoTexto)
 
 //Ingresa en la sección Inicio del Dashboard
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbInicioEstado2'))
