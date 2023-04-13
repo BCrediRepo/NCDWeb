@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-String vCtaToast
+String vCtaToast = findTestData('06-Toast/Toast').getValue(2,46)
 
 //Se selecciona el servidor y se cargan los datos
 CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
@@ -34,19 +34,18 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/03-Cuentas/lblCtasC
 
 //Selecciono una CC como favorita y valido Toast de confirmación
 WebUI.click(findTestObject('Object Repository/03-Cuentas/icoCtaFavoritoCC'))
-vCtaToast = findTestData('06-Toast/Toast').getValue(2,46)
 WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaCuentaFavoritaActualizada'),vCtaToast)
 
 
 //Selecciono una CA como favorita y valido Toast de confirmación
 WebUI.click(findTestObject('Object Repository/03-Cuentas/icoCtaFavoritoCA'))
-vCtaToast = findTestData('06-Toast/Toast').getValue(2,46)
 WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaCuentaFavoritaActualizada'),vCtaToast)
+
+//NOTA: REVISAR SCROLL
 
 //Selecciono una CAUSD como favorita y valido Toast de confirmación
 WebUI.scrollToElement(findTestObject('Object Repository/03-Cuentas/icoCtaFavoritaCAUSD'), 10)
 WebUI.click(findTestObject('Object Repository/03-Cuentas/icoCtaFavoritaCAUSD'))
-vCtaToast = findTestData('06-Toast/Toast').getValue(2,46)
 WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaCuentaFavoritaActualizada'),vCtaToast)
 
 

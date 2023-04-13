@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 
-String vCbuToast
+String vCbuToast = findTestData('06-Toast/Toast').getValue(2,5)
 
 //Se selecciona el servidor y se cargan los datos
 CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
@@ -31,7 +31,6 @@ WebUI.click(findTestObject('Object Repository/03-Cuentas/lnkCtasMenuInicio'))
 WebUI.click(findTestObject('Object Repository/03-Cuentas/lnkCopiarCBU'))
 
 //Valida Toast de Confirmación
-vCbuToast = findTestData('06-Toast/Toast').getValue(2,5)
 WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasToastCopiaCBU'),vCbuToast)
 
 //---------------------------------------------------------------------------------------------------------------------

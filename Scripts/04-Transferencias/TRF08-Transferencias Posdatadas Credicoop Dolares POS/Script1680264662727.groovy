@@ -17,10 +17,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//def vTipoTrf = findTestData('03-Transferencias/TipoTrf').getValue(2,2)
 
+def vClaveBypass = findTestData('02-Usuarios/SetUsers-FF').getValue(5,1)
 def vValorMonto = '1'
-def vClaveBypass = 'Testing3'
+
 
 //Se selecciona el servidor y se cargan los datos
 CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
@@ -29,18 +29,13 @@ CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
 CustomKeywords.'pkgUtilities.kwyUtility.Login'(GlobalVariable.AdminDNI, GlobalVariable.AdminClave, GlobalVariable.AdminUsuario)
 
 //Ingresa en la sección Transferencias del Dashboard
-WebUI.verifyElementVisible(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'))
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'))
 
 //Inicia Transferencia desde Menú de Beneficiario destacado
-//WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lnkTrfAgendaBeneficiario'))
 WebUI.click(findTestObject('Object Repository/04-Transferencias/icoTrfBeneficiarioDestacadoDesplegable'))
 
 //Clickea en Nueva Transferencia
 WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrfBenefDestacadoNuevaTransferencia'))
-
-//Formulario
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/lblTrfMontoTituloFormulario'))
 
 //Ingresa Monto
 WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrfMontoFormulario'))
@@ -76,7 +71,7 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/t
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/TRF01-TransferenciaPropiasCredicoop.png')
+	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/TRF08-TransferenciasPosdatadasCredicoopDolaresPOS.png')
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed

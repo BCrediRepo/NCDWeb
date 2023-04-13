@@ -6,7 +6,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>dbb2f240-749c-413b-be53-0b37ad0ab83a</dataFileGUID>
-   <dataSourceUrl>C:\Users\natalia.heit\git\KtlnNCDWeb\TestData\Data.xlsx</dataSourceUrl>
+   <dataSourceUrl>C:\Users\natalia.heit\git\KtlnNCDWeb\NCDWeb\TestData\Data.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>

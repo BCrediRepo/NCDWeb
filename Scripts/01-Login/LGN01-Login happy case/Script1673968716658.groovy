@@ -32,7 +32,6 @@ WebUI.openBrowser(GlobalVariable.ServerUsado)
 WebUI.maximizeWindow()
 
 //Cierra el Banner del inicio
-WebUI.verifyElementVisible(findTestObject('Object Repository/01-Login/btnLgnCerrarBanner'))
 WebUI.click(findTestObject('Object Repository/01-Login/btnLgnCerrarBanner'))
 
 //Ingresa los datos del usuario

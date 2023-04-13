@@ -17,10 +17,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//def vTipoTrf = findTestData('03-Transferencias/TipoTrf').getValue(2,2)
-//def vTipoTrf = 'Propia'
+
 def vValorMonto = '1'
-def vClaveBypass = 'Testing8'
+def vClaveBypass = findTestData('02-Usuarios/SetUsers-FF').getValue(5,2)
+def vlblMisCtas = findTestData('05-Labels/Labels').getValue(2,10)
 
 //Se selecciona el servidor y se cargan los datos
 CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
@@ -29,25 +29,21 @@ CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
 CustomKeywords.'pkgUtilities.kwyUtility.Login'(GlobalVariable.Cliente1DNI, GlobalVariable.Cliente1Clave, GlobalVariable.Cliente1Usuario)
 
 //Ingresa en la sección Transferencias del Dashboard
-WebUI.verifyElementVisible(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'))
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'))
 
 //Valida y cliquea en Nueva Transferencia
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfNuevaTransferenciaInicio'))
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfNuevaTransferenciaInicio'))
 
 //Selecciono solapa Mis cuentas Credicoop
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop'))
 WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop'))
+WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop'),vlblMisCtas)
 
 //Selecciona Cuenta en dolares
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/lnkTrfCuentaPropiaDolares'))
 WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkTrfCuentaPropiaDolares'))
 
-//Formulario
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/lblTrfMontoTituloFormulario'))
+//NOTA: VER MÉTODO PARA AUMENTAR EL SALDO
 
-//Ingresa Monto
+//Ingresa Monto valido y menor al saldo de la cuenta
 WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrfMontoFormulario'))
 WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrfMontoFormulario'), vValorMonto)
 
@@ -75,7 +71,7 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/t
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/TRF01-TransferenciaPropiasCredicoop.png')
+	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/TRF02-TransferenciaPropiasCredicoopDolaresPOS.png')
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed

@@ -18,11 +18,11 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 
-String vCuentasTitulo
-String vCuenta
-String vFavorita
-String vMoneda
-String vSaldo
+String vCuenta = findTestData('05-Labels/Labels').getValue(2,2)
+String vFavorita = findTestData('05-Labels/Labels').getValue(2,3)
+String vMoneda = findTestData('05-Labels/Labels').getValue(2,4)
+String vSaldo = findTestData('05-Labels/Labels').getValue(2,5)
+
 
 //Se selecciona el servidor y se cargan los datos
 CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
@@ -33,32 +33,18 @@ CustomKeywords.'pkgUtilities.kwyUtility.Login'(GlobalVariable.AdminDNI, GlobalVa
 //Ingresa al módulo de Cuentas desde menú lateral y mapea los campos
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbCuentas'))
 
-vCuenta = findTestData('05-Labels/Labels').getValue(2,2)
 WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloCuentaTabla'),vCuenta)
-
-vFavorita = findTestData('05-Labels/Labels').getValue(2,3)
 WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloFavoritaTabla'),vFavorita)
-
-vMoneda = findTestData('05-Labels/Labels').getValue(2,4)
 WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloMonedaTabla'),vMoneda)
-
-vSaldo = findTestData('05-Labels/Labels').getValue(2,5)
 WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloSaldoTabla'),vSaldo)
 
 //Ingresa al módulo de Cuentas desde Inicio y mapea los campos
 WebUI.click(findTestObject('Object Repository/03-Cuentas/icoCtasAtras'))
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbCuentasInicio'))
 
-vCuenta = findTestData('05-Labels/Labels').getValue(2,2)
 WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloCuentaTabla'),vCuenta)
-
-vFavorita = findTestData('05-Labels/Labels').getValue(2,3)
 WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloFavoritaTabla'),vFavorita)
-
-vMoneda = findTestData('05-Labels/Labels').getValue(2,4)
 WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloMonedaTabla'),vMoneda)
-
-vSaldo = findTestData('05-Labels/Labels').getValue(2,5)
 WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloSaldoTabla'),vSaldo)
 
 //---------------------------------------------------------------------------------------------------------------------

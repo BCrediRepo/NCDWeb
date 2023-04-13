@@ -17,8 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-String vCbuCta
-String vALiasCta
+String vCbuCta = findTestData('05-Labels/Labels').getValue(2,6)
+String vALiasCta = findTestData('05-Labels/Labels').getValue(2,7)
 
 //Se selecciona el servidor y se cargan los datos
 CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
@@ -34,11 +34,8 @@ WebUI.click(findTestObject('Object Repository/03-Cuentas/mnuCtasConsultaDesplega
 WebUI.click(findTestObject('Object Repository/03-Cuentas/txtCtaConsultarAliasCBU'))
 
 //Valida datos de la cuenta
-vCbuCta = findTestData('05-Labels/Labels').getValue(2,6)
 WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/txtCtaNumeroCBU'),vCbuCta)
-
-vAliasCta = findTestData('05-Labels/Labels').getValue(2,7)
-WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/txtCtaNombreAlias'),vAliasCta)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/txtCtaNombreAlias'),vALiasCta)
 
 
 //---------------------------------------------------------------------------------------------------------------------
