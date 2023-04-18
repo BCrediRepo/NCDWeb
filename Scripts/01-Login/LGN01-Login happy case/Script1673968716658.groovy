@@ -17,6 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+//--- Import dB libraries ---
+import java.sql.Connection
+import java.sql.ResultSet
+import com.kms.katalon.core.configuration.RunConfiguration
+import com.katalon.plugin.keyword.connection.DBType
 import javax.swing.JOptionPane
 
 //Se define la URL
@@ -43,9 +48,6 @@ WebUI.setText(findTestObject('Object Repository/01-Login/txtLgnUsuario'), vUsuar
 WebUI.click(findTestObject('Object Repository/01-Login/btnLgnIngresar'))
 
 WebUI.click(findTestObject('Object Repository/02-Dashboard/icoDsbSalir'))
-	
-//WebUI.closeBrowser()
-
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

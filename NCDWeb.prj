@@ -6,6 +6,7 @@
    <UUID>b1f8e8c1-7b44-46ba-abe1-e96928695c3b</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
+   <projectFileLocation>C:\Users\fguillermet\Katalon Studio\NCDWeb.git\NCDWeb.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>

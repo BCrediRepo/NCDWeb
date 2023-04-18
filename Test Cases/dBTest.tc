@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC000-Welcome Test Case</name>
+   <name>dBTest</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>9d956819-f83f-4da7-bf50-22ae2949b079</testCaseGuid>
+   <testCaseGuid>52741160-4722-4847-8ad8-df859579c824</testCaseGuid>
 </TestCaseEntity>

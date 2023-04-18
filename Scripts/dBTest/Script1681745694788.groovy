@@ -17,7 +17,22 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-/* ------------------------------------*
- * Welcome to NCD automation Project   *
- *                                     * 
- *-------------------------------------*/
+import java.sql.Connection
+import java.sql.DriverManager
+import java.sql.ResultSet
+import java.sql.Statement
+
+import javax.swing.JOptionPane
+
+CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
+
+ResultSet vResult = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'("SELECT * FROM Server WHERE Nombre = 'Rmobile'")
+String vValue1 = vResult.getString(1)
+String vValue2 = vResult.getString(2)
+String vValue3 = vResult.getString(3)
+
+JOptionPane.showMessageDialog(null,vValue1)
+JOptionPane.showMessageDialog(null,vValue2)
+JOptionPane.showMessageDialog(null,vValue3)
+
+CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
