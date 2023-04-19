@@ -17,15 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+String vCuenta = findTestData('05-Labels/Labels').getValue(2, 2)
 
-String vCuenta = findTestData('05-Labels/Labels').getValue(2,2)
-String vFavorita = findTestData('05-Labels/Labels').getValue(2,3)
-String vMoneda = findTestData('05-Labels/Labels').getValue(2,4)
-String vSaldo = findTestData('05-Labels/Labels').getValue(2,5)
+String vFavorita = findTestData('05-Labels/Labels').getValue(2, 3)
 
+String vMoneda = findTestData('05-Labels/Labels').getValue(2, 4)
 
-//Se selecciona el servidor y se cargan los datos
-CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
+String vSaldo = findTestData('05-Labels/Labels').getValue(2, 5)
 
 //Se loguea con el usuario seleccionado
 CustomKeywords.'pkgUtilities.kwyUtility.Login'(GlobalVariable.AdminDNI, GlobalVariable.AdminClave, GlobalVariable.AdminUsuario)
@@ -33,30 +31,40 @@ CustomKeywords.'pkgUtilities.kwyUtility.Login'(GlobalVariable.AdminDNI, GlobalVa
 //Ingresa al módulo de Cuentas desde menú lateral y mapea los campos
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbCuentas'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloCuentaTabla'),vCuenta)
-WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloFavoritaTabla'),vFavorita)
-WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloMonedaTabla'),vMoneda)
-WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloSaldoTabla'),vSaldo)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloCuentaTabla'), vCuenta)
+
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloFavoritaTabla'), vFavorita)
+
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloMonedaTabla'), vMoneda)
+
+CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
+
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloSaldoTabla'), vSaldo)
 
 //Ingresa al módulo de Cuentas desde Inicio y mapea los campos
 WebUI.click(findTestObject('Object Repository/03-Cuentas/icoCtasAtras'))
+
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbCuentasInicio'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloCuentaTabla'),vCuenta)
-WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloFavoritaTabla'),vFavorita)
-WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloMonedaTabla'),vMoneda)
-WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloSaldoTabla'),vSaldo)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloCuentaTabla'), vCuenta)
+
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloFavoritaTabla'), vFavorita)
+
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloMonedaTabla'), vMoneda)
+
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloSaldoTabla'), vSaldo) 
 
 //---------------------------------------------------------------------------------------------------------------------
+
 //Control de fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/CTAS01-AccederHomeCuentas.png')
+    CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/CTAS01-AccederHomeCuentas.png')
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-	CustomKeywords.'pkgUtilities.kwyUtility.fPassStatus'()
+    CustomKeywords.'pkgUtilities.kwyUtility.fPassStatus'()
 }
 

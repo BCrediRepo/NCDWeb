@@ -17,15 +17,49 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+import java.sql.Connection
+import java.sql.DriverManager
+import java.sql.ResultSet
+import java.sql.Statement
+
 import javax.swing.JOptionPane
+/*
+//Set de datos de prueba
+//String vQuery = "SELECT * FROM UsuariosFF WHERE NroDNI = 20144835"
+def vQuery = "SELECT * FROM UsuariosFF WHERE NroDNI = 20144835"
+//String vDNI
+//String vClave
+//String vUsuario
+def vDNI 
+def vClave
+def vUsuario
+
+
+
+//Conecta a base de datos
+CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
+
+//Consulta a la base de datos
+ResultSet vResult = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery)
+vDNI = vResult.getString(2)
+vUsuario = vResult.getString(3)
+vClave = vResult.getString(4)
+
+JOptionPane.showMessageDialog(null, vDNI)
+JOptionPane.showMessageDialog(null, vUsuario)
+JOptionPane.showMessageDialog(null, vClave)
+
+//Cierre de la conexion
+CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
+*/
 
 //Se define la URL
 CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
 
 //Datos de login
-def vDNI = findTestData('02-Usuarios/SetUsers-FF').getValue(3,1)
-def vClave = findTestData('02-Usuarios/SetUsers-FF').getValue(5,1)
-def vUsuario = findTestData('02-Usuarios/SetUsers-FF').getValue(4,1)
+String vDNI = findTestData('02-Usuarios/SetUsers-FF').getValue(3,1)
+String vClave = findTestData('02-Usuarios/SetUsers-FF').getValue(5,1)
+String vUsuario = findTestData('02-Usuarios/SetUsers-FF').getValue(4,1)
 
 //Inicia el browser
 WebUI.openBrowser(GlobalVariable.ServerUsado)

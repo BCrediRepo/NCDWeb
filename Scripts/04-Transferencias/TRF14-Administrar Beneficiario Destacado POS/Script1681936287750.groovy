@@ -17,3 +17,23 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+
+int cantidadFav 
+
+//Se selecciona el servidor y se cargan los datos
+CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
+
+//Se loguea con el usuario seleccionado
+CustomKeywords.'pkgUtilities.kwyUtility.Login'(GlobalVariable.Cliente1DNI, GlobalVariable.Cliente1Clave, GlobalVariable.Cliente1Usuario)
+
+//Ingresa en la sección Transferencias del Dashboard
+WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'))
+
+//Valida y cliquea en Agenda de Beneficiarios
+WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lnkTrfAgendaBeneficiario'))
+
+if(cantidadFav == 3){
+	System.out.println("---YA HAY 3 BENEFICIARIOS DESTACADOS")
+}else if(cantidadFav < 3){
+            System.out.println("---NO HAY 3 BENEFICIARIOS DESTACADOS")
+}

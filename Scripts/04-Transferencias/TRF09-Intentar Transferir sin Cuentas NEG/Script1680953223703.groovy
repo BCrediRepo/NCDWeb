@@ -17,3 +17,43 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+
+def vlblAbrirCta = findTestData('05-Labels/Labels').getValue(2,15)
+
+
+//Se selecciona el servidor y se cargan los datos
+CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
+
+//Se loguea con el usuario seleccionado
+CustomKeywords.'pkgUtilities.kwyUtility.Login'(GlobalVariable.AdminDNI, GlobalVariable.AdminClave, GlobalVariable.AdminUsuario)
+
+//Ingresa en la sección Transferencias del Dashboard
+WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'))
+
+//Cliquea en Nueva Transferencia
+WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfNuevaTransferenciaInicio'))
+
+//Selecciono solapa Mis cuentas Credicoop
+WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop'))
+
+//Valida que no hay cuentas
+WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblAbrirCta'), vlblAbrirCta)
+
+//---------------------------------------------------------------------------------------------------------------------
+
+//Control de fin de script
+
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/TRF09-IntentarTransferirSinCuentasNEG.png')
+}
+
+@com.kms.katalon.core.annotation.TearDownIfPassed
+void fPassScript() {
+	CustomKeywords.'pkgUtilities.kwyUtility.fPassStatus'()
+}
+
+
+
+
+
