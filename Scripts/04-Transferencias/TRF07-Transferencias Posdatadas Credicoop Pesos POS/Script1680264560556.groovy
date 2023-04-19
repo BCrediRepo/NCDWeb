@@ -17,10 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//def vTipoTrf = findTestData('03-Transferencias/TipoTrf').getValue(2,2)
-def vTipoTrf = 'Judicial'
+
+
+def vClaveBypass = findTestData('02-Usuarios/SetUsers-FF').getValue(5,2)
 def vValorMonto = '1'
-def vClaveBypass = 'Testing7'
+
 
 //Se selecciona el servidor y se cargan los datos
 CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
@@ -54,6 +55,12 @@ WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrfMontoFo
 WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrfSeleccionTitularidadFormulario'))
 WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTitularidadTextoFormulario'))
 
+//Selecciona Fecha Programada
+WebUI.scrollToElement(findTestObject('Object Repository/04-Transferencias/04-Calendario/icoTrfCalendarioFechaEnvio'), 10)
+WebUI.click(findTestObject('Object Repository/04-Transferencias/04-Calendario/icoTrfCalendarioFechaEnvio'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/04-Calendario/icoTrfCalendarioMesSiguiente'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/04-Calendario/lblTrfCalendarioFechaEnvio'))
+
 //Cliquea en Continuar
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnContinuarFormulario'))
 
@@ -74,7 +81,7 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/t
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/TRF01-TransferenciaPropiasCredicoop.png')
+	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/TRF07-TransferenciasPosdatadasCredicoopPesosPOS.png')
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed

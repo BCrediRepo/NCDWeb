@@ -18,7 +18,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 
-
+def vMontoTexto = WebUI.getAttribute(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblTrfMensajeMonedaErronea'),'text')
+def vMontoLimite = findTestData('05-Labels/Labels').getValue(2,11)
 def vValorMonto1 = 120009
 def vValorMonto2 = 1
 
@@ -39,7 +40,7 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrfMisCuentas
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/txtTrfMisCtasPesos'))
 
 //Valida Toast Moneda Errónea
-WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblTrfMensajeMonedaErronea'),'La moneda de la cuenta destino no coincide con la moneda de la cuenta origen.')
+WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblTrfMensajeMonedaErronea'),vMontoTexto)
 
 //Ingresa en la sección Inicio del Dashboard
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbInicioEstado2'))
@@ -60,10 +61,22 @@ WebUI.clearText(findTestObject('Object Repository/04-Transferencias/txtTrfMontoF
 WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrfMontoFormulario'), vValorMonto1)
 
 //Valida Mensaje Monto Supera Limite
-WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblTrfMontoSuperaLimite'),'El monto ingresado supera tu límite disponible para realizar esta transferencia.')
+WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblTrfMontoSuperaLimite'), vMontoLimite)
 
 //Ingresa un monto menor
 WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrfMontoFormulario'))
 WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrfMontoFormulario'), vValorMonto2)
 
+//---------------------------------------------------------------------------------------------------------------------
+//Control de fin de script
+
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/TRF10-ValidacionesErroneasParaTransferirNEG.png')
+}
+
+@com.kms.katalon.core.annotation.TearDownIfPassed
+void fPassScript() {
+	CustomKeywords.'pkgUtilities.kwyUtility.fPassStatus'()
+}
 

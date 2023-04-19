@@ -1,0 +1,42 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Transferencias,Chrome 112.0.0.0,,,2023-04-18 09:31:51,2023-04-18 09:34:39,"2m - 47,866s",FAILED
+,,,,,,,
+Test Cases/04-Transferencias/TRF01-Transferencia Propias Credicoop Pesos POS,Chrome 112.0.0.0,,,2023-04-18 09:31:51,2023-04-18 09:33:05,"1m - 13,404s",PASSED
+"vClaveBypass = findTestData(""02-Usuarios/SetUsers-FF"").getValue(5, 1)",Chrome 112.0.0.0,,,2023-04-18 09:31:52,2023-04-18 09:31:52,"0,808s",PASSED
+"vlblMisCtas = findTestData(""05-Labels/Labels"").getValue(2, 10)",Chrome 112.0.0.0,,,2023-04-18 09:31:52,2023-04-18 09:31:53,"0,117s",PASSED
+"vValorMonto = ""1""",Chrome 112.0.0.0,,,2023-04-18 09:31:53,2023-04-18 09:31:53,"0,001s",PASSED
+"pkgUtilities.kwyUtility.Server(""Internet"")",Chrome 112.0.0.0,,,2023-04-18 09:31:53,2023-04-18 09:31:55,"2,372s",PASSED
+"pkgUtilities.kwyUtility.Login(AdminDNI, AdminClave, AdminUsuario)",Chrome 112.0.0.0,,,2023-04-18 09:31:55,2023-04-18 09:32:05,"9,944s",PASSED
+"click(findTestObject(""Object Repository/02-Dashboard/lnkDsbTransferencias""))",Chrome 112.0.0.0,,,2023-04-18 09:32:05,2023-04-18 09:32:13,"8,488s",PASSED
+"click(findTestObject(""Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfNuevaTransferenciaInicio""))",Chrome 112.0.0.0,,,2023-04-18 09:32:13,2023-04-18 09:32:16,"2,669s",PASSED
+"click(findTestObject(""Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop""))",Chrome 112.0.0.0,,,2023-04-18 09:32:16,2023-04-18 09:32:19,"2,521s",PASSED
+"verifyElementText(findTestObject(""Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop""), vlblMisCtas)",Chrome 112.0.0.0,,,2023-04-18 09:32:19,2023-04-18 09:32:19,"0,784s",PASSED
+"click(findTestObject(""Object Repository/04-Transferencias/lnkTrfCuentaPropiaPesos""))",Chrome 112.0.0.0,,,2023-04-18 09:32:19,2023-04-18 09:32:20,"0,463s",PASSED
+"click(findTestObject(""Object Repository/04-Transferencias/txtTrfMontoFormulario""))",Chrome 112.0.0.0,,,2023-04-18 09:32:20,2023-04-18 09:32:22,"2,319s",PASSED
+"sendKeys(findTestObject(""Object Repository/04-Transferencias/txtTrfMontoFormulario""), vValorMonto)",Chrome 112.0.0.0,,,2023-04-18 09:32:22,2023-04-18 09:32:23,"0,374s",PASSED
+"click(findTestObject(""Object Repository/04-Transferencias/lblTrfSeleccionTitularidadFormulario""))",Chrome 112.0.0.0,,,2023-04-18 09:32:23,2023-04-18 09:32:23,"0,422s",PASSED
+"click(findTestObject(""Object Repository/04-Transferencias/lblTitularidadTextoFormulario""))",Chrome 112.0.0.0,,,2023-04-18 09:32:23,2023-04-18 09:32:23,"0,411s",PASSED
+"click(findTestObject(""Object Repository/04-Transferencias/02-Nueva Transferencia/btnContinuarFormulario""))",Chrome 112.0.0.0,,,2023-04-18 09:32:23,2023-04-18 09:32:24,"0,554s",PASSED
+"click(findTestObject(""Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmar""))",Chrome 112.0.0.0,,,2023-04-18 09:32:24,2023-04-18 09:32:25,"1,409s",PASSED
+"setText(findTestObject(""Object Repository/04-Transferencias/txtTrfClaveBypass""), vClaveBypass)",Chrome 112.0.0.0,,,2023-04-18 09:32:25,2023-04-18 09:32:26,"0,748s",PASSED
+"click(findTestObject(""Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmarBypass""))",Chrome 112.0.0.0,,,2023-04-18 09:32:26,2023-04-18 09:32:26,"0,422s",PASSED
+"verifyElementVisible(findTestObject(""Object Repository/04-Transferencias/txtTrfBeneficiarioDestino""))",Chrome 112.0.0.0,,,2023-04-18 09:32:26,2023-04-18 09:32:33,"6,814s",PASSED
+Start tear down : fPassScript,Chrome 112.0.0.0,,,2023-04-18 09:32:33,2023-04-18 09:33:05,"31,246s",PASSED
+,,,,,,,
+Test Cases/04-Transferencias/TRF02-Transferencia Propias Credicoop Dolares POS,Chrome 112.0.0.0,,,2023-04-18 09:33:05,2023-04-18 09:33:52,"47,521s",FAILED
+"vValorMonto = ""1""",Chrome 112.0.0.0,,,2023-04-18 09:33:05,2023-04-18 09:33:05,"0,001s",PASSED
+"vClaveBypass = findTestData(""02-Usuarios/SetUsers-FF"").getValue(5, 2)",Chrome 112.0.0.0,,,2023-04-18 09:33:05,2023-04-18 09:33:05,"0,097s",PASSED
+"vlblMisCtas = findTestData(""05-Labels/Labels"").getValue(2, 10)",Chrome 112.0.0.0,,,2023-04-18 09:33:05,2023-04-18 09:33:05,"0,086s",PASSED
+"pkgUtilities.kwyUtility.Server(""Internet"")",Chrome 112.0.0.0,,,2023-04-18 09:33:05,2023-04-18 09:33:07,"1,591s",PASSED
+"pkgUtilities.kwyUtility.Login(Cliente1DNI, Cliente1Clave, Cliente1Usuario)",Chrome 112.0.0.0,,,2023-04-18 09:33:07,2023-04-18 09:33:16,"9,492s",PASSED
+"click(findTestObject(""Object Repository/02-Dashboard/lnkDsbTransferencias""))",Chrome 112.0.0.0,,,2023-04-18 09:33:16,2023-04-18 09:33:48,"31,483s",FAILED
+Start tear down : fTakeFailScreenshot,Chrome 112.0.0.0,,,2023-04-18 09:33:48,2023-04-18 09:33:52,"4,413s",PASSED
+,,,,,,,
+Test Cases/04-Transferencias/TRF03-Transferencia Terceros Credicoop Pesos POS,Chrome 112.0.0.0,,,2023-04-18 09:33:52,2023-04-18 09:34:39,"46,641s",FAILED
+"vTipoTrf = findTestData(""03-Transferencias/TipoTrf"").getValue(2, 3)",Chrome 112.0.0.0,,,2023-04-18 09:33:52,2023-04-18 09:33:53,"0,065s",PASSED
+"vClaveBypass = findTestData(""02-Usuarios/SetUsers-FF"").getValue(5, 2)",Chrome 112.0.0.0,,,2023-04-18 09:33:53,2023-04-18 09:33:53,"0,077s",PASSED
+"vValorMonto = ""1""",Chrome 112.0.0.0,,,2023-04-18 09:33:53,2023-04-18 09:33:53,"0,000s",PASSED
+"pkgUtilities.kwyUtility.Server(""Internet"")",Chrome 112.0.0.0,,,2023-04-18 09:33:53,2023-04-18 09:33:54,"1,545s",PASSED
+"pkgUtilities.kwyUtility.Login(Cliente1DNI, Cliente1Clave, Cliente1Usuario)",Chrome 112.0.0.0,,,2023-04-18 09:33:54,2023-04-18 09:34:03,"8,701s",PASSED
+"click(findTestObject(""Object Repository/02-Dashboard/lnkDsbTransferencias""))",Chrome 112.0.0.0,,,2023-04-18 09:34:03,2023-04-18 09:34:34,"31,480s",FAILED
+Start tear down : fTakeFailScreenshot,Chrome 112.0.0.0,,,2023-04-18 09:34:34,2023-04-18 09:34:39,"4,410s",PASSED

@@ -28,7 +28,6 @@ CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
 CustomKeywords.'pkgUtilities.kwyUtility.Login'(GlobalVariable.Cliente1DNI, GlobalVariable.Cliente1Clave, GlobalVariable.Cliente1Usuario)
 
 //Ingresa en la sección Otras Operaciones y Pagos Debin del Dashboard
-WebUI.verifyElementVisible(findTestObject('Object Repository/02-Dashboard/lnkDsbOtrasOperaciones'))
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbOtrasOperaciones'))
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbPagosDebin'))
 
@@ -63,3 +62,19 @@ WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnConfirmarForm
 //Valida Pantalla de Éxito
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-Pagos Debin/lblDbnConfirmarFormulario'))
 WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnVolverDebin'))
+
+
+//---------------------------------------------------------------------------------------------------------------------
+//Control de fin de script
+
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/DBN02-GenerarDebinPorAliasPOS.png')
+}
+
+@com.kms.katalon.core.annotation.TearDownIfPassed
+void fPassScript() {
+	CustomKeywords.'pkgUtilities.kwyUtility.fPassStatus'()
+}
+
+

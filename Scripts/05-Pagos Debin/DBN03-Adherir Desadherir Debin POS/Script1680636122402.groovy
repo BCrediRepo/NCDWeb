@@ -61,7 +61,18 @@ if (vEstado =='Adherir'){
 	//WebUI.verifyMatch('La cuenta se adhirió correctamente.','La cuenta se adhirió correctamente.', true)
 
 
-
+	//---------------------------------------------------------------------------------------------------------------------
+	//Control de fin de script
+	
+	@com.kms.katalon.core.annotation.TearDownIfFailed
+	void fTakeFailScreenshot() {
+		CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/DBN03-AdherirDesadherirDebinPOS.png')
+	}
+	
+	@com.kms.katalon.core.annotation.TearDownIfPassed
+	void fPassScript() {
+		CustomKeywords.'pkgUtilities.kwyUtility.fPassStatus'()
+	}
 
 
 

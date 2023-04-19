@@ -1,3 +1,24 @@
 {
-  "brokenTestObjects" : [ ]
+  "brokenTestObjects": [
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/02-Dashboard/lnkDsbSalir",
+      "brokenLocator": "//div[@id\u003d\u0027frmAccountsLanding_customhamburger_LogOutlblAccounts\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027\u0027])[2]/preceding::div[8]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/02-Dashboard/lnkDsbSalir_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/02-Dashboard/btnSalirMsgConfirmacionAceptar",
+      "brokenLocator": "//input[@id\u003d\u0027frmAccountsLanding_CustomPopup_btnYes\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//div[6]/input",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/02-Dashboard/btnSalirMsgConfirmacionAceptar_position.png"
+    }
+  ]
 }

@@ -146,31 +146,29 @@ public class kwyUtility {
 	 *vCuenta: Pesos o Dolares										 								*	
 	 *----------------------------------------------------------------------------------------------*/
 	/*@Keyword
-	def Cuenta(def vCuenta) {
-		if(vCuenta == 'Pesos'){
-			GlobalVariable.Cliente1DNI = findTestData('02-Usuarios/SetUsers-FF').getValue(3,2)
-			GlobalVariable.Cliente1Clave = findTestData('02-Usuarios/SetUsers-FF').getValue(5,2)
-			GlobalVariable.Cliente1Usuario = findTestData('02-Usuarios/SetUsers-FF').getValue(4,2)
-			GlobalVariable.Cliente1ByPass = findTestData('02-Usuarios/SetUsers-FF').getValue(5,2)
+	 def Cuenta(def vCuenta) {
+	 if(vCuenta == 'Pesos'){
+	 GlobalVariable.Cliente1DNI = findTestData('02-Usuarios/SetUsers-FF').getValue(3,2)
+	 GlobalVariable.Cliente1Clave = findTestData('02-Usuarios/SetUsers-FF').getValue(5,2)
+	 GlobalVariable.Cliente1Usuario = findTestData('02-Usuarios/SetUsers-FF').getValue(4,2)
+	 GlobalVariable.Cliente1ByPass = findTestData('02-Usuarios/SetUsers-FF').getValue(5,2)
+	 GlobalVariable.Cliente2DNI = findTestData('02-Usuarios/SetUsers-FF').getValue(3,3)
+	 GlobalVariable.Cliente2Clave = findTestData('02-Usuarios/SetUsers-FF').getValue(5,3)
+	 GlobalVariable.Cliente2Usuario = findTestData('02-Usuarios/SetUsers-FF').getValue(4,3)
+	 GlobalVariable.Cliente2ByPass = findTestData('02-Usuarios/SetUsers-FF').getValue(5,3)
+	 }
+	 if(vCuenta == 'Dolares') {
+	 GlobalVariable.Cliente3DNI = findTestData('02-Usuarios/SetUsers-FF').getValue(3,4)
+	 GlobalVariable.Cliente3Clave = findTestData('02-Usuarios/SetUsers-FF').getValue(5,4)
+	 GlobalVariable.Cliente3Usuario = findTestData('02-Usuarios/SetUsers-FF').getValue(4,4)
+	 GlobalVariable.Cliente3ByPass = findTestData('02-Usuarios/SetUsers-FF').getValue(5,4)
+	 GlobalVariable.Cliente4DNI = findTestData('02-Usuarios/SetUsers-FF').getValue(3,5)
+	 GlobalVariable.Cliente4Clave = findTestData('02-Usuarios/SetUsers-FF').getValue(5,5)
+	 GlobalVariable.Cliente4Usuario = findTestData('02-Usuarios/SetUsers-FF').getValue(4,5)
+	 GlobalVariable.Cliente4ByPass = findTestData('02-Usuarios/SetUsers-FF').getValue(5,5)
+	 }
+	 }*/
 
-			GlobalVariable.Cliente2DNI = findTestData('02-Usuarios/SetUsers-FF').getValue(3,3)
-			GlobalVariable.Cliente2Clave = findTestData('02-Usuarios/SetUsers-FF').getValue(5,3)
-			GlobalVariable.Cliente2Usuario = findTestData('02-Usuarios/SetUsers-FF').getValue(4,3)
-			GlobalVariable.Cliente2ByPass = findTestData('02-Usuarios/SetUsers-FF').getValue(5,3)
-		}
-		if(vCuenta == 'Dolares') {
-			GlobalVariable.Cliente3DNI = findTestData('02-Usuarios/SetUsers-FF').getValue(3,4)
-			GlobalVariable.Cliente3Clave = findTestData('02-Usuarios/SetUsers-FF').getValue(5,4)
-			GlobalVariable.Cliente3Usuario = findTestData('02-Usuarios/SetUsers-FF').getValue(4,4)
-			GlobalVariable.Cliente3ByPass = findTestData('02-Usuarios/SetUsers-FF').getValue(5,4)
-
-			GlobalVariable.Cliente4DNI = findTestData('02-Usuarios/SetUsers-FF').getValue(3,5)
-			GlobalVariable.Cliente4Clave = findTestData('02-Usuarios/SetUsers-FF').getValue(5,5)
-			GlobalVariable.Cliente4Usuario = findTestData('02-Usuarios/SetUsers-FF').getValue(4,5)
-			GlobalVariable.Cliente4ByPass = findTestData('02-Usuarios/SetUsers-FF').getValue(5,5)
-		}
-	}*/
-	
 	/*----------------------------------------------------------------------------------------------*
 	 *LOGIN																							*
 	 *																								*

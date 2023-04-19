@@ -17,8 +17,12 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//def vTipoTrf = findTestData('03-Transferencias/TipoTrf').getValue(2,2)
+
 def vCBUBenf = findTestData('04-Parametros/Parametros').getValue(2,1)
+def vBenfLbl = findTestData('05-Labels/Labels').getValue(2,8)
+def vBenfGuardado = findTestData('05-Labels/Labels').getValue(2,9)
+def vBenfEditado = findTestData('06-Toast/Toast').getValue(2,52)
+def vBenfEliminado = findTestData('06-Toast/Toast').getValue(2,52)
 def vNvoNombre = 'NombreEditado'
 
 //Se selecciona el servidor y se cargan los datos
@@ -28,11 +32,9 @@ CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
 CustomKeywords.'pkgUtilities.kwyUtility.Login'(GlobalVariable.Cliente1DNI, GlobalVariable.Cliente1Clave, GlobalVariable.Cliente1Usuario)
 
 //Ingresa en la sección Transferencias del Dashboard
-WebUI.verifyElementVisible(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'))
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'))
 
 //Valida y cliquea en Agenda de Beneficiarios
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lnkTrfAgendaBeneficiario'))
 WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lnkTrfAgendaBeneficiario'))
 
 //Busca Beneficiario por CBU
@@ -40,7 +42,7 @@ WebUI.setText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Benef
 
 //Valida que el Beneficiario no este registrado
 WebUI.delay(5)
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lblBusquedaSinResultadosCBUBenf'))
+WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lblBusquedaSinResultadosCBUBenf'),vBenfLbl)
 
 //Cliquea en Nuevo Beneficiario
 WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/btnNuevoBeneficiario'))
@@ -66,7 +68,7 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Benefic
 WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/btnTrfContinuarNuevoBeneficiario'))
 
 //Valida Mensaje Exitoso
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lblTrfBeneficiarioGuardado'))
+WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lblTrfBeneficiarioGuardado'),vBenfGuardado)
 
 //Cierra Pantalla
 WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/icoCerrarBeneficiarioGuardado'))
@@ -80,11 +82,14 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Benefic
 WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrfNuevoBeneficiarioEditar'))
 WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/icoTrfEditarBeneficiario'))
 
-WebUI.clearText('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrfNuevoNombreBeneficiario')
+//NOTA: REVISAR EDITAR BENEFICIARIO NOMBRE
+
+WebUI.delay(10)
+WebUI.clearText('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtNombreViejoBenef')
 WebUI.setText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrfNuevoNombreBeneficiario'), vNvoNombre)
 WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/icoTrfConfirmaNombreEditadoBenf'))
 WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/btnTrfGuardarNombreEditadoBenf'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lblTrfMensajeNombreEditadoBenf'))
+WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lblTrfMensajeNombreEditadoBenf'),vBenfEditado)
 
 //Busca Beneficiario Editado y valida
 WebUI.setText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrfBuscarBeneficiarioTipo'), vCBUBenf)
@@ -92,8 +97,18 @@ WebUI.setText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Benef
 //Cliquea en menú para eliminar
 WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/mnuTrfBeneficiarioDesplegable'))
 WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrfNuevoBeneficiarioEliminar'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lblTrfMensajeExitosoEliminarBenf'))
+WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lblTrfMensajeExitosoEliminarBenf'),vBenfEliminado)
 
+//---------------------------------------------------------------------------------------------------------------------
+//Control de fin de script
 
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/TRF00-ABMBeneficiarioConCbuPOS.png')
+}
 
+@com.kms.katalon.core.annotation.TearDownIfPassed
+void fPassScript() {
+	CustomKeywords.'pkgUtilities.kwyUtility.fPassStatus'()
+}
 

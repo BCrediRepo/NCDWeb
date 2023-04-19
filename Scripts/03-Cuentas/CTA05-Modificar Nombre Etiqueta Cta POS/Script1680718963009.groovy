@@ -17,3 +17,25 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+
+def vNombreModif = findTestData('05-Labels/Labels').getValue(2,13)
+
+
+//Se selecciona el servidor y se cargan los datos
+CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
+
+//Se loguea con el usuario seleccionado
+CustomKeywords.'pkgUtilities.kwyUtility.Login'(GlobalVariable.Cliente3DNI, GlobalVariable.Cliente3Clave, GlobalVariable.Cliente3Usuario)
+
+//Ingresa al módulo de Cuentas desde menú lateral y mapea los campos
+WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbCuentas'))
+
+//Cliquea sobre el nombre de la cuenta
+WebUI.click(findTestObject('Object Repository/03-Cuentas/lnkCtaNombreEtiqueta'))
+WebUI.click(findTestObject('Object Repository/03-Cuentas/txtCtaNombreEtiqueta'))
+WebUI.clearText(findTestObject(('Object Repository/03-Cuentas/txtCtaNombreEditado')))
+WebUI.setText(findTestObject('Object Repository/03-Cuentas/txtCtaNombreEtiqueta'), vNombreModif)
+	
+	
+	
+	

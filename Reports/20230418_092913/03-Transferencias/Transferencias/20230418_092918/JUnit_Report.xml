@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Transferencias" time="167.866" tests="3" failures="2" errors="0">
+   <testsuite name="Transferencias" tests="3" failures="2" errors="0" time="167.866" skipped="0" timestamp="2023-04-18 09:31:51" hostname="natalia.heit - AR-NB-490.tsoftglobal.com" id="Test Suites/03-Transferencias/Transferencias">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\natalia.heit\\git\\KtlnNCDWeb\\NCDWeb\\Reports\\20230418_092913\\03-Transferencias\\Transferencias\\20230418_092918"/>
+         <property name="logFiles" value="C:\\Users\\natalia.heit\\git\\KtlnNCDWeb\\NCDWeb\\Reports\\20230418_092913\\03-Transferencias\\Transferencias\\20230418_092918\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\natalia.heit\\git\\KtlnNCDWeb\\NCDWeb\\Reports\\20230418_092913\\03-Transferencias\\Transferencias\\20230418_092918\\1681821184936.png, C:\\Users\\natalia.heit\\git\\KtlnNCDWeb\\NCDWeb\\Reports\\20230418_092913\\03-Transferencias\\Transferencias\\20230418_092918\\1681821227963.png, C:\\Users\\natalia.heit\\git\\KtlnNCDWeb\\NCDWeb\\Reports\\20230418_092913\\03-Transferencias\\Transferencias\\20230418_092918\\Screenshot/Fails/TRF02-TransferenciaPropiasCredicoopDolaresPOS.png, C:\\Users\\natalia.heit\\git\\KtlnNCDWeb\\NCDWeb\\Reports\\20230418_092913\\03-Transferencias\\Transferencias\\20230418_092918\\1681821274564.png, C:\\Users\\natalia.heit\\git\\KtlnNCDWeb\\NCDWeb\\Reports\\20230418_092913\\03-Transferencias\\Transferencias\\20230418_092918\\Screenshot/Fails/TRF03-TransferenciaTercerosCredicoopPesosPOS.png"/>
+         <property name="hostName" value="natalia.heit - AR-NB-490.tsoftglobal.com"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.4.1.208"/>
+         <property name="browser" value="Chrome 112.0.0.0"/>
+         <property name="hostAddress" value="172.16.241.117"/>
+         <property name="sessionId" value="6bec967dde4de94e246ca582ec64e042"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/04-Transferencias/TRF01-Transferencia Propias Credicoop Pesos POS" time="73.404" classname="Test Cases/04-Transferencias/TRF01-Transferencia Propias Credicoop Pesos POS" status="PASSED">
+         <system-out><![CDATA[2023-04-18 09:31:51 - [TEST_CASE][PASSED] - Test Cases/04-Transferencias/TRF01-Transferencia Propias Credicoop Pesos POS: Test Cases/04-Transferencias/TRF01-Transferencia Propias Credicoop Pesos POS
+
+2023-04-18 09:31:52 - [TEST_STEP][PASSED] - vClaveBypass = findTestData("02-Usuarios/SetUsers-FF").getValue(5, 1): null
+
+2023-04-18 09:31:52 - [TEST_STEP][PASSED] - vlblMisCtas = findTestData("05-Labels/Labels").getValue(2, 10): null
+
+2023-04-18 09:31:53 - [TEST_STEP][PASSED] - vValorMonto = "1": null
+
+2023-04-18 09:31:53 - [TEST_STEP][PASSED] - pkgUtilities.kwyUtility.Server("Internet"): pkgUtilities.kwyUtility.Server is PASSED
+
+2023-04-18 09:31:55 - [MESSAGE][PASSED] - pkgUtilities.kwyUtility.Server is PASSED
+
+2023-04-18 09:31:55 - [TEST_STEP][PASSED] - pkgUtilities.kwyUtility.Login(AdminDNI, AdminClave, AdminUsuario): pkgUtilities.kwyUtility.Login is PASSED
+
+2023-04-18 09:31:55 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2023-04-18 09:31:55 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2023-04-18 09:32:01 - [MESSAGE][PASSED] - Browser is opened with url: 'https://ncdtesting.bancocredicoop.coop/apps/NCDBC/#_frmLogin'
+
+2023-04-18 09:32:01 - [MESSAGE][PASSED] - Current window maximized
+
+2023-04-18 09:32:01 - [MESSAGE][PASSED] - Object 'Object Repository/01-Login/btnLgnCerrarBanner' is visible
+
+2023-04-18 09:32:02 - [MESSAGE][PASSED] - Object: 'Object Repository/01-Login/btnLgnCerrarBanner' is clicked on
+
+2023-04-18 09:32:03 - [MESSAGE][PASSED] - Text '20144835' is set on object 'Object Repository/01-Login/txtLgnDNI'
+
+2023-04-18 09:32:04 - [MESSAGE][PASSED] - Text 'Testing3' is set on object 'Object Repository/01-Login/txtLgnClave'
+
+2023-04-18 09:32:04 - [MESSAGE][PASSED] - Text 'edie02' is set on object 'Object Repository/01-Login/txtLgnUsuario'
+
+2023-04-18 09:32:05 - [MESSAGE][PASSED] - Object: 'Object Repository/01-Login/btnLgnIngresar' is clicked on
+
+2023-04-18 09:32:05 - [MESSAGE][PASSED] - pkgUtilities.kwyUtility.Login is PASSED
+
+2023-04-18 09:32:05 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/02-Dashboard/lnkDsbTransferencias")): Object: 'Object Repository/02-Dashboard/lnkDsbTransferencias' is clicked on
+
+2023-04-18 09:32:13 - [MESSAGE][PASSED] - Object: 'Object Repository/02-Dashboard/lnkDsbTransferencias' is clicked on
+
+2023-04-18 09:32:13 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfNuevaTransferenciaInicio")): Object: 'Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfNuevaTransferenciaInicio' is clicked on
+
+2023-04-18 09:32:16 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfNuevaTransferenciaInicio' is clicked on
+
+2023-04-18 09:32:16 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop")): Object: 'Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop' is clicked on
+
+2023-04-18 09:32:19 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop' is clicked on
+
+2023-04-18 09:32:19 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop"), vlblMisCtas): Actual text and expected text of test object 'Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop' are matched.
+
+2023-04-18 09:32:19 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop' are matched.
+
+2023-04-18 09:32:19 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/lnkTrfCuentaPropiaPesos")): Object: 'Object Repository/04-Transferencias/lnkTrfCuentaPropiaPesos' is clicked on
+
+2023-04-18 09:32:20 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/lnkTrfCuentaPropiaPesos' is clicked on
+
+2023-04-18 09:32:20 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/txtTrfMontoFormulario")): Object: 'Object Repository/04-Transferencias/txtTrfMontoFormulario' is clicked on
+
+2023-04-18 09:32:22 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/txtTrfMontoFormulario' is clicked on
+
+2023-04-18 09:32:22 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/04-Transferencias/txtTrfMontoFormulario"), vValorMonto): Keys '1' sent to object: 'Object Repository/04-Transferencias/txtTrfMontoFormulario'
+
+2023-04-18 09:32:23 - [MESSAGE][PASSED] - Keys '1' sent to object: 'Object Repository/04-Transferencias/txtTrfMontoFormulario'
+
+2023-04-18 09:32:23 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/lblTrfSeleccionTitularidadFormulario")): Object: 'Object Repository/04-Transferencias/lblTrfSeleccionTitularidadFormulario' is clicked on
+
+2023-04-18 09:32:23 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/lblTrfSeleccionTitularidadFormulario' is clicked on
+
+2023-04-18 09:32:23 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/lblTitularidadTextoFormulario")): Object: 'Object Repository/04-Transferencias/lblTitularidadTextoFormulario' is clicked on
+
+2023-04-18 09:32:23 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/lblTitularidadTextoFormulario' is clicked on
+
+2023-04-18 09:32:23 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/02-Nueva Transferencia/btnContinuarFormulario")): Object: 'Object Repository/04-Transferencias/02-Nueva Transferencia/btnContinuarFormulario' is clicked on
+
+2023-04-18 09:32:24 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/02-Nueva Transferencia/btnContinuarFormulario' is clicked on
+
+2023-04-18 09:32:24 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmar")): Object: 'Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmar' is clicked on
+
+2023-04-18 09:32:25 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmar' is clicked on
+
+2023-04-18 09:32:25 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/04-Transferencias/txtTrfClaveBypass"), vClaveBypass): Text 'Testing3' is set on object 'Object Repository/04-Transferencias/txtTrfClaveBypass'
+
+2023-04-18 09:32:26 - [MESSAGE][PASSED] - Text 'Testing3' is set on object 'Object Repository/04-Transferencias/txtTrfClaveBypass'
+
+2023-04-18 09:32:26 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmarBypass")): Object: 'Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmarBypass' is clicked on
+
+2023-04-18 09:32:26 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmarBypass' is clicked on
+
+2023-04-18 09:32:26 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Object Repository/04-Transferencias/txtTrfBeneficiarioDestino")): Object 'Object Repository/04-Transferencias/txtTrfBeneficiarioDestino' is visible
+
+2023-04-18 09:32:33 - [MESSAGE][PASSED] - Object 'Object Repository/04-Transferencias/txtTrfBeneficiarioDestino' is visible
+
+2023-04-18 09:32:33 - [TEST_STEP][PASSED] - Start tear down : fPassScript: Error occurred when try to run method 'fPassScript' (Root cause: com.kms.katalon.core.exception.StepFailedException - com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir')
+
+2023-04-18 09:32:33 - [TEST_STEP][FAILED] - pkgUtilities.kwyUtility.fPassStatus(): Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir'
+
+2023-04-18 09:33:04 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[@id='frmAccountsLanding_customhamburger_LogOutlblAccounts']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2023-04-18 09:33:05 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at pkgUtilities.kwyUtility.fPassStatus(kwyUtility.groovy:214)
+	at pkgUtilities.kwyUtility.invokeMethod(kwyUtility.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at TRF01-Transferencia Propias Credicoop Pesos POS.fPassScript(TRF01-Transferencia Propias Credicoop Pesos POS:80)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptMethodAsRawText(ScriptEngine.java:133)
+	at com.kms.katalon.core.main.TestCaseExecutor.runMethod(TestCaseExecutor.java:458)
+	at com.kms.katalon.core.main.TestCaseExecutor.runMethod(TestCaseExecutor.java:580)
+	at com.kms.katalon.core.main.TestCaseExecutor.internallyRunMethods(TestCaseExecutor.java:565)
+	at com.kms.katalon.core.main.TestCaseExecutor.onExecutionComplete(TestCaseExecutor.java:135)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1681820958248.run(TempTestSuite1681820958248.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/02-Dashboard/lnkDsbSalir' located by '//div[@id='frmAccountsLanding_customhamburger_LogOutlblAccounts']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1370)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:65)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at pkgUtilities.kwyUtility.fPassStatus(kwyUtility.groovy:214)
+	at pkgUtilities.kwyUtility.invokeMethod(kwyUtility.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Script1680003961363.fPassScript(Script1680003961363.groovy:80)
+	... 14 more
+)
+[[ATTACHMENT|C:\\Users\\natalia.heit\\git\\KtlnNCDWeb\\NCDWeb\\Reports\\20230418_092913\\03-Transferencias\\Transferencias\\20230418_092918\\1681821184936.png]]
+
+2023-04-18 09:33:05 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir'
+
+2023-04-18 09:33:05 - [MESSAGE][WARNING] - Error occurred when try to run method 'fPassScript' (Root cause: com.kms.katalon.core.exception.StepFailedException - com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir')]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/04-Transferencias/TRF02-Transferencia Propias Credicoop Dolares POS" time="47.521" classname="Test Cases/04-Transferencias/TRF02-Transferencia Propias Credicoop Dolares POS" status="FAILED">
+         <failure type="FAILED" message="Test Cases/04-Transferencias/TRF02-Transferencia Propias Credicoop Dolares POS FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/02-Dashboard/lnkDsbTransferencias'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at TRF02-Transferencia Propias Credicoop Dolares POS.run(TRF02-Transferencia Propias Credicoop Dolares POS:32)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1681820958248.run(TempTestSuite1681820958248.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/02-Dashboard/lnkDsbTransferencias' located by '//div[@id='frmAccountsLanding_customhamburger_TRANSFERlblAccounts']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1370)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:65)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+"/>
+         <system-out><![CDATA[2023-04-18 09:33:05 - [TEST_CASE][FAILED] - Test Cases/04-Transferencias/TRF02-Transferencia Propias Credicoop Dolares POS: Test Cases/04-Transferencias/TRF02-Transferencia Propias Credicoop Dolares POS FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/02-Dashboard/lnkDsbTransferencias'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at TRF02-Transferencia Propias Credicoop Dolares POS.run(TRF02-Transferencia Propias Credicoop Dolares POS:32)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1681820958248.run(TempTestSuite1681820958248.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/02-Dashboard/lnkDsbTransferencias' located by '//div[@id='frmAccountsLanding_customhamburger_TRANSFERlblAccounts']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1370)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:65)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+
+
+2023-04-18 09:33:05 - [TEST_STEP][PASSED] - vValorMonto = "1": null
+
+2023-04-18 09:33:05 - [TEST_STEP][PASSED] - vClaveBypass = findTestData("02-Usuarios/SetUsers-FF").getValue(5, 2): null
+
+2023-04-18 09:33:05 - [TEST_STEP][PASSED] - vlblMisCtas = findTestData("05-Labels/Labels").getValue(2, 10): null
+
+2023-04-18 09:33:05 - [TEST_STEP][PASSED] - pkgUtilities.kwyUtility.Server("Internet"): pkgUtilities.kwyUtility.Server is PASSED
+
+2023-04-18 09:33:07 - [MESSAGE][PASSED] - pkgUtilities.kwyUtility.Server is PASSED
+
+2023-04-18 09:33:07 - [TEST_STEP][PASSED] - pkgUtilities.kwyUtility.Login(Cliente1DNI, Cliente1Clave, Cliente1Usuario): pkgUtilities.kwyUtility.Login is PASSED
+
+2023-04-18 09:33:07 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2023-04-18 09:33:08 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2023-04-18 09:33:08 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2023-04-18 09:33:12 - [MESSAGE][PASSED] - Browser is opened with url: 'https://ncdtesting.bancocredicoop.coop/apps/NCDBC/#_frmLogin'
+
+2023-04-18 09:33:12 - [MESSAGE][PASSED] - Current window maximized
+
+2023-04-18 09:33:13 - [MESSAGE][PASSED] - Object 'Object Repository/01-Login/btnLgnCerrarBanner' is visible
+
+2023-04-18 09:33:13 - [MESSAGE][PASSED] - Object: 'Object Repository/01-Login/btnLgnCerrarBanner' is clicked on
+
+2023-04-18 09:33:14 - [MESSAGE][PASSED] - Text '13976407' is set on object 'Object Repository/01-Login/txtLgnDNI'
+
+2023-04-18 09:33:15 - [MESSAGE][PASSED] - Text 'Testing8' is set on object 'Object Repository/01-Login/txtLgnClave'
+
+2023-04-18 09:33:16 - [MESSAGE][PASSED] - Text 'ale13' is set on object 'Object Repository/01-Login/txtLgnUsuario'
+
+2023-04-18 09:33:16 - [MESSAGE][PASSED] - Object: 'Object Repository/01-Login/btnLgnIngresar' is clicked on
+
+2023-04-18 09:33:16 - [MESSAGE][PASSED] - pkgUtilities.kwyUtility.Login is PASSED
+
+2023-04-18 09:33:16 - [TEST_STEP][FAILED] - click(findTestObject("Object Repository/02-Dashboard/lnkDsbTransferencias")): Unable to click on object 'Object Repository/02-Dashboard/lnkDsbTransferencias' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/02-Dashboard/lnkDsbTransferencias'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at TRF02-Transferencia Propias Credicoop Dolares POS.run(TRF02-Transferencia Propias Credicoop Dolares POS:32)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1681820958248.run(TempTestSuite1681820958248.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/02-Dashboard/lnkDsbTransferencias' located by '//div[@id='frmAccountsLanding_customhamburger_TRANSFERlblAccounts']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1370)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:65)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Script1680088121730.run(Script1680088121730.groovy:32)
+	... 13 more
+)
+
+2023-04-18 09:33:47 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[@id='frmAccountsLanding_customhamburger_TRANSFERlblAccounts']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2023-04-18 09:33:48 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/02-Dashboard/lnkDsbTransferencias' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/02-Dashboard/lnkDsbTransferencias'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at TRF02-Transferencia Propias Credicoop Dolares POS.run(TRF02-Transferencia Propias Credicoop Dolares POS:32)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1681820958248.run(TempTestSuite1681820958248.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/02-Dashboard/lnkDsbTransferencias' located by '//div[@id='frmAccountsLanding_customhamburger_TRANSFERlblAccounts']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1370)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:65)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Script1680088121730.run(Script1680088121730.groovy:32)
+	... 13 more
+)
+[[ATTACHMENT|C:\\Users\\natalia.heit\\git\\KtlnNCDWeb\\NCDWeb\\Reports\\20230418_092913\\03-Transferencias\\Transferencias\\20230418_092918\\1681821227963.png]]
+
+2023-04-18 09:33:48 - [TEST_STEP][PASSED] - Start tear down : fTakeFailScreenshot: Method 'fTakeFailScreenshot' complete successfully
+
+2023-04-18 09:33:48 - [TEST_STEP][PASSED] - pkgUtilities.kwyUtility.fFailStatus("Screenshot/Fails/TRF02-TransferenciaPropiasCredicoopDolaresPOS.png"): pkgUtilities.kwyUtility.fFailStatus is PASSED
+
+2023-04-18 09:33:48 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\natalia.heit\\git\\KtlnNCDWeb\\NCDWeb\\Reports\\20230418_092913\\03-Transferencias\\Transferencias\\20230418_092918\\Screenshot/Fails/TRF02-TransferenciaPropiasCredicoopDolaresPOS.png]]
+
+2023-04-18 09:33:51 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2023-04-18 09:33:52 - [MESSAGE][PASSED] - Browser is closed
+
+2023-04-18 09:33:52 - [MESSAGE][PASSED] - pkgUtilities.kwyUtility.fFailStatus is PASSED
+
+2023-04-18 09:33:52 - [MESSAGE][PASSED] - Method 'fTakeFailScreenshot' complete successfully]]></system-out>
+         <system-err><![CDATA[2023-04-18 09:33:05 - [TEST_CASE][FAILED] - Test Cases/04-Transferencias/TRF02-Transferencia Propias Credicoop Dolares POS: Test Cases/04-Transferencias/TRF02-Transferencia Propias Credicoop Dolares POS FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/02-Dashboard/lnkDsbTransferencias'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at TRF02-Transferencia Propias Credicoop Dolares POS.run(TRF02-Transferencia Propias Credicoop Dolares POS:32)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1681820958248.run(TempTestSuite1681820958248.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/02-Dashboard/lnkDsbTransferencias' located by '//div[@id='frmAccountsLanding_customhamburger_TRANSFERlblAccounts']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1370)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:65)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/04-Transferencias/TRF03-Transferencia Terceros Credicoop Pesos POS" time="46.641" classname="Test Cases/04-Transferencias/TRF03-Transferencia Terceros Credicoop Pesos POS" status="FAILED">
+         <failure type="FAILED" message="Test Cases/04-Transferencias/TRF03-Transferencia Terceros Credicoop Pesos POS FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/02-Dashboard/lnkDsbTransferencias'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at TRF03-Transferencia Terceros Credicoop Pesos POS.run(TRF03-Transferencia Terceros Credicoop Pesos POS:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1681820958248.run(TempTestSuite1681820958248.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/02-Dashboard/lnkDsbTransferencias' located by '//div[@id='frmAccountsLanding_customhamburger_TRANSFERlblAccounts']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1370)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:65)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+"/>
+         <system-out><![CDATA[2023-04-18 09:33:52 - [TEST_CASE][FAILED] - Test Cases/04-Transferencias/TRF03-Transferencia Terceros Credicoop Pesos POS: Test Cases/04-Transferencias/TRF03-Transferencia Terceros Credicoop Pesos POS FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/02-Dashboard/lnkDsbTransferencias'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at TRF03-Transferencia Terceros Credicoop Pesos POS.run(TRF03-Transferencia Terceros Credicoop Pesos POS:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1681820958248.run(TempTestSuite1681820958248.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/02-Dashboard/lnkDsbTransferencias' located by '//div[@id='frmAccountsLanding_customhamburger_TRANSFERlblAccounts']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1370)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:65)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+
+
+2023-04-18 09:33:52 - [TEST_STEP][PASSED] - vTipoTrf = findTestData("03-Transferencias/TipoTrf").getValue(2, 3): null
+
+2023-04-18 09:33:53 - [TEST_STEP][PASSED] - vClaveBypass = findTestData("02-Usuarios/SetUsers-FF").getValue(5, 2): null
+
+2023-04-18 09:33:53 - [TEST_STEP][PASSED] - vValorMonto = "1": null
+
+2023-04-18 09:33:53 - [TEST_STEP][PASSED] - pkgUtilities.kwyUtility.Server("Internet"): pkgUtilities.kwyUtility.Server is PASSED
+
+2023-04-18 09:33:54 - [MESSAGE][PASSED] - pkgUtilities.kwyUtility.Server is PASSED
+
+2023-04-18 09:33:54 - [TEST_STEP][PASSED] - pkgUtilities.kwyUtility.Login(Cliente1DNI, Cliente1Clave, Cliente1Usuario): pkgUtilities.kwyUtility.Login is PASSED
+
+2023-04-18 09:33:54 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2023-04-18 09:33:54 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2023-04-18 09:33:59 - [MESSAGE][PASSED] - Browser is opened with url: 'https://ncdtesting.bancocredicoop.coop/apps/NCDBC/#_frmLogin'
+
+2023-04-18 09:33:59 - [MESSAGE][PASSED] - Current window maximized
+
+2023-04-18 09:33:59 - [MESSAGE][PASSED] - Object 'Object Repository/01-Login/btnLgnCerrarBanner' is visible
+
+2023-04-18 09:34:00 - [MESSAGE][PASSED] - Object: 'Object Repository/01-Login/btnLgnCerrarBanner' is clicked on
+
+2023-04-18 09:34:01 - [MESSAGE][PASSED] - Text '13976407' is set on object 'Object Repository/01-Login/txtLgnDNI'
+
+2023-04-18 09:34:02 - [MESSAGE][PASSED] - Text 'Testing8' is set on object 'Object Repository/01-Login/txtLgnClave'
+
+2023-04-18 09:34:02 - [MESSAGE][PASSED] - Text 'ale13' is set on object 'Object Repository/01-Login/txtLgnUsuario'
+
+2023-04-18 09:34:03 - [MESSAGE][PASSED] - Object: 'Object Repository/01-Login/btnLgnIngresar' is clicked on
+
+2023-04-18 09:34:03 - [MESSAGE][PASSED] - pkgUtilities.kwyUtility.Login is PASSED
+
+2023-04-18 09:34:03 - [TEST_STEP][FAILED] - click(findTestObject("Object Repository/02-Dashboard/lnkDsbTransferencias")): Unable to click on object 'Object Repository/02-Dashboard/lnkDsbTransferencias' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/02-Dashboard/lnkDsbTransferencias'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at TRF03-Transferencia Terceros Credicoop Pesos POS.run(TRF03-Transferencia Terceros Credicoop Pesos POS:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1681820958248.run(TempTestSuite1681820958248.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/02-Dashboard/lnkDsbTransferencias' located by '//div[@id='frmAccountsLanding_customhamburger_TRANSFERlblAccounts']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1370)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:65)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Script1680178972292.run(Script1680178972292.groovy:33)
+	... 13 more
+)
+
+2023-04-18 09:34:34 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[@id='frmAccountsLanding_customhamburger_TRANSFERlblAccounts']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2023-04-18 09:34:34 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/02-Dashboard/lnkDsbTransferencias' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/02-Dashboard/lnkDsbTransferencias'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at TRF03-Transferencia Terceros Credicoop Pesos POS.run(TRF03-Transferencia Terceros Credicoop Pesos POS:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1681820958248.run(TempTestSuite1681820958248.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/02-Dashboard/lnkDsbTransferencias' located by '//div[@id='frmAccountsLanding_customhamburger_TRANSFERlblAccounts']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1370)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:65)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Script1680178972292.run(Script1680178972292.groovy:33)
+	... 13 more
+)
+[[ATTACHMENT|C:\\Users\\natalia.heit\\git\\KtlnNCDWeb\\NCDWeb\\Reports\\20230418_092913\\03-Transferencias\\Transferencias\\20230418_092918\\1681821274564.png]]
+
+2023-04-18 09:34:34 - [TEST_STEP][PASSED] - Start tear down : fTakeFailScreenshot: Method 'fTakeFailScreenshot' complete successfully
+
+2023-04-18 09:34:34 - [TEST_STEP][PASSED] - pkgUtilities.kwyUtility.fFailStatus("Screenshot/Fails/TRF03-TransferenciaTercerosCredicoopPesosPOS.png"): pkgUtilities.kwyUtility.fFailStatus is PASSED
+
+2023-04-18 09:34:35 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\natalia.heit\\git\\KtlnNCDWeb\\NCDWeb\\Reports\\20230418_092913\\03-Transferencias\\Transferencias\\20230418_092918\\Screenshot/Fails/TRF03-TransferenciaTercerosCredicoopPesosPOS.png]]
+
+2023-04-18 09:34:38 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2023-04-18 09:34:39 - [MESSAGE][PASSED] - Browser is closed
+
+2023-04-18 09:34:39 - [MESSAGE][PASSED] - pkgUtilities.kwyUtility.fFailStatus is PASSED
+
+2023-04-18 09:34:39 - [MESSAGE][PASSED] - Method 'fTakeFailScreenshot' complete successfully]]></system-out>
+         <system-err><![CDATA[2023-04-18 09:33:52 - [TEST_CASE][FAILED] - Test Cases/04-Transferencias/TRF03-Transferencia Terceros Credicoop Pesos POS: Test Cases/04-Transferencias/TRF03-Transferencia Terceros Credicoop Pesos POS FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/02-Dashboard/lnkDsbTransferencias'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at TRF03-Transferencia Terceros Credicoop Pesos POS.run(TRF03-Transferencia Terceros Credicoop Pesos POS:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1681820958248.run(TempTestSuite1681820958248.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/02-Dashboard/lnkDsbTransferencias' located by '//div[@id='frmAccountsLanding_customhamburger_TRANSFERlblAccounts']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1370)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:65)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2023-04-18 09:31:51 - [TEST_SUITE][FAILED] - Transferencias: Test Cases/04-Transferencias/TRF02-Transferencia Propias Credicoop Dolares POS FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/02-Dashboard/lnkDsbTransferencias'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at TRF02-Transferencia Propias Credicoop Dolares POS.run(TRF02-Transferencia Propias Credicoop Dolares POS:32)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1681820958248.run(TempTestSuite1681820958248.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/02-Dashboard/lnkDsbTransferencias' located by '//div[@id='frmAccountsLanding_customhamburger_TRANSFERlblAccounts']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1370)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:65)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-out>
+      <system-err><![CDATA[2023-04-18 09:31:51 - [TEST_SUITE][FAILED] - Transferencias: Test Cases/04-Transferencias/TRF02-Transferencia Propias Credicoop Dolares POS FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/02-Dashboard/lnkDsbTransferencias'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at TRF02-Transferencia Propias Credicoop Dolares POS.run(TRF02-Transferencia Propias Credicoop Dolares POS:32)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1681820958248.run(TempTestSuite1681820958248.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/02-Dashboard/lnkDsbTransferencias' located by '//div[@id='frmAccountsLanding_customhamburger_TRANSFERlblAccounts']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1370)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:65)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-err>
+   </testsuite>
+</testsuites>
