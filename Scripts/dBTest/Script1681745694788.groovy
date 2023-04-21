@@ -24,15 +24,25 @@ import java.sql.Statement
 
 import javax.swing.JOptionPane
 
+//Set de datos de prueba
+String vQuery = "SELECT * FROM UsuariosFF WHERE NroDNI = '20144835'"
+String vDNI = null
+String vUsuario = null
+String vClave = null
+
+//Conecta a base de datos
 CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
 
-ResultSet vResult = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'("SELECT * FROM Server WHERE Nombre = 'Rmobile'")
-String vValue1 = vResult.getString(1)
-String vValue2 = vResult.getString(2)
-String vValue3 = vResult.getString(3)
+//Consulta a la base de datos
+ResultSet vResult = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery)
+vDNI = vResult.getString(2)
+vUsuario = vResult.getString(3)
+vClave = vResult.getString(4)
 
-JOptionPane.showMessageDialog(null,vValue1)
-JOptionPane.showMessageDialog(null,vValue2)
-JOptionPane.showMessageDialog(null,vValue3)
-
+//Cierre de la conexion
 CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
+
+println(vDNI)
+println(vUsuario)
+println(vClave)
+//------------------------------------------------------------------------//
