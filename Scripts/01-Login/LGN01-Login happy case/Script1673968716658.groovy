@@ -25,7 +25,7 @@ import java.sql.Statement
 import com.kms.katalon.core.configuration.RunConfiguration
 import javax.swing.JOptionPane
 
-//Set de datos de prueba
+//----------- SET DATOS DE PRUEBA dB -------------------------------------------
 String vQuery = "SELECT * FROM UsuariosFF WHERE NroDNI = '20144835'"
 String vDNI = null
 String vUsuario = null
@@ -42,6 +42,7 @@ vClave = vResult.getString(4)
 
 //Cierre de la conexion
 CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
+//--------------------------------------------------------------------------------
 
 //Se define la URL
 CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
