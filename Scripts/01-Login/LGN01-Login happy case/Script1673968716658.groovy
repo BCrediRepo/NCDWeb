@@ -23,18 +23,12 @@ import java.sql.ResultSet
 import java.sql.Statement
 
 import javax.swing.JOptionPane
-/*
+
 //Set de datos de prueba
-//String vQuery = "SELECT * FROM UsuariosFF WHERE NroDNI = 20144835"
-def vQuery = "SELECT * FROM UsuariosFF WHERE NroDNI = 20144835"
-//String vDNI
-//String vClave
-//String vUsuario
-def vDNI 
-def vClave
-def vUsuario
-
-
+def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 20144835"
+String vDNI = null
+String vClave = null
+String vUsuario = null
 
 //Conecta a base de datos
 CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
@@ -51,15 +45,9 @@ JOptionPane.showMessageDialog(null, vClave)
 
 //Cierre de la conexion
 CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
-*/
 
 //Se define la URL
 CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
-
-//Datos de login
-String vDNI = findTestData('02-Usuarios/SetUsers-FF').getValue(3,1)
-String vClave = findTestData('02-Usuarios/SetUsers-FF').getValue(5,1)
-String vUsuario = findTestData('02-Usuarios/SetUsers-FF').getValue(4,1)
 
 //Inicia el browser
 WebUI.openBrowser(GlobalVariable.ServerUsado)

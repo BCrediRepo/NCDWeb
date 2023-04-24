@@ -28,63 +28,63 @@ import javax.swing.JOptionPane
 import internal.GlobalVariable
 
 public class kwySQL {
-	
+
 	private static Connection connection = null;
-	
-		/**
-		 * Abre la conexión con la dB
-		 * @param dataFile path absoluto
-		 * @return instancia de java.sql.Connection
-		 **/
-		@Keyword
-		def connectDB(){
-			//Parametros de conexion
-			String dBServer = findTestData('00-Database/dBase-Params').getValue(2,1)
-			String dBName = findTestData('00-Database/dBase-Params').getValue(2,2)
-			String dBUser = findTestData('00-Database/dBase-Params').getValue(2,3)
-			String dBPswd = findTestData('00-Database/dBase-Params').getValue(2,4)
-	
-			//String de conexion
-			String dBConnString = "jdbc:mysql://" + dBServer + ":" + "/" + dBName
-	
-			Class.forName("com.mysql.jdbc.Driver")
-			if(connection != null && !connection.isClosed()){
-				connection.close()
-			}
-			connection = DriverManager.getConnection(dBConnString, dBUser, dBPswd)
-			//connection = DriverManager.getConnection('jdbc:mysql://aws.connect.psdb.cloud/ncdtestdata','g0xzdwatq04il432urws','pscale_pw_xUQ9FSdLakmfBAonylOYDQTgZE8hNUzjS1hrkrbaw0d')
-			return connection
+
+	/**
+	 * Abre la conexión con la dB
+	 * @param dataFile path absoluto
+	 * @return instancia de java.sql.Connection
+	 **/
+	@Keyword
+	def connectDB(){
+		//Parametros de conexion
+		String dBServer = findTestData('00-Database/dBase-Params').getValue(2,1)
+		String dBName = findTestData('00-Database/dBase-Params').getValue(2,2)
+		String dBUser = findTestData('00-Database/dBase-Params').getValue(2,3)
+		String dBPswd = findTestData('00-Database/dBase-Params').getValue(2,4)
+
+		//String de conexion
+		String dBConnString = "jdbc:mysql://" + dBServer + ":" + "/" + dBName
+
+		Class.forName("com.mysql.jdbc.Driver")
+		if(connection != null && !connection.isClosed()){
+			connection.close()
 		}
-	
-		/**
-		 * Ejecuta un consulta SQL sobre la dB
-		 * @param query SQL como string
-		 **/
-		@Keyword
-		def executeQuery(String queryString) {
-			Statement stm = connection.createStatement()
-			ResultSet rs = stm.executeQuery(queryString)
-			rs.next()
-	
-			return rs
+		connection = DriverManager.getConnection(dBConnString, dBUser, dBPswd)
+		//connection = DriverManager.getConnection('jdbc:mysql://aws.connect.psdb.cloud/ncdtestdata','g0xzdwatq04il432urws','pscale_pw_xUQ9FSdLakmfBAonylOYDQTgZE8hNUzjS1hrkrbaw0d')
+		return connection
+	}
+
+	/**
+	 * Ejecuta un consulta SQL sobre la dB
+	 * @param query SQL como string
+	 **/
+	@Keyword
+	def executeQuery(String queryString) {
+		Statement stm = connection.createStatement()
+		ResultSet rs = stm.executeQuery(queryString)
+		rs.next()
+
+		return rs
+	}
+
+	@Keyword
+	def closeDatabaseConnection() {
+		if(connection != null && !connection.isClosed()){
+			connection.close()
 		}
-	
-		@Keyword
-		def closeDatabaseConnection() {
-			if(connection != null && !connection.isClosed()){
-				connection.close()
-			}
-			connection = null
-		}
-	
-		/**
-		 * Ejecuta INSERT/UPDATE/DELETE/COUNT/SUM.. en la dB
-		 * @param query SQL como string
-		 */
-		@Keyword
-		def execute(String queryString) {
-			Statement stm = connection.createStatement()
-			boolean result = stm.execute(queryString)
-			return result
-		}
+		connection = null
+	}
+
+	/**
+	 * Ejecuta INSERT/UPDATE/DELETE/COUNT/SUM.. en la dB
+	 * @param query SQL como string
+	 */
+	@Keyword
+	def execute(String queryString) {
+		Statement stm = connection.createStatement()
+		boolean result = stm.execute(queryString)
+		return result
+	}
 }
