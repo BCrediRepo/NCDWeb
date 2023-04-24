@@ -6,9 +6,9 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>fc717fae-1aae-487a-b7c8-153ee9450e4b</dataFileGUID>
-   <dataSourceUrl>C:\Users\natalia.heit\git\NCD\TestData\Data.xlsx</dataSourceUrl>
+   <dataSourceUrl>TestData/Data.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
-   <isInternalPath>false</isInternalPath>
+   <isInternalPath>true</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
    <sheetName>DbTables</sheetName>

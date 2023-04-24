@@ -39,10 +39,6 @@ vDNI = vResult.getString(2)
 vUsuario = vResult.getString(3)
 vClave = vResult.getString(4)
 
-JOptionPane.showMessageDialog(null, vDNI)
-JOptionPane.showMessageDialog(null, vUsuario)
-JOptionPane.showMessageDialog(null, vClave)
-
 //Cierre de la conexion
 CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
 
