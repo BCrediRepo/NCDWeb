@@ -1,3 +1,180 @@
 {
-  "brokenTestObjects" : [ ]
+  "brokenTestObjects": [
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/02-Dashboard/lnkDsbSalir",
+      "brokenLocator": "//div[@id\u003d\u0027frmAccountsLanding_customhamburger_LogOutlblAccounts\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027\u0027])[2]/preceding::div[8]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/02-Dashboard/lnkDsbSalir_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/02-Dashboard/btnSalirMsgConfirmacionAceptar",
+      "brokenLocator": "//input[@id\u003d\u0027frmAccountsLanding_CustomPopup_btnYes\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//div[6]/input",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/02-Dashboard/btnSalirMsgConfirmacionAceptar_position.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/02-Dashboard/lnkDsbMisOperaciones",
+      "brokenLocatorMethod": "BASIC",
+      "proposedLocator": "//div[@id\u003d\u0027frmAccountsLanding_customhamburger_OPERATIONSlblAccounts\u0027]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/02-Dashboard/lnkDsbMisOperaciones_XPATH.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/07-Operaciones/mnuOpDetalle",
+      "brokenLocatorMethod": "BASIC",
+      "proposedLocator": "//div[@id\u003d\u0027flxOperationsRow_lblSubMenuIcon\u0027]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/07-Operaciones/mnuOpDetalle_XPATH.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/07-Operaciones/txtNumeroOperacion",
+      "brokenLocator": "//div[@id\u003d\u0027flxOperationsRow_lblOperation\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Transferencia realizada\u0027])[1]/preceding::div[5]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/07-Operaciones/txtNumeroOperacion_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/07-Operaciones/txtTipoOperacion",
+      "brokenLocator": "//div[@id\u003d\u0027flxOperationsRow_lblOperationType\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Transferencia realizada\u0027])[1]/preceding::div[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/07-Operaciones/txtImporte",
+      "brokenLocator": "//div[@id\u003d\u0027flxOperationsRow_lblImport\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//*/text()[normalize-space(.)\u003d\u0027$ 1,00\u0027]/parent::*",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/07-Operaciones/txtImporte_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/07-Operaciones/txtOpVerDetalle",
+      "brokenLocator": "//div[@id\u003d\u0027frmOperationsHomeBccl_flxOperationsRowFloatingMenu_lblviewDetail\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Número de la Tarjeta\u0027])[1]/preceding::div[3]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/02-Dashboard/lnkDsbMisOperaciones",
+      "brokenLocatorMethod": "BASIC",
+      "proposedLocator": "//div/div[9]/div/div/div[2]/div",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/02-Dashboard/lnkDsbPagos y Recargas",
+      "brokenLocator": "//div[@id\u003d\u0027frmAccountsLanding_customhamburger_PaymentsAndRechargeslblAccounts\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//div[2]/div/div/div/div/div[4]/div/div/div[2]/div",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/08-Pagos y Recargas/txtInternetTelecomunicaciones",
+      "brokenLocator": "//div[@id\u003d\u0027frmBcclServicesPay_AddEntePanel_AddEnte_SearchRubros_flxOptionCommon36lblOptionTitle\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027\u0027])[33]/following::div[8]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/08-Pagos y Recargas/txtInternetTelecomunicaciones_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/08-Pagos y Recargas/lnkECOWIFI",
+      "brokenLocator": "//span[@id\u003d\u0027flxTableRow_26841478937622967_2\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//*/text()[normalize-space(.)\u003d\u0027ECOWIFI\u0027]/parent::*",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/08-Pagos y Recargas/lnkECOWIFI_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/04-Transferencias/02-Nueva Transferencia/lblNombreTrx",
+      "brokenLocator": "//div[@id\u003d\u0027frmBcclCreateTransfer_BeneficiaryTransfer_lblAccountNameSaved\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Label\u0027])[17]/following::div[10]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/04-Transferencias/02-Nueva Transferencia/lblNumeroTrx",
+      "brokenLocator": "//div[@id\u003d\u0027frmBcclCreateTransfer_BeneficiaryTransfer_lblAccountNumberSaved\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Número\u0027])[1]/following::div[2]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/04-Transferencias/02-Nueva Transferencia/lblDenominacionTrx",
+      "brokenLocator": "//div[@id\u003d\u0027frmBcclCreateTransfer_BeneficiaryTransfer_lblAccountDenominationSaved\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027CA $ 119-011835/9\u0027])[1]/following::div[7]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/04-Transferencias/02-Nueva Transferencia/lblDenominacionTrx_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/04-Transferencias/02-Nueva Transferencia/txtTrxMoneda",
+      "brokenLocatorMethod": "BASIC",
+      "proposedLocator": "(//div[@id\u003d\u0027flexcontainer_wrapper\u0027]/div)[265]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/08-Pagos y Recargas/lnkMetrogas",
+      "brokenLocator": "//span[@id\u003d\u0027flxTableRow_9894864606579744_0\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027\u0027])[2]/following::span[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/08-Pagos y Recargas/lnkMetrogas_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/04-Transferencias/lnkTrfCuentaBenefJudicialPesos",
+      "brokenLocator": "id(\"frmBcclBeneficiaryAgenda_segBeneficiaries\")/ul[1]/li[@class\u003d\"seg2Normal\"]/div[@id\u003d\"flexcontainer_wrapper\"]/div[@id\u003d\"flxBeneficiariesRow_flxBeneficiariesRow\"]/div[@class\u003d\"kcell middlecenteralignsknFlxCursorPointer\"]/div[@id\u003d\"flexcontainer_wrapper\"]/div[@id\u003d\"flxBeneficiariesRow_flxBeneficiaryNameCbu\"]/div[@class\u003d\"kcell middlecenteralignsknLblCbuBeneficiary\"]/div[@id\u003d\"flxBeneficiariesRow_lblCbu\"][count(. | //*[@kcontainerid \u003d \u0027segBeneficiaries\u0027 and @kuid \u003d \u0027537F75E0-1302-475B-96FD-856962D7C49A\u0027 and @class \u003d \u0027 sknLblCbuBeneficiary cntmiddleleftalign disableSelection\u0027 and (text() \u003d \u0027CBU/CVU 19100025-55100201129185\u0027 or . \u003d \u0027CBU/CVU 19100025-55100201129185\u0027)]) \u003d count(//*[@kcontainerid \u003d \u0027segBeneficiaries\u0027 and @kuid \u003d \u0027537F75E0-1302-475B-96FD-856962D7C49A\u0027 and @class \u003d \u0027 sknLblCbuBeneficiary cntmiddleleftalign disableSelection\u0027 and (text() \u003d \u0027CBU/CVU 19100025-55100201129185\u0027 or . \u003d \u0027CBU/CVU 19100025-55100201129185\u0027)])]",
+      "brokenLocatorMethod": "BASIC",
+      "proposedLocator": "//div[@id\u003d\u0027flxBeneficiariesRow_lblCbu\u0027]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/04-Transferencias/lnkTrfCuentaBenefJudicialPesos_XPATH.png"
+    }
+  ]
 }

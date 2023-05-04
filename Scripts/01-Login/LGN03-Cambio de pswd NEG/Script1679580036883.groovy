@@ -17,22 +17,76 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+import java.sql.Connection
+import java.sql.DriverManager
+import java.sql.ResultSet
+import java.sql.Statement
+
+import javax.swing.JOptionPane
+
+//-------------------Conecta a base de datos--------------------------------------------
+def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 10833645"
+String vDNI = null
+String vClave = null
+String vUsuario = null
+String vClave1 = "Testing7"
+String vClave2 = "Testing8"
+String vtxtNoCoincide = ""
+
+CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
+
+//Consulta a la base de datos
+ResultSet vResult = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery)
+vDNI = vResult.getString(2)
+vUsuario = vResult.getString(3)
+vClave = vResult.getString(4)
+
+//Cierre de la conexion
+CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
+//---------------------------------------------------------------------------------------------------------------------
+
 //Se define la URL
 CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
 
-//Datos de login
-def vDNI = findTestData('02-Usuarios/Users-FF').getValue(3,1)
-def vClave = findTestData('02-Usuarios/Users-FF').getValue(5,1)
-def vUsuario = findTestData('02-Usuarios/Users-FF').getValue(4,1)
-
 //Inicia el browser
-
 WebUI.openBrowser(GlobalVariable.ServerUsado)
 WebUI.maximizeWindow()
 
+//Cierra el Banner del inicio
+WebUI.click(findTestObject('Object Repository/01-Login/btnLgnCerrarBanner'))
+
+//Ingresa los datos del usuario
 WebUI.setText(findTestObject('Object Repository/01-Login/txtLgnDNI'), vDNI)
 WebUI.setText(findTestObject('Object Repository/01-Login/txtLgnClave'), vClave)
 WebUI.setText(findTestObject('Object Repository/01-Login/txtLgnUsuario'), vUsuario)
 
 WebUI.click(findTestObject('Object Repository/01-Login/btnLgnIngresar'))
+
+//Cliquea en el menu desplegable
+WebUI.click(findTestObject('Object Repository/01-Login/mnuUsuario'))
+WebUI.click(findTestObject('Object Repository/01-Login/txtCambioClave'))
+
+//Completa los Campos solicitados
+WebUI.click(findTestObject('Object Repository/01-Login/txtClaveActual'))
+WebUI.setText(findTestObject('Object Repository/01-Login/txtClaveActual'), vClave)
+WebUI.click(findTestObject('Object Repository/01-Login/txtNuevaClave'))
+WebUI.setText(findTestObject('Object Repository/01-Login/txtNuevaClave'), vClave1)
+WebUI.click(findTestObject('Object Repository/01-Login/txtReingresarClave'))
+WebUI.setText(findTestObject('Object Repository/01-Login/txtReingresarClave'), vClave2)
+
+//Valida Mensaje de claves no coinciden
+WebUI.verifyElementText(findTestObject('Object Repository/01-Login/lblClaveNoCoincide'), vtxtNoCoincide)
+
+//---------------------------------------------------------------------------------------------------------------------
+
+//Control de fin de script
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/LGN03-CambioPasswordNEG.png')
+}
+//Control de pass solo para Login
+@com.kms.katalon.core.annotation.TearDownIfPassed
+void fPassScript() {
+	CustomKeywords.'pkgUtilities.kwyUtility.fLoginPassStatus'()
+}
 

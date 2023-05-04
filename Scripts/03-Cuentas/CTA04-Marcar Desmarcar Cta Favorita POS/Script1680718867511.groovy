@@ -17,11 +17,42 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+import java.sql.Connection
+import java.sql.DriverManager
+import java.sql.ResultSet
+import java.sql.Statement
+
+import javax.swing.JOptionPane
+
+//-------------------Conecta a base de datos--------------------------------------------
+def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 13976407"
+def vQuery2 = "SELECT * FROM Toast WHERE idToast = 'Toa-CuentaFavorita'"
+
+String vDNI = null
+String vClave = null
+String vUsuario = null
+String vCtaToast = null
+
+CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
+
+//Consulta a la base de datos
+ResultSet vResult = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery)
+ResultSet vResult2 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery2)
+
+vDNI = vResult.getString(2)
+vUsuario = vResult.getString(3)
+vClave = vResult.getString(4)
+vCtaToast = vResult2.getString(2)
+
+//Cierre de la conexion
+CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
+//---------------------------------------------------------------------------------------------------------------------
+
 //Se selecciona el servidor y se cargan los datos
 CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
 
 //Se loguea con el usuario seleccionado
-CustomKeywords.'pkgUtilities.kwyUtility.Login'(GlobalVariable.Cliente1DNI, GlobalVariable.Cliente1Clave, GlobalVariable.Cliente1Usuario)
+CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 
 //Ingresa en la sección Cuentas del Dashboard
 WebUI.verifyElementVisible(findTestObject('Object Repository/02-Dashboard/lnkDsbCuentas'))
@@ -32,22 +63,33 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/03-Cuentas/lblCtasC
 
 //Selecciono una CC como favorita y valido Toast de confirmación
 WebUI.click(findTestObject('Object Repository/03-Cuentas/icoCtaFavoritoCC'))
-//vAlertText = WebUI.getAlertText('Object Repository/03-Cuentas/lblCtaCuentaFavoritaActualizada')
-//WebUI.verifyMatch(vAlertText, 'Tu cuenta favorita fue actualizada.', false)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaCuentaFavoritaActualizada'),vCtaToast)
 
 
 //Selecciono una CA como favorita y valido Toast de confirmación
 WebUI.click(findTestObject('Object Repository/03-Cuentas/icoCtaFavoritoCA'))
-//vAlertText = WebUI.getAlertText('Object Repository/03-Cuentas/lblCtaCuentaFavoritaActualizada')
-//WebUI.verifyMatch(vAlertText, 'Tu cuenta favorita fue actualizada.', false)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaCuentaFavoritaActualizada'),vCtaToast)
+
+//NOTA: REVISAR SCROLL
 
 //Selecciono una CAUSD como favorita y valido Toast de confirmación
-WebUI.scrollToElement(findTestObject('Object Repository/03-Cuentas/icoCtaFavoritaCAUSD'), 10)
-WebUI.click(findTestObject('Object Repository/03-Cuentas/icoCtaFavoritaCAUSD'))
-//vAlertText = WebUI.getAlertText('Object Repository/03-Cuentas/lblCtaCuentaFavoritaActualizada')
-//WebUI.verifyMatch(vAlertText, 'Tu cuenta favorita fue actualizada.', false)
+//WebUI.scrollToElement(findTestObject('Object Repository/03-Cuentas/icoCtaFavoritaCAUSD'), 10)
+//WebUI.click(findTestObject('Object Repository/03-Cuentas/icoCtaFavoritaCAUSD'))
+//WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaCuentaFavoritaActualizada'),vCtaToast)
 
 
+//---------------------------------------------------------------------------------------------------------------------
+//Control de fin de script
+
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/CTA04-MarcarDesmarcarCtaFavorita.png')
+}
+
+@com.kms.katalon.core.annotation.TearDownIfPassed
+void fPassScript() {
+	CustomKeywords.'pkgUtilities.kwyUtility.fPassStatus'()
+}
 
 
 

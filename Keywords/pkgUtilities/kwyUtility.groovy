@@ -17,10 +17,16 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import com.thoughtworks.selenium.webdriven.commands.GetText
 
 import internal.GlobalVariable
 
 import javax.swing.JOptionPane
+
+import java.sql.Connection
+import java.sql.DriverManager
+import java.sql.ResultSet
+import java.sql.Statement
 
 public class kwyUtility {
 
@@ -41,33 +47,6 @@ public class kwyUtility {
 
 			GlobalVariable.ServerUsado = 'https://'+ GlobalVariable.URLFF+'/'+ GlobalVariable.TestServer
 			GlobalVariable.LogServerUsado = 'FF'
-
-			//Carga de Usuarios preconfigurados
-			GlobalVariable.AdminDNI = findTestData('02-Usuarios/SetUsers-FF').getValue(3,1)
-			GlobalVariable.AdminClave = findTestData('02-Usuarios/SetUsers-FF').getValue(5,1)
-			GlobalVariable.AdminUsuario = findTestData('02-Usuarios/SetUsers-FF').getValue(4,1)
-			GlobalVariable.AdminByPass = findTestData('02-Usuarios/SetUsers-FF').getValue(5,1)
-
-			GlobalVariable.Cliente1DNI = findTestData('02-Usuarios/SetUsers-FF').getValue(3,2)
-			GlobalVariable.Cliente1Clave = findTestData('02-Usuarios/SetUsers-FF').getValue(5,2)
-			GlobalVariable.Cliente1Usuario = findTestData('02-Usuarios/SetUsers-FF').getValue(4,2)
-			GlobalVariable.Cliente1ByPass = findTestData('02-Usuarios/SetUsers-FF').getValue(5,2)
-
-			GlobalVariable.Cliente2DNI = findTestData('02-Usuarios/SetUsers-FF').getValue(3,3)
-			GlobalVariable.Cliente2Clave = findTestData('02-Usuarios/SetUsers-FF').getValue(5,3)
-			GlobalVariable.Cliente2Usuario = findTestData('02-Usuarios/SetUsers-FF').getValue(4,3)
-			GlobalVariable.Cliente2ByPass = findTestData('02-Usuarios/SetUsers-FF').getValue(5,3)
-
-			GlobalVariable.Cliente3DNI = findTestData('02-Usuarios/SetUsers-FF').getValue(3,4)
-			GlobalVariable.Cliente3Clave = findTestData('02-Usuarios/SetUsers-FF').getValue(5,4)
-			GlobalVariable.Cliente3Usuario = findTestData('02-Usuarios/SetUsers-FF').getValue(4,4)
-			GlobalVariable.Cliente3ByPass = findTestData('02-Usuarios/SetUsers-FF').getValue(5,4)
-
-			GlobalVariable.Cliente4DNI = findTestData('02-Usuarios/SetUsers-FF').getValue(3,5)
-			GlobalVariable.Cliente4Clave = findTestData('02-Usuarios/SetUsers-FF').getValue(5,5)
-			GlobalVariable.Cliente4Usuario = findTestData('02-Usuarios/SetUsers-FF').getValue(4,5)
-			GlobalVariable.Cliente4ByPass = findTestData('02-Usuarios/SetUsers-FF').getValue(5,5)
-
 		}
 
 
@@ -75,32 +54,6 @@ public class kwyUtility {
 
 			GlobalVariable.ServerUsado = 'https://'+ GlobalVariable.URLRMob+'/'+ GlobalVariable.TestServer
 			GlobalVariable.LogServerUsado = 'RMobile'
-
-			//Carga de Usuarios preconfigurados
-			GlobalVariable.AdminDNI = findTestData('02-Usuarios/SetUsers-RM').getValue(3,1)
-			GlobalVariable.AdminClave = findTestData('02-Usuarios/SetUsers-RM').getValue(5,1)
-			GlobalVariable.AdminUsuario = findTestData('02-Usuarios/SetUsers-RM').getValue(4,1)
-			GlobalVariable.AdminByPass = findTestData('02-Usuarios/SetUsers-RM').getValue(5,1)
-
-			GlobalVariable.Cliente1DNI = findTestData('02-Usuarios/SetUsers-RM').getValue(3,2)
-			GlobalVariable.Cliente1Clave = findTestData('02-Usuarios/SetUsers-RM').getValue(5,2)
-			GlobalVariable.Cliente1Usuario = findTestData('02-Usuarios/SetUsers-RM').getValue(4,2)
-			GlobalVariable.Cliente1ByPass = findTestData('02-Usuarios/SetUsers-RM').getValue(5,2)
-
-			GlobalVariable.Cliente2DNI = findTestData('02-Usuarios/SetUsers-RM').getValue(3,3)
-			GlobalVariable.Cliente2Clave = findTestData('02-Usuarios/SetUsers-RM').getValue(5,3)
-			GlobalVariable.Cliente2Usuario = findTestData('02-Usuarios/SetUsers-RM').getValue(4,3)
-			GlobalVariable.Cliente2ByPass = findTestData('02-Usuarios/SetUsers-RM').getValue(5,3)
-
-			GlobalVariable.Cliente3DNI = findTestData('02-Usuarios/SetUsers-RM').getValue(3,4)
-			GlobalVariable.Cliente3Clave = findTestData('02-Usuarios/SetUsers-RM').getValue(5,4)
-			GlobalVariable.Cliente3Usuario = findTestData('02-Usuarios/SetUsers-RM').getValue(4,4)
-			GlobalVariable.Cliente3ByPass = findTestData('02-Usuarios/SetUsers-RM').getValue(5,4)
-
-			GlobalVariable.Cliente4DNI = findTestData('02-Usuarios/SetUsers-RM').getValue(3,5)
-			GlobalVariable.Cliente4Clave = findTestData('02-Usuarios/SetUsers-RM').getValue(5,5)
-			GlobalVariable.Cliente4Usuario = findTestData('02-Usuarios/SetUsers-RM').getValue(4,5)
-			GlobalVariable.Cliente4ByPass = findTestData('02-Usuarios/SetUsers-RM').getValue(5,5)
 		}
 
 
@@ -108,66 +61,11 @@ public class kwyUtility {
 
 			GlobalVariable.ServerUsado = 'https://'+ GlobalVariable.URLInternet+'/'+ GlobalVariable.TestServer
 			GlobalVariable.LogServerUsado = 'Internet'
-
-			//Carga de Usuarios preconfigurados
-			GlobalVariable.AdminDNI = findTestData('02-Usuarios/SetUsers-FF').getValue(3,1)
-			GlobalVariable.AdminClave = findTestData('02-Usuarios/SetUsers-FF').getValue(5,1)
-			GlobalVariable.AdminUsuario = findTestData('02-Usuarios/SetUsers-FF').getValue(4,1)
-			GlobalVariable.AdminByPass = findTestData('02-Usuarios/SetUsers-FF').getValue(5,1)
-
-			GlobalVariable.Cliente1DNI = findTestData('02-Usuarios/SetUsers-FF').getValue(3,2)
-			GlobalVariable.Cliente1Clave = findTestData('02-Usuarios/SetUsers-FF').getValue(5,2)
-			GlobalVariable.Cliente1Usuario = findTestData('02-Usuarios/SetUsers-FF').getValue(4,2)
-			GlobalVariable.Cliente1ByPass = findTestData('02-Usuarios/SetUsers-FF').getValue(5,2)
-
-			GlobalVariable.Cliente2DNI = findTestData('02-Usuarios/SetUsers-FF').getValue(3,3)
-			GlobalVariable.Cliente2Clave = findTestData('02-Usuarios/SetUsers-FF').getValue(5,3)
-			GlobalVariable.Cliente2Usuario = findTestData('02-Usuarios/SetUsers-FF').getValue(4,3)
-			GlobalVariable.Cliente2ByPass = findTestData('02-Usuarios/SetUsers-FF').getValue(5,3)
-
-			GlobalVariable.Cliente3DNI = findTestData('02-Usuarios/SetUsers-FF').getValue(3,4)
-			GlobalVariable.Cliente3Clave = findTestData('02-Usuarios/SetUsers-FF').getValue(5,4)
-			GlobalVariable.Cliente3Usuario = findTestData('02-Usuarios/SetUsers-FF').getValue(4,4)
-			GlobalVariable.Cliente3ByPass = findTestData('02-Usuarios/SetUsers-FF').getValue(5,4)
-
-			GlobalVariable.Cliente4DNI = findTestData('02-Usuarios/SetUsers-FF').getValue(3,5)
-			GlobalVariable.Cliente4Clave = findTestData('02-Usuarios/SetUsers-FF').getValue(5,5)
-			GlobalVariable.Cliente4Usuario = findTestData('02-Usuarios/SetUsers-FF').getValue(4,5)
-			GlobalVariable.Cliente4ByPass = findTestData('02-Usuarios/SetUsers-FF').getValue(5,5)
 		}
 	}
 	//-----------------------------------------------------------------------------------------------
 
-	/*----------------------------------------------------------------------------------------------*
-	 *Usuario por tipo de Cuenta                                                    				*
-	 *																								*
-	 *Requisito:                                 													*
-	 *																								*
-	 *vCuenta: Pesos o Dolares										 								*	
-	 *----------------------------------------------------------------------------------------------*/
-	/*@Keyword
-	 def Cuenta(def vCuenta) {
-	 if(vCuenta == 'Pesos'){
-	 GlobalVariable.Cliente1DNI = findTestData('02-Usuarios/SetUsers-FF').getValue(3,2)
-	 GlobalVariable.Cliente1Clave = findTestData('02-Usuarios/SetUsers-FF').getValue(5,2)
-	 GlobalVariable.Cliente1Usuario = findTestData('02-Usuarios/SetUsers-FF').getValue(4,2)
-	 GlobalVariable.Cliente1ByPass = findTestData('02-Usuarios/SetUsers-FF').getValue(5,2)
-	 GlobalVariable.Cliente2DNI = findTestData('02-Usuarios/SetUsers-FF').getValue(3,3)
-	 GlobalVariable.Cliente2Clave = findTestData('02-Usuarios/SetUsers-FF').getValue(5,3)
-	 GlobalVariable.Cliente2Usuario = findTestData('02-Usuarios/SetUsers-FF').getValue(4,3)
-	 GlobalVariable.Cliente2ByPass = findTestData('02-Usuarios/SetUsers-FF').getValue(5,3)
-	 }
-	 if(vCuenta == 'Dolares') {
-	 GlobalVariable.Cliente3DNI = findTestData('02-Usuarios/SetUsers-FF').getValue(3,4)
-	 GlobalVariable.Cliente3Clave = findTestData('02-Usuarios/SetUsers-FF').getValue(5,4)
-	 GlobalVariable.Cliente3Usuario = findTestData('02-Usuarios/SetUsers-FF').getValue(4,4)
-	 GlobalVariable.Cliente3ByPass = findTestData('02-Usuarios/SetUsers-FF').getValue(5,4)
-	 GlobalVariable.Cliente4DNI = findTestData('02-Usuarios/SetUsers-FF').getValue(3,5)
-	 GlobalVariable.Cliente4Clave = findTestData('02-Usuarios/SetUsers-FF').getValue(5,5)
-	 GlobalVariable.Cliente4Usuario = findTestData('02-Usuarios/SetUsers-FF').getValue(4,5)
-	 GlobalVariable.Cliente4ByPass = findTestData('02-Usuarios/SetUsers-FF').getValue(5,5)
-	 }
-	 }*/
+
 
 	/*----------------------------------------------------------------------------------------------*
 	 *LOGIN																							*
@@ -186,7 +84,6 @@ public class kwyUtility {
 		WebUI.maximizeWindow()
 
 		//Cierra el Banner del inicio
-		WebUI.verifyElementVisible(findTestObject('Object Repository/01-Login/btnLgnCerrarBanner'))
 		WebUI.click(findTestObject('Object Repository/01-Login/btnLgnCerrarBanner'))
 
 		WebUI.setText(findTestObject('Object Repository/01-Login/txtLgnDNI'), vDNI)
@@ -195,7 +92,6 @@ public class kwyUtility {
 
 		WebUI.click(findTestObject('Object Repository/01-Login/btnLgnIngresar'))
 	}
-	//-----------------------------------------------------------------------------------------------
 
 	/*----------------------------------------------------------------------------------------------*
 	 *LOGOUT CON CONTROL DE ERRORES																	*
@@ -220,8 +116,200 @@ public class kwyUtility {
 	def fLoginPassStatus(){
 		WebUI.closeBrowser()
 	}
-	//-----------------------------------------------------------------------------------------------
+
+	/*----------------------------------------------------------------------------------------------*
+	 *Validación Registro de Operaciones	                                                        *
+	 *----------------------------------------------------------------------------------------------*/
+	@Keyword
+	def comparacionOrigenDetalle(def vTiempo){
+
+		String vOrigenNumeroOperacion = null
+		String vOrigenTipoOperacion = null
+		String vOrigenImporte = null
+		String vDetalleNumeroOperacion = null
+		String vDetalleTipoOperacion = null
+		String vDetalleImporte = null
+
+		//En la pagina del Listado de Operaciones
+		WebUI.waitForPageLoad(vTiempo)
+
+		WebUI.getText(findTestObject('Object Repository/07-Operaciones/txtNumeroOperacion'), vOrigenNumeroOperacion)
+		WebUI.getText(findTestObject('Object Repository/07-Operaciones/txtTipoOperacion'), vOrigenTipoOperacion)
+		WebUI.getText(findTestObject('Object Repository/07-Operaciones/txtImporte'), vOrigenImporte)
+
+		WebUI.click(findTestObject('Object Repository/07-Operaciones/txtOpVerDetalle'))
+
+		//En la pagina del Detalle de la Operacion
+		WebUI.waitForPageLoad(vTiempo)
+
+		WebUI.getText(findTestObject('Object Repository/07-Operaciones/txtNumeroOperacion'), vDetalleNumeroOperacion)
+		WebUI.getText(findTestObject('Object Repository/07-Operaciones/txtTipoOperacion'), vDetalleTipoOperacion)
+		WebUI.getText(findTestObject('Object Repository/07-Operaciones/txtImporte'), vDetalleImporte)
+
+		//Comparacion
+		WebUI.verifyEqual(vOrigenNumeroOperacion, vOrigenNumeroOperacion)
+		WebUI.verifyEqual(vOrigenTipoOperacion, vDetalleTipoOperacion)
+		WebUI.verifyEqual(vOrigenImporte, vDetalleImporte)
+	}
+
+	/*----------------------------------------------------------------------------------------------*
+	 *Validación Detalle Pago de Servicio Sin Base	                                                *
+	 *----------------------------------------------------------------------------------------------*/
+	@Keyword
+	def comparacionListaDetallePago(def vTiempo){
+
+		String vServicioLista = null
+		String vIdentificadorLista = null
+		String vConceptoLista = null
+		String vServicioDetalle = null
+		String vIdentificadorDetalle = null
+		String vConceptoDetalle = null
+
+		//En la pagina del Listado de Servicios a pagar
+		WebUI.scrollToElement(findTestObject('Object Repository/08-Pagos y Recargas/lblServicioLista'), 10)
+		WebUI.waitForPageLoad(vTiempo)
+
+		WebUI.getText(findTestObject('Object Repository/08-Pagos y Recargas/lblServicioLista'), vServicioLista)
+		WebUI.getText(findTestObject('Object Repository/08-Pagos y Recargas/lblIdentificadorLista'), vIdentificadorLista)
+		WebUI.getText(findTestObject('Object Repository/08-Pagos y Recargas/lblConceptoLista'), vConceptoLista)
+
+		WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPagarLista'))
+
+		//En la solapa del detalle del Servicio a pagar
+		WebUI.waitForPageLoad(vTiempo)
+
+		WebUI.getText(findTestObject('Object Repository/08-Pagos y Recargas/lblServicioDetalle'), vServicioDetalle)
+		WebUI.getText(findTestObject('Object Repository/08-Pagos y Recargas/lblIdentificadorDetalle'), vIdentificadorDetalle)
+		WebUI.getText(findTestObject('Object Repository/08-Pagos y Recargas/lblConceptoDetalle'), vConceptoDetalle)
+
+		//Comparacion
+		WebUI.verifyEqual(vServicioLista, vServicioDetalle)
+		WebUI.verifyEqual(vIdentificadorLista, vIdentificadorDetalle)
+		WebUI.verifyEqual(vConceptoLista, vConceptoDetalle)
+	}
+
+	/*----------------------------------------------------------------------------------------------*
+	 *Validación Cuenta Transferencias Cuentas Propias Pesos                                        *
+	 *----------------------------------------------------------------------------------------------*/
+	@Keyword
+	def comparacionListadoTrxPropias(def vTiempo){
+
+		String vMonedaCta
+		String vMonedaTrx
+		String vNombreCta = null
+		String vNumeroCta = null
+		String vDenominacionCta = null
+		String vNombreTrx = null
+		String vNumeroTrx = null
+		String vDenominacionTrx = null
+		String vVerificacion = null
+
+		//En la pagina del Listado de Mis Cuentas
+		WebUI.waitForPageLoad(vTiempo)
+
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblNombreCta'), vNombreCta)
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblNumeroCta'), vNumeroCta)
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblDenominacionCta'), vDenominacionCta)
+		//vMonedaCta = WebUI.getText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/icoMonedaPesos'))
+		GlobalVariable.vMonedaCta = WebUI.getText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/icoMonedaPesos'))
+		//JOptionPane.showMessageDialog(null, vMoneda)
+		WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkTrfCuentaPropiaPesos'))
+
+		//En el formulario de Transferencia
+		WebUI.waitForPageLoad(vTiempo)
+
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblNombreTrx'), vNombreTrx)
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblNumeroTrx'), vNumeroTrx)
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblDenominacionTrx'), vDenominacionTrx)
+		//vMonedaTrx = WebUI.getText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/txtTrxMoneda'))
+		GlobalVariable.vMonedaTrx = WebUI.getText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/txtTrxMoneda'))
+
+		//Comparacion entre datos del Listado y Datos del Formulario de Transferencia
+		WebUI.verifyEqual(vNombreCta, vNombreTrx)
+		WebUI.verifyEqual(vNumeroCta, vNumeroTrx)
+		WebUI.verifyEqual(vDenominacionCta, vDenominacionTrx)
+		WebUI.verifyEqual(vMonedaCta, vMonedaTrx )
+		/*
+		 if (GlobalVariable.vMonedaCta == '$' and GlobalVariable.vMonedaTrx == '$'){
+		 WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkTrfCuentaPropiaPesos'))
+		 }else{
+		 System.out.println("La cuenta seleccionada no corresponde a una moneda en pesos.")
+		 }
+		 */
+	}
+
+
+	/*----------------------------------------------------------------------------------------------*
+	 *Validación Confirmacion Transferencias Cuentas Propias Pesos                                  *
+	 *----------------------------------------------------------------------------------------------*/
+	@Keyword
+	def comparacionMontoTrxPropias(def vTiempo){
+
+		String vCtaOrigenTrx = null
+		String vMontoTrx = null
+		String vCtaDestinoTrx = null
+		String vMontoConfirm = null
+		String vCtaOrigenConfirm = null
+		String vCtaDestinoConfirm = null
+
+		//En el formulario de Transferencia
+		WebUI.waitForPageLoad(vTiempo)
+
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblCtaOrigenTrx'), vCtaOrigenTrx)
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/txtMontoTrx'), vMontoTrx)
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblNumeroTrx'), vCtaDestinoTrx)
+
+		WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnContinuarFormulario'))
+
+		//En la Pantalla de Confirmacion
+		WebUI.waitForPageLoad(vTiempo)
+
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/txtMontoConfirm'), vMontoConfirm)
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblCtaOrigenConfirm'), vCtaOrigenConfirm)
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblCtaDestinoConfirm'), vCtaDestinoConfirm)
+
+		//Comparacion entre el monto del formulario de Transferencia y la pantalla de Confirmacion
+		WebUI.verifyEqual(vMontoTrx, vMontoConfirm)
+		WebUI.verifyEqual(vCtaOrigenTrx, vCtaOrigenConfirm)
+		WebUI.verifyEqual(vCtaDestinoTrx, vCtaDestinoConfirm)
+
+	}
+
+	/*----------------------------------------------------------------------------------------------*
+	 *Validación Comprobante Transferencias Cuentas Propias Pesos                                   *
+	 *----------------------------------------------------------------------------------------------*/
+	@Keyword
+	def comparacionNumeroOperacionTrxPropias(def vTiempo){
+
+		String vMontoExito = null
+		String vNumOperacionExito = null
+		String vMontoComprobante = null
+		String vNumOperacionComprobante = null
+
+		//En la pantalla de Confirmacion
+		WebUI.waitForPageLoad(vTiempo)
+
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/txtMontoExito'), vMontoExito)
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/txtNumOperacionExito'), vNumOperacionExito)
+
+		WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnVerComprobante'))
+
+		//En el Comprobante
+		WebUI.waitForPageLoad(vTiempo)
+
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/txtMontoComprobante'), vMontoComprobante)
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/txtNumOperacionComprobante'), vNumOperacionComprobante)
+
+		//Comparacion entre el monto del formulario de Transferencia y la pantalla de confirmacion
+		WebUI.verifyEqual(vMontoExito, vMontoComprobante)
+		WebUI.verifyEqual(vNumOperacionExito, vNumOperacionComprobante)
+
+	}
+
 
 
 }
+
+
+
 

@@ -5,8 +5,8 @@
    <tag></tag>
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
-   <dataFileGUID>b4b78fc6-14d1-4037-9fce-53635930f929</dataFileGUID>
-   <dataSourceUrl>C:\Users\fguillermet\Katalon Studio\NCDWeb.git\TestData\Data.xlsx</dataSourceUrl>
+   <dataFileGUID>fc717fae-1aae-487a-b7c8-153ee9450e4b</dataFileGUID>
+   <dataSourceUrl>C:\Users\natalia.heit\git\NCD\TestData\Data.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>

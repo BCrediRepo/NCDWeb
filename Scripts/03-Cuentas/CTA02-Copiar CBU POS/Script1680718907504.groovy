@@ -17,21 +17,49 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+import java.sql.Connection
+import java.sql.DriverManager
+import java.sql.ResultSet
+import java.sql.Statement
+
+import javax.swing.JOptionPane
+
+//-------------------Conecta a base de datos--------------------------------------------
+def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 20144835"
+def vQuery2 = "SELECT * FROM Toast WHERE idToast = 'Toa-005'"
+
+String vDNI = null
+String vClave = null
+String vUsuario = null
+String vCbuToast = null
+
+CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
+
+//Consulta a la base de datos
+ResultSet vResult = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery)
+ResultSet vResult2 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery2)
+
+vDNI = vResult.getString(2)
+vUsuario = vResult.getString(3)
+vClave = vResult.getString(4)
+vCbuToast = vResult2.getString(2)
+
+//Cierre de la conexion
+CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
+//---------------------------------------------------------------------------------------------------------------------
+
 //Se selecciona el servidor y se cargan los datos
 CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
 
 //Se loguea con el usuario seleccionado
-CustomKeywords.'pkgUtilities.kwyUtility.Login'(GlobalVariable.AdminDNI, GlobalVariable.AdminClave, GlobalVariable.AdminUsuario)
+CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 
-//Cliquea el menú desplegable de Cuentas en el Inicio
-WebUI.verifyElementVisible(findTestObject('Object Repository/03-Cuentas/lnkCtasMenuInicio'))
+//Cliquea el menú desplegable de Cuentas en el Inicio y copia CBU
 WebUI.click(findTestObject('Object Repository/03-Cuentas/lnkCtasMenuInicio'))
-
-//Selecciona copiar CBU
 WebUI.click(findTestObject('Object Repository/03-Cuentas/lnkCopiarCBU'))
 
 //Valida Toast de Confirmación
-WebUI.verifyElementVisible(findTestObject('Object Repository/03-Cuentas/lblCtasToastCopiaCBU'))
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasToastCopiaCBU'),vCbuToast)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

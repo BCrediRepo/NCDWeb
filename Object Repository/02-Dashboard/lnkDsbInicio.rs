@@ -6,39 +6,43 @@
    <elementGuidId>a73a6145-272d-45df-b2ef-8139bffeba1f</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//div[@id = 'frmAccountsLanding_customhamburger_HOMElblAccounts' and (text() = 'Inicio' or . = 'Inicio')]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;frmAccountsLanding_customhamburger_HOMElblAccounts&quot;)[count(. | //div[@aria-label = 'Accounts ' and @tabindex = '0' and @id = 'frmAccountsLanding_customhamburger_HOMElblAccounts' and @kwidgettype = 'Label' and @kformname = 'frmAccountsLanding' and @kmasterid = 'customhamburger' and @class = 'cntmiddleleftalign disableSelection sknLblItemMenuSelected' and (text() = 'Inicio' or . = 'Inicio')]) = count(//div[@aria-label = 'Accounts ' and @tabindex = '0' and @id = 'frmAccountsLanding_customhamburger_HOMElblAccounts' and @kwidgettype = 'Label' and @kformname = 'frmAccountsLanding' and @kmasterid = 'customhamburger' and @class = 'cntmiddleleftalign disableSelection sknLblItemMenuSelected' and (text() = 'Inicio' or . = 'Inicio')])]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>#frmAccountsLanding_customhamburger_HOMElblAccounts</value>
       </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//div[@id='frmAccountsLanding_customhamburger_HOMElblAccounts']</value>
-      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>a1697084-c88f-4b21-834a-566e87479b27</webElementGuid>
+      <webElementGuid>8f8c9c8e-5032-43bc-802c-bae6f7de21f1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>aria-label</name>
       <type>Main</type>
       <value>Accounts </value>
-      <webElementGuid>fa319eeb-e788-466c-8e72-a3a9a88a6dbe</webElementGuid>
+      <webElementGuid>ac316c8f-fda0-4e3f-9ab4-3e2faac9eee0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>06669814-c1c4-4a03-afdf-0207ff36c29a</webElementGuid>
+      <webElementGuid>a5aece7f-9b19-4df4-be31-d0b4fadfd723</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,39 +50,39 @@
       <name>id</name>
       <type>Main</type>
       <value>frmAccountsLanding_customhamburger_HOMElblAccounts</value>
-      <webElementGuid>d4528256-a13d-4d7b-833c-efc6429ea6b3</webElementGuid>
+      <webElementGuid>13ae0a23-e023-4a7d-bd28-816d9b944c17</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>kwidgettype</name>
       <type>Main</type>
       <value>Label</value>
-      <webElementGuid>542b415f-7386-4be5-b538-eeccbed8d62b</webElementGuid>
+      <webElementGuid>a41065c4-4d14-48ce-ba0d-35f356796c69</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>kformname</name>
       <type>Main</type>
       <value>frmAccountsLanding</value>
-      <webElementGuid>0efa1598-985d-4678-a4c6-7e0d80dd84b5</webElementGuid>
+      <webElementGuid>e65f3aef-2a34-49ce-be43-2be4ec45ce15</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>kmasterid</name>
       <type>Main</type>
       <value>customhamburger</value>
-      <webElementGuid>0a961c89-d18a-4492-9b67-6d59643ecf95</webElementGuid>
+      <webElementGuid>6091c680-6e0a-4ae9-a9af-db155999c13c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
       <value>cntmiddleleftalign disableSelection sknLblItemMenuSelected</value>
-      <webElementGuid>f3ccd607-43e9-4ba5-87e2-3f2082354c69</webElementGuid>
+      <webElementGuid>e2e180cf-b215-4194-a66a-77703428d6d2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -86,15 +90,15 @@
       <name>text</name>
       <type>Main</type>
       <value>Inicio</value>
-      <webElementGuid>fba2342b-2b51-43c0-a184-b2f9d938744c</webElementGuid>
+      <webElementGuid>1a70ed86-2c48-4f3a-b3c4-c6135c471658</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;frmAccountsLanding_customhamburger_HOMElblAccounts&quot;)</value>
-      <webElementGuid>029de049-4f0c-40e6-af8f-b68d725038a6</webElementGuid>
+      <webElementGuid>40a03391-a469-407f-9c3f-524956d7882d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//div[@id='frmAccountsLanding_customhamburger_HOMElblAccounts']</value>
-      <webElementGuid>5b65b8cf-441f-447d-8bab-0c2302ef0e8a</webElementGuid>
+      <webElementGuid>497c7c87-bebc-4702-9bcd-b26b4e3cd59d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='frmAccountsLanding_customhamburger_HOMEflxAccountsMenu']/div[2]/div</value>
-      <webElementGuid>8d4539e7-6acc-49b0-af70-b703fc79b65b</webElementGuid>
+      <webElementGuid>b77d4a74-2fdf-4113-a55a-19dc4f0d3d83</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Activar Clave Móvil'])[2]/following::div[12]</value>
-      <webElementGuid>4783aea5-1c72-4d36-8079-3077f5bafe58</webElementGuid>
+      <webElementGuid>722faa0f-a58b-41f0-8389-d89d8b9a11cc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cambio de Usuario'])[2]/following::div[17]</value>
-      <webElementGuid>ff45d50f-76b9-4abd-8e8c-1a881d8a8319</webElementGuid>
+      <webElementGuid>47a59572-d997-4c8c-8d3e-3aa87a461df0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +138,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cuentas'])[1]/preceding::div[12]</value>
-      <webElementGuid>309ace13-47c6-4d51-aecc-95d295620b46</webElementGuid>
+      <webElementGuid>787db4a9-d3ee-4231-9133-df61bea318fd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +146,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Transferencias'])[1]/preceding::div[28]</value>
-      <webElementGuid>21762770-1ee5-4c82-aeac-d1f1893a4ff5</webElementGuid>
+      <webElementGuid>b622f331-6731-4611-a982-f1f990b9ae82</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,7 +154,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Inicio']/parent::*</value>
-      <webElementGuid>ae4a8a2c-ca96-4b2d-b694-26e6b9d34d45</webElementGuid>
+      <webElementGuid>e560a102-2454-451c-ad3b-b105b0a3e9d1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -158,7 +162,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div/div/div/div/div/div/div[2]/div</value>
-      <webElementGuid>46a9e60b-86cd-47c5-807d-db428455290e</webElementGuid>
+      <webElementGuid>e297f5f2-6be4-4662-90d7-29dae662db07</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -166,6 +170,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[@id = 'frmAccountsLanding_customhamburger_HOMElblAccounts' and (text() = 'Inicio' or . = 'Inicio')]</value>
-      <webElementGuid>de455503-687c-471a-9d69-3c273d514ca8</webElementGuid>
+      <webElementGuid>fae65fc4-0086-4cb4-bed2-9256ad56cac9</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

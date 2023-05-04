@@ -13,6 +13,10 @@
          <key>XPATH</key>
          <value>//div[@id='frmAccountsLanding_customhamburger_OPERATIONSlblAccounts']</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;frmAccountsLanding_customhamburger_OPERATIONSlblAccounts&quot;)[count(. | //*[@id = 'frmAccountsLanding_customhamburger_OPERATIONSlblAccounts' and @class = 'cntmiddleleftalign disableSelection sknLblItemMenu' and (text() = 'Mis Operaciones' or . = 'Mis Operaciones')]) = count(//*[@id = 'frmAccountsLanding_customhamburger_OPERATIONSlblAccounts' and @class = 'cntmiddleleftalign disableSelection sknLblItemMenu' and (text() = 'Mis Operaciones' or . = 'Mis Operaciones')])]</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>032da715-de62-496c-a010-22fb607f864b</webElementGuid>
+      <webElementGuid>6eaa8bc8-d563-4bfb-80dc-8a7eea7c7303</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>aria-label</name>
       <type>Main</type>
       <value>Accounts </value>
-      <webElementGuid>e86b2914-ee81-4b15-a893-f49ee3131381</webElementGuid>
+      <webElementGuid>c0a73479-4a89-420a-98db-97f50c7e31a5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>bab5413d-a0ab-48c3-8113-4937f28921d1</webElementGuid>
+      <webElementGuid>0fbbb750-9f21-4a2b-a657-d0099a66c7f7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>id</name>
       <type>Main</type>
       <value>frmAccountsLanding_customhamburger_OPERATIONSlblAccounts</value>
-      <webElementGuid>882df79a-a84b-4319-8dfd-0f1e0262750c</webElementGuid>
+      <webElementGuid>916014af-b988-4b13-897b-5d5560a10235</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>kwidgettype</name>
       <type>Main</type>
       <value>Label</value>
-      <webElementGuid>0ddef755-346c-4d42-8da3-27fb493fcd18</webElementGuid>
+      <webElementGuid>6989d2d1-1573-49e6-a7e6-da39df42afdf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>kformname</name>
       <type>Main</type>
       <value>frmAccountsLanding</value>
-      <webElementGuid>1c8ff36e-2a02-49ab-8216-1a1b60d43287</webElementGuid>
+      <webElementGuid>fc984787-38a5-48d8-affd-d5ab585d38e4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,15 +74,15 @@
       <name>kmasterid</name>
       <type>Main</type>
       <value>customhamburger</value>
-      <webElementGuid>c679ea34-16e8-4691-b605-83fa7876a616</webElementGuid>
+      <webElementGuid>90a97bce-d4a5-4dc0-a1a5-88d114ff5842</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
       <value>cntmiddleleftalign disableSelection sknLblItemMenu</value>
-      <webElementGuid>a298229c-d797-4ae1-b6fd-489a732abeeb</webElementGuid>
+      <webElementGuid>a5d39ca9-1aa8-42c6-975a-2cb943bb98ae</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -86,15 +90,15 @@
       <name>text</name>
       <type>Main</type>
       <value>Mis Operaciones</value>
-      <webElementGuid>c87b929e-22e1-4353-8eae-6befa1dae168</webElementGuid>
+      <webElementGuid>05026555-a7c8-4560-9ab5-0a70272af5bd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;frmAccountsLanding_customhamburger_OPERATIONSlblAccounts&quot;)</value>
-      <webElementGuid>6f5fa66d-a2c7-4668-b203-8ae9ddc45dc0</webElementGuid>
+      <webElementGuid>513cda33-0841-452c-bf88-82ffea5a5c95</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//div[@id='frmAccountsLanding_customhamburger_OPERATIONSlblAccounts']</value>
-      <webElementGuid>76c9f395-ab0c-4ad8-8ede-6f33923b833c</webElementGuid>
+      <webElementGuid>b6455031-2ce7-4246-b081-287a339af939</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='frmAccountsLanding_customhamburger_OPERATIONSflxAccountsMenu']/div[2]/div</value>
-      <webElementGuid>37192d9e-6d01-4cf8-999e-78f7250136e2</webElementGuid>
+      <webElementGuid>58f0eb98-423a-4d1a-a723-440b513de504</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Para colocación a Plazo'])[1]/following::div[16]</value>
-      <webElementGuid>eb27aaad-9f8b-4b58-97cf-0f80feb0fa9e</webElementGuid>
+      <webElementGuid>03649fe2-354d-486f-954f-67011a801c1d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Pagos DEBIN'])[1]/following::div[32]</value>
-      <webElementGuid>da358b44-fa09-436f-b18d-05d7438de87c</webElementGuid>
+      <webElementGuid>eb81b562-a386-4dc5-832a-d36426847aba</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +138,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Salir'])[1]/preceding::div[15]</value>
-      <webElementGuid>d7570c53-1bd6-484d-8c5c-e07107361423</webElementGuid>
+      <webElementGuid>fa81fdd2-316b-4629-9bb1-57846986472a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +146,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)=''])[2]/preceding::div[24]</value>
-      <webElementGuid>d42014f8-df6d-4ce9-a41b-ed73ac4bdaad</webElementGuid>
+      <webElementGuid>65edad70-a7d8-4fd3-adf2-4db2d14294e8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,7 +154,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Mis Operaciones']/parent::*</value>
-      <webElementGuid>1b8eae90-57bb-4db6-8b1e-0bc150d4db0e</webElementGuid>
+      <webElementGuid>6d0bdd97-02e6-4f33-b615-7f1dc1280fc6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -158,7 +162,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div/div[9]/div/div/div[2]/div</value>
-      <webElementGuid>bc0980b0-1878-4885-818c-0486b4a72905</webElementGuid>
+      <webElementGuid>759c274e-8a2f-4215-b9ca-a8dca056408f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -166,6 +170,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[@id = 'frmAccountsLanding_customhamburger_OPERATIONSlblAccounts' and (text() = 'Mis Operaciones' or . = 'Mis Operaciones')]</value>
-      <webElementGuid>0e626efc-14bc-4a58-9c0f-0fa78b736eef</webElementGuid>
+      <webElementGuid>1393df35-2867-4526-a86f-f50ba91c77cf</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,0 +1,17 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Accesibilidad,Chrome 112.0.0.0,,,2023-04-18 09:22:30,2023-04-18 09:22:55,"25,169s",PASSED
+,,,,,,,
+Test Cases/01-Login/LGN01-Login happy case,Chrome 112.0.0.0,,Login,2023-04-18 09:22:31,2023-04-18 09:22:55,"24,796s",PASSED
+"pkgUtilities.kwyUtility.Server(""Internet"")",Chrome 112.0.0.0,,,2023-04-18 09:22:31,2023-04-18 09:22:35,"3,305s",PASSED
+"vDNI = findTestData(""02-Usuarios/SetUsers-FF"").getValue(3, 1)",Chrome 112.0.0.0,,,2023-04-18 09:22:35,2023-04-18 09:22:35,"0,078s",PASSED
+"vClave = findTestData(""02-Usuarios/SetUsers-FF"").getValue(5, 1)",Chrome 112.0.0.0,,,2023-04-18 09:22:35,2023-04-18 09:22:35,"0,083s",PASSED
+"vUsuario = findTestData(""02-Usuarios/SetUsers-FF"").getValue(4, 1)",Chrome 112.0.0.0,,,2023-04-18 09:22:35,2023-04-18 09:22:35,"0,094s",PASSED
+openBrowser(ServerUsado),Chrome 112.0.0.0,,,2023-04-18 09:22:35,2023-04-18 09:22:42,"6,748s",PASSED
+maximizeWindow(),Chrome 112.0.0.0,,,2023-04-18 09:22:42,2023-04-18 09:22:42,"0,229s",PASSED
+"click(findTestObject(""Object Repository/01-Login/btnLgnCerrarBanner""))",Chrome 112.0.0.0,,,2023-04-18 09:22:42,2023-04-18 09:22:43,"0,737s",PASSED
+"setText(findTestObject(""Object Repository/01-Login/txtLgnDNI""), vDNI)",Chrome 112.0.0.0,,,2023-04-18 09:22:43,2023-04-18 09:22:43,"0,905s",PASSED
+"setText(findTestObject(""Object Repository/01-Login/txtLgnClave""), vClave)",Chrome 112.0.0.0,,,2023-04-18 09:22:43,2023-04-18 09:22:44,"0,813s",PASSED
+"setText(findTestObject(""Object Repository/01-Login/txtLgnUsuario""), vUsuario)",Chrome 112.0.0.0,,,2023-04-18 09:22:44,2023-04-18 09:22:45,"0,893s",PASSED
+"click(findTestObject(""Object Repository/01-Login/btnLgnIngresar""))",Chrome 112.0.0.0,,,2023-04-18 09:22:45,2023-04-18 09:22:46,"0,442s",PASSED
+"click(findTestObject(""Object Repository/02-Dashboard/icoDsbSalir""))",Chrome 112.0.0.0,,,2023-04-18 09:22:46,2023-04-18 09:22:54,"8,880s",PASSED
+Start tear down : fPassScript,Chrome 112.0.0.0,,,2023-04-18 09:22:54,2023-04-18 09:22:55,"0,982s",PASSED

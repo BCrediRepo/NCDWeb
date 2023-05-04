@@ -1,0 +1,16 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Cuentas,Chrome 112.0.0.0,,,2023-04-20 12:46:47,2023-04-20 12:47:03,"15,719s",FAILED
+,,,,,,,
+Test Cases/03-Cuentas/CTA01-Acceder Home Cuentas POS,Chrome 112.0.0.0,,,2023-04-20 12:46:47,2023-04-20 12:46:55,"8,193s",FAILED
+"vCuenta = findTestData(""05-Labels/Labels"").getValue(2, 2)",Chrome 112.0.0.0,,,2023-04-20 12:46:48,2023-04-20 12:46:49,"0,791s",PASSED
+"vFavorita = findTestData(""05-Labels/Labels"").getValue(2, 3)",Chrome 112.0.0.0,,,2023-04-20 12:46:49,2023-04-20 12:46:49,"0,104s",PASSED
+"vMoneda = findTestData(""05-Labels/Labels"").getValue(2, 4)",Chrome 112.0.0.0,,,2023-04-20 12:46:49,2023-04-20 12:46:49,"0,102s",PASSED
+"vSaldo = findTestData(""05-Labels/Labels"").getValue(2, 5)",Chrome 112.0.0.0,,,2023-04-20 12:46:49,2023-04-20 12:46:49,"0,084s",PASSED
+"pkgUtilities.kwyUtility.Login(AdminDNI, AdminClave, AdminUsuario)",Chrome 112.0.0.0,,,2023-04-20 12:46:49,2023-04-20 12:46:55,"6,567s",FAILED
+Start tear down : fTakeFailScreenshot,Chrome 112.0.0.0,,,2023-04-20 12:46:55,2023-04-20 12:46:55,"0,066s",PASSED
+,,,,,,,
+Test Cases/03-Cuentas/CTA02-Copiar CBU POS,Chrome 112.0.0.0,,,2023-04-20 12:46:55,2023-04-20 12:47:03,"7,235s",FAILED
+"vCbuToast = findTestData(""06-Toast/Toast"").getValue(2, 5)",Chrome 112.0.0.0,,,2023-04-20 12:46:56,2023-04-20 12:46:56,"0,116s",PASSED
+"pkgUtilities.kwyUtility.Server(""Internet"")",Chrome 112.0.0.0,,,2023-04-20 12:46:56,2023-04-20 12:46:58,"1,773s",PASSED
+"pkgUtilities.kwyUtility.Login(AdminDNI, AdminClave, AdminUsuario)",Chrome 112.0.0.0,,,2023-04-20 12:46:58,2023-04-20 12:47:03,"4,922s",FAILED
+Start tear down : fTakeFailScreenshot,Chrome 112.0.0.0,,,2023-04-20 12:47:03,2023-04-20 12:47:03,"0,048s",PASSED

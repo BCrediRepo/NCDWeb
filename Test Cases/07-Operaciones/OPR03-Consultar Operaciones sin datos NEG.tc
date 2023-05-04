@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>OPR03-Consultar Operaciones sin datos NEG</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7e588ac4-0c32-405f-a9f3-79efb90d9fd8</testCaseGuid>
+</TestCaseEntity>

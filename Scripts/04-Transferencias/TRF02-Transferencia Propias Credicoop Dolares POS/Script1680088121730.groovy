@@ -17,37 +17,66 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//def vTipoTrf = findTestData('03-Transferencias/TipoTrf').getValue(2,2)
-//def vTipoTrf = 'Propia'
-def vValorMonto = '1'
-def vClaveBypass = 'Testing7'
+import java.sql.Connection
+import java.sql.DriverManager
+import java.sql.ResultSet
+import java.sql.Statement
+
+import javax.swing.JOptionPane
+
+//-------------------Conecta a base de datos--------------------------------------------
+def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 13976407"
+
+String vDNI = null
+String vClave = null
+String vUsuario = null
+String vClaveBypass = null
+def vValorMonto = 1
+
+CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
+
+//Consulta a la base de datos
+ResultSet vResult = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery)
+
+vDNI = vResult.getString(2)
+vUsuario = vResult.getString(3)
+vClave = vResult.getString(4)
+vClaveBypass = vResult.getString(4)
+
+//Cierre de la conexion
+CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
+//---------------------------------------------------------------------------------------------------------------------
 
 //Se selecciona el servidor y se cargan los datos
 CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
 
 //Se loguea con el usuario seleccionado
-CustomKeywords.'pkgUtilities.kwyUtility.Login'(GlobalVariable.Cliente1DNI, GlobalVariable.Cliente1Clave, GlobalVariable.Cliente1Usuario)
+CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 
 //Ingresa en la sección Transferencias del Dashboard
-WebUI.verifyElementVisible(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'))
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'))
 
 //Valida y cliquea en Nueva Transferencia
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfNuevaTransferenciaInicio'))
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfNuevaTransferenciaInicio'))
 
 //Selecciono solapa Mis cuentas Credicoop
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop'))
 WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop'))
 
 //Selecciona Cuenta en dolares
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/lnkTrfCuentaPropiaDolares'))
 WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkTrfCuentaPropiaDolares'))
 
-//Formulario
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/lblTrfMontoTituloFormulario'))
+//Valida Cuenta dolares
+CustomKeywords.'pkgUtilities.kwyUtility.comparacionListadoTrxPropias'(60)
 
-//Ingresa Monto
+if (GlobalVariable.vMonedaCta == 'U$S' && GlobalVariable.vMonedaTrx == 'U$S'){
+	println("La cuenta seleccionada corresponde a una moneda en dolares.")
+	
+}else{
+	KeywordUtil.markFailedAndStop("La cuenta seleccionada NO corresponde a una moneda en dolares.")
+}
+
+
+//Ingresa Monto valido y menor al saldo de la cuenta
 WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrfMontoFormulario'))
 WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrfMontoFormulario'), vValorMonto)
 
@@ -75,7 +104,7 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/t
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/TRF01-TransferenciaPropiasCredicoop.png')
+	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/TRF02-TransferenciaPropiasCredicoopDolaresPOS.png')
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed

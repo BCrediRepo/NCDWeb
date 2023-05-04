@@ -35,108 +35,78 @@
       <name>LogServerUsado</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>Admin DNI</description>
+      <description></description>
       <initValue>''</initValue>
-      <name>AdminDNI</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>Cliente1 DNI</description>
-      <initValue>''</initValue>
-      <name>Cliente1DNI</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>Cliente2 DNI</description>
-      <initValue>''</initValue>
-      <name>Cliente2DNI</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>Cliente3 DNI</description>
-      <initValue>''</initValue>
-      <name>Cliente3DNI</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>Cliente4 DNI</description>
-      <initValue>''</initValue>
-      <name>Cliente4DNI</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>Admin Clave</description>
-      <initValue>''</initValue>
-      <name>AdminClave</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>Cliente1 Clave</description>
-      <initValue>''</initValue>
-      <name>Cliente1Clave</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>Cliente2 Clave</description>
-      <initValue>''</initValue>
-      <name>Cliente2Clave</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>Cliente3 Clave</description>
-      <initValue>''</initValue>
-      <name>Cliente3Clave</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>Cliente4 Clave</description>
-      <initValue>''</initValue>
-      <name>Cliente4Clave</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>Admin Usuario</description>
-      <initValue>''</initValue>
-      <name>AdminUsuario</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>Cliente1 Usuario</description>
-      <initValue>''</initValue>
-      <name>Cliente1Usuario</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>Cliente2 Usuario</description>
-      <initValue>''</initValue>
-      <name>Cliente2Usuario</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>Cliente3 Usuario</description>
-      <initValue>''</initValue>
-      <name>Cliente3Usuario</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>Cliente4 Usuario</description>
-      <initValue>''</initValue>
-      <name>Cliente4Usuario</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>ByPass del administrador</description>
-      <initValue>''</initValue>
-      <name>AdminByPass</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>ByPass del Cliente 1</description>
-      <initValue>''</initValue>
-      <name>Cliente1ByPass</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>ByPass del Cliente 2</description>
-      <initValue>''</initValue>
-      <name>Cliente2ByPass</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>ByPass del Cliente 3</description>
-      <initValue>''</initValue>
-      <name>Cliente3ByPass</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>ByPass del Cliente 4</description>
-      <initValue>''</initValue>
-      <name>Cliente4ByPass</name>
+      <name>vOpTodas</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>''</initValue>
-      <name>SQLResult</name>
+      <name>vOpTrf</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>vOpExtracciones</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>vOpModo</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>vOpChques</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>vOpAcceso</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>vOpPagos</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>vOpTarjetas</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>vOpAhorro</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>vOpDebin</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>vOpAfip</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>vOpRecargas</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>vOpSolicitudes</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>vMonedaCta</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>vMonedaTrx</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

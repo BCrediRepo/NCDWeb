@@ -6,15 +6,19 @@
    <elementGuidId>9cbf07d6-eba7-4257-bb7f-5ca9f20d5bfe</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#flxCbuAliasRow_lblCbu</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//div[@id='flxCbuAliasRow_lblCbu']</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;frmCbuAliasBccl_segCbuAlias&quot;)/ul[1]/li[@class=&quot;seg2Normal&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxCbuAliasRow_flxCbuAliasRow&quot;]/div[@class=&quot;kcell middlecenteralignsknLblProductTableNumberData&quot;]/div[@id=&quot;flxCbuAliasRow_lblCbu&quot;][count(. | //*[@id = 'flxCbuAliasRow_lblCbu' and (text() = '19100018-55000106530096' or . = '19100018-55000106530096')]) = count(//*[@id = 'flxCbuAliasRow_lblCbu' and (text() = '19100018-55000106530096' or . = '19100018-55000106530096')])]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#flxCbuAliasRow_lblCbu</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>f0da4003-3839-4b3c-af37-030a69a836bf</webElementGuid>
+      <webElementGuid>83164096-2d7f-4b5d-afeb-a5f80a929f0e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +34,7 @@
       <name>id</name>
       <type>Main</type>
       <value>flxCbuAliasRow_lblCbu</value>
-      <webElementGuid>79e7c61a-259b-41ba-a163-ac7375ea4065</webElementGuid>
+      <webElementGuid>906d0f70-95ea-4129-af4c-4319b78f67c0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <name>kwidgettype</name>
       <type>Main</type>
       <value>Label</value>
-      <webElementGuid>a8d757a8-25e0-4fcf-90ee-1aa00491c6a6</webElementGuid>
+      <webElementGuid>adee2ac0-1616-4e3f-9e06-decbc025c153</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +50,7 @@
       <name>kformname</name>
       <type>Main</type>
       <value>flxCbuAliasRow</value>
-      <webElementGuid>b1cf50e6-de7d-43e3-bc11-f54e30bfe3c9</webElementGuid>
+      <webElementGuid>b65fa383-91a4-4d1e-841d-4f78f6aba8b0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>kcontainerid</name>
       <type>Main</type>
       <value>segCbuAlias</value>
-      <webElementGuid>ca822c1e-0358-42b4-ab85-f659cc6dee71</webElementGuid>
+      <webElementGuid>1ca7e4a5-596b-4703-987b-651651736970</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>kuid</name>
       <type>Main</type>
       <value>9595B9B1-4C46-492C-96DA-AF129A64C8D6</value>
-      <webElementGuid>82c59ac7-3d5d-4f1e-8626-39698bfb871c</webElementGuid>
+      <webElementGuid>871a08ae-5800-4341-a717-95d1371e825e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>class</name>
       <type>Main</type>
       <value> sknLblProductTableNumberData cntmiddleleftalign disableSelection</value>
-      <webElementGuid>e5659206-d0ab-4602-8f54-68c95fb2b1b9</webElementGuid>
+      <webElementGuid>1284afab-f2da-4f0d-83df-8728ef09aec0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -78,15 +82,15 @@
       <name>text</name>
       <type>Main</type>
       <value>19100018-55000106530096</value>
-      <webElementGuid>d423c91c-a0bb-45c1-ba3e-deae2a2ec8d6</webElementGuid>
+      <webElementGuid>5bca1252-c190-4edf-9391-7da16f4bb07d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;frmCbuAliasBccl_segCbuAlias&quot;)/ul[1]/li[@class=&quot;seg2Normal&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxCbuAliasRow_flxCbuAliasRow&quot;]/div[@class=&quot;kcell middlecenteralignsknLblProductTableNumberData&quot;]/div[@id=&quot;flxCbuAliasRow_lblCbu&quot;]</value>
-      <webElementGuid>ae83bb69-8ab3-457f-a2e8-192df86de4ba</webElementGuid>
+      <webElementGuid>d1f295ea-7407-4a34-84c9-9f822d0616ba</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//div[@id='flxCbuAliasRow_lblCbu']</value>
-      <webElementGuid>2172cd48-4903-4b18-9e9a-87c478b04ff5</webElementGuid>
+      <webElementGuid>a32b4374-cf98-4e67-8818-e8e8c17a2089</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='flxCbuAliasRow_flxCbuAliasRow']/div[3]/div</value>
-      <webElementGuid>b64f498e-93b9-4d84-b381-5bfa746b17a6</webElementGuid>
+      <webElementGuid>b3cb5f4e-abd1-4cca-9ddf-ef842a9c15dd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='CC $ 001-065300/9'])[1]/following::div[2]</value>
-      <webElementGuid>8fb35de2-a071-4458-911b-b2d1cf7c22bf</webElementGuid>
+      <webElementGuid>2407e856-bc76-467a-923b-ea922808c2bd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ENRICO EDIE AGUSTIN'])[1]/following::div[7]</value>
-      <webElementGuid>5406bbf2-0d10-4773-8c79-170cbb7bdc3f</webElementGuid>
+      <webElementGuid>143657d6-b5e5-405a-bafa-b6fab769158d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='cielo.estrella.mar'])[1]/preceding::div[1]</value>
-      <webElementGuid>d631ab53-4106-4a7e-b3bf-e645ecfa44c5</webElementGuid>
+      <webElementGuid>cbb570de-a9b8-41ce-921e-c64b45c0dc06</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +138,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)=''])[2]/preceding::div[3]</value>
-      <webElementGuid>dd624efb-efd2-4e29-970a-fd7f0d526771</webElementGuid>
+      <webElementGuid>af635aa8-71b4-4c25-9f32-0e1c41ac0ac5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +146,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='19100018-55000106530096']/parent::*</value>
-      <webElementGuid>32928a89-7519-456a-af1e-4749e4edea00</webElementGuid>
+      <webElementGuid>012a4413-5453-44d9-8b50-2db412231820</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,7 +154,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div/div/div/ul/li/div/div/div[3]/div</value>
-      <webElementGuid>f69a5b34-9b7a-4e1e-b1ef-9b3c21aa133e</webElementGuid>
+      <webElementGuid>b1e892b2-e62d-4f43-96f1-e1389d9613ae</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -158,6 +162,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[@id = 'flxCbuAliasRow_lblCbu' and (text() = '19100018-55000106530096' or . = '19100018-55000106530096')]</value>
-      <webElementGuid>1df406bb-9e55-41ac-a8cf-554e175aa8ac</webElementGuid>
+      <webElementGuid>535db40b-06d2-4962-addc-2228413d29cf</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

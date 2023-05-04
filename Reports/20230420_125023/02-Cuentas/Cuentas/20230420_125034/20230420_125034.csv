@@ -1,0 +1,19 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Cuentas,Chrome 112.0.0.0,,,2023-04-20 12:51:31,2023-04-20 12:52:35,"1m - 4,871s",FAILED
+,,,,,,,
+Test Cases/03-Cuentas/CTA01-Acceder Home Cuentas POS,Chrome 112.0.0.0,,,2023-04-20 12:51:31,2023-04-20 12:52:14,"43,345s",FAILED
+"vCuenta = findTestData(""05-Labels/Labels"").getValue(2, 2)",Chrome 112.0.0.0,,,2023-04-20 12:51:31,2023-04-20 12:51:32,"0,724s",PASSED
+"vFavorita = findTestData(""05-Labels/Labels"").getValue(2, 3)",Chrome 112.0.0.0,,,2023-04-20 12:51:32,2023-04-20 12:51:32,"0,093s",PASSED
+"vMoneda = findTestData(""05-Labels/Labels"").getValue(2, 4)",Chrome 112.0.0.0,,,2023-04-20 12:51:32,2023-04-20 12:51:32,"0,095s",PASSED
+"vSaldo = findTestData(""05-Labels/Labels"").getValue(2, 5)",Chrome 112.0.0.0,,,2023-04-20 12:51:32,2023-04-20 12:51:32,"0,084s",PASSED
+"pkgUtilities.kwyUtility.Login(AdminDNI, AdminClave, AdminUsuario)",Chrome 112.0.0.0,,,2023-04-20 12:51:32,2023-04-20 12:52:10,"37,931s",FAILED
+Start tear down : fTakeFailScreenshot,Chrome 112.0.0.0,,,2023-04-20 12:52:10,2023-04-20 12:52:14,"3,969s",PASSED
+,,,,,,,
+Test Cases/03-Cuentas/CTA02-Copiar CBU POS,Chrome 112.0.0.0,,,2023-04-20 12:52:14,2023-04-20 12:52:35,"21,247s",PASSED
+"vCbuToast = findTestData(""06-Toast/Toast"").getValue(2, 5)",Chrome 112.0.0.0,,,2023-04-20 12:52:14,2023-04-20 12:52:15,"0,101s",PASSED
+"pkgUtilities.kwyUtility.Server(""Internet"")",Chrome 112.0.0.0,,,2023-04-20 12:52:15,2023-04-20 12:52:16,"1,672s",PASSED
+"pkgUtilities.kwyUtility.Login(AdminDNI, AdminClave, AdminUsuario)",Chrome 112.0.0.0,,,2023-04-20 12:52:16,2023-04-20 12:52:26,"9,564s",PASSED
+"click(findTestObject(""Object Repository/03-Cuentas/lnkCtasMenuInicio""))",Chrome 112.0.0.0,,,2023-04-20 12:52:26,2023-04-20 12:52:32,"6,592s",PASSED
+"click(findTestObject(""Object Repository/03-Cuentas/lnkCopiarCBU""))",Chrome 112.0.0.0,,,2023-04-20 12:52:32,2023-04-20 12:52:33,"0,581s",PASSED
+"verifyElementText(findTestObject(""Object Repository/03-Cuentas/lblCtasToastCopiaCBU""), vCbuToast)",Chrome 112.0.0.0,,,2023-04-20 12:52:33,2023-04-20 12:52:33,"0,451s",PASSED
+Start tear down : fPassScript,Chrome 112.0.0.0,,,2023-04-20 12:52:33,2023-04-20 12:52:35,"1,968s",PASSED

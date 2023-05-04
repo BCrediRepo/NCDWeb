@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Accesibilidad" time="25.686" tests="1" failures="0" errors="0">
+   <testsuite name="Accesibilidad" tests="1" failures="0" errors="0" time="25.686" skipped="0" timestamp="2023-04-11 14:31:32" hostname="natalia.heit - AR-NB-490.tsoftglobal.com" id="Test Suites/01-Accesibilidad/Accesibilidad">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\natalia.heit\\git\\KtlnNCDWeb\\Reports\\20230411_143121\\01-Accesibilidad\\Accesibilidad\\20230411_143122"/>
+         <property name="logFiles" value="C:\\Users\\natalia.heit\\git\\KtlnNCDWeb\\Reports\\20230411_143121\\01-Accesibilidad\\Accesibilidad\\20230411_143122\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="natalia.heit - AR-NB-490.tsoftglobal.com"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.4.1.208"/>
+         <property name="browser" value="Chrome 111.0.0.0"/>
+         <property name="hostAddress" value="172.16.241.117"/>
+         <property name="sessionId" value="ce523ac943701bebf64f79d81c55a452"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/01-Login/LGN01-Login happy case" time="25.324" classname="Test Cases/01-Login/LGN01-Login happy case" status="PASSED">
+         <system-out><![CDATA[2023-04-11 14:31:32 - [TEST_CASE][PASSED] - Test Cases/01-Login/LGN01-Login happy case: Test Cases/01-Login/LGN01-Login happy case
+
+2023-04-11 14:31:33 - [TEST_STEP][PASSED] - pkgUtilities.kwyUtility.Server("Internet"): pkgUtilities.kwyUtility.Server is PASSED
+
+2023-04-11 14:31:37 - [MESSAGE][PASSED] - pkgUtilities.kwyUtility.Server is PASSED
+
+2023-04-11 14:31:37 - [TEST_STEP][PASSED] - vDNI = findTestData("02-Usuarios/SetUsers-FF").getValue(3, 1): null
+
+2023-04-11 14:31:37 - [TEST_STEP][PASSED] - vClave = findTestData("02-Usuarios/SetUsers-FF").getValue(5, 1): null
+
+2023-04-11 14:31:37 - [TEST_STEP][PASSED] - vUsuario = findTestData("02-Usuarios/SetUsers-FF").getValue(4, 1): null
+
+2023-04-11 14:31:37 - [TEST_STEP][PASSED] - openBrowser(ServerUsado): Browser is opened with url: 'https://ncdtesting.bancocredicoop.coop/apps/NCDBC/#_frmLogin'
+
+2023-04-11 14:31:38 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2023-04-11 14:31:38 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2023-04-11 14:31:45 - [MESSAGE][PASSED] - Browser is opened with url: 'https://ncdtesting.bancocredicoop.coop/apps/NCDBC/#_frmLogin'
+
+2023-04-11 14:31:45 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2023-04-11 14:31:45 - [MESSAGE][PASSED] - Current window maximized
+
+2023-04-11 14:31:45 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Object Repository/01-Login/btnLgnCerrarBanner")): Object 'Object Repository/01-Login/btnLgnCerrarBanner' is visible
+
+2023-04-11 14:31:46 - [MESSAGE][PASSED] - Object 'Object Repository/01-Login/btnLgnCerrarBanner' is visible
+
+2023-04-11 14:31:46 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/01-Login/btnLgnCerrarBanner")): Object: 'Object Repository/01-Login/btnLgnCerrarBanner' is clicked on
+
+2023-04-11 14:31:46 - [MESSAGE][PASSED] - Object: 'Object Repository/01-Login/btnLgnCerrarBanner' is clicked on
+
+2023-04-11 14:31:46 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/01-Login/txtLgnDNI"), vDNI): Text '20144835' is set on object 'Object Repository/01-Login/txtLgnDNI'
+
+2023-04-11 14:31:47 - [MESSAGE][PASSED] - Text '20144835' is set on object 'Object Repository/01-Login/txtLgnDNI'
+
+2023-04-11 14:31:47 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/01-Login/txtLgnClave"), vClave): Text 'Testing3' is set on object 'Object Repository/01-Login/txtLgnClave'
+
+2023-04-11 14:31:48 - [MESSAGE][PASSED] - Text 'Testing3' is set on object 'Object Repository/01-Login/txtLgnClave'
+
+2023-04-11 14:31:48 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/01-Login/txtLgnUsuario"), vUsuario): Text 'edie02' is set on object 'Object Repository/01-Login/txtLgnUsuario'
+
+2023-04-11 14:31:49 - [MESSAGE][PASSED] - Text 'edie02' is set on object 'Object Repository/01-Login/txtLgnUsuario'
+
+2023-04-11 14:31:49 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/01-Login/btnLgnIngresar")): Object: 'Object Repository/01-Login/btnLgnIngresar' is clicked on
+
+2023-04-11 14:31:50 - [MESSAGE][PASSED] - Object: 'Object Repository/01-Login/btnLgnIngresar' is clicked on
+
+2023-04-11 14:31:50 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/02-Dashboard/icoDsbSalir")): Object: 'Object Repository/02-Dashboard/icoDsbSalir' is clicked on
+
+2023-04-11 14:31:56 - [MESSAGE][PASSED] - Object: 'Object Repository/02-Dashboard/icoDsbSalir' is clicked on
+
+2023-04-11 14:31:56 - [TEST_STEP][PASSED] - Start tear down : fPassScript: Method 'fPassScript' complete successfully
+
+2023-04-11 14:31:56 - [TEST_STEP][PASSED] - pkgUtilities.kwyUtility.fLoginPassStatus(): pkgUtilities.kwyUtility.fLoginPassStatus is PASSED
+
+2023-04-11 14:31:58 - [MESSAGE][PASSED] - Browser is closed
+
+2023-04-11 14:31:58 - [MESSAGE][PASSED] - pkgUtilities.kwyUtility.fLoginPassStatus is PASSED
+
+2023-04-11 14:31:58 - [MESSAGE][PASSED] - Method 'fPassScript' complete successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2023-04-11 14:31:32 - [TEST_SUITE][PASSED] - Accesibilidad: Test Cases/01-Login/LGN01-Login happy case]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

@@ -1,0 +1,982 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Transferencias" time="283.229" tests="4" failures="1" errors="0">
+   <testsuite name="Transferencias" tests="4" failures="1" errors="0" time="283.229" skipped="0" timestamp="2023-04-11 16:38:42" hostname="natalia.heit - AR-NB-490.tsoftglobal.com" id="Test Suites/03-Transferencias/Transferencias">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\natalia.heit\\git\\KtlnNCDWeb\\Reports\\20230411_163619\\03-Transferencias\\Transferencias\\20230411_163625"/>
+         <property name="logFiles" value="C:\\Users\\natalia.heit\\git\\KtlnNCDWeb\\Reports\\20230411_163619\\03-Transferencias\\Transferencias\\20230411_163625\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\natalia.heit\\git\\KtlnNCDWeb\\Reports\\20230411_163619\\03-Transferencias\\Transferencias\\20230411_163625\\1681241998528.png, C:\\Users\\natalia.heit\\git\\KtlnNCDWeb\\Reports\\20230411_163619\\03-Transferencias\\Transferencias\\20230411_163625\\1681242081667.png, C:\\Users\\natalia.heit\\git\\KtlnNCDWeb\\Reports\\20230411_163619\\03-Transferencias\\Transferencias\\20230411_163625\\1681242170378.png, C:\\Users\\natalia.heit\\git\\KtlnNCDWeb\\Reports\\20230411_163619\\03-Transferencias\\Transferencias\\20230411_163625\\1681242200210.png, C:\\Users\\natalia.heit\\git\\KtlnNCDWeb\\Reports\\20230411_163619\\03-Transferencias\\Transferencias\\20230411_163625\\Screenshot/Fails/TRF01-TransferenciaPropiasCredicoop.png"/>
+         <property name="hostName" value="natalia.heit - AR-NB-490.tsoftglobal.com"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.4.1.208"/>
+         <property name="browser" value="Chrome 111.0.0.0"/>
+         <property name="hostAddress" value="172.16.241.117"/>
+         <property name="sessionId" value="91959a0d873e4bceacf4a6bb8c90d51e"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/04-Transferencias/TRF01-Transferencia Propias Credicoop Pesos POS" time="76.259" classname="Test Cases/04-Transferencias/TRF01-Transferencia Propias Credicoop Pesos POS" status="PASSED">
+         <system-out><![CDATA[2023-04-11 16:38:42 - [TEST_CASE][PASSED] - Test Cases/04-Transferencias/TRF01-Transferencia Propias Credicoop Pesos POS: Test Cases/04-Transferencias/TRF01-Transferencia Propias Credicoop Pesos POS
+
+2023-04-11 16:38:42 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null
+
+2023-04-11 16:38:42 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null
+
+2023-04-11 16:38:42 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null
+
+2023-04-11 16:38:42 - [TEST_STEP][PASSED] - if (testCaseContext.getTestCaseId() == "Test Cases/TRF04-Transferencia Terceros Credicoop Dolares POS"): null
+
+2023-04-11 16:38:43 - [TEST_STEP][PASSED] - vValorMonto = "1": null
+
+2023-04-11 16:38:43 - [TEST_STEP][PASSED] - vClaveBypass = "Testing3": null
+
+2023-04-11 16:38:43 - [TEST_STEP][PASSED] - pkgUtilities.kwyUtility.Server("Internet"): pkgUtilities.kwyUtility.Server is PASSED
+
+2023-04-11 16:38:47 - [MESSAGE][PASSED] - pkgUtilities.kwyUtility.Server is PASSED
+
+2023-04-11 16:38:47 - [TEST_STEP][PASSED] - pkgUtilities.kwyUtility.Login(AdminDNI, AdminClave, AdminUsuario): pkgUtilities.kwyUtility.Login is PASSED
+
+2023-04-11 16:38:47 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2023-04-11 16:38:47 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2023-04-11 16:38:55 - [MESSAGE][PASSED] - Browser is opened with url: 'https://ncdtesting.bancocredicoop.coop/apps/NCDBC/#_frmLogin'
+
+2023-04-11 16:38:55 - [MESSAGE][PASSED] - Current window maximized
+
+2023-04-11 16:38:56 - [MESSAGE][PASSED] - Object 'Object Repository/01-Login/btnLgnCerrarBanner' is visible
+
+2023-04-11 16:38:56 - [MESSAGE][PASSED] - Object: 'Object Repository/01-Login/btnLgnCerrarBanner' is clicked on
+
+2023-04-11 16:38:57 - [MESSAGE][PASSED] - Text '20144835' is set on object 'Object Repository/01-Login/txtLgnDNI'
+
+2023-04-11 16:38:58 - [MESSAGE][PASSED] - Text 'Testing3' is set on object 'Object Repository/01-Login/txtLgnClave'
+
+2023-04-11 16:38:59 - [MESSAGE][PASSED] - Text 'edie02' is set on object 'Object Repository/01-Login/txtLgnUsuario'
+
+2023-04-11 16:39:00 - [MESSAGE][PASSED] - Object: 'Object Repository/01-Login/btnLgnIngresar' is clicked on
+
+2023-04-11 16:39:00 - [MESSAGE][PASSED] - pkgUtilities.kwyUtility.Login is PASSED
+
+2023-04-11 16:39:00 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Object Repository/02-Dashboard/lnkDsbTransferencias")): Object 'Object Repository/02-Dashboard/lnkDsbTransferencias' is visible
+
+2023-04-11 16:39:06 - [MESSAGE][PASSED] - Object 'Object Repository/02-Dashboard/lnkDsbTransferencias' is visible
+
+2023-04-11 16:39:06 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/02-Dashboard/lnkDsbTransferencias")): Object: 'Object Repository/02-Dashboard/lnkDsbTransferencias' is clicked on
+
+2023-04-11 16:39:06 - [MESSAGE][PASSED] - Object: 'Object Repository/02-Dashboard/lnkDsbTransferencias' is clicked on
+
+2023-04-11 16:39:06 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfNuevaTransferenciaInicio")): Object 'Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfNuevaTransferenciaInicio' is visible
+
+2023-04-11 16:39:09 - [MESSAGE][PASSED] - Object 'Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfNuevaTransferenciaInicio' is visible
+
+2023-04-11 16:39:09 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfNuevaTransferenciaInicio")): Object: 'Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfNuevaTransferenciaInicio' is clicked on
+
+2023-04-11 16:39:10 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfNuevaTransferenciaInicio' is clicked on
+
+2023-04-11 16:39:10 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop")): Object 'Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop' is visible
+
+2023-04-11 16:39:13 - [MESSAGE][PASSED] - Object 'Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop' is visible
+
+2023-04-11 16:39:13 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop")): Object: 'Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop' is clicked on
+
+2023-04-11 16:39:13 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop' is clicked on
+
+2023-04-11 16:39:13 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Object Repository/04-Transferencias/lnkTrfCuentaPropiaPesos")): Object 'Object Repository/04-Transferencias/lnkTrfCuentaPropiaPesos' is visible
+
+2023-04-11 16:39:14 - [MESSAGE][PASSED] - Object 'Object Repository/04-Transferencias/lnkTrfCuentaPropiaPesos' is visible
+
+2023-04-11 16:39:14 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/lnkTrfCuentaPropiaPesos")): Object: 'Object Repository/04-Transferencias/lnkTrfCuentaPropiaPesos' is clicked on
+
+2023-04-11 16:39:15 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/lnkTrfCuentaPropiaPesos' is clicked on
+
+2023-04-11 16:39:15 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Object Repository/04-Transferencias/lblTrfMontoTituloFormulario")): Object 'Object Repository/04-Transferencias/lblTrfMontoTituloFormulario' is visible
+
+2023-04-11 16:39:17 - [MESSAGE][PASSED] - Object 'Object Repository/04-Transferencias/lblTrfMontoTituloFormulario' is visible
+
+2023-04-11 16:39:17 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/txtTrfMontoFormulario")): Object: 'Object Repository/04-Transferencias/txtTrfMontoFormulario' is clicked on
+
+2023-04-11 16:39:18 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/txtTrfMontoFormulario' is clicked on
+
+2023-04-11 16:39:18 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/04-Transferencias/txtTrfMontoFormulario"), vValorMonto): Keys '1' sent to object: 'Object Repository/04-Transferencias/txtTrfMontoFormulario'
+
+2023-04-11 16:39:18 - [MESSAGE][PASSED] - Keys '1' sent to object: 'Object Repository/04-Transferencias/txtTrfMontoFormulario'
+
+2023-04-11 16:39:18 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/lblTrfSeleccionTitularidadFormulario")): Object: 'Object Repository/04-Transferencias/lblTrfSeleccionTitularidadFormulario' is clicked on
+
+2023-04-11 16:39:19 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/lblTrfSeleccionTitularidadFormulario' is clicked on
+
+2023-04-11 16:39:19 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/lblTitularidadTextoFormulario")): Object: 'Object Repository/04-Transferencias/lblTitularidadTextoFormulario' is clicked on
+
+2023-04-11 16:39:19 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/lblTitularidadTextoFormulario' is clicked on
+
+2023-04-11 16:39:19 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/02-Nueva Transferencia/btnContinuarFormulario")): Object: 'Object Repository/04-Transferencias/02-Nueva Transferencia/btnContinuarFormulario' is clicked on
+
+2023-04-11 16:39:20 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/02-Nueva Transferencia/btnContinuarFormulario' is clicked on
+
+2023-04-11 16:39:20 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmar")): Object: 'Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmar' is clicked on
+
+2023-04-11 16:39:22 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmar' is clicked on
+
+2023-04-11 16:39:22 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/04-Transferencias/txtTrfClaveBypass"), vClaveBypass): Text 'Testing3' is set on object 'Object Repository/04-Transferencias/txtTrfClaveBypass'
+
+2023-04-11 16:39:22 - [MESSAGE][PASSED] - Text 'Testing3' is set on object 'Object Repository/04-Transferencias/txtTrfClaveBypass'
+
+2023-04-11 16:39:22 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmarBypass")): Object: 'Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmarBypass' is clicked on
+
+2023-04-11 16:39:23 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmarBypass' is clicked on
+
+2023-04-11 16:39:23 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Object Repository/04-Transferencias/txtTrfBeneficiarioDestino")): Object 'Object Repository/04-Transferencias/txtTrfBeneficiarioDestino' is visible
+
+2023-04-11 16:39:27 - [MESSAGE][PASSED] - Object 'Object Repository/04-Transferencias/txtTrfBeneficiarioDestino' is visible
+
+2023-04-11 16:39:27 - [TEST_STEP][PASSED] - Start tear down : fPassScript: Error occurred when try to run method 'fPassScript' (Root cause: com.kms.katalon.core.exception.StepFailedException - com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir')
+
+2023-04-11 16:39:27 - [TEST_STEP][FAILED] - pkgUtilities.kwyUtility.fPassStatus(): Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir'
+
+2023-04-11 16:39:58 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[@id='frmAccountsLanding_customhamburger_LogOutlblAccounts']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2023-04-11 16:39:58 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at pkgUtilities.kwyUtility.fPassStatus(kwyUtility.groovy:216)
+	at pkgUtilities.kwyUtility.invokeMethod(kwyUtility.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at TRF01-Transferencia Propias Credicoop Pesos POS.fPassScript(TRF01-Transferencia Propias Credicoop Pesos POS:83)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptMethodAsRawText(ScriptEngine.java:133)
+	at com.kms.katalon.core.main.TestCaseExecutor.runMethod(TestCaseExecutor.java:458)
+	at com.kms.katalon.core.main.TestCaseExecutor.runMethod(TestCaseExecutor.java:580)
+	at com.kms.katalon.core.main.TestCaseExecutor.internallyRunMethods(TestCaseExecutor.java:565)
+	at com.kms.katalon.core.main.TestCaseExecutor.onExecutionComplete(TestCaseExecutor.java:135)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1681241785897.run(TempTestSuite1681241785897.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/02-Dashboard/lnkDsbSalir' located by '//div[@id='frmAccountsLanding_customhamburger_LogOutlblAccounts']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1370)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:65)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at pkgUtilities.kwyUtility.fPassStatus(kwyUtility.groovy:216)
+	at pkgUtilities.kwyUtility.invokeMethod(kwyUtility.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Script1680003961363.fPassScript(Script1680003961363.groovy:83)
+	... 14 more
+)
+[[ATTACHMENT|C:\\Users\\natalia.heit\\git\\KtlnNCDWeb\\Reports\\20230411_163619\\03-Transferencias\\Transferencias\\20230411_163625\\1681241998528.png]]
+
+2023-04-11 16:39:58 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir'
+
+2023-04-11 16:39:58 - [MESSAGE][WARNING] - Error occurred when try to run method 'fPassScript' (Root cause: com.kms.katalon.core.exception.StepFailedException - com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir')]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/04-Transferencias/TRF02-Transferencia Propias Credicoop Dolares POS" time="83.117" classname="Test Cases/04-Transferencias/TRF02-Transferencia Propias Credicoop Dolares POS" status="PASSED">
+         <system-out><![CDATA[2023-04-11 16:39:58 - [TEST_CASE][PASSED] - Test Cases/04-Transferencias/TRF02-Transferencia Propias Credicoop Dolares POS: Test Cases/04-Transferencias/TRF02-Transferencia Propias Credicoop Dolares POS
+
+2023-04-11 16:39:58 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null
+
+2023-04-11 16:39:58 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null
+
+2023-04-11 16:39:58 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null
+
+2023-04-11 16:39:58 - [TEST_STEP][PASSED] - if (testCaseContext.getTestCaseId() == "Test Cases/TRF04-Transferencia Terceros Credicoop Dolares POS"): null
+
+2023-04-11 16:39:59 - [TEST_STEP][PASSED] - vValorMonto = "1": null
+
+2023-04-11 16:39:59 - [TEST_STEP][PASSED] - vClaveBypass = "Testing8": null
+
+2023-04-11 16:39:59 - [TEST_STEP][PASSED] - pkgUtilities.kwyUtility.Server("Internet"): pkgUtilities.kwyUtility.Server is PASSED
+
+2023-04-11 16:40:00 - [MESSAGE][PASSED] - pkgUtilities.kwyUtility.Server is PASSED
+
+2023-04-11 16:40:00 - [TEST_STEP][PASSED] - pkgUtilities.kwyUtility.Login(Cliente1DNI, Cliente1Clave, Cliente1Usuario): pkgUtilities.kwyUtility.Login is PASSED
+
+2023-04-11 16:40:00 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2023-04-11 16:40:01 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2023-04-11 16:40:01 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2023-04-11 16:40:07 - [MESSAGE][PASSED] - Browser is opened with url: 'https://ncdtesting.bancocredicoop.coop/apps/NCDBC/#_frmLogin'
+
+2023-04-11 16:40:07 - [MESSAGE][PASSED] - Current window maximized
+
+2023-04-11 16:40:08 - [MESSAGE][PASSED] - Object 'Object Repository/01-Login/btnLgnCerrarBanner' is visible
+
+2023-04-11 16:40:08 - [MESSAGE][PASSED] - Object: 'Object Repository/01-Login/btnLgnCerrarBanner' is clicked on
+
+2023-04-11 16:40:09 - [MESSAGE][PASSED] - Text '13976407' is set on object 'Object Repository/01-Login/txtLgnDNI'
+
+2023-04-11 16:40:10 - [MESSAGE][PASSED] - Text 'Testing8' is set on object 'Object Repository/01-Login/txtLgnClave'
+
+2023-04-11 16:40:11 - [MESSAGE][PASSED] - Text 'ale13' is set on object 'Object Repository/01-Login/txtLgnUsuario'
+
+2023-04-11 16:40:12 - [MESSAGE][PASSED] - Object: 'Object Repository/01-Login/btnLgnIngresar' is clicked on
+
+2023-04-11 16:40:12 - [MESSAGE][PASSED] - pkgUtilities.kwyUtility.Login is PASSED
+
+2023-04-11 16:40:12 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Object Repository/02-Dashboard/lnkDsbTransferencias")): Object 'Object Repository/02-Dashboard/lnkDsbTransferencias' is visible
+
+2023-04-11 16:40:29 - [MESSAGE][PASSED] - Object 'Object Repository/02-Dashboard/lnkDsbTransferencias' is visible
+
+2023-04-11 16:40:29 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/02-Dashboard/lnkDsbTransferencias")): Object: 'Object Repository/02-Dashboard/lnkDsbTransferencias' is clicked on
+
+2023-04-11 16:40:30 - [MESSAGE][PASSED] - Object: 'Object Repository/02-Dashboard/lnkDsbTransferencias' is clicked on
+
+2023-04-11 16:40:30 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfNuevaTransferenciaInicio")): Object 'Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfNuevaTransferenciaInicio' is visible
+
+2023-04-11 16:40:33 - [MESSAGE][PASSED] - Object 'Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfNuevaTransferenciaInicio' is visible
+
+2023-04-11 16:40:33 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfNuevaTransferenciaInicio")): Object: 'Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfNuevaTransferenciaInicio' is clicked on
+
+2023-04-11 16:40:33 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfNuevaTransferenciaInicio' is clicked on
+
+2023-04-11 16:40:33 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop")): Object 'Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop' is visible
+
+2023-04-11 16:40:36 - [MESSAGE][PASSED] - Object 'Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop' is visible
+
+2023-04-11 16:40:36 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop")): Object: 'Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop' is clicked on
+
+2023-04-11 16:40:37 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop' is clicked on
+
+2023-04-11 16:40:37 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Object Repository/04-Transferencias/lnkTrfCuentaPropiaDolares")): Object 'Object Repository/04-Transferencias/lnkTrfCuentaPropiaDolares' is visible
+
+2023-04-11 16:40:37 - [MESSAGE][PASSED] - Object 'Object Repository/04-Transferencias/lnkTrfCuentaPropiaDolares' is visible
+
+2023-04-11 16:40:37 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/lnkTrfCuentaPropiaDolares")): Object: 'Object Repository/04-Transferencias/lnkTrfCuentaPropiaDolares' is clicked on
+
+2023-04-11 16:40:38 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/lnkTrfCuentaPropiaDolares' is clicked on
+
+2023-04-11 16:40:38 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Object Repository/04-Transferencias/lblTrfMontoTituloFormulario")): Object 'Object Repository/04-Transferencias/lblTrfMontoTituloFormulario' is visible
+
+2023-04-11 16:40:40 - [MESSAGE][PASSED] - Object 'Object Repository/04-Transferencias/lblTrfMontoTituloFormulario' is visible
+
+2023-04-11 16:40:40 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/txtTrfMontoFormulario")): Object: 'Object Repository/04-Transferencias/txtTrfMontoFormulario' is clicked on
+
+2023-04-11 16:40:41 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/txtTrfMontoFormulario' is clicked on
+
+2023-04-11 16:40:41 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/04-Transferencias/txtTrfMontoFormulario"), vValorMonto): Keys '1' sent to object: 'Object Repository/04-Transferencias/txtTrfMontoFormulario'
+
+2023-04-11 16:40:41 - [MESSAGE][PASSED] - Keys '1' sent to object: 'Object Repository/04-Transferencias/txtTrfMontoFormulario'
+
+2023-04-11 16:40:41 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/lblTrfSeleccionTitularidadFormulario")): Object: 'Object Repository/04-Transferencias/lblTrfSeleccionTitularidadFormulario' is clicked on
+
+2023-04-11 16:40:42 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/lblTrfSeleccionTitularidadFormulario' is clicked on
+
+2023-04-11 16:40:42 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/lblTitularidadTextoFormulario")): Object: 'Object Repository/04-Transferencias/lblTitularidadTextoFormulario' is clicked on
+
+2023-04-11 16:40:42 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/lblTitularidadTextoFormulario' is clicked on
+
+2023-04-11 16:40:42 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/02-Nueva Transferencia/btnContinuarFormulario")): Object: 'Object Repository/04-Transferencias/02-Nueva Transferencia/btnContinuarFormulario' is clicked on
+
+2023-04-11 16:40:43 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/02-Nueva Transferencia/btnContinuarFormulario' is clicked on
+
+2023-04-11 16:40:43 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmar")): Object: 'Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmar' is clicked on
+
+2023-04-11 16:40:44 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmar' is clicked on
+
+2023-04-11 16:40:44 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/04-Transferencias/txtTrfClaveBypass"), vClaveBypass): Text 'Testing8' is set on object 'Object Repository/04-Transferencias/txtTrfClaveBypass'
+
+2023-04-11 16:40:45 - [MESSAGE][PASSED] - Text 'Testing8' is set on object 'Object Repository/04-Transferencias/txtTrfClaveBypass'
+
+2023-04-11 16:40:45 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmarBypass")): Object: 'Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmarBypass' is clicked on
+
+2023-04-11 16:40:46 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmarBypass' is clicked on
+
+2023-04-11 16:40:46 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Object Repository/04-Transferencias/txtTrfBeneficiarioDestino")): Object 'Object Repository/04-Transferencias/txtTrfBeneficiarioDestino' is visible
+
+2023-04-11 16:40:50 - [MESSAGE][PASSED] - Object 'Object Repository/04-Transferencias/txtTrfBeneficiarioDestino' is visible
+
+2023-04-11 16:40:50 - [TEST_STEP][PASSED] - Start tear down : fPassScript: Error occurred when try to run method 'fPassScript' (Root cause: com.kms.katalon.core.exception.StepFailedException - com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir')
+
+2023-04-11 16:40:50 - [TEST_STEP][FAILED] - pkgUtilities.kwyUtility.fPassStatus(): Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir'
+
+2023-04-11 16:41:21 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[@id='frmAccountsLanding_customhamburger_LogOutlblAccounts']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2023-04-11 16:41:21 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at pkgUtilities.kwyUtility.fPassStatus(kwyUtility.groovy:216)
+	at pkgUtilities.kwyUtility.invokeMethod(kwyUtility.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at TRF02-Transferencia Propias Credicoop Dolares POS.fPassScript(TRF02-Transferencia Propias Credicoop Dolares POS:83)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptMethodAsRawText(ScriptEngine.java:133)
+	at com.kms.katalon.core.main.TestCaseExecutor.runMethod(TestCaseExecutor.java:458)
+	at com.kms.katalon.core.main.TestCaseExecutor.runMethod(TestCaseExecutor.java:580)
+	at com.kms.katalon.core.main.TestCaseExecutor.internallyRunMethods(TestCaseExecutor.java:565)
+	at com.kms.katalon.core.main.TestCaseExecutor.onExecutionComplete(TestCaseExecutor.java:135)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1681241785897.run(TempTestSuite1681241785897.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/02-Dashboard/lnkDsbSalir' located by '//div[@id='frmAccountsLanding_customhamburger_LogOutlblAccounts']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1370)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:65)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at pkgUtilities.kwyUtility.fPassStatus(kwyUtility.groovy:216)
+	at pkgUtilities.kwyUtility.invokeMethod(kwyUtility.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Script1680088121730.fPassScript(Script1680088121730.groovy:83)
+	... 14 more
+)
+[[ATTACHMENT|C:\\Users\\natalia.heit\\git\\KtlnNCDWeb\\Reports\\20230411_163619\\03-Transferencias\\Transferencias\\20230411_163625\\1681242081667.png]]
+
+2023-04-11 16:41:21 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir'
+
+2023-04-11 16:41:21 - [MESSAGE][WARNING] - Error occurred when try to run method 'fPassScript' (Root cause: com.kms.katalon.core.exception.StepFailedException - com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir')]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/04-Transferencias/TRF03-Transferencia Terceros Credicoop Pesos POS" time="88.683" classname="Test Cases/04-Transferencias/TRF03-Transferencia Terceros Credicoop Pesos POS" status="PASSED">
+         <system-out><![CDATA[2023-04-11 16:41:21 - [TEST_CASE][PASSED] - Test Cases/04-Transferencias/TRF03-Transferencia Terceros Credicoop Pesos POS: Test Cases/04-Transferencias/TRF03-Transferencia Terceros Credicoop Pesos POS
+
+2023-04-11 16:41:21 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null
+
+2023-04-11 16:41:21 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null
+
+2023-04-11 16:41:21 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null
+
+2023-04-11 16:41:21 - [TEST_STEP][PASSED] - if (testCaseContext.getTestCaseId() == "Test Cases/TRF04-Transferencia Terceros Credicoop Dolares POS"): null
+
+2023-04-11 16:41:22 - [TEST_STEP][PASSED] - vTipoTrf = "Terceros": null
+
+2023-04-11 16:41:22 - [TEST_STEP][PASSED] - vValorMonto = "1": null
+
+2023-04-11 16:41:22 - [TEST_STEP][PASSED] - vClaveBypass = "Testing8": null
+
+2023-04-11 16:41:22 - [TEST_STEP][PASSED] - pkgUtilities.kwyUtility.Server("Internet"): pkgUtilities.kwyUtility.Server is PASSED
+
+2023-04-11 16:41:24 - [MESSAGE][PASSED] - pkgUtilities.kwyUtility.Server is PASSED
+
+2023-04-11 16:41:24 - [TEST_STEP][PASSED] - pkgUtilities.kwyUtility.Login(Cliente1DNI, Cliente1Clave, Cliente1Usuario): pkgUtilities.kwyUtility.Login is PASSED
+
+2023-04-11 16:41:24 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2023-04-11 16:41:25 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2023-04-11 16:41:26 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2023-04-11 16:41:31 - [MESSAGE][PASSED] - Browser is opened with url: 'https://ncdtesting.bancocredicoop.coop/apps/NCDBC/#_frmLogin'
+
+2023-04-11 16:41:32 - [MESSAGE][PASSED] - Current window maximized
+
+2023-04-11 16:41:32 - [MESSAGE][PASSED] - Object 'Object Repository/01-Login/btnLgnCerrarBanner' is visible
+
+2023-04-11 16:41:33 - [MESSAGE][PASSED] - Object: 'Object Repository/01-Login/btnLgnCerrarBanner' is clicked on
+
+2023-04-11 16:41:33 - [MESSAGE][PASSED] - Text '13976407' is set on object 'Object Repository/01-Login/txtLgnDNI'
+
+2023-04-11 16:41:34 - [MESSAGE][PASSED] - Text 'Testing8' is set on object 'Object Repository/01-Login/txtLgnClave'
+
+2023-04-11 16:41:35 - [MESSAGE][PASSED] - Text 'ale13' is set on object 'Object Repository/01-Login/txtLgnUsuario'
+
+2023-04-11 16:41:36 - [MESSAGE][PASSED] - Object: 'Object Repository/01-Login/btnLgnIngresar' is clicked on
+
+2023-04-11 16:41:36 - [MESSAGE][PASSED] - pkgUtilities.kwyUtility.Login is PASSED
+
+2023-04-11 16:41:36 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Object Repository/02-Dashboard/lnkDsbTransferencias")): Object 'Object Repository/02-Dashboard/lnkDsbTransferencias' is visible
+
+2023-04-11 16:41:57 - [MESSAGE][PASSED] - Object 'Object Repository/02-Dashboard/lnkDsbTransferencias' is visible
+
+2023-04-11 16:41:57 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/02-Dashboard/lnkDsbTransferencias")): Object: 'Object Repository/02-Dashboard/lnkDsbTransferencias' is clicked on
+
+2023-04-11 16:41:57 - [MESSAGE][PASSED] - Object: 'Object Repository/02-Dashboard/lnkDsbTransferencias' is clicked on
+
+2023-04-11 16:41:57 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Object Repository/04-Transferencias/03-Nuevo Beneficiario/lnkTrfAgendaBeneficiario")): Object 'Object Repository/04-Transferencias/03-Nuevo Beneficiario/lnkTrfAgendaBeneficiario' is visible
+
+2023-04-11 16:42:00 - [MESSAGE][PASSED] - Object 'Object Repository/04-Transferencias/03-Nuevo Beneficiario/lnkTrfAgendaBeneficiario' is visible
+
+2023-04-11 16:42:00 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/03-Nuevo Beneficiario/lnkTrfAgendaBeneficiario")): Object: 'Object Repository/04-Transferencias/03-Nuevo Beneficiario/lnkTrfAgendaBeneficiario' is clicked on
+
+2023-04-11 16:42:01 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/03-Nuevo Beneficiario/lnkTrfAgendaBeneficiario' is clicked on
+
+2023-04-11 16:42:01 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrfBuscarBeneficiarioTipo"), vTipoTrf): Text 'Terceros' is set on object 'Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrfBuscarBeneficiarioTipo'
+
+2023-04-11 16:42:04 - [MESSAGE][PASSED] - Text 'Terceros' is set on object 'Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrfBuscarBeneficiarioTipo'
+
+2023-04-11 16:42:04 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/lnkTrfCuentaBenefTercerosPesos")): Object: 'Object Repository/04-Transferencias/lnkTrfCuentaBenefTercerosPesos' is clicked on
+
+2023-04-11 16:42:05 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/lnkTrfCuentaBenefTercerosPesos' is clicked on
+
+2023-04-11 16:42:05 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/lnkTrfIniciarTransferenciaBeneficiario")): Object: 'Object Repository/04-Transferencias/lnkTrfIniciarTransferenciaBeneficiario' is clicked on
+
+2023-04-11 16:42:06 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/lnkTrfIniciarTransferenciaBeneficiario' is clicked on
+
+2023-04-11 16:42:06 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Object Repository/04-Transferencias/lblTrfMontoTituloFormulario")): Object 'Object Repository/04-Transferencias/lblTrfMontoTituloFormulario' is visible
+
+2023-04-11 16:42:09 - [MESSAGE][PASSED] - Object 'Object Repository/04-Transferencias/lblTrfMontoTituloFormulario' is visible
+
+2023-04-11 16:42:09 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/txtTrfMontoFormulario")): Object: 'Object Repository/04-Transferencias/txtTrfMontoFormulario' is clicked on
+
+2023-04-11 16:42:10 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/txtTrfMontoFormulario' is clicked on
+
+2023-04-11 16:42:10 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/04-Transferencias/txtTrfMontoFormulario"), vValorMonto): Keys '1' sent to object: 'Object Repository/04-Transferencias/txtTrfMontoFormulario'
+
+2023-04-11 16:42:10 - [MESSAGE][PASSED] - Keys '1' sent to object: 'Object Repository/04-Transferencias/txtTrfMontoFormulario'
+
+2023-04-11 16:42:10 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/lblTrfSeleccionTitularidadFormulario")): Object: 'Object Repository/04-Transferencias/lblTrfSeleccionTitularidadFormulario' is clicked on
+
+2023-04-11 16:42:11 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/lblTrfSeleccionTitularidadFormulario' is clicked on
+
+2023-04-11 16:42:11 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/lblTitularidadTextoFormulario")): Object: 'Object Repository/04-Transferencias/lblTitularidadTextoFormulario' is clicked on
+
+2023-04-11 16:42:11 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/lblTitularidadTextoFormulario' is clicked on
+
+2023-04-11 16:42:11 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/02-Nueva Transferencia/btnContinuarFormulario")): Object: 'Object Repository/04-Transferencias/02-Nueva Transferencia/btnContinuarFormulario' is clicked on
+
+2023-04-11 16:42:12 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/02-Nueva Transferencia/btnContinuarFormulario' is clicked on
+
+2023-04-11 16:42:12 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmar")): Object: 'Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmar' is clicked on
+
+2023-04-11 16:42:13 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmar' is clicked on
+
+2023-04-11 16:42:13 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/04-Transferencias/txtTrfClaveBypass"), vClaveBypass): Text 'Testing8' is set on object 'Object Repository/04-Transferencias/txtTrfClaveBypass'
+
+2023-04-11 16:42:14 - [MESSAGE][PASSED] - Text 'Testing8' is set on object 'Object Repository/04-Transferencias/txtTrfClaveBypass'
+
+2023-04-11 16:42:14 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmarBypass")): Object: 'Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmarBypass' is clicked on
+
+2023-04-11 16:42:15 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmarBypass' is clicked on
+
+2023-04-11 16:42:15 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Object Repository/04-Transferencias/txtTrfBeneficiarioDestino")): Object 'Object Repository/04-Transferencias/txtTrfBeneficiarioDestino' is visible
+
+2023-04-11 16:42:19 - [MESSAGE][PASSED] - Object 'Object Repository/04-Transferencias/txtTrfBeneficiarioDestino' is visible
+
+2023-04-11 16:42:19 - [TEST_STEP][PASSED] - Start tear down : fPassScript: Error occurred when try to run method 'fPassScript' (Root cause: com.kms.katalon.core.exception.StepFailedException - com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir')
+
+2023-04-11 16:42:19 - [TEST_STEP][FAILED] - pkgUtilities.kwyUtility.fPassStatus(): Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir'
+
+2023-04-11 16:42:50 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[@id='frmAccountsLanding_customhamburger_LogOutlblAccounts']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2023-04-11 16:42:50 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at pkgUtilities.kwyUtility.fPassStatus(kwyUtility.groovy:216)
+	at pkgUtilities.kwyUtility.invokeMethod(kwyUtility.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at TRF03-Transferencia Terceros Credicoop Pesos POS.fPassScript(TRF03-Transferencia Terceros Credicoop Pesos POS:82)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptMethodAsRawText(ScriptEngine.java:133)
+	at com.kms.katalon.core.main.TestCaseExecutor.runMethod(TestCaseExecutor.java:458)
+	at com.kms.katalon.core.main.TestCaseExecutor.runMethod(TestCaseExecutor.java:580)
+	at com.kms.katalon.core.main.TestCaseExecutor.internallyRunMethods(TestCaseExecutor.java:565)
+	at com.kms.katalon.core.main.TestCaseExecutor.onExecutionComplete(TestCaseExecutor.java:135)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1681241785897.run(TempTestSuite1681241785897.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/02-Dashboard/lnkDsbSalir' located by '//div[@id='frmAccountsLanding_customhamburger_LogOutlblAccounts']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1370)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:65)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at pkgUtilities.kwyUtility.fPassStatus(kwyUtility.groovy:216)
+	at pkgUtilities.kwyUtility.invokeMethod(kwyUtility.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Script1680178972292.fPassScript(Script1680178972292.groovy:82)
+	... 14 more
+)
+[[ATTACHMENT|C:\\Users\\natalia.heit\\git\\KtlnNCDWeb\\Reports\\20230411_163619\\03-Transferencias\\Transferencias\\20230411_163625\\1681242170378.png]]
+
+2023-04-11 16:42:50 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir'
+
+2023-04-11 16:42:50 - [MESSAGE][WARNING] - Error occurred when try to run method 'fPassScript' (Root cause: com.kms.katalon.core.exception.StepFailedException - com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir')]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/04-Transferencias/TRF04-Transferencia Terceros Credicoop Dolares POS" time="34.761" classname="Test Cases/04-Transferencias/TRF04-Transferencia Terceros Credicoop Dolares POS" status="FAILED">
+         <failure type="FAILED" message="Test Cases/04-Transferencias/TRF04-Transferencia Terceros Credicoop Dolares POS FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/04-Transferencias/lnkTrfCuentaBenefTercerosPesos'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at TRF04-Transferencia Terceros Credicoop Dolares POS.run(TRF04-Transferencia Terceros Credicoop Dolares POS:43)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1681241785897.run(TempTestSuite1681241785897.groovy:36)
+Caused by: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.146)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'AR-NB-490', ip: '172.16.241.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_282'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\NATALI~1.HEI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61030}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 91959a0d873e4bceacf4a6bb8c90d51e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at org.openqa.selenium.WebElement$click.call(Unknown Source)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.clickUntilSuccessWithTimeout(ClickKeyword.groovy:81)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.clickUntilSuccessWithTimeout(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+"/>
+         <system-out><![CDATA[2023-04-11 16:42:50 - [TEST_CASE][FAILED] - Test Cases/04-Transferencias/TRF04-Transferencia Terceros Credicoop Dolares POS: Test Cases/04-Transferencias/TRF04-Transferencia Terceros Credicoop Dolares POS FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/04-Transferencias/lnkTrfCuentaBenefTercerosPesos'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at TRF04-Transferencia Terceros Credicoop Dolares POS.run(TRF04-Transferencia Terceros Credicoop Dolares POS:43)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1681241785897.run(TempTestSuite1681241785897.groovy:36)
+Caused by: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.146)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'AR-NB-490', ip: '172.16.241.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_282'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\NATALI~1.HEI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61030}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 91959a0d873e4bceacf4a6bb8c90d51e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at org.openqa.selenium.WebElement$click.call(Unknown Source)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.clickUntilSuccessWithTimeout(ClickKeyword.groovy:81)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.clickUntilSuccessWithTimeout(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+
+
+2023-04-11 16:42:50 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null
+
+2023-04-11 16:42:50 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null
+
+2023-04-11 16:42:50 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null
+
+2023-04-11 16:42:50 - [TEST_STEP][PASSED] - if (testCaseContext.getTestCaseId() == "Test Cases/TRF04-Transferencia Terceros Credicoop Dolares POS"): null
+
+2023-04-11 16:42:50 - [TEST_STEP][PASSED] - vTipoTrf = "Terceros": null
+
+2023-04-11 16:42:50 - [TEST_STEP][PASSED] - vValorMonto = "1": null
+
+2023-04-11 16:42:50 - [TEST_STEP][PASSED] - vClaveBypass = "Testing3": null
+
+2023-04-11 16:42:50 - [TEST_STEP][PASSED] - pkgUtilities.kwyUtility.Server("Internet"): pkgUtilities.kwyUtility.Server is PASSED
+
+2023-04-11 16:42:52 - [MESSAGE][PASSED] - pkgUtilities.kwyUtility.Server is PASSED
+
+2023-04-11 16:42:52 - [TEST_STEP][PASSED] - pkgUtilities.kwyUtility.Login(AdminDNI, AdminClave, AdminUsuario): pkgUtilities.kwyUtility.Login is PASSED
+
+2023-04-11 16:42:52 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2023-04-11 16:42:53 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2023-04-11 16:42:53 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2023-04-11 16:43:01 - [MESSAGE][PASSED] - Browser is opened with url: 'https://ncdtesting.bancocredicoop.coop/apps/NCDBC/#_frmLogin'
+
+2023-04-11 16:43:01 - [MESSAGE][PASSED] - Current window maximized
+
+2023-04-11 16:43:01 - [MESSAGE][PASSED] - Object 'Object Repository/01-Login/btnLgnCerrarBanner' is visible
+
+2023-04-11 16:43:02 - [MESSAGE][PASSED] - Object: 'Object Repository/01-Login/btnLgnCerrarBanner' is clicked on
+
+2023-04-11 16:43:03 - [MESSAGE][PASSED] - Text '20144835' is set on object 'Object Repository/01-Login/txtLgnDNI'
+
+2023-04-11 16:43:04 - [MESSAGE][PASSED] - Text 'Testing3' is set on object 'Object Repository/01-Login/txtLgnClave'
+
+2023-04-11 16:43:05 - [MESSAGE][PASSED] - Text 'edie02' is set on object 'Object Repository/01-Login/txtLgnUsuario'
+
+2023-04-11 16:43:05 - [MESSAGE][PASSED] - Object: 'Object Repository/01-Login/btnLgnIngresar' is clicked on
+
+2023-04-11 16:43:05 - [MESSAGE][PASSED] - pkgUtilities.kwyUtility.Login is PASSED
+
+2023-04-11 16:43:05 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Object Repository/02-Dashboard/lnkDsbTransferencias")): Object 'Object Repository/02-Dashboard/lnkDsbTransferencias' is visible
+
+2023-04-11 16:43:12 - [MESSAGE][PASSED] - Object 'Object Repository/02-Dashboard/lnkDsbTransferencias' is visible
+
+2023-04-11 16:43:12 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/02-Dashboard/lnkDsbTransferencias")): Object: 'Object Repository/02-Dashboard/lnkDsbTransferencias' is clicked on
+
+2023-04-11 16:43:12 - [MESSAGE][PASSED] - Object: 'Object Repository/02-Dashboard/lnkDsbTransferencias' is clicked on
+
+2023-04-11 16:43:12 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Object Repository/04-Transferencias/03-Nuevo Beneficiario/lnkTrfAgendaBeneficiario")): Object 'Object Repository/04-Transferencias/03-Nuevo Beneficiario/lnkTrfAgendaBeneficiario' is visible
+
+2023-04-11 16:43:15 - [MESSAGE][PASSED] - Object 'Object Repository/04-Transferencias/03-Nuevo Beneficiario/lnkTrfAgendaBeneficiario' is visible
+
+2023-04-11 16:43:15 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/04-Transferencias/03-Nuevo Beneficiario/lnkTrfAgendaBeneficiario")): Object: 'Object Repository/04-Transferencias/03-Nuevo Beneficiario/lnkTrfAgendaBeneficiario' is clicked on
+
+2023-04-11 16:43:16 - [MESSAGE][PASSED] - Object: 'Object Repository/04-Transferencias/03-Nuevo Beneficiario/lnkTrfAgendaBeneficiario' is clicked on
+
+2023-04-11 16:43:16 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrfBuscarBeneficiarioTipo"), vTipoTrf): Text 'Terceros' is set on object 'Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrfBuscarBeneficiarioTipo'
+
+2023-04-11 16:43:19 - [MESSAGE][PASSED] - Text 'Terceros' is set on object 'Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrfBuscarBeneficiarioTipo'
+
+2023-04-11 16:43:19 - [TEST_STEP][FAILED] - click(findTestObject("Object Repository/04-Transferencias/lnkTrfCuentaBenefTercerosPesos")): Unable to click on object 'Object Repository/04-Transferencias/lnkTrfCuentaBenefTercerosPesos' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/04-Transferencias/lnkTrfCuentaBenefTercerosPesos'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at TRF04-Transferencia Terceros Credicoop Dolares POS.run(TRF04-Transferencia Terceros Credicoop Dolares POS:43)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1681241785897.run(TempTestSuite1681241785897.groovy:36)
+Caused by: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.146)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'AR-NB-490', ip: '172.16.241.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_282'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\NATALI~1.HEI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61030}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 91959a0d873e4bceacf4a6bb8c90d51e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at org.openqa.selenium.WebElement$click.call(Unknown Source)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.clickUntilSuccessWithTimeout(ClickKeyword.groovy:81)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.clickUntilSuccessWithTimeout(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Script1680264575699.run(Script1680264575699.groovy:43)
+	... 13 more
+)
+
+2023-04-11 16:43:20 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/04-Transferencias/lnkTrfCuentaBenefTercerosPesos' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/04-Transferencias/lnkTrfCuentaBenefTercerosPesos'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at TRF04-Transferencia Terceros Credicoop Dolares POS.run(TRF04-Transferencia Terceros Credicoop Dolares POS:43)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1681241785897.run(TempTestSuite1681241785897.groovy:36)
+Caused by: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.146)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'AR-NB-490', ip: '172.16.241.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_282'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\NATALI~1.HEI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61030}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 91959a0d873e4bceacf4a6bb8c90d51e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at org.openqa.selenium.WebElement$click.call(Unknown Source)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.clickUntilSuccessWithTimeout(ClickKeyword.groovy:81)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.clickUntilSuccessWithTimeout(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Script1680264575699.run(Script1680264575699.groovy:43)
+	... 13 more
+)
+[[ATTACHMENT|C:\\Users\\natalia.heit\\git\\KtlnNCDWeb\\Reports\\20230411_163619\\03-Transferencias\\Transferencias\\20230411_163625\\1681242200210.png]]
+
+2023-04-11 16:43:20 - [TEST_STEP][PASSED] - Start tear down : fTakeFailScreenshot: Method 'fTakeFailScreenshot' complete successfully
+
+2023-04-11 16:43:20 - [TEST_STEP][PASSED] - pkgUtilities.kwyUtility.fFailStatus("Screenshot/Fails/TRF01-TransferenciaPropiasCredicoop.png"): pkgUtilities.kwyUtility.fFailStatus is PASSED
+
+2023-04-11 16:43:20 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\natalia.heit\\git\\KtlnNCDWeb\\Reports\\20230411_163619\\03-Transferencias\\Transferencias\\20230411_163625\\Screenshot/Fails/TRF01-TransferenciaPropiasCredicoop.png]]
+
+2023-04-11 16:43:24 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2023-04-11 16:43:25 - [MESSAGE][PASSED] - Browser is closed
+
+2023-04-11 16:43:25 - [MESSAGE][PASSED] - pkgUtilities.kwyUtility.fFailStatus is PASSED
+
+2023-04-11 16:43:25 - [MESSAGE][PASSED] - Method 'fTakeFailScreenshot' complete successfully]]></system-out>
+         <system-err><![CDATA[2023-04-11 16:42:50 - [TEST_CASE][FAILED] - Test Cases/04-Transferencias/TRF04-Transferencia Terceros Credicoop Dolares POS: Test Cases/04-Transferencias/TRF04-Transferencia Terceros Credicoop Dolares POS FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/04-Transferencias/lnkTrfCuentaBenefTercerosPesos'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at TRF04-Transferencia Terceros Credicoop Dolares POS.run(TRF04-Transferencia Terceros Credicoop Dolares POS:43)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1681241785897.run(TempTestSuite1681241785897.groovy:36)
+Caused by: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.146)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'AR-NB-490', ip: '172.16.241.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_282'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\NATALI~1.HEI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61030}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 91959a0d873e4bceacf4a6bb8c90d51e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at org.openqa.selenium.WebElement$click.call(Unknown Source)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.clickUntilSuccessWithTimeout(ClickKeyword.groovy:81)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.clickUntilSuccessWithTimeout(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2023-04-11 16:38:42 - [TEST_SUITE][FAILED] - Transferencias: Test Cases/04-Transferencias/TRF04-Transferencia Terceros Credicoop Dolares POS FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/04-Transferencias/lnkTrfCuentaBenefTercerosPesos'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at TRF04-Transferencia Terceros Credicoop Dolares POS.run(TRF04-Transferencia Terceros Credicoop Dolares POS:43)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1681241785897.run(TempTestSuite1681241785897.groovy:36)
+Caused by: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.146)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'AR-NB-490', ip: '172.16.241.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_282'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\NATALI~1.HEI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61030}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 91959a0d873e4bceacf4a6bb8c90d51e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at org.openqa.selenium.WebElement$click.call(Unknown Source)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.clickUntilSuccessWithTimeout(ClickKeyword.groovy:81)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.clickUntilSuccessWithTimeout(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-out>
+      <system-err><![CDATA[2023-04-11 16:38:42 - [TEST_SUITE][FAILED] - Transferencias: Test Cases/04-Transferencias/TRF04-Transferencia Terceros Credicoop Dolares POS FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/04-Transferencias/lnkTrfCuentaBenefTercerosPesos'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at TRF04-Transferencia Terceros Credicoop Dolares POS.run(TRF04-Transferencia Terceros Credicoop Dolares POS:43)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1681241785897.run(TempTestSuite1681241785897.groovy:36)
+Caused by: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.146)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'AR-NB-490', ip: '172.16.241.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_282'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.146, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\NATALI~1.HEI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61030}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 91959a0d873e4bceacf4a6bb8c90d51e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at org.openqa.selenium.WebElement$click.call(Unknown Source)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.clickUntilSuccessWithTimeout(ClickKeyword.groovy:81)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.clickUntilSuccessWithTimeout(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-err>
+   </testsuite>
+</testsuites>

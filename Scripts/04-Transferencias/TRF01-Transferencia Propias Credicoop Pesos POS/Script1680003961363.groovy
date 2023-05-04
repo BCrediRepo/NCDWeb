@@ -16,47 +16,73 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.util.KeywordUtil
 
-//def vTipoTrf = findTestData('03-Transferencias/TipoTrf').getValue(2,2)
-//def vTipoTrf = 'Propia'
-def vValorMonto = '1'
-def vClaveBypass = 'Testing3'
+import java.sql.Connection
+import java.sql.DriverManager
+import java.sql.ResultSet
+import java.sql.Statement
+
+import javax.swing.JOptionPane
+
+//-------------------Conecta a base de datos--------------------------------------------
+def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 20144835"
+
+String vDNI = null
+String vClave = null
+String vUsuario = null
+String vClaveBypass = null
+String vValorMonto = 1
+
+CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
+
+//Consulta a la base de datos
+ResultSet vResult = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery)
+
+vDNI = vResult.getString(2)
+vUsuario = vResult.getString(3)
+vClave = vResult.getString(4)
+vClaveBypass = vResult.getString(4)
+
+//Cierre de la conexion
+CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
+//---------------------------------------------------------------------------------------------------------------------
 
 //Se selecciona el servidor y se cargan los datos
 CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
 
 //Se loguea con el usuario seleccionado
-CustomKeywords.'pkgUtilities.kwyUtility.Login'(GlobalVariable.AdminDNI, GlobalVariable.AdminClave, GlobalVariable.AdminUsuario)
+CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 
 //Ingresa en la sección Transferencias del Dashboard
-WebUI.verifyElementVisible(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'))
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'))
 
-//Valida y cliquea en Nueva Transferencia
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfNuevaTransferenciaInicio'))
+//Cliquea en Nueva Transferencia
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfNuevaTransferenciaInicio'))
 
 //Selecciono solapa Mis cuentas Credicoop
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop'))
 WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop'))
 
-//Selecciona Cuenta en pesos
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/lnkTrfCuentaPropiaPesos'))
-WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkTrfCuentaPropiaPesos'))
+//Valida Cuenta Pesos 
+CustomKeywords.'pkgUtilities.kwyUtility.comparacionListadoTrxPropias'(60)
 
-//Formulario
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/lblTrfMontoTituloFormulario'))
+if (GlobalVariable.vMonedaCta == '$' && GlobalVariable.vMonedaTrx == '$'){
+	println("La cuenta seleccionada corresponde a una moneda en pesos.")
+	
+}else{
+	KeywordUtil.markFailedAndStop("La cuenta seleccionada NO corresponde a una moneda en pesos.")
+}
 
-//Ingresa Monto
+//Ingresa Monto valido y menor al saldo de la cuenta
 WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrfMontoFormulario'))
-WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrfMontoFormulario'), vValorMonto)
+WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrfMontoFormulario'),vValorMonto)
 
 //Selecciona Titularidad
 WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrfSeleccionTitularidadFormulario'))
 WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTitularidadTextoFormulario'))
 
-//Cliquea en Continuar
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnContinuarFormulario'))
+//Valida Monto Transferencia
+CustomKeywords.'pkgUtilities.kwyUtility.comparacionMontoTrxPropias'(60)
 
 //Cliquea en boton Confirmar
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmar'))
@@ -67,48 +93,18 @@ WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrfClaveByp
 //Confirma Operación
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmarBypass'))
 
-//Valida Destinatario
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/txtTrfBeneficiarioDestino'))
+//Valida Numero de operacion
+CustomKeywords.'pkgUtilities.kwyUtility.comparacionNumeroOperacionTrxPropias'(60)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-    CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/TRF01-TransferenciaPropiasCredicoop.png')
+    CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/TRF01-TransferenciaPropiasCredicoopPesosPOS.png')
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
     CustomKeywords.'pkgUtilities.kwyUtility.fPassStatus'()
 }
-
-
-
-
-//---------------------------------------------------------------------------------------------
-/*
-//Valida y cliquea en Agenda de Beneficiarios
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lnkTrfAgendaBeneficiario'))
-WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lnkTrfAgendaBeneficiario'))
-
-//Busca por tipo de Beneficiario
-WebUI.setText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrfBuscarBeneficiarioTipo'), vTipoTrf)
-
-//Inicia la transferencia
-WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkTrfCuentaBenefTercerosPesos'))
-WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkTrfIniciarTransferenciaBeneficiario'))
-
-//Formulario
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/lblTrfMontoTituloFormulario'))
-
-//Ingresa Monto
-WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrfMontoFormulario'), vValorMonto)
-
-//Selecciona Titularidad
-WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTitularidadTextoFormulario'))
-
-//Cliquea en Continuar
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnContinuarFormulario'))*/
-
-

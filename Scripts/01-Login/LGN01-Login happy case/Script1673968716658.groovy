@@ -17,32 +17,30 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//--- Import dB libraries ---
 import java.sql.Connection
 import java.sql.DriverManager
 import java.sql.ResultSet
 import java.sql.Statement
-import com.kms.katalon.core.configuration.RunConfiguration
+
 import javax.swing.JOptionPane
 
-//----------- SET DATOS DE PRUEBA dB -------------------------------------------
-String vQuery = "SELECT * FROM UsuariosFF WHERE NroDNI = '20144835'"
+//-------------------Conecta a base de datos--------------------------------------------
+def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 20144835"
 String vDNI = null
-String vUsuario = null
 String vClave = null
+String vUsuario = null
 
-//Conecta a base de datos
-CustomKeywords.'pkgDatabase.kwySQLConnection.connectDB'()
+CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
 
 //Consulta a la base de datos
-ResultSet vResult = CustomKeywords.'pkgDatabase.kwySQLConnection.executeQuery'(vQuery)
+ResultSet vResult = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery)
 vDNI = vResult.getString(2)
 vUsuario = vResult.getString(3)
 vClave = vResult.getString(4)
 
 //Cierre de la conexion
-CustomKeywords.'pkgDatabase.kwySQLConnection.closeDatabaseConnection'()
-//--------------------------------------------------------------------------------
+CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
+//---------------------------------------------------------------------------------------------------------------------
 
 //Se define la URL
 CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
@@ -52,7 +50,6 @@ WebUI.openBrowser(GlobalVariable.ServerUsado)
 WebUI.maximizeWindow()
 
 //Cierra el Banner del inicio
-WebUI.verifyElementVisible(findTestObject('Object Repository/01-Login/btnLgnCerrarBanner'))
 WebUI.click(findTestObject('Object Repository/01-Login/btnLgnCerrarBanner'))
 
 //Ingresa los datos del usuario
@@ -63,8 +60,8 @@ WebUI.setText(findTestObject('Object Repository/01-Login/txtLgnUsuario'), vUsuar
 WebUI.click(findTestObject('Object Repository/01-Login/btnLgnIngresar'))
 
 WebUI.click(findTestObject('Object Repository/02-Dashboard/icoDsbSalir'))
-
 //---------------------------------------------------------------------------------------------------------------------
+
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {	

@@ -17,16 +17,41 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//def vTipoTrf = findTestData('03-Transferencias/TipoTrf').getValue(2,2)
-def vTipoTrf = 'Judicial'
-def vValorMonto = '1'
-def vClaveBypass = 'Testing7'
+import java.sql.Connection
+import java.sql.DriverManager
+import java.sql.ResultSet
+import java.sql.Statement
+
+import javax.swing.JOptionPane
+
+//-------------------Conecta a base de datos--------------------------------------------
+def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 20144835"
+
+String vDNI = null
+String vClave = null
+String vUsuario = null
+String vClaveBypass = null
+def vValorMonto = 1
+
+CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
+
+//Consulta a la base de datos
+ResultSet vResult = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery)
+
+vDNI = vResult.getString(2)
+vUsuario = vResult.getString(3)
+vClave = vResult.getString(4)
+vClaveBypass = vResult.getString(4)
+
+//Cierre de la conexion
+CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
+//---------------------------------------------------------------------------------------------------------------------
 
 //Se selecciona el servidor y se cargan los datos
 CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
 
 //Se loguea con el usuario seleccionado
-CustomKeywords.'pkgUtilities.kwyUtility.Login'(GlobalVariable.Cliente1DNI, GlobalVariable.Cliente1Clave, GlobalVariable.Cliente1Usuario)
+CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 
 //Ingresa en la sección Transferencias del Dashboard
 WebUI.verifyElementVisible(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'))
@@ -54,6 +79,12 @@ WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrfMontoFo
 WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrfSeleccionTitularidadFormulario'))
 WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTitularidadTextoFormulario'))
 
+//Selecciona Fecha Programada
+WebUI.scrollToElement(findTestObject('Object Repository/04-Transferencias/04-Calendario/icoTrfCalendarioFechaEnvio'), 10)
+WebUI.click(findTestObject('Object Repository/04-Transferencias/04-Calendario/icoTrfCalendarioFechaEnvio'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/04-Calendario/icoTrfCalendarioMesSiguiente'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/04-Calendario/lblTrfCalendarioFechaEnvio'))
+
 //Cliquea en Continuar
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnContinuarFormulario'))
 
@@ -74,7 +105,7 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/t
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/TRF01-TransferenciaPropiasCredicoop.png')
+	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/TRF07-TransferenciasPosdatadasCredicoopPesosPOS.png')
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed

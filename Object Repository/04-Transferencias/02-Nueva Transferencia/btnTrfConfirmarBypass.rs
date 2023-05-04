@@ -6,15 +6,15 @@
    <elementGuidId>b96be411-9d4d-4750-a028-cf41f9f6a3da</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#frmBcclConfirmTransfer_SecondFactor_ButtonConfirm_btnWithLoader</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@id='frmBcclConfirmTransfer_SecondFactor_ButtonConfirm_btnWithLoader']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#frmBcclConfirmTransfer_SecondFactor_ButtonConfirm_btnWithLoader</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>d76a5f5f-4c9d-44cf-9150-cf2ac8bdfb98</webElementGuid>
+      <webElementGuid>41e6c94a-3656-424f-aa1f-67016bfda2d2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>aria-label</name>
       <type>Main</type>
       <value>Log in </value>
-      <webElementGuid>4663a1e7-1103-4732-8480-acacc786718e</webElementGuid>
+      <webElementGuid>5e9eb1ba-8c13-4f38-9398-8f765392571d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>aria-describedby</name>
       <type>Main</type>
       <value>frmBcclConfirmTransfer_SecondFactor_ButtonConfirm_btnWithLoader-hint</value>
-      <webElementGuid>5d38632f-91a8-485b-bd15-bfc05edb967b</webElementGuid>
+      <webElementGuid>832ed3b0-6606-4d99-b291-a1a45c6e9e4a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>id</name>
       <type>Main</type>
       <value>frmBcclConfirmTransfer_SecondFactor_ButtonConfirm_btnWithLoader</value>
-      <webElementGuid>d182022e-266f-4cdc-a5cc-99f2056969e1</webElementGuid>
+      <webElementGuid>28512eab-4c7b-47a8-bc31-8fa3a1225a6f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>kwidgettype</name>
       <type>Main</type>
       <value>Button</value>
-      <webElementGuid>9ee92a1f-de94-49cc-a1de-e57f694ab683</webElementGuid>
+      <webElementGuid>247fcc87-a762-46c2-a259-8cd8bf282627</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>kformname</name>
       <type>Main</type>
       <value>frmBcclConfirmTransfer</value>
-      <webElementGuid>f60a6f59-87f3-4b11-82b6-b60fed710b24</webElementGuid>
+      <webElementGuid>3a0a3afd-9131-42b7-b96b-6a04d9a5b3cc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>kmasterid</name>
       <type>Main</type>
       <value>SecondFactor_ButtonConfirm</value>
-      <webElementGuid>05b11fc8-0b67-4ab8-9d78-ad0f5e21af44</webElementGuid>
+      <webElementGuid>2a579916-970f-4329-a90b-fb38f53257e7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -78,7 +78,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>a5a73635-6841-47f0-b9c2-5e1fa1948285</webElementGuid>
+      <webElementGuid>e306f833-db28-4160-a01b-fa3e1275c30e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>class</name>
       <type>Main</type>
       <value> sknBtnPrimary disableSelection</value>
-      <webElementGuid>24a2e87b-8704-4ab1-a2d8-51a2dcacd53a</webElementGuid>
+      <webElementGuid>d49340a5-d9b9-4c42-8c7c-f004e1068a40</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>value</name>
       <type>Main</type>
       <value>Confirmar</value>
-      <webElementGuid>435ed296-30d6-423a-9f1c-4c1712e4565f</webElementGuid>
+      <webElementGuid>e1042783-b9c5-4b72-b24f-23637ac73628</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>kprogressskin</name>
       <type>Main</type>
       <value>sknBtnPrimary</value>
-      <webElementGuid>2d464cdb-e415-4522-881b-bd6ca85979b5</webElementGuid>
+      <webElementGuid>ef5cb0ac-ecba-4f23-8909-ae963dcf939b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;frmBcclConfirmTransfer_SecondFactor_ButtonConfirm_btnWithLoader&quot;)</value>
-      <webElementGuid>d2620a65-a31c-4b55-99ef-f8e8c980d5fd</webElementGuid>
+      <webElementGuid>436fe453-5e8d-4f11-a1ca-469634926635</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='frmBcclConfirmTransfer_SecondFactor_ButtonConfirm_btnWithLoader']</value>
-      <webElementGuid>3bf279a7-9a9e-45b2-a5e5-a9a469ff7700</webElementGuid>
+      <webElementGuid>c2288d3a-74f2-4b85-9eaf-9448d7cd4b72</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='frmBcclConfirmTransfer_SecondFactor_ButtonConfirm']/div/input</value>
-      <webElementGuid>8938dd53-e082-4e53-96e3-a494669f2475</webElementGuid>
+      <webElementGuid>65dc2db5-623d-44ce-9e52-6a41bdb86a56</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +134,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div/div[2]/div/div/div/input</value>
-      <webElementGuid>4d8ba6b0-9ca8-4214-8db6-4d0cab91878d</webElementGuid>
+      <webElementGuid>79001022-650f-4963-a1ab-05aadd2de34b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,6 +142,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@id = 'frmBcclConfirmTransfer_SecondFactor_ButtonConfirm_btnWithLoader' and @type = 'button']</value>
-      <webElementGuid>e492a7df-21a1-4160-9289-c870ec908744</webElementGuid>
+      <webElementGuid>49782e64-ac28-4034-b808-52ec7c95eb8d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

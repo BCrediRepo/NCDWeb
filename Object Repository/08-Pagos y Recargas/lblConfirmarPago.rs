@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblConfirmarPago</name>
+   <tag></tag>
+   <elementGuidId>37cd0dee-798b-45dd-abb2-8ed49560ac90</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='frmBcclServicesPay_AddEntePanel_AddEnte_SecondFactor_rtxTitleSFA']/div/p</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#frmBcclServicesPay_AddEntePanel_AddEnte_SecondFactor_rtxTitleSFA > div > p</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>be4b86cc-77f6-44fb-a0a6-4a51864e362a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Confirmar el pago</value>
+      <webElementGuid>bceb0739-5211-499e-83f3-9496dc3d1845</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;frmBcclServicesPay_AddEntePanel_AddEnte_SecondFactor_rtxTitleSFA&quot;)/div[1]/p[1]</value>
+      <webElementGuid>8a4fa217-cf77-4b17-9729-de8aecfda28c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='frmBcclServicesPay_AddEntePanel_AddEnte_SecondFactor_rtxTitleSFA']/div/p</value>
+      <webElementGuid>de09dde6-cf1e-4020-b4fb-2963cca2047f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)=''])[1]/following::p[1]</value>
+      <webElementGuid>037a466f-1f30-4a0b-8fad-4c7b9070142c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)=''])[7]/following::p[1]</value>
+      <webElementGuid>59b1795e-4d49-4a03-a7e8-74fc0b50311e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ingresá tu Clave de acceso* para completar el pago.'])[1]/preceding::p[1]</value>
+      <webElementGuid>e920e4fe-7498-4adf-b85c-5825d31dc2ec</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)=''])[1]/preceding::p[1]</value>
+      <webElementGuid>8197bf6f-debe-470d-b503-439ebac0f105</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Confirmar el pago']/parent::*</value>
+      <webElementGuid>a0d6e0ad-7728-4a9c-b3c0-32dd18b090f4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/p</value>
+      <webElementGuid>76f967b6-8ee3-479a-98d1-1a0bebf47232</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[(text() = 'Confirmar el pago' or . = 'Confirmar el pago')]</value>
+      <webElementGuid>a67bf484-ec58-4c67-9690-db29890cfdf8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

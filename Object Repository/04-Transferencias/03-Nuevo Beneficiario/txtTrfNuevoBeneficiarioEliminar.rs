@@ -6,15 +6,19 @@
    <elementGuidId>06a2d90c-6581-46d9-b5fc-ed36ed6591aa</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value>#frmBcclBeneficiaryAgenda_flxBeneficiariesRowFloatingMenu_lbldeleteBeneficiary</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//div[@id='frmBcclBeneficiaryAgenda_flxBeneficiariesRowFloatingMenu_lbldeleteBeneficiary']</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>#frmBcclBeneficiaryAgenda_flxBeneficiariesRowFloatingMenu_lbldeleteBeneficiary</value>
+         <key>BASIC</key>
+         <value>id(&quot;frmBcclBeneficiaryAgenda_flxBeneficiariesRowFloatingMenu_lbldeleteBeneficiary&quot;)[count(. | //*[@id = 'frmBcclBeneficiaryAgenda_flxBeneficiariesRowFloatingMenu_lbldeleteBeneficiary' and @kformname = 'frmBcclBeneficiaryAgenda' and (text() = 'Eliminar' or . = 'Eliminar')]) = count(//*[@id = 'frmBcclBeneficiaryAgenda_flxBeneficiariesRowFloatingMenu_lbldeleteBeneficiary' and @kformname = 'frmBcclBeneficiaryAgenda' and (text() = 'Eliminar' or . = 'Eliminar')])]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>fafb0a8f-cead-44b7-bab8-3c89a85c7027</webElementGuid>
+      <webElementGuid>0453b6a9-c40b-4bed-ab3e-23116ba2feb7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +34,7 @@
       <name>id</name>
       <type>Main</type>
       <value>frmBcclBeneficiaryAgenda_flxBeneficiariesRowFloatingMenu_lbldeleteBeneficiary</value>
-      <webElementGuid>b7983249-4be7-4a75-a231-2bfdc298c21f</webElementGuid>
+      <webElementGuid>ebb3a14f-2caf-422e-bbe9-e2f34a3410ab</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,15 +42,15 @@
       <name>kwidgettype</name>
       <type>Main</type>
       <value>Label</value>
-      <webElementGuid>41d45c9f-2a58-4981-ab2d-c798c8313155</webElementGuid>
+      <webElementGuid>3dfbfff0-6c63-4e74-8173-5299fd20476c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>kformname</name>
       <type>Main</type>
       <value>frmBcclBeneficiaryAgenda</value>
-      <webElementGuid>961dd5e2-380d-4700-b0f5-bfa584e7c891</webElementGuid>
+      <webElementGuid>3573e49c-0dd5-4ab9-ad06-61c1d8ab76b0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>kmasterid</name>
       <type>Main</type>
       <value>flxBeneficiariesRowFloatingMenu</value>
-      <webElementGuid>96eafcee-df02-4288-b965-9f7ca185bba9</webElementGuid>
+      <webElementGuid>f48ec3c4-e1b5-4034-a07a-39a00bde1bbd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>class</name>
       <type>Main</type>
       <value> sknLblOptionFloatMenu cntmiddleleftalign disableSelection</value>
-      <webElementGuid>62f19049-c7e5-44a0-b709-c624f5e4b93e</webElementGuid>
+      <webElementGuid>241ad844-855f-4225-9014-b67d86ef64a6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -70,15 +74,15 @@
       <name>text</name>
       <type>Main</type>
       <value>Eliminar</value>
-      <webElementGuid>ae116e58-2e4b-4d77-bcdd-9b09df23606c</webElementGuid>
+      <webElementGuid>44043bfd-2b1e-4fc5-855c-e3c1464d72a8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;frmBcclBeneficiaryAgenda_flxBeneficiariesRowFloatingMenu_lbldeleteBeneficiary&quot;)</value>
-      <webElementGuid>87df3662-6666-4556-b5e4-6c06cb012ea0</webElementGuid>
+      <webElementGuid>c9619101-53f6-4348-aebf-9d05acfb361b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//div[@id='frmBcclBeneficiaryAgenda_flxBeneficiariesRowFloatingMenu_lbldeleteBeneficiary']</value>
-      <webElementGuid>f0732ac8-6d21-4526-b250-e4e32d48ce83</webElementGuid>
+      <webElementGuid>e1145ef2-50b4-4e6a-ace4-5ef7e4905c22</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='frmBcclBeneficiaryAgenda_flxBeneficiariesRowFloatingMenu_flxdeleteBeneficiary']/div/div</value>
-      <webElementGuid>ee3526a1-365c-4f74-b0f1-2590484c482d</webElementGuid>
+      <webElementGuid>fe5d0438-4610-4e73-b90b-51734f9c2f6c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Editar'])[3]/following::div[5]</value>
-      <webElementGuid>7321da88-9c9d-4130-a2b2-6cadb42f3300</webElementGuid>
+      <webElementGuid>b6b368a2-0d62-43ea-b36a-317d9d7b4b28</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Nueva transferencia'])[1]/following::div[10]</value>
-      <webElementGuid>d5d4d6a2-bede-460d-8059-fc7170dc4373</webElementGuid>
+      <webElementGuid>793d1550-7b0c-4222-9662-3a9ded7b4e50</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Salir'])[2]/preceding::div[4]</value>
-      <webElementGuid>83a06eb8-6a6f-4062-88b8-40a77f655139</webElementGuid>
+      <webElementGuid>448a47b8-1db9-487a-af88-237c774ba60c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Número de la Tarjeta'])[1]/preceding::div[5]</value>
-      <webElementGuid>a9ef47f9-a580-4513-82e9-ce2168507675</webElementGuid>
+      <webElementGuid>4e4a82ed-80d8-4685-8935-8a6368a1fa97</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +138,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[10]/div/div/div[2]/div/div/div[4]/div/div/div/div</value>
-      <webElementGuid>ee9fad0f-d542-4cf2-8431-48039b829bfc</webElementGuid>
+      <webElementGuid>cd50a2b3-85b3-4b6d-85f0-540c600ed99a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,6 +146,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[@id = 'frmBcclBeneficiaryAgenda_flxBeneficiariesRowFloatingMenu_lbldeleteBeneficiary' and (text() = 'Eliminar' or . = 'Eliminar')]</value>
-      <webElementGuid>ca10dbf9-66e9-4ed6-885b-9d98c4b4ec60</webElementGuid>
+      <webElementGuid>9d798b7b-8dee-419d-8ebc-8cf8cfeb354d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
