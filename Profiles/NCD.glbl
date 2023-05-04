@@ -134,4 +134,9 @@
       <initValue>''</initValue>
       <name>Cliente4ByPass</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>SQLResult</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

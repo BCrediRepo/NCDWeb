@@ -28,7 +28,7 @@ import internal.GlobalVariable
 
 import javax.swing.JOptionPane
 
-public class kwySQL {
+public class kwySQLConnection {
 
 	private static Connection connection = null;
 

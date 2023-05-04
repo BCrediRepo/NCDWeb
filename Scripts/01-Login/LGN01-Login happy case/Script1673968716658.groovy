@@ -32,16 +32,16 @@ String vUsuario = null
 String vClave = null
 
 //Conecta a base de datos
-CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
+CustomKeywords.'pkgDatabase.kwySQLConnection.connectDB'()
 
 //Consulta a la base de datos
-ResultSet vResult = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery)
+ResultSet vResult = CustomKeywords.'pkgDatabase.kwySQLConnection.executeQuery'(vQuery)
 vDNI = vResult.getString(2)
 vUsuario = vResult.getString(3)
 vClave = vResult.getString(4)
 
 //Cierre de la conexion
-CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
+CustomKeywords.'pkgDatabase.kwySQLConnection.closeDatabaseConnection'()
 //--------------------------------------------------------------------------------
 
 //Se define la URL
