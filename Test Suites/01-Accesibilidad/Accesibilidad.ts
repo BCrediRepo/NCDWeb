@@ -22,14 +22,14 @@
       <guid>ce55fbbc-dfb7-431f-b9a4-0a0b6aa25157</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/01-Login/LGN02-Cambio de pswd</testCaseId>
+      <testCaseId>Test Cases/01-Login/LGN02-Ingreso con clave vencida y cambio POS</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>23677a24-da54-4282-b6d9-f53bb90ac8cf</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/01-Login/LGN03-Cambio de pswd NEG</testCaseId>
+      <testCaseId>Test Cases/01-Login/LGN03-Cambio de clave NEG</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

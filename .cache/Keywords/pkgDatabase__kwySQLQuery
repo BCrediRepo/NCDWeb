@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "DC1AAC126E3F2B5EB0D4041F2E3C802B",
+  "keywordFileContentHash": "8BFDA5A4E021E7D5656577342780877A",
   "keywordClasses": [
     {
       "name": "pkgDatabase.kwySQLQuery",
@@ -7,7 +7,7 @@
         {
           "name": "QueryFija",
           "parameters": [],
-          "javadoc": "/**\r\n\t * Abre la conexión con la dB\r\n\t * @param dataFile path absoluto\r\n\t * @return instancia de java.sql.Connection\r\n\t **/"
+          "javadoc": "/**\n\t * Abre la conexión con la dB\n\t * @param dataFile path absoluto\n\t * @return instancia de java.sql.Connection\n\t **/"
         }
       ]
     }

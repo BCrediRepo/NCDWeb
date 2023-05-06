@@ -30,8 +30,7 @@ def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 20144835"
 String vDNI = null
 String vClave = null
 String vUsuario = null
-String vClaveBypass = null
-def vValorMonto = 1
+String vValorMonto = 1
 
 CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
 
@@ -41,7 +40,6 @@ ResultSet vResult = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery)
 vDNI = vResult.getString(2)
 vUsuario = vResult.getString(3)
 vClave = vResult.getString(4)
-vClaveBypass = vResult.getString(4)
 
 //Cierre de la conexion
 CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
@@ -57,14 +55,14 @@ CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'))
 
 //Inicia Transferencia desde Menú de Beneficiario destacado
-WebUI.click(findTestObject('Object Repository/04-Transferencias/icoTrfBeneficiarioDestacadoDesplegable'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/mnuFavoritosCtaDolar'))
 
 //Clickea en Nueva Transferencia
-WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrfBenefDestacadoNuevaTransferencia'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/txtNuevaTransferenciaDolar'))
 
 //Ingresa Monto
-WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrfMontoFormulario'))
-WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrfMontoFormulario'), vValorMonto)
+WebUI.click(findTestObject('Object Repository/04-Transferencias/04-Calendario/txtIngresarMontoPosdatada'))
+WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/04-Calendario/txtIngresarMontoPosdatada'), vValorMonto)
 
 //Selecciona Titularidad
 WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrfSeleccionTitularidadFormulario'))
@@ -80,10 +78,10 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/04-Calendario/lb
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnContinuarFormulario'))
 
 //Cliquea en boton Confirmar
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmar'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/btnConfirmarTransferencias'))
 
 //Ingresa Clave Bypass
-WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrfClaveBypass'), vClaveBypass)
+WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrfClaveBypass'), vClave)
 
 //Confirma Operación
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmarBypass'))

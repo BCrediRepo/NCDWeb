@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "FF65BE2DA69D1D02E83BA903D45C53DB",
+  "keywordFileContentHash": "813D78D6DD451061937927987E52C059",
   "keywordClasses": [
     {
       "name": "pkgDatabase.kwySQLConnection",
@@ -7,7 +7,7 @@
         {
           "name": "connectDB",
           "parameters": [],
-          "javadoc": "/**\r\n\t * Abre la conexión con la dB\r\n\t * @param dataFile path absoluto\r\n\t * @return instancia de java.sql.Connection\r\n\t **/"
+          "javadoc": "/**\n\t * Abre la conexión con la dB\n\t * @param dataFile path absoluto\n\t * @return instancia de java.sql.Connection\n\t **/"
         },
         {
           "name": "executeQuery",
@@ -26,7 +26,7 @@
               }
             }
           ],
-          "javadoc": "/**\r\n\t * Ejecuta un consulta SQL sobre la dB\r\n\t * @param query SQL como string\r\n\t **/"
+          "javadoc": "/**\n\t * Ejecuta un consulta SQL sobre la dB\n\t * @param query SQL como string\n\t **/"
         },
         {
           "name": "closeDatabaseConnection",
@@ -50,7 +50,7 @@
               }
             }
           ],
-          "javadoc": "/**\r\n\t * Ejecuta INSERT/UPDATE/DELETE/COUNT/SUM.. en la dB\r\n\t * @param query SQL como string\r\n\t */"
+          "javadoc": "/**\n\t * Ejecuta INSERT/UPDATE/DELETE/COUNT/SUM.. en la dB\n\t * @param query SQL como string\n\t */"
         }
       ]
     }

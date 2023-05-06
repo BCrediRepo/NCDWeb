@@ -31,7 +31,6 @@ def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 20144835"
 String vDNI = null
 String vClave = null
 String vUsuario = null
-String vClaveBypass = null
 String vValorMonto = 1
 
 CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
@@ -88,7 +87,7 @@ CustomKeywords.'pkgUtilities.kwyUtility.comparacionMontoTrxPropias'(60)
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmar'))
 
 //Ingresa Clave Bypass
-WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrfClaveBypass'), vClaveBypass)
+WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrfClaveBypass'), vClave)
 
 //Confirma Operación
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmarBypass'))

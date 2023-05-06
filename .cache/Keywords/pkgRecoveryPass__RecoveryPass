@@ -1,0 +1,16 @@
+{
+  "keywordFileContentHash": "6C7D8F2157CA27161B6A2C139CD901C1",
+  "keywordClasses": [
+    {
+      "name": "pkgRecoveryPass.RecoveryPass",
+      "keywordMethods": [
+        {
+          "name": "recuperarPass",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

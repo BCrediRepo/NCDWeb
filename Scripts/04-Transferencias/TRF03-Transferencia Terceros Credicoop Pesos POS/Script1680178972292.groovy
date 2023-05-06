@@ -26,14 +26,13 @@ import javax.swing.JOptionPane
 
 //-------------------Conecta a base de datos--------------------------------------------
 def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 13976407"
-def vQuery2 = "SELECT * FROM TipoTrf WHERE Nombre = Trf Terceros"
+def vQuery2 = "SELECT * FROM TipoTrf WHERE Nombre = 'Trf Terceros'"
 
 String vDNI = null
 String vClave = null
 String vUsuario = null
 String vTipoTrf = null
-String vClaveBypass = null
-def vValorMonto = 1
+String vValorMonto = 1
 
 CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
 
@@ -44,7 +43,6 @@ ResultSet vResult2 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery2)
 vDNI = vResult.getString(2)
 vUsuario = vResult.getString(3)
 vClave = vResult.getString(4)
-vClaveBypass = vResult.getString(4)
 vTipoTrf = vResult2.getString(2)
 
 //Cierre de la conexion
@@ -85,7 +83,7 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transfe
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmar'))
 
 //Ingresa Clave Bypass
-WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrfClaveBypass'), vClaveBypass)
+WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrfClaveBypass'), vClave)
 
 //Confirma Operación
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmarBypass'))

@@ -32,7 +32,6 @@ String vDNI = null
 String vClave = null
 String vUsuario = null
 String vTipoTrf = null
-String vClaveBypass = null
 String vValorMonto = 1
 
 CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
@@ -85,7 +84,7 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transfe
 WebUI.click(findTestObject('Object Repository/04-Transferencias/btnConfirmarJudicial'))
 
 //Ingresa Clave Bypass
-WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrfClaveBypass'), vClaveBypass)
+WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrfClaveBypass'), vClave)
 
 //Confirma Operación
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmarBypass'))

@@ -26,14 +26,13 @@ import javax.swing.JOptionPane
 
 //-------------------Conecta a base de datos--------------------------------------------
 def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 20144835"
-def vQuery2 = "SELECT * FROM TipoTrf WHERE Nombre = Trf Judicial"
+def vQuery2 = "SELECT * FROM TipoTrf WHERE Nombre = 'Trf Judicial'"
 
 String vDNI = null
 String vClave = null
 String vUsuario = null
 String vTipoTrf = null
-String vClaveBypass = null
-def vValorMonto = 1
+String vValorMonto = 1
 
 CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
 
@@ -82,10 +81,10 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTitularidadTe
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnContinuarFormulario'))
 
 //Cliquea en boton Confirmar
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmar'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/btnConfirmarJudicial'))
 
 //Ingresa Clave Bypass
-WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrfClaveBypass'), vClaveBypass)
+WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrfClaveBypass'), vClave)
 
 //Confirma Operación
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmarBypass'))
@@ -93,13 +92,16 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transfe
 //Valida Destinatario
 WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/txtTrfBeneficiarioDestino'))
 
+//Elimina la Transferencia Judicial
+WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkSolapaEnviadas'))
+//NOTA: Agregar que seleccione el icono de tachito para eliminar y valide el mensaje de confirmacion
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/TRF12-EliminarTransferenciaJudicialPOS.png')
+	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/TRF05-TransferenciasJudicialesCredicoopPesosPOS.png')
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed

@@ -26,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>42367789-c53d-4304-88ac-11a0ee2728a4</webElementGuid>
+      <webElementGuid>e5c058ef-c45a-43e5-adfc-063d81ed2e8c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -34,7 +34,7 @@
       <name>id</name>
       <type>Main</type>
       <value>flxBeneficiariesRow_lblCbu</value>
-      <webElementGuid>4ce90888-5f5b-4231-a2bd-574acf2c132a</webElementGuid>
+      <webElementGuid>258f0149-3ac3-4c3c-b58c-dd0bfe23a86a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -42,7 +42,7 @@
       <name>kwidgettype</name>
       <type>Main</type>
       <value>Label</value>
-      <webElementGuid>5ed1d2ec-092a-4287-8e36-91720fc33329</webElementGuid>
+      <webElementGuid>17354fd1-b2be-4868-b6e7-6a6fd7086371</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -50,7 +50,7 @@
       <name>kformname</name>
       <type>Main</type>
       <value>flxBeneficiariesRow</value>
-      <webElementGuid>97b0f0df-1e42-4568-9ce4-e1d2d91a172d</webElementGuid>
+      <webElementGuid>223be362-ca5e-4b9a-8ce1-0af44830cd4d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -58,7 +58,7 @@
       <name>kcontainerid</name>
       <type>Main</type>
       <value>segBeneficiaries</value>
-      <webElementGuid>bb91fcc9-5e63-4f7d-a02a-f9de564e4d4d</webElementGuid>
+      <webElementGuid>e0c15962-6158-4353-b5ac-0297efd4328a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -66,7 +66,7 @@
       <name>kuid</name>
       <type>Main</type>
       <value>D51CE5E4-F632-4103-A207-13C120E41833</value>
-      <webElementGuid>74fbeacb-2ee3-45df-99cc-30853c97fa95</webElementGuid>
+      <webElementGuid>db784089-db0a-4398-9740-91bd04838722</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -74,7 +74,7 @@
       <name>class</name>
       <type>Main</type>
       <value> sknLblCbuBeneficiary cntmiddleleftalign disableSelection</value>
-      <webElementGuid>20506213-a2a0-452e-97cb-ea8012656bfc</webElementGuid>
+      <webElementGuid>c834f609-1d97-41b4-b26b-821724269813</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -82,7 +82,7 @@
       <name>text</name>
       <type>Main</type>
       <value>CBU/CVU 19101196-55111901183599</value>
-      <webElementGuid>decd6860-d3ab-4e9b-83af-284c9370fdf8</webElementGuid>
+      <webElementGuid>61b75616-ba97-4ed4-bb0e-abe408d47923</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -90,7 +90,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;frmBcclBeneficiaryAgenda_segBeneficiaries&quot;)/ul[1]/li[@class=&quot;seg2Normal&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxBeneficiariesRow_flxBeneficiariesRow&quot;]/div[@class=&quot;kcell middlecenteralignsknFlxCursorPointer&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxBeneficiariesRow_flxBeneficiaryNameCbu&quot;]/div[@class=&quot;kcell middlecenteralignsknLblCbuBeneficiary&quot;]/div[@id=&quot;flxBeneficiariesRow_lblCbu&quot;]</value>
-      <webElementGuid>828573b3-da37-44e8-87bd-0a342c467ca6</webElementGuid>
+      <webElementGuid>ca797d58-ab0a-4a0a-a706-6af337fa46af</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -98,7 +98,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//div[@id='flxBeneficiariesRow_lblCbu']</value>
-      <webElementGuid>c142975c-3276-4e19-93b5-2f9253247fa7</webElementGuid>
+      <webElementGuid>846337ad-6c07-4fc9-aedf-33190cc54235</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -106,7 +106,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='flxBeneficiariesRow_flxBeneficiaryNameCbu']/div[2]/div</value>
-      <webElementGuid>48a4da7b-71ab-468b-8530-caea4d259763</webElementGuid>
+      <webElementGuid>433be890-df43-40ef-b9e0-8dfeec21f894</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -114,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='EDIE AGUSTIN  ENRICO'])[1]/following::div[2]</value>
-      <webElementGuid>57e6df47-ac93-426a-89d8-3e8f681d13fa</webElementGuid>
+      <webElementGuid>c7684177-2f9d-46af-9d58-f8d7c3c380cf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -122,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Alias'])[1]/following::div[14]</value>
-      <webElementGuid>fa760fe8-1756-4b60-8952-ff6217048110</webElementGuid>
+      <webElementGuid>41219294-ffb7-4970-9900-d31bfd12e110</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -130,7 +130,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)=''])[1]/preceding::div[1]</value>
-      <webElementGuid>cb793ed3-8b3f-4457-a77f-7e471d8a193b</webElementGuid>
+      <webElementGuid>71b2ff95-a705-49a2-b50a-7a7007bf51b1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -138,7 +138,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Propia'])[1]/preceding::div[9]</value>
-      <webElementGuid>ab3adfb9-53df-482d-80aa-71d78d91e7d1</webElementGuid>
+      <webElementGuid>c8fae9a4-4dc1-476b-830f-f7ea366c66e9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -146,7 +146,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='CBU/CVU 19101196-55111901183599']/parent::*</value>
-      <webElementGuid>fa77b958-11d6-4350-bb3a-068e68e64e59</webElementGuid>
+      <webElementGuid>e55eb034-50ae-490a-b4bd-f2cb14e19851</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -154,7 +154,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div/div/div/ul/li/div/div/div/div/div/div[2]/div</value>
-      <webElementGuid>36a22e00-c253-41b5-8892-2aabe86e3457</webElementGuid>
+      <webElementGuid>ecdf4e35-7aad-4a1f-983e-6014460c6a4f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -162,6 +162,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[@id = 'flxBeneficiariesRow_lblCbu' and (text() = 'CBU/CVU 19101196-55111901183599' or . = 'CBU/CVU 19101196-55111901183599')]</value>
-      <webElementGuid>62085e3e-5f63-49b1-87b8-60f78712f67b</webElementGuid>
+      <webElementGuid>0c487b55-b904-48ad-8f7d-5da2e8bcf0b9</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
