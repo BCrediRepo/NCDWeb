@@ -65,8 +65,8 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Benefic
 WebUI.setText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrfBuscarBeneficiarioTipo'), vTipoTrf)
 
 //Inicia la transferencia
-WebUI.click(findTestObject('Object Repository/04-Transferencias/mnuDesplegableCtaTercerosDolar'))
-WebUI.click(findTestObject('Object Repository/04-Transferencias/txtNuevaTransferenciaTercerosDolar'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/mnuTercerosCredicoop'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/txtNuevaTransferenciaCredicoop'))
 
 //Ingresa Monto
 WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrfMontoFormulario'))
@@ -75,10 +75,6 @@ WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrfMontoFo
 //Selecciona Titularidad
 WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrfSeleccionTitularidadFormulario'))
 WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTitularidadTextoFormulario'))
-
-//Selecciona Concepto
-WebUI.click(findTestObject('Object Repository/04-Transferencias/mnuDesplegableConcepto'))
-WebUI.click(findTestObject('Object Repository/04-Transferencias/txtConceptoAlquiler'))
 
 //Cliquea en Continuar
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnContinuarFormulario'))

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>LGN02-Ingreso con clave vencida y cambio POS</name>
+   <name>TRF19-ABM Beneficiario con Cuenta POS</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>a67fbf31-20bd-449a-8c37-d403a2daa663</testCaseGuid>
+   <testCaseGuid>8746cf58-57bc-4fce-b197-c97f49a93f28</testCaseGuid>
 </TestCaseEntity>

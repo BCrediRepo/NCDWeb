@@ -24,16 +24,16 @@ import java.sql.Statement
 
 import javax.swing.JOptionPane
 
+
 //-------------------Conecta a base de datos--------------------------------------------
-def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 5119298"
-def vQuery2 = "SELECT * FROM Labels WHERE Id = 23" 
+def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 13976407"
+def vQuery2 = "SELECT * FROM TipoTrf WHERE Nombre = 'Trf Terceros'"
 
 String vDNI = null
 String vClave = null
 String vUsuario = null
-String vClaveBypass = null
-String vlblAbrirCta = null
-def vValorMonto = 1
+String vTipoTrf = null
+String vValorMonto = 1
 
 CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
 
@@ -44,16 +44,11 @@ ResultSet vResult2 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery2)
 vDNI = vResult.getString(2)
 vUsuario = vResult.getString(3)
 vClave = vResult.getString(4)
-vClaveBypass = vResult.getString(4)
-vlblAbrirCta = vResult2.getString(3)
+vTipoTrf = vResult2.getString(2)
 
 //Cierre de la conexion
 CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
 //---------------------------------------------------------------------------------------------------------------------
-
-/*
-def vlblAbrirCta = findTestData('05-Labels/Labels').getValue(2,15)
-*/
 
 //Se selecciona el servidor y se cargan los datos
 CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
@@ -64,30 +59,52 @@ CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 //Ingresa en la sección Transferencias del Dashboard
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'))
 
-//Cliquea en Nueva Transferencia
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfNuevaTransferenciaInicio'))
+//Valida y cliquea en Agenda de Beneficiarios
+WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lnkTrfAgendaBeneficiario'))
 
-//Selecciono solapa Mis cuentas Credicoop
-WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop'))
+//Busca por tipo de Beneficiario
+WebUI.setText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrfBuscarBeneficiarioTipo'), vTipoTrf)
 
-//Valida que no hay cuentas
-WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblAbrirCta'), vlblAbrirCta)
+//Inicia la transferencia
+WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkTrfCuentaBenefTercerosPesos'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkTrfIniciarTransferenciaBeneficiario'))
+
+//Selecciona Cuenta Corriente
+WebUI.click(findTestObject('Object Repository/04-Transferencias/mnuTrxCuentaDebito'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrfCuentaDebito'))
+
+//Ingresa Monto
+WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrfMontoFormulario'))
+WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrfMontoFormulario'), vValorMonto)
+
+//Selecciona Titularidad
+WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrfSeleccionTitularidadFormulario'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTitularidadTextoFormulario'))
+
+//Cliquea en Continuar
+WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnContinuarFormulario'))
+
+//Cliquea en boton Confirmar
+WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmar'))
+
+//Ingresa Clave Bypass
+WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrfClaveBypass'), vClave)
+
+//Confirma Operación
+WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmarBypass'))
+
+//Valida Destinatario
+WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/txtTrfBeneficiarioDestino'))
 
 //---------------------------------------------------------------------------------------------------------------------
-
 //Control de fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/TRF09-IntentarTransferirSinCuentasNEG.png')
+	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/TRF03-TransferenciaTercerosCredicoopPesosPOS.png')
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgUtilities.kwyUtility.fPassStatus'()
 }
-
-
-
-
-

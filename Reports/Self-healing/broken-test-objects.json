@@ -205,6 +205,26 @@
       "proposedLocatorMethod": "XPATH",
       "recoveryMethod": "XPATH",
       "pathToScreenshot": "Reports/Self-healing/Object Repository/04-Transferencias/04-Calendario/icoTrfCalendarioMesSiguiente_img.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/04-Transferencias/mnuDesplegableTrxOtrosBancos",
+      "brokenLocator": "id(\"frmBcclBeneficiaryAgenda_segBeneficiaries\")/ul[1]/li[@class\u003d\"seg2Normal\"]/div[@id\u003d\"flexcontainer_wrapper\"]/div[@id\u003d\"flxBeneficiariesRow_flxBeneficiariesRow\"]/div[@class\u003d\"kcell middlecenteralignskncursor\"]/div[@id\u003d\"flexcontainer_wrapper\"]/div[@id\u003d\"flxBeneficiariesRow_flxSubMenuContainer\"]/div[@class\u003d\"kcell middlecenteralignsknLblSubMenuDashboard\"]/div[@id\u003d\"flxBeneficiariesRow_lblSubMenuIcon\"][count(. | //*[@id \u003d \u0027flxBeneficiariesRow_lblSubMenuIcon\u0027 and @kuid \u003d \u0027525A18BF-C3EA-44BD-9F17-B4B439075B00\u0027 and @class \u003d \u0027 sknLblSubMenuDashboard cntmiddlecenteralign disableSelection\u0027 and (text() \u003d \u0027\u0027 or . \u003d \u0027\u0027)]) \u003d count(//*[@id \u003d \u0027flxBeneficiariesRow_lblSubMenuIcon\u0027 and @kuid \u003d \u0027525A18BF-C3EA-44BD-9F17-B4B439075B00\u0027 and @class \u003d \u0027 sknLblSubMenuDashboard cntmiddlecenteralign disableSelection\u0027 and (text() \u003d \u0027\u0027 or . \u003d \u0027\u0027)])]",
+      "brokenLocatorMethod": "BASIC",
+      "proposedLocator": "//div[@id\u003d\u0027flxBeneficiariesRow_lblSubMenuIcon\u0027]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/04-Transferencias/mnuDesplegableTrxOtrosBancos_XPATH.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/04-Transferencias/mnuTercerosCredicoop",
+      "brokenLocator": "id(\"frmBcclBeneficiaryAgenda_segBeneficiaries\")/ul[1]/li[@class\u003d\"seg2Normal\"]/div[@id\u003d\"flexcontainer_wrapper\"]/div[@id\u003d\"flxBeneficiariesRow_flxBeneficiariesRow\"]/div[@class\u003d\"kcell middlecenteralignskncursor\"]/div[@id\u003d\"flexcontainer_wrapper\"]/div[@id\u003d\"flxBeneficiariesRow_flxSubMenuContainer\"]/div[@class\u003d\"kcell middlecenteralignsknLblSubMenuDashboard\"]/div[@id\u003d\"flxBeneficiariesRow_lblSubMenuIcon\"][count(. | //*[@id \u003d \u0027flxBeneficiariesRow_lblSubMenuIcon\u0027 and @kuid \u003d \u00278A170ECB-C803-4497-944A-5D63406BBA25\u0027 and @class \u003d \u0027 sknLblSubMenuDashboard cntmiddlecenteralign disableSelection\u0027 and (text() \u003d \u0027\u0027 or . \u003d \u0027\u0027)]) \u003d count(//*[@id \u003d \u0027flxBeneficiariesRow_lblSubMenuIcon\u0027 and @kuid \u003d \u00278A170ECB-C803-4497-944A-5D63406BBA25\u0027 and @class \u003d \u0027 sknLblSubMenuDashboard cntmiddlecenteralign disableSelection\u0027 and (text() \u003d \u0027\u0027 or . \u003d \u0027\u0027)])]",
+      "brokenLocatorMethod": "BASIC",
+      "proposedLocator": "(//div[@id\u003d\u0027flxBeneficiariesRow_lblSubMenuIcon\u0027])[3]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/04-Transferencias/mnuTercerosCredicoop_XPATH.png"
     }
   ]
 }

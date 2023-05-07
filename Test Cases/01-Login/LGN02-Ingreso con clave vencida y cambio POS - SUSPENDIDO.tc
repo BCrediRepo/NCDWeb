@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TRF09-Intentar Transferir sin Cuentas NEG</name>
+   <name>LGN02-Ingreso con clave vencida y cambio POS - SUSPENDIDO</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>3911926b-b527-4d6d-9919-2002379f1f68</testCaseGuid>
+   <testCaseGuid>a67fbf31-20bd-449a-8c37-d403a2daa663</testCaseGuid>
 </TestCaseEntity>

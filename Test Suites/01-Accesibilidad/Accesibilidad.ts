@@ -22,7 +22,7 @@
       <guid>ce55fbbc-dfb7-431f-b9a4-0a0b6aa25157</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/01-Login/LGN02-Ingreso con clave vencida y cambio POS</testCaseId>
+      <testCaseId>Test Cases/01-Login/LGN02-Ingreso con clave vencida y cambio POS - SUSPENDIDO</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
