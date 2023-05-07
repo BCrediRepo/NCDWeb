@@ -25,24 +25,20 @@ import java.sql.Statement
 import javax.swing.JOptionPane
 
 //-------------------Conecta a base de datos--------------------------------------------
-def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 5119298"
-def vQuery2 = "SELECT * FROM Labels WHERE Id = 23" 
+def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 30276301"
 
 String vDNI = null
 String vClave = null
 String vUsuario = null
-String vlblAbrirCta = null
 
 CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
 
 //Consulta a la base de datos
 ResultSet vResult = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery)
-ResultSet vResult2 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery2)
 
 vDNI = vResult.getString(2)
 vUsuario = vResult.getString(3)
 vClave = vResult.getString(4)
-vlblAbrirCta = vResult2.getString(3)
 
 //Cierre de la conexion
 CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
@@ -54,33 +50,26 @@ CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
 //Se loguea con el usuario seleccionado
 CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 
-//Ingresa en la sección Transferencias del Dashboard
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'))
+//Ingresa al módulo de Ahorro e Inversion desde menú lateral
+WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbAhorro e Inversin'))
 
-//Cliquea en Nueva Transferencia
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfNuevaTransferenciaInicio'))
+//Valida datos del listado con el detalle del Plazo Fijo
+CustomKeywords.'pkgUtilities.kwyUtility.comparacionListaDetallePlazoFijo'(60)
 
-//Selecciono solapa Mis cuentas Credicoop
-WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop'))
-
-//Valida que no hay cuentas
-WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblAbrirCta'), vlblAbrirCta)
+//Cierra solapa Detalle
+WebUI.click(findTestObject('Object Repository/06-Inversiones/icoCerrarDetalle'))
 
 //---------------------------------------------------------------------------------------------------------------------
-
 //Control de fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/TRF09-IntentarTransferirSinCuentasNEG.png')
+	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/INV04-ConsultarDetallePlazoFijoPOS.png')
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgUtilities.kwyUtility.fPassStatus'()
 }
-
-
-
 
 

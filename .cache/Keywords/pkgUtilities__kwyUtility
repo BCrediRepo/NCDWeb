@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "35F4991E0CF5A63A732065520CBC5D09",
+  "keywordFileContentHash": "BD19938C7AEE4D80E8599F61353951FB",
   "keywordClasses": [
     {
       "name": "pkgUtilities.kwyUtility",
@@ -20,8 +20,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "Login",
@@ -65,8 +64,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "fFailStatus",
@@ -84,18 +82,15 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "fPassStatus",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "fLoginPassStatus",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "comparacionOrigenDetalle",
@@ -113,8 +108,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "comparacionListaDetallePago",
@@ -132,8 +126,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "comparacionListadoTrxPropias",
@@ -151,8 +144,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "comparacionMontoTrxPropias",
@@ -170,8 +162,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "comparacionNumeroOperacionTrxPropias",
@@ -189,11 +180,28 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
+        },
+        {
+          "name": "comparacionListaDetallePlazoFijo",
+          "parameters": [
+            {
+              "name": "vTiempo",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

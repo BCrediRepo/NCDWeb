@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TRF10-Validaciones Erroneas para Transferir NEG</name>
+   <name>DBN04-Aceptar Eliminar Rechazar Debin POS-X</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>9c62c3af-c0e3-47ac-979e-e1e2409d3e37</testCaseGuid>
+   <testCaseGuid>c032759a-04e8-46ff-9914-0b74795bd80e</testCaseGuid>
 </TestCaseEntity>

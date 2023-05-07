@@ -26,15 +26,14 @@ import javax.swing.JOptionPane
 
 //-------------------Conecta a base de datos--------------------------------------------
 def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 20144835"
-def vQuery1 = "SELECT * FROM Toast WHERE idToast = 'Toa-015'"
-def vQuery2 = "SELECT * FROM Labels WHERE Id = 24"
+def vQuery1 = "SELECT * FROM Toast WHERE idToast = 'Toa-024'"
+def vQuery2 = "SELECT * FROM Toast WHERE idToast = 'BX-MSJ-00119'"
 
 String vDNI = null
 String vClave = null
 String vUsuario = null
-String vMonedaTexto = null
-String vMontoLimite = null
-String vValorMonto = 1200009
+String vMjeError = null
+String vMjeExito = null
 
 CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
 
@@ -46,9 +45,8 @@ ResultSet vResult2 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery2)
 vDNI = vResult.getString(2)
 vUsuario = vResult.getString(3)
 vClave = vResult.getString(4)
-vClaveBypass = vResult.getString(4)
-vMonedaTexto = vResult1.getString(2)
-vMontoLimite = vResult2.getString(3)
+vMjeError = vResult1.getString(2)
+vMjeExito = vResult2.getString(2)
 
 //Cierre de la conexion
 CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
@@ -60,55 +58,46 @@ CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
 //Se loguea con el usuario seleccionado
 CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 
-//Cliquea en el menú desplegable desde Inicio y selecciona Nueva Transferencia desde cta Dólares
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/mnuTrfDesplegableCtasInicioCtaDolares'))
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/txtTrfNuevaTransferenciaInicioCtaDolares'))
+//Ingresa en la sección Transferencias del Dashboard
+WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'))
 
-//Selecciono solapa Mis cuentas Credicoop
-WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop'))
+//Valida y cliquea en Agenda de Beneficiarios
+WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lnkTrfAgendaBeneficiario'))
 
-//Selecciona Cuenta en pesos
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/txtTrfMisCtasPesos'))
+//Selecciona nuevo Beneficiario Destacado con 3	Seleccionados
+WebUI.click(findTestObject('Object Repository/04-Transferencias/icoTrxBenfNoDestacado'))
 
-//Valida Toast Moneda Errónea
-WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblTrfMensajeMonedaErronea'),vMonedaTexto)
+//Valida mensaje error
+WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/txtTrxMsjeExcedeBenfDestacado'), vMjeError)
 
-//Ingresa en la sección Inicio del Dashboard
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbInicioEstado2'))
+//DesSelecciona Beneficiario Destacado y vuelve a Seleccionarlo
+WebUI.click(findTestObject('Object Repository/04-Transferencias/icoTrxBenfDestacado'))
+WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/txtTrxMsjeOperacionRealizadaExito'), vMjeExito)
+WebUI.delay(5)
+WebUI.click(findTestObject('Object Repository/04-Transferencias/icoTrxBenfDestacado'))
 
-//Cliquea en el menú desplegable desde Inicio y selecciona Nueva Transferencia desde cta Pesos
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/mnuTrfDespelgableInicioCtaPesos'))
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/txtTrfNuevaTransferenciaInicioCtaPesos'))
-
-//Selecciono solapa Mis cuentas Credicoop
-WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop'))
-
-//Selecciona Cuenta en pesos
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/txtTrfMisCtasPesos'))
-
-//Ingresa monto
-WebUI.click(findTestObject('Object Repository/04-Transferencias/txtMontoPesos'))
-WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtMontoPesos'), vValorMonto)
-
-//Selecciona Titularidad
-WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrfSeleccionTitularidadFormulario'))
-
-//Valida Mensaje Monto Supera Limite
-//vMontoAtributo = WebUI.getAttribute(findTestObject('Object Repository/04-Transferencias/txtTrxMontoSuperaLimite'), text)
-//WebUI.verifyMatch(vMontoAtributo,vMontoLimite, true)
-WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/txtTrxMontoSuperaSaldo'), vMontoLimite)
-
-//NOTA: Cambiar validacion monto Limite
+//Valida mensaje ok
+WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/txtTrxMsjeOperacionRealizadaExito'), vMjeExito)
 
 //---------------------------------------------------------------------------------------------------------------------
+
 //Control de fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/TRF10-ValidacionesErroneasParaTransferirNEG.png')
+	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/TRF14-AdministrarBeneficiarioDestacadoPOS.png')
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgUtilities.kwyUtility.fPassStatus'()
 }
+	
+
+/*
+if(cantidadFav == 3){
+	System.out.println("---YA HAY 3 BENEFICIARIOS DESTACADOS")
+}else if(cantidadFav < 3){
+            System.out.println("---NO HAY 3 BENEFICIARIOS DESTACADOS")
+}
+*/

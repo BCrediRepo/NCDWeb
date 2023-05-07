@@ -225,6 +225,116 @@
       "proposedLocatorMethod": "XPATH",
       "recoveryMethod": "XPATH",
       "pathToScreenshot": "Reports/Self-healing/Object Repository/04-Transferencias/mnuTercerosCredicoop_XPATH.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/06-Inversiones/txtInvTasa1",
+      "brokenLocator": "//div[@id\u003d\u0027frmFixedTermRatesTables_collapsableCard-3-1683488945335_lblHeaderTitle\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027\u0027])[1]/following::div[21]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/06-Inversiones/txtInvTasa1_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/06-Inversiones/txtInvTasa2",
+      "brokenLocator": "//div[@id\u003d\u0027frmFixedTermRatesTables_collapsableCard-26-1683488945364_lblHeaderTitle\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027TNA 90\u0027])[1]/following::div[63]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/06-Inversiones/txtInvTasa2_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/06-Inversiones/txtInvTasa3",
+      "brokenLocator": "//div[@id\u003d\u0027frmFixedTermRatesTables_collapsableCard-30-1683488945394_lblHeaderTitle\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027TNA 90\u0027])[2]/following::div[63]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/06-Inversiones/txtInvTasa3_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/06-Inversiones/txtInvTasa4",
+      "brokenLocator": "//div[@id\u003d\u0027frmFixedTermRatesTables_collapsableCard-31-1683488945439_lblHeaderTitle\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Tasa\u0027])[1]/following::div[75]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/06-Inversiones/txtInvTasa4_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/06-Inversiones/txtInvTasa5",
+      "brokenLocator": "//div[@id\u003d\u0027frmFixedTermRatesTables_collapsableCard-32-1683488945482_lblHeaderTitle\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027TNA 90\u0027])[3]/following::div[74]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/06-Inversiones/txtInvTasa5_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/06-Inversiones/txtInvTasa6",
+      "brokenLocator": "//div[@id\u003d\u0027frmFixedTermRatesTables_collapsableCard-33-1683488945533_lblHeaderTitle\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Hasta 999 días\u0027])[1]/following::div[107]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/06-Inversiones/txtInvTasa6_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/06-Inversiones/txtInvTasa7",
+      "brokenLocator": "//div[@id\u003d\u0027frmFixedTermRatesTables_collapsableCard-98-1683488945590_lblHeaderTitle\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Hasta 999 días\u0027])[2]/following::div[123]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/06-Inversiones/txtInvTasa7_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/06-Inversiones/txtInvTasa8",
+      "brokenLocator": "//div[@id\u003d\u0027frmFixedTermRatesTables_collapsableCard-108-1683488945651_lblHeaderTitle\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027TNA 180\u0027])[2]/following::div[63]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/06-Inversiones/txtInvTasa8_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/06-Inversiones/txtTipoPFDetalle",
+      "brokenLocator": "//div[@id\u003d\u0027frmInvestmentsHomeBccl_DetallePlazoFijo_lblTipoPlazoFijoKey1683492792693\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Label\u0027])[20]/following::div[23]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/06-Inversiones/txtFechaVencimientoPFDetalle",
+      "brokenLocator": "//div[@id\u003d\u0027frmInvestmentsHomeBccl_DetallePlazoFijo_lblFechaVencimientoValue1683491896493\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Fecha vencimiento\u0027])[1]/following::div[2]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/06-Inversiones/txtFechaVencimientoPFDetalle_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/06-Inversiones/txtMontoPFDetalle",
+      "brokenLocator": "//div[@id\u003d\u0027frmInvestmentsHomeBccl_DetallePlazoFijo_lblMontoAReembolsarValue1683491896493\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Monto a reembolsar\u0027])[2]/following::div[2]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/06-Inversiones/txtMontoPFDetalle_neighbor.png"
     }
   ]
 }

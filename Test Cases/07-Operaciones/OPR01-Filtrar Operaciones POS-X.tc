@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TRF10-Validaciones Erroneas para Transferir NEG</name>
+   <name>OPR01-Filtrar Operaciones POS-X</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>9c62c3af-c0e3-47ac-979e-e1e2409d3e37</testCaseGuid>
+   <testCaseGuid>3b4f507b-f8cf-4a78-9dd0-23d7b489bd8b</testCaseGuid>
 </TestCaseEntity>

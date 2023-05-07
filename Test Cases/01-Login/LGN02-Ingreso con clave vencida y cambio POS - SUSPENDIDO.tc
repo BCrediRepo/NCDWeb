@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>LGN02-Ingreso con clave vencida y cambio POS - SUSPENDIDO</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>a67fbf31-20bd-449a-8c37-d403a2daa663</testCaseGuid>
-</TestCaseEntity>

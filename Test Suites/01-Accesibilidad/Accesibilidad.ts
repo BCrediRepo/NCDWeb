@@ -15,14 +15,14 @@
       <guid>d98f8f83-8cd2-4f9b-87f3-5490a987d179</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/01-Login/LGN01-Login happy case</testCaseId>
+      <testCaseId>Test Cases/01-Login/LGN01-Login</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>ce55fbbc-dfb7-431f-b9a4-0a0b6aa25157</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/01-Login/LGN02-Ingreso con clave vencida y cambio POS - SUSPENDIDO</testCaseId>
+      <testCaseId>Test Cases/01-Login/LGN02-Ingreso con clave vencida y cambio POS - X</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

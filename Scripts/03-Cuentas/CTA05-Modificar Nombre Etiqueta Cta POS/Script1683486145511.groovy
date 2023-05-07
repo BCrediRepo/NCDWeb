@@ -25,24 +25,29 @@ import java.sql.Statement
 import javax.swing.JOptionPane
 
 //-------------------Conecta a base de datos--------------------------------------------
-def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 5119298"
-def vQuery2 = "SELECT * FROM Labels WHERE Id = 23" 
+def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 1776391"
+def vQuery2 = "SELECT * FROM Parametros WHERE Nombre = 'Nombre Cuenta'"
+def vQuery3 = "SELECT * FROM Toast WHERE idToast = 'Toa-ctas'"
 
 String vDNI = null
 String vClave = null
 String vUsuario = null
-String vlblAbrirCta = null
+String vNombre = "Nombre Cuenta"
+String vNombreModif = null
+String vMjeExito = null
 
 CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
 
 //Consulta a la base de datos
 ResultSet vResult = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery)
 ResultSet vResult2 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery2)
+ResultSet vResult3 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery3)
 
 vDNI = vResult.getString(2)
 vUsuario = vResult.getString(3)
 vClave = vResult.getString(4)
-vlblAbrirCta = vResult2.getString(3)
+vNombreModif = vResult2.getString(2)
+vMjeExito = vResult3.getString(2)
 
 //Cierre de la conexion
 CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
@@ -54,33 +59,37 @@ CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
 //Se loguea con el usuario seleccionado
 CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 
-//Ingresa en la sección Transferencias del Dashboard
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'))
+//Ingresa al módulo de Cuentas desde menú lateral y mapea los campos
+WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbCuentas'))
 
-//Cliquea en Nueva Transferencia
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfNuevaTransferenciaInicio'))
+//Cliquea sobre el nombre de la cuenta
+WebUI.click(findTestObject('Object Repository/03-Cuentas/lnkCtaNombreEtiqueta'))
 
-//Selecciono solapa Mis cuentas Credicoop
-WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop'))
+//Cliquea en menu y selecciona Cambiar Nombre Cuenta
+WebUI.click(findTestObject('Object Repository/03-Cuentas/mnuCtaNombre'))
+WebUI.click(findTestObject('Object Repository/03-Cuentas/txtCtaCambiarNombre'))
 
-//Valida que no hay cuentas
-WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblAbrirCta'), vlblAbrirCta)
-
+//Ingresa nuevo Nombre
+WebUI.setText(findTestObject('Object Repository/03-Cuentas/txtCtaModificacionNombre'), vNombre)
+WebUI.click(findTestObject('Object Repository/03-Cuentas/lnkConsultarAliasCBU'))
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/txtCtaMsjeNombreActualizado'), vMjeExito)
+WebUI.click(findTestObject('Object Repository/03-Cuentas/btnCerrarConsultaAliasCBU'))
+WebUI.delay(5)
+WebUI.click(findTestObject('Object Repository/03-Cuentas/mnuCtaNombre'))
+WebUI.click(findTestObject('Object Repository/03-Cuentas/txtCtaCambiarNombreModificado'))
+WebUI.setText(findTestObject('Object Repository/03-Cuentas/txtCtaModificacionNombre'), vNombreModif)
+	
 //---------------------------------------------------------------------------------------------------------------------
 
 //Control de fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/TRF09-IntentarTransferirSinCuentasNEG.png')
+	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/CTA05-ModificarNombreEtiquetaCtaPOS.png')
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgUtilities.kwyUtility.fPassStatus'()
 }
-
-
-
-
-
+	

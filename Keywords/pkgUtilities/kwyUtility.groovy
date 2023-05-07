@@ -305,6 +305,48 @@ public class kwyUtility {
 		WebUI.verifyEqual(vNumOperacionExito, vNumOperacionComprobante)
 
 	}
+	
+	/*----------------------------------------------------------------------------------------------*
+	 *Validación Detalle Plazo Fijo                                                                 *
+	 *----------------------------------------------------------------------------------------------*/
+	@Keyword
+	def comparacionListaDetallePlazoFijo(def vTiempo){
+
+		String vNombrePFLista = null
+		String vTipoPFLista = null
+		String vFechaPFLista = null
+		String vMontoPFLista = null
+		String vNombrePFDetalle = null
+		String vTipoPFDetalle = null
+		String vFechaPFDetalle = null
+		String vMontoPFDetalle = null
+
+		//En el listado de Plazo Fijo
+		WebUI.waitForPageLoad(vTiempo)
+
+		WebUI.getText(findTestObject('Object Repository/06-Inversiones/txtNombrePlazoFijoListado'), vNombrePFLista)
+		WebUI.getText(findTestObject('Object Repository/06-Inversiones/txtTipoPlazoFijoListado'), vTipoPFLista)
+		WebUI.getText(findTestObject('Object Repository/06-Inversiones/txtFechaVencimientoPFListado'), vFechaPFLista)
+		WebUI.getText(findTestObject('Object Repository/06-Inversiones/txtMontoPlazoFijoListado'), vMontoPFLista)
+
+		WebUI.click(findTestObject('Object Repository/06-Inversiones/txtNombrePlazoFijoListado'))
+
+		//En el Detalle del Plazo Fijo
+		WebUI.waitForPageLoad(vTiempo)
+
+		WebUI.getText(findTestObject('Object Repository/06-Inversiones/txtNombrePlazoFijoDetalle'), vNombrePFDetalle)
+		WebUI.getText(findTestObject('Object Repository/06-Inversiones/txtTipoPFDetalle'), vTipoPFDetalle)
+		WebUI.getText(findTestObject('Object Repository/06-Inversiones/txtFechaVencimientoPFDetalle'), vFechaPFDetalle)
+		WebUI.getText(findTestObject('Object Repository/06-Inversiones/txtMontoPFDetalle'), vMontoPFDetalle)
+
+		//Comparacion entre el Listado y el Detalle de Plazo Fijo
+		WebUI.verifyEqual(vNombrePFLista, vNombrePFDetalle)
+		WebUI.verifyEqual(vTipoPFLista, vTipoPFDetalle)
+		WebUI.verifyEqual(vFechaPFLista, vFechaPFDetalle)
+		WebUI.verifyEqual(vMontoPFLista, vMontoPFDetalle)
+
+	}
+
 
 
 

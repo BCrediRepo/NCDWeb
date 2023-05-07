@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>LGN01-Login happy case</name>
-   <tag>Login</tag>
-   <comment></comment>
-   <testCaseGuid>1881491d-8ae5-4610-b1a6-3e616e29fe69</testCaseGuid>
-</TestCaseEntity>

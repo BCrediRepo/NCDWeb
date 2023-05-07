@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TRF10-Validaciones Erroneas para Transferir NEG</name>
+   <name>PYR08-Consultar Pagos</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>9c62c3af-c0e3-47ac-979e-e1e2409d3e37</testCaseGuid>
+   <testCaseGuid>4c8e4964-6528-4dd6-b478-71874f681df1</testCaseGuid>
 </TestCaseEntity>

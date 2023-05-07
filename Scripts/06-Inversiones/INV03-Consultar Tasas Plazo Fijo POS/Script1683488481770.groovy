@@ -25,24 +25,45 @@ import java.sql.Statement
 import javax.swing.JOptionPane
 
 //-------------------Conecta a base de datos--------------------------------------------
-def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 5119298"
-def vQuery2 = "SELECT * FROM Labels WHERE Id = 23" 
+def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 30276301"
+def vQuery1 = "SELECT * FROM Labels WHERE Id = 26"
+def vQuery2 = "SELECT * FROM Labels WHERE Id = 27"
+def vQuery3 = "SELECT * FROM Labels WHERE Id = 28"
+def vQuery4 = "SELECT * FROM Labels WHERE Id = 29"
+def vQuery5 = "SELECT * FROM Labels WHERE Id = 30"
+def vQuery6 = "SELECT * FROM Labels WHERE Id = 31"
+def vQuery7 = "SELECT * FROM Labels WHERE Id = 32"
+def vQuery8 = "SELECT * FROM Labels WHERE Id = 33"
 
 String vDNI = null
 String vClave = null
 String vUsuario = null
-String vlblAbrirCta = null
 
 CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
 
 //Consulta a la base de datos
 ResultSet vResult = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery)
+ResultSet vResult1 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery1)
 ResultSet vResult2 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery2)
+ResultSet vResult3 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery3)
+ResultSet vResult4 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery4)
+ResultSet vResult5 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery5)
+ResultSet vResult6 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery6)
+ResultSet vResult7 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery7)
+ResultSet vResult8 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery8)
 
 vDNI = vResult.getString(2)
 vUsuario = vResult.getString(3)
 vClave = vResult.getString(4)
-vlblAbrirCta = vResult2.getString(3)
+vTasa1 = vResult1.getString(3)
+vTasa2 = vResult2.getString(3)
+vTasa3 = vResult3.getString(3)
+vTasa4 = vResult4.getString(3)
+vTasa5 = vResult5.getString(3)
+vTasa6 = vResult6.getString(3)
+vTasa7 = vResult7.getString(3)
+vTasa8 = vResult8.getString(3)
+
 
 //Cierre de la conexion
 CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
@@ -54,33 +75,32 @@ CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
 //Se loguea con el usuario seleccionado
 CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 
-//Ingresa en la sección Transferencias del Dashboard
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'))
+//Ingresa al módulo de Ahorro e Inversion desde menú lateral
+WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbAhorro e Inversin'))
 
-//Cliquea en Nueva Transferencia
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfNuevaTransferenciaInicio'))
+//Cliquea en menu y selecciona Consultar tasas de Plazo fijo
+WebUI.click(findTestObject('Object Repository/06-Inversiones/mnuInvPlazoFijo'))
+WebUI.click(findTestObject('Object Repository/06-Inversiones/txtInvConsultarTasasPlazoFijo'))
 
-//Selecciono solapa Mis cuentas Credicoop
-WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop'))
-
-//Valida que no hay cuentas
-WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblAbrirCta'), vlblAbrirCta)
+//Valida las Tasas de Plazo Fijo para la cta seleccionada
+WebUI.verifyElementText(findTestObject('Object Repository/06-Inversiones/txtInvTasa1'), vTasa1)
+WebUI.verifyElementText(findTestObject('Object Repository/06-Inversiones/txtInvTasa2'), vTasa2)
+WebUI.verifyElementText(findTestObject('Object Repository/06-Inversiones/txtInvTasa3'), vTasa3)
+WebUI.verifyElementText(findTestObject('Object Repository/06-Inversiones/txtInvTasa4'), vTasa4)
+WebUI.verifyElementText(findTestObject('Object Repository/06-Inversiones/txtInvTasa5'), vTasa5)
+WebUI.verifyElementText(findTestObject('Object Repository/06-Inversiones/txtInvTasa6'), vTasa6)
+WebUI.verifyElementText(findTestObject('Object Repository/06-Inversiones/txtInvTasa7'), vTasa7)
+WebUI.verifyElementText(findTestObject('Object Repository/06-Inversiones/txtInvTasa8'), vTasa8)
 
 //---------------------------------------------------------------------------------------------------------------------
-
 //Control de fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/TRF09-IntentarTransferirSinCuentasNEG.png')
+	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/INV03-ConsultarTasasPlazoFijoPOS.png')
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgUtilities.kwyUtility.fPassStatus'()
 }
-
-
-
-
-

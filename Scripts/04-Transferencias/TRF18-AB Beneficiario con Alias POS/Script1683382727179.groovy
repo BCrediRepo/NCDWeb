@@ -17,3 +17,134 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+import java.sql.Connection
+import java.sql.DriverManager
+import java.sql.ResultSet
+import java.sql.Statement
+
+import javax.swing.JOptionPane
+
+//-------------------Conecta a base de datos--------------------------------------------
+def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 13976407"
+def vQuery1 = "SELECT * FROM Parametros WHERE Nombre = 'Alias 1'"
+def vQuery2 = "SELECT * FROM Labels WHERE Id = 8"
+def vQuery3 = "SELECT * FROM Labels WHERE Id = 9"
+def vQuery4 = "SELECT * FROM Parametros WHERE Nombre = 'CBU 1'"
+
+/*
+def vQuery3 = "SELECT * FROM Labels WHERE Id = 9"
+def vQuery4 = "SELECT * FROM Toast WHERE idToast = 'BX-MSJ-00119'"
+def vQuery5 = "SELECT * FROM Toast WHERE idToast = 'BX-MSJ-00124'"
+*/
+String vDNI = null
+String vClave = null
+String vUsuario = null
+String vAliasBenf = null
+String vBenfLbl = null
+String vBenfGuardado = null
+String vCBUBenf = null
+/*
+String vBenfLbl = null
+String vBenfGuardado = null
+String vBenfEditado = null
+String vBenfEliminado = null
+String vNvoNombre = 'EDITADO'
+*/
+
+CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
+
+//Consulta a la base de datos
+ResultSet vResult = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery)
+ResultSet vResult1 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery1)
+ResultSet vResult2 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery2)
+ResultSet vResult3 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery3)
+ResultSet vResult4 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery4)
+/*
+ResultSet vResult4 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery4)
+ResultSet vResult5 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery5)
+*/
+vDNI = vResult.getString(2)
+vUsuario = vResult.getString(3)
+vClave = vResult.getString(4)
+vAliasBenf = vResult1.getString(2)
+vBenfLbl = vResult2.getString(3)
+vBenfGuardado = vResult3.getString(3)
+vCBUBenf = vResult4.getString(2)
+/*
+vBenfEditado = vResult4.getString(2)
+vBenfEliminado = vResult5.getString(2)
+*/
+//Cierre de la conexion
+CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
+//---------------------------------------------------------------------------------------------------------------------
+
+//Se selecciona el servidor y se cargan los datos
+CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
+
+//Se loguea con el usuario seleccionado
+CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
+
+//Ingresa en la sección Transferencias del Dashboard
+WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'))
+
+//Valida y cliquea en Agenda de Beneficiarios
+WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lnkTrfAgendaBeneficiario'))
+
+//Busca Beneficiario por CBU
+
+WebUI.setText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrfBuscarBeneficiarioTipo'), vAliasBenf)
+
+//Valida que el Beneficiario no este registrado
+WebUI.delay(5)
+WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lblBusquedaSinResultadosCBUBenf'),vBenfLbl)
+
+//Cliquea en Nuevo Beneficiario
+WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/btnNuevoBeneficiario'))
+
+//Cliquea en la opcion Alias
+WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxNuevoBenefAlias'))
+
+//Ingresa Alias
+WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxIngresoAlias'), vAliasBenf)
+
+//Cliqueo en Continuar
+WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/btnNuevoBenfContinuar'))
+
+//Selecciono Opción del menu tipo de transferencia
+WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/mnuTrfTipoNuevoBeneficiario'))
+WebUI.delay(5)
+WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrfMenuTipoNuevoBenficiario'))
+
+//Selecciono Moneda
+WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/radTrfMonedaPesosNuevoBeneficiario'))
+
+//Cliqueo en continuar
+WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/btnTrfContinuarNuevoBeneficiario'))
+
+//Valida Mensaje Exitoso
+WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lblTrfBeneficiarioGuardado'),vBenfGuardado)
+
+//Cierra Pantalla
+WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/icoCerrarBeneficiarioGuardado'))
+
+//Busca Beneficiario Guardado
+WebUI.setText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrfBuscarBeneficiarioTipo'), vCBUBenf)
+
+//Cliquea en menú para eliminar
+WebUI.delay(10)
+WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/mnuTrfBeneficiarioDesplegable'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrfNuevoBeneficiarioEliminar'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/btnTrfConfirmarEliminarBenf'))
+
+//---------------------------------------------------------------------------------------------------------------------
+//Control de fin de script
+
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/TRF00-ABBeneficiarioConAliasPOS.png')
+}
+
+@com.kms.katalon.core.annotation.TearDownIfPassed
+void fPassScript() {
+	CustomKeywords.'pkgUtilities.kwyUtility.fPassStatus'()
+}
