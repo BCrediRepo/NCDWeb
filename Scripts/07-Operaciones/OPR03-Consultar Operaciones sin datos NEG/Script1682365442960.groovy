@@ -26,7 +26,7 @@ import javax.swing.JOptionPane
 
 //-------------------Conecta a base de datos--------------------------------------------
 def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 5119298"
-def vQuery2 = "SELECT * FROM Labels WHERE Id = 23"
+def vQuery2 = "SELECT * FROM Labels WHERE Id = 34"
 
 String vDNI = null
 String vClave = null
@@ -59,7 +59,7 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbMisOperaciones'
 
 //Cliquea en Buscar y valida Resultados
 WebUI.click(findTestObject('Object Repository/07-Operaciones/btnBuscarOperacion'))
-WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloCuentaTabla'), vlblSinOperacion)
+WebUI.verifyElementText(findTestObject('Object Repository/07-Operaciones/txtOprBusquedaSinResultados'), vlblSinOperacion)
 
 //---------------------------------------------------------------------------------------------------------------------
 

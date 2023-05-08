@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>OPR03-Consultar Operaciones sin datos NEG</name>
+   <name>TRF11-Consultar Transferencias Posdatadas NEG-X</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>7e588ac4-0c32-405f-a9f3-79efb90d9fd8</testCaseGuid>
+   <testCaseGuid>0518a12a-fde6-4ce1-a28a-a9ba6c1eb7e3</testCaseGuid>
 </TestCaseEntity>

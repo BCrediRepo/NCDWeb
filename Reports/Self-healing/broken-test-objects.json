@@ -335,6 +335,46 @@
       "proposedLocatorMethod": "XPATH",
       "recoveryMethod": "XPATH",
       "pathToScreenshot": "Reports/Self-healing/Object Repository/06-Inversiones/txtMontoPFDetalle_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/08-Pagos y Recargas/lblServicioLista",
+      "brokenLocator": "(//div[@id\u003d\u0027flxCardPaymentsAndOtherMaturities_lblTaxService\u0027])[6]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Cuota\u0027])[3]/preceding::div[5]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/08-Pagos y Recargas/btnPagarLista",
+      "brokenLocator": "(//div[@id\u003d\u0027flxCardPaymentsAndOtherMaturities_lblPagar\u0027])[6]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Cuota\u0027])[3]/following::div[10]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/03-Cuentas/lblCtasTituloCuentaTabla",
+      "brokenLocator": "//*[@id \u003d \u0027frmAccountsHome_lblAccountHeader\u0027 and (text() \u003d \u0027Cuenta\u0027 or . \u003d \u0027Cuenta\u0027)]",
+      "brokenLocatorMethod": "BASIC",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Label\u0027])[3]/following::div[17]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/07-Operaciones/txtNumeroOperacion",
+      "brokenLocator": "//div[@id\u003d\u0027flxOperationsRow_lblOperation\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//div[2]/div/div/div/div/ul/li/div/div/div/div/div/div/div",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/07-Operaciones/txtNumeroOperacion_position.png"
     }
   ]
 }

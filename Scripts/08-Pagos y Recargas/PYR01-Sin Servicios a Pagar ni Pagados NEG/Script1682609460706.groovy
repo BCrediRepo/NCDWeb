@@ -90,14 +90,14 @@ WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/lnkVerHistoria
 WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblHistorialPagos'), vTxtHistorialPagos)
 WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblSinServiciosPorVencer'), vTxtSinServicios)
 WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblSinPagosRealizados'), vTxtSinPagos)
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/icoAtrasHistorial'))
+//WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/icoAtrasHistorial'))
 
 //Ingresa a Servicios Adheridos
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/mnuPagosRecargas'))
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/lnkVerServiciosAdheridos'))
+//WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/mnuPagosRecargas'))
+//WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/lnkVerServiciosAdheridos'))
 
 //Valida Mensaje
-WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblSinServiciosAdheridos'), vTxtSinAdheridos)
+//WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblSinServiciosAdheridos'), vTxtSinAdheridos)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

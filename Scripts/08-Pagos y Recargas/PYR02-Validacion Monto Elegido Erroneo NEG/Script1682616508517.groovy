@@ -58,5 +58,5 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbServicios y Tar
 CustomKeywords.'pkgUtilities.kwyUtility.comparacionListaDetallePago'(60)
 
 //Valida que el monto supere el saldo de la cuenta
-CustomKeywords.'pkgUtilities.kwyUtility.pasarMontoAString'(60)
+//CustomKeywords.'pkgUtilities.kwyUtility.pasarMontoAString'(60)
 

@@ -305,7 +305,7 @@ public class kwyUtility {
 		WebUI.verifyEqual(vNumOperacionExito, vNumOperacionComprobante)
 
 	}
-	
+
 	/*----------------------------------------------------------------------------------------------*
 	 *Validación Detalle Plazo Fijo                                                                 *
 	 *----------------------------------------------------------------------------------------------*/
