@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "98615A6B98D1BBADC368F731044E0F4E",
+  "keywordClasses": [
+    {
+      "name": "com.kms.katalon.keyword.pdf.PDFUtils",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

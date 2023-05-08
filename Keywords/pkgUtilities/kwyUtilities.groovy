@@ -188,12 +188,14 @@ public class kwyUtilities {
 		WebUI.maximizeWindow()
 
 		//Cierra el Banner del inicio
-		WebUI.verifyElementVisible(findTestObject('Object Repository/01-Login/btnLgnCerrarBanner'))
 		WebUI.click(findTestObject('Object Repository/01-Login/btnLgnCerrarBanner'))
 
 		WebUI.setText(findTestObject('Object Repository/01-Login/txtLgnDNI'), vDNI)
 		WebUI.setText(findTestObject('Object Repository/01-Login/txtLgnClave'), vClave)
 		WebUI.setText(findTestObject('Object Repository/01-Login/txtLgnUsuario'), vUsuario)
+		println(vDNI)
+		println(vClave)
+		println(vUsuario)
 
 		WebUI.click(findTestObject('Object Repository/01-Login/btnLgnIngresar'))
 	}

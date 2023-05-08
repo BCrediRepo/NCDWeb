@@ -375,6 +375,26 @@
       "proposedLocatorMethod": "XPATH",
       "recoveryMethod": "XPATH",
       "pathToScreenshot": "Reports/Self-healing/Object Repository/07-Operaciones/txtNumeroOperacion_position.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/08-Pagos y Recargas/txtVisaArgentina",
+      "brokenLocator": "#flxOptionCommon51",
+      "brokenLocatorMethod": "CSS",
+      "proposedLocator": "//div[@id\u003d\u0027flxOptionsContainer\u0027]/div[17]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/08-Pagos y Recargas/txtVisaArgentina_idRelative.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/05-Pagos Debin/btnDbnAdherirDebinCuenta",
+      "brokenLocator": "id(\"frmDebinAdhesionBccl_segAccountsToAdhere\")/ul[1]/li[@class\u003d\"seg2Normal\"]/div[@id\u003d\"flexcontainer_wrapper\"]/div[@id\u003d\"flxAccountsDebinRow_flxAccountsDebinRow\"]/div[@class\u003d\"kcell middlecenteralignsknBtnPrimary\"]/input[@id\u003d\"flxAccountsDebinRow_btnAdhere\"][count(. | //*[@id \u003d \u0027flxAccountsDebinRow_btnAdhere\u0027 and @kuid \u003d \u00277ADC5C51-977D-4156-8FEB-507C1F996F32\u0027 and @type \u003d \u0027button\u0027 and @value \u003d \u0027Adherir\u0027]) \u003d count(//*[@id \u003d \u0027flxAccountsDebinRow_btnAdhere\u0027 and @kuid \u003d \u00277ADC5C51-977D-4156-8FEB-507C1F996F32\u0027 and @type \u003d \u0027button\u0027 and @value \u003d \u0027Adherir\u0027])]",
+      "brokenLocatorMethod": "BASIC",
+      "proposedLocator": "//input[@id\u003d\u0027flxAccountsDebinRow_btnAdhere\u0027]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/05-Pagos Debin/btnDbnAdherirDebinCuenta_XPATH.png"
     }
   ]
 }

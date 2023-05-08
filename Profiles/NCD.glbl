@@ -109,4 +109,14 @@
       <initValue>''</initValue>
       <name>vMonedaTrx</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'C://PDFComprobante/'</initValue>
+      <name>vRutaArchOriginal</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'C://PDFComprobante/'</initValue>
+      <name>vRutaArchComprobante</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

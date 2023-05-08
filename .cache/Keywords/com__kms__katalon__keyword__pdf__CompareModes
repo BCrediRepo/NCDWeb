@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "75B2071A15DDA809F379E220EA175A57",
+  "keywordClasses": [
+    {
+      "name": "com.kms.katalon.keyword.pdf.CompareModes",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

@@ -1,0 +1,576 @@
+{
+  "keywordFileContentHash": "E2E4BC180562B6BAA00CC3E65F1E0C9B",
+  "keywordClasses": [
+    {
+      "name": "com.kms.katalon.keyword.pdf.PDF",
+      "keywordMethods": [
+        {
+          "name": "getPageNumber",
+          "parameters": [
+            {
+              "name": "file",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\n\t * Get the page count of the document.\n\t *\n\t * @param file Absolute file path\n\t * @return int No of pages in the document.\n\t * @throws java.io.IOException when file is not found.\n\t */"
+        },
+        {
+          "name": "getAllText",
+          "parameters": [
+            {
+              "name": "file",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\n\t * Get all the content of the document as plain text.\n\t *\n\t * @param file Absolute file path\n\t * @return String document content in plain text.\n\t * @throws java.io.IOException when file is not found.\n\t */"
+        },
+        {
+          "name": "getTextFromPage",
+          "parameters": [
+            {
+              "name": "file",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "startPage",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "int",
+                "unresolvedClassName": "int",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\n\t * Get the content of a specified PDF page as plain text.\n\t *\n\t * @param file Absolute file path\n\t * @param startPage Starting page number of the document\n\t * @return String document content in plain text.\n\t * @throws java.io.IOException when file is not found.\n\t */"
+        },
+        {
+          "name": "getTextInPageRange",
+          "parameters": [
+            {
+              "name": "file",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "startPage",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "int",
+                "unresolvedClassName": "int",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "endPage",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "int",
+                "unresolvedClassName": "int",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\n\t * Get the content of PDF pages in rage as plain text.\n\t *\n\t * @param file Absolute file path\n\t * @param startPage Starting page number of the document\n\t * @param endPage Ending page number of the document\n\t * @return String document content in plain text.\n\t * @throws java.io.IOException when file is not found.\n\t */"
+        },
+        {
+          "name": "compareAllPages",
+          "parameters": [
+            {
+              "name": "file1",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "file2",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "excludePattern",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\n\t * Compares all pages of two given PDF documents.\n\t *\n\t * \u003cb\u003eNote :\u003c/b\u003e \u003cb\u003eTEXT_MODE\u003c/b\u003e : Compare 2 pdf documents contents with no formatting.\n\t * \t\t\t   \u003cb\u003eVISUAL_MODE\u003c/b\u003e : Compare 2 pdf documents pixel by pixel for the content and format.\n\t * @param file1 Absolute file path of the expected file\n\t * @param file2 Absolute file path of the actual file\n\t * @param excludePattern The strings need to exclude from the comparison\n\t * @return boolean true if matches, false otherwise\n\t * @throws java.io.IOException when file is not found.\n\t */"
+        },
+        {
+          "name": "compareInPageRange",
+          "parameters": [
+            {
+              "name": "file1",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "file2",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "startPage",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "int",
+                "unresolvedClassName": "int",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "endPage",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "int",
+                "unresolvedClassName": "int",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "excludePattern",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\n\t * Compares two given PDF documents in a specified page range.\n\t *\n\t * \u003cb\u003eNote :\u003c/b\u003e \u003cb\u003eTEXT_MODE\u003c/b\u003e : Compare 2 pdf documents contents with no formatting.\n\t * \t\t\t   \u003cb\u003eVISUAL_MODE\u003c/b\u003e : Compare 2 pdf documents pixel by pixel for the content and format.\n\t *\n\t * @param file1 Absolute file path of the expected file\n\t * @param file2 Absolute file path of the actual file\n\t * @param startPage Starting page number of the document\n\t * @param endPage Ending page number of the document\n\t * @param excludePattern The strings need to exclude from the comparison\n\t * @return boolean true if matches, false otherwise\n\t * @throws java.io.IOException when file is not found.\n\t */"
+        },
+        {
+          "name": "compareFromPage",
+          "parameters": [
+            {
+              "name": "file1",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "file2",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "startPage",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "int",
+                "unresolvedClassName": "int",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "excludePattern",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\n\t * Compares two given pdf documents from a specified page.\n\t *\n\t * \u003cb\u003eNote :\u003c/b\u003e \u003cb\u003eTEXT_MODE\u003c/b\u003e : Compare 2 pdf documents contents with no formatting.\n\t * \t\t\t   \u003cb\u003eVISUAL_MODE\u003c/b\u003e : Compare 2 pdf documents pixel by pixel for the content and format.\n\t *\n\t * @param file1 Absolute file path of the expected file\n\t * @param file2 Absolute file path of the actual file\n\t * @param startPage Starting page number of the document\n\t * @param excludePattern The strings need to exclude from the comparison\n\t * @return boolean true if matches, false otherwise\n\t * @throws java.io.IOException when file is not found.\n\t */"
+        },
+        {
+          "name": "savePageAsImage",
+          "parameters": [
+            {
+              "name": "file",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "startPage",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "int",
+                "unresolvedClassName": "int",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\n\t * Save PDF pages from a specified page as images\n\t *\n\t * @param file Absolute file path of the file\n\t * @param startPage Starting page number of the document\n\t * @return List list of image file names with absolute path\n\t * @throws java.io.IOException when file is not found.\n\t */"
+        },
+        {
+          "name": "savePageRangeAsImages",
+          "parameters": [
+            {
+              "name": "file",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "startPage",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "int",
+                "unresolvedClassName": "int",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "endPage",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "int",
+                "unresolvedClassName": "int",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\n\t * Save PDF pages in range as images\n\t *\n\t * @param file Absolute file path of the file\n\t * @param startPage Starting page number of the document\n\t * @param endPage Ending page number of the document\n\t * @return List list of image file names with absolute path\n\t * @throws java.io.IOException when file is not found.\n\t */"
+        },
+        {
+          "name": "saveAllPagesAsImages",
+          "parameters": [
+            {
+              "name": "file",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\n\t * Save each page of the PDF as image\n\t *\n\t * @param file Absolute file path of the file\n\t * @return List list of image file names with absolute path\n\t * @throws java.io.IOException when file is not found.\n\t */"
+        },
+        {
+          "name": "compareByPixel",
+          "parameters": [
+            {
+              "name": "file1",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "file2",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "startPage",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "int",
+                "unresolvedClassName": "int",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "endPage",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "int",
+                "unresolvedClassName": "int",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "highlightImageDifferences",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "boolean",
+                "unresolvedClassName": "boolean",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "showAllDifferences",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "boolean",
+                "unresolvedClassName": "boolean",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\n\t * Compare pages in range of 2 PDF documents pixel by pixel for the content and format.\n\t *\n\t * @param file1 Absolute file path of the expected file\n\t * @param file2 Absolute file path of the actual file\n\t * @param startPage Starting page number of the document\n\t * @param endPage Ending page number of the document\n\t * @param highlightImageDifferences To highlight differences in the images\n\t * @param showAllDifferences To compare all the pages of the PDF (by default as soon as a mismatch is found in a page, this method exits)\n\t * @return boolean true if matches, false otherwise\n\t * @throws java.io.IOException when file is not found.\n\t */"
+        },
+        {
+          "name": "extractImagesFromPage",
+          "parameters": [
+            {
+              "name": "file",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "startPage",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "int",
+                "unresolvedClassName": "int",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\n\t * Extract all the embedded images from the specified PDF pages\n\t *\n\t * @param file Absolute file path of the file\n\t * @param startPage Starting page number of the document\n\t * @return List list of image file names with absolute path\n\t * @throws java.io.IOException when file is not found.\n\t */"
+        },
+        {
+          "name": "extractImagesInPageRange",
+          "parameters": [
+            {
+              "name": "file",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "startPage",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "int",
+                "unresolvedClassName": "int",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "endPage",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "int",
+                "unresolvedClassName": "int",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\n\t * Extract all the embedded images from PDF pages in range\n\t *\n\t * @param file Absolute file path of the file\n\t * @param startPage Starting page number of the document\n\t * @param endPage Ending page number of the document\n\t * @return List list of image file names with absolute path\n\t * @throws java.io.IOException when file is not found.\n\t */"
+        },
+        {
+          "name": "extractAllImages",
+          "parameters": [
+            {
+              "name": "file",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\n\t * Extract all the embedded images from the pdf document\n\t *\n\t * @param file Absolute file path of the file\n\t * @return List list of image file names with absolute path\n\t * @throws java.io.IOException when file is not found.\n\t */"
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

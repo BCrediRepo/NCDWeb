@@ -56,5 +56,16 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbServicios y Tar
 
 //Ingresa a Historial de Pagos
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/mnuPagosRecargas'))
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/lnkVerServiciosAdheridos'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/lnkVerHistorialPagos'))
+
+//Cliquea en el menu desplegable
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/mnuServicioAdheridoHistorial'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/txtVisaArgentina'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnBuscarHistorialPago'))
+
+//Valida que coincidan ambos nombres del servicio seleccionado
+
+
+
+
 

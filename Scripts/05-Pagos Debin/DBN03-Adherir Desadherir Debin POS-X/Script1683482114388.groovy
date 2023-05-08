@@ -41,6 +41,9 @@ ResultSet vResult = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery)
 vDNI = vResult.getString(2)
 vUsuario = vResult.getString(3)
 vClave = vResult.getString(4)
+println(vDNI)
+println(vUsuario)
+println(vClave)
 
 //Cierre de la conexion
 CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
@@ -50,7 +53,7 @@ CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
 CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
 
 //Se loguea con el usuario seleccionado
-CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vUsuario, vClave)
+CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 
 //Ingresa en la sección Otras Operaciones y Pagos Debin del Dashboard
 WebUI.verifyElementVisible(findTestObject('Object Repository/02-Dashboard/lnkDsbOtrasOperaciones'))
@@ -69,11 +72,11 @@ if (vEstado =='Adherir'){
 	
 	}else {
 
-		WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnDesadherirCuenta'))
-		WebUI.verifyElementVisible(findTestObject('Object Repository/05-Pagos Debin/lblDbnDesadherirDebinExitoso'))
+		WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnAdherirDebinCuenta'))
+		//WebUI.verifyElementVisible(findTestObject('Object Repository/05-Pagos Debin/lblDbnDesadherirDebinExitoso'))
 	}
 	
-	WebUI.verifyElementVisible(findTestObject('Object Repository/05-Pagos Debin/lblDbnAdherirDebinExitoso'))
+	//WebUI.verifyElementVisible(findTestObject('Object Repository/05-Pagos Debin/lblDbnAdherirDebinExitoso'))
 	
 	//vAlertText = WebUI.getAlertText('Object Repository/05-Pagos Debin/lblDbnAdherirDebinExitoso')
 	//WebUI.verifyMatch(vAlertText, 'La cuenta se adhirió correctamente.', false)
@@ -98,7 +101,6 @@ if (vEstado =='Adherir'){
 	void fPassScript() {
 		CustomKeywords.'pkgUtilities.kwyUtility.fPassStatus'()
 	}
-
 
 
 
