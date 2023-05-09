@@ -25,26 +25,30 @@ import java.sql.Statement
 import javax.swing.JOptionPane
 
 //-------------------Conecta a base de datos--------------------------------------------
-def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 20144835"
-def vQuery2 = "SELECT * FROM TipoTrf WHERE Nombre = 'Trf Judicial'"
+def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 22809322"
+def vQuery1 = "SELECT * FROM Toast WHERE idToast = 'Toa-SinProgramadas'"
+def vQuery2 = "SELECT * FROM Toast WHERE idToast = 'Toa-SinResultado'"
 
 String vDNI = null
 String vClave = null
 String vUsuario = null
-String vTipoTrf = null
+String vSinProgramadas = null
 String vValorMonto = 1
+String vTxtBusqueda = 'Transferencia'
+String vSinResultado = null
 
 CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
 
 //Consulta a la base de datos
 ResultSet vResult = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery)
+ResultSet vResult1 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery1)
 ResultSet vResult2 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery2)
 
 vDNI = vResult.getString(2)
 vUsuario = vResult.getString(3)
 vClave = vResult.getString(4)
-vClaveBypass = vResult.getString(4)
-vTipoTrf = vResult2.getString(2)
+vSinProgramadas = vResult1.getString(2)
+vSinResultado = vResult2.getString(2)
 
 //Cierre de la conexion
 CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
@@ -59,52 +63,34 @@ CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 //Ingresa en la sección Transferencias del Dashboard
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'))
 
-//Valida y cliquea en Agenda de Beneficiarios
-WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lnkTrfAgendaBeneficiario'))
+//Ingresa a la solapa Programadas
+WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lnkTrfProgramadas'))
 
-//Busca por tipo de Beneficiario
-WebUI.setText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrfBuscarBeneficiarioTipo'), vTipoTrf)
+//Valida mensaje sin Transferencias Programadas
+WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/txtSinTransferenciasProgramadas'), vSinProgramadas)
 
-//Inicia la transferencia
-WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkTrfCuentaBenefJudicialPesos'))
-WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkTrfIniciarTransferenciaBeneficiario'))
+//Cliquea en el campo y busca por Transferencias
+WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxBusquedaPosdatadas'))
+WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrxBusquedaPosdatadas'), vTxtBusqueda)
+WebUI.delay(5)
 
-//Ingresa Monto
-WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrfMontoFormulario'))
-WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrfMontoFormulario'), vValorMonto)
+//Valida mensaje de busqueda sin resultados
+WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/txtBusquedaSinResultados'), vSinResultado)
 
-//Selecciona Titularidad
-WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrfSeleccionTitularidadFormulario'))
-WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTitularidadTextoFormulario'))
-
-//Cliquea en Continuar
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnContinuarFormulario'))
-
-//Cliquea en boton Confirmar
-WebUI.click(findTestObject('Object Repository/04-Transferencias/btnConfirmarJudicial'))
-
-//Ingresa Clave Bypass
-WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrfClaveBypass'), vClave)
-
-//Confirma Operación
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmarBypass'))
-
-//Valida Destinatario
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/txtTrfBeneficiarioDestino'))
-
-//Elimina la Transferencia Judicial
-WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkSolapaEnviadas'))
-//NOTA: Agregar que seleccione el icono de tachito para eliminar y valide el mensaje de confirmacion
+//NOTA: Agregar validacion calendario
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/TRF05-TransferenciasJudicialesCredicoopPesosPOS.png')
+	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/TRF11-ConsultarTransferenciasPosdatadasNEG.png')
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgUtilities.kwyUtility.fPassStatus'()
 }
+
+
+

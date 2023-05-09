@@ -395,6 +395,26 @@
       "proposedLocatorMethod": "XPATH",
       "recoveryMethod": "XPATH",
       "pathToScreenshot": "Reports/Self-healing/Object Repository/05-Pagos Debin/btnDbnAdherirDebinCuenta_XPATH.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/04-Transferencias/txtTrfClaveBypass",
+      "brokenLocator": "//input[@id\u003d\u0027frmBcclConfirmTransfer_SecondFactor_InputMasked_tbxMasked\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//div[2]/div/div/div/div/div/div[4]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/input",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/04-Transferencias/txtTrfClaveBypass_position.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/02-Dashboard/lnkDsbTransferencias",
+      "brokenLocator": "//div[@id\u003d\u0027frmAccountsLanding_customhamburger_TRANSFERlblAccounts\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//div[2]/div/div/div/div/div[3]/div/div/div[2]/div",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
     }
   ]
 }

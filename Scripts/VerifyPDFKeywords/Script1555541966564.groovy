@@ -29,10 +29,10 @@ String vNombreServ
 String vNroOp
 String vImporte
 
-vFecha = '03 May 2023'//WebUI.getText(findTestObject)
-vNombreServ = 'Servicio Mercado Libre'//WebUI.getText(findTestObject)
-vNroOp = '7215'//WebUI.getText(findTestObject)
-vImporte = '350,00'//WebUI.getText(findTestObject)
+vFecha = WebUI.getText(findTestObject('Object Repository/08-Pagos y Recargas/txtPagosFecha'))
+vNombreServ = WebUI.getText(findTestObject('Object Repository/08-Pagos y Recargas/txtNombreServicio'))
+vNroOp = WebUI.getText(findTestObject('Object Repository/08-Pagos y Recargas/txtPagosNumeroOperacion'))
+vImporte = WebUI.getText(findTestObject('Object Repository/08-Pagos y Recargas/txtPagosImporte'))
 
 //Se crea el archivo .txt
 f = new File ("C://Users/natalia.heit/Desktop/Prueba.txt")
@@ -51,7 +51,7 @@ if (text.contains(vFecha)) {
 		
 //Nombre del Servicio
 if (text.contains(vNombreServ)) {
-		println('Nombre del servicio ecnotrado')
+		println('Nombre del servicio encontrado')
 	}
 	else {
 		KeywordUtil.markFailedAndStop("PDF incompleto")
