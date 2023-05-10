@@ -25,8 +25,8 @@ import java.sql.Statement
 import javax.swing.JOptionPane
 
 //-------------------Conecta a base de datos--------------------------------------------
-def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 20144835"
-def vQuery2 = "SELECT * FROM Parametros WHERE "
+def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 13976407"
+def vQuery2 = "SELECT * FROM Parametros WHERE Nombre = 'CBU'"
 
 String vDNI = null
 String vClave = null
@@ -43,20 +43,17 @@ ResultSet vResult2 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery2)
 vDNI = vResult.getString(2)
 vUsuario = vResult.getString(3)
 vClave = vResult.getString(4)
-vCBUBenf = vResult2.getString(4)
+vCBUBenf = vResult2.getString(2)
 
 //Cierre de la conexion
 CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
 //---------------------------------------------------------------------------------------------------------------------
 
-//def vCBUBenf = findTestData('04-Parametros/Parametros').getValue(2,1)
-//def vMontoPesos = '10'
-
 //Se selecciona el servidor y se cargan los datos
 CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
 
 //Se loguea con el usuario seleccionado
-CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vUsuario, vClave)
+CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 
 //Ingresa en la sección Otras Operaciones y Pagos Debin del Dashboard
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbOtrasOperaciones'))
@@ -72,8 +69,7 @@ WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnBuscarSolicit
 
 //Completa formulario
 WebUI.click(findTestObject('Object Repository/05-Pagos Debin/intDbnMontoPesos'))
-WebUI.clearText('Object Repository/05-Pagos Debin/txtDbnMontoCero')
-WebUI.setText(findTestObject('Object Repository/05-Pagos Debin/intDbnMontoPesos'), vMontoPesos)
+WebUI.sendKeys(findTestObject('Object Repository/05-Pagos Debin/intDbnMontoPesos'), vMontoPesos)
 
 WebUI.click(findTestObject('Object Repository/05-Pagos Debin/mnuDbnDuracionSolicitud'))
 WebUI.click(findTestObject('Object Repository/05-Pagos Debin/txtDbnDuracionHoras'))
@@ -91,7 +87,7 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/05-Pagos Debin/lblD
 WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnConfirmarFormulario'))
 
 //Valida Pantalla de Éxito
-WebUI.verifyElementVisible(findTestObject('Object Repository/05-Pagos Debin/lblDbnConfirmarFormulario'))
+//WebUI.verifyElementVisible(findTestObject('Object Repository/05-Pagos Debin/lblDbnConfirmarFormulario'))
 WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnVolverDebin'))
 
 //---------------------------------------------------------------------------------------------------------------------

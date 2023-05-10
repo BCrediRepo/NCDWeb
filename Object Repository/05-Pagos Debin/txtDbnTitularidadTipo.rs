@@ -14,7 +14,7 @@
          <value>#frmAdhereDebin_CreateDebinForm_DropDownOwnership_flxOptionCommon2lblOptionTitle</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>cc0c32e3-6665-4951-aa7b-2b0304b94930</webElementGuid>
+      <webElementGuid>f78b1cc5-5bed-4b26-a13b-7ae253b4f224</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>id</name>
       <type>Main</type>
       <value>frmAdhereDebin_CreateDebinForm_DropDownOwnership_flxOptionCommon2lblOptionTitle</value>
-      <webElementGuid>e34186bb-be8d-4bf8-b9b6-7e943bddd0c2</webElementGuid>
+      <webElementGuid>67b37db2-3def-4277-ae04-945868e127b1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>kwidgettype</name>
       <type>Main</type>
       <value>Label</value>
-      <webElementGuid>175526a2-3a47-4fa4-9573-0bf860fdc04c</webElementGuid>
+      <webElementGuid>b4c34aba-6f2b-4d2e-90e2-10d6a7fb9fb7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>kformname</name>
       <type>Main</type>
       <value>frmAdhereDebin</value>
-      <webElementGuid>e0f9f351-a05f-4dd2-802f-b723aea7a5d0</webElementGuid>
+      <webElementGuid>dc78bd2d-872e-4172-901c-4c5f3c0e3f0a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>kmasterid</name>
       <type>Main</type>
       <value>CreateDebinForm_DropDownOwnership</value>
-      <webElementGuid>4a4b9ef1-5938-40aa-bece-7650da6bda2b</webElementGuid>
+      <webElementGuid>c05da10c-b1f4-4188-a529-453e64b2e115</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>class</name>
       <type>Main</type>
       <value> sknLblAccountTitleDropDown cntmiddleleftalign disableSelection</value>
-      <webElementGuid>0c295013-a369-4c8a-b458-3af3cb1fb08c</webElementGuid>
+      <webElementGuid>cf8f03a8-1036-4ed1-987f-c72fd6b6420c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Soy titular</value>
-      <webElementGuid>6bc08969-b868-4cdf-8f3f-160d62682dd0</webElementGuid>
+      <webElementGuid>5c2fa44f-3805-47f6-adb7-78f09b66fe0c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;frmAdhereDebin_CreateDebinForm_DropDownOwnership_flxOptionCommon2lblOptionTitle&quot;)</value>
-      <webElementGuid>4aecc3d1-07d9-4e2a-a750-9d0686612af0</webElementGuid>
+      <webElementGuid>72591381-ce61-468d-b7de-133734ccdf30</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//div[@id='frmAdhereDebin_CreateDebinForm_DropDownOwnership_flxOptionCommon2lblOptionTitle']</value>
-      <webElementGuid>ece76e59-0fc5-45d9-b52e-ce57c8722dcd</webElementGuid>
+      <webElementGuid>a2eca1ff-f9ae-46b7-bd71-f3614493355f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='frmAdhereDebin_CreateDebinForm_DropDownOwnership_flxOptionCommon2flxOptionInfo']/div/div</value>
-      <webElementGuid>3900f452-2b75-4f35-9a0f-fa6f5870f632</webElementGuid>
+      <webElementGuid>60debee4-5aac-433f-948a-9b41fbd3aa3d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)=''])[34]/following::div[8]</value>
-      <webElementGuid>2da74618-459f-4e64-a62e-0df44385552f</webElementGuid>
+      <webElementGuid>bd1dd75c-760b-4653-bc49-8846be41bcc4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Seleccioná una opción'])[1]/following::div[10]</value>
-      <webElementGuid>74db916b-c85a-47df-acf3-7dfc016b1285</webElementGuid>
+      <webElementGuid>3e7a6de1-a248-4161-b229-442d68ceb01e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)=''])[35]/preceding::div[1]</value>
-      <webElementGuid>dd3b8e63-c601-4100-b962-1026d2f0c90b</webElementGuid>
+      <webElementGuid>dc4b0640-e0d5-4763-a80a-41d084e2316f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='No soy titular'])[1]/preceding::div[3]</value>
-      <webElementGuid>b8114446-4c63-4c2d-9eaf-a6f51ea9520a</webElementGuid>
+      <webElementGuid>a1d80e40-0bfc-4add-a5f0-4bd917c20e6a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +134,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Soy titular']/parent::*</value>
-      <webElementGuid>8b025a8c-a053-4c49-bbb1-f7514a5708bd</webElementGuid>
+      <webElementGuid>b1e9c51e-1241-476d-891a-526bb1f8e869</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +142,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[7]/div/div/div[2]/div/div/div[2]/div/div[2]/div/div/div/div/div/div/div</value>
-      <webElementGuid>a5e9cc48-3748-40a8-9b6e-1a7cc10235cc</webElementGuid>
+      <webElementGuid>4ec1d1fa-779f-4e7c-ad9e-2ab89e357e95</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,6 +150,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[@id = 'frmAdhereDebin_CreateDebinForm_DropDownOwnership_flxOptionCommon2lblOptionTitle' and (text() = 'Soy titular' or . = 'Soy titular')]</value>
-      <webElementGuid>79dc8754-bd63-4274-8aaa-7260554f17da</webElementGuid>
+      <webElementGuid>ae0b29e3-de92-4567-b6d6-35fb983e596b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

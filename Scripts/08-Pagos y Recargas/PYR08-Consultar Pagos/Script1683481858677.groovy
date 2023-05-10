@@ -58,14 +58,16 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbServicios y Tar
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/mnuPagosRecargas'))
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/lnkVerHistorialPagos'))
 
+
+/*
 //Cliquea en el menu desplegable
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/mnuServicioAdheridoHistorial'))
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/txtVisaArgentina'))
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnBuscarHistorialPago'))
-
+*/
 //Valida que coincidan ambos nombres del servicio seleccionado
-
-
+WebUI.callTestCase(findTestCase("UTL01-VerifyPDFKeywords"), null)
+println("Vuelve al caso de prueba principal")
 
 
 

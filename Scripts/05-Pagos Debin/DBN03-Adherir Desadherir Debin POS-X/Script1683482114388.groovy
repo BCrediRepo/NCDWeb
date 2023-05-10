@@ -27,23 +27,28 @@ import javax.swing.JOptionPane
 
 //-------------------Conecta a base de datos--------------------------------------------
 def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 20144835"
+def vQuery1 = "SELECT * FROM Toast WHERE idToast = 'Toa-adherirDebin'"
+def vQuery2 = "SELECT * FROM Toast WHERE idToast = 'Toa-desadherirDebin'"
 
 String vDNI = null
 String vClave = null
 String vUsuario = null
 String vEstado
+String vMjsAdherir = null
+String vMjsDesadherir = null
 
 CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
 
 //Consulta a la base de datos
 ResultSet vResult = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery)
+ResultSet vResult1 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery1)
+ResultSet vResult2 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery2)
 
 vDNI = vResult.getString(2)
 vUsuario = vResult.getString(3)
 vClave = vResult.getString(4)
-println(vDNI)
-println(vUsuario)
-println(vClave)
+vMjsAdherir = vResult1.getString(2)
+vMjsDesadherir = vResult2.getString(2)
 
 //Cierre de la conexion
 CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
@@ -66,29 +71,25 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/05-Pagos Debin/txtD
 
 vEstado = WebUI.getAttribute(findTestObject('Object Repository/05-Pagos Debin/btnDbnAdherirDebinCuenta'),'value')
 
-if (vEstado =='Adherir'){
-	
-	WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnAdherirDebinCuenta'))
-	
-	}else {
+//Repite la acción para validar los dos estados 
+for (int i=0; i<2; i++) {
 
+	if (vEstado =='Adherir'){
+	
 		WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnAdherirDebinCuenta'))
-		//WebUI.verifyElementVisible(findTestObject('Object Repository/05-Pagos Debin/lblDbnDesadherirDebinExitoso'))
-	}
-	
-	//WebUI.verifyElementVisible(findTestObject('Object Repository/05-Pagos Debin/lblDbnAdherirDebinExitoso'))
-	
-	//vAlertText = WebUI.getAlertText('Object Repository/05-Pagos Debin/lblDbnAdherirDebinExitoso')
-	//WebUI.verifyMatch(vAlertText, 'La cuenta se adhirió correctamente.', false)
+		WebUI.verifyElementText(findTestObject('Object Repository/05-Pagos Debin/lblAdherirCtaExitoso'), vMjsAdherir)
 	
 	
-	//WebUI.verifyTextPresent("La cuenta se adhirió correctamente.", true)
-	
-	
-	//WebUI.getText('Object Repository/05-Pagos Debin/lblDbnAdherirDebinExitoso')
-	//WebUI.verifyMatch('La cuenta se adhirió correctamente.','La cuenta se adhirió correctamente.', true)
+		}else{
 
-
+			WebUI.delay(5)
+			//WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnAdherirDebinCuenta'))
+			WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnDesadherirCta'))
+			WebUI.verifyElementVisible(findTestObject('Object Repository/05-Pagos Debin/txtPopUpDesadherirDEBIN'))
+			WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnConfirmarDesadherir'))
+			//WebUI.verifyElementText(findTestObject('Object Repository/05-Pagos Debin/lblAdherirCtaExitoso'), vMjsDesadherir)
+		}
+}
 	//---------------------------------------------------------------------------------------------------------------------
 	//Control de fin de script
 	

@@ -28,7 +28,7 @@
    <testCaseLink>
       <guid>23677a24-da54-4282-b6d9-f53bb90ac8cf</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/01-Login/LGN03-Cambio de clave NEG</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>

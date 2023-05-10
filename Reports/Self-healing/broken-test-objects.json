@@ -415,6 +415,66 @@
       "proposedLocatorMethod": "XPATH",
       "recoveryMethod": "XPATH",
       "pathToScreenshot": ""
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/05-Pagos Debin/lblAdherirCtaExitoso",
+      "brokenLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027\u0027])[1]/following::p[1]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Click on Log In to log into your account\u0027])[2]/following::p[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/05-Pagos Debin/lblAdherirCtaExitoso_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/05-Pagos Debin/txtDbnDuracionHoras",
+      "brokenLocator": "//div[@id\u003d\u0027frmAdhereDebin_CreateDebinForm_DropDownDuration_flxOptionCommon4lblOptionTitle\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027\u0027])[9]/following::div[8]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/05-Pagos Debin/txtDbnDuracionHoras_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/05-Pagos Debin/txtDbnConceptoTipo",
+      "brokenLocator": "//div[@id\u003d\u0027frmAdhereDebin_CreateDebinForm_DropDownConcepto_flxOptionCommon3lblOptionTitle\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027\u0027])[17]/following::div[8]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/05-Pagos Debin/txtDbnConceptoTipo_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/05-Pagos Debin/txtDbnTitularidadTipo",
+      "brokenLocator": "//div[@id\u003d\u0027frmAdhereDebin_CreateDebinForm_DropDownOwnership_flxOptionCommon2lblOptionTitle\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027\u0027])[34]/following::div[8]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/05-Pagos Debin/txtDbnTitularidadTipo_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/05-Pagos Debin/lblDbnConfirmarFormulario",
+      "brokenLocator": "//div[@id\u003d\u0027frmConfirmDebinBccl_ConfirmDebin_lblTitle\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027\u0027])[1]/following::div[14]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/05-Pagos Debin/lblDbnConfirmarFormulario_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/05-Pagos Debin/txtDbnNoTitular",
+      "brokenLocator": "//div[@id\u003d\u0027frmAdhereDebin_CreateDebinForm_DropDownOwnership_flxOptionCommon3lblOptionTitle\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027\u0027])[36]/following::div[8]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/05-Pagos Debin/txtDbnNoTitular_neighbor.png"
     }
   ]
 }
