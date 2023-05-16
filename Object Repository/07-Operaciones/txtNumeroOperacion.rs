@@ -7,14 +7,18 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='flxOperationsRow_lblOperation']</value>
+         <value>//div[@id='flxOperationsRow_flxOperation']/div/div</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value>#flxOperationsRow_lblOperation</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;frmOperationsHomeBccl_segOperations&quot;)/ul[1]/li[@class=&quot;seg2Normal&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxOperationsRow_flxOperationsRow&quot;]/div[@class=&quot;kcell middlecenteralign&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxOperationsRow_flxOperation&quot;]/div[@class=&quot;kcell middlecenteralignsknLblProductTableNumberData&quot;]/div[@id=&quot;flxOperationsRow_lblOperation&quot;][count(. | //*[@class = ' sknLblProductTableNumberData cntmiddleleftalign disableSelection']) = count(//*[@class = ' sknLblProductTableNumberData cntmiddleleftalign disableSelection'])]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,15 +26,15 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>44904afd-6e0c-43f8-8147-10df3b018f2c</webElementGuid>
+      <webElementGuid>b5f40630-f400-4ac5-9bb0-dcb22ab7e0ce</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
       <value>flxOperationsRow_lblOperation</value>
-      <webElementGuid>e9964fb8-f280-4949-9ffa-9be7be052f8f</webElementGuid>
+      <webElementGuid>d173daee-028d-45a5-b8ea-2d3096c42b27</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <name>kwidgettype</name>
       <type>Main</type>
       <value>Label</value>
-      <webElementGuid>be55ad16-bf0b-4fe6-834e-4d3628c9474e</webElementGuid>
+      <webElementGuid>8fe814ea-7abc-4038-a69b-851b0fb916a5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +50,7 @@
       <name>kformname</name>
       <type>Main</type>
       <value>flxOperationsRow</value>
-      <webElementGuid>5cb32c9c-0ba6-4ddd-a38a-57beedb88ff4</webElementGuid>
+      <webElementGuid>b643bd48-736f-4c0f-809a-380842eab53a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>kcontainerid</name>
       <type>Main</type>
       <value>segOperations</value>
-      <webElementGuid>d1858f50-13bc-49f7-ac46-933cc6b25a08</webElementGuid>
+      <webElementGuid>8fbbf8e0-2afd-4162-a4bb-2b60e1a9f4cc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,31 +66,31 @@
       <name>kuid</name>
       <type>Main</type>
       <value>E419FAED-20A5-483C-97A5-20E7E2B57646</value>
-      <webElementGuid>bf5278dd-4abc-48c6-8625-65fdb1e415b5</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value> sknLblProductTableNumberData cntmiddleleftalign disableSelection</value>
-      <webElementGuid>baacafff-30b4-413a-ab60-99973aabbbdb</webElementGuid>
+      <webElementGuid>76af665b-b38a-4590-b2b2-b96895112fb1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>text</name>
+      <name>class</name>
       <type>Main</type>
-      <value>7094</value>
-      <webElementGuid>602319d9-135f-4cc9-a4af-db8bd78a85dc</webElementGuid>
+      <value> sknLblProductTableNumberData cntmiddleleftalign disableSelection</value>
+      <webElementGuid>2fcfa9db-dae9-499d-a458-e0334735fb06</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>7094</value>
+      <webElementGuid>5613059f-660b-47c3-adb0-c971f489695d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;frmOperationsHomeBccl_segOperations&quot;)/ul[1]/li[@class=&quot;seg2Normal&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxOperationsRow_flxOperationsRow&quot;]/div[@class=&quot;kcell middlecenteralign&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxOperationsRow_flxOperation&quot;]/div[@class=&quot;kcell middlecenteralignsknLblProductTableNumberData&quot;]/div[@id=&quot;flxOperationsRow_lblOperation&quot;]</value>
-      <webElementGuid>ef208216-6081-48ed-915e-0130b32ae159</webElementGuid>
+      <webElementGuid>4b933b28-345f-4688-b3ea-654800c06c0a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//div[@id='flxOperationsRow_lblOperation']</value>
-      <webElementGuid>0692a82d-82a1-4637-9036-14b15650c396</webElementGuid>
+      <webElementGuid>105ba7b3-58be-4765-b065-1f8c9585fdaf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='flxOperationsRow_flxOperation']/div/div</value>
-      <webElementGuid>e08e496a-e887-48ed-8437-4cb547989155</webElementGuid>
+      <webElementGuid>cf8596cb-c581-47e7-b5a1-923aed70161f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Importe'])[1]/following::div[12]</value>
-      <webElementGuid>d7e25b7d-a6fe-413e-b732-b7394053c13b</webElementGuid>
+      <webElementGuid>44444722-508a-4763-ab6e-ebd6c54b0dca</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Referencia'])[1]/following::div[17]</value>
-      <webElementGuid>2da01dde-60a3-467a-85f3-bbf2874593fb</webElementGuid>
+      <webElementGuid>cc1441a8-a548-41a6-952b-191361f730b0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Transferencia entre cuentas propias'])[2]/preceding::div[3]</value>
-      <webElementGuid>ddf9fbf4-324a-414f-a71e-a5d25ef85e8b</webElementGuid>
+      <webElementGuid>e5d6c090-145a-4401-905e-ec118170d4aa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +138,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Transferencia realizada'])[1]/preceding::div[5]</value>
-      <webElementGuid>676dda37-76df-43b5-914c-be7f041c89ce</webElementGuid>
+      <webElementGuid>6c6260c3-958d-4101-b1fb-cbedd934da19</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +146,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='7094']/parent::*</value>
-      <webElementGuid>496760b9-97c9-4ae7-9d54-6c86a4ed341c</webElementGuid>
+      <webElementGuid>94c4bda0-0a5e-450c-86d6-221edd5feeda</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,7 +154,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div/div/div/ul/li/div/div/div/div/div/div/div</value>
-      <webElementGuid>9a44612a-d081-4096-8233-9ce9cc9af2b9</webElementGuid>
+      <webElementGuid>2eafea75-e639-4207-b98d-b52c1d6598d4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -158,6 +162,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[@id = 'flxOperationsRow_lblOperation' and (text() = '7094' or . = '7094')]</value>
-      <webElementGuid>2840a3d0-7902-4ec8-ac41-08fce2eab475</webElementGuid>
+      <webElementGuid>ccfaecca-2415-492f-986a-b70d549b5497</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

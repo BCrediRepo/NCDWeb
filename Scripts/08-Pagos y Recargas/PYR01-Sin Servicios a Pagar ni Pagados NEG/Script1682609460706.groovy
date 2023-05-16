@@ -88,6 +88,7 @@ WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/lnkVerServicio
 
 //Valida Mensaje
 WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblSinServiciosAdheridos'), vTxtSinAdheridos)
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/icoPYRCerrarSolapaAdheridos'))
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

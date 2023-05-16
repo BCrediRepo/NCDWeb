@@ -43,7 +43,7 @@
       <guid>657f04b0-75b2-4d5e-9ad0-1acdf8cc7126</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/08-Pagos y Recargas/PYR05-ABM Entes POS-X</testCaseId>
+      <testCaseId>Test Cases/08-Pagos y Recargas/PYR05-ABM Entes POS</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

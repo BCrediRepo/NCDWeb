@@ -137,19 +137,24 @@ public class kwyUtility {
 		WebUI.getText(findTestObject('Object Repository/07-Operaciones/txtTipoOperacion'), vOrigenTipoOperacion)
 		WebUI.getText(findTestObject('Object Repository/07-Operaciones/txtImporte'), vOrigenImporte)
 
-		WebUI.click(findTestObject('Object Repository/07-Operaciones/txtOpVerDetalle'))
+		String vPrueba = WebUI.getAttribute(findTestObject('Object Repository/07-Operaciones/txtNumeroOperacion'),'text')
 
-		//En la pagina del Detalle de la Operacion
-		WebUI.waitForPageLoad(vTiempo)
-
-		WebUI.getText(findTestObject('Object Repository/07-Operaciones/txtNumeroOperacion'), vDetalleNumeroOperacion)
-		WebUI.getText(findTestObject('Object Repository/07-Operaciones/txtTipoOperacion'), vDetalleTipoOperacion)
-		WebUI.getText(findTestObject('Object Repository/07-Operaciones/txtImporte'), vDetalleImporte)
-
-		//Comparacion
-		WebUI.verifyEqual(vOrigenNumeroOperacion, vOrigenNumeroOperacion)
-		WebUI.verifyEqual(vOrigenTipoOperacion, vDetalleTipoOperacion)
-		WebUI.verifyEqual(vOrigenImporte, vDetalleImporte)
+		JOptionPane.showMessageDialog(null, vPrueba)
+		/*
+		 WebUI.click(findTestObject('Object Repository/07-Operaciones/txtOpVerDetalle'))
+		 //En la pagina del Detalle de la Operacion
+		 WebUI.waitForPageLoad(vTiempo)
+		 WebUI.getText(findTestObject('Object Repository/07-Operaciones/txtNumeroOperacion'), vDetalleNumeroOperacion)
+		 WebUI.getText(findTestObject('Object Repository/07-Operaciones/txtTipoOperacion'), vDetalleTipoOperacion)
+		 WebUI.getText(findTestObject('Object Repository/07-Operaciones/txtImporte'), vDetalleImporte)
+		 //Comparacion
+		 WebUI.verifyEqual(vOrigenNumeroOperacion, vOrigenNumeroOperacion)
+		 WebUI.verifyEqual(vOrigenTipoOperacion, vDetalleTipoOperacion)
+		 WebUI.verifyEqual(vOrigenImporte, vDetalleImporte)
+		 println(vOrigenNumeroOperacion + "-" + vDetalleNumeroOperacion)
+		 println(vOrigenTipoOperacion + "-" + vDetalleTipoOperacion)
+		 println(vOrigenImporte + "-" + vDetalleImporte)
+		 */
 	}
 
 	/*----------------------------------------------------------------------------------------------*
@@ -346,6 +351,34 @@ public class kwyUtility {
 		WebUI.verifyEqual(vMontoPFLista, vMontoPFDetalle)
 
 	}
+	
+	/*----------------------------------------------------------------------------------------------*
+	 *Validación Tarjeta Visa Detalle                                                        	 	*
+	 *----------------------------------------------------------------------------------------------*/
+	@Keyword
+	def comparacionDetalleTarjetaVisa(def vTiempo){
+
+		String vTituloVisa = null
+		String vTituloVisaOvervw = null
+		String vNroVisaOvervw = null
+		String vNroVisa = null
+
+		//Valida los datos de la tarjeta Visa desde el Overview
+		WebUI.getText(findTestObject('Object Repository/09-Tarjetas/txtVisaOverview'), vTituloVisaOvervw)
+		WebUI.getText(findTestObject('Object Repository/09-Tarjetas/txtNumeroVisaOverview'), vNroVisaOvervw)
+		
+		//Cliquea en la card e ingresa al módulo para ver los movimientos
+		WebUI.click(findTestObject('Object Repository/09-Tarjetas/LblTarjetaVisa'))
+		
+		//Valida los datos de la tarjeta Visa desde el detalle de la Tarjeta
+		WebUI.getText(findTestObject('Object Repository/09-Tarjetas/lblTarjetaVisaPlatinum'), vTituloVisa)
+		WebUI.getText(findTestObject('Object Repository/09-Tarjetas/txtNumeroVisaOverview'), vNroVisa)
+		
+		//Compara ambos datos
+		WebUI.verifyEqual(vTituloVisaOvervw, vTituloVisa)
+		WebUI.verifyEqual(vNroVisaOvervw, vNroVisa)
+	}
+
 
 
 

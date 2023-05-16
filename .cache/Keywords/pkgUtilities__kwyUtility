@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "F4D922096F913B5ED2844941332ECA00",
+  "keywordFileContentHash": "D5A765DD0C8301227B4983E68EA53085",
   "keywordClasses": [
     {
       "name": "pkgUtilities.kwyUtility",
@@ -20,8 +20,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "Login",
@@ -65,8 +64,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "fFailStatus",
@@ -84,18 +82,15 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "fPassStatus",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "fLoginPassStatus",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "comparacionOrigenDetalle",
@@ -113,8 +108,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "comparacionListaDetallePago",
@@ -132,8 +126,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "comparacionListadoTrxPropias",
@@ -151,8 +144,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "comparacionMontoTrxPropias",
@@ -170,8 +162,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "comparacionNumeroOperacionTrxPropias",
@@ -189,8 +180,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "comparacionListaDetallePlazoFijo",
@@ -208,11 +198,28 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
+        },
+        {
+          "name": "comparacionDetalleTarjetaVisa",
+          "parameters": [
+            {
+              "name": "vTiempo",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

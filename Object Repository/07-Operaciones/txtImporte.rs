@@ -7,14 +7,18 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='flxOperationsRow_lblImport']</value>
+         <value>//div[@id='flxOperationsRow_flxOperationsRow']/div[7]/div</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value>#flxOperationsRow_lblImport</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;frmOperationsHomeBccl_segOperations&quot;)/ul[1]/li[@class=&quot;seg2Normal&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxOperationsRow_flxOperationsRow&quot;]/div[@class=&quot;kcell middlecenteralignsknLblProductTableNumberData&quot;]/div[@id=&quot;flxOperationsRow_lblImport&quot;][count(. | //*[@class = ' sknLblProductTableNumberData cntmiddlerightalign disableSelection']) = count(//*[@class = ' sknLblProductTableNumberData cntmiddlerightalign disableSelection'])]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,15 +26,15 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>a5edabe7-b942-4209-a2ab-6741faf371e3</webElementGuid>
+      <webElementGuid>2bb1cec8-d6ee-4aef-a71a-24a75983a8af</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
       <value>flxOperationsRow_lblImport</value>
-      <webElementGuid>e9bb2230-c146-4fb2-ad0a-a163599a9257</webElementGuid>
+      <webElementGuid>24cad2e2-b25b-43d4-895d-985ba2c2a830</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <name>kwidgettype</name>
       <type>Main</type>
       <value>Label</value>
-      <webElementGuid>dee4c305-a103-4d33-b8bc-8c9ad96be22c</webElementGuid>
+      <webElementGuid>52576cdc-d6a5-47c7-9590-04809b7310d3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +50,7 @@
       <name>kformname</name>
       <type>Main</type>
       <value>flxOperationsRow</value>
-      <webElementGuid>f107b74b-0669-49c6-a787-78c906c08e11</webElementGuid>
+      <webElementGuid>46f438f7-d3c7-44f3-b80f-6b4910dcd211</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>kcontainerid</name>
       <type>Main</type>
       <value>segOperations</value>
-      <webElementGuid>473cc200-8e32-472f-a745-a3df2a26cc90</webElementGuid>
+      <webElementGuid>cd1da72e-ee5f-455e-ba88-2e3101bb8e14</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,31 +66,31 @@
       <name>kuid</name>
       <type>Main</type>
       <value>ADECD34F-A862-47EF-A7CB-FE8F57ED8B24</value>
-      <webElementGuid>4073dbb1-f525-4a0a-8816-69427e1c091b</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value> sknLblProductTableNumberData cntmiddlerightalign disableSelection</value>
-      <webElementGuid>57fb789a-fc39-4c10-bb7e-dc943f041f9f</webElementGuid>
+      <webElementGuid>7364d729-08fb-41a6-a5b5-93850b8c913b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>text</name>
+      <name>class</name>
       <type>Main</type>
-      <value>$ 1,00</value>
-      <webElementGuid>85cd26c0-43f5-4fa0-b96d-57496575a513</webElementGuid>
+      <value> sknLblProductTableNumberData cntmiddlerightalign disableSelection</value>
+      <webElementGuid>4b9ab7b3-cfb8-4453-b67c-a26cbbb4d7c6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>$ 1,00</value>
+      <webElementGuid>7ed43552-e1e4-411b-92b5-5d9365b60bdc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;frmOperationsHomeBccl_segOperations&quot;)/ul[1]/li[@class=&quot;seg2Normal&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxOperationsRow_flxOperationsRow&quot;]/div[@class=&quot;kcell middlecenteralignsknLblProductTableNumberData&quot;]/div[@id=&quot;flxOperationsRow_lblImport&quot;]</value>
-      <webElementGuid>6b276c87-6c7b-4a43-a6f7-86687282da7c</webElementGuid>
+      <webElementGuid>04dc6aab-e6e7-4d66-8b12-12bf78b348eb</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//div[@id='flxOperationsRow_lblImport']</value>
-      <webElementGuid>45f4bc6f-4776-4184-9d3f-faccc833d8f5</webElementGuid>
+      <webElementGuid>be01ec3e-5d37-4193-979b-f753d49cac7f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='flxOperationsRow_flxOperationsRow']/div[7]/div</value>
-      <webElementGuid>6821fcf2-87a7-409b-adea-a7a4c39f8fae</webElementGuid>
+      <webElementGuid>f122fa4e-e5dd-465e-88d7-577c7d4d2fae</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='CBU 19101196-55111901183599'])[1]/following::div[2]</value>
-      <webElementGuid>ae872250-63ec-40c2-b9e9-08d85a852043</webElementGuid>
+      <webElementGuid>dcdf60ad-9544-4971-a028-97d65d19de99</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)=''])[2]/preceding::div[1]</value>
-      <webElementGuid>7aea9034-39f4-4647-bbe0-ef2b6951d5a1</webElementGuid>
+      <webElementGuid>aaa96c68-31c0-4e57-b412-f890d27f2e36</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Transferencia Judicial'])[2]/preceding::div[13]</value>
-      <webElementGuid>2ddbc6ef-d2bb-481e-a544-618ef831b4ce</webElementGuid>
+      <webElementGuid>391fab25-8bb3-4a19-8db2-01830a1dd951</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +138,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='$ 1,00']/parent::*</value>
-      <webElementGuid>48d4d9d8-8b0a-4f2c-a2c2-5cc101a97360</webElementGuid>
+      <webElementGuid>281ef29f-19f8-4732-884f-811f76182363</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +146,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li/div/div/div[7]/div</value>
-      <webElementGuid>da9e6998-66b8-4adb-9713-038aa895f74a</webElementGuid>
+      <webElementGuid>9c15e197-f260-4066-b108-c2b685d54a85</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,6 +154,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[@id = 'flxOperationsRow_lblImport' and (text() = '$ 1,00' or . = '$ 1,00')]</value>
-      <webElementGuid>d347900c-01fe-4bb1-a606-3179e420171b</webElementGuid>
+      <webElementGuid>01e324dd-4f2c-42b4-ba0a-0a2311b155ec</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

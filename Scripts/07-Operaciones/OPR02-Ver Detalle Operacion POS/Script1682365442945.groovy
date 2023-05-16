@@ -63,8 +63,8 @@ WebUI.click(findTestObject('Object Repository/07-Operaciones/btnTipoOperacion'))
 WebUI.click(findTestObject('Object Repository/07-Operaciones/txtTipoOpTodas'))
 
 //Calendario
-WebUI.click(findTestObject('Object Repository/07-Operaciones/icoOpCalendario'))
-WebUI.click(findTestObject('Object Repository/07-Operaciones/txtFechaDesde'))
+//WebUI.click(findTestObject('Object Repository/07-Operaciones/icoOpCalendario'))
+//WebUI.click(findTestObject('Object Repository/07-Operaciones/txtFechaDesde'))
 WebUI.click(findTestObject('Object Repository/07-Operaciones/btnBuscarOperacion'))
 
 //Cliquea en el menú desplegable y selecciona Ver Detalle

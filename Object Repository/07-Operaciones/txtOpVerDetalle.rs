@@ -6,19 +6,19 @@
    <elementGuidId>aba224b3-e634-46db-abc2-83e5056adada</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#frmOperationsHomeBccl_flxOperationsRowFloatingMenu_lblviewDetail</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//div[@id='frmOperationsHomeBccl_flxOperationsRowFloatingMenu_lblviewDetail']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#frmOperationsHomeBccl_flxOperationsRowFloatingMenu_lblviewDetail</value>
       </entry>
       <entry>
          <key>BASIC</key>
          <value>id(&quot;frmOperationsHomeBccl_flxOperationsRowFloatingMenu_lblviewDetail&quot;)[count(. | //*[@id = 'frmOperationsHomeBccl_flxOperationsRowFloatingMenu_lblviewDetail' and @class = ' sknLblOptionFloatMenu cntmiddleleftalign disableSelection' and (text() = 'Ver detalle' or . = 'Ver detalle')]) = count(//*[@id = 'frmOperationsHomeBccl_flxOperationsRowFloatingMenu_lblviewDetail' and @class = ' sknLblOptionFloatMenu cntmiddleleftalign disableSelection' and (text() = 'Ver detalle' or . = 'Ver detalle')])]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -26,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>dac34a0f-d664-4fd5-8fa3-e5798ec8462b</webElementGuid>
+      <webElementGuid>5e18df6a-10ea-4a74-9721-ffb6ad9483f8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -34,7 +34,7 @@
       <name>id</name>
       <type>Main</type>
       <value>frmOperationsHomeBccl_flxOperationsRowFloatingMenu_lblviewDetail</value>
-      <webElementGuid>d8e9b9c2-5db5-4170-8045-14ba9d0d793f</webElementGuid>
+      <webElementGuid>ff37e1cc-816e-4ab3-b26e-f8edf242a849</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -42,7 +42,7 @@
       <name>kwidgettype</name>
       <type>Main</type>
       <value>Label</value>
-      <webElementGuid>7e04a375-3e82-43dc-b35f-eb7b3fcce077</webElementGuid>
+      <webElementGuid>8cc05bfb-e76e-45e1-ab1f-b2a057374fb1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -50,7 +50,7 @@
       <name>kformname</name>
       <type>Main</type>
       <value>frmOperationsHomeBccl</value>
-      <webElementGuid>dc5c9b6e-014b-4e9e-8e0e-9079ce996fdb</webElementGuid>
+      <webElementGuid>d24ccef7-1bde-4acf-b0ff-4c1b81828bda</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -58,7 +58,7 @@
       <name>kmasterid</name>
       <type>Main</type>
       <value>flxOperationsRowFloatingMenu</value>
-      <webElementGuid>51bae5cb-4f14-4750-92e2-0e47f514f375</webElementGuid>
+      <webElementGuid>c0614b04-fb4b-4843-bb0c-adbd0943a6fd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -66,7 +66,7 @@
       <name>class</name>
       <type>Main</type>
       <value> sknLblOptionFloatMenu cntmiddleleftalign disableSelection</value>
-      <webElementGuid>53662de5-68b5-4da3-af45-c2eba56b296e</webElementGuid>
+      <webElementGuid>a164fe4d-0a4f-43ef-b3ec-b7866e7ac582</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -74,7 +74,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Ver detalle</value>
-      <webElementGuid>6ecaf0f4-cf36-4660-801a-fdbdd7a5ddfd</webElementGuid>
+      <webElementGuid>ed868b0f-39ca-4f82-aaee-d092c4ca9d01</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -82,7 +82,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;frmOperationsHomeBccl_flxOperationsRowFloatingMenu_lblviewDetail&quot;)</value>
-      <webElementGuid>d52d69b3-7f1e-4e7e-9efa-f9c2fcc7cefa</webElementGuid>
+      <webElementGuid>527c60fe-2158-47d4-98fc-262ecb1f81b4</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -90,7 +90,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//div[@id='frmOperationsHomeBccl_flxOperationsRowFloatingMenu_lblviewDetail']</value>
-      <webElementGuid>c754597b-2f36-46ba-b05c-f85d7c232fe2</webElementGuid>
+      <webElementGuid>12568763-e5b7-40ae-8a38-410d702e17e2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -98,7 +98,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='frmOperationsHomeBccl_flxOperationsRowFloatingMenu_flxviewDetail']/div/div</value>
-      <webElementGuid>6cb1080d-d38e-47e0-8929-567a93abedc3</webElementGuid>
+      <webElementGuid>d6a9b408-a027-466c-ac52-dbfc95fad2fb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -106,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Ver comprobante'])[1]/following::div[5]</value>
-      <webElementGuid>43e0b00e-13d5-4d57-a306-e3efabe4d882</webElementGuid>
+      <webElementGuid>a8765c35-3e3e-4260-95d7-4b3b10bac70e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -114,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)=''])[13]/following::div[13]</value>
-      <webElementGuid>eb96ca2e-2ce4-4084-a1ff-7ee14d9e238c</webElementGuid>
+      <webElementGuid>4ac9ec23-c1b6-42c5-aaad-501ceaf3c841</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -122,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Número de la Tarjeta'])[1]/preceding::div[3]</value>
-      <webElementGuid>067ac46f-2c11-4cf0-99c2-9b9566354e37</webElementGuid>
+      <webElementGuid>0c48e436-929f-4c1f-a69e-bd587475390b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -130,7 +130,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consta de 16 dígitos. Aquí sólo deberás ingresar los últimos 4.'])[1]/preceding::div[5]</value>
-      <webElementGuid>564d94c8-a97c-4909-a9d8-2b6b4ba16b23</webElementGuid>
+      <webElementGuid>9ce66b7b-643d-4c3a-b7f3-3eb1d2ec60de</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -138,7 +138,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Ver detalle']/parent::*</value>
-      <webElementGuid>0c2dcd49-4db1-41bf-a7f7-0c21382de9e1</webElementGuid>
+      <webElementGuid>8de036df-ff17-4895-a90e-056a52b41019</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -146,7 +146,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[9]/div/div/div[2]/div/div/div[2]/div/div/div/div</value>
-      <webElementGuid>e540b1d5-80e3-4666-a7ac-d298497225a6</webElementGuid>
+      <webElementGuid>1fab103d-f067-40f0-8480-8267eeb28d3e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -154,6 +154,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[@id = 'frmOperationsHomeBccl_flxOperationsRowFloatingMenu_lblviewDetail' and (text() = 'Ver detalle' or . = 'Ver detalle')]</value>
-      <webElementGuid>b527f785-3fd2-476b-ae81-18829c439da7</webElementGuid>
+      <webElementGuid>5af6dbdb-9652-43e8-81b1-e7c9bc92320a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

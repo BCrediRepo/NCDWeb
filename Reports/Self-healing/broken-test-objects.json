@@ -475,6 +475,106 @@
       "proposedLocatorMethod": "XPATH",
       "recoveryMethod": "XPATH",
       "pathToScreenshot": "Reports/Self-healing/Object Repository/05-Pagos Debin/txtDbnNoTitular_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/07-Operaciones/txtTipoOperacion",
+      "brokenLocator": "id(\"frmOperationsHomeBccl_segOperations\")/ul[1]/li[@class\u003d\"seg2Normal\"]/div[@id\u003d\"flexcontainer_wrapper\"]/div[@id\u003d\"flxOperationsRow_flxOperationsRow\"]/div[@class\u003d\"kcell middlecenteralignsknLblProductTableCommonData\"]/div[@id\u003d\"flxOperationsRow_lblOperationType\"][count(. | //*[@id \u003d \u0027flxOperationsRow_lblOperationType\u0027 and @kuid \u003d \u0027196CA9B8-F49F-451C-B902-E7502438D489\u0027 and @class \u003d \u0027 sknLblProductTableCommonData cntmiddleleftalign disableSelection\u0027 and (text() \u003d \u0027Transferencia entre cuentas propias\u0027 or . \u003d \u0027Transferencia entre cuentas propias\u0027)]) \u003d count(//*[@id \u003d \u0027flxOperationsRow_lblOperationType\u0027 and @kuid \u003d \u0027196CA9B8-F49F-451C-B902-E7502438D489\u0027 and @class \u003d \u0027 sknLblProductTableCommonData cntmiddleleftalign disableSelection\u0027 and (text() \u003d \u0027Transferencia entre cuentas propias\u0027 or . \u003d \u0027Transferencia entre cuentas propias\u0027)])]",
+      "brokenLocatorMethod": "BASIC",
+      "proposedLocator": "//div[@id\u003d\u0027flxOperationsRow_lblOperationType\u0027]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/07-Operaciones/txtTipoOperacion_XPATH.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/08-Pagos y Recargas/txtPYRServicioMetrogasCompleto",
+      "brokenLocator": "id(\"frmBcclServicesPay_PanelServices_ServicesPay_segServices\")/ul[1]/li[@class\u003d\"seg2Normal\"]/div[@id\u003d\"flexcontainer_wrapper\"]/div[@id\u003d\"flxServicesPayRow_flxServicesPayRow\"]/div[@class\u003d\"kcell middlecenteralign\"]/div[@id\u003d\"flexcontainer_wrapper\"]/div[@id\u003d\"flxServicesPayRow_flxMainContainer\"][count(. | //*[@id \u003d \u0027flxServicesPayRow_flxMainContainer\u0027 and @kformname \u003d \u0027flxServicesPayRow\u0027 and @kuid \u003d \u00271657534A-CC31-44B6-91CC-4A00FF767E02\u0027 and (text() \u003d \u0027Metrogas AntiguoMetrogas Antiguo54444444888\u0027 or . \u003d \u0027Metrogas AntiguoMetrogas Antiguo54444444888\u0027)]) \u003d count(//*[@id \u003d \u0027flxServicesPayRow_flxMainContainer\u0027 and @kformname \u003d \u0027flxServicesPayRow\u0027 and @kuid \u003d \u00271657534A-CC31-44B6-91CC-4A00FF767E02\u0027 and (text() \u003d \u0027Metrogas AntiguoMetrogas Antiguo54444444888\u0027 or . \u003d \u0027Metrogas AntiguoMetrogas Antiguo54444444888\u0027)])]",
+      "brokenLocatorMethod": "BASIC",
+      "proposedLocator": "(//div[@id\u003d\u0027flxServicesPayRow_flxMainContainer\u0027])[27]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/08-Pagos y Recargas/txtPYRServicioMetrogasCompleto_XPATH.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/08-Pagos y Recargas/icoPYREditarServicio",
+      "brokenLocator": "id(\"frmBcclServicesPay_PanelServices_ServicesPay_segServices\")/ul[1]/li[@class\u003d\"seg2Normal\"]/div[@id\u003d\"flexcontainer_wrapper\"]/div[@id\u003d\"flxServicesPayRow_flxServicesPayRow\"]/div[@class\u003d\"kcell middlecenteralign\"]/div[@id\u003d\"flexcontainer_wrapper\"]/div[@id\u003d\"flxServicesPayRow_flxMainContainer\"]/div[@class\u003d\"kcell middlecenteralign\"]/div[@id\u003d\"flexcontainer_wrapper\"]/div[@id\u003d\"flxServicesPayRow_flxIconsContainer\"]/div[@class\u003d\"kcell middlecenteralign\"]/div[@id\u003d\"flexcontainer_wrapper\"]/div[@id\u003d\"flxServicesPayRow_flxPencilContainer\"]/div[@class\u003d\"kcell middlecenteralignsknLblFALight14666666\"]/div[@id\u003d\"flxServicesPayRow_lblPencil\"][count(. | //*[@id \u003d \u0027flxServicesPayRow_lblPencil\u0027 and @kuid \u003d \u0027518A5A74-7853-4EC3-94F3-7322049DCACC\u0027 and @class \u003d \u0027 sknLblFALight14666666 cntmiddleleftalign disableSelection\u0027 and (text() \u003d \u0027\u0027 or . \u003d \u0027\u0027)]) \u003d count(//*[@id \u003d \u0027flxServicesPayRow_lblPencil\u0027 and @kuid \u003d \u0027518A5A74-7853-4EC3-94F3-7322049DCACC\u0027 and @class \u003d \u0027 sknLblFALight14666666 cntmiddleleftalign disableSelection\u0027 and (text() \u003d \u0027\u0027 or . \u003d \u0027\u0027)])]",
+      "brokenLocatorMethod": "BASIC",
+      "proposedLocator": "(//div[@id\u003d\u0027flxServicesPayRow_lblPencil\u0027])[27]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/08-Pagos y Recargas/icoPYREditarServicio_XPATH.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/08-Pagos y Recargas/txtPYRMsjeNombreEditadoExito",
+      "brokenLocator": "/html[@class\u003d\"responsive\"]/body[@class\u003d\"chrome\"]/div[@class\u003d\"ToastContainer\"]/div[@class\u003d\"ToastInner ToastInnerSuccess ToastInnerLarge\"]/p[@class\u003d\"ToastMessage ToastMessageLarge\"][count(. | //*[@class \u003d \u0027ToastMessage ToastMessageLarge\u0027 and (text() \u003d \u0027La etiqueta se actualizó con éxito.\u0027 or . \u003d \u0027La etiqueta se actualizó con éxito.\u0027)]) \u003d count(//*[@class \u003d \u0027ToastMessage ToastMessageLarge\u0027 and (text() \u003d \u0027La etiqueta se actualizó con éxito.\u0027 or . \u003d \u0027La etiqueta se actualizó con éxito.\u0027)])]",
+      "brokenLocatorMethod": "BASIC",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027\u0027])[7]/following::p[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/08-Pagos y Recargas/txtPYRMsjeNombreEditadoExito_XPATH.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/08-Pagos y Recargas/txtPYRMsjeEnteEditadoExito",
+      "brokenLocator": "/html[@class\u003d\"responsive\"]/body[@class\u003d\"chrome\"]/div[@class\u003d\"ToastContainer\"]/div[@class\u003d\"ToastInner ToastInnerSuccess ToastInnerLarge\"][count(. | //*[@class \u003d \u0027ToastInner ToastInnerSuccess ToastInnerLarge\u0027 and (text() \u003d \u0027La etiqueta se actualizó con éxito.\u0027 or . \u003d \u0027La etiqueta se actualizó con éxito.\u0027)]) \u003d count(//*[@class \u003d \u0027ToastInner ToastInnerSuccess ToastInnerLarge\u0027 and (text() \u003d \u0027La etiqueta se actualizó con éxito.\u0027 or . \u003d \u0027La etiqueta se actualizó con éxito.\u0027)])]",
+      "brokenLocatorMethod": "BASIC",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Click on Log In to log into your account\u0027])[10]/following::div[2]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/08-Pagos y Recargas/txtPYRMsjeEnteEditadoExito_XPATH.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/09-Tarjetas/txtNumeroVisaOverview",
+      "brokenLocator": "(//div[@id\u003d\u0027flxCardHomeRow_lblCardNumber\u0027])[2]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Vencimiento\u0027])[2]/preceding::div[8]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/09-Tarjetas/txtVisaOverview",
+      "brokenLocator": "(//div[@id\u003d\u0027flxCardHomeRow_lblCard\u0027])[2]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027\u0027])[2]/following::div[14]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/09-Tarjetas/txtVisaOverview_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/09-Tarjetas/txtNumeroVisaOverview",
+      "brokenLocator": "(//div[@id\u003d\u0027flxCardHomeRow_lblCardNumber\u0027])[2]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Visa Platinum\u0027])[1]/following::div[2]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/09-Tarjetas/txtNumeroVisaOverview_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/09-Tarjetas/LblTarjetaVisa",
+      "brokenLocator": "(//div[@id\u003d\u0027flxCardHomeRow_FlexGroup0c4de954607f848\u0027])[2]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(//div[@id\u003d\u0027flexcontainer_wrapper\u0027]/div)[275]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/09-Tarjetas/LblTarjetaVisa_idRelative.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/09-Tarjetas/lblTarjetaVisaPlatinum",
+      "brokenLocator": "//div[@id\u003d\u0027frmBcclCardDetails_lblCardDetailsTitle\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027\u0027])[1]/following::div[2]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/09-Tarjetas/lblTarjetaVisaPlatinum_neighbor.png"
     }
   ]
 }

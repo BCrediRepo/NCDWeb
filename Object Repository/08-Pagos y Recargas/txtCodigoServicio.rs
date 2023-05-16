@@ -6,15 +6,18 @@
    <elementGuidId>6956937c-99fe-4dd8-956f-e8fcfdaae57d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>(//div[@id='flxServicesPayRow_lblCodigoPago'])[29]</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;frmBcclServicesPay_PanelServices_ServicesPay_segServices&quot;)/ul[1]/li[@class=&quot;seg2Normal&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxServicesPayRow_flxServicesPayRow&quot;]/div[@class=&quot;kcell middlecenteralign&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxServicesPayRow_flxMainContainer&quot;]/div[@class=&quot;kcell middlecenteralign&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxServicesPayRow_flxServicesPayContainer&quot;]/div[@class=&quot;kcell middlecenteralignslFbox&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxServicesPayRow_flxCodigoPago&quot;]/div[@class=&quot;kcell middlecenteralignsknLblTableCellSM&quot;]/div[@id=&quot;flxServicesPayRow_lblCodigoPago&quot;][count(. | //*[@id = 'flxServicesPayRow_lblCodigoPago' and @kuid = '252B1BBE-7019-4620-97FF-B6C43D2911C1' and (text() = '54444444888' or . = '54444444888')]) = count(//*[@id = 'flxServicesPayRow_lblCodigoPago' and @kuid = '252B1BBE-7019-4620-97FF-B6C43D2911C1' and (text() = '54444444888' or . = '54444444888')])]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +25,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>99bfe2c4-639a-4e3a-832e-c8f88b5d86b5</webElementGuid>
+      <webElementGuid>3e687ec3-ac27-4593-b3fd-ae0e12936d56</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +33,7 @@
       <name>id</name>
       <type>Main</type>
       <value>flxServicesPayRow_lblCodigoPago</value>
-      <webElementGuid>55e3448b-c4f7-4795-8e91-51c0ed6de352</webElementGuid>
+      <webElementGuid>63962c7e-0ebb-46b6-be49-a110dc531e16</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +41,7 @@
       <name>kwidgettype</name>
       <type>Main</type>
       <value>Label</value>
-      <webElementGuid>5633b117-2e00-454e-a4c9-5fe7d1d406fa</webElementGuid>
+      <webElementGuid>1ae0ac6d-568a-4a8c-b285-75a8f0f491aa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +49,7 @@
       <name>kformname</name>
       <type>Main</type>
       <value>flxServicesPayRow</value>
-      <webElementGuid>962a9abe-2c57-4d88-8e56-c9b51787ccb1</webElementGuid>
+      <webElementGuid>48777a7a-81a1-4018-be80-23e4db7350ea</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,15 +57,15 @@
       <name>kcontainerid</name>
       <type>Main</type>
       <value>segServices</value>
-      <webElementGuid>3a6bf18d-2a3d-4e61-9539-06bd2d2bea8a</webElementGuid>
+      <webElementGuid>db1a8b00-eb47-46c7-b1d5-e962e7321d4b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>kuid</name>
       <type>Main</type>
       <value>252B1BBE-7019-4620-97FF-B6C43D2911C1</value>
-      <webElementGuid>c49e864c-762f-463f-916f-9f022665671f</webElementGuid>
+      <webElementGuid>0a15b5fd-2f88-4665-937d-a7e54d3e8956</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +73,7 @@
       <name>class</name>
       <type>Main</type>
       <value> sknLblTableCellSM cntmiddleleftalign disableSelection</value>
-      <webElementGuid>29bdc493-c303-469d-a175-2e03124c237e</webElementGuid>
+      <webElementGuid>4771fb7f-fe43-4ee8-a806-951dda08afa2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -78,15 +81,15 @@
       <name>text</name>
       <type>Main</type>
       <value>54444444888</value>
-      <webElementGuid>1f2da07f-331c-4100-add9-7a581d7dd7a7</webElementGuid>
+      <webElementGuid>556b5f5f-cbe7-4423-ba99-8286b6df34f6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;frmBcclServicesPay_PanelServices_ServicesPay_segServices&quot;)/ul[1]/li[@class=&quot;seg2Normal&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxServicesPayRow_flxServicesPayRow&quot;]/div[@class=&quot;kcell middlecenteralign&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxServicesPayRow_flxMainContainer&quot;]/div[@class=&quot;kcell middlecenteralign&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxServicesPayRow_flxServicesPayContainer&quot;]/div[@class=&quot;kcell middlecenteralignslFbox&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxServicesPayRow_flxCodigoPago&quot;]/div[@class=&quot;kcell middlecenteralignsknLblTableCellSM&quot;]/div[@id=&quot;flxServicesPayRow_lblCodigoPago&quot;]</value>
-      <webElementGuid>25810b93-02bd-43ce-b8ea-e932f493562e</webElementGuid>
+      <webElementGuid>3f994379-4244-45db-85f5-7114afd93697</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -94,7 +97,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//div[@id='flxServicesPayRow_lblCodigoPago'])[29]</value>
-      <webElementGuid>1f8a6e6d-016d-4473-8fc9-b7929db1bfb4</webElementGuid>
+      <webElementGuid>3ef9a11c-c5fe-4035-8f5a-05fc1e061354</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +105,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>(//div[@id='flxServicesPayRow_flxCodigoPago']/div/div)[29]</value>
-      <webElementGuid>16f36de6-2755-4bc2-99b1-8787cefce5ab</webElementGuid>
+      <webElementGuid>668769af-1528-479c-9f76-ad52a645b498</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +113,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='prueba 888'])[1]/following::div[5]</value>
-      <webElementGuid>f81f72d3-69b6-4e6d-8fba-4aeb2afd8154</webElementGuid>
+      <webElementGuid>79217105-cbe9-4001-bcf5-147a8fc870a9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +121,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Metrogas Antiguo'])[3]/following::div[7]</value>
-      <webElementGuid>f5ed4e46-d79f-4a05-bea2-45a625f4e8fb</webElementGuid>
+      <webElementGuid>68a31860-655a-4a91-884a-fa935519980d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +129,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)=''])[29]/preceding::div[1]</value>
-      <webElementGuid>82796410-72b0-467b-8a39-8427a23d7ddd</webElementGuid>
+      <webElementGuid>efc1ecab-1a32-4604-8596-c90340ba023a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +137,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)=''])[29]/preceding::div[6]</value>
-      <webElementGuid>e83d5225-6400-43a8-b037-0562fef827e1</webElementGuid>
+      <webElementGuid>776db4a2-def9-4450-8f12-3a12faa249b8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +145,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='54444444888']/parent::*</value>
-      <webElementGuid>9b6ae8ce-9779-483f-bc23-998600b39fcc</webElementGuid>
+      <webElementGuid>14a7b88f-2724-42b1-b513-05bfd2a291b1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,7 +153,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[29]/div/div/div/div/div/div[2]/div/div/div[3]/div/div/div/div</value>
-      <webElementGuid>f14c8f3b-31b9-4587-b6b0-0521db12d2a3</webElementGuid>
+      <webElementGuid>ad06f3a6-0d26-45e8-8959-797cdcfe3596</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -158,6 +161,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[@id = 'flxServicesPayRow_lblCodigoPago' and (text() = '54444444888' or . = '54444444888')]</value>
-      <webElementGuid>2f1e5eb6-0009-4210-9d01-b695e694b0eb</webElementGuid>
+      <webElementGuid>44c0c1a1-49eb-4980-b371-2b895461e4ee</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

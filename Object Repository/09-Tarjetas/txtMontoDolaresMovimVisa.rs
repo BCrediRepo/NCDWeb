@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>txtServSinServiciosAdheridos</name>
+   <name>txtMontoDolaresMovimVisa</name>
    <tag></tag>
-   <elementGuidId>36e11bac-92cc-4d31-a90a-38e144e676ee</elementGuidId>
+   <elementGuidId>7acca69f-aa0a-4a1d-b522-8a4da5b4a7e7</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#frmBcclServicesPay_PanelServices_ServicesPay_NoResults_lblNoResultsTitle</value>
+         <value>#frmBcclCardDetails_lblUltimosMovimientosMontoUSD</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='frmBcclServicesPay_PanelServices_ServicesPay_NoResults_lblNoResultsTitle']</value>
+         <value>//div[@id='frmBcclCardDetails_lblUltimosMovimientosMontoUSD']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,15 +22,15 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>6b6b31eb-7ac7-4b5e-b04e-a10fc28528b1</webElementGuid>
+      <webElementGuid>bff78014-3eb5-483b-af3b-1b6132aa5b45</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>frmBcclServicesPay_PanelServices_ServicesPay_NoResults_lblNoResultsTitle</value>
-      <webElementGuid>93dcf7e5-6188-4803-a74d-8d3b0428d5eb</webElementGuid>
+      <value>frmBcclCardDetails_lblUltimosMovimientosMontoUSD</value>
+      <webElementGuid>69184c3a-216f-4467-9141-6a916f5df6ed</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,118 +38,110 @@
       <name>kwidgettype</name>
       <type>Main</type>
       <value>Label</value>
-      <webElementGuid>92896ac3-c73e-4d1f-96d3-1bf913bec2bc</webElementGuid>
+      <webElementGuid>ebf1d010-d699-4dbe-af3a-ccd997f5f649</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>kformname</name>
       <type>Main</type>
-      <value>frmBcclServicesPay</value>
-      <webElementGuid>3604565a-be67-4a86-ad70-89a31f1be304</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>kmasterid</name>
-      <type>Main</type>
-      <value>PanelServices_ServicesPay_NoResults</value>
-      <webElementGuid>78e8ca08-ef63-4ed2-9da7-be2a51a634f1</webElementGuid>
+      <value>frmBcclCardDetails</value>
+      <webElementGuid>733f00f9-d9bd-4d72-b867-1974238d745b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value> sknLblNotificationMessageEmptyTable cntmiddleleftalign disableSelection</value>
-      <webElementGuid>86759e20-a2c7-43a9-b47b-2555fde311a1</webElementGuid>
+      <value> sknLblLatoBold1266 cntmiddleleftalign disableSelection</value>
+      <webElementGuid>8c207ec1-8162-49bb-90cf-984e0b7e8dd1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>No tenés servicios adheridos próximos a vencer.</value>
-      <webElementGuid>fbdd8164-b1c3-443b-a93a-9880be2d8085</webElementGuid>
+      <value>Monto U$S</value>
+      <webElementGuid>d774b39e-fb45-45da-8209-d4bf1e37cfec</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;frmBcclServicesPay_PanelServices_ServicesPay_NoResults_lblNoResultsTitle&quot;)</value>
-      <webElementGuid>ef6b2ada-9bb7-4688-99cb-5569828d62ce</webElementGuid>
+      <value>id(&quot;frmBcclCardDetails_lblUltimosMovimientosMontoUSD&quot;)</value>
+      <webElementGuid>a4c9bcdc-5491-409a-97a1-766c9d72274d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//div[@id='frmBcclServicesPay_PanelServices_ServicesPay_NoResults_lblNoResultsTitle']</value>
-      <webElementGuid>6ad9454f-d745-41cb-990c-fdb2f4782ac5</webElementGuid>
+      <value>//div[@id='frmBcclCardDetails_lblUltimosMovimientosMontoUSD']</value>
+      <webElementGuid>008cae7c-fe9f-4c43-8c28-e83300e0a88f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='frmBcclServicesPay_PanelServices_ServicesPay_NoResults_flxMessageContainer']/div/div</value>
-      <webElementGuid>26c9cd19-5a0b-4b9e-ba6e-37e08040e5f4</webElementGuid>
+      <value>//div[@id='frmBcclCardDetails_flxUltimosMovimientosMontoUSD']/div/div</value>
+      <webElementGuid>07f733e4-98e7-4e41-99a7-d5d6ba1facc2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Label'])[25]/following::div[16]</value>
-      <webElementGuid>c979ee99-144d-4a25-a3f4-34fed49d5a16</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Monto $'])[1]/following::div[5]</value>
+      <webElementGuid>caf6950a-f578-4005-827d-80320887cb65</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Label'])[24]/following::div[18]</value>
-      <webElementGuid>91a79683-ef40-422b-875c-865a9eaf1c55</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Comprobante'])[1]/following::div[10]</value>
+      <webElementGuid>6adbba20-8039-4843-8f19-65d95a13220a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='MC'])[1]/preceding::div[14]</value>
-      <webElementGuid>e327d0b8-6d9d-45fd-b7a7-ddd11a6026dc</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sony - Playstation store -'])[1]/preceding::div[6]</value>
+      <webElementGuid>f3465267-cdba-4508-95a1-34f28ed48a71</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Label'])[26]/preceding::div[22]</value>
-      <webElementGuid>3aff8751-d924-444c-a765-294480bb27ef</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sony - Playstation store -'])[2]/preceding::div[11]</value>
+      <webElementGuid>3e247152-c423-418a-8091-75e3a075aa8b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='No tenés servicios adheridos próximos a vencer.']/parent::*</value>
-      <webElementGuid>3b13a3f8-967e-4508-8e79-b693d00df11c</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Monto U$S']/parent::*</value>
+      <webElementGuid>208a0a6e-f03d-490e-88cd-034a5e0117b5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[3]/div/div/div/div/div/div[2]/div/div/div/div</value>
-      <webElementGuid>9ebf0e68-4f2b-4998-909f-2a0febe58bb9</webElementGuid>
+      <value>//div[3]/div/div/div/div/div/div[6]/div/div/div/div</value>
+      <webElementGuid>c879a3bb-231a-464f-8e11-edd137b77fa0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[@id = 'frmBcclServicesPay_PanelServices_ServicesPay_NoResults_lblNoResultsTitle' and (text() = 'No tenés servicios adheridos próximos a vencer.' or . = 'No tenés servicios adheridos próximos a vencer.')]</value>
-      <webElementGuid>4102dc7f-2e72-4c4b-b41f-52e637b908e2</webElementGuid>
+      <value>//div[@id = 'frmBcclCardDetails_lblUltimosMovimientosMontoUSD' and (text() = 'Monto U$S' or . = 'Monto U$S')]</value>
+      <webElementGuid>921fe2a5-afb2-4c15-826f-8c406a4ca4b2</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

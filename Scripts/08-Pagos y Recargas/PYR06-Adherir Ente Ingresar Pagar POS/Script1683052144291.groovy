@@ -75,10 +75,11 @@ WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnAdherirServ
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/mnuPagosRecargas'))
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/lnkVerServiciosAdheridos'))
 
-//Borra el servicio adherido para reutilizar el codigo
-WebUI.scrollToElement(('Object Repository/08-Pagos y Recargas/txtCodigoServicio'), vCodigo)
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/icoEliminarServcio'))
-//WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnConfirmarEliminarServicio'))
+//Elimina el servicio adherido para reutilizar el codigo
+WebUI.focus(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRServicioMetrogasCompleto'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/icoPYRBorrarServicio'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnConfirmarEliminarServicio'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/icoPYRCerrarSolapaAdheridos'))
 
 
 
