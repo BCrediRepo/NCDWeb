@@ -10,8 +10,12 @@
          <value></value>
       </entry>
       <entry>
+         <key>BASIC</key>
+         <value>id(&quot;frmBcclCardsHome_CreditCards_segCards&quot;)/ul[1]/li[@class=&quot;seg2Normal&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxCardHomeRow_flxCardHomeRow&quot;]/div[@class=&quot;kcell middlecenteralignsknFlxCreditCardInfoRowClosed&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxCardHomeRow_flxCardRowContainer&quot;]/div[@class=&quot;kcell middlecenteralign&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxCardHomeRow_flxImageAndNameContainer&quot;]/div[@class=&quot;kcell middlecenteralign&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxCardHomeRow_FlexGroup0c4de954607f848&quot;][count(. | //*[@class = 'kwt100  slFbox ' and @id = 'flxCardHomeRow_FlexGroup0c4de954607f848' and @kuid = '46A08477-71CF-4227-81C5-B0D6063F4B45' and (text() = 'Visa Platinum0974' or . = 'Visa Platinum0974')]) = count(//*[@class = 'kwt100  slFbox ' and @id = 'flxCardHomeRow_FlexGroup0c4de954607f848' and @kuid = '46A08477-71CF-4227-81C5-B0D6063F4B45' and (text() = 'Visa Platinum0974' or . = 'Visa Platinum0974')])]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>(//div[@id='flxCardHomeRow_FlexGroup0c4de954607f848'])[2]</value>
+         <value>//div[@id = 'flxCardHomeRow_FlexGroup0c4de954607f848' and (text() = 'Visa Platinum0974' or . = 'Visa Platinum0974')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,15 +26,15 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>56ff7d89-b50e-4d64-8b57-9fddfb2d4868</webElementGuid>
+      <webElementGuid>9609917a-2a20-431b-8854-76242cf83965</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
       <value>kwt100  slFbox </value>
-      <webElementGuid>879448e3-b4ab-420d-8b5d-8a2d9dc51022</webElementGuid>
+      <webElementGuid>026725e9-f474-4c06-85d0-b2855139ca1b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +42,7 @@
       <name>id</name>
       <type>Main</type>
       <value>flxCardHomeRow_FlexGroup0c4de954607f848</value>
-      <webElementGuid>764b649d-1a56-4350-818c-f5fafb91ff7a</webElementGuid>
+      <webElementGuid>a7528109-22b9-46c8-bcc3-6a979173dab2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +50,7 @@
       <name>kwidgettype</name>
       <type>Main</type>
       <value>FlexContainer</value>
-      <webElementGuid>1947700b-80ab-4ba5-8934-c5908a7269f0</webElementGuid>
+      <webElementGuid>ce3e07ec-c1ab-4da0-bcff-8b5798fa6662</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>kformname</name>
       <type>Main</type>
       <value>flxCardHomeRow</value>
-      <webElementGuid>c5bfb5b3-01a5-409f-9161-c89dfca85dc4</webElementGuid>
+      <webElementGuid>5fceedbc-5e5e-476a-9f20-436f7d2f4c08</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,15 +66,15 @@
       <name>kcontainerid</name>
       <type>Main</type>
       <value>segCards</value>
-      <webElementGuid>c7407805-eaa9-469c-aecf-59e85010d678</webElementGuid>
+      <webElementGuid>83ddce09-430a-49e2-9a3c-1a270425e4a8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>kuid</name>
       <type>Main</type>
       <value>46A08477-71CF-4227-81C5-B0D6063F4B45</value>
-      <webElementGuid>676ffdce-8126-4536-a443-c00742477002</webElementGuid>
+      <webElementGuid>45d9ba4b-f861-4cd5-b99f-fb4a04ed0332</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -78,15 +82,15 @@
       <name>text</name>
       <type>Main</type>
       <value>Visa Platinum0974</value>
-      <webElementGuid>34748749-bc12-40c7-b201-f74539861457</webElementGuid>
+      <webElementGuid>943fda09-0f30-4485-8d47-d69b7d04e407</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;frmBcclCardsHome_CreditCards_segCards&quot;)/ul[1]/li[@class=&quot;seg2Normal&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxCardHomeRow_flxCardHomeRow&quot;]/div[@class=&quot;kcell middlecenteralignsknFlxCreditCardInfoRowClosed&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxCardHomeRow_flxCardRowContainer&quot;]/div[@class=&quot;kcell middlecenteralign&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxCardHomeRow_flxImageAndNameContainer&quot;]/div[@class=&quot;kcell middlecenteralign&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxCardHomeRow_FlexGroup0c4de954607f848&quot;]</value>
-      <webElementGuid>5a0ad108-d1c6-4505-89fe-ebb328af5f14</webElementGuid>
+      <webElementGuid>8e7d7688-c067-4cdc-927a-df085f9caa87</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//div[@id='flxCardHomeRow_FlexGroup0c4de954607f848'])[2]</value>
-      <webElementGuid>9aafbe93-eef9-4506-a552-cf27271f1b23</webElementGuid>
+      <webElementGuid>d919e92a-4cc3-484f-bdce-de508c3af94e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>(//div[@id='flexcontainer_wrapper']/div)[275]</value>
-      <webElementGuid>22b40ca7-19de-4d92-b1af-e906c1bc18a5</webElementGuid>
+      <webElementGuid>a075ff21-e891-4cba-aa10-fcfcf99f1c0f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)=''])[2]/following::div[11]</value>
-      <webElementGuid>66b75a99-73a2-46b7-8745-abf788424834</webElementGuid>
+      <webElementGuid>40f8dd3b-5bf7-467d-8cd6-98724de1fda0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='$ 8.679,83'])[2]/following::div[16]</value>
-      <webElementGuid>4658e496-3a88-44ee-ac58-162fe9dc79ee</webElementGuid>
+      <webElementGuid>78b67aa6-31cd-4e98-8619-c86737d8fd5e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cerrado'])[2]/preceding::div[6]</value>
-      <webElementGuid>a3f6f21c-9212-4112-bda1-ace881e37897</webElementGuid>
+      <webElementGuid>7744c12a-8cff-41f5-b601-89ec5f93de0f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +138,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[2]/div/div/div/div/div/div/div/div/div/div/div</value>
-      <webElementGuid>f2a20c2c-4529-49ad-a750-9ca042096e8b</webElementGuid>
+      <webElementGuid>8ccc121c-68a9-48fb-98d3-c3b1ba50d785</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,6 +146,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[@id = 'flxCardHomeRow_FlexGroup0c4de954607f848' and (text() = 'Visa Platinum0974' or . = 'Visa Platinum0974')]</value>
-      <webElementGuid>0f104692-5851-4893-b621-1e06cc8f0ac0</webElementGuid>
+      <webElementGuid>d89a299f-744b-47f4-8752-864725ac31f6</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

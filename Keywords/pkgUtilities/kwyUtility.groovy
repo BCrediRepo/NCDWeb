@@ -351,7 +351,7 @@ public class kwyUtility {
 		WebUI.verifyEqual(vMontoPFLista, vMontoPFDetalle)
 
 	}
-	
+
 	/*----------------------------------------------------------------------------------------------*
 	 *Validación Tarjeta Visa Detalle                                                        	 	*
 	 *----------------------------------------------------------------------------------------------*/
@@ -366,14 +366,14 @@ public class kwyUtility {
 		//Valida los datos de la tarjeta Visa desde el Overview
 		WebUI.getText(findTestObject('Object Repository/09-Tarjetas/txtVisaOverview'), vTituloVisaOvervw)
 		WebUI.getText(findTestObject('Object Repository/09-Tarjetas/txtNumeroVisaOverview'), vNroVisaOvervw)
-		
+
 		//Cliquea en la card e ingresa al módulo para ver los movimientos
 		WebUI.click(findTestObject('Object Repository/09-Tarjetas/LblTarjetaVisa'))
-		
+
 		//Valida los datos de la tarjeta Visa desde el detalle de la Tarjeta
 		WebUI.getText(findTestObject('Object Repository/09-Tarjetas/lblTarjetaVisaPlatinum'), vTituloVisa)
 		WebUI.getText(findTestObject('Object Repository/09-Tarjetas/txtNumeroVisaOverview'), vNroVisa)
-		
+
 		//Compara ambos datos
 		WebUI.verifyEqual(vTituloVisaOvervw, vTituloVisa)
 		WebUI.verifyEqual(vNroVisaOvervw, vNroVisa)

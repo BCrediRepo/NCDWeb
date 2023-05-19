@@ -26,35 +26,59 @@ import javax.swing.JOptionPane
 
 //-------------------Conecta a base de datos--------------------------------------------
 def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 13976407"
+
+/*
 def vQuery1 = "SELECT * FROM Labels WHERE Id = 45"
 def vQuery2 = "SELECT * FROM Labels WHERE Id = 46"
 def vQuery3 = "SELECT * FROM Labels WHERE Id = 47"
 def vQuery4 = "SELECT * FROM Labels WHERE Id = 48"
+def vQuery5 = "SELECT * FROM Labels WHERE Id = 49"
+def vQuery6 = "SELECT * FROM Labels WHERE Id = 50"
+def vQuery7 = "SELECT * FROM Labels WHERE Id = 51"
+*/
 
 String vDNI = null
 String vClave = null
 String vUsuario = null
-String vFechaMovim = null
-String vDescMovim = null
-String vMontoPesos = null
-String vMontoDolar = null
+
+/*
+String vFechaCP = null
+String vDescripCP = null
+String vNombreCP = null
+String vCtasPendtesCP = null
+String vValorCuotaCP = null
+String vCtasTotalCP = null
+String vSldoPendCP = null
+*/
 
 CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
 
 //Consulta a la base de datos
 ResultSet vResult = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery)
+
+/*
 ResultSet vResult1 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery1)
 ResultSet vResult2 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery2)
 ResultSet vResult3 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery3)
 ResultSet vResult4 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery4)
+ResultSet vResult5 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery5)
+ResultSet vResult6 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery6)
+ResultSet vResult7 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery7)
+*/
 
 vDNI = vResult.getString(2)
 vUsuario = vResult.getString(3)
 vClave = vResult.getString(4)
-vFechaMovim = vResult1.getString(3)
-vDescMovim = vResult2.getString(3)
-vMontoPesos = vResult3.getString(3)
-vMontoDolar = vResult4.getString(3)
+
+/*
+vFechaCP = vResult1.getString(3)
+vDescripCP = vResult2.getString(3)
+vNombreCP = vResult3.getString(3)
+vCtasPendtesCP = vResult4.getString(3)
+vValorCuotaCP = vResult5.getString(3)
+vCtasTotalCP = vResult6.getString(3)
+vSldoPendCP = vResult7.getString(3)
+*/
 
 //Cierre de la conexion
 CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
@@ -69,32 +93,39 @@ CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 //Ingresa al módulo de Tarjetas
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTarjetas'))
 
-//Valida datos de tarjeta desde overview
-CustomKeywords.'pkgUtilities.kwyUtility.comparacionDetalleTarjetaVisa'(60)
+//Cliquea en la Card Visa y Selecciona Solapa Cuotas Pendientes
+WebUI.click(findTestObject('Object Repository/09-Tarjetas/LblTarjetaVisa'))
+WebUI.click(findTestObject('Object Repository/09-Tarjetas/lblCuotasPendientes'))
 
-//Valida los titulos de la solapa Movimientos
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtFechaMovimVisa'), vFechaMovim)
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtDescripcinMovimVisa'), vDescMovim)
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtMontoPesosMovimVisa'), vMontoPesos)
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtMontoDolaresMovimVisa'), vMontoDolar)
+/*
+//Valida titulos de la solapa Cuotas Pendientes
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtFechaMovimVisa'), vFechaCP)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtFechaMovimVisa'), vDescripCP)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtFechaMovimVisa'), vNombreCP)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtFechaMovimVisa'), vCtasPendtesCP)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtFechaMovimVisa'), vValorCuotaCP)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtFechaMovimVisa'), vCtasTotalCP)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtFechaMovimVisa'), vSldoPendCP)
+*/
 
-//NOTA: Agregar elemento del título Nombre/Tarjeta cuando corrijan bug
-
-//Valida los datos de los movimientos
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtFechaValorMov'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtNombreValorMov'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtMontoValorPesosMov'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtMontoValorDolarMov'), 10)
+//Valida datos
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtCPFecha'), 10)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtCPDescripcion'), 10)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtCPNombre'), 10)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtCPCuotas'), 10)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtCPValorCuota'), 10)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtCPSaldo'), 10)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/TRJ03-ConsultaMovimientosVisaPOS.png')
+	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/TRJ04-ConsultaCuotasPendientesVisaPOS.png')
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgUtilities.kwyUtility.fPassStatus'()
 }
+

@@ -25,36 +25,28 @@ import java.sql.Statement
 import javax.swing.JOptionPane
 
 //-------------------Conecta a base de datos--------------------------------------------
-def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 13976407"
-def vQuery1 = "SELECT * FROM Labels WHERE Id = 45"
-def vQuery2 = "SELECT * FROM Labels WHERE Id = 46"
-def vQuery3 = "SELECT * FROM Labels WHERE Id = 47"
-def vQuery4 = "SELECT * FROM Labels WHERE Id = 48"
+def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 20144835"
+def vQuery2 = "SELECT * FROM Labels where Id = 6"
+def vQuery3 = "SELECT * FROM Labels where Id = 7"
 
 String vDNI = null
 String vClave = null
 String vUsuario = null
-String vFechaMovim = null
-String vDescMovim = null
-String vMontoPesos = null
-String vMontoDolar = null
+String vCbuCta = null
+String vALiasCta = null
 
 CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
 
 //Consulta a la base de datos
 ResultSet vResult = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery)
-ResultSet vResult1 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery1)
 ResultSet vResult2 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery2)
 ResultSet vResult3 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery3)
-ResultSet vResult4 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery4)
 
 vDNI = vResult.getString(2)
 vUsuario = vResult.getString(3)
 vClave = vResult.getString(4)
-vFechaMovim = vResult1.getString(3)
-vDescMovim = vResult2.getString(3)
-vMontoPesos = vResult3.getString(3)
-vMontoDolar = vResult4.getString(3)
+vCbuCta = vResult2.getString(3)
+vALiasCta = vResult3.getString(3)
 
 //Cierre de la conexion
 CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
@@ -66,35 +58,5 @@ CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
 //Se loguea con el usuario seleccionado
 CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 
-//Ingresa al módulo de Tarjetas
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTarjetas'))
-
-//Valida datos de tarjeta desde overview
-CustomKeywords.'pkgUtilities.kwyUtility.comparacionDetalleTarjetaVisa'(60)
-
-//Valida los titulos de la solapa Movimientos
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtFechaMovimVisa'), vFechaMovim)
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtDescripcinMovimVisa'), vDescMovim)
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtMontoPesosMovimVisa'), vMontoPesos)
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtMontoDolaresMovimVisa'), vMontoDolar)
-
-//NOTA: Agregar elemento del título Nombre/Tarjeta cuando corrijan bug
-
-//Valida los datos de los movimientos
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtFechaValorMov'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtNombreValorMov'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtMontoValorPesosMov'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtMontoValorDolarMov'), 10)
-
-//---------------------------------------------------------------------------------------------------------------------
-//Control de fin de script
-
-@com.kms.katalon.core.annotation.TearDownIfFailed
-void fTakeFailScreenshot() {
-	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/TRJ03-ConsultaMovimientosVisaPOS.png')
-}
-
-@com.kms.katalon.core.annotation.TearDownIfPassed
-void fPassScript() {
-	CustomKeywords.'pkgUtilities.kwyUtility.fPassStatus'()
-}
+//Cliquea el menú desplegable de Cuentas en el Inicio
+WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbCuentas'))

@@ -575,6 +575,16 @@
       "proposedLocatorMethod": "XPATH",
       "recoveryMethod": "XPATH",
       "pathToScreenshot": "Reports/Self-healing/Object Repository/09-Tarjetas/lblTarjetaVisaPlatinum_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/09-Tarjetas/lblCuotasPendientes",
+      "brokenLocator": "//div[@id\u003d\u0027frmBcclCardDetails_Tabs_frmBcclCardDetailsTabsRtx1\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Label\u0027])[4]/following::div[23]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/09-Tarjetas/lblCuotasPendientes_neighbor.png"
     }
   ]
 }
