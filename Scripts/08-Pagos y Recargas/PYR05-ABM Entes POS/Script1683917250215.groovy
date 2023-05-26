@@ -96,7 +96,7 @@ WebUI.sendKeys(findTestObject(('Object Repository/08-Pagos y Recargas/txtPYRNomb
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/icoPYRAceptarNombreEditado'))
 
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYREditarGuardar'))
-//WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRMsjeNombreEditadoExito'), vMsjeEditado)
+WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRMsjeNombreEditadoExito'), vMsjeEditado)
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/icoPYRCerrarSolapaAdheridos'))
 
 //Elimina el servicio adherido para reutilizar el código
@@ -105,7 +105,7 @@ WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/lnkVerServicio
 WebUI.focus(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRServicioMetrogasCompleto'))
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/icoPYRBorrarServicio'))
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnConfirmarEliminarServicio'))
-//WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRMsjeEnteEditadoExito'), vMsjeEliminado)
+WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRMsjeEnteEditadoExito'), vMsjeEliminado)
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/icoPYRCerrarSolapaAdheridos'))
 
 //NOTA: Revisar mensajes de confirmacion

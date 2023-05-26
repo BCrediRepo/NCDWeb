@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>FC02-Consultar Detalle de un Movimiento POS</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>41d48f9f-2463-4ecf-862d-956b719666e8</testCaseGuid>
+</TestCaseEntity>

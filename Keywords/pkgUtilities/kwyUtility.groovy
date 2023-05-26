@@ -379,6 +379,44 @@ public class kwyUtility {
 		WebUI.verifyEqual(vNroVisaOvervw, vNroVisa)
 	}
 
+	/*----------------------------------------------------------------------------------------------*
+	 *Validación Cuentas Detalle                                                            	 	*
+	 *----------------------------------------------------------------------------------------------*/
+	@Keyword
+	def comparacionCuentaDetalle(def vTiempo){
+
+		String vFechaMovim = null
+		String vConceptoMovim = null
+		String vCuentaMovim = null
+		String vImporteMovim = null
+		String vFechaDetalle = null
+		String vConceptoDetalle = null
+		String vCuentaDetalle = null
+		String vImporteDetalle = null
+
+		//Valida los datos de la cuenta desde Movimientos
+		WebUI.getText(findTestObject('Object Repository/10-Fecha COB/txtCtasMovimPesosFecha'), vFechaMovim)
+		WebUI.getText(findTestObject('Object Repository/10-Fecha COB/txtCtasMovimPesosConcepto'), vConceptoMovim)
+		WebUI.getText(findTestObject('Object Repository/10-Fecha COB/txtCtasMovimCuenta'), vCuentaMovim)
+		WebUI.getText(findTestObject('Object Repository/10-Fecha COB/txtCtasMovimPesosImporte'), vImporteMovim)
+
+		//Cliquea sobre una cta para ver la solapa del detalle
+		WebUI.click(findTestObject('Object Repository/10-Fecha COB/txtCtasMovimPesosFecha'))
+
+		//Valida los datos de la cuenta desde el detalle
+		WebUI.getText(findTestObject('Object Repository/10-Fecha COB/txtCtasDetalleFecha'), vFechaDetalle)
+		WebUI.getText(findTestObject('Object Repository/10-Fecha COB/txtCtasDetalleConcepto'), vConceptoDetalle)
+		WebUI.getText(findTestObject('Object Repository/10-Fecha COB/txtCtasDetalleCuenta'), vCuentaDetalle)
+		WebUI.getText(findTestObject('Object Repository/10-Fecha COB/txtCtasDetalleImporte'), vImporteDetalle)
+
+		//Compara ambos datos
+		WebUI.verifyEqual(vFechaMovim, vFechaDetalle)
+		WebUI.verifyEqual(vConceptoMovim, vConceptoDetalle)
+		WebUI.verifyEqual(vCuentaMovim, vCuentaDetalle)
+		WebUI.verifyEqual(vImporteMovim, vImporteDetalle)
+		
+	}
+
 
 
 

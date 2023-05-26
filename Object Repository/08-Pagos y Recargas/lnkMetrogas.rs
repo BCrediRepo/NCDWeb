@@ -14,7 +14,7 @@
          <value>//span[@id='flxTableRow_9894864606579744_0']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>bb8b1b6e-594b-4389-88d8-2b95d859c752</webElementGuid>
+      <webElementGuid>1e8ebabe-3e05-41ec-b030-d6ceef7604c2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>id</name>
       <type>Main</type>
       <value>flxTableRow_9894864606579744_0</value>
-      <webElementGuid>4826644c-61c8-4a9f-bd84-c0b1a5c667da</webElementGuid>
+      <webElementGuid>96416b9c-68fc-4e36-86a0-24e603598acf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>sknLblLatoReg1466</value>
-      <webElementGuid>a7f3bb5b-2586-4d90-ac2b-4acd291f6e1e</webElementGuid>
+      <webElementGuid>43d20e75-17de-4e58-8d48-9306f23d714d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Metrogas Antiguo</value>
-      <webElementGuid>4fcbcd35-cdc1-4f7b-9667-31caa2b0b5ca</webElementGuid>
+      <webElementGuid>5687bee0-9df3-4cb6-b566-10910ff81032</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;flxTableRow_9894864606579744_0&quot;)</value>
-      <webElementGuid>3b257f9d-80bd-49cd-a5eb-ec75c3f8bb66</webElementGuid>
+      <webElementGuid>fbd05d44-eac2-49f5-a607-cc41065178af</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//span[@id='flxTableRow_9894864606579744_0']</value>
-      <webElementGuid>146c7366-4774-4925-9bb8-d72664f63b75</webElementGuid>
+      <webElementGuid>e46a75b3-7054-4543-97aa-68294c0904c1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='flxTableRow_46975721938686127_0']/span</value>
-      <webElementGuid>39d3b52a-15cb-45f6-9448-bb303a5b4277</webElementGuid>
+      <webElementGuid>abbc30d1-3af5-4237-aaf5-229547993492</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)=''])[2]/following::span[1]</value>
-      <webElementGuid>7671b11a-5a88-4904-8bf8-0ebc34edecf8</webElementGuid>
+      <webElementGuid>605135b8-b879-4830-a545-865f432092b9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Buscar'])[2]/following::span[1]</value>
-      <webElementGuid>c360f7a4-4049-4bdb-9def-ae173eaa1408</webElementGuid>
+      <webElementGuid>7f74cf2f-81df-4d69-b9a1-47790f86accc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='La búsqueda no obtuvo resultados.'])[2]/preceding::span[2]</value>
-      <webElementGuid>2eb56787-d170-406b-a452-2cf6788544bc</webElementGuid>
+      <webElementGuid>db067654-202a-4ca6-aeec-840906f04490</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='No se encontraron categorías o rubros para el criterio solicitado.'])[1]/preceding::span[2]</value>
-      <webElementGuid>f8db1686-a201-4c35-8691-d5c3484df7b9</webElementGuid>
+      <webElementGuid>c433bcfd-6fc8-400d-b3f5-5e7f1551f552</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Metrogas Antiguo']/parent::*</value>
-      <webElementGuid>96e279e6-39f5-4429-b458-ecc1f813cfaa</webElementGuid>
+      <webElementGuid>210d8a6c-d4cc-4b66-b0be-b1319528d87d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div/span</value>
-      <webElementGuid>a666580e-d3b0-4430-baed-d85a1d4a1c74</webElementGuid>
+      <webElementGuid>c684f109-7e9c-4992-8463-48ce71375fcb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,6 +126,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[@id = 'flxTableRow_9894864606579744_0' and (text() = 'Metrogas Antiguo' or . = 'Metrogas Antiguo')]</value>
-      <webElementGuid>259b69f0-3790-4f33-a536-854f2d7e96fb</webElementGuid>
+      <webElementGuid>4325f697-83fc-4c2c-8d1a-750c810ad098</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

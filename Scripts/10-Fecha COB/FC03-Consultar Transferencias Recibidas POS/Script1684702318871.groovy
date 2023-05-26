@@ -25,28 +25,20 @@ import java.sql.Statement
 import javax.swing.JOptionPane
 
 //-------------------Conecta a base de datos--------------------------------------------
-def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 20144835"
-def vQuery2 = "SELECT * FROM Labels where Id = 6"
-def vQuery3 = "SELECT * FROM Labels where Id = 7"
+def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 13976407"
 
 String vDNI = null
 String vClave = null
 String vUsuario = null
-String vCbuCta = null
-String vALiasCta = null
 
 CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
 
 //Consulta a la base de datos
 ResultSet vResult = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery)
-ResultSet vResult2 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery2)
-ResultSet vResult3 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery3)
 
 vDNI = vResult.getString(2)
 vUsuario = vResult.getString(3)
 vClave = vResult.getString(4)
-vCbuCta = vResult2.getString(3)
-vALiasCta = vResult3.getString(3)
 
 //Cierre de la conexion
 CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
@@ -58,5 +50,10 @@ CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
 //Se loguea con el usuario seleccionado
 CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 
-//Cliquea el menú desplegable de Cuentas en el Inicio
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbCuentas'))
+//Ingresa en la sección Transferencias del Dashboard
+WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'))
+
+//Busca en calendario una fecha desde en el calendario
+WebUI.click(findTestObject('Object Repository/10-Fecha COB/icoTrxRecibidasCalendarioDesde'))
+WebUI.click(findTestObject('Object Repository/10-Fecha COB/txtTrxMesDesdeCalendario'))
+
