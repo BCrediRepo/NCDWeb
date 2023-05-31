@@ -408,7 +408,7 @@ public class kwyUtility {
 		WebUI.verifyEqual(vMontoPFLista, vMontoPFDetalle)
 
 	}
-	
+
 	/*----------------------------------------------------------------------------------------------*
 	 *Validación Simulación Crear Plazo Fijo                                                        *
 	 *----------------------------------------------------------------------------------------------*/
@@ -444,7 +444,7 @@ public class kwyUtility {
 		WebUI.verifyEqual(vFechaPFSimular, vFechaPFCrear)
 
 	}
-	
+
 	/*----------------------------------------------------------------------------------------------*
 	 *Validación Comprobante Crear Plazo Fijo                                                       *
 	 *----------------------------------------------------------------------------------------------*/
@@ -461,7 +461,7 @@ public class kwyUtility {
 
 		WebUI.getText(findTestObject('Object Repository/10-Fecha COB/txtInvPFMontoExito'), vMontoPFExito)
 		WebUI.getText(findTestObject('Object Repository/10-Fecha COB/txtInvPFNroOperExito'), vNroOperPFExito)
-		
+
 		WebUI.click(findTestObject('Object Repository/10-Fecha COB/btnInvPFVerComprobanteExito'))
 
 		//Datos informados en la pantalla de confirmacion

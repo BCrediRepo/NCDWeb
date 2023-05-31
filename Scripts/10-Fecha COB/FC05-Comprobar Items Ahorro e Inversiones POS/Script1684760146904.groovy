@@ -27,27 +27,46 @@ import javax.swing.JOptionPane
 //-------------------Conecta a base de datos--------------------------------------------
 def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 20144835"
 
-def vQuery1 = "SELECT * FROM Labels WHERE Id = 53"
-def vQuery2 = "SELECT * FROM Labels WHERE Id = 54"
-def vQuery3 = "SELECT * FROM Labels WHERE Id = 55"
-def vQuery4 = "SELECT * FROM Labels WHERE Id = 56"
-def vQuery5 = "SELECT * FROM Labels WHERE Id = 57"
+def vQuery1 = "SELECT * FROM Labels WHERE Id = 81"
 
-def vQuery6 = "SELECT * FROM Labels WHERE Id = 58"
-def vQuery7 = "SELECT * FROM Labels WHERE Id = 59"
-def vQuery8 = "SELECT * FROM Labels WHERE Id = 60"
-def vQuery9 = "SELECT * FROM Labels WHERE Id = 61"
+def vQuery2 = "SELECT * FROM Labels WHERE Id = 53"
+def vQuery3 = "SELECT * FROM Labels WHERE Id = 54"
+def vQuery4 = "SELECT * FROM Labels WHERE Id = 55"
+def vQuery5 = "SELECT * FROM Labels WHERE Id = 56"
+def vQuery6 = "SELECT * FROM Labels WHERE Id = 57"
 
-def vQuery10 = "SELECT * FROM Labels WHERE Id = 62"
-def vQuery11 = "SELECT * FROM Labels WHERE Id = 63"
-def vQuery12 = "SELECT * FROM Labels WHERE Id = 64"
-def vQuery13 = "SELECT * FROM Labels WHERE Id = 65"
-def vQuery14 = "SELECT * FROM Labels WHERE Id = 66"
-def vQuery15 = "SELECT * FROM Labels WHERE Id = 67"
+def vQuery7 = "SELECT * FROM Labels WHERE Id = 58"
+def vQuery8 = "SELECT * FROM Labels WHERE Id = 59"
+def vQuery9 = "SELECT * FROM Labels WHERE Id = 60"
+def vQuery10 = "SELECT * FROM Labels WHERE Id = 61"
+
+def vQuery11 = "SELECT * FROM Labels WHERE Id = 62"
+def vQuery12 = "SELECT * FROM Labels WHERE Id = 63"
+def vQuery13 = "SELECT * FROM Labels WHERE Id = 64"
+def vQuery14 = "SELECT * FROM Labels WHERE Id = 65"
+def vQuery15 = "SELECT * FROM Labels WHERE Id = 66"
+def vQuery16 = "SELECT * FROM Labels WHERE Id = 67"
+
+def vQuery17 = "SELECT * FROM Labels WHERE Id = 68"
+def vQuery18 = "SELECT * FROM Labels WHERE Id = 69"
+def vQuery19 = "SELECT * FROM Labels WHERE Id = 70"
+def vQuery20 = "SELECT * FROM Labels WHERE Id = 71"
+def vQuery21 = "SELECT * FROM Labels WHERE Id = 72"
+def vQuery22 = "SELECT * FROM Labels WHERE Id = 73"
+def vQuery23 = "SELECT * FROM Labels WHERE Id = 74"
+
+def vQuery24 = "SELECT * FROM Labels WHERE Id = 75"
+def vQuery25 = "SELECT * FROM Labels WHERE Id = 76"
+def vQuery26 = "SELECT * FROM Labels WHERE Id = 77"
+def vQuery27 = "SELECT * FROM Labels WHERE Id = 78"
+def vQuery28 = "SELECT * FROM Labels WHERE Id = 79"
+def vQuery29 = "SELECT * FROM Labels WHERE Id = 80"
 
 String vDNI = null
 String vClave = null
 String vUsuario = null
+
+String vCVReferencia = null
 
 String vPlazoFijo = null
 String vCompraVenta = null
@@ -67,51 +86,99 @@ String vFCICotizacn = null
 String vFCIFchaCotzn = null
 String vFCISldoEstmdo = null
 
+String vTITTipo = null
+String vTITDescripcn = null
+String vTITNominal = null
+String vTITResidual = null
+String vTITCotizacn = null
+String vTITFchaCotzn = null
+String vTITSldoEstmdo = null
+
+String vACCTipo = null
+String vACCDescripcn = null
+String vACCNominal = null
+String vACCCotizacn = null
+String vACCFchaCotzn = null
+String vACCSldoEstmdo = null
+
 CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
 
 //Consulta a la base de datos
 ResultSet vResult = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery)
 
 ResultSet vResult1 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery1)
+
 ResultSet vResult2 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery2)
 ResultSet vResult3 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery3)
 ResultSet vResult4 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery4)
 ResultSet vResult5 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery5)
-
 ResultSet vResult6 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery6)
+
 ResultSet vResult7 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery7)
 ResultSet vResult8 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery8)
 ResultSet vResult9 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery9)
-
 ResultSet vResult10 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery10)
+
 ResultSet vResult11 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery11)
 ResultSet vResult12 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery12)
 ResultSet vResult13 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery13)
 ResultSet vResult14 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery14)
 ResultSet vResult15 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery15)
+ResultSet vResult16 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery16)
 
+ResultSet vResult17 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery17)
+ResultSet vResult18 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery18)
+ResultSet vResult19 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery19)
+ResultSet vResult20 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery20)
+ResultSet vResult21 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery21)
+ResultSet vResult22 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery22)
+ResultSet vResult23 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery23)
+
+ResultSet vResult24 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery24)
+ResultSet vResult25 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery25)
+ResultSet vResult26 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery26)
+ResultSet vResult27 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery27)
+ResultSet vResult28 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery28)
+ResultSet vResult29 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery29)
 
 vDNI = vResult.getString(2)
 vUsuario = vResult.getString(3)
 vClave = vResult.getString(4)
 
-vPlazoFijo = vResult1.getString(3)
-vCompraVenta = vResult2.getString(3)
-vFondosComunes = vResult3.getString(3)
-vTitulos = vResult4.getString(3)
-vAcciones = vResult5.getString(3)
+vCVReferencia = vResult1.getString(3)
 
-vPFNombre = vResult6.getString(3)
-vPFTipo = vResult7.getString(3)
-vPFVencim = vResult8.getString(3)
-vPFMonto = vResult9.getString(3)
+vPlazoFijo = vResult2.getString(3)
+vCompraVenta = vResult3.getString(3)
+vFondosComunes = vResult4.getString(3)
+vTitulos = vResult5.getString(3)
+vAcciones = vResult6.getString(3)
 
-vFCITipo = vResult10.getString(3)
-vFCIDescripcn = vResult11.getString(3)
-vFCICtaParte = vResult12.getString(3)
-vFCICotizacn = vResult13.getString(3)
-vFCIFchaCotzn = vResult14.getString(3)
-vFCISldoEstmdo = vResult15.getString(3)
+vPFNombre = vResult7.getString(3)
+vPFTipo = vResult8.getString(3)
+vPFVencim = vResult9.getString(3)
+vPFMonto = vResult10.getString(3)
+
+vFCITipo = vResult11.getString(3)
+vFCIDescripcn = vResult12.getString(3)
+vFCICtaParte = vResult13.getString(3)
+vFCICotizacn = vResult14.getString(3)
+vFCIFchaCotzn = vResult15.getString(3)
+vFCISldoEstmdo = vResult16.getString(3)
+
+vTITTipo = vResult17.getString(3)
+vTITDescripcn = vResult18.getString(3)
+vTITNominal = vResult19.getString(3)
+vTITResidual = vResult20.getString(3)
+vTITCotizacn = vResult21.getString(3)
+vTITFchaCotzn = vResult22.getString(3)
+vTITSldoEstmdo = vResult23.getString(3)
+
+vACCTipo = vResult24.getString(3)
+vACCDescripcn = vResult25.getString(3)
+vACCNominal = vResult26.getString(3)
+vACCCotizacn = vResult27.getString(3)
+vACCFchaCotzn = vResult28.getString(3)
+vACCSldoEstmdo = vResult29.getString(3)
 
 //Cierre de la conexion
 CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
@@ -126,28 +193,62 @@ CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 //Ingresa al módulo de Ahorro e Inversion desde menú lateral
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbAhorro e Inversin'))
 
-//Valida los Titulos de la sección Ahorro e Inversion
+//Valida los titulos de la sección Ahorro e Inversion
 WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/lblInvPlazosFijos'), vPlazoFijo)
 WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/lblInvCompraVentaDlares'), vCompraVenta)
 WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/lblInvFondosComunesInversin'), vFondosComunes)
 WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/lblInvTtulos'), vTitulos)
 WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/lblInvAcciones'), vAcciones)
 
-//Valida los Titulos de la Tabla de PF
+//Valida los titulos de Compra Venta
+WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/txtInvCVCotizacinReferencia'), vCVReferencia)
+WebUI.verifyElementVisible(findTestObject('Object Repository/10-Fecha COB/txtInvCVCotizacinCompra'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/10-Fecha COB/txtInvCVCotizacinVenta'))
+
+//Valida los titulos de la Tabla de PF
 WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/txtInvPFTablaNombre'), vPFNombre)
 WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/txtInvPFTablaTipo'), vPFTipo)
 WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/txtInvPFTablaVencimiento'), vPFVencim)
 WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/txtInvPFTablaMonto'), vPFMonto)
+WebUI.verifyElementVisible(findTestObject('Object Repository/10-Fecha COB/txtInvPFlListaPlazosFijos'))
 
-//Valida los Titulos de la tabla FCI
+//Valida los titulos de la tabla FCI
 WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/txtIvnFCITablaTipo'), vFCITipo)
 WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/txtInvFCITablaDescripcin'), vFCIDescripcn)
 WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/txtInvFCITablaCuotapartes'), vFCICtaParte)
 WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/txtInvFCITablaCotizacin'), vFCICotizacn)
 WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/txtInvFCITablaFechaCotizacin'), vFCIFchaCotzn)
 WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/txtInvFCITablaSaldoEstimado'), vFCISldoEstmdo)
+WebUI.verifyElementVisible(findTestObject('Object Repository/10-Fecha COB/txtInvFCIListaFondos'))
 
-//Valida los Titulos de la tabla Titulos
+//Valida los titulos de la tabla Titulos
+WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/txtInvTituTablaTipo'), vTITTipo)
+WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/txtInvTituTablaDescripcin'), vTITDescripcn)
+WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/txtInvTituTablaNominal'), vTITNominal)
+WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/txtInvTituTablaResidual'), vTITResidual)
+WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/txtInvTituTablaCotizacin'), vTITCotizacn)
+WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/txtInvTituTablaFechaCotizacin'), vTITFchaCotzn)
+WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/txtInvTituTablaSaldoEstimado'), vTITSldoEstmdo)
+WebUI.verifyElementVisible(findTestObject('Object Repository/10-Fecha COB/txtInvTITListaTitulos'))
 
+//Valida los titulos de la tabla Acciones
+WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/txtInvACCTablaTipo'), vACCTipo)
+WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/txtInvACCTablaDescripcin'), vACCDescripcn)
+WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/txtInvACCTablaNominal'), vACCNominal)
+WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/txtInvACCTablaCotizacin'), vACCCotizacn)
+WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/txtInvACCTablaFechaCotizacin'), vACCFchaCotzn)
+WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/txtInvACCTablaSaldoEstimado'), vACCSldoEstmdo)
+WebUI.verifyElementVisible(findTestObject('Object Repository/10-Fecha COB/txtInvACCListaAcciones'))
 
-//Valida los Titulos de la tabla Acciones
+//---------------------------------------------------------------------------------------------------------------------
+//Control de fin de script
+
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/TRF05-ComprobarItemsAhorroInversionPOS.png')
+}
+
+@com.kms.katalon.core.annotation.TearDownIfPassed
+void fPassScript() {
+	CustomKeywords.'pkgUtilities.kwyUtility.fPassStatus'()
+}
