@@ -75,31 +75,31 @@ CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTarjetas'))
 
 //Cliquea en la card e ingresa al módulo para ver los movimientos
-WebUI.click(findTestObject('Object Repository/09-Tarjetas/LblTarjetaVisa'))
+WebUI.click(findTestObject('Object Repository/09-Tarjetas/LblTrjTarjetaVisa'))
 
 //Selecciona la solapa Resumen
-WebUI.click(findTestObject('Object Repository/09-Tarjetas/lblResumenes'))
+WebUI.click(findTestObject('Object Repository/09-Tarjetas/lblTrjResumenes'))
 
 //Filtra fecha para ver los movimientos
-WebUI.click(findTestObject('Object Repository/09-Tarjetas/icoCalendario'))
-WebUI.click(findTestObject('Object Repository/09-Tarjetas/txtMes'))
-WebUI.click(findTestObject('Object Repository/09-Tarjetas/txt2020'))
-WebUI.click(findTestObject('Object Repository/09-Tarjetas/txtMesMar'))
-WebUI.click(findTestObject('Object Repository/09-Tarjetas/icoAceptarFecha'))
-WebUI.click(findTestObject('Object Repository/09-Tarjetas/txtDiaCalendario'))
-WebUI.click(findTestObject('Object Repository/09-Tarjetas/btnBuscarResumen'))
+WebUI.click(findTestObject('Object Repository/09-Tarjetas/icoTrjCalendario'))
+WebUI.click(findTestObject('Object Repository/09-Tarjetas/txtTrjMes'))
+WebUI.click(findTestObject('Object Repository/09-Tarjetas/txtTrj2020'))
+WebUI.click(findTestObject('Object Repository/09-Tarjetas/txtTrjMesMar'))
+WebUI.click(findTestObject('Object Repository/09-Tarjetas/icoTrjAceptarFecha'))
+WebUI.click(findTestObject('Object Repository/09-Tarjetas/txtTrjDiaCalendario'))
+WebUI.click(findTestObject('Object Repository/09-Tarjetas/btnTrjBuscarResumen'))
 
 //Valido tabla de resultados
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/lblFechaCierre'), vFechaCierre)
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/lblFechaVencimiento'), vFechaVenc)
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/lblSaldoPesos'), vSldoPesos)
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/lblSaldoDolares'), vSldoDolares)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/lblTrjFechaCierre'), vFechaCierre)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/lblTrjFechaVencimiento'), vFechaVenc)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/lblTrjSaldoPesos'), vSldoPesos)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/lblTrjSaldoDolares'), vSldoDolares)
 
 //Valido los datos de Resumenes
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtFechaCierreValorRes'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtFechaVencValorRes'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtSldoPesosValorRes'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtSldoDolarValorRes'), 10)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjFechaCierreValorRes'), 10)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjFechaVencValorRes'), 10)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjSldoPesosValorRes'), 10)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjSldoDolarValorRes'), 10)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

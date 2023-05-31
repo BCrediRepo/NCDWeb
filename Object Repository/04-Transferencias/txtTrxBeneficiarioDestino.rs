@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>txtTrxBeneficiarioDestino</name>
+   <tag></tag>
+   <elementGuidId>3d63a80b-8b66-4649-ad00-36815fa766c8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='frmBcclConfirmTransfer_TransferMessage_rtxMessageOne']/b</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#frmBcclConfirmTransfer_TransferMessage_rtxMessageOne > b</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>b</value>
+      <webElementGuid>53363b1c-9578-466b-8c34-331493668f4f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Caja de Ahorro sueldo prueba $</value>
+      <webElementGuid>32e4d886-c2ec-49e0-bd69-b88c609012ad</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;frmBcclConfirmTransfer_TransferMessage_rtxMessageOne&quot;)/b[1]</value>
+      <webElementGuid>0df3dcfa-3fe9-4f39-9673-d8220941510e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='frmBcclConfirmTransfer_TransferMessage_rtxMessageOne']/b</value>
+      <webElementGuid>e79479ab-8189-4601-b869-2978de2460ba</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Transferencia realizada con éxito'])[1]/following::b[1]</value>
+      <webElementGuid>3c336c9b-1b06-4ce2-a431-8270e65d1d7f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='$ 1,00'])[2]/preceding::b[1]</value>
+      <webElementGuid>3341b29d-aa98-451d-abf2-49647f79c492</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cd'])[1]/preceding::b[2]</value>
+      <webElementGuid>fcdd5f13-4cf2-4d8d-9721-3fee0e0d2bc9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/b</value>
+      <webElementGuid>fa713c63-4bd4-4b21-8d5f-0b3180961338</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//b[(text() = 'Caja de Ahorro sueldo prueba $' or . = 'Caja de Ahorro sueldo prueba $')]</value>
+      <webElementGuid>deaba3d7-1bca-45a7-b56e-163c79b8addd</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

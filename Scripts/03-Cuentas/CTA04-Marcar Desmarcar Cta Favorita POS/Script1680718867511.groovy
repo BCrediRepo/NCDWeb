@@ -59,7 +59,7 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/02-Dashboard/lnkDsb
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbCuentas'))
 
 //Valido título Cuentas
-WebUI.verifyElementVisible(findTestObject('Object Repository/03-Cuentas/lblCtasCuentasTitulo'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/03-Cuentas/lblCtaCuentasTitulo'))
 
 //Selecciono una CC como favorita y valido Toast de confirmación
 WebUI.click(findTestObject('Object Repository/03-Cuentas/icoCtaFavoritoCC'))

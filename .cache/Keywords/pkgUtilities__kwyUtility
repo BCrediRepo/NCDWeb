@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "E761249B2F20CD6836F088FF205D12B4",
+  "keywordFileContentHash": "AF56B87BE3884C209F9504FF092CC23C",
   "keywordClasses": [
     {
       "name": "pkgUtilities.kwyUtility",
@@ -193,7 +193,83 @@
           "javadoc": ""
         },
         {
+          "name": "comparacionNroOperacionTrxPropiasDolares",
+          "parameters": [
+            {
+              "name": "vTiempo",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "comparacionNroOperacionTercerosPesos",
+          "parameters": [
+            {
+              "name": "vTiempo",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
           "name": "comparacionListaDetallePlazoFijo",
+          "parameters": [
+            {
+              "name": "vTiempo",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "comparacionSimularCrearPlazoFijo",
+          "parameters": [
+            {
+              "name": "vTiempo",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "ValidacionComprobanteCrearPlazoFijo",
           "parameters": [
             {
               "name": "vTiempo",

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lbldsbUltimaSesion</name>
+   <name>lblDsbUltimaSesion</name>
    <tag></tag>
    <elementGuidId>8feced0c-fb8e-4518-8d00-f0bc842fe018</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#frmAccountsLanding_customheader_WelcomeProfile_lblLastSessionMessage</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//div[@id='frmAccountsLanding_customheader_WelcomeProfile_lblLastSessionMessage']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#frmAccountsLanding_customheader_WelcomeProfile_lblLastSessionMessage</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>

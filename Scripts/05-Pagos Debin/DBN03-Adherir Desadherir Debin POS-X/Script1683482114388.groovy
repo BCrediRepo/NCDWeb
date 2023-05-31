@@ -77,7 +77,7 @@ for (int i=0; i<2; i++) {
 	if (vEstado =='Adherir'){
 	
 		WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnAdherirDebinCuenta'))
-		WebUI.verifyElementText(findTestObject('Object Repository/05-Pagos Debin/lblAdherirCtaExitoso'), vMjsAdherir)
+		WebUI.verifyElementText(findTestObject('Object Repository/05-Pagos Debin/lblDbnAdherirCtaExitoso'), vMjsAdherir)
 	
 	
 		}else{
@@ -85,9 +85,9 @@ for (int i=0; i<2; i++) {
 			WebUI.delay(5)
 			//WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnAdherirDebinCuenta'))
 			WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnDesadherirCta'))
-			WebUI.verifyElementVisible(findTestObject('Object Repository/05-Pagos Debin/txtPopUpDesadherirDEBIN'))
+			WebUI.verifyElementVisible(findTestObject('Object Repository/05-Pagos Debin/txtDbnPopUpDesadherirDebin'))
 			WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnConfirmarDesadherir'))
-			//WebUI.verifyElementText(findTestObject('Object Repository/05-Pagos Debin/lblAdherirCtaExitoso'), vMjsDesadherir)
+			//WebUI.verifyElementText(findTestObject('Object Repository/05-Pagos Debin/lblDbnAdherirCtaExitoso'), vMjsDesadherir)
 		}
 }
 	//---------------------------------------------------------------------------------------------------------------------

@@ -58,7 +58,7 @@ CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbMisOperaciones'))
 
 //Cliquea en Buscar y valida Resultados
-WebUI.click(findTestObject('Object Repository/07-Operaciones/btnBuscarOperacion'))
+WebUI.click(findTestObject('Object Repository/07-Operaciones/btnOprBuscarOperacion'))
 WebUI.verifyElementText(findTestObject('Object Repository/07-Operaciones/txtOprBusquedaSinResultados'), vlblSinOperacion)
 
 //---------------------------------------------------------------------------------------------------------------------

@@ -30,7 +30,7 @@ def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 20144835"
 String vDNI = null
 String vClave = null
 String vUsuario = null
-String vMonto = 1000
+String vMonto = 100
 
 CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
 
@@ -58,8 +58,40 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbAhorro e Invers
 WebUI.click(findTestObject('Object Repository/10-Fecha COB/lnkInvSimularPlazoFijo'))
 
 //Ingresa Monto
-WebUI.click(findTestObject('Object Repository/10-Fecha COB/txtInvMontoPF'))
-WebUI.sendKeys(findTestObject('Object Repository/10-Fecha COB/txtInvMontoPF'), vMonto)
+WebUI.delay(5)
+WebUI.click(findTestObject('Object Repository/06-Inversiones/txtInvPFMonto'))
+WebUI.sendKeys(findTestObject('Object Repository/06-Inversiones/txtInvPFMonto'), vMonto)
 
+//Selecciona Tipo de PF
+WebUI.click(findTestObject('Object Repository/06-Inversiones/mnuInvPFTipo'))
+WebUI.click(findTestObject('Object Repository/06-Inversiones/txtInvPFTipo'))
+WebUI.click(findTestObject('Object Repository/06-Inversiones/btnInvPFSimular'))
+
+//Valida los datos ingresados en la simulacion
+CustomKeywords.'pkgUtilities.kwyUtility.comparacionSimularCrearPlazoFijo'(60)
+
+//Confirma Crear PF
+WebUI.click(findTestObject('Object Repository/10-Fecha COB/chqbxInvPFDeclaracionJurada'))
+WebUI.click(findTestObject('Object Repository/10-Fecha COB/btnInvPFConfirmar'))
+
+//Firma Bypass
+WebUI.sendKeys(findTestObject('Object Repository/10-Fecha COB/txtInvPFClaveBypass'), vClave)
+WebUI.click(findTestObject('Object Repository/10-Fecha COB/btnInvPFConfirmarBypass'))
+
+//Valida los datos en el comprobante
+CustomKeywords.'pkgUtilities.kwyUtility.ValidacionComprobanteCrearPlazoFijo'(60)
+
+//---------------------------------------------------------------------------------------------------------------------
+//Control de fin de script
+
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/FC06-SimularCrearPlazoFijoPOS.png')
+}
+
+@com.kms.katalon.core.annotation.TearDownIfPassed
+void fPassScript() {
+	CustomKeywords.'pkgUtilities.kwyUtility.fPassStatus'()
+}
 
 

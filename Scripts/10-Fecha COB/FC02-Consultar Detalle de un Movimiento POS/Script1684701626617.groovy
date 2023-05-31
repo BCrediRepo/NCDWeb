@@ -54,13 +54,13 @@ CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbCuentas'))
 
 //Ingresa en cta en Pesos
-WebUI.click(findTestObject('Object Repository/10-Fecha COB/lblCtasCuentaPesos'))
+WebUI.click(findTestObject('Object Repository/10-Fecha COB/lblCtaCuentaPesos'))
 
 //Compara los datos de los movimientos con el detalle
 CustomKeywords.'pkgUtilities.kwyUtility.comparacionCuentaDetalle'(60)
 
 //Cierra la solapa del detalle del movimiento
-WebUI.click(findTestObject('Object Repository/10-Fecha COB/icoCtasDetalleCerrar'))
+WebUI.click(findTestObject('Object Repository/10-Fecha COB/icoCtaDetalleCerrar'))
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

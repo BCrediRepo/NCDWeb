@@ -68,15 +68,15 @@ CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 
 //Valida titulos sin Tarjetas desde Dashboard
 WebUI.delay(5)
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtSinTarjetasDashboard'), vSinTarjDashboard)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjSinTarjetasDashboard'), vSinTarjDashboard)
 
 //Ingresa al módulo de Tarjetas
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTarjetas'))
 
 //Valida titulos sin Tarjetas desde seccion Tarjetas
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtSinTarjetasCredito'), vSinTarjCredito)
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtSinTarjetasDebito'), vSinTarjDebito)
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtSinTarjetasPrecargadas'), vSinPrecargadas)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjSinTarjetasCredito'), vSinTarjCredito)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjSinTarjetasDebito'), vSinTarjDebito)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjSinTarjetasPrecargadas'), vSinPrecargadas)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

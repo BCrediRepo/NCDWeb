@@ -64,40 +64,40 @@ CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'))
 
 //Valida y cliquea en Agenda de Beneficiarios
-WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lnkTrfAgendaBeneficiario'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lnkTrxAgendaBeneficiario'))
 
 //Busca por tipo de Beneficiario
-WebUI.setText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrfBuscarBeneficiarioTipo'), vTipoTrf)
+WebUI.setText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrxBuscarBeneficiarioTipo'), vTipoTrf)
 
 //Inicia la transferencia
-WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkTrfCuentaBenefJudicialPesos'))
-WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkTrfIniciarTransferenciaBeneficiario'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkTrxCuentaBenefJudicialPesos'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkTrxIniciarTransferenciaBeneficiario'))
 
 //Ingresa Monto
-WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrfMontoFormulario'))
-WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrfMontoFormulario'), vValorMonto)
+WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxMontoFormulario'))
+WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrxMontoFormulario'), vValorMonto)
 
 //Selecciona Titularidad
-WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrfSeleccionTitularidadFormulario'))
-WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTitularidadTextoFormulario'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrxSeleccionTitularidadFormulario'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrxTitularidadTextoFormulario'))
 
 //Cliquea en Continuar
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnContinuarFormulario'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxContinuarFormulario'))
 
 //Cliquea en boton Confirmar
-WebUI.click(findTestObject('Object Repository/04-Transferencias/btnConfirmarJudicial'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/btnTrxConfirmarJudicial'))
 
 //Ingresa Clave Bypass
-WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrfClaveBypass'), vClave)
+WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxClaveBypass'), vClave)
 
 //Confirma Operación
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmarBypass'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxConfirmarBypass'))
 
 //Cliquea sobre boton ir a Transferencias
-WebUI.click(findTestObject('Object Repository/04-Transferencias/btnIrTransferencias'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/btnTrxIrTransferencias'))
 
 //Selecciona Solapa Enviadas
-WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkSolapaEnviadas'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkTrxSolapaEnviadas'))
 
 //Cliquea en icono eliminar
 WebUI.click(findTestObject('Object Repository/04-Transferencias/icoTrxEliminar'))
@@ -106,7 +106,7 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/icoTrxEliminar')
 WebUI.click(findTestObject('Object Repository/04-Transferencias/btnTrxEliminar'))
 
 //Ingresa clave Bypass
-WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrfClaveBypass'), vClave)
+WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxClaveBypass'), vClave)
 
 //Boton Confirmar
 WebUI.click(findTestObject('Object Repository/04-Transferencias/btnTrxConfirmarEliminar'))

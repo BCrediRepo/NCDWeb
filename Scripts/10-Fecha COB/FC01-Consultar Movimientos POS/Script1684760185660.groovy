@@ -70,30 +70,30 @@ CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbCuentas'))
 
 //Ingresa en cta en Pesos 
-WebUI.click(findTestObject('Object Repository/10-Fecha COB/lblCtasCuentaPesos'))
+WebUI.click(findTestObject('Object Repository/10-Fecha COB/lblCtaCuentaPesos'))
 
 //Valida tabla movimientos
-WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/lblCtasMovimFecha'), vFechaCta)
-WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/lblCtasMovimConcepto'), vConceptoCta)
-WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/lblCtasMovimImporte'), vImporteCta)
-WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/lblCtasMovimSaldo'), vSaldoCta)
+WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/lblCtaMovimFecha'), vFechaCta)
+WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/lblCtaMovimConcepto'), vConceptoCta)
+WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/lblCtaMovimImporte'), vImporteCta)
+WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/lblCtaMovimSaldo'), vSaldoCta)
 
 //Valida datos Movimientos cta Pesos
-WebUI.verifyElementPresent(findTestObject('Object Repository/10-Fecha COB/txtCtasMovimPesosFecha'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/10-Fecha COB/txtCtasMovimPesosConcepto'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/10-Fecha COB/txtCtasMovimPesosImporte'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/10-Fecha COB/txtCtasMovimPesosSaldo'), 10)
+WebUI.verifyElementPresent(findTestObject('Object Repository/10-Fecha COB/txtCtaMovimPesosFecha'), 10)
+WebUI.verifyElementPresent(findTestObject('Object Repository/10-Fecha COB/txtCtaMovimPesosConcepto'), 10)
+WebUI.verifyElementPresent(findTestObject('Object Repository/10-Fecha COB/txtCtaMovimPesosImporte'), 10)
+WebUI.verifyElementPresent(findTestObject('Object Repository/10-Fecha COB/txtCtaMovimPesosSaldo'), 10)
 
 //Vuelve atras e ingresa en cta en Dolares
-WebUI.click(findTestObject('Object Repository/10-Fecha COB/icoCtasMovimAtras'))
+WebUI.click(findTestObject('Object Repository/10-Fecha COB/icoCtaMovimAtras'))
 WebUI.delay(5)
-WebUI.click(findTestObject('Object Repository/10-Fecha COB/lblCtasCuentaDolares'))
+WebUI.click(findTestObject('Object Repository/10-Fecha COB/lblCtaCuentaDolares'))
 
 //Valida datos Movimiento cta Dolares
-WebUI.verifyElementPresent(findTestObject('Object Repository/10-Fecha COB/txtCtasMovimDolarFecha'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/10-Fecha COB/txtCtasMovimDolarConcepto'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/10-Fecha COB/txtCtasMovimDolarImporte'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/10-Fecha COB/txtCtasMovimDolarSaldo'), 10)
+WebUI.verifyElementPresent(findTestObject('Object Repository/10-Fecha COB/txtCtaMovimDolarFecha'), 10)
+WebUI.verifyElementPresent(findTestObject('Object Repository/10-Fecha COB/txtCtaMovimDolarConcepto'), 10)
+WebUI.verifyElementPresent(findTestObject('Object Repository/10-Fecha COB/txtCtaMovimDolarImporte'), 10)
+WebUI.verifyElementPresent(findTestObject('Object Repository/10-Fecha COB/txtCtaMovimDolarSaldo'), 10)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

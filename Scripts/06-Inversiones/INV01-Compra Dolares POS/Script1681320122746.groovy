@@ -59,28 +59,28 @@ CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbAhorro e Inversin'))
 
 //Cliquea en Compra Dolares
-WebUI.click(findTestObject('Object Repository/06-Inversiones/btnComprarDolares'))
+WebUI.click(findTestObject('Object Repository/06-Inversiones/btnInvComprarDolares'))
 
 //Ingresa Monto
 WebUI.delay(5)
-WebUI.click(findTestObject('Object Repository/06-Inversiones/txtMontoCompra'))
-WebUI.sendKeys(findTestObject('Object Repository/06-Inversiones/txtMontoCompra'), vMontoCompra)
+WebUI.click(findTestObject('Object Repository/06-Inversiones/txtInvMontoCompra'))
+WebUI.sendKeys(findTestObject('Object Repository/06-Inversiones/txtInvMontoCompra'), vMontoCompra)
 
 //Cliquea en Continuar
-WebUI.click(findTestObject('Object Repository/06-Inversiones/btnContinuarCompraDolares'))
+WebUI.click(findTestObject('Object Repository/06-Inversiones/btnInvContinuarCompraDolares'))
 
 //Selecciona Checkbox de declaracion Jurada
-WebUI.click(findTestObject('Object Repository/06-Inversiones/chbxDeclaracionJuradaCompra'))
+WebUI.click(findTestObject('Object Repository/06-Inversiones/chkbxInvDeclaracionJuradaCompra'))
 
 //Cliquea en Continuar
-WebUI.click(findTestObject('Object Repository/06-Inversiones/btnContinuarDeclaracionJurada'))
+WebUI.click(findTestObject('Object Repository/06-Inversiones/btnInvContinuarDeclaracionJurada'))
 
 //Ingresa Segundo Factor
-WebUI.sendKeys(findTestObject('Object Repository/06-Inversiones/txtByPassCompra'), vClave)
-WebUI.click(findTestObject('Object Repository/06-Inversiones/btnConfirmarCompra'))
+WebUI.sendKeys(findTestObject('Object Repository/06-Inversiones/txtInvByPassCompra'), vClave)
+WebUI.click(findTestObject('Object Repository/06-Inversiones/btnInvConfirmarCompra'))
 
 //Valida pantalla de confirmacion exitosa
-WebUI.verifyElementText(findTestObject('Object Repository/06-Inversiones/lblCompraExitosa'), vCompraExitosa)
+WebUI.verifyElementText(findTestObject('Object Repository/06-Inversiones/lblInvCompraExitosa'), vCompraExitosa)
 
 //Nota: agregar Validacion pantalla de éxito con comprobante
 

@@ -64,10 +64,10 @@ CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'))
 
 //Ingresa a la solapa Programadas
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lnkTrfProgramadas'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lnkTrxProgramadas'))
 
 //Valida mensaje sin Transferencias Programadas
-WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/txtSinTransferenciasProgramadas'), vSinProgramadas)
+WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/txtTrxSinTransferenciasProgramadas'), vSinProgramadas)
 
 //Cliquea en el campo y busca por Transferencias
 WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxBusquedaPosdatadas'))
@@ -75,7 +75,7 @@ WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrxBusqued
 WebUI.delay(5)
 
 //Valida mensaje de busqueda sin resultados
-WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/txtBusquedaSinResultados'), vSinResultado)
+WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/txtTrxBusquedaSinResultados'), vSinResultado)
 
 //NOTA: Agregar validacion calendario
 

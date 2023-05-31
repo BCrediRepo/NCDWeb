@@ -58,8 +58,8 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbPagos y Recarga
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbServicios y Tarjetas'))
 
 //Ingresa a Historial de Pagos
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/mnuPagosRecargas'))
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/lnkVerServiciosAdheridos'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/mnuPYRPagosRecargas'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/lnkPYRVerServiciosAdheridos'))
 
 //Valida que haya Servicios Adheridos
 

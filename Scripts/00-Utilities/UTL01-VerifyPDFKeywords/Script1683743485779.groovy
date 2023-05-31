@@ -30,10 +30,10 @@ import javax.swing.JOptionPane
 	String vNroOp
 	String vImporte
 	
-	vFecha = WebUI.getText(findTestObject('Object Repository/08-Pagos y Recargas/txtPagosFecha'))
-	vNombreServ = WebUI.getText(findTestObject('Object Repository/08-Pagos y Recargas/txtNombreServicio'))
-	vNroOp = WebUI.getText(findTestObject('Object Repository/08-Pagos y Recargas/txtPagosNumeroOperacion'))
-	vImporte = WebUI.getText(findTestObject('Object Repository/08-Pagos y Recargas/txtPagosImporte'))
+	vFecha = WebUI.getText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRPagosFecha'))
+	vNombreServ = WebUI.getText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRNombreServicio'))
+	vNroOp = WebUI.getText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRPagosNumeroOperacion'))
+	vImporte = WebUI.getText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRPagosImporte'))
 	
 	//Se crea el archivo .txt
 	f = new File ("C://Users/natalia.heit/Desktop/Prueba.txt")

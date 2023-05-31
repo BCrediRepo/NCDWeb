@@ -57,7 +57,7 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbAhorro e Invers
 CustomKeywords.'pkgUtilities.kwyUtility.comparacionListaDetallePlazoFijo'(60)
 
 //Cierra solapa Detalle
-WebUI.click(findTestObject('Object Repository/06-Inversiones/icoCerrarDetalle'))
+WebUI.click(findTestObject('Object Repository/06-Inversiones/icoInvCerrarDetalle'))
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

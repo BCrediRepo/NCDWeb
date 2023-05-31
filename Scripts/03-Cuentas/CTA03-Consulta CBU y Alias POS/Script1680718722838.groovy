@@ -62,7 +62,7 @@ CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbCuentas'))
 
 //Click en el menú desplegable selecciona Consultar Alias y CBU
-WebUI.click(findTestObject('Object Repository/03-Cuentas/mnuCtasConsultaDesplegable'))
+WebUI.click(findTestObject('Object Repository/03-Cuentas/mnuCtaConsultaDesplegable'))
 WebUI.click(findTestObject('Object Repository/03-Cuentas/txtCtaConsultarAliasCBU'))
 
 //Valida datos de la cuenta

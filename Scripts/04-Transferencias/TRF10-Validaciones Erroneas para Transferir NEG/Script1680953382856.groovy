@@ -61,37 +61,37 @@ CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
 CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 
 //Cliquea en el menú desplegable desde Inicio y selecciona Nueva Transferencia desde cta Dólares
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/mnuTrfDesplegableCtasInicioCtaDolares'))
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/txtTrfNuevaTransferenciaInicioCtaDolares'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/mnuTrxDesplegableCtasInicioCtaDolares'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/txtTrxNuevaTransferenciaInicioCtaDolares'))
 
 //Selecciono solapa Mis cuentas Credicoop
-WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrxMisCuentasCredicoop'))
 
 //Selecciona Cuenta en pesos
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/txtTrfMisCtasPesos'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/txtTrxMisCtasPesos'))
 
 //Valida Toast Moneda Errónea
-WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblTrfMensajeMonedaErronea'),vMonedaTexto)
+WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblTrxMensajeMonedaErronea'),vMonedaTexto)
 
 //Ingresa en la sección Inicio del Dashboard
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbInicioEstado2'))
 
 //Cliquea en el menú desplegable desde Inicio y selecciona Nueva Transferencia desde cta Pesos
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/mnuTrfDespelgableInicioCtaPesos'))
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/txtTrfNuevaTransferenciaInicioCtaPesos'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/mnuTrxDespelgableInicioCtaPesos'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/txtTrxNuevaTransferenciaInicioCtaPesos'))
 
 //Selecciono solapa Mis cuentas Credicoop
-WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrxMisCuentasCredicoop'))
 
 //Selecciona Cuenta en pesos
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/txtTrfMisCtasPesos'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/txtTrxMisCtasPesos'))
 
 //Ingresa monto
-WebUI.click(findTestObject('Object Repository/04-Transferencias/txtMontoPesos'))
-WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtMontoPesos'), vValorMonto)
+WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxMontoPesos'))
+WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrxMontoPesos'), vValorMonto)
 
 //Selecciona Titularidad
-WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrfSeleccionTitularidadFormulario'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrxSeleccionTitularidadFormulario'))
 
 //Valida Mensaje Monto Supera Limite
 //vMontoAtributo = WebUI.getAttribute(findTestObject('Object Repository/04-Transferencias/txtTrxMontoSuperaLimite'), text)

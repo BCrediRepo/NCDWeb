@@ -55,21 +55,21 @@ CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbMisOperaciones'))
 
 //Cliquea en el menú desplegable de Operaciones y Selecciona Transferencias
-WebUI.click(findTestObject('Object Repository/07-Operaciones/mnuOperacion'))
-WebUI.click(findTestObject('Object Repository/07-Operaciones/txtTransferencias'))
+WebUI.click(findTestObject('Object Repository/07-Operaciones/mnuOprOperacion'))
+WebUI.click(findTestObject('Object Repository/07-Operaciones/txtOprTransferencias'))
 
 //Cliquea en el menú desplegable de Tipo de Operaciones y Selecciona Todas
-WebUI.click(findTestObject('Object Repository/07-Operaciones/btnTipoOperacion'))
-WebUI.click(findTestObject('Object Repository/07-Operaciones/txtTipoOpTodas'))
+WebUI.click(findTestObject('Object Repository/07-Operaciones/btnOprTipoOperacion'))
+WebUI.click(findTestObject('Object Repository/07-Operaciones/txtOprTipoOpTodas'))
 
 //Calendario
-//WebUI.click(findTestObject('Object Repository/07-Operaciones/icoOpCalendario'))
-//WebUI.click(findTestObject('Object Repository/07-Operaciones/txtFechaDesde'))
-WebUI.click(findTestObject('Object Repository/07-Operaciones/btnBuscarOperacion'))
+//WebUI.click(findTestObject('Object Repository/07-Operaciones/icoOprCalendario'))
+//WebUI.click(findTestObject('Object Repository/07-Operaciones/txtOprFechaDesde'))
+WebUI.click(findTestObject('Object Repository/07-Operaciones/btnOprBuscarOperacion'))
 
 //Cliquea en el menú desplegable y selecciona Ver Detalle
-WebUI.scrollToElement(findTestObject('Object Repository/07-Operaciones/mnuOpDetalle'), 10)
-WebUI.click(findTestObject('Object Repository/07-Operaciones/mnuOpDetalle'))
+WebUI.scrollToElement(findTestObject('Object Repository/07-Operaciones/mnuOprDetalle'), 10)
+WebUI.click(findTestObject('Object Repository/07-Operaciones/mnuOprDetalle'))
 
 //Valida los datos
 CustomKeywords.'pkgUtilities.kwyUtility.comparacionOrigenDetalle'(60)

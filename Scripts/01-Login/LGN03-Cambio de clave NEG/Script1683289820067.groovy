@@ -63,19 +63,19 @@ WebUI.setText(findTestObject('Object Repository/01-Login/txtLgnUsuario'), vUsuar
 WebUI.click(findTestObject('Object Repository/01-Login/btnLgnIngresar'))
 
 //Cliquea en el menu desplegable
-WebUI.click(findTestObject('Object Repository/01-Login/mnuUsuario'))
-WebUI.click(findTestObject('Object Repository/01-Login/txtCambioClave'))
+WebUI.click(findTestObject('Object Repository/01-Login/mnuLgnUsuario'))
+WebUI.click(findTestObject('Object Repository/01-Login/txtLgnCambioClave'))
 
 //Completa los Campos solicitados
-WebUI.click(findTestObject('Object Repository/01-Login/txtClaveActual'))
-WebUI.setText(findTestObject('Object Repository/01-Login/txtClaveActual'), vClave)
-WebUI.click(findTestObject('Object Repository/01-Login/txtNuevaClave'))
-WebUI.setText(findTestObject('Object Repository/01-Login/txtNuevaClave'), vClave1)
-WebUI.click(findTestObject('Object Repository/01-Login/txtReingresarClave'))
-WebUI.setText(findTestObject('Object Repository/01-Login/txtReingresarClave'), vClave2)
+WebUI.click(findTestObject('Object Repository/01-Login/txtLgnClaveActual'))
+WebUI.setText(findTestObject('Object Repository/01-Login/txtLgnClaveActual'), vClave)
+WebUI.click(findTestObject('Object Repository/01-Login/txtLgnNuevaClave'))
+WebUI.setText(findTestObject('Object Repository/01-Login/txtLgnNuevaClave'), vClave1)
+WebUI.click(findTestObject('Object Repository/01-Login/txtLgnReingresarClave'))
+WebUI.setText(findTestObject('Object Repository/01-Login/txtLgnReingresarClave'), vClave2)
 
 //Valida Mensaje de claves no coinciden
-WebUI.verifyElementText(findTestObject('Object Repository/01-Login/lblClaveNoCoincide'), vtxtNoCoincide)
+WebUI.verifyElementText(findTestObject('Object Repository/01-Login/lblLgnClaveNoCoincide'), vtxtNoCoincide)
 
 //---------------------------------------------------------------------------------------------------------------------
 

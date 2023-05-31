@@ -180,7 +180,7 @@ WebUI.click(findTestObject('Object Repository/05-Pagos Debin/icoDbnEliminarGener
 WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnConfirmarEliminar'))
 
 //Valida mensaje de confirmacion
-WebUI.verifyElementText(findTestObject('Object Repository/05-Pagos Debin/lblAdherirCtaExitoso'), vMjsEliminar)
+WebUI.verifyElementText(findTestObject('Object Repository/05-Pagos Debin/lblDbnAdherirCtaExitoso'), vMjsEliminar)
 
 //----------------Loguea con el otro adherente------------------------------------------------------------------
 

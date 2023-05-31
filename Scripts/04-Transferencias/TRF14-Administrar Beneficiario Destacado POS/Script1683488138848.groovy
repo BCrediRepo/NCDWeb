@@ -62,7 +62,7 @@ CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'))
 
 //Valida y cliquea en Agenda de Beneficiarios
-WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lnkTrfAgendaBeneficiario'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lnkTrxAgendaBeneficiario'))
 
 //Selecciona nuevo Beneficiario Destacado con 3	Seleccionados
 WebUI.click(findTestObject('Object Repository/04-Transferencias/icoTrxBenfNoDestacado'))

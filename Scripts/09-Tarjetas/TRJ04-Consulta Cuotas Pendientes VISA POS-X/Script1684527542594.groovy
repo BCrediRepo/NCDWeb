@@ -94,27 +94,27 @@ CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTarjetas'))
 
 //Cliquea en la Card Visa y Selecciona Solapa Cuotas Pendientes
-WebUI.click(findTestObject('Object Repository/09-Tarjetas/LblTarjetaVisa'))
-WebUI.click(findTestObject('Object Repository/09-Tarjetas/lblCuotasPendientes'))
+WebUI.click(findTestObject('Object Repository/09-Tarjetas/LblTrjTarjetaVisa'))
+WebUI.click(findTestObject('Object Repository/09-Tarjetas/lblTrjCuotasPendientes'))
 
 /*
 //Valida titulos de la solapa Cuotas Pendientes
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtFechaMovimVisa'), vFechaCP)
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtFechaMovimVisa'), vDescripCP)
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtFechaMovimVisa'), vNombreCP)
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtFechaMovimVisa'), vCtasPendtesCP)
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtFechaMovimVisa'), vValorCuotaCP)
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtFechaMovimVisa'), vCtasTotalCP)
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtFechaMovimVisa'), vSldoPendCP)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjFechaMovimVisa'), vFechaCP)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjFechaMovimVisa'), vDescripCP)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjFechaMovimVisa'), vNombreCP)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjFechaMovimVisa'), vCtasPendtesCP)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjFechaMovimVisa'), vValorCuotaCP)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjFechaMovimVisa'), vCtasTotalCP)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjFechaMovimVisa'), vSldoPendCP)
 */
 
 //Valida datos
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtCPFecha'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtCPDescripcion'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtCPNombre'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtCPCuotas'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtCPValorCuota'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtCPSaldo'), 10)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjCPFecha'), 10)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjCPDescripcion'), 10)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjCPNombre'), 10)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjCPCuotas'), 10)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjCPValorCuota'), 10)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjCPSaldo'), 10)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

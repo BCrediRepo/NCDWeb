@@ -58,13 +58,13 @@ CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'))
 
 //Cliquea en Nueva Transferencia
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfNuevaTransferenciaInicio'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxNuevaTransferenciaInicio'))
 
 //Selecciono solapa Mis cuentas Credicoop
-WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrxMisCuentasCredicoop'))
 
 //Valida que no hay cuentas
-WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblAbrirCta'), vlblAbrirCta)
+WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblTrxAbrirCta'), vlblAbrirCta)
 
 //---------------------------------------------------------------------------------------------------------------------
 

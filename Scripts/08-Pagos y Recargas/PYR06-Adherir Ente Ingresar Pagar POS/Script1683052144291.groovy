@@ -58,27 +58,27 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbPagos y Recarga
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbServicios y Tarjetas'))
 
 //Adherir Servicio
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnAdherirNuevoServicio'))
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/mnuCategoriaAdherirServicio'))
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/txtLuzAguaGas'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYRAdherirNuevoServicio'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/mnuPYRCategoriaAdherirServicio'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRLuzAguaGas'))
 
 //Ingresa Ente
-WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtIngresoEnte'), vEnte)
+WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRIngresoEnte'), vEnte)
 WebUI.delay(5)
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/lnkMetrogas'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/lnkPYRMetrogas'))
 
 //Ingresa el código
-WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtCodigoPago'), vCodigo)
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnAdherirServicioSolapa'))
+WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRCodigoPago'), vCodigo)
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYRAdherirServicioSolapa'))
 
 //Ingresa al menú desplegable y selecciona la opción "Ver servicios Adheridos"
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/mnuPagosRecargas'))
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/lnkVerServiciosAdheridos'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/mnuPYRPagosRecargas'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/lnkPYRVerServiciosAdheridos'))
 
 //Elimina el servicio adherido para reutilizar el codigo
 WebUI.focus(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRServicioMetrogasCompleto'))
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/icoPYRBorrarServicio'))
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnConfirmarEliminarServicio'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYRConfirmarEliminarServicio'))
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/icoPYRCerrarSolapaAdheridos'))
 
 

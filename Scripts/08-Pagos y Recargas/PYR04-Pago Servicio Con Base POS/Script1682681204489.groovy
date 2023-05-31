@@ -62,27 +62,27 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbPagos y Recarga
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbServicios y Tarjetas'))
 
 //Adherir Servicio
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnAdherirNuevoServicio'))
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/mnuCategoriaAdherirServicio'))
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/txtInternetTelecomunicaciones'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYRAdherirNuevoServicio'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/mnuPYRCategoriaAdherirServicio'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRInternetTelecomunicaciones'))
 
 //Ingresa Ente
-WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtIngresoEnte'), vEnte)
+WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRIngresoEnte'), vEnte)
 WebUI.delay(5)
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/lnkECOWIFI'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/lnkPYREcowifi'))
 
 //Ingresa el código
-WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtCodigoPago'), vCodigo)
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnAdherirServicioSolapa'))
+WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRCodigoPago'), vCodigo)
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYRAdherirServicioSolapa'))
 
 //Valida pantalla de adhesión y paga el servicio
-//WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblServicioAdheridoExito'), vServicioAdherido)
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPagarAhoraSolapa'))
+//WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRServicioAdheridoExito'), vServicioAdherido)
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYRPagarAhoraSolapa'))
 //Valida Pantalla Pago
 //Confirma Pago
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnConfirmarPagoServicio'))
-WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtFirmaByPass'), vClave)
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnConfirmarByPassPago'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYRConfirmarPagoServicio'))
+WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRFirmaByPass'), vClave)
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYRConfirmarByPassPago'))
 
 
 

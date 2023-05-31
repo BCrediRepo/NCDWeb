@@ -55,11 +55,11 @@ CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
 CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 
 //Cliquea el menú desplegable de Cuentas en el Inicio y copia CBU
-WebUI.click(findTestObject('Object Repository/03-Cuentas/lnkCtasMenuInicio'))
-WebUI.click(findTestObject('Object Repository/03-Cuentas/lnkCopiarCBU'))
+WebUI.click(findTestObject('Object Repository/03-Cuentas/lnkCtaMenuInicio'))
+WebUI.click(findTestObject('Object Repository/03-Cuentas/lnkCtaCopiarCBU'))
 
 //Valida Toast de Confirmación
-WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasToastCopiaCBU'),vCbuToast)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaToastCopiaCBU'),vCbuToast)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

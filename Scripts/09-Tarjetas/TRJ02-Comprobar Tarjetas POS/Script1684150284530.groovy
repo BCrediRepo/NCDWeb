@@ -78,9 +78,9 @@ CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTarjetas'))
 
 //Valida datos de tarjetas de crédito
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtNumeroTarjetaVisa'), vNroTarjCredito)
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTipoTarjetaVisa'), vTipoTarjCredito)
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtFechaVencimiento'), vFchaTarjCredito)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjNumeroTarjetaVisa'), vNroTarjCredito)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjTipoTarjetaVisa'), vTipoTarjCredito)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjFechaVencimiento'), vFchaTarjCredito)
 
 //Cliquea en la tarjeta
 

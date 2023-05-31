@@ -69,23 +69,23 @@ CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 //Ingresa al módulo de Cuentas desde menú lateral y mapea los campos
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbCuentas'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloCuentaTabla'), vCuenta)
-WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloFavoritaTabla'), vFavorita)
-WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloMonedaTabla'), vMoneda)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaTituloCuentaTabla'), vCuenta)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaTituloFavoritaTabla'), vFavorita)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaTituloMonedaTabla'), vMoneda)
 
 CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
 
-WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloSaldoTabla'), vSaldo)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaTituloSaldoTabla'), vSaldo)
 
 //Ingresa al módulo de Cuentas desde Inicio y mapea los campos
-WebUI.click(findTestObject('Object Repository/03-Cuentas/icoCtasAtras'))
+WebUI.click(findTestObject('Object Repository/03-Cuentas/icoCtaAtras'))
 
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbCuentasInicio'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloCuentaTabla'), vCuenta)
-WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloFavoritaTabla'), vFavorita)
-WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloMonedaTabla'), vMoneda)
-WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtasTituloSaldoTabla'), vSaldo) 
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaTituloCuentaTabla'), vCuenta)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaTituloFavoritaTabla'), vFavorita)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaTituloMonedaTabla'), vMoneda)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaTituloSaldoTabla'), vSaldo) 
 
 //---------------------------------------------------------------------------------------------------------------------
 

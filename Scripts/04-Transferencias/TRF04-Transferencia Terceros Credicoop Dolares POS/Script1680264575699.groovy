@@ -59,37 +59,37 @@ CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'))
 
 //Valida y cliquea en Agenda de Beneficiarios
-WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lnkTrfAgendaBeneficiario'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lnkTrxAgendaBeneficiario'))
 
 //Busca por tipo de Beneficiario
-WebUI.setText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrfBuscarBeneficiarioTipo'), vTipoTrf)
+WebUI.setText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrxBuscarBeneficiarioTipo'), vTipoTrf)
 
 //Inicia la transferencia
-WebUI.click(findTestObject('Object Repository/04-Transferencias/mnuTercerosCredicoop'))
-WebUI.click(findTestObject('Object Repository/04-Transferencias/txtNuevaTransferenciaCredicoop'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/mnuTrxTercerosCredicoop'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxNuevaTransferenciaCredicoop'))
 
 //Ingresa Monto
-WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrfMontoFormulario'))
-WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrfMontoFormulario'), vValorMonto)
+WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxMontoFormulario'))
+WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrxMontoFormulario'), vValorMonto)
 
 //Selecciona Titularidad
-WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrfSeleccionTitularidadFormulario'))
-WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTitularidadTextoFormulario'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrxSeleccionTitularidadFormulario'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrxTitularidadTextoFormulario'))
 
 //Cliquea en Continuar
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnContinuarFormulario'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxContinuarFormulario'))
 
 //Cliquea en boton Confirmar
-WebUI.click(findTestObject('Object Repository/04-Transferencias/btnConfirmarTransferencias'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/btnTrxConfirmarTransferencias'))
 
 //Ingresa Clave Bypass
-WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrfClaveBypass'), vClave)
+WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxClaveBypass'), vClave)
 
 //Confirma Operación
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmarBypass'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxConfirmarBypass'))
 
 //Valida Destinatario
-//WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/txtTrfBeneficiarioDestino'))
+//WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/txtTrxBeneficiarioDestino'))
 //Nota: Poner validación la Transferencia se encuentra en revisión
 
 //---------------------------------------------------------------------------------------------------------------------

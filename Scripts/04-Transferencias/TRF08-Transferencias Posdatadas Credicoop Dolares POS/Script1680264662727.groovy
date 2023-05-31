@@ -55,39 +55,39 @@ CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'))
 
 //Inicia Transferencia desde Menú de Beneficiario destacado
-WebUI.click(findTestObject('Object Repository/04-Transferencias/mnuFavoritosCtaDolar'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/mnuTrxFavoritosCtaDolar'))
 
 //Clickea en Nueva Transferencia
-WebUI.click(findTestObject('Object Repository/04-Transferencias/txtNuevaTransferenciaDolar'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxNuevaTransferenciaDolar'))
 
 //Ingresa Monto
-WebUI.click(findTestObject('Object Repository/04-Transferencias/04-Calendario/txtIngresarMontoPosdatada'))
-WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/04-Calendario/txtIngresarMontoPosdatada'), vValorMonto)
+WebUI.click(findTestObject('Object Repository/04-Transferencias/04-Calendario/txtTrxIngresarMontoPosdatada'))
+WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/04-Calendario/txtTrxIngresarMontoPosdatada'), vValorMonto)
 
 //Selecciona Titularidad
-WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrfSeleccionTitularidadFormulario'))
-WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTitularidadTextoFormulario'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrxSeleccionTitularidadFormulario'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrxTitularidadTextoFormulario'))
 
 //Selecciona Fecha Programada
-WebUI.scrollToElement(findTestObject('Object Repository/04-Transferencias/04-Calendario/icoTrfCalendarioFechaEnvio'), 10)
-WebUI.click(findTestObject('Object Repository/04-Transferencias/04-Calendario/icoTrfCalendarioFechaEnvio'))
-WebUI.click(findTestObject('Object Repository/04-Transferencias/04-Calendario/icoTrfCalendarioMesSiguiente'))
-WebUI.click(findTestObject('Object Repository/04-Transferencias/04-Calendario/lblTrfCalendarioFechaEnvio'))
+WebUI.scrollToElement(findTestObject('Object Repository/04-Transferencias/04-Calendario/icoTrxCalendarioFechaEnvio'), 10)
+WebUI.click(findTestObject('Object Repository/04-Transferencias/04-Calendario/icoTrxCalendarioFechaEnvio'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/04-Calendario/icoTrxCalendarioMesSiguiente'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/04-Calendario/lblTrxCalendarioFechaEnvio'))
 
 //Cliquea en Continuar
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnContinuarFormulario'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxContinuarFormulario'))
 
 //Cliquea en boton Confirmar
-WebUI.click(findTestObject('Object Repository/04-Transferencias/btnConfirmarTransferencias'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/btnTrxConfirmarTransferencias'))
 
 //Ingresa Clave Bypass
-WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrfClaveBypass'), vClave)
+WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxClaveBypass'), vClave)
 
 //Confirma Operación
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmarBypass'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxConfirmarBypass'))
 
 //Valida Destinatario
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/txtTrfBeneficiarioDestino'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/txtTrxBeneficiarioDestino'))
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

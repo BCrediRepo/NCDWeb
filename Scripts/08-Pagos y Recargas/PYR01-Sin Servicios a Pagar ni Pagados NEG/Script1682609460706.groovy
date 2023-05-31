@@ -69,25 +69,25 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbPagos y Recarga
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbServicios y Tarjetas'))
 
 //Valida título y Mensaje 
-//WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPagosRecargas'), vTxtPagosRecargas)
-WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblSinPrximosVencimientos'), vTxtVencimientos)
+//WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRPagosRecargas'), vTxtPagosRecargas)
+WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRSinPrximosVencimientos'), vTxtVencimientos)
 
 //Ingresa a Historial de Pagos
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/mnuPagosRecargas'))
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/lnkVerHistorialPagos'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/mnuPYRPagosRecargas'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/lnkPYRVerHistorialPagos'))
 
 //Valida Titulo y Mensaje
-//WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblHistorialPagos'), vTxtHistorialPagos)
-WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblSinServiciosPorVencer'), vTxtSinServicios)
-WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblSinPagosRealizados'), vTxtSinPagos)
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/icoAtrasHistorial'))
+//WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRHistorialPagos'), vTxtHistorialPagos)
+WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRSinServiciosPorVencer'), vTxtSinServicios)
+WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRSinPagosRealizados'), vTxtSinPagos)
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/icoPYRAtrasHistorial'))
 
 //Ingresa a Servicios Adheridos
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/mnuPagosRecargas'))
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/lnkVerServiciosAdheridos'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/mnuPYRPagosRecargas'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/lnkPYRVerServiciosAdheridos'))
 
 //Valida Mensaje
-WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblSinServiciosAdheridos'), vTxtSinAdheridos)
+WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRSinServiciosAdheridos'), vTxtSinAdheridos)
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/icoPYRCerrarSolapaAdheridos'))
 
 //---------------------------------------------------------------------------------------------------------------------

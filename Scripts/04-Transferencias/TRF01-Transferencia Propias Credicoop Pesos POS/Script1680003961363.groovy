@@ -57,10 +57,10 @@ CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'))
 
 //Cliquea en Nueva Transferencia
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfNuevaTransferenciaInicio'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxNuevaTransferenciaInicio'))
 
 //Selecciono solapa Mis cuentas Credicoop
-WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrxMisCuentasCredicoop'))
 
 //Valida Cuenta Pesos 
 CustomKeywords.'pkgUtilities.kwyUtility.comparacionListadoTrxPropias'(60)
@@ -73,24 +73,24 @@ if (GlobalVariable.vMonedaCta == '$' && GlobalVariable.vMonedaTrx == '$'){
 }
 
 //Ingresa Monto valido y menor al saldo de la cuenta
-WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrfMontoFormulario'))
-WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrfMontoFormulario'),vValorMonto)
+WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxMontoFormulario'))
+WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrxMontoFormulario'),vValorMonto)
 
 //Selecciona Titularidad
-WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrfSeleccionTitularidadFormulario'))
-WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTitularidadTextoFormulario'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrxSeleccionTitularidadFormulario'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrxTitularidadTextoFormulario'))
 
 //Valida Monto Transferencia
 CustomKeywords.'pkgUtilities.kwyUtility.comparacionMontoTrxPropias'(60)
 
 //Cliquea en boton Confirmar
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmar'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxConfirmar'))
 
 //Ingresa Clave Bypass
-WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrfClaveBypass'), vClave)
+WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxClaveBypass'), vClave)
 
 //Confirma Operación
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmarBypass'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxConfirmarBypass'))
 
 //Valida Numero de operacion
 CustomKeywords.'pkgUtilities.kwyUtility.comparacionNumeroOperacionTrxPropias'(60)

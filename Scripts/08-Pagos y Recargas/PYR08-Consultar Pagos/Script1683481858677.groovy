@@ -55,15 +55,15 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbPagos y Recarga
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbServicios y Tarjetas'))
 
 //Ingresa a Historial de Pagos
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/mnuPagosRecargas'))
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/lnkVerHistorialPagos'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/mnuPYRPagosRecargas'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/lnkPYRVerHistorialPagos'))
 
 
 /*
 //Cliquea en el menu desplegable
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/mnuServicioAdheridoHistorial'))
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/txtVisaArgentina'))
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnBuscarHistorialPago'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/mnuPYRServicioAdheridoHistorial'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRVisaArgentina'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYRBuscarHistorialPago'))
 */
 //Valida que coincidan ambos nombres del servicio seleccionado
 WebUI.callTestCase(findTestCase("UTL01-VerifyPDFKeywords"), null)

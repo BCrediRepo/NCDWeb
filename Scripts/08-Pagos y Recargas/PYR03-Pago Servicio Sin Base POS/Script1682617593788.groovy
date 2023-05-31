@@ -59,12 +59,12 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbServicios y Tar
 CustomKeywords.'pkgUtilities.kwyUtility.comparacionListaDetallePago'(60)
 
 //Ingresa Monto y confirma
-WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtMonto'), vMonto)
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnConfirmaPago'))
+WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRMonto'), vMonto)
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYRConfirmaPago'))
 
 //Ingresa firma ByPass y confirma
-WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtByPass'), vClave)
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnConfirmarByPass'))
+WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRByPass'), vClave)
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYRConfirmarByPass'))
 
 //Valida pantalla pago exitoso
 

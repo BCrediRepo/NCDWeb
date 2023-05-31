@@ -88,18 +88,18 @@ CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'))
 
 //Valida y cliquea en Agenda de Beneficiarios
-WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lnkTrfAgendaBeneficiario'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lnkTrxAgendaBeneficiario'))
 
 //Busca Beneficiario por CBU
 
-WebUI.setText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrfBuscarBeneficiarioTipo'), vAliasBenf)
+WebUI.setText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrxBuscarBeneficiarioTipo'), vAliasBenf)
 
 //Valida que el Beneficiario no este registrado
 WebUI.delay(5)
-WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lblBusquedaSinResultadosCBUBenf'),vBenfLbl)
+WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lblTrxBusquedaSinResultadosCBUBenf'),vBenfLbl)
 
 //Cliquea en Nuevo Beneficiario
-WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/btnNuevoBeneficiario'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/btnTrxNuevoBeneficiario'))
 
 //Cliquea en la opcion Alias
 WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxNuevoBenefAlias'))
@@ -108,33 +108,33 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxNuevoBenef
 WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxIngresoAlias'), vAliasBenf)
 
 //Cliqueo en Continuar
-WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/btnNuevoBenfContinuar'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/btnTrxNuevoBenfContinuar'))
 
 //Selecciono Opción del menu tipo de transferencia
-WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/mnuTrfTipoNuevoBeneficiario'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/mnuTrxTipoNuevoBeneficiario'))
 WebUI.delay(5)
-WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrfMenuTipoNuevoBenficiario'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrxMenuTipoNuevoBenficiario'))
 
 //Selecciono Moneda
-WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/radTrfMonedaPesosNuevoBeneficiario'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/radTrxMonedaPesosNuevoBeneficiario'))
 
 //Cliqueo en continuar
-WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/btnTrfContinuarNuevoBeneficiario'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/btnTrxContinuarNuevoBeneficiario'))
 
 //Valida Mensaje Exitoso
-WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lblTrfBeneficiarioGuardado'),vBenfGuardado)
+WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lblTrxBeneficiarioGuardado'),vBenfGuardado)
 
 //Cierra Pantalla
-WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/icoCerrarBeneficiarioGuardado'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/icoTrxCerrarBeneficiarioGuardado'))
 
 //Busca Beneficiario Guardado
-WebUI.setText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrfBuscarBeneficiarioTipo'), vCBUBenf)
+WebUI.setText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrxBuscarBeneficiarioTipo'), vCBUBenf)
 
 //Cliquea en menú para eliminar
 WebUI.delay(10)
-WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/mnuTrfBeneficiarioDesplegable'))
-WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrfNuevoBeneficiarioEliminar'))
-WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/btnTrfConfirmarEliminarBenf'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/mnuTrxBeneficiarioDesplegable'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrxNuevoBeneficiarioEliminar'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/btnTrxConfirmarEliminarBenf'))
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

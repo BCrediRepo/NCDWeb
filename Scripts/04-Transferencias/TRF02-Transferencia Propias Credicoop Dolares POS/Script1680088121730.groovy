@@ -17,6 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+import com.kms.katalon.core.util.KeywordUtil
+
 import java.sql.Connection
 import java.sql.DriverManager
 import java.sql.ResultSet
@@ -31,7 +33,7 @@ String vDNI = null
 String vClave = null
 String vUsuario = null
 String vClaveBypass = null
-def vValorMonto = 1
+String vValorMonto = 1
 
 CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
 
@@ -57,47 +59,48 @@ CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'))
 
 //Valida y cliquea en Nueva Transferencia
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfNuevaTransferenciaInicio'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxNuevaTransferenciaInicio'))
 
 //Selecciono solapa Mis cuentas Credicoop
-WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrfMisCuentasCredicoop'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrxMisCuentasCredicoop'))
 
 //Selecciona Cuenta en dolares
-WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkTrfCuentaPropiaDolares'))
+//WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkTrxCuentaPropiaDolares'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/txtTrxCtaPropiaDolares'))
+WebUI.delay(5)
 
+//CustomKeywords.'pkgUtilities.kwyUtility.comparacionListadoTrxPropias'(60)
+/*
 //Valida Cuenta dolares
-CustomKeywords.'pkgUtilities.kwyUtility.comparacionListadoTrxPropias'(60)
-
 if (GlobalVariable.vMonedaCta == 'U$S' && GlobalVariable.vMonedaTrx == 'U$S'){
 	println("La cuenta seleccionada corresponde a una moneda en dolares.")
 	
 }else{
 	KeywordUtil.markFailedAndStop("La cuenta seleccionada NO corresponde a una moneda en dolares.")
 }
-
-
+*/
 //Ingresa Monto valido y menor al saldo de la cuenta
-WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrfMontoFormulario'))
-WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrfMontoFormulario'), vValorMonto)
+WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxMontoFormulario'))
+WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrxMontoFormulario'), vValorMonto)
 
 //Selecciona Titularidad
-WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrfSeleccionTitularidadFormulario'))
-WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTitularidadTextoFormulario'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrxSeleccionTitularidadFormulario'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrxTitularidadTextoFormulario'))
 
 //Cliquea en Continuar
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnContinuarFormulario'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxContinuarFormulario'))
 
 //Cliquea en boton Confirmar
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmar'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxConfirmar'))
 
 //Ingresa Clave Bypass
-WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrfClaveBypass'), vClaveBypass)
+WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxClaveBypass'), vClaveBypass)
 
 //Confirma Operación
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrfConfirmarBypass'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxConfirmarBypass'))
 
-//Valida Destinatario
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/txtTrfBeneficiarioDestino'))
+//Valida Numero de operacion y monto Exitoso
+CustomKeywords.'pkgUtilities.kwyUtility.comparacionNroOperacionTrxPropiasDolares'(60)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
