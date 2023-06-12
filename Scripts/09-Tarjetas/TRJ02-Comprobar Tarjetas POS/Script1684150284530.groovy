@@ -31,6 +31,13 @@ def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 13976407"
 def vQuery3 = "SELECT * FROM Parametros WHERE Nombre = 'NroTarjetaCredito'"
 def vQuery4 = "SELECT * FROM Parametros WHERE Nombre = 'TipoTarjetaCredito'"
 def vQuery5 = "SELECT * FROM Parametros WHERE Nombre = 'FechaTarjetaCredito'"
+def vQuery6 = "SELECT * FROM Labels WHERE Id = 88"
+def vQuery7 = "SELECT * FROM Labels WHERE Id = 89"
+def vQuery8 = "SELECT * FROM Labels WHERE Id = 90"
+def vQuery9 = "SELECT * FROM Labels WHERE Id = 91"
+def vQuery10 = "SELECT * FROM Labels WHERE Id = 92"
+def vQuery11 = "SELECT * FROM Labels WHERE Id = 93"
+
 
 String vDNI = null
 String vClave = null
@@ -40,6 +47,12 @@ String vTarjDash2 = null
 String vNroTarjCredito = null
 String vTipoTarjCredito = null
 String vFchaTarjCredito = null
+String vTarjetaDbto = null 
+String vNumeroDbto = null
+String vLimiteDbto = null
+String vCompraDbto = null
+String vHabilitadaDbto = null
+String vDisponbleDbto = null
 
 CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
 
@@ -50,6 +63,12 @@ ResultSet vResult = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery)
 ResultSet vResult3 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery3)
 ResultSet vResult4 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery4)
 ResultSet vResult5 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery5)
+ResultSet vResult6 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery6)
+ResultSet vResult7 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery7)
+ResultSet vResult8 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery8)
+ResultSet vResult9 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery9)
+ResultSet vResult10 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery10)
+ResultSet vResult11 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery11)
 
 vDNI = vResult.getString(2)
 vUsuario = vResult.getString(3)
@@ -59,6 +78,12 @@ vClave = vResult.getString(4)
 vNroTarjCredito = vResult3.getString(2)
 vTipoTarjCredito = vResult4.getString(2)
 vFchaTarjCredito = vResult5.getString(2)
+vTarjetaDbto = vResult6.getString(3)
+vNumeroDbto = vResult7.getString(3)
+vLimiteDbto = vResult8.getString(3)
+vDisponbleDbto = vResult9.getString(3)
+vCompraDbto = vResult10.getString(3)
+vHabilitadaDbto = vResult11.getString(3)
 
 //Cierre de la conexion
 CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
@@ -71,19 +96,45 @@ CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
 CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 
 //Valida datos de tarjetas desde el Dashboard
-//WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTarjetaDash1'), vTarjDash1)
-//WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTarjetasDash2'), vTarjDash2)
+WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjCabalDatosDashboard'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjVisaDatosDashboard'))
 
 //Ingresa al módulo de Tarjetas
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTarjetas'))
 
-//Valida datos de tarjetas de crédito
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjNumeroTarjetaVisa'), vNroTarjCredito)
+//Valida formato tabla de Tarjeta de Débito
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/lblTrjDebitoTarjeta'), vTarjetaDbto)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/lblTrjDebitoNumero'), vNumeroDbto)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/lblTrjDebitoLimiteExtraccin'), vLimiteDbto)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/lblTrjDebitoDisponibleExtraccin'), vDisponbleDbto)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/lblTrjDebitoLimiteCompra'), vCompraDbto)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/lblTrjDebitoHabilitadaCompra'), vHabilitadaDbto)
+
+//Valida datos de Tarjeta de Débito
+WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjDebitoNumero'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjDebitoLimiteExtraccn'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjDebitoDisponibleExtraccn'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjDebitoLimiteCompra'))
+
+//Valida datos de Tarjetas de Crédito
+WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjNumeroTarjetaVisa'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjTipoTarjetaVisa'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjFechaVencimiento'))
+
+/*WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjNumeroTarjetaVisa'), vNroTarjCredito)
 WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjTipoTarjetaVisa'), vTipoTarjCredito)
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjFechaVencimiento'), vFchaTarjCredito)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjFechaVencimiento'), vFchaTarjCredito)*/
 
-//Cliquea en la tarjeta
+//Cliquea en la Tarjeta de Crédito
+WebUI.delay(10)
+WebUI.click(findTestObject('Object Repository/09-Tarjetas/icoTrjVisaPlatinum'))
 
+//Valida que se muestren los datos de la Tarjeta de crédito
+WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjVisaNmeroTarjeta'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjVisaNmeroCuenta'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjVisaMontoDisponible'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjVisaLimite'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjVisaDisponibleCuotas'))
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

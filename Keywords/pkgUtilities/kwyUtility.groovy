@@ -23,6 +23,9 @@ import internal.GlobalVariable
 
 import javax.swing.JOptionPane
 
+import org.openqa.selenium.By
+import org.openqa.selenium.WebElement
+
 import java.sql.Connection
 import java.sql.DriverManager
 import java.sql.ResultSet
@@ -197,7 +200,7 @@ public class kwyUtility {
 	 *Validación Cuenta Transferencias Cuentas Propias Pesos                                        *
 	 *----------------------------------------------------------------------------------------------*/
 	@Keyword
-	def comparacionListadoTrxPropias(def vTiempo){
+	def comparacionListadoTrxPropiasPesos(def vTiempo){
 
 		String vMonedaCta
 		String vMonedaTrx
@@ -236,6 +239,51 @@ public class kwyUtility {
 		WebUI.verifyEqual(vMonedaCta, vMonedaTrx )
 
 	}
+
+	/*----------------------------------------------------------------------------------------------*
+	 *Validación Cuenta Transferencias Cuentas Propias Dolares                                      *
+	 *----------------------------------------------------------------------------------------------*/
+	@Keyword
+	def comparacionListadoTrxPropiasDolares(def vTiempo){
+
+		String vMonedaCta
+		String vMonedaTrx
+		String vNombreCta = null
+		String vNumeroCta = null
+		String vDenominacionCta = null
+		String vNombreTrx = null
+		String vNumeroTrx = null
+		String vDenominacionTrx = null
+		String vVerificacion = null
+
+		//En la pagina del Listado de Mis Cuentas
+		WebUI.waitForPageLoad(vTiempo)
+
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblTrxNombreCtaDolares'), vNombreCta)
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/txtTrxCtaPropiaDolares'), vNumeroCta)
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblTrxDenomCtaDolares'), vDenominacionCta)
+		//vMonedaCta = WebUI.getText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/icoTrxMonedaPesos'))
+		GlobalVariable.vMonedaCta = WebUI.getText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/icoTrxMonedaCtaDolares'))
+		//JOptionPane.showMessageDialog(null, vMoneda)
+		WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/txtTrxCtaPropiaDolares'))
+
+		//En el formulario de Transferencia
+		WebUI.waitForPageLoad(vTiempo)
+
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/txtTrxNombreFormDolares'), vNombreTrx)
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/txtTrxNumeroFormDolares'), vNumeroTrx)
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/txtTrxDenomFormDolares'), vDenominacionTrx)
+		//vMonedaTrx = WebUI.getText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/txtTrxMoneda'))
+		GlobalVariable.vMonedaTrx = WebUI.getText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/icoTrxMonedaFormDolares'))
+
+		//Comparacion entre datos del Listado y Datos del Formulario de Transferencia
+		WebUI.verifyEqual(vNombreCta, vNombreTrx)
+		WebUI.verifyEqual(vNumeroCta, vNumeroTrx)
+		WebUI.verifyEqual(vDenominacionCta, vDenominacionTrx)
+		WebUI.verifyEqual(vMonedaCta, vMonedaTrx )
+
+	}
+
 
 
 	/*----------------------------------------------------------------------------------------------*
@@ -367,6 +415,131 @@ public class kwyUtility {
 
 	}
 
+	/*----------------------------------------------------------------------------------------------*
+	 *Validación Comprobante Transferencias Judiciales Credicoop Pesos                                   		*
+	 *----------------------------------------------------------------------------------------------*/
+	@Keyword
+	def comparacionNroOperacionTrxJudicialesCredicoop(def vTiempo){
+
+		String vMontoExito = null
+		String vNumOperacionExito = null
+		String vMontoComprobante = null
+		String vNumOperacionComprobante = null
+
+		//En la pantalla de Confirmacion
+		WebUI.waitForPageLoad(vTiempo)
+
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/txtTrxJudicialMontoExito'), vMontoExito)
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/txtTrxJudicialNroOperExito'), vNumOperacionExito)
+
+		WebUI.click(findTestObject('Object Repository/04-Transferencias/btnTrxJudicialVerComprobanteExito'))
+
+		//En el Comprobante
+		WebUI.waitForPageLoad(vTiempo)
+
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/txtTrxJudicialMontoComprobante'), vMontoComprobante)
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/txtTrxJudicialNroOperComprobante'), vNumOperacionComprobante)
+
+		//Comparacion entre el monto del formulario de Transferencia y la pantalla de confirmacion
+		WebUI.verifyEqual(vMontoExito, vMontoComprobante)
+		WebUI.verifyEqual(vNumOperacionExito, vNumOperacionComprobante)
+
+	}
+
+	/*----------------------------------------------------------------------------------------------*
+	 *Validación Comprobante Transferencias Judiciales Otros Bancos Pesos                           *
+	 *----------------------------------------------------------------------------------------------*/
+	@Keyword
+	def comparacionNroOperacionTrxJudicialesOtrosBancos(def vTiempo){
+
+		String vMontoExito = null
+		String vNumOperacionExito = null
+		String vMontoComprobante = null
+		String vNumOperacionComprobante = null
+
+		//En la pantalla de Confirmacion
+		WebUI.waitForPageLoad(vTiempo)
+
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/txtTrxMontoOtrosBncosJudicialExito'), vMontoExito)
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/txtTrxNroOperOtrosBncosJudicialExito'), vNumOperacionExito)
+
+		WebUI.click(findTestObject('Object Repository/04-Transferencias/btnTrxJudicialVerComprobanteExito'))
+
+		//En el Comprobante
+		WebUI.waitForPageLoad(vTiempo)
+
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/txtTrxMontoOtrosBncosComprbnte'), vMontoComprobante)
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/txtTrxNroOperOtrosBncosComprbnte'), vNumOperacionComprobante)
+
+		//Comparacion entre el monto del formulario de Transferencia y la pantalla de confirmacion
+		WebUI.verifyEqual(vMontoExito, vMontoComprobante)
+		WebUI.verifyEqual(vNumOperacionExito, vNumOperacionComprobante)
+
+	}
+
+	/*----------------------------------------------------------------------------------------------*
+	 *Validación Datos Transferencias Posdatadas Pesos                                              *
+	 *----------------------------------------------------------------------------------------------*/
+	@Keyword
+	def comparacionDatosExitoPosdatadaPesos(def vTiempo){
+
+		String vMontoExito = null
+		String vBeneficiarioExito = null
+		String vMontoSolapa = null
+		String vBeneficiarioSolapa = null
+
+		//En la pantalla de Confirmacion
+		WebUI.waitForPageLoad(vTiempo)
+
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/txtTrxProgramadasExitoMonto'), vMontoExito)
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/txtTrxProgramadasExitoBeneficiario'), vBeneficiarioExito)
+
+		WebUI.click(findTestObject('Object Repository/04-Transferencias/btnTrxProgramadasExitoIrTransferencias'))
+		WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkTrxSolapaProgramadas'))
+
+		//En la solapa de Programadas
+		WebUI.waitForPageLoad(vTiempo)
+
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/txtTrxProgramadasSolapaMonto'), vMontoSolapa)
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/txtTrxProgramadasSolapaBeneficiario'), vBeneficiarioSolapa)
+
+		//Comparacion entre la pantalla de confirmacion y el registro en la solapa Programadas
+		WebUI.verifyEqual(vMontoExito, vMontoSolapa)
+		WebUI.verifyEqual(vBeneficiarioExito, vBeneficiarioSolapa)
+
+	}
+
+	/*----------------------------------------------------------------------------------------------*
+	 *Validación Datos Transferencias Posdatadas Dolares                                            *
+	 *----------------------------------------------------------------------------------------------*/
+	@Keyword
+	def comparacionDatosExitoPosdatadaDolares(def vTiempo){
+
+		String vMontoExito = null
+		String vBeneficiarioExito = null
+		String vMontoSolapa = null
+		String vBeneficiarioSolapa = null
+
+		//En la pantalla de Confirmacion
+		WebUI.waitForPageLoad(vTiempo)
+
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/txtTrxProgramadasExitoMontoDolar'), vMontoExito)
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/txtTrxProgramadasExitoBeneficiarioDolar'), vBeneficiarioExito)
+
+		WebUI.click(findTestObject('Object Repository/04-Transferencias/btnTrxProgramadasExitoIrTransferencias'))
+		WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkTrxSolapaProgramadas'))
+
+		//En la solapa de Programadas
+		WebUI.waitForPageLoad(vTiempo)
+
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/txtTrxProgramadasSolapaMontoDolar'), vMontoSolapa)
+		WebUI.getText(findTestObject('Object Repository/04-Transferencias/txtTrxProgramadasSolapaBeneficiarioDolar'), vBeneficiarioSolapa)
+
+		//Comparacion entre la pantalla de confirmacion y el registro en la solapa Programadas
+		WebUI.verifyEqual(vMontoExito, vMontoSolapa)
+		WebUI.verifyEqual(vBeneficiarioExito, vBeneficiarioSolapa)
+
+	}
 
 	/*----------------------------------------------------------------------------------------------*
 	 *Validación Detalle Plazo Fijo                                                                 *

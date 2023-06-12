@@ -26,7 +26,7 @@ import javax.swing.JOptionPane
 
 //-------------------Conecta a base de datos--------------------------------------------
 def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 20144835"
-def vQuery2 = "SELECT * FROM TipoTrf WHERE Nombre = 'Trf Terceros'"
+def vQuery2 = "SELECT * FROM Parametros WHERE Nombre = 'CuentaOtrosBancos 2'"
 
 //NOTA: Filtrar por nombre de Banco: "Banco Santander Río S.A."
 
@@ -34,7 +34,7 @@ String vDNI = null
 String vClave = null
 String vUsuario = null
 String vTipoTrf = null
-String vValorMonto = 1
+String vValorMonto = 0.5
 
 CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
 
@@ -67,8 +67,9 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Benefic
 WebUI.setText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrxBuscarBeneficiarioTipo'), vTipoTrf)
 
 //Inicia la transferencia
-WebUI.click(findTestObject('Object Repository/04-Transferencias/mnuTrxDesplegableCtaTercerosDolar'))
-WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxNuevaTransferenciaTercerosDolar'))
+WebUI.delay(5)
+WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxCuentaTercerosOtrosBancosDolar'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkTrxTercerosOtrosBancosDolarIniciarTrx'))
 
 //Ingresa Monto
 WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxMontoFormulario'))
@@ -95,7 +96,7 @@ WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxClaveByp
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxConfirmarBypass'))
 
 //Valida Destinatario
-//WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/txtTrxBeneficiarioDestino'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/txtTrxBeneficiarioDestino'))
 //Nota: Poner validación la Transferencia se encuentra en revisión
 
 //---------------------------------------------------------------------------------------------------------------------

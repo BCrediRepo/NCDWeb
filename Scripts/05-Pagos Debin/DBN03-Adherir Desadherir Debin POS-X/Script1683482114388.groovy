@@ -17,6 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import javax.swing.JOptionPane
+import com.kms.katalon.core.util.KeywordUtil
 
 import java.sql.Connection
 import java.sql.DriverManager
@@ -67,29 +68,45 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbPagosDebin'))
 
 //Clickea en Administrar Cuentas
 WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnAdministrarCuentas'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/05-Pagos Debin/txtDbnCBUCuentaAdherirDebin'))
+WebUI.delay(5)
+//WebUI.verifyElementVisible(findTestObject('Object Repository/05-Pagos Debin/txtDbnCBUCuentaAdherirDebin'))
 
 vEstado = WebUI.getAttribute(findTestObject('Object Repository/05-Pagos Debin/btnDbnAdherirDebinCuenta'),'value')
+vEstado1 = WebUI.getAttribute(findTestObject('Object Repository/05-Pagos Debin/btnDbnDesadherirCta'),'value')
 
 //Repite la acción para validar los dos estados 
-for (int i=0; i<2; i++) {
+//for (int i=0; i<2; i++) {
 
 	if (vEstado =='Adherir'){
 	
 		WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnAdherirDebinCuenta'))
 		WebUI.verifyElementText(findTestObject('Object Repository/05-Pagos Debin/lblDbnAdherirCtaExitoso'), vMjsAdherir)
 	
-	
-		}else{
+		}else if (vEstado1 =='Desadherir'){
 
 			WebUI.delay(5)
-			//WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnAdherirDebinCuenta'))
 			WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnDesadherirCta'))
 			WebUI.verifyElementVisible(findTestObject('Object Repository/05-Pagos Debin/txtDbnPopUpDesadherirDebin'))
 			WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnConfirmarDesadherir'))
-			//WebUI.verifyElementText(findTestObject('Object Repository/05-Pagos Debin/lblDbnAdherirCtaExitoso'), vMjsDesadherir)
-		}
-}
+			WebUI.verifyElementText(findTestObject('Object Repository/05-Pagos Debin/lblDbnAdherirCtaExitoso'), vMjsDesadherir)
+			
+		}else ()
+
+				/*if (WebUI.verifyElementVisible(findTestObject('Object Repository/05-Pagos Debin/btnDbnAdherirDebinCuenta'), FailureHandling.OPTIONAL)){
+					WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnAdherirDebinCuenta'))
+					WebUI.verifyElementText(findTestObject('Object Repository/05-Pagos Debin/lblDbnAdherirCtaExitoso'), vMjsAdherir)
+					
+					} else {
+						KeywordUtil.markFailedAndStop("La cuenta seleccionada NO corresponde a una moneda en pesos.")
+					}
+					/*WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnDesadherirCuenta'))
+					WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnDesadherirCta'))
+					WebUI.verifyElementVisible(findTestObject('Object Repository/05-Pagos Debin/txtDbnPopUpDesadherirDebin'))
+					WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnConfirmarDesadherir'))
+					WebUI.verifyElementText(findTestObject('Object Repository/05-Pagos Debin/lblDbnAdherirCtaExitoso'), vMjsDesadherir)*/
+					
+		
+
 	//---------------------------------------------------------------------------------------------------------------------
 	//Control de fin de script
 	

@@ -25,8 +25,8 @@ import java.sql.Statement
 import javax.swing.JOptionPane
 
 //-------------------Conecta a base de datos--------------------------------------------
-def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 13976407"
-def vQuery2 = "SELECT * FROM TipoTrf WHERE Nombre = 'Trf Terceros'"
+def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 30276301"
+def vQuery2 = "SELECT * FROM Parametros WHERE Nombre = 'CuentaOtrosBancos 1'"
 
 //NOTA: Filtrar por nombre de Banco: "BBvA Banco Francés S.A."
 
@@ -34,8 +34,7 @@ String vDNI = null
 String vClave = null
 String vUsuario = null
 String vTipoTrf = null
-String vValorMonto = 1
-//def vTipoTrf = "BBvA Banco Francés S.A."
+String vValorMonto = 0.5
 
 CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
 
@@ -68,8 +67,9 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Benefic
 WebUI.setText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrxBuscarBeneficiarioTipo'), vTipoTrf)
 
 //Inicia la transferencia
-WebUI.click(findTestObject('Object Repository/04-Transferencias/mnuTrxDesplegableTrxOtrosBancos'))
-WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxNuevaTransferenciaOtrosBancos'))
+WebUI.delay(5)
+WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxCuentaTercerosPesos'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxTercerosIniciarTransferencia'))
 
 //Ingresa Monto
 WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxMontoFormulario'))
@@ -95,8 +95,8 @@ WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxClaveByp
 //Confirma Operación
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxConfirmarBypass'))
 
-//Valida Destinatario
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/txtTrxBeneficiarioDestino'))
+//Valida Numero de operacion y monto Exitoso
+CustomKeywords.'pkgUtilities.kwyUtility.comparacionNroOperacionTercerosPesos'(60)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
@@ -110,3 +110,4 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgUtilities.kwyUtility.fPassStatus'()
 }
+

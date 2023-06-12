@@ -89,7 +89,7 @@ WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxClaveByp
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxConfirmarBypass'))
 
 //Valida Destinatario
-//WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/txtTrxBeneficiarioDestino'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/txtTrxBeneficiarioDestino'))
 //Nota: Poner validación la Transferencia se encuentra en revisión
 
 //---------------------------------------------------------------------------------------------------------------------

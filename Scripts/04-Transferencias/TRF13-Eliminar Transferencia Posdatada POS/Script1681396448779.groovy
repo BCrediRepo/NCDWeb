@@ -97,6 +97,9 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkTrxSolapaProg
 WebUI.click(findTestObject('Object Repository/04-Transferencias/icoTrxEliminarProgramada'))
 WebUI.click(findTestObject('Object Repository/04-Transferencias/btnTrxAceptarEliminarProgramada'))
 
+//Valida Mensaje Toast
+WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/lblTrxProgramadasEliminarExitoso'))
+
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 

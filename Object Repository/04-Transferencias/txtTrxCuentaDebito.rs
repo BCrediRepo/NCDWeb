@@ -6,15 +6,19 @@
    <elementGuidId>7412016d-8c0d-4a47-b319-a067fe0908c5</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='frmBcclCreateTransfer_DropDownAccounts_flxOption7flxAmountCointainer']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#frmBcclCreateTransfer_DropDownAccounts_flxOption7flxAmountCointainer</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'frmBcclCreateTransfer_DropDownAccounts_flxOption7flxAmountCointainer' and (text() = 'Label$ 10.078.953,56' or . = 'Label$ 10.078.953,56')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='frmBcclCreateTransfer_DropDownAccounts_flxOption7flxAmountCointainer']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>71011c12-77c1-444c-b32e-d4b35ab4db08</webElementGuid>
+      <webElementGuid>19db73c2-9f9a-4614-9b84-f654c60fd05c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>class</name>
       <type>Main</type>
       <value>kwt100  slFbox </value>
-      <webElementGuid>36fcb0af-ab72-4bff-9056-fadb22b0064e</webElementGuid>
+      <webElementGuid>86efb92f-3fa4-4ca7-bbc2-b58df9ff1a87</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +42,7 @@
       <name>id</name>
       <type>Main</type>
       <value>frmBcclCreateTransfer_DropDownAccounts_flxOption7flxAmountCointainer</value>
-      <webElementGuid>4b1e0b73-ec70-4758-9727-717c0f614cf9</webElementGuid>
+      <webElementGuid>51b830da-53de-4b92-8d89-afcf03a5317f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +50,7 @@
       <name>kwidgettype</name>
       <type>Main</type>
       <value>FlexContainer</value>
-      <webElementGuid>f5caf67b-069d-44ec-b318-767cb71326ca</webElementGuid>
+      <webElementGuid>550777bd-1dc6-42fb-b608-a7ebb89a6a8c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>kformname</name>
       <type>Main</type>
       <value>frmBcclCreateTransfer</value>
-      <webElementGuid>29dae126-2b27-4063-91ab-a681012ffe0d</webElementGuid>
+      <webElementGuid>c8aae846-2d1d-41a8-a062-ca91dcbe3898</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>kmasterid</name>
       <type>Main</type>
       <value>DropDownAccounts</value>
-      <webElementGuid>bf88f2a3-b67a-426b-8e28-3bf73bff328c</webElementGuid>
+      <webElementGuid>cb720884-1dd8-47e5-baa1-519f5486d274</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -70,7 +74,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Label$ 10.078.953,56</value>
-      <webElementGuid>b2293033-98e5-47c3-9ee1-c27343b5bbad</webElementGuid>
+      <webElementGuid>d1137b11-c1ba-4e07-9dc8-2aa6acefb0e0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;frmBcclCreateTransfer_DropDownAccounts_flxOption7flxAmountCointainer&quot;)</value>
-      <webElementGuid>362c43cd-8784-4944-ba05-7bb29bbf652b</webElementGuid>
+      <webElementGuid>3147bd28-b745-4bf2-8707-a13d5bed6f22</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//div[@id='frmBcclCreateTransfer_DropDownAccounts_flxOption7flxAmountCointainer']</value>
-      <webElementGuid>4f79b2c9-eb7c-4054-bd8c-9217a82f4718</webElementGuid>
+      <webElementGuid>99265d84-6f74-4d98-bbb8-d203ef81ab46</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>(//div[@id='flexcontainer_wrapper']/div)[271]</value>
-      <webElementGuid>ab31424e-dea5-47a0-8d3d-70f441edb52a</webElementGuid>
+      <webElementGuid>ede71113-935e-4277-bc9b-1d626b4b4e9c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='CC $ 056-515055/0'])[1]/following::div[3]</value>
-      <webElementGuid>e615192d-2370-4570-acde-a2f59a6625c3</webElementGuid>
+      <webElementGuid>920109ff-f518-452f-ba71-54b39765250e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)=''])[8]/following::div[5]</value>
-      <webElementGuid>4cfece5a-21c7-4bba-ad1f-8c2a567075ab</webElementGuid>
+      <webElementGuid>e3e1896f-4952-464c-adff-bc571ce7a345</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[7]/div/div/div/div/div/div[2]/div/div</value>
-      <webElementGuid>ec08935e-8d65-4099-8e5e-b33c54dcda44</webElementGuid>
+      <webElementGuid>e74264a4-33d2-42f9-8b97-5e8b08155a5b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,6 +130,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[@id = 'frmBcclCreateTransfer_DropDownAccounts_flxOption7flxAmountCointainer' and (text() = 'Label$ 10.078.953,56' or . = 'Label$ 10.078.953,56')]</value>
-      <webElementGuid>2928ed46-f92d-4e2e-87b3-3705fa7bac67</webElementGuid>
+      <webElementGuid>89740f47-0bea-40ef-b502-e05cb461742f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>txtTrxProgramadasExitoBeneficiarioDolar</name>
+   <tag></tag>
+   <elementGuidId>2d8f733b-7f8b-41b2-b8e9-0a8069037c37</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='frmBcclConfirmTransfer_TransferMessage_rtxMessageOne']/b</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#frmBcclConfirmTransfer_TransferMessage_rtxMessageOne > b</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>b</value>
+      <webElementGuid>fc570a3f-cd41-465c-bc0b-0fea7ea2f7e6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>ANNETTA LUCIANA DOLAR</value>
+      <webElementGuid>d207aa96-76c4-4926-98dc-946ff6de8107</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;frmBcclConfirmTransfer_TransferMessage_rtxMessageOne&quot;)/b[1]</value>
+      <webElementGuid>7817fdd8-8b8d-470a-8724-06528ddaa312</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='frmBcclConfirmTransfer_TransferMessage_rtxMessageOne']/b</value>
+      <webElementGuid>c666a4cf-4786-4358-b2a5-119d2566802c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Transferencia programada con éxito'])[1]/following::b[1]</value>
+      <webElementGuid>14920e34-d5f5-4488-845e-1a23b2cbb37c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='U$S 0,50'])[3]/preceding::b[1]</value>
+      <webElementGuid>36694788-63cd-49cd-ac63-508b31295f45</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='AL'])[1]/preceding::b[2]</value>
+      <webElementGuid>a0c63a26-8404-49b5-8e11-d7d0bfb004c8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/b</value>
+      <webElementGuid>130c59d0-c6d4-4624-840d-79d6726536d1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//b[(text() = 'ANNETTA LUCIANA DOLAR' or . = 'ANNETTA LUCIANA DOLAR')]</value>
+      <webElementGuid>f67bf123-3467-46c5-bf68-92eeb7633380</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

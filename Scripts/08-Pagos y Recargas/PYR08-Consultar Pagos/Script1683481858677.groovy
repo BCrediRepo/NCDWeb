@@ -26,19 +26,43 @@ import javax.swing.JOptionPane
 
 //-------------------Conecta a base de datos--------------------------------------------
 def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 13976407"
+def vQuery1 = "SELECT * FROM Labels WHERE Id = 82"
+def vQuery2 = "SELECT * FROM Labels WHERE Id = 83"
+def vQuery3 = "SELECT * FROM Labels WHERE Id = 84"
+def vQuery4 = "SELECT * FROM Labels WHERE Id = 85"
+def vQuery5 = "SELECT * FROM Labels WHERE Id = 86"
+def vQuery6 = "SELECT * FROM Labels WHERE Id = 87"
 
 String vDNI = null
 String vClave = null
 String vUsuario = null
+String vFecha = null
+String vServicio = null
+String vAnotacion = null
+String vOperacion = null
+String vCuenta = null
+String vImporte = null
 
 CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
 
 //Consulta a la base de datos
 ResultSet vResult = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery)
+ResultSet vResult1 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery1)
+ResultSet vResult2 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery2)
+ResultSet vResult3 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery3)
+ResultSet vResult4 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery4)
+ResultSet vResult5 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery5)
+ResultSet vResult6 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery6)
 
 vDNI = vResult.getString(2)
 vUsuario = vResult.getString(3)
 vClave = vResult.getString(4)
+vFecha = vResult1.getString(3)
+vServicio = vResult2.getString(3)
+vAnotacion = vResult3.getString(3)
+vOperacion = vResult4.getString(3)
+vCuenta = vResult5.getString(3)
+vImporte = vResult6.getString(3)
 
 //Cierre de la conexion
 CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
@@ -58,16 +82,41 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbServicios y Tar
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/mnuPYRPagosRecargas'))
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/lnkPYRVerHistorialPagos'))
 
+//Selecciona fecha desde en el calendario
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/icoPYRCalendarioFechaDesdeHitorialPagos'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRCalendarioMesHistorialPagos'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRCalendarioMesDesdeHistorialPagos'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRCalendarioAnioDesdeHistorialPagos'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/icoPYRCalendarioAceptarFechaDesde'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/icoPYRCalendarioDiaDesdeHistorialPagos'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYRBuscarHistorialPagos'))
 
-/*
 //Cliquea en el menu desplegable
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/mnuPYRServicioAdheridoHistorial'))
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRVisaArgentina'))
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYRBuscarHistorialPago'))
-*/
+//WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/mnuPYRServicioAdheridoHistorial'))
+//WebUI.scrollToElement(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRVisaArgentina'), 10)
+//WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRServicioAdheridoMenu'))
+//WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYRBuscarHistorialPago'))
+
+//Valida titulos de la tabla
+WebUI.delay(10)
+WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRListaHistorialFecha'), vFecha)
+WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRListaHistorialServicio'), vServicio)
+WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRListaHistorialAnotacinPersonal'), vAnotacion)
+WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRListaHistorialNroOperacin'), vOperacion)
+WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRListaHistorialCuentaOrigen'), vCuenta)
+WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRListaHistorialImporte'), vImporte)
+
+//Valida Resultado de la Busqueda
+WebUI.verifyElementVisible(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRListaHistorialFecha'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRListaHistorialServicioAdherido'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRListaHistorialAnotacionPersonal'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRListaHistorialNroOperacion'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRListaHistorialCuentaOrigen'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRListaHistorialImporte'))
+
 //Valida que coincidan ambos nombres del servicio seleccionado
-WebUI.callTestCase(findTestCase("UTL01-VerifyPDFKeywords"), null)
-println("Vuelve al caso de prueba principal")
+//WebUI.callTestCase(findTestCase("UTL01-VerifyPDFKeywords"), null)
+//println("Vuelve al caso de prueba principal")
 
 
 

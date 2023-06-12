@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>txtTrxProgramadasExitoBeneficiario</name>
+   <tag></tag>
+   <elementGuidId>7f1540bc-17fd-4b0b-9c52-cc45e0622827</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='frmBcclConfirmTransfer_TransferMessage_rtxMessageOne']/b</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#frmBcclConfirmTransfer_TransferMessage_rtxMessageOne > b</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>b</value>
+      <webElementGuid>6f60c3ed-c169-4d83-bc2c-47035ceec187</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Cristinaaa Arjones</value>
+      <webElementGuid>91237806-d127-4024-969e-ccaffd5d9f84</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;frmBcclConfirmTransfer_TransferMessage_rtxMessageOne&quot;)/b[1]</value>
+      <webElementGuid>c03efe79-b4ec-4e16-ae03-8fbbdef1cb3d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='frmBcclConfirmTransfer_TransferMessage_rtxMessageOne']/b</value>
+      <webElementGuid>9b63f73c-7fc7-44c7-a32a-bac26cebac6b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Transferencia programada con éxito'])[1]/following::b[1]</value>
+      <webElementGuid>feda5269-819d-45b9-8407-df1d50f05cc5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='$ 0,50'])[3]/preceding::b[1]</value>
+      <webElementGuid>99729496-0afa-44da-9484-679c6845c779</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CA'])[1]/preceding::b[2]</value>
+      <webElementGuid>192c15e3-6393-4e64-9d77-d375fa37399b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/b</value>
+      <webElementGuid>7726e501-5006-4717-b4c2-ee62658048f3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//b[(text() = 'Cristinaaa Arjones' or . = 'Cristinaaa Arjones')]</value>
+      <webElementGuid>3a623e5a-efdd-494e-97ad-6485fa8234dc</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

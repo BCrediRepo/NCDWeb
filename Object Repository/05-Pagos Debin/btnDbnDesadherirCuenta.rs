@@ -6,15 +6,16 @@
    <elementGuidId>2719b126-eea7-42ba-97a6-2b59e0535186</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>id(&quot;frmDebinAdhesionBccl_segAccountsToAdhere&quot;)/ul[1]/li[@class=&quot;seg2Normal&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxAccountsDebinRow_flxAccountsDebinRow&quot;]/div[@class=&quot;kcell middlecenteralignsknBtnSecondary&quot;]/input[@id=&quot;flxAccountsDebinRow_btnUnattach&quot;][count(. | //*[@id = 'flxAccountsDebinRow_btnUnattach' and @kuid = '1D284314-4264-40E1-A928-80B58CF22D52' and @type = 'button' and @value = 'Desadherir']) = count(//*[@id = 'flxAccountsDebinRow_btnUnattach' and @kuid = '1D284314-4264-40E1-A928-80B58CF22D52' and @type = 'button' and @value = 'Desadherir'])]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>(//input[@id='flxAccountsDebinRow_btnUnattach'])[2]</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>id(&quot;frmDebinAdhesionBccl_segAccountsToAdhere&quot;)/ul[1]/li[@class=&quot;seg2Normal&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxAccountsDebinRow_flxAccountsDebinRow&quot;]/div[@class=&quot;kcell middlecenteralignsknBtnSecondary&quot;]/input[@id=&quot;flxAccountsDebinRow_btnUnattach&quot;][count(. | //*[@id = 'flxAccountsDebinRow_btnUnattach' and @kuid = '1D284314-4264-40E1-A928-80B58CF22D52' and @type = 'button' and @value = 'Desadherir']) = count(//*[@id = 'flxAccountsDebinRow_btnUnattach' and @kuid = '1D284314-4264-40E1-A928-80B58CF22D52' and @type = 'button' and @value = 'Desadherir'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -25,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>28a158a0-0deb-4caf-ab12-e40c387acfd2</webElementGuid>
+      <webElementGuid>dec46e9a-d3bd-42d8-a458-91fc90ef39b2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -33,7 +34,7 @@
       <name>id</name>
       <type>Main</type>
       <value>flxAccountsDebinRow_btnUnattach</value>
-      <webElementGuid>8f557e64-24c0-40f0-bf32-601b9014bc19</webElementGuid>
+      <webElementGuid>0f5913e4-2e99-4c9d-88d1-19c8f3cc2b47</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -41,7 +42,7 @@
       <name>kwidgettype</name>
       <type>Main</type>
       <value>Button</value>
-      <webElementGuid>e0b9de89-054a-4aa9-b5fd-275f690c6fbe</webElementGuid>
+      <webElementGuid>0d8b204e-07c4-47cb-b4f7-00eb5197c990</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -49,7 +50,7 @@
       <name>kformname</name>
       <type>Main</type>
       <value>flxAccountsDebinRow</value>
-      <webElementGuid>60d9996c-8652-425f-9670-6ce888c2c2f7</webElementGuid>
+      <webElementGuid>a54d5b98-7cd1-4365-97fa-fea2e66fd551</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -57,7 +58,7 @@
       <name>kcontainerid</name>
       <type>Main</type>
       <value>segAccountsToAdhere</value>
-      <webElementGuid>c4420ffa-3e11-414c-b2ac-4d11cbb70ad0</webElementGuid>
+      <webElementGuid>5c193972-e29f-470b-a46b-62a3afd70782</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -65,7 +66,7 @@
       <name>kuid</name>
       <type>Main</type>
       <value>1D284314-4264-40E1-A928-80B58CF22D52</value>
-      <webElementGuid>98931e91-9ff7-4c7d-95c9-3fc317f208ba</webElementGuid>
+      <webElementGuid>19bb5fdd-ce58-4ca9-ab43-8f82cc738e63</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -73,7 +74,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>2a33e83d-d24f-4e99-a32a-3233186923ff</webElementGuid>
+      <webElementGuid>99480872-0458-4c80-a6e7-4d7cf6dbc6f5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -81,7 +82,7 @@
       <name>class</name>
       <type>Main</type>
       <value> sknBtnSecondary disableSelection</value>
-      <webElementGuid>a1517a08-1d65-4fa6-897a-a1f7760e4c66</webElementGuid>
+      <webElementGuid>4fe26c21-837e-4058-9e0b-d639923c2162</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -89,7 +90,7 @@
       <name>value</name>
       <type>Main</type>
       <value>Desadherir</value>
-      <webElementGuid>f3f05a60-3495-4c4d-b08d-3e950784ea74</webElementGuid>
+      <webElementGuid>30ccadb4-2ab0-4a05-bdd6-4c8cea0df98f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -97,7 +98,7 @@
       <name>kprogressskin</name>
       <type>Main</type>
       <value>sknBtnSecondary</value>
-      <webElementGuid>81bb7ccc-d3e4-4ee4-af7b-061dcd34a30d</webElementGuid>
+      <webElementGuid>bf322568-06cf-4179-aae7-8f83e5bd4492</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -105,7 +106,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;frmDebinAdhesionBccl_segAccountsToAdhere&quot;)/ul[1]/li[@class=&quot;seg2Normal&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxAccountsDebinRow_flxAccountsDebinRow&quot;]/div[@class=&quot;kcell middlecenteralignsknBtnSecondary&quot;]/input[@id=&quot;flxAccountsDebinRow_btnUnattach&quot;]</value>
-      <webElementGuid>c425a127-13bb-4da5-83e8-ec49c46f915b</webElementGuid>
+      <webElementGuid>4c980e8a-64fa-4cf4-9ea0-04d0dde1822c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -113,7 +114,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//input[@id='flxAccountsDebinRow_btnUnattach'])[2]</value>
-      <webElementGuid>6d06c489-b4b2-4361-9863-e53dd6543c4f</webElementGuid>
+      <webElementGuid>678fc3cd-3630-40ad-a590-76d30f5f2762</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -121,7 +122,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>(//div[@id='flxAccountsDebinRow_flxAccountsDebinRow']/div[5]/input)[2]</value>
-      <webElementGuid>7813dff5-f64e-49f1-8864-f86c3be3237f</webElementGuid>
+      <webElementGuid>8b822b35-b8f7-4001-be51-3cad43afb4b8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -129,7 +130,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[2]/div/div/div[5]/input</value>
-      <webElementGuid>e4821ca8-203e-41d7-84b2-a175b2a4bcc7</webElementGuid>
+      <webElementGuid>a2b81239-9206-43e2-bbb6-690819904a51</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -137,6 +138,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@id = 'flxAccountsDebinRow_btnUnattach' and @type = 'button']</value>
-      <webElementGuid>97053fb9-7d53-47b4-8b26-c294efd910ef</webElementGuid>
+      <webElementGuid>286e699f-133c-4e0c-99bb-0e3a1d0a37d4</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

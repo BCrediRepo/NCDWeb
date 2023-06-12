@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>FC03-Consultar Transferencias Recibidas POS-X</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1116c3df-4b60-4da4-a584-54ed97556854</testCaseGuid>
+</TestCaseEntity>

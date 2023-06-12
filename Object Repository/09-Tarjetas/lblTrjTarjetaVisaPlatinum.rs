@@ -6,15 +6,19 @@
    <elementGuidId>ee354d9f-5d6e-4aa2-adf0-261a4c5f2e71</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='frmBcclCardDetails_lblCardDetailsTitle']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#frmBcclCardDetails_lblCardDetailsTitle</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;frmBcclCardDetails_lblCardDetailsTitle&quot;)[count(. | //*[@id = 'frmBcclCardDetails_lblCardDetailsTitle' and (text() = 'Tarjeta Visa Platinum' or . = 'Tarjeta Visa Platinum')]) = count(//*[@id = 'frmBcclCardDetails_lblCardDetailsTitle' and (text() = 'Tarjeta Visa Platinum' or . = 'Tarjeta Visa Platinum')])]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='frmBcclCardDetails_lblCardDetailsTitle']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>50374d83-9d54-4508-93dc-f6610fff99c6</webElementGuid>
+      <webElementGuid>f26024da-c8d5-4c54-b247-8659d6611080</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +34,7 @@
       <name>id</name>
       <type>Main</type>
       <value>frmBcclCardDetails_lblCardDetailsTitle</value>
-      <webElementGuid>89cc8cf3-c2de-42fe-9cfb-476e6fc7972c</webElementGuid>
+      <webElementGuid>b879a082-d57a-4aa7-95c2-332f3a115c39</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <name>kwidgettype</name>
       <type>Main</type>
       <value>Label</value>
-      <webElementGuid>f10697c2-7582-4ae0-ac8e-f2e9279874bc</webElementGuid>
+      <webElementGuid>e4715630-be50-408b-9cbc-fc810eeda198</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +50,7 @@
       <name>kformname</name>
       <type>Main</type>
       <value>frmBcclCardDetails</value>
-      <webElementGuid>37bfa8e9-d873-4739-a9c0-c7805d7bd328</webElementGuid>
+      <webElementGuid>d7c3327b-4b71-4a83-935e-6ab0c6babb5a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>class</name>
       <type>Main</type>
       <value> sknLblTitleSection cntmiddleleftalign disableSelection</value>
-      <webElementGuid>64e145a3-1344-4b1b-938e-af9e506e0467</webElementGuid>
+      <webElementGuid>fdc36bcd-b6a8-4ed6-8248-e942e6564a6c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,15 +66,15 @@
       <name>text</name>
       <type>Main</type>
       <value>Tarjeta Visa Platinum</value>
-      <webElementGuid>90c7f568-2b3e-4de2-9ccc-f31b20852110</webElementGuid>
+      <webElementGuid>c36c4ef6-cdb1-425a-8164-f2b61b621f82</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;frmBcclCardDetails_lblCardDetailsTitle&quot;)</value>
-      <webElementGuid>b44eccbb-8376-43a8-98b9-11a098470779</webElementGuid>
+      <webElementGuid>a575e7bf-6b98-49f1-bbfa-26b02ce75748</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//div[@id='frmBcclCardDetails_lblCardDetailsTitle']</value>
-      <webElementGuid>d365e37c-eb42-4d65-8fdc-deca5aa6b712</webElementGuid>
+      <webElementGuid>7536a252-90be-4d59-98f1-d6c53ce2f101</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='frmBcclCardDetails_flxLeftContainer']/div[2]/div</value>
-      <webElementGuid>0468a060-5feb-48ea-bbaa-c5097b2d8293</webElementGuid>
+      <webElementGuid>8953c86b-18e5-4fbe-93a8-522d7b64a762</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)=''])[1]/following::div[2]</value>
-      <webElementGuid>ed50c08d-4508-4efd-a423-c7081e6d5d81</webElementGuid>
+      <webElementGuid>65e54b21-7f31-4659-91d1-8e144c82df43</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Mis cuentas'])[1]/following::div[42]</value>
-      <webElementGuid>79d319db-84ea-4fab-8391-4be6f37ae457</webElementGuid>
+      <webElementGuid>9a2ff203-f0b0-42f4-b324-ff57697cab6b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)=''])[1]/preceding::div[1]</value>
-      <webElementGuid>9d71f9af-948c-45a3-8147-5f17e3f9ff78</webElementGuid>
+      <webElementGuid>b2901562-bed0-4aa4-b688-a0cfad3900cc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Número de tarjeta'])[1]/preceding::div[32]</value>
-      <webElementGuid>a4dbd4c5-d40b-4c7a-b6bd-84d9585df6d7</webElementGuid>
+      <webElementGuid>7ff3e952-a871-4844-938c-09a196fa46d4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Tarjeta Visa Platinum']/parent::*</value>
-      <webElementGuid>f348b44f-dcf3-43c7-b209-307ec019ca97</webElementGuid>
+      <webElementGuid>1d358a64-62f9-4d8a-af9b-23bd3abcb230</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +138,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div</value>
-      <webElementGuid>e8b2776d-03ff-4339-a591-f866626563ce</webElementGuid>
+      <webElementGuid>1e1fab4d-3029-4552-a63e-489c7006089f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,6 +146,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[@id = 'frmBcclCardDetails_lblCardDetailsTitle' and (text() = 'Tarjeta Visa Platinum' or . = 'Tarjeta Visa Platinum')]</value>
-      <webElementGuid>59b14c39-aef5-479c-8872-134ec0a26ca0</webElementGuid>
+      <webElementGuid>692aa2e1-8d77-40ec-8161-a50a52de7140</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

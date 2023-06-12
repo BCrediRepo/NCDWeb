@@ -63,7 +63,7 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transfe
 WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrxMisCuentasCredicoop'))
 
 //Valida Cuenta Pesos 
-CustomKeywords.'pkgUtilities.kwyUtility.comparacionListadoTrxPropias'(60)
+CustomKeywords.'pkgUtilities.kwyUtility.comparacionListadoTrxPropiasPesos'(60)
 
 if (GlobalVariable.vMonedaCta == '$' && GlobalVariable.vMonedaTrx == '$'){
 	println("La cuenta seleccionada corresponde a una moneda en pesos.")

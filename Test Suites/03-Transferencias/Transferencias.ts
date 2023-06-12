@@ -64,14 +64,14 @@
       <guid>b7281aaa-01c8-4dd9-8d1c-ce6afb37d502</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/04-Transferencias/TRF07-Transferencias Posdatadas Credicoop Pesos POS</testCaseId>
+      <testCaseId>Test Cases/04-Transferencias/TRF07-Transferencias Postdatadas Credicoop Pesos POS</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>53ff70da-6f55-4b3d-b9e3-84c139efae26</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/04-Transferencias/TRF08-Transferencias Posdatadas Credicoop Dolares POS</testCaseId>
+      <testCaseId>Test Cases/04-Transferencias/TRF08-Transferencias Postdatadas Credicoop Dolares POS</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

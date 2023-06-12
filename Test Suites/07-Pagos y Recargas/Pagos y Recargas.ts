@@ -22,7 +22,7 @@
       <guid>2c51fd2f-7c79-48fd-9e3a-ac74bb7c9959</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/08-Pagos y Recargas/PYR02-Validacion Monto Elegido Erroneo NEG</testCaseId>
+      <testCaseId>Test Cases/08-Pagos y Recargas/PYR02-Validacion Monto Elegido Erroneo NEG-X</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -57,7 +57,7 @@
       <guid>ded1acb2-3e70-42f5-a210-7197e4442c40</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/08-Pagos y Recargas/PYR07-Consultar Servicios Adheridos POS</testCaseId>
+      <testCaseId>Test Cases/08-Pagos y Recargas/PYR07-Consultar Servicios Adheridos POS-X</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

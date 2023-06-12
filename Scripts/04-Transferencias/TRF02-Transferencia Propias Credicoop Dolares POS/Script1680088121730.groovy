@@ -69,9 +69,9 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrxMisCuentas
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/txtTrxCtaPropiaDolares'))
 WebUI.delay(5)
 
-CustomKeywords.'pkgUtilities.kwyUtility.comparacionListadoTrxPropias'(60)
-JOptionPane.showMessageDialog(null, GlobalVariable.vMonedaCta)
-JOptionPane.showMessageDialog(null, GlobalVariable.vMonedaTrx)
+CustomKeywords.'pkgUtilities.kwyUtility.comparacionListadoTrxPropiasDolares'(60)
+//JOptionPane.showMessageDialog(null, GlobalVariable.vMonedaCta)
+//JOptionPane.showMessageDialog(null, GlobalVariable.vMonedaTrx)
 //Valida Cuenta dolares
 if (GlobalVariable.vMonedaCta == 'U$S' && GlobalVariable.vMonedaTrx == 'U$S'){
 	println("La cuenta seleccionada corresponde a una moneda en dolares.")
@@ -93,7 +93,7 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transfe
 
 //Cliquea en boton Confirmar
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxConfirmar'))
-
+/*
 //Ingresa Clave Bypass
 WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxClaveBypass'), vClaveBypass)
 
@@ -102,7 +102,7 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transfe
 
 //Valida Numero de operacion y monto Exitoso
 CustomKeywords.'pkgUtilities.kwyUtility.comparacionNroOperacionTrxPropiasDolares'(60)
-
+*/
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 

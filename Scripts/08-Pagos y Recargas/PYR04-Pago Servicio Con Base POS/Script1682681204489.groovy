@@ -64,11 +64,12 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbServicios y Tar
 //Adherir Servicio
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYRAdherirNuevoServicio'))
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/mnuPYRCategoriaAdherirServicio'))
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRInternetTelecomunicaciones'))
+WebUI.scrollToElement(findTestObject('Object Repository/08-Pagos y Recargas/txtMnuAdherirServicioInternet'), 3)
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/txtMnuAdherirServicioInternet'))
 
 //Ingresa Ente
 WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRIngresoEnte'), vEnte)
-WebUI.delay(5)
+WebUI.delay(10)
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/lnkPYREcowifi'))
 
 //Ingresa el código
@@ -78,12 +79,25 @@ WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYRAdherirS
 //Valida pantalla de adhesión y paga el servicio
 //WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRServicioAdheridoExito'), vServicioAdherido)
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYRPagarAhoraSolapa'))
-//Valida Pantalla Pago
+
 //Confirma Pago
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYRConfirmarPagoServicio'))
 WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRFirmaByPass'), vClave)
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYRConfirmarByPassPago'))
 
+//Nota: Validar Pantalla Éxito
 
+//---------------------------------------------------------------------------------------------------------------------
+//Control de fin de script
+
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/PYR04-PagoServicioConBasePOS.png')
+}
+
+@com.kms.katalon.core.annotation.TearDownIfPassed
+void fPassScript() {
+	CustomKeywords.'pkgUtilities.kwyUtility.fPassStatus'()
+}
 
 

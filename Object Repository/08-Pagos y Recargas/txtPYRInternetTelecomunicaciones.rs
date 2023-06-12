@@ -6,15 +6,15 @@
    <elementGuidId>aa8d059f-c0d3-4a4b-aaed-7fb1b0ca6fca</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='frmBcclServicesPay_AddEntePanel_AddEnte_SearchRubros_flxOptionCommon36lblOptionTitle']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#frmBcclServicesPay_AddEntePanel_AddEnte_SearchRubros_flxOptionCommon36lblOptionTitle</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='frmBcclServicesPay_AddEntePanel_AddEnte_SearchRubros_flxOptionCommon36lblOptionTitle']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>dc3ea1aa-0ca8-4874-ab60-6a0c390174d5</webElementGuid>
+      <webElementGuid>287e540c-6efb-414f-b555-987b4bd30e50</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>id</name>
       <type>Main</type>
       <value>frmBcclServicesPay_AddEntePanel_AddEnte_SearchRubros_flxOptionCommon36lblOptionTitle</value>
-      <webElementGuid>4d3efe5d-da78-413e-9e95-141b8ec5bd42</webElementGuid>
+      <webElementGuid>fb1de28e-2b44-4946-b2af-f90b7f460e7c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>kwidgettype</name>
       <type>Main</type>
       <value>Label</value>
-      <webElementGuid>143f6561-e2f8-47e3-b0cc-3c7565247593</webElementGuid>
+      <webElementGuid>cdba2734-0970-441c-b766-6e41359a6cf7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>kformname</name>
       <type>Main</type>
       <value>frmBcclServicesPay</value>
-      <webElementGuid>15d4c502-d413-4756-96e9-859f3b2a41f5</webElementGuid>
+      <webElementGuid>f56ea2cf-fcce-4535-8cf7-a9b150d9df5b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>kmasterid</name>
       <type>Main</type>
       <value>AddEntePanel_AddEnte_SearchRubros</value>
-      <webElementGuid>32698748-0ce3-4586-ac17-471f17dcbf1e</webElementGuid>
+      <webElementGuid>5731c2a3-151e-4fab-99a7-2dc4aeee155c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>class</name>
       <type>Main</type>
       <value>disableSelection sknLblAccountTitleDropDown cntmiddleleftalign</value>
-      <webElementGuid>86e42055-f1ae-480c-820c-0d77fc5d6e0b</webElementGuid>
+      <webElementGuid>74afb335-3eb0-430b-a7f1-1111fc368b6b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Internet y Telecomunicaciones</value>
-      <webElementGuid>a46f692e-2d08-4f5b-8e13-5cb5ed9af5d3</webElementGuid>
+      <webElementGuid>7d46e788-fe08-4405-9c9c-ff8998d511d3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;frmBcclServicesPay_AddEntePanel_AddEnte_SearchRubros_flxOptionCommon36lblOptionTitle&quot;)</value>
-      <webElementGuid>eb6988a1-63a8-424d-8c21-dc4ce1637771</webElementGuid>
+      <webElementGuid>1ff81cbd-e083-41a8-a691-9c6deb5093c9</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//div[@id='frmBcclServicesPay_AddEntePanel_AddEnte_SearchRubros_flxOptionCommon36lblOptionTitle']</value>
-      <webElementGuid>cf215e75-a403-467a-a3f0-cece5c2337dc</webElementGuid>
+      <webElementGuid>88dc820e-fd19-4bdb-8f66-995c99836c25</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='frmBcclServicesPay_AddEntePanel_AddEnte_SearchRubros_flxOptionCommon36flxOptionInfo']/div/div</value>
-      <webElementGuid>8f7379ab-e540-41d5-a504-682b3d419081</webElementGuid>
+      <webElementGuid>7b9af614-52dc-4d47-ace1-6742458e1de6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)=''])[33]/following::div[8]</value>
-      <webElementGuid>521a3b8a-ab38-4bda-ad3b-8f95ef5f1502</webElementGuid>
+      <webElementGuid>9655acd1-fcd9-4589-aac3-b83be2a2c24b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Aportes AFJP'])[1]/following::div[10]</value>
-      <webElementGuid>fbee25ef-6995-499c-a27d-114d7fc600f2</webElementGuid>
+      <webElementGuid>11ae77a4-7e53-4d56-b1cf-1c60971a56cb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)=''])[34]/preceding::div[1]</value>
-      <webElementGuid>89e62553-5290-4eb7-900d-5512e7f9480c</webElementGuid>
+      <webElementGuid>30a56a6f-48ca-4d5d-b33b-b495c6728b5c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Planes de Ahorro'])[1]/preceding::div[3]</value>
-      <webElementGuid>6fbc2a10-2ea6-4e3f-8e7e-d5d29d3a2886</webElementGuid>
+      <webElementGuid>1673958a-521b-4a40-a6f6-9eeea873b2b2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +134,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Internet y Telecomunicaciones']/parent::*</value>
-      <webElementGuid>773364ea-d626-42ca-b3c8-fc5b2e34b70c</webElementGuid>
+      <webElementGuid>2c588850-72a0-47ae-acc8-c1041c0cc2a5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +142,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[16]/div/div/div/div/div/div/div</value>
-      <webElementGuid>2bdbc8f4-c922-493d-93f1-d1a03efa2406</webElementGuid>
+      <webElementGuid>42f37cd0-06c9-4fcb-a3a0-8fa0cceefb02</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,6 +150,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[@id = 'frmBcclServicesPay_AddEntePanel_AddEnte_SearchRubros_flxOptionCommon36lblOptionTitle' and (text() = 'Internet y Telecomunicaciones' or . = 'Internet y Telecomunicaciones')]</value>
-      <webElementGuid>17425268-5aa9-4db2-8463-5a7cfc880c06</webElementGuid>
+      <webElementGuid>897420b1-a0db-43dd-8937-b77acf4698df</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

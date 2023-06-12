@@ -33,7 +33,7 @@ String vDNI = null
 String vClave = null
 String vUsuario = null
 String vTipoTrf = null
-String vValorMonto = 1
+String vValorMonto = 0.5
 
 CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
 
@@ -70,8 +70,12 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkTrxCuentaBene
 WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkTrxIniciarTransferenciaBeneficiario'))
 
 //Selecciona Cuenta Corriente
+//NOTA: Agregar el atributo con "innerHTML"
 WebUI.click(findTestObject('Object Repository/04-Transferencias/mnuTrxCuentaDebito'))
 WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxCuentaDebito'))
+
+/*String vCuentaCorriente = findTestObject('Object Repository/04-Transferencias/mnuTrxCuentaDebito')
+String vAtributo = vCuentaCorriente.getAttribute("innerHTML")*/
 
 //Ingresa Monto
 WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxMontoFormulario'))

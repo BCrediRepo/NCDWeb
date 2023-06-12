@@ -26,7 +26,7 @@ import javax.swing.JOptionPane
 
 //-------------------Conecta a base de datos--------------------------------------------
 def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 13976407"
-def vQuery2 = "SELECT * FROM TipoTrf WHERE Nombre = 'Trf Judicial'"
+def vQuery2 = "SELECT * FROM Parametros WHERE Nombre = 'CuentaOtrosBancos'"
 
 String vDNI = null
 String vClave = null
@@ -65,6 +65,7 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Benefic
 WebUI.setText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrxBuscarBeneficiarioTipo'), vTipoTrf)
 
 //Inicia la transferencia
+WebUI.delay(5)
 WebUI.click(findTestObject('Object Repository/04-Transferencias/mnuTrxDesplegableJudicialPesos'))
 WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxNuevaTransferenciaJudicial'))
 
@@ -88,8 +89,12 @@ WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxClaveByp
 //Confirma Operación
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxConfirmarBypass'))
 
-//Valida Destinatario
-//WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/txtTrxBeneficiarioDestino'))
+//Valida Numero de operacion y monto Exitoso
+CustomKeywords.'pkgUtilities.kwyUtility.comparacionNroOperacionTrxJudicialesOtrosBancos'(60)
+
+//Cliquea en descargar comprobante y vuelve al inicio
+WebUI.click(findTestObject('Object Repository/04-Transferencias/btnTrxJudicialDescrgarComprobante'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/btnTrxJudicialVolverTrxComprobante'))
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

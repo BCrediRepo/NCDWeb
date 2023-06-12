@@ -66,6 +66,7 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Benefic
 WebUI.setText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrxBuscarBeneficiarioTipo'), vTipoTrf)
 
 //Inicia la transferencia
+WebUI.delay(5)
 WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkTrxCuentaBenefJudicialPesos'))
 WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkTrxIniciarTransferenciaBeneficiario'))
 
@@ -89,8 +90,12 @@ WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxClaveByp
 //Confirma Operación
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxConfirmarBypass'))
 
-//Valida Destinatario
-//WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/txtTrxBeneficiarioDestino'))
+//Valida Numero de operacion y monto Exitoso
+CustomKeywords.'pkgUtilities.kwyUtility.comparacionNroOperacionTrxJudicialesCredicoop'(60)
+
+//Cliquea en descargar comprobante y vuelve al inicio
+WebUI.click(findTestObject('Object Repository/04-Transferencias/btnTrxJudicialDescrgarComprobante'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/btnTrxJudicialVolverTrxComprobante'))
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
