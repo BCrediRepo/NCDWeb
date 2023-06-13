@@ -118,5 +118,16 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/08-Pagos y Recargas
 //WebUI.callTestCase(findTestCase("UTL01-VerifyPDFKeywords"), null)
 //println("Vuelve al caso de prueba principal")
 
+//---------------------------------------------------------------------------------------------------------------------
+//Control de fin de script
 
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/PYR08-ConsultarPagos.png')
+}
+
+@com.kms.katalon.core.annotation.TearDownIfPassed
+void fPassScript() {
+	CustomKeywords.'pkgUtilities.kwyUtility.fPassStatus'()
+}
 

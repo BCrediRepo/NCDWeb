@@ -26,19 +26,25 @@ import javax.swing.JOptionPane
 
 //-------------------Conecta a base de datos--------------------------------------------
 def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 13976407"
+def vQuery1 = "SELECT * FROM Labels WHERE Id = 95"
 
 String vDNI = null
 String vClave = null
 String vUsuario = null
+String vMonto = 100000000
+String vErrorMonto = null
+//String vReferencia = 0123456789
 
 CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
 
 //Consulta a la base de datos
 ResultSet vResult = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery)
+ResultSet vResult1 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery1)
 
 vDNI = vResult.getString(2)
 vUsuario = vResult.getString(3)
 vClave = vResult.getString(4)
+vErrorMonto = vResult1.getString(3)
 
 //Cierre de la conexion
 CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
@@ -57,5 +63,24 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbServicios y Tar
 //Valida los datos
 CustomKeywords.'pkgUtilities.kwyUtility.comparacionListaDetallePago'(60)
 
+//Ingresa Monto y referencia
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRMontoPagoServicio'))
+WebUI.sendKeys(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRMontoPagoServicio'), vMonto)
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRReferenciaPagoServicio'))
 
+//Valida Monto erróneo y cierra Solapa 
+WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRMontoErroneo'), vErrorMonto)
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/icoPYRCerrarSolapaPagoServicios'))
 
+//---------------------------------------------------------------------------------------------------------------------
+//Control de fin de script
+
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/PYR02-ValidacionMontoElegidoErroneoNEG.png')
+}
+
+@com.kms.katalon.core.annotation.TearDownIfPassed
+void fPassScript() {
+	CustomKeywords.'pkgUtilities.kwyUtility.fPassStatus'()
+}
