@@ -29,7 +29,7 @@
       <guid>329a0981-aade-4749-89a4-b8ebd48d22c4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/08-Pagos y Recargas/PYR03-Pago Servicio Sin Base POS-X</testCaseId>
+      <testCaseId>Test Cases/08-Pagos y Recargas/PYR03-Pago Servicio Sin Base POS</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

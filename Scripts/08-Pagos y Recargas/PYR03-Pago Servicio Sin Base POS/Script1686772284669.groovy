@@ -30,7 +30,9 @@ def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 13976407"
 String vDNI = null
 String vClave = null
 String vUsuario = null
-def vMonto = 1
+String vMonto = 0.5
+String vEnte = "Iplan Networks"
+def vCodigo = "0474921"
 
 CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
 
@@ -55,29 +57,48 @@ CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbPagos y Recargas'))
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbServicios y Tarjetas'))
 
-//Valida los datos
-CustomKeywords.'pkgUtilities.kwyUtility.comparacionListaDetallePago'(60)
+//Adherir Servicio
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYRAdherirNuevoServicio'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/mnuPYRCategoriaAdherirServicio'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRTelefonia'))
+
+//Ingresa Ente
+WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRIngresoEnte'), vEnte)
+WebUI.delay(5)
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/lnkPYRIplanNetworks'))
+
+//Ingresa el código
+WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRCodigoPago'), vCodigo)
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYRAdherirServicioSolapa'))
+
+//Selecciona pagar
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYRPagarServicioSinBase'))
 
 //Ingresa Monto y confirma
-WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRMonto'), vMonto)
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYRConfirmaPago'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRFormularioPagoMonto'))
+WebUI.sendKeys(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRFormularioPagoMonto'), vMonto)
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/mnuPYRFormularioCuentaDebitar'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRFormularioCuentaDebitar'))
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYRFormularioConfirmarPago'))
 
 //Ingresa firma ByPass y confirma
-WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRByPass'), vClave)
-WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYRConfirmarByPass'))
+WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRPagoServicioClaveBypass'), vClave)
+WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYRConfirmarClaveBypass'))
 
-//Valida pantalla pago exitoso
+//Validar pantalla pago exitoso
 
+//NOTA: REEMPLAZAR CON SERVICIO SIN BASE MERCADO LIBRE CUANDO CIERREN BUG: BX-3319
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/PYR03-Pago Servicio Sin Base POS.png')
+	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/PYR03-PagoServicioSinBasePOS.png')
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgUtilities.kwyUtility.fPassStatus'()
 }
+

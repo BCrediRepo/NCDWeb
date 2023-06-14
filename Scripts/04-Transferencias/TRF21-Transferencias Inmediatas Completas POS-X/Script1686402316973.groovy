@@ -27,11 +27,12 @@ import javax.swing.JOptionPane
 //-------------------Conecta a base de datos--------------------------------------------
 def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 10833645"
 def vQuery1 = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 24823100"
+def vQuery2 = "SELECT * FROM Parametros WHERE Nombre = 'CBU 3'"
 
 String vDNI = null
 String vClave = null
 String vUsuario = null
-String vValorMonto = 1
+String vValorMonto = 10
 String vDNI1 = null
 String vClave1 = null
 String vUsuario1 = null
@@ -42,11 +43,15 @@ CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
 //Consulta a la base de datos
 ResultSet vResult = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery)
 ResultSet vResult1 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery1)
+ResultSet vResult2 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery2)
 
 vDNI = vResult.getString(2)
 vUsuario = vResult.getString(3)
 vClave = vResult.getString(4)
-vClaveBypass = vResult.getString(4)
+vDNI1 = vResult1.getString(2)
+vUsuario1 = vResult1.getString(3)
+vClave1 = vResult1.getString(4)
+vBenfTrf = vResult2.getString(2)
 
 //Cierre de la conexion
 CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
@@ -59,18 +64,22 @@ CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
 CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 
 //Obtiene el Saldo Inicial del Beneficiario Receptor
-//int vSaldoInicial = Integer.parseInt(WebUI.getAttribute(findTestObject("Object Repository/04-Transferencias/txtTrfSaldoInicialCuentaPesos"), "text"))
 String vSaldoInicial = WebUI.getText(findTestObject("Object Repository/04-Transferencias/txtTrfSaldoInicialCuentaPesos"))
+println vSaldoInicial
 //assert vSaldoInicial == '$ 23,21'
-//println vSaldoInicial
+
+//Lo transforma de String a Numero
 String vSaldoNuevo = vSaldoInicial.replace(",", ".")
 String vNumero = vSaldoNuevo.substring(2)
 System.out.println(vNumero)
 
+//Para Nro Entero
 //int vNumeroFinal = Integer.parseInt(vNumero)
-//System.out.println(vNumeroFinal)
 
-/*
+//Para Decimal
+float vNumeroFinal = Double.parseDouble(vNumero)
+System.out.println(vNumeroFinal)
+
 //Loguea con usuario Emisor
 CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI1, vClave1, vUsuario1)
 
@@ -101,23 +110,33 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrxTitularida
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxContinuarFormulario'))
 
 //Cliquea en boton Confirmar
-WebUI.click(findTestObject('Object Repository/04-Transferencias/btnTrxConfirmarTransferencias'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/btnTrxConfirmarTransferenciaInmediata'))
 
 //Ingresa Clave Bypass
 WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxClaveBypass'), vClave)
 
+
 //Confirma Operación
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxConfirmarBypass'))
 
+//Valida Pantalla Operación Exitosa
+
+
 //Valida destinatario y monto Exitoso
-CustomKeywords.'pkgUtilities.kwyUtility.comparacionDatosExitoPosdatadaPesos'(60)
+//CustomKeywords.'pkgUtilities.kwyUtility.comparacionDatosExitoPosdatadaPesos'(60)
 
 //Loguea con usuario Receptor
 CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 
 //Obtiene el Saldo Final del Beneficiario Receptor
-int vSaldoFinal = Integer.parseInt(WebUI.getAttribute(findTestObject("Object Repository/04-Transferencias/05-Postdatadas/txtTrxPostdtSaldoBenefReceptor"), "text"))
+ 
+String vSaldoFinal = WebUI.getText(findTestObject("Object Repository/04-Transferencias/txtTrfSaldoInicialCuentaPesos"))
 println vSaldoFinal
+/*
+//Lo transforma de String a Numero
+String vSaldoNuevo = vSaldoInicial.replace(",", ".")
+String vNumero = vSaldoNuevo.substring(2)
+System.out.println(vNumero)
 
 // Comparar el valor inicial con el valor final
 if (vSaldoFinal > vSaldoInicial) {
