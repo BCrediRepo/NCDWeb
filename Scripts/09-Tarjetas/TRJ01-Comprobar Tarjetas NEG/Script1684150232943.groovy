@@ -68,15 +68,15 @@ CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 
 //Valida titulos sin Tarjetas desde Dashboard
 WebUI.delay(5)
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjSinTarjetasDashboard'), vSinTarjDashboard)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjSinTarjetasDashboard'), vSinTarjDashboard, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Ingresa al módulo de Tarjetas
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTarjetas'))
 
 //Valida titulos sin Tarjetas desde seccion Tarjetas
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjSinTarjetasCredito'), vSinTarjCredito)
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjSinTarjetasDebito'), vSinTarjDebito)
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjSinTarjetasPrecargadas'), vSinPrecargadas)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjSinTarjetasCredito'), vSinTarjCredito, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjSinTarjetasDebito'), vSinTarjDebito, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjSinTarjetasPrecargadas'), vSinPrecargadas, FailureHandling.CONTINUE_ON_FAILURE)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

@@ -68,11 +68,11 @@ WebUI.click(findTestObject('Object Repository/09-Tarjetas/btnTrjDebitoGuardarLim
 //Nota: Agregar un if para que seleccione otro Límite si esta seleccionado
 
 //Ingresa firma Bypass
-WebUI.setText(findTestObject('Object Repository/09-Tarjetas/txtTrjDebitoLimiteConfirmarBypass'), vClave)
+WebUI.setText(findTestObject('Object Repository/09-Tarjetas/txtTrjDebitoLimiteConfirmarBypass'), vClave, FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.click(findTestObject('Object Repository/09-Tarjetas/btnTrjDebitoLimiteConfirmarBypass'))
 
 //Valida Datos y cierra la solapa
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/lblTrjDebitoModificarLimiteExitoso'), vLimiteExitoso)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/lblTrjDebitoModificarLimiteExitoso'), vLimiteExitoso, FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.click(findTestObject('Object Repository/09-Tarjetas/icoTrjDebitoModificarLimiteCerrarSolapa'))
 
 //---------------------------------------------------------------------------------------------------------------------

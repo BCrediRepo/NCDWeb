@@ -73,18 +73,18 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTarjetas'))
 CustomKeywords.'pkgUtilities.kwyUtility.comparacionDetalleTarjetaVisa'(60)
 
 //Valida los titulos de la solapa Movimientos
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjFechaMovimVisa'), vFechaMovim)
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjDescripcinMovimVisa'), vDescMovim)
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjMontoPesosMovimVisa'), vMontoPesos)
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjMontoDolaresMovimVisa'), vMontoDolar)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjFechaMovimVisa'), vFechaMovim, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjDescripcinMovimVisa'), vDescMovim, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjMontoPesosMovimVisa'), vMontoPesos, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjMontoDolaresMovimVisa'), vMontoDolar, FailureHandling.CONTINUE_ON_FAILURE)
 
 //NOTA: Agregar elemento del título Nombre/Tarjeta cuando corrijan bug
 
 //Valida los datos de los movimientos
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjFechaValorMov'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjNombreValorMov'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjMontoValorPesosMov'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjMontoValorDolarMov'), 10)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjFechaValorMov'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjNombreValorMov'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjMontoValorPesosMov'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjMontoValorDolarMov'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

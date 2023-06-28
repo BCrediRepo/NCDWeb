@@ -90,16 +90,16 @@ WebUI.click(findTestObject('Object Repository/09-Tarjetas/txtTrjDiaCalendario'))
 WebUI.click(findTestObject('Object Repository/09-Tarjetas/btnTrjBuscarResumen'))
 
 //Valido tabla de resultados
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/lblTrjFechaCierre'), vFechaCierre)
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/lblTrjFechaVencimiento'), vFechaVenc)
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/lblTrjSaldoPesos'), vSldoPesos)
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/lblTrjSaldoDolares'), vSldoDolares)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/lblTrjFechaCierre'), vFechaCierre, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/lblTrjFechaVencimiento'), vFechaVenc, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/lblTrjSaldoPesos'), vSldoPesos, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/lblTrjSaldoDolares'), vSldoDolares, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Valido los datos de Resumenes
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjFechaCierreValorRes'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjFechaVencValorRes'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjSldoPesosValorRes'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjSldoDolarValorRes'), 10)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjFechaCierreValorRes'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjFechaVencValorRes'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjSldoPesosValorRes'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjSldoDolarValorRes'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

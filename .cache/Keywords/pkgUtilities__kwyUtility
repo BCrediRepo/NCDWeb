@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "6CE915568095CA6CDD637F2161E8B6E2",
+  "keywordFileContentHash": "943BC3CA1079E0CD4B9261D775715A86",
   "keywordClasses": [
     {
       "name": "pkgUtilities.kwyUtility",
@@ -403,6 +403,82 @@
         },
         {
           "name": "comparacionCuentaDetalle",
+          "parameters": [
+            {
+              "name": "vTiempo",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "comparacionDebinRecibidosDetalleCuenta",
+          "parameters": [
+            {
+              "name": "vTiempo",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "comparacionDebinRecibidosDetalleEstado",
+          "parameters": [
+            {
+              "name": "vTiempo",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "comparacionDebinGeneradosDetalleCuenta",
+          "parameters": [
+            {
+              "name": "vTiempo",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "comparacionDebinGeneradosDetalleEstado",
           "parameters": [
             {
               "name": "vTiempo",

@@ -6,15 +6,19 @@
    <elementGuidId>6cca04f3-4e41-45da-a67d-c1d55dc1bcd4</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//div[@id='flxMisCuentasCredicoopRow_lblAccountCurrency'])[2]</value>
+         <key>BASIC</key>
+         <value>id(&quot;frmNewTransferBccl_segAccounts&quot;)/ul[1]/li[@class=&quot;seg2Normal&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxMisCuentasCredicoopRow_flxMisCuentasCredicoopRow&quot;]/div[@class=&quot;kcell middlecenteralignslFbox&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxMisCuentasCredicoopRow_flxCurrencyContainer&quot;]/div[@class=&quot;kcell middlecenteralignsknFlxBadgeUSD&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxMisCuentasCredicoopRow_flxBadgeContainer&quot;]/div[@class=&quot;kcell middlecenteralignsknLblBadgeAccounts&quot;]/div[@id=&quot;flxMisCuentasCredicoopRow_lblAccountCurrency&quot;][count(. | //*[@id = 'flxMisCuentasCredicoopRow_lblAccountCurrency' and (text() = 'U$S' or . = 'U$S')]) = count(//*[@id = 'flxMisCuentasCredicoopRow_lblAccountCurrency' and (text() = 'U$S' or . = 'U$S')])]</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value>div.kcell.middlecenteralignsknFlxBadgeUSD > #flexcontainer_wrapper > #flxMisCuentasCredicoopRow_flxBadgeContainer > div.kcell.middlecenteralignsknLblBadgeAccounts > #flxMisCuentasCredicoopRow_lblAccountCurrency</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//li[2]/div/div/div[2]/div/div/div/div/div/div/div</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>efc19ae9-6416-4c06-a354-5dfb8bef1f16</webElementGuid>
+      <webElementGuid>4f2b8320-7ea3-4497-bf45-db266af4ca1a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +34,7 @@
       <name>id</name>
       <type>Main</type>
       <value>flxMisCuentasCredicoopRow_lblAccountCurrency</value>
-      <webElementGuid>9958d309-fde5-40d3-a5db-c182f21bad3e</webElementGuid>
+      <webElementGuid>e8ad0f90-7f83-4db3-ab8d-f17bc7ba3247</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <name>kwidgettype</name>
       <type>Main</type>
       <value>Label</value>
-      <webElementGuid>9739d24e-f001-49d0-8b09-2c963714c8f8</webElementGuid>
+      <webElementGuid>2dbe56ed-9119-458c-af9e-f010862311a7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +50,7 @@
       <name>kformname</name>
       <type>Main</type>
       <value>flxMisCuentasCredicoopRow</value>
-      <webElementGuid>45a945e8-7b47-4d08-974b-9636d4964e70</webElementGuid>
+      <webElementGuid>c98e3a5b-63fb-4721-be0b-aa93d6ad7a42</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>kcontainerid</name>
       <type>Main</type>
       <value>segAccounts</value>
-      <webElementGuid>e0322a53-b2d5-4931-a54a-1a7d14724039</webElementGuid>
+      <webElementGuid>37bd290e-2ae9-4386-abf7-be55d451596d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>kuid</name>
       <type>Main</type>
       <value>0EBA1855-9F65-409A-9F10-DB66D0EB2100</value>
-      <webElementGuid>54e3fecb-6579-4aa0-a9ca-5349e9862bd0</webElementGuid>
+      <webElementGuid>832aa29d-f5da-4ed6-b57d-13edc5513bd5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>class</name>
       <type>Main</type>
       <value> sknLblBadgeAccounts cntmiddlecenteralign disableSelection</value>
-      <webElementGuid>83477916-c622-46da-af02-29a93d2a4e2a</webElementGuid>
+      <webElementGuid>d4bb9db2-8ec1-48c0-a7b7-7de0fd424d25</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -78,15 +82,15 @@
       <name>text</name>
       <type>Main</type>
       <value>U$S</value>
-      <webElementGuid>de00d8b4-aee2-43b6-a0a9-8b9ddc49ea87</webElementGuid>
+      <webElementGuid>e8024f5f-ee12-46c4-b47c-a5c466bb8adb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;frmNewTransferBccl_segAccounts&quot;)/ul[1]/li[@class=&quot;seg2Normal&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxMisCuentasCredicoopRow_flxMisCuentasCredicoopRow&quot;]/div[@class=&quot;kcell middlecenteralignslFbox&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxMisCuentasCredicoopRow_flxCurrencyContainer&quot;]/div[@class=&quot;kcell middlecenteralignsknFlxBadgeUSD&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxMisCuentasCredicoopRow_flxBadgeContainer&quot;]/div[@class=&quot;kcell middlecenteralignsknLblBadgeAccounts&quot;]/div[@id=&quot;flxMisCuentasCredicoopRow_lblAccountCurrency&quot;]</value>
-      <webElementGuid>8dd33e87-de05-42c3-8217-f316b26cf05a</webElementGuid>
+      <webElementGuid>0cdced69-1ecc-4c86-8995-fbe28a2a9e63</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//div[@id='flxMisCuentasCredicoopRow_lblAccountCurrency'])[2]</value>
-      <webElementGuid>bab1232d-bb11-4879-acfe-8e6ddde370d1</webElementGuid>
+      <webElementGuid>4c790bf8-75c2-4ff5-8253-6690f9e63324</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>(//div[@id='flxMisCuentasCredicoopRow_flxBadgeContainer']/div/div)[2]</value>
-      <webElementGuid>a555153b-2c5c-4e6f-bb54-a06b19fadc67</webElementGuid>
+      <webElementGuid>934cce41-81d9-49f8-9f95-5b1e7f3a066e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='TITLE-1 21190118359'])[1]/following::div[8]</value>
-      <webElementGuid>41f58169-17e8-4260-b2d4-6eddc1ee8c38</webElementGuid>
+      <webElementGuid>bc05b5ec-7b09-4211-9dad-8bffd2927645</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='CA U$S 119-011835/9'])[1]/following::div[10]</value>
-      <webElementGuid>04a715bf-8b80-4481-b286-8e5daf7c7747</webElementGuid>
+      <webElementGuid>97f53a4d-397d-4a2d-8d24-2ec3027e7737</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)=''])[13]/preceding::div[1]</value>
-      <webElementGuid>047e1c49-b3dc-48ea-a657-ee75eac3da22</webElementGuid>
+      <webElementGuid>55ed2768-7991-4710-ab60-e6ae6473a11a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +138,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='U$S 2.999.899,28'])[1]/preceding::div[6]</value>
-      <webElementGuid>4296f9f0-fef9-4443-811c-80b74f059416</webElementGuid>
+      <webElementGuid>78814ced-68e4-40dc-bfc0-3218aafdbf78</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +146,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[2]/div/div/div[2]/div/div/div/div/div/div/div</value>
-      <webElementGuid>0ef99b59-194b-408b-bbf0-4b2a0b1de855</webElementGuid>
+      <webElementGuid>fc233b97-1d9c-410b-8bb8-cb7def687952</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,6 +154,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[@id = 'flxMisCuentasCredicoopRow_lblAccountCurrency' and (text() = 'U$S' or . = 'U$S')]</value>
-      <webElementGuid>1b227e35-8354-4b3a-82f5-65166b2dd32f</webElementGuid>
+      <webElementGuid>d78d2bf0-0e63-4890-812f-57e34959e406</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

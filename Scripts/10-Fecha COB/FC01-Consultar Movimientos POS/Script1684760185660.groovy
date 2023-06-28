@@ -73,16 +73,16 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbCuentas'))
 WebUI.click(findTestObject('Object Repository/10-Fecha COB/lblCtaCuentaPesos'))
 
 //Valida tabla movimientos
-WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/lblCtaMovimFecha'), vFechaCta)
-WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/lblCtaMovimConcepto'), vConceptoCta)
-WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/lblCtaMovimImporte'), vImporteCta)
-WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/lblCtaMovimSaldo'), vSaldoCta)
+WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/lblCtaMovimFecha'), vFechaCta, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/lblCtaMovimConcepto'), vConceptoCta, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/lblCtaMovimImporte'), vImporteCta, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/lblCtaMovimSaldo'), vSaldoCta, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Valida datos Movimientos cta Pesos
-WebUI.verifyElementPresent(findTestObject('Object Repository/10-Fecha COB/txtCtaMovimPesosFecha'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/10-Fecha COB/txtCtaMovimPesosConcepto'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/10-Fecha COB/txtCtaMovimPesosImporte'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/10-Fecha COB/txtCtaMovimPesosSaldo'), 10)
+WebUI.verifyElementPresent(findTestObject('Object Repository/10-Fecha COB/txtCtaMovimPesosFecha'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Object Repository/10-Fecha COB/txtCtaMovimPesosConcepto'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Object Repository/10-Fecha COB/txtCtaMovimPesosImporte'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Object Repository/10-Fecha COB/txtCtaMovimPesosSaldo'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Vuelve atras e ingresa en cta en Dolares
 WebUI.click(findTestObject('Object Repository/10-Fecha COB/icoCtaMovimAtras'))
@@ -90,10 +90,10 @@ WebUI.delay(5)
 WebUI.click(findTestObject('Object Repository/10-Fecha COB/lblCtaCuentaDolares'))
 
 //Valida datos Movimiento cta Dolares
-WebUI.verifyElementPresent(findTestObject('Object Repository/10-Fecha COB/txtCtaMovimDolarFecha'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/10-Fecha COB/txtCtaMovimDolarConcepto'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/10-Fecha COB/txtCtaMovimDolarImporte'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/10-Fecha COB/txtCtaMovimDolarSaldo'), 10)
+WebUI.verifyElementPresent(findTestObject('Object Repository/10-Fecha COB/txtCtaMovimDolarFecha'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Object Repository/10-Fecha COB/txtCtaMovimDolarConcepto'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Object Repository/10-Fecha COB/txtCtaMovimDolarImporte'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Object Repository/10-Fecha COB/txtCtaMovimDolarSaldo'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

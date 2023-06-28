@@ -83,14 +83,14 @@ WebUI.click(findTestObject('Object Repository/06-Inversiones/mnuInvPlazoFijo'))
 WebUI.click(findTestObject('Object Repository/06-Inversiones/txtInvConsultarTasasPlazoFijo'))
 
 //Valida las Tasas de Plazo Fijo para la cta seleccionada
-WebUI.verifyElementText(findTestObject('Object Repository/06-Inversiones/txtInvTasa1'), vTasa1)
-WebUI.verifyElementText(findTestObject('Object Repository/06-Inversiones/txtInvTasa2'), vTasa2)
-WebUI.verifyElementText(findTestObject('Object Repository/06-Inversiones/txtInvTasa3'), vTasa3)
-WebUI.verifyElementText(findTestObject('Object Repository/06-Inversiones/txtInvTasa4'), vTasa4)
-WebUI.verifyElementText(findTestObject('Object Repository/06-Inversiones/txtInvTasa5'), vTasa5)
-WebUI.verifyElementText(findTestObject('Object Repository/06-Inversiones/txtInvTasa6'), vTasa6)
-WebUI.verifyElementText(findTestObject('Object Repository/06-Inversiones/txtInvTasa7'), vTasa7)
-WebUI.verifyElementText(findTestObject('Object Repository/06-Inversiones/txtInvTasa8'), vTasa8)
+WebUI.verifyElementText(findTestObject('Object Repository/06-Inversiones/txtInvTasa1'), vTasa1, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/06-Inversiones/txtInvTasa2'), vTasa2, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/06-Inversiones/txtInvTasa3'), vTasa3, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/06-Inversiones/txtInvTasa4'), vTasa4, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/06-Inversiones/txtInvTasa5'), vTasa5, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/06-Inversiones/txtInvTasa6'), vTasa6, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/06-Inversiones/txtInvTasa7'), vTasa7, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/06-Inversiones/txtInvTasa8'), vTasa8, FailureHandling.CONTINUE_ON_FAILURE)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

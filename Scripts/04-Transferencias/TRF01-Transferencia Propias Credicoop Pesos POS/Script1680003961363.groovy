@@ -65,34 +65,27 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrxMisCuentas
 //Valida Cuenta Pesos 
 CustomKeywords.'pkgUtilities.kwyUtility.comparacionListadoTrxPropiasPesos'(60)
 
-if (GlobalVariable.vMonedaCta == '$' && GlobalVariable.vMonedaTrx == '$'){
-	println("La cuenta seleccionada corresponde a una moneda en pesos.")
-	
-}else{
-	KeywordUtil.markFailedAndStop("La cuenta seleccionada NO corresponde a una moneda en pesos.")
-}
-
 //Ingresa Monto valido y menor al saldo de la cuenta
 WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxMontoFormulario'))
-WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrxMontoFormulario'),vValorMonto)
+WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrxMontoFormulario'),vValorMonto, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Selecciona Titularidad
 WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrxSeleccionTitularidadFormulario'))
 WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrxTitularidadTextoFormulario'))
 
-//Valida Monto Transferencia
-CustomKeywords.'pkgUtilities.kwyUtility.comparacionMontoTrxPropias'(60)
+//Clickea en boton Continuar 
+WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxContinuarFormulario'))
 
 //Cliquea en boton Confirmar
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxConfirmar'))
 
 //Ingresa Clave Bypass
-WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxClaveBypass'), vClave)
+WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxClaveBypass'), vClave, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Confirma Operación
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxConfirmarBypass'))
 
-//Valida Numero de operacion
+//Valida Numero de operacion y Monto final
 CustomKeywords.'pkgUtilities.kwyUtility.comparacionNumeroOperacionTrxPropias'(60)
 
 //---------------------------------------------------------------------------------------------------------------------

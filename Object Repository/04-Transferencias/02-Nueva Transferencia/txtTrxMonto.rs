@@ -6,12 +6,16 @@
    <elementGuidId>474486e3-96d7-43bd-a8c2-bbf1574dd9d7</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='frmBcclCreateTransfer_AmountInput_tbxAmount']</value>
+         <key>BASIC</key>
+         <value>id(&quot;frmBcclCreateTransfer_AmountInput_tbxAmount&quot;)[count(. | //*[@id = 'frmBcclCreateTransfer_AmountInput_tbxAmount' and @type = 'text']) = count(//*[@id = 'frmBcclCreateTransfer_AmountInput_tbxAmount' and @type = 'text'])]</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value>#frmBcclCreateTransfer_AmountInput_tbxAmount</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='frmBcclCreateTransfer_AmountInput_flxInputContainer']/div/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>031abf77-1f43-4419-9274-7615d943fc05</webElementGuid>
+      <webElementGuid>1b18bfe8-f83b-4cf6-b986-84d57da31da1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +34,7 @@
       <name>id</name>
       <type>Main</type>
       <value>frmBcclCreateTransfer_AmountInput_tbxAmount</value>
-      <webElementGuid>20ce311e-5281-46f3-bf44-f4559df4b5e6</webElementGuid>
+      <webElementGuid>84eafb40-aa6e-4b1c-b2ed-786083c0d7fc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <name>kwidgettype</name>
       <type>Main</type>
       <value>TextField</value>
-      <webElementGuid>325f6a4f-ee84-4b75-a515-4203946c9ab1</webElementGuid>
+      <webElementGuid>4b4cd952-0130-49c6-8f33-b623ec843d0f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +50,7 @@
       <name>kformname</name>
       <type>Main</type>
       <value>frmBcclCreateTransfer</value>
-      <webElementGuid>a6d19b93-8f36-4de2-a5f4-fca5e17b9831</webElementGuid>
+      <webElementGuid>2d3ffb62-ae12-47f6-9d39-778dba37b138</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>kmasterid</name>
       <type>Main</type>
       <value>AmountInput</value>
-      <webElementGuid>53fb848b-3a4f-4e77-868f-988d0faa0142</webElementGuid>
+      <webElementGuid>331e05f1-6870-476b-9610-ba9ab7a308e3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>class</name>
       <type>Main</type>
       <value>sknTbxAutonumeric</value>
-      <webElementGuid>9509c16e-cf96-4fc1-b8ef-f9d60aacc5cc</webElementGuid>
+      <webElementGuid>9f70264c-bd9a-4670-bc89-7193a6811597</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>autocapitalize</name>
       <type>Main</type>
       <value>none</value>
-      <webElementGuid>7daff19e-505b-4b41-942a-dcb8b364c504</webElementGuid>
+      <webElementGuid>8069e767-b4f9-4fb1-bcb7-741167a71c79</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>autocorrect</name>
       <type>Main</type>
       <value>off</value>
-      <webElementGuid>f6efbbbd-3d86-43c0-a5d1-27e7bc6b8511</webElementGuid>
+      <webElementGuid>d482a494-74e5-4761-baf1-99e4d52f44d1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>autocomplete</name>
       <type>Main</type>
       <value>off</value>
-      <webElementGuid>4b2d3826-fc33-44d2-8092-c06d1dd518b4</webElementGuid>
+      <webElementGuid>d1eecca7-030e-49e6-8d65-fd4cc5a40116</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -94,7 +98,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>e4447716-d71e-4648-b27f-23b62479c8e1</webElementGuid>
+      <webElementGuid>ee8827b5-ae09-44b6-b22c-80ce6d76203e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>onfocus</name>
       <type>Main</type>
       <value>$KW.TextField.onfocusEventHandler(arguments[0],this)</value>
-      <webElementGuid>8d185e95-1746-445a-98b0-0b47c46d068e</webElementGuid>
+      <webElementGuid>497ad873-6577-407a-b729-d85d88e18c4c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -110,15 +114,15 @@
       <name>onblur</name>
       <type>Main</type>
       <value>$KW.TextField.onblurEventHandler(arguments[0],this)</value>
-      <webElementGuid>dd0055c7-0fbe-421d-b8a4-b8b280f78eb8</webElementGuid>
+      <webElementGuid>d440185f-f12d-4a3d-bc73-7c7863311732</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;frmBcclCreateTransfer_AmountInput_tbxAmount&quot;)</value>
-      <webElementGuid>7749761b-a5e5-46b0-b69b-5bdd7a2fb88c</webElementGuid>
+      <webElementGuid>645bd90b-27c5-4d6f-a413-a97fecb8029f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='frmBcclCreateTransfer_AmountInput_tbxAmount']</value>
-      <webElementGuid>ca5debb4-1505-4350-bf93-3986022db270</webElementGuid>
+      <webElementGuid>9e62dd64-19da-4f30-b2b6-c073cc8905cb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +138,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='frmBcclCreateTransfer_AmountInput_flxInputContainer']/div/input</value>
-      <webElementGuid>715ecad5-a4b8-4a2e-a019-3b07d046ebe3</webElementGuid>
+      <webElementGuid>b8155973-6e2f-4924-8a58-b5c99886d48e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +146,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[4]/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/input</value>
-      <webElementGuid>9e4a0320-ef7c-4a99-a5aa-12115dfe5a0e</webElementGuid>
+      <webElementGuid>7c22b260-c475-4f34-b54f-3cdbb2b62f55</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,6 +154,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@id = 'frmBcclCreateTransfer_AmountInput_tbxAmount' and @type = 'text']</value>
-      <webElementGuid>e226010c-a371-4887-b082-0a9d513b8521</webElementGuid>
+      <webElementGuid>67d1966f-a638-4874-bdf4-52eb094757ae</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

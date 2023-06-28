@@ -92,11 +92,11 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Benefic
 
 //Busca Beneficiario por CBU
 
-WebUI.setText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrxBuscarBeneficiarioTipo'), vAliasBenf)
+WebUI.setText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrxBuscarBeneficiarioTipo'), vAliasBenf, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Valida que el Beneficiario no este registrado
 WebUI.delay(5)
-WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lblTrxBusquedaSinResultadosCBUBenf'),vBenfLbl)
+WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lblTrxBusquedaSinResultadosCBUBenf'),vBenfLbl, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Cliquea en Nuevo Beneficiario
 WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/btnTrxNuevoBeneficiario'))
@@ -105,7 +105,7 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Benefic
 WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxNuevoBenefAlias'))
 
 //Ingresa Alias
-WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxIngresoAlias'), vAliasBenf)
+WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxIngresoAlias'), vAliasBenf, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Cliqueo en Continuar
 WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/btnTrxNuevoBenfContinuar'))
@@ -122,13 +122,13 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Benefic
 WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/btnTrxContinuarNuevoBeneficiario'))
 
 //Valida Mensaje Exitoso
-WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lblTrxBeneficiarioGuardado'),vBenfGuardado)
+WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lblTrxBeneficiarioGuardado'),vBenfGuardado, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Cierra Pantalla
 WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/icoTrxCerrarBeneficiarioGuardado'))
 
 //Busca Beneficiario Guardado
-WebUI.setText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrxBuscarBeneficiarioTipo'), vCBUBenf)
+WebUI.setText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrxBuscarBeneficiarioTipo'), vCBUBenf, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Cliquea en menú para eliminar
 WebUI.delay(10)

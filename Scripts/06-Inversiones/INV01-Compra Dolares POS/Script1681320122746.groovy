@@ -64,7 +64,7 @@ WebUI.click(findTestObject('Object Repository/06-Inversiones/btnInvComprarDolare
 //Ingresa Monto
 WebUI.delay(5)
 WebUI.click(findTestObject('Object Repository/06-Inversiones/txtInvMontoCompra'))
-WebUI.sendKeys(findTestObject('Object Repository/06-Inversiones/txtInvMontoCompra'), vMontoCompra)
+WebUI.sendKeys(findTestObject('Object Repository/06-Inversiones/txtInvMontoCompra'), vMontoCompra, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Cliquea en Continuar
 WebUI.click(findTestObject('Object Repository/06-Inversiones/btnInvContinuarCompraDolares'))
@@ -76,11 +76,11 @@ WebUI.click(findTestObject('Object Repository/06-Inversiones/chkbxInvDeclaracion
 WebUI.click(findTestObject('Object Repository/06-Inversiones/btnInvContinuarDeclaracionJurada'))
 
 //Ingresa Segundo Factor
-WebUI.sendKeys(findTestObject('Object Repository/06-Inversiones/txtInvByPassCompra'), vClave)
+WebUI.sendKeys(findTestObject('Object Repository/06-Inversiones/txtInvByPassCompra'), vClave, FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.click(findTestObject('Object Repository/06-Inversiones/btnInvConfirmarCompra'))
 
 //Valida pantalla de confirmacion exitosa
-WebUI.verifyElementText(findTestObject('Object Repository/06-Inversiones/lblInvCompraExitosa'), vCompraExitosa)
+WebUI.verifyElementText(findTestObject('Object Repository/06-Inversiones/lblInvCompraExitosa'), vCompraExitosa, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Nota: agregar Validacion pantalla de éxito con comprobante
 

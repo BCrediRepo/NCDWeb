@@ -66,8 +66,8 @@ WebUI.click(findTestObject('Object Repository/03-Cuentas/mnuCtaConsultaDesplegab
 WebUI.click(findTestObject('Object Repository/03-Cuentas/txtCtaConsultarAliasCBU'))
 
 //Valida datos de la cuenta
-WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/txtCtaNumeroCBU'),vCbuCta)
-WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/txtCtaNombreAlias'),vALiasCta)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/txtCtaNumeroCBU'),vCbuCta, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/txtCtaNombreAlias'),vALiasCta, FailureHandling.CONTINUE_ON_FAILURE)
 
 
 //---------------------------------------------------------------------------------------------------------------------

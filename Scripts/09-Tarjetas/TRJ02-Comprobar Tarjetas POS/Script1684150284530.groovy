@@ -96,30 +96,30 @@ CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
 CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 
 //Valida datos de tarjetas desde el Dashboard
-WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjCabalDatosDashboard'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjVisaDatosDashboard'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjCabalDatosDashboard'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjVisaDatosDashboard'), FailureHandling.CONTINUE_ON_FAILURE)
 
 //Ingresa al módulo de Tarjetas
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTarjetas'))
 
 //Valida formato tabla de Tarjeta de Débito
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/lblTrjDebitoTarjeta'), vTarjetaDbto)
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/lblTrjDebitoNumero'), vNumeroDbto)
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/lblTrjDebitoLimiteExtraccin'), vLimiteDbto)
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/lblTrjDebitoDisponibleExtraccin'), vDisponbleDbto)
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/lblTrjDebitoLimiteCompra'), vCompraDbto)
-WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/lblTrjDebitoHabilitadaCompra'), vHabilitadaDbto)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/lblTrjDebitoTarjeta'), vTarjetaDbto, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/lblTrjDebitoNumero'), vNumeroDbto, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/lblTrjDebitoLimiteExtraccin'), vLimiteDbto, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/lblTrjDebitoDisponibleExtraccin'), vDisponbleDbto, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/lblTrjDebitoLimiteCompra'), vCompraDbto, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/lblTrjDebitoHabilitadaCompra'), vHabilitadaDbto, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Valida datos de Tarjeta de Débito
-WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjDebitoNumero'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjDebitoLimiteExtraccn'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjDebitoDisponibleExtraccn'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjDebitoLimiteCompra'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjDebitoNumero'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjDebitoLimiteExtraccn'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjDebitoDisponibleExtraccn'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjDebitoLimiteCompra'), FailureHandling.CONTINUE_ON_FAILURE)
 
 //Valida datos de Tarjetas de Crédito
-WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjNumeroTarjetaVisa'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjTipoTarjetaVisa'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjFechaVencimiento'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjNumeroTarjetaVisa'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjTipoTarjetaVisa'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjFechaVencimiento'), FailureHandling.CONTINUE_ON_FAILURE)
 
 /*WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjNumeroTarjetaVisa'), vNroTarjCredito)
 WebUI.verifyElementText(findTestObject('Object Repository/09-Tarjetas/txtTrjTipoTarjetaVisa'), vTipoTarjCredito)
@@ -130,11 +130,11 @@ WebUI.delay(10)
 WebUI.click(findTestObject('Object Repository/09-Tarjetas/icoTrjVisaPlatinum'))
 
 //Valida que se muestren los datos de la Tarjeta de crédito
-WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjVisaNmeroTarjeta'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjVisaNmeroCuenta'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjVisaMontoDisponible'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjVisaLimite'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjVisaDisponibleCuotas'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjVisaNmeroTarjeta'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjVisaNmeroCuenta'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjVisaMontoDisponible'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjVisaLimite'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('Object Repository/09-Tarjetas/txtTrjVisaDisponibleCuotas'), FailureHandling.CONTINUE_ON_FAILURE)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

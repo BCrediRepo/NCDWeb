@@ -56,9 +56,9 @@ WebUI.maximizeWindow()
 WebUI.click(findTestObject('Object Repository/01-Login/btnLgnCerrarBanner'))
 
 //Ingresa los datos del usuario
-WebUI.setText(findTestObject('Object Repository/01-Login/txtLgnDNI'), vDNI)
-WebUI.setText(findTestObject('Object Repository/01-Login/txtLgnClave'), vClave)
-WebUI.setText(findTestObject('Object Repository/01-Login/txtLgnUsuario'), vUsuario)
+WebUI.setText(findTestObject('Object Repository/01-Login/txtLgnDNI'), vDNI, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.setText(findTestObject('Object Repository/01-Login/txtLgnClave'), vClave, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.setText(findTestObject('Object Repository/01-Login/txtLgnUsuario'), vUsuario, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/01-Login/btnLgnIngresar'))
 
@@ -68,14 +68,14 @@ WebUI.click(findTestObject('Object Repository/01-Login/txtLgnCambioClave'))
 
 //Completa los Campos solicitados
 WebUI.click(findTestObject('Object Repository/01-Login/txtLgnClaveActual'))
-WebUI.setText(findTestObject('Object Repository/01-Login/txtLgnClaveActual'), vClave)
+WebUI.setText(findTestObject('Object Repository/01-Login/txtLgnClaveActual'), vClave, FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.click(findTestObject('Object Repository/01-Login/txtLgnNuevaClave'))
-WebUI.setText(findTestObject('Object Repository/01-Login/txtLgnNuevaClave'), vClave1)
+WebUI.setText(findTestObject('Object Repository/01-Login/txtLgnNuevaClave'), vClave1, FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.click(findTestObject('Object Repository/01-Login/txtLgnReingresarClave'))
-WebUI.setText(findTestObject('Object Repository/01-Login/txtLgnReingresarClave'), vClave2)
+WebUI.setText(findTestObject('Object Repository/01-Login/txtLgnReingresarClave'), vClave2, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Valida Mensaje de claves no coinciden
-WebUI.verifyElementText(findTestObject('Object Repository/01-Login/lblLgnClaveNoCoincide'), vtxtNoCoincide)
+WebUI.verifyElementText(findTestObject('Object Repository/01-Login/lblLgnClaveNoCoincide'), vtxtNoCoincide, FailureHandling.CONTINUE_ON_FAILURE)
 
 //---------------------------------------------------------------------------------------------------------------------
 

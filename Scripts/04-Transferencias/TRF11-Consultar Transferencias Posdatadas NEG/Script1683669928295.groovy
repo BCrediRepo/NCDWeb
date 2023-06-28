@@ -67,15 +67,15 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lnkTrxProgramadas'))
 
 //Valida mensaje sin Transferencias Programadas
-WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/txtTrxSinTransferenciasProgramadas'), vSinProgramadas)
+WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/txtTrxSinTransferenciasProgramadas'), vSinProgramadas, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Cliquea en el campo y busca por Transferencias
 WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxBusquedaPosdatadas'))
-WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrxBusquedaPosdatadas'), vTxtBusqueda)
+WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrxBusquedaPosdatadas'), vTxtBusqueda, FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.delay(5)
 
 //Valida mensaje de busqueda sin resultados
-WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/txtTrxBusquedaSinResultados'), vSinResultado)
+WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/txtTrxBusquedaSinResultados'), vSinResultado, FailureHandling.CONTINUE_ON_FAILURE)
 
 //NOTA: Agregar validacion calendario
 

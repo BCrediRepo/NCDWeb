@@ -70,14 +70,14 @@ WebUI.click(findTestObject('Object Repository/03-Cuentas/mnuCtaNombre'))
 WebUI.click(findTestObject('Object Repository/03-Cuentas/txtCtaCambiarNombre'))
 
 //Ingresa nuevo Nombre
-WebUI.setText(findTestObject('Object Repository/03-Cuentas/txtCtaModificacionNombre'), vNombre)
+WebUI.setText(findTestObject('Object Repository/03-Cuentas/txtCtaModificacionNombre'), vNombre, FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.click(findTestObject('Object Repository/03-Cuentas/lnkCtaConsultarAliasCBU'))
-WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/txtCtaMsjeNombreActualizado'), vMjeExito)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/txtCtaMsjeNombreActualizado'), vMjeExito, FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.click(findTestObject('Object Repository/03-Cuentas/btnCtaCerrarConsultaAliasCBU'))
 WebUI.delay(5)
 WebUI.click(findTestObject('Object Repository/03-Cuentas/mnuCtaNombre'))
 WebUI.click(findTestObject('Object Repository/03-Cuentas/txtCtaCambiarNombreModificado'))
-WebUI.setText(findTestObject('Object Repository/03-Cuentas/txtCtaModificacionNombre'), vNombreModif)
+WebUI.setText(findTestObject('Object Repository/03-Cuentas/txtCtaModificacionNombre'), vNombreModif, FailureHandling.CONTINUE_ON_FAILURE)
 	
 //---------------------------------------------------------------------------------------------------------------------
 

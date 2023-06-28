@@ -28,13 +28,11 @@ import javax.swing.JOptionPane
 def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 30276301"
 def vQuery2 = "SELECT * FROM Parametros WHERE Nombre = 'CuentaOtrosBancos 1'"
 
-//NOTA: Filtrar por nombre de Banco: "BBvA Banco Francés S.A."
-
 String vDNI = null
 String vClave = null
 String vUsuario = null
 String vTipoTrf = null
-String vValorMonto = 0.5
+String vValorMonto = 0.2
 
 CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
 
@@ -64,7 +62,7 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'
 WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lnkTrxAgendaBeneficiario'))
 
 //Busca por tipo de Beneficiario
-WebUI.setText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrxBuscarBeneficiarioTipo'), vTipoTrf)
+WebUI.setText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrxBuscarBeneficiarioTipo'), vTipoTrf, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Inicia la transferencia
 WebUI.delay(5)
@@ -73,7 +71,7 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxTercerosIn
 
 //Ingresa Monto
 WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxMontoFormulario'))
-WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrxMontoFormulario'), vValorMonto)
+WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrxMontoFormulario'), vValorMonto, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Selecciona Titularidad
 WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrxSeleccionTitularidadFormulario'))
@@ -90,7 +88,7 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/btnTrxContinuarT
 WebUI.click(findTestObject('Object Repository/04-Transferencias/btnTrxConfirmarTrxOtrosBancos'))
 
 //Ingresa Clave Bypass
-WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxClaveBypass'), vClave)
+WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxClaveBypass'), vClave, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Confirma Operación
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxConfirmarBypass'))

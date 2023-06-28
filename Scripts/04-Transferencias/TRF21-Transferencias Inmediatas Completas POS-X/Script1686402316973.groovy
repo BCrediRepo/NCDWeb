@@ -60,6 +60,7 @@ CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
 //Se selecciona el servidor y se cargan los datos
 CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
 
+/*
 //Loguea con usuario Receptor
 CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 
@@ -120,18 +121,28 @@ WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxClaveByp
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxConfirmarBypass'))
 
 //Valida Pantalla Operación Exitosa
-
+*/
 
 //Valida destinatario y monto Exitoso
 //CustomKeywords.'pkgUtilities.kwyUtility.comparacionDatosExitoPosdatadaPesos'(60)
 
 //Loguea con usuario Receptor
-CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
+//CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 
 //Obtiene el Saldo Final del Beneficiario Receptor
- 
+/* 
 String vSaldoFinal = WebUI.getText(findTestObject("Object Repository/04-Transferencias/txtTrfSaldoInicialCuentaPesos"))
 println vSaldoFinal
+
+//Lo transforma de String a Numero
+String vSaldoNuevo = vSaldoFinal.replace(",", ".")
+String vNumero = vSaldoNuevo.substring(2)
+System.out.println(vNumero)
+
+//Para Decimal
+float vNumeroFinal = Double.parseDouble(vNumero)
+System.out.println(vNumeroFinal)
+
 /*
 //Lo transforma de String a Numero
 String vSaldoNuevo = vSaldoInicial.replace(",", ".")

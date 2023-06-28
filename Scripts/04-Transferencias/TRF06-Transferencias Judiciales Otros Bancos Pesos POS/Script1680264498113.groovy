@@ -32,7 +32,7 @@ String vDNI = null
 String vClave = null
 String vUsuario = null
 String vTipoTrf = null
-String vValorMonto = 1
+String vValorMonto = 0.2
 
 CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
 
@@ -71,7 +71,7 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxNuevaTrans
 
 //Ingresa Monto
 WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxMontoFormulario'))
-WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrxMontoFormulario'), vValorMonto)
+WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrxMontoFormulario'), vValorMonto, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Selecciona Titularidad
 WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrxSeleccionTitularidadFormulario'))
@@ -84,7 +84,7 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transfe
 WebUI.click(findTestObject('Object Repository/04-Transferencias/btnTrxConfirmarTransferencias'))
 
 //Ingresa Clave Bypass
-WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxClaveBypass'), vClave)
+WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxClaveBypass'), vClave, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Confirma Operación
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxConfirmarBypass'))

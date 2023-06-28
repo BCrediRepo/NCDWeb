@@ -68,21 +68,21 @@ WebUI.scrollToElement(findTestObject('Object Repository/08-Pagos y Recargas/txtM
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/txtMnuAdherirServicioInternet'))
 
 //Ingresa Ente
-WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRIngresoEnte'), vEnte)
+WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRIngresoEnte'), vEnte, FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.delay(10)
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/lnkPYREcowifi'))
 
 //Ingresa el código
-WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRCodigoPago'), vCodigo)
+WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRCodigoPago'), vCodigo, FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYRAdherirServicioSolapa'))
 
 //Valida pantalla de adhesión y paga el servicio
-//WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRServicioAdheridoExito'), vServicioAdherido)
+//WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRServicioAdheridoExito'), vServicioAdherido, FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYRPagarAhoraSolapa'))
 
 //Confirma Pago
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYRConfirmarPagoServicio'))
-WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRFirmaByPass'), vClave)
+WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRFirmaByPass'), vClave, FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYRConfirmarByPassPago'))
 
 //Nota: Validar Pantalla Éxito

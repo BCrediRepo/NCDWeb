@@ -33,7 +33,7 @@ String vDNI = null
 String vClave = null
 String vUsuario = null
 String vTipoTrf = null
-String vValorMonto = 0.5
+String vValorMonto = 0.1
 
 CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
 
@@ -63,7 +63,7 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'
 WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lnkTrxAgendaBeneficiario'))
 
 //Busca por tipo de Beneficiario
-WebUI.setText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrxBuscarBeneficiarioTipo'), vTipoTrf)
+WebUI.setText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrxBuscarBeneficiarioTipo'), vTipoTrf, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Inicia la transferencia
 WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkTrxCuentaBenefTercerosPesos'))
@@ -79,7 +79,7 @@ String vAtributo = vCuentaCorriente.getAttribute("innerHTML")*/
 
 //Ingresa Monto
 WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxMontoFormulario'))
-WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrxMontoFormulario'), vValorMonto)
+WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrxMontoFormulario'), vValorMonto, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Selecciona Titularidad
 WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrxSeleccionTitularidadFormulario'))
@@ -92,13 +92,13 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transfe
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxConfirmar'))
 
 //Ingresa Clave Bypass
-WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxClaveBypass'), vClave)
+WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxClaveBypass'), vClave, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Confirma Operación
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxConfirmarBypass'))
 
 //Valida Destinatario
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/txtTrxBeneficiarioDestino'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/txtTrxBeneficiarioDestino'), FailureHandling.CONTINUE_ON_FAILURE)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

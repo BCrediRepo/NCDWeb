@@ -68,16 +68,16 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Benefic
 WebUI.click(findTestObject('Object Repository/04-Transferencias/icoTrxBenfNoDestacado'))
 
 //Valida mensaje error
-WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/txtTrxMsjeExcedeBenfDestacado'), vMjeError)
+WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/txtTrxMsjeExcedeBenfDestacado'), vMjeError, FailureHandling.CONTINUE_ON_FAILURE)
 
 //DesSelecciona Beneficiario Destacado y vuelve a Seleccionarlo
 WebUI.click(findTestObject('Object Repository/04-Transferencias/icoTrxBenfDestacado'))
-WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/txtTrxMsjeOperacionRealizadaExito'), vMjeExito)
+WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/txtTrxMsjeOperacionRealizadaExito'), vMjeExito, FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.delay(5)
 WebUI.click(findTestObject('Object Repository/04-Transferencias/icoTrxBenfDestacado'))
 
 //Valida mensaje ok
-WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/txtTrxMsjeOperacionRealizadaExito'), vMjeExito)
+WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/txtTrxMsjeOperacionRealizadaExito'), vMjeExito, FailureHandling.CONTINUE_ON_FAILURE)
 
 //---------------------------------------------------------------------------------------------------------------------
 

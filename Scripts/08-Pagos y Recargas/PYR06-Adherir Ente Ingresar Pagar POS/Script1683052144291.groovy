@@ -63,12 +63,12 @@ WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/mnuPYRCategori
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRLuzAguaGas'))
 
 //Ingresa Ente
-WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRIngresoEnte'), vEnte)
+WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRIngresoEnte'), vEnte, FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.delay(5)
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/lnkPYRMetrogas'))
 
 //Ingresa el código
-WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRCodigoPago'), vCodigo)
+WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRCodigoPago'), vCodigo, FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYRAdherirServicioSolapa'))
 
 //Ingresa al menú desplegable y selecciona la opción "Ver servicios Adheridos"

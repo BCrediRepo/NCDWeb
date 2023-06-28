@@ -63,12 +63,12 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/03-Cuentas/lblCtaCu
 
 //Selecciono una CC como favorita y valido Toast de confirmación
 WebUI.click(findTestObject('Object Repository/03-Cuentas/icoCtaFavoritoCC'))
-WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaCuentaFavoritaActualizada'),vCtaToast)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaCuentaFavoritaActualizada'),vCtaToast, FailureHandling.CONTINUE_ON_FAILURE)
 
 
 //Selecciono una CA como favorita y valido Toast de confirmación
 WebUI.click(findTestObject('Object Repository/03-Cuentas/icoCtaFavoritoCA'))
-WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaCuentaFavoritaActualizada'),vCtaToast)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaCuentaFavoritaActualizada'),vCtaToast, FailureHandling.CONTINUE_ON_FAILURE)
 
 //NOTA: REVISAR SCROLL
 

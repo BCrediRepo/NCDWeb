@@ -53,9 +53,9 @@ WebUI.maximizeWindow()
 WebUI.click(findTestObject('Object Repository/01-Login/btnLgnCerrarBanner'))
 
 //Ingresa los datos del usuario
-WebUI.setText(findTestObject('Object Repository/01-Login/txtLgnDNI'), vDNI)
-WebUI.setText(findTestObject('Object Repository/01-Login/txtLgnClave'), vClave)
-WebUI.setText(findTestObject('Object Repository/01-Login/txtLgnUsuario'), vUsuario)
+WebUI.setText(findTestObject('Object Repository/01-Login/txtLgnDNI'), vDNI, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.setText(findTestObject('Object Repository/01-Login/txtLgnClave'), vClave, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.setText(findTestObject('Object Repository/01-Login/txtLgnUsuario'), vUsuario, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/01-Login/btnLgnIngresar'))
 

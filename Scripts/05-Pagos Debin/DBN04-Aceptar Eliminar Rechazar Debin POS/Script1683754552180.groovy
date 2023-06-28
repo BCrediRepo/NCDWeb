@@ -81,12 +81,12 @@ WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnGenerarDebin'
 
 // Ingresa y busca CBU solicitante
 WebUI.click(findTestObject('Object Repository/05-Pagos Debin/txtDbnCBUSolicitante'))
-WebUI.setText(findTestObject('Object Repository/05-Pagos Debin/txtDbnCBUSolicitante'), vCBUBenf)
+WebUI.setText(findTestObject('Object Repository/05-Pagos Debin/txtDbnCBUSolicitante'), vCBUBenf, FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnBuscarSolicitante'))
 
 //Completa formulario
 WebUI.click(findTestObject('Object Repository/05-Pagos Debin/intDbnMontoPesos'))
-WebUI.sendKeys(findTestObject('Object Repository/05-Pagos Debin/intDbnMontoPesos'), vMontoPesos)
+WebUI.sendKeys(findTestObject('Object Repository/05-Pagos Debin/intDbnMontoPesos'), vMontoPesos, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/05-Pagos Debin/mnuDbnDuracionSolicitud'))
 WebUI.click(findTestObject('Object Repository/05-Pagos Debin/txtDbnDuracionHoras'))
@@ -100,7 +100,7 @@ WebUI.click(findTestObject('Object Repository/05-Pagos Debin/txtDbnTitularidadTi
 WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnContinuar'))
 
 //Valida Datos y confirma la operación
-WebUI.verifyElementVisible(findTestObject('Object Repository/05-Pagos Debin/lblDbnConfirmarFormulario'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/05-Pagos Debin/lblDbnConfirmarFormulario'), FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnConfirmarFormulario'))
 
 //Valida Pantalla de Éxito
@@ -113,12 +113,12 @@ WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnGenerarDebin'
 
 // Ingresa y busca CBU solicitante
 WebUI.click(findTestObject('Object Repository/05-Pagos Debin/txtDbnCBUSolicitante'))
-WebUI.setText(findTestObject('Object Repository/05-Pagos Debin/txtDbnCBUSolicitante'), vCBUBenf)
+WebUI.setText(findTestObject('Object Repository/05-Pagos Debin/txtDbnCBUSolicitante'), vCBUBenf, FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnBuscarSolicitante'))
 
 //Completa formulario
 WebUI.click(findTestObject('Object Repository/05-Pagos Debin/intDbnMontoPesos'))
-WebUI.sendKeys(findTestObject('Object Repository/05-Pagos Debin/intDbnMontoPesos'), vMontoPesos1)
+WebUI.sendKeys(findTestObject('Object Repository/05-Pagos Debin/intDbnMontoPesos'), vMontoPesos1, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/05-Pagos Debin/mnuDbnDuracionSolicitud'))
 WebUI.click(findTestObject('Object Repository/05-Pagos Debin/txtDbnDuracionHoras'))
@@ -132,7 +132,7 @@ WebUI.click(findTestObject('Object Repository/05-Pagos Debin/txtDbnNoTitular'))
 WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnContinuar'))
 
 //Valida Datos y confirma la operación
-WebUI.verifyElementVisible(findTestObject('Object Repository/05-Pagos Debin/lblDbnConfirmarFormulario'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/05-Pagos Debin/lblDbnConfirmarFormulario'), FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnConfirmarFormulario'))
 
 //Valida Pantalla de Éxito
@@ -145,12 +145,12 @@ WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnGenerarDebin'
 
 // Ingresa y busca CBU solicitante
 WebUI.click(findTestObject('Object Repository/05-Pagos Debin/txtDbnCBUSolicitante'))
-WebUI.setText(findTestObject('Object Repository/05-Pagos Debin/txtDbnCBUSolicitante'), vCBUBenf)
+WebUI.setText(findTestObject('Object Repository/05-Pagos Debin/txtDbnCBUSolicitante'), vCBUBenf, FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnBuscarSolicitante'))
 
 //Completa formulario
 WebUI.click(findTestObject('Object Repository/05-Pagos Debin/intDbnMontoPesos'))
-WebUI.sendKeys(findTestObject('Object Repository/05-Pagos Debin/intDbnMontoPesos'), vMontoPesos2)
+WebUI.sendKeys(findTestObject('Object Repository/05-Pagos Debin/intDbnMontoPesos'), vMontoPesos2, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/05-Pagos Debin/mnuDbnDuracionSolicitud'))
 WebUI.click(findTestObject('Object Repository/05-Pagos Debin/txtDbnDuracionHoras'))
@@ -164,7 +164,7 @@ WebUI.click(findTestObject('Object Repository/05-Pagos Debin/txtDbnNoTitular'))
 WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnContinuar'))
 
 //Valida Datos y confirma la operación
-WebUI.verifyElementVisible(findTestObject('Object Repository/05-Pagos Debin/lblDbnConfirmarFormulario'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/05-Pagos Debin/lblDbnConfirmarFormulario'), FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnConfirmarFormulario'))
 
 //Valida Pantalla de Éxito
@@ -180,7 +180,7 @@ WebUI.click(findTestObject('Object Repository/05-Pagos Debin/icoDbnEliminarGener
 WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnConfirmarEliminar'))
 
 //Valida mensaje de confirmacion
-WebUI.verifyElementText(findTestObject('Object Repository/05-Pagos Debin/lblDbnAdherirCtaExitoso'), vMjsEliminar)
+WebUI.verifyElementText(findTestObject('Object Repository/05-Pagos Debin/lblDbnAdherirCtaExitoso'), vMjsEliminar, FailureHandling.CONTINUE_ON_FAILURE)
 
 //----------------Loguea con el otro adherente------------------------------------------------------------------
 
@@ -200,11 +200,11 @@ WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnAceptar'))
 
 //Ingresa ByPass
 WebUI.click(findTestObject('Object Repository/05-Pagos Debin/txtDbnAceptarBypass'))
-WebUI.sendKeys(findTestObject('Object Repository/05-Pagos Debin/txtDbnAceptarBypass'), vClave1)
+WebUI.sendKeys(findTestObject('Object Repository/05-Pagos Debin/txtDbnAceptarBypass'), vClave1, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Cliquea en Confirmar y valida pantalla de éxito
 WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnConfirmar'))
-WebUI.verifyElementText(findTestObject('Object Repository/05-Pagos Debin/txtDbnMensajeAceptadoExito'), vMjsAceptado)
+WebUI.verifyElementText(findTestObject('Object Repository/05-Pagos Debin/txtDbnMensajeAceptadoExito'), vMjsAceptado, FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.click(findTestObject('Object Repository/05-Pagos Debin/icoDbnCerrarSolapaAceptar'))
 
 //Cliquea en Rechazar Debin
@@ -214,7 +214,7 @@ WebUI.click(findTestObject('Object Repository/05-Pagos Debin/txtDbnRechazo'))
 WebUI.click(findTestObject('Object Repository/05-Pagos Debin/btnDbnRechazar'))
 
 //Valida pantalla de éxito
-WebUI.verifyElementText(findTestObject('Object Repository/05-Pagos Debin/txtDbnMensajeRechazoExito'), vMjsRechazado)
+WebUI.verifyElementText(findTestObject('Object Repository/05-Pagos Debin/txtDbnMensajeRechazoExito'), vMjsRechazado, FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.click(findTestObject('Object Repository/05-Pagos Debin/icoDbnCerrarSolapaRechazo'))
 
 //---------------------------------------------------------------------------------------------------------------------

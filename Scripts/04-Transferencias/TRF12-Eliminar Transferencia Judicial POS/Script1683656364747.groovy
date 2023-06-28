@@ -67,7 +67,7 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTransferencias'
 WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/lnkTrxAgendaBeneficiario'))
 
 //Busca por tipo de Beneficiario
-WebUI.setText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrxBuscarBeneficiarioTipo'), vTipoTrf)
+WebUI.setText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrxBuscarBeneficiarioTipo'), vTipoTrf, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Inicia la transferencia
 WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkTrxCuentaBenefJudicialPesos'))
@@ -75,7 +75,7 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkTrxIniciarTra
 
 //Ingresa Monto
 WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxMontoFormulario'))
-WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrxMontoFormulario'), vValorMonto)
+WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrxMontoFormulario'), vValorMonto, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Selecciona Titularidad
 WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrxSeleccionTitularidadFormulario'))
@@ -88,7 +88,7 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transfe
 WebUI.click(findTestObject('Object Repository/04-Transferencias/btnTrxConfirmarJudicial'))
 
 //Ingresa Clave Bypass
-WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxClaveBypass'), vClave)
+WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxClaveBypass'), vClave, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Confirma Operación
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxConfirmarBypass'))
@@ -106,13 +106,13 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/icoTrxEliminar')
 WebUI.click(findTestObject('Object Repository/04-Transferencias/btnTrxEliminar'))
 
 //Ingresa clave Bypass
-WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxClaveBypass'), vClave)
+WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxClaveBypass'), vClave, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Boton Confirmar
 WebUI.click(findTestObject('Object Repository/04-Transferencias/btnTrxConfirmarEliminar'))
 
 //Valida mensaje de confirmacion
-WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/txtTrxMnjeEliminarJudicial'), vMsjeEliminar)
+WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/txtTrxMnjeEliminarJudicial'), vMsjeEliminar, FailureHandling.CONTINUE_ON_FAILURE)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

@@ -60,12 +60,12 @@ WebUI.click(findTestObject('Object Repository/09-Tarjetas/icoTrjCreditoCabal'))
 WebUI.click(findTestObject('Object Repository/09-Tarjetas/lblTrjCuotasPendientesAutorizacn'))
 
 //Valida tabla con datos
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/lblTrjTablaCuotasPendientesAutorizacn'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjCuotasPendAutorizacnFecha'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjCuotasPendAutorizacnDescripcn'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjCuotasPendAutorizacnNombreTarjeta'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjCuotasPendAutorizacnMontoPesos'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjCuotasPenAutorizacnMontoDolares'), 10)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/lblTrjTablaCuotasPendientesAutorizacn'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjCuotasPendAutorizacnFecha'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjCuotasPendAutorizacnDescripcn'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjCuotasPendAutorizacnNombreTarjeta'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjCuotasPendAutorizacnMontoPesos'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjCuotasPenAutorizacnMontoDolares'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

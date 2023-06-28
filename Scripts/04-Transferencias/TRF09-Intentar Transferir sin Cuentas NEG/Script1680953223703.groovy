@@ -64,7 +64,7 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transfe
 WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrxMisCuentasCredicoop'))
 
 //Valida que no hay cuentas
-WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblTrxAbrirCta'), vlblAbrirCta)
+WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblTrxAbrirCta'), vlblAbrirCta, FailureHandling.CONTINUE_ON_FAILURE)
 
 //---------------------------------------------------------------------------------------------------------------------
 

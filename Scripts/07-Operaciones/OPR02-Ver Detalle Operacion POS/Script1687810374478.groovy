@@ -63,13 +63,13 @@ WebUI.click(findTestObject('Object Repository/07-Operaciones/btnOprTipoOperacion
 WebUI.click(findTestObject('Object Repository/07-Operaciones/txtOprTipoOpTodas'))
 
 //Calendario
-//WebUI.click(findTestObject('Object Repository/07-Operaciones/icoOprCalendario'))
-//WebUI.click(findTestObject('Object Repository/07-Operaciones/txtOprFechaDesde'))
+WebUI.click(findTestObject('Object Repository/07-Operaciones/icoOprCalendario'))
+WebUI.click(findTestObject('Object Repository/07-Operaciones/icoOprCalendarioMesPrevioDesde'))
+WebUI.click(findTestObject('Object Repository/07-Operaciones/icoOprCalendarioDiaMesPrevioDesde'))
 WebUI.click(findTestObject('Object Repository/07-Operaciones/btnOprBuscarOperacion'))
 
 //Cliquea en el menú desplegable y selecciona Ver Detalle
-WebUI.scrollToElement(findTestObject('Object Repository/07-Operaciones/mnuOprDetalle'), 10)
-WebUI.click(findTestObject('Object Repository/07-Operaciones/mnuOprDetalle'))
+WebUI.scrollToElement(findTestObject('Object Repository/07-Operaciones/mnuOprListaDetalle_'), 10)
 
 //Valida los datos
 CustomKeywords.'pkgUtilities.kwyUtility.comparacionOrigenDetalle'(60)

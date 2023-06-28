@@ -60,7 +60,7 @@ WebUI.click(findTestObject('Object Repository/10-Fecha COB/lnkInvSimularPlazoFij
 //Ingresa Monto
 WebUI.delay(5)
 WebUI.click(findTestObject('Object Repository/06-Inversiones/txtInvPFMonto'))
-WebUI.sendKeys(findTestObject('Object Repository/06-Inversiones/txtInvPFMonto'), vMonto)
+WebUI.sendKeys(findTestObject('Object Repository/06-Inversiones/txtInvPFMonto'), vMonto, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Selecciona Tipo de PF
 WebUI.click(findTestObject('Object Repository/06-Inversiones/mnuInvPFTipo'))
@@ -75,7 +75,7 @@ WebUI.click(findTestObject('Object Repository/10-Fecha COB/chqbxInvPFDeclaracion
 WebUI.click(findTestObject('Object Repository/10-Fecha COB/btnInvPFConfirmar'))
 
 //Firma Bypass
-WebUI.sendKeys(findTestObject('Object Repository/10-Fecha COB/txtInvPFClaveBypass'), vClave)
+WebUI.sendKeys(findTestObject('Object Repository/10-Fecha COB/txtInvPFClaveBypass'), vClave, FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.click(findTestObject('Object Repository/10-Fecha COB/btnInvPFConfirmarBypass'))
 
 //Valida los datos en el comprobante

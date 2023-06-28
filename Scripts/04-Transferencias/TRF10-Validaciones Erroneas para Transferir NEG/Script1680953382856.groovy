@@ -71,7 +71,7 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrxMisCuentas
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/txtTrxMisCtasPesos'))
 
 //Valida Toast Moneda Errónea
-WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblTrxMensajeMonedaErronea'),vMonedaTexto)
+WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblTrxMensajeMonedaErronea'),vMonedaTexto, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Ingresa en la sección Inicio del Dashboard
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbInicioEstado2'))
@@ -88,7 +88,7 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transfe
 
 //Ingresa monto
 WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxMontoPesos'))
-WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrxMontoPesos'), vValorMonto)
+WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrxMontoPesos'), vValorMonto, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Selecciona Titularidad
 WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrxSeleccionTitularidadFormulario'))
@@ -96,7 +96,7 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrxSeleccionT
 //Valida Mensaje Monto Supera Limite
 //vMontoAtributo = WebUI.getAttribute(findTestObject('Object Repository/04-Transferencias/txtTrxMontoSuperaLimite'), text)
 //WebUI.verifyMatch(vMontoAtributo,vMontoLimite, true)
-WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/txtTrxMontoSuperaSaldo'), vMontoLimite)
+WebUI.verifyElementText(findTestObject('Object Repository/04-Transferencias/txtTrxMontoSuperaSaldo'), vMontoLimite, FailureHandling.CONTINUE_ON_FAILURE)
 
 //NOTA: Cambiar validacion monto Limite
 

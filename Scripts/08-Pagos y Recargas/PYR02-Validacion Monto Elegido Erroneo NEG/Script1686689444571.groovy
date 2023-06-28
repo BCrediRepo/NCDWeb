@@ -65,11 +65,11 @@ CustomKeywords.'pkgUtilities.kwyUtility.comparacionListaDetallePago'(60)
 
 //Ingresa Monto y referencia
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRMontoPagoServicio'))
-WebUI.sendKeys(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRMontoPagoServicio'), vMonto)
+WebUI.sendKeys(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRMontoPagoServicio'), vMonto, FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRReferenciaPagoServicio'))
 
 //Valida Monto erróneo y cierra Solapa 
-WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRMontoErroneo'), vErrorMonto)
+WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRMontoErroneo'), vErrorMonto, FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/icoPYRCerrarSolapaPagoServicios'))
 
 //---------------------------------------------------------------------------------------------------------------------

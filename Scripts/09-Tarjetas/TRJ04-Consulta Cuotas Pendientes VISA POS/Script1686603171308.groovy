@@ -58,12 +58,12 @@ WebUI.click(findTestObject('Object Repository/09-Tarjetas/LblTrjTarjetaVisa'))
 WebUI.click(findTestObject('Object Repository/09-Tarjetas/lblTrjCuotasPendientes'))
 
 //Valida datos
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjCPFecha'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjCPDescripcion'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjCPNombre'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjCPCuotas'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjCPValorCuota'), 10)
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjCPSaldo'), 10)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjCPFecha'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjCPDescripcion'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjCPNombre'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjCPCuotas'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjCPValorCuota'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjCPSaldo'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

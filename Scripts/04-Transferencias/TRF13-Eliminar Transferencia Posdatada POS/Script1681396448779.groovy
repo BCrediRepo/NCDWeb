@@ -62,7 +62,7 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxBenefDesta
 
 //Ingresa Monto
 WebUI.click(findTestObject('Object Repository/04-Transferencias/04-Calendario/txtTrxIngresarMontoPosdatada'))
-WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/04-Calendario/txtTrxIngresarMontoPosdatada'), vValorMonto)
+WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/04-Calendario/txtTrxIngresarMontoPosdatada'), vValorMonto, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Selecciona Titularidad
 WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrxSeleccionTitularidadFormulario'))
@@ -81,13 +81,13 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transfe
 WebUI.click(findTestObject('Object Repository/04-Transferencias/btnTrxConfirmarTransferencias'))
 
 //Ingresa Clave Bypass
-WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxClaveBypass'), vClave)
+WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxClaveBypass'), vClave, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Confirma Operación
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxConfirmarBypass'))
 
 //Valida Destinatario
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/txtTrxBeneficiarioDestino'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/txtTrxBeneficiarioDestino'), FailureHandling.CONTINUE_ON_FAILURE)
 
 //Vuelve a Transferencias
 WebUI.click(findTestObject('Object Repository/04-Transferencias/btnTrxIrTransferencias'))
@@ -98,7 +98,7 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/icoTrxEliminarPr
 WebUI.click(findTestObject('Object Repository/04-Transferencias/btnTrxAceptarEliminarProgramada'))
 
 //Valida Mensaje Toast
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/lblTrxProgramadasEliminarExitoso'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/lblTrxProgramadasEliminarExitoso'), FailureHandling.CONTINUE_ON_FAILURE)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

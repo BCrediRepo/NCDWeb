@@ -99,20 +99,20 @@ WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYRBuscarHi
 
 //Valida titulos de la tabla
 WebUI.delay(10)
-WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRListaHistorialFecha'), vFecha)
-WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRListaHistorialServicio'), vServicio)
-WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRListaHistorialAnotacinPersonal'), vAnotacion)
-WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRListaHistorialNroOperacin'), vOperacion)
-WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRListaHistorialCuentaOrigen'), vCuenta)
-WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRListaHistorialImporte'), vImporte)
+WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRListaHistorialFecha'), vFecha, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRListaHistorialServicio'), vServicio, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRListaHistorialAnotacinPersonal'), vAnotacion, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRListaHistorialNroOperacin'), vOperacion, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRListaHistorialCuentaOrigen'), vCuenta, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRListaHistorialImporte'), vImporte, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Valida Resultado de la Busqueda
-WebUI.verifyElementVisible(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRListaHistorialFecha'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRListaHistorialServicioAdherido'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRListaHistorialAnotacionPersonal'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRListaHistorialNroOperacion'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRListaHistorialCuentaOrigen'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRListaHistorialImporte'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRListaHistorialFecha'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRListaHistorialServicioAdherido'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRListaHistorialAnotacionPersonal'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRListaHistorialNroOperacion'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRListaHistorialCuentaOrigen'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRListaHistorialImporte'), FailureHandling.CONTINUE_ON_FAILURE)
 
 //Valida que coincidan ambos nombres del servicio seleccionado
 //WebUI.callTestCase(findTestCase("UTL01-VerifyPDFKeywords"), null)

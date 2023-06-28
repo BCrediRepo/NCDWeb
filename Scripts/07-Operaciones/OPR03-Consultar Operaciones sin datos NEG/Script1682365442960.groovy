@@ -59,7 +59,7 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbMisOperaciones'
 
 //Cliquea en Buscar y valida Resultados
 WebUI.click(findTestObject('Object Repository/07-Operaciones/btnOprBuscarOperacion'))
-WebUI.verifyElementText(findTestObject('Object Repository/07-Operaciones/txtOprBusquedaSinResultados'), vlblSinOperacion)
+WebUI.verifyElementText(findTestObject('Object Repository/07-Operaciones/txtOprBusquedaSinResultados'), vlblSinOperacion, FailureHandling.CONTINUE_ON_FAILURE)
 
 //---------------------------------------------------------------------------------------------------------------------
 

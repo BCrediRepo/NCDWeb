@@ -63,12 +63,12 @@ WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/mnuPYRCategori
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRTelefonia'))
 
 //Ingresa Ente
-WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRIngresoEnte'), vEnte)
+WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRIngresoEnte'), vEnte, FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.delay(5)
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/lnkPYRIplanNetworks'))
 
 //Ingresa el código
-WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRCodigoPago'), vCodigo)
+WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRCodigoPago'), vCodigo, FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYRAdherirServicioSolapa'))
 
 //Selecciona pagar
@@ -76,13 +76,13 @@ WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYRPagarSer
 
 //Ingresa Monto y confirma
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRFormularioPagoMonto'))
-WebUI.sendKeys(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRFormularioPagoMonto'), vMonto)
+WebUI.sendKeys(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRFormularioPagoMonto'), vMonto, FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/mnuPYRFormularioCuentaDebitar'))
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRFormularioCuentaDebitar'))
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYRFormularioConfirmarPago'))
 
 //Ingresa firma ByPass y confirma
-WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRPagoServicioClaveBypass'), vClave)
+WebUI.setText(findTestObject('Object Repository/08-Pagos y Recargas/txtPYRPagoServicioClaveBypass'), vClave, FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/btnPYRConfirmarClaveBypass'))
 
 //Validar pantalla pago exitoso

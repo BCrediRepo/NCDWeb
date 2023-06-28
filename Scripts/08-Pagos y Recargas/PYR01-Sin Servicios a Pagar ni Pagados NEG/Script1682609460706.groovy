@@ -69,8 +69,8 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbPagos y Recarga
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbServicios y Tarjetas'))
 
 //Valida título y Mensaje 
-//WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRPagosRecargas'), vTxtPagosRecargas)
-WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRSinPrximosVencimientos'), vTxtVencimientos)
+//WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRPagosRecargas'), vTxtPagosRecargas, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRSinPrximosVencimientos'), vTxtVencimientos, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Ingresa a Historial de Pagos
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/mnuPYRPagosRecargas'))
@@ -78,8 +78,8 @@ WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/lnkPYRVerHisto
 
 //Valida Titulo y Mensaje
 //WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRHistorialPagos'), vTxtHistorialPagos)
-WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRSinServiciosPorVencer'), vTxtSinServicios)
-WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRSinPagosRealizados'), vTxtSinPagos)
+WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRSinServiciosPorVencer'), vTxtSinServicios, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRSinPagosRealizados'), vTxtSinPagos, FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/icoPYRAtrasHistorial'))
 
 //Ingresa a Servicios Adheridos
@@ -87,7 +87,7 @@ WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/mnuPYRPagosRec
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/lnkPYRVerServiciosAdheridos'))
 
 //Valida Mensaje
-WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRSinServiciosAdheridos'), vTxtSinAdheridos)
+WebUI.verifyElementText(findTestObject('Object Repository/08-Pagos y Recargas/lblPYRSinServiciosAdheridos'), vTxtSinAdheridos, FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.click(findTestObject('Object Repository/08-Pagos y Recargas/icoPYRCerrarSolapaAdheridos'))
 
 //---------------------------------------------------------------------------------------------------------------------

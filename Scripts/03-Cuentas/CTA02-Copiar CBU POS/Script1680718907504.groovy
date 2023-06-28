@@ -59,7 +59,7 @@ WebUI.click(findTestObject('Object Repository/03-Cuentas/lnkCtaMenuInicio'))
 WebUI.click(findTestObject('Object Repository/03-Cuentas/lnkCtaCopiarCBU'))
 
 //Valida Toast de Confirmación
-WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaToastCopiaCBU'),vCbuToast)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaToastCopiaCBU'),vCbuToast, FailureHandling.CONTINUE_ON_FAILURE)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

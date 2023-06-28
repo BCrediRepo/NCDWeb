@@ -69,23 +69,23 @@ CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 //Ingresa al módulo de Cuentas desde menú lateral y mapea los campos
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbCuentas'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaTituloCuentaTabla'), vCuenta)
-WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaTituloFavoritaTabla'), vFavorita)
-WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaTituloMonedaTabla'), vMoneda)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaTituloCuentaTabla'), vCuenta, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaTituloFavoritaTabla'), vFavorita, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaTituloMonedaTabla'), vMoneda, FailureHandling.CONTINUE_ON_FAILURE)
 
 CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
 
-WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaTituloSaldoTabla'), vSaldo)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaTituloSaldoTabla'), vSaldo, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Ingresa al módulo de Cuentas desde Inicio y mapea los campos
 WebUI.click(findTestObject('Object Repository/03-Cuentas/icoCtaAtras'))
 
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbCuentasInicio'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaTituloCuentaTabla'), vCuenta)
-WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaTituloFavoritaTabla'), vFavorita)
-WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaTituloMonedaTabla'), vMoneda)
-WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaTituloSaldoTabla'), vSaldo) 
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaTituloCuentaTabla'), vCuenta, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaTituloFavoritaTabla'), vFavorita, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaTituloMonedaTabla'), vMoneda, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/lblCtaTituloSaldoTabla'), vSaldo, FailureHandling.CONTINUE_ON_FAILURE) 
 
 //---------------------------------------------------------------------------------------------------------------------
 

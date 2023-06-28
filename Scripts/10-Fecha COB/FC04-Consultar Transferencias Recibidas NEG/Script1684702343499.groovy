@@ -80,12 +80,12 @@ WebUI.click(findTestObject('Object Repository/10-Fecha COB/txtTrxDiaHasta'))
 
 //Valida que no haya registros desde el calendario
 WebUI.click(findTestObject('Object Repository/10-Fecha COB/btnTrxBuscarCalendario'))
-WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/lblTrxSinRegistro'), vMsjeSinTrx)
+WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/lblTrxSinRegistro'), vMsjeSinTrx, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Valida que no haya registros desde el buscador
 WebUI.click(findTestObject('Object Repository/10-Fecha COB/txtTrxBuscarRecibidas'))
-WebUI.sendKeys(findTestObject(('Object Repository/10-Fecha COB/txtTrxBuscarRecibidas')), vTexto)
-WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/lblTrxSinResultadosBusqueda'), vSinResultado)
+WebUI.sendKeys(findTestObject(('Object Repository/10-Fecha COB/txtTrxBuscarRecibidas')), vTexto, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/10-Fecha COB/lblTrxSinResultadosBusqueda'), vSinResultado, FailureHandling.CONTINUE_ON_FAILURE)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

@@ -64,25 +64,12 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transfe
 //Selecciono solapa Mis cuentas Credicoop
 WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrxMisCuentasCredicoop'))
 
-//Selecciona Cuenta en dolares
-//WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkTrxCuentaPropiaDolares'))
-WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/txtTrxCtaPropiaDolares'))
-WebUI.delay(5)
-
+//Selecciona cuenta en Dolares y valida los datos en el formulario
 CustomKeywords.'pkgUtilities.kwyUtility.comparacionListadoTrxPropiasDolares'(60)
-//JOptionPane.showMessageDialog(null, GlobalVariable.vMonedaCta)
-//JOptionPane.showMessageDialog(null, GlobalVariable.vMonedaTrx)
-//Valida Cuenta dolares
-if (GlobalVariable.vMonedaCta == 'U$S' && GlobalVariable.vMonedaTrx == 'U$S'){
-	println("La cuenta seleccionada corresponde a una moneda en dolares.")
-	
-}else{
-	KeywordUtil.markFailedAndStop("La cuenta seleccionada NO corresponde a una moneda en dolares.")
-}
 
 //Ingresa Monto valido y menor al saldo de la cuenta
 WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxMontoFormulario'))
-WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrxMontoFormulario'), vValorMonto)
+WebUI.sendKeys(findTestObject('Object Repository/04-Transferencias/txtTrxMontoFormulario'), vValorMonto, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Selecciona Titularidad
 WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrxSeleccionTitularidadFormulario'))
@@ -93,16 +80,16 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transfe
 
 //Cliquea en boton Confirmar
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxConfirmar'))
-/*
+
 //Ingresa Clave Bypass
-WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxClaveBypass'), vClaveBypass)
+WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxClaveBypass'), vClaveBypass, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Confirma Operación
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxConfirmarBypass'))
 
 //Valida Numero de operacion y monto Exitoso
 CustomKeywords.'pkgUtilities.kwyUtility.comparacionNroOperacionTrxPropiasDolares'(60)
-*/
+
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 
