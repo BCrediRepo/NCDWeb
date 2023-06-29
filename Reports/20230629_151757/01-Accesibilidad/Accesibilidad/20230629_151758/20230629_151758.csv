@@ -1,0 +1,57 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Accesibilidad,Chrome 114.0.0.0,,,2023-06-29 15:18:16,2023-06-29 15:19:18,"1m - 1,538s",FAILED
+,,,,,,,
+Test Cases/01-Login/LGN01-Login,Chrome 114.0.0.0,,Login,2023-06-29 15:18:16,2023-06-29 15:18:39,"22,520s",PASSED
+"vQuery = ""SELECT * FROM UsuariosRMobile WHERE NroDNI = 20144835""",Chrome 114.0.0.0,,,2023-06-29 15:18:17,2023-06-29 15:18:17,"0,002s",PASSED
+vDNI = null,Chrome 114.0.0.0,,,2023-06-29 15:18:17,2023-06-29 15:18:17,"0,001s",PASSED
+vClave = null,Chrome 114.0.0.0,,,2023-06-29 15:18:17,2023-06-29 15:18:17,"0,001s",PASSED
+vUsuario = null,Chrome 114.0.0.0,,,2023-06-29 15:18:17,2023-06-29 15:18:17,"0,001s",PASSED
+pkgDatabase.kwySQL.connectDB(),Chrome 114.0.0.0,,,2023-06-29 15:18:17,2023-06-29 15:18:20,"3,038s",PASSED
+vResult = pkgDatabase.kwySQL.executeQuery(vQuery),Chrome 114.0.0.0,,,2023-06-29 15:18:20,2023-06-29 15:18:20,"0,302s",PASSED
+vDNI = vResult.getString(2),Chrome 114.0.0.0,,,2023-06-29 15:18:20,2023-06-29 15:18:20,"0,001s",PASSED
+vUsuario = vResult.getString(3),Chrome 114.0.0.0,,,2023-06-29 15:18:20,2023-06-29 15:18:20,"0,001s",PASSED
+vClave = vResult.getString(4),Chrome 114.0.0.0,,,2023-06-29 15:18:20,2023-06-29 15:18:20,"0,002s",PASSED
+pkgDatabase.kwySQL.closeDatabaseConnection(),Chrome 114.0.0.0,,,2023-06-29 15:18:20,2023-06-29 15:18:20,"0,004s",PASSED
+"pkgUtilities.kwyUtility.Server(""Internet"")",Chrome 114.0.0.0,,,2023-06-29 15:18:20,2023-06-29 15:18:21,"0,637s",PASSED
+openBrowser(ServerUsado),Chrome 114.0.0.0,,,2023-06-29 15:18:21,2023-06-29 15:18:27,"6,376s",PASSED
+maximizeWindow(),Chrome 114.0.0.0,,,2023-06-29 15:18:27,2023-06-29 15:18:27,"0,197s",PASSED
+"click(findTestObject(""Object Repository/01-Login/btnLgnCerrarBanner""))",Chrome 114.0.0.0,,,2023-06-29 15:18:27,2023-06-29 15:18:28,"0,766s",PASSED
+"setText(findTestObject(""Object Repository/01-Login/txtLgnDNI""), vDNI, CONTINUE_ON_FAILURE)",Chrome 114.0.0.0,,,2023-06-29 15:18:28,2023-06-29 15:18:29,"0,962s",PASSED
+"setText(findTestObject(""Object Repository/01-Login/txtLgnClave""), vClave, CONTINUE_ON_FAILURE)",Chrome 114.0.0.0,,,2023-06-29 15:18:29,2023-06-29 15:18:30,"0,799s",PASSED
+"setText(findTestObject(""Object Repository/01-Login/txtLgnUsuario""), vUsuario, CONTINUE_ON_FAILURE)",Chrome 114.0.0.0,,,2023-06-29 15:18:30,2023-06-29 15:18:31,"0,914s",PASSED
+"click(findTestObject(""Object Repository/01-Login/btnLgnIngresar""))",Chrome 114.0.0.0,,,2023-06-29 15:18:31,2023-06-29 15:18:31,"0,460s",PASSED
+"click(findTestObject(""Object Repository/02-Dashboard/icoDsbSalir""))",Chrome 114.0.0.0,,,2023-06-29 15:18:31,2023-06-29 15:18:38,"6,681s",PASSED
+Start tear down : fPassScript,Chrome 114.0.0.0,,,2023-06-29 15:18:38,2023-06-29 15:18:39,"0,820s",PASSED
+,,,,,,,
+Test Cases/01-Login/LGN03-Cambio de clave NEG,Chrome 114.0.0.0,,,2023-06-29 15:18:39,2023-06-29 15:19:18,"38,698s",FAILED
+"vQuery = ""SELECT * FROM UsuariosRMobile WHERE NroDNI = 10833645""",Chrome 114.0.0.0,,,2023-06-29 15:18:39,2023-06-29 15:18:39,"0,001s",PASSED
+vDNI = null,Chrome 114.0.0.0,,,2023-06-29 15:18:39,2023-06-29 15:18:39,"0,001s",PASSED
+vClave = null,Chrome 114.0.0.0,,,2023-06-29 15:18:39,2023-06-29 15:18:39,"0,001s",PASSED
+vUsuario = null,Chrome 114.0.0.0,,,2023-06-29 15:18:39,2023-06-29 15:18:39,"0,001s",PASSED
+"vClave1 = ""Testing7""",Chrome 114.0.0.0,,,2023-06-29 15:18:39,2023-06-29 15:18:39,"0,000s",PASSED
+"vClave2 = ""Testing8""",Chrome 114.0.0.0,,,2023-06-29 15:18:39,2023-06-29 15:18:39,"0,000s",PASSED
+"vtxtNoCoincide = """"",Chrome 114.0.0.0,,,2023-06-29 15:18:39,2023-06-29 15:18:39,"0,001s",PASSED
+pkgDatabase.kwySQL.connectDB(),Chrome 114.0.0.0,,,2023-06-29 15:18:39,2023-06-29 15:18:41,"1,317s",PASSED
+vResult = pkgDatabase.kwySQL.executeQuery(vQuery),Chrome 114.0.0.0,,,2023-06-29 15:18:41,2023-06-29 15:18:41,"0,195s",PASSED
+vDNI = vResult.getString(2),Chrome 114.0.0.0,,,2023-06-29 15:18:41,2023-06-29 15:18:41,"0,001s",PASSED
+vUsuario = vResult.getString(3),Chrome 114.0.0.0,,,2023-06-29 15:18:41,2023-06-29 15:18:41,"0,001s",PASSED
+vClave = vResult.getString(4),Chrome 114.0.0.0,,,2023-06-29 15:18:41,2023-06-29 15:18:41,"0,000s",PASSED
+pkgDatabase.kwySQL.closeDatabaseConnection(),Chrome 114.0.0.0,,,2023-06-29 15:18:41,2023-06-29 15:18:41,"0,002s",PASSED
+"pkgUtilities.kwyUtility.Server(""Internet"")",Chrome 114.0.0.0,,,2023-06-29 15:18:41,2023-06-29 15:18:41,"0,001s",PASSED
+openBrowser(ServerUsado),Chrome 114.0.0.0,,,2023-06-29 15:18:41,2023-06-29 15:18:46,"5,078s",PASSED
+maximizeWindow(),Chrome 114.0.0.0,,,2023-06-29 15:18:46,2023-06-29 15:18:46,"0,132s",PASSED
+"click(findTestObject(""Object Repository/01-Login/btnLgnCerrarBanner""))",Chrome 114.0.0.0,,,2023-06-29 15:18:46,2023-06-29 15:18:47,"0,726s",PASSED
+"setText(findTestObject(""Object Repository/01-Login/txtLgnDNI""), vDNI, CONTINUE_ON_FAILURE)",Chrome 114.0.0.0,,,2023-06-29 15:18:47,2023-06-29 15:18:48,"0,925s",PASSED
+"setText(findTestObject(""Object Repository/01-Login/txtLgnClave""), vClave, CONTINUE_ON_FAILURE)",Chrome 114.0.0.0,,,2023-06-29 15:18:48,2023-06-29 15:18:49,"0,834s",PASSED
+"setText(findTestObject(""Object Repository/01-Login/txtLgnUsuario""), vUsuario, CONTINUE_ON_FAILURE)",Chrome 114.0.0.0,,,2023-06-29 15:18:49,2023-06-29 15:18:50,"0,941s",PASSED
+"click(findTestObject(""Object Repository/01-Login/btnLgnIngresar""))",Chrome 114.0.0.0,,,2023-06-29 15:18:50,2023-06-29 15:18:50,"0,443s",PASSED
+"click(findTestObject(""Object Repository/01-Login/mnuLgnUsuario""))",Chrome 114.0.0.0,,,2023-06-29 15:18:50,2023-06-29 15:19:07,"16,860s",PASSED
+"click(findTestObject(""Object Repository/01-Login/txtLgnCambioClave""))",Chrome 114.0.0.0,,,2023-06-29 15:19:07,2023-06-29 15:19:07,"0,572s",PASSED
+"click(findTestObject(""Object Repository/01-Login/txtLgnClaveActual""))",Chrome 114.0.0.0,,,2023-06-29 15:19:07,2023-06-29 15:19:09,"1,347s",PASSED
+"setText(findTestObject(""Object Repository/01-Login/txtLgnClaveActual""), vClave, CONTINUE_ON_FAILURE)",Chrome 114.0.0.0,,,2023-06-29 15:19:09,2023-06-29 15:19:10,"0,957s",PASSED
+"click(findTestObject(""Object Repository/01-Login/txtLgnNuevaClave""))",Chrome 114.0.0.0,,,2023-06-29 15:19:10,2023-06-29 15:19:10,"0,376s",PASSED
+"setText(findTestObject(""Object Repository/01-Login/txtLgnNuevaClave""), vClave1, CONTINUE_ON_FAILURE)",Chrome 114.0.0.0,,,2023-06-29 15:19:10,2023-06-29 15:19:11,"1,168s",PASSED
+"click(findTestObject(""Object Repository/01-Login/txtLgnReingresarClave""))",Chrome 114.0.0.0,,,2023-06-29 15:19:11,2023-06-29 15:19:12,"0,492s",PASSED
+"setText(findTestObject(""Object Repository/01-Login/txtLgnReingresarClave""), vClave2, CONTINUE_ON_FAILURE)",Chrome 114.0.0.0,,,2023-06-29 15:19:12,2023-06-29 15:19:13,"1,011s",PASSED
+"verifyElementText(findTestObject(""Object Repository/01-Login/lblLgnClaveNoCoincide""), vtxtNoCoincide, CONTINUE_ON_FAILURE)",Chrome 114.0.0.0,,,2023-06-29 15:19:13,2023-06-29 15:19:13,"0,592s",FAILED
+Start tear down : fTakeFailScreenshot,Chrome 114.0.0.0,,,2023-06-29 15:19:13,2023-06-29 15:19:18,"4,205s",PASSED

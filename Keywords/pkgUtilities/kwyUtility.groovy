@@ -33,10 +33,6 @@ import java.sql.DriverManager
 import java.sql.ResultSet
 import java.sql.Statement
 
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import com.kms.katalon.core.testobject.TestObject as TestObject
-
-
 
 public class kwyUtility {
 
@@ -397,7 +393,7 @@ public class kwyUtility {
 		vCtaOrigenTrx = WebUI.getText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblTrxCtaOrigen'), vCtaOrigenT)
 		//JOptionPane.showMessageDialog(null, vCtaOrigenTrx)
 		vMontoTrx = WebUI.getText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/txtTrxMonto'), vMontoT)
-		JOptionPane.showMessageDialog(null, vMontoTrx)
+		//JOptionPane.showMessageDialog(null, vMontoTrx)
 		WebUI.getText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblTrxNumero'), vCtaDestinoT)
 		//JOptionPane.showMessageDialog(null, vCtaDestinoTrx)
 
@@ -407,7 +403,7 @@ public class kwyUtility {
 		WebUI.waitForPageLoad(vTiempo)
 
 		vMontoConfirm = WebUI.getText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/txtTrxMontoConfirm'), vMontoC)
-		JOptionPane.showMessageDialog(null, vMontoConfirm)
+		//JOptionPane.showMessageDialog(null, vMontoConfirm)
 		vCtaOrigenConfirm = WebUI.getText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblTrxCtaOrigenConfirm'), vCtaOrigenC)
 		//JOptionPane.showMessageDialog(null, vCtaOrigenConfirm)
 		vCtaDestinoConfirm = WebUI.getText(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/lblTrxCtaDestinoConfirm'), vCtaDestinoC)
@@ -578,12 +574,51 @@ public class kwyUtility {
 	}
 
 	/*----------------------------------------------------------------------------------------------*
+	 *Validación Comprobante Transferencias Terceros Credicoop Dolar                                *
+	 *----------------------------------------------------------------------------------------------*/
+	@Keyword
+	def comparacionOperacionTrxTercerosCredicoopDolar(def vTiempo){
+
+		String vMontoExito
+		String vMontoE
+		String vNumOperacionExito
+		String vNumeroE
+		String vMontoComprobante
+		String vMontoC
+		String vNumOperacionComprobante
+		String vNumeroC
+
+		//En la pantalla de Confirmacion
+		WebUI.waitForPageLoad(vTiempo)
+
+		vMontoExito = WebUI.getText(findTestObject('Object Repository/04-Transferencias/txtTrxMontoExitoTercerosDolar'), vMontoE)
+		//JOptionPane.showMessageDialog(null, vMontoExito)
+		vNumOperacionExito = WebUI.getText(findTestObject('Object Repository/04-Transferencias/txtTrxNroOperacionExitoTercerosDolar'), vNumeroE)
+		//JOptionPane.showMessageDialog(null, vNumOperacionExito)
+
+		WebUI.click(findTestObject('Object Repository/04-Transferencias/btnTrxJudicialVerComprobanteExito'))
+
+		//En el Comprobante
+		WebUI.waitForPageLoad(vTiempo)
+
+		vMontoComprobante = WebUI.getText(findTestObject('Object Repository/04-Transferencias/txtTrxMontoCompTercerosDolar'), vMontoC)
+		//JOptionPane.showMessageDialog(null, vMontoComprobante)
+		vNumOperacionComprobante = WebUI.getText(findTestObject('Object Repository/04-Transferencias/txtTrxNroOperacionCompTercerosDolar'), vNumeroC)
+		//JOptionPane.showMessageDialog(null, vNumOperacionComprobante)
+
+		//Comparacion entre el monto del formulario de Transferencia y la pantalla de confirmacion
+		WebUI.verifyEqual(vMontoExito, vMontoComprobante, FailureHandling.CONTINUE_ON_FAILURE)
+		WebUI.verifyEqual(vNumOperacionExito, vNumOperacionComprobante, FailureHandling.CONTINUE_ON_FAILURE)
+
+	}
+
+	/*----------------------------------------------------------------------------------------------*
 	 *Validación Comprobante Transferencias Judiciales Otros Bancos Pesos                           *
 	 *----------------------------------------------------------------------------------------------*/
 	@Keyword
 	def comparacionNroOperacionTrxJudicialesOtrosBancos(def vTiempo){
 
-		String vMontoExito 
+		String vMontoExito
 		String vMontoE
 		String vNumOperacionExito
 		String vNumeroE
@@ -599,7 +634,7 @@ public class kwyUtility {
 		//JOptionPane.showMessageDialog(null, vMontoExito)
 		vNumOperacionExito = WebUI.getText(findTestObject('Object Repository/04-Transferencias/txtTrxNroOperOtrosBncosJudicialExito'), vNumeroE)
 		//JOptionPane.showMessageDialog(null, vNumOperacionExito)
-		
+
 		WebUI.click(findTestObject('Object Repository/04-Transferencias/btnTrxJudicialVerComprobanteExito'))
 
 		//En el Comprobante
@@ -638,7 +673,7 @@ public class kwyUtility {
 		//JOptionPane.showMessageDialog(null, vMontoExito)
 		vBeneficiarioExito = WebUI.getText(findTestObject('Object Repository/04-Transferencias/txtTrxProgramadasExitoBeneficiario'), vBeneficiarioE)
 		//JOptionPane.showMessageDialog(null, vBeneficiarioExito)
-		
+
 		WebUI.click(findTestObject('Object Repository/04-Transferencias/btnTrxProgramadasExitoIrTransferencias'))
 		WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkTrxSolapaProgramadas'))
 
@@ -649,7 +684,7 @@ public class kwyUtility {
 		//JOptionPane.showMessageDialog(null, vMontoSolapa)
 		vBeneficiarioSolapa = WebUI.getText(findTestObject('Object Repository/04-Transferencias/txtTrxProgramadasSolapaBeneficiario'), vBeneficiarioS)
 		//JOptionPane.showMessageDialog(null, vBeneficiarioSolapa)
-		
+
 		//Comparacion entre la pantalla de confirmacion y el registro en la solapa Programadas
 		WebUI.verifyEqual(vMontoExito, vMontoSolapa, FailureHandling.CONTINUE_ON_FAILURE)
 		WebUI.verifyEqual(vBeneficiarioExito, vBeneficiarioSolapa, FailureHandling.CONTINUE_ON_FAILURE)
@@ -678,7 +713,7 @@ public class kwyUtility {
 		//JOptionPane.showMessageDialog(null, vMontoExito)
 		vBeneficiarioExito = WebUI.getText(findTestObject('Object Repository/04-Transferencias/txtTrxProgramadasExitoBeneficiarioDolar'), vBeneficiarioE)
 		//JOptionPane.showMessageDialog(null, vBeneficiarioExito)
-		
+
 		WebUI.click(findTestObject('Object Repository/04-Transferencias/btnTrxProgramadasExitoIrTransferencias'))
 		WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkTrxSolapaProgramadas'))
 
@@ -689,7 +724,7 @@ public class kwyUtility {
 		//JOptionPane.showMessageDialog(null, vMontoSolapa)
 		vBeneficiarioSolapa = WebUI.getText(findTestObject('Object Repository/04-Transferencias/txtTrxProgramadasSolapaBeneficiarioDolar'), vBeneficiarioS)
 		//JOptionPane.showMessageDialog(null, vBeneficiarioSolapa)
-		
+
 		//Comparacion entre la pantalla de confirmacion y el registro en la solapa Programadas
 		WebUI.verifyEqual(vMontoExito, vMontoSolapa, FailureHandling.CONTINUE_ON_FAILURE)
 		WebUI.verifyEqual(vBeneficiarioExito, vBeneficiarioSolapa, FailureHandling.CONTINUE_ON_FAILURE)

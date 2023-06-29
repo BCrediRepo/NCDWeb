@@ -32,7 +32,7 @@ String vDNI = null
 String vClave = null
 String vUsuario = null
 String vTipoTrf = null
-String vValorMonto = 0.2
+String vValorMonto = 1
 
 CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
 

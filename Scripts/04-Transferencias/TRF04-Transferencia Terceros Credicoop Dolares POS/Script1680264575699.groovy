@@ -26,13 +26,13 @@ import javax.swing.JOptionPane
 
 //-------------------Conecta a base de datos--------------------------------------------
 def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 20144835"
-def vQuery2 = "SELECT * FROM TipoTrf WHERE Nombre = 'Trf Terceros'"
+def vQuery2 = "SELECT * FROM Parametros WHERE Nombre = 'CBU Dolar'"
 
 String vDNI = null
 String vClave = null
 String vUsuario = null
 String vTipoTrf = null
-String vValorMonto = 0.2
+String vValorMonto = 0.1
 
 CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
 
@@ -65,8 +65,9 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/03-Nuevo Benefic
 WebUI.setText(findTestObject('Object Repository/04-Transferencias/03-Nuevo Beneficiario/txtTrxBuscarBeneficiarioTipo'), vTipoTrf)
 
 //Inicia la transferencia
-WebUI.click(findTestObject('Object Repository/04-Transferencias/mnuTrxTercerosCredicoop'))
-WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxNuevaTransferenciaCredicoop'))
+WebUI.delay(2)
+WebUI.click(findTestObject('Object Repository/04-Transferencias/mnuTrfDesplegableBenefDolar'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrfNuevaTransferenciaMenu'))
 
 //Ingresa Monto
 WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxMontoFormulario'))
@@ -80,7 +81,7 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/lblTrxTitularida
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxContinuarFormulario'))
 
 //Cliquea en boton Confirmar
-WebUI.click(findTestObject('Object Repository/04-Transferencias/btnTrxConfirmarTransferencias'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/btnTrxConfirmarTercerosDolar'))
 
 //Ingresa Clave Bypass
 WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxClaveBypass'), vClave, FailureHandling.CONTINUE_ON_FAILURE)
@@ -88,10 +89,11 @@ WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxClaveByp
 //Confirma Operación
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxConfirmarBypass'))
 
-//Valida Destinatario
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/txtTrxBeneficiarioDestino'))
-//Nota: Poner validación la Transferencia se encuentra en revisión
+//Valida Numero de operacion y monto Exitoso
+CustomKeywords.'pkgUtilities.kwyUtility.comparacionOperacionTrxTercerosCredicoopDolar'(60)
 
+
+//Nota: Poner validación la Transferencia se encuentra en revisión
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 

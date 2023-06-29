@@ -1,0 +1,157 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Cuentas,Chrome 114.0.0.0,,,2023-06-29 15:19:36,2023-06-29 15:24:12,"4m - 35,508s",FAILED
+,,,,,,,
+Test Cases/03-Cuentas/CTA01-Acceder Home Cuentas POS,Chrome 114.0.0.0,,,2023-06-29 15:19:36,2023-06-29 15:20:37,"1m - 0,624s",PASSED
+"vQuery = ""SELECT * FROM UsuariosRMobile WHERE NroDNI = 20144835""",Chrome 114.0.0.0,,,2023-06-29 15:19:37,2023-06-29 15:19:37,"0,001s",PASSED
+"vQuery2 = ""SELECT * FROM Labels WHERE Id = 2""",Chrome 114.0.0.0,,,2023-06-29 15:19:37,2023-06-29 15:19:37,"0,000s",PASSED
+"vQuery3 = ""SELECT * FROM Labels WHERE Id = 3""",Chrome 114.0.0.0,,,2023-06-29 15:19:37,2023-06-29 15:19:37,"0,001s",PASSED
+"vQuery4 = ""SELECT * FROM Labels WHERE Id = 4""",Chrome 114.0.0.0,,,2023-06-29 15:19:37,2023-06-29 15:19:37,"0,001s",PASSED
+"vQuery5 = ""SELECT * FROM Labels WHERE Id = 5""",Chrome 114.0.0.0,,,2023-06-29 15:19:37,2023-06-29 15:19:37,"0,001s",PASSED
+vDNI = null,Chrome 114.0.0.0,,,2023-06-29 15:19:37,2023-06-29 15:19:37,"0,001s",PASSED
+vClave = null,Chrome 114.0.0.0,,,2023-06-29 15:19:37,2023-06-29 15:19:37,"0,001s",PASSED
+vUsuario = null,Chrome 114.0.0.0,,,2023-06-29 15:19:37,2023-06-29 15:19:37,"0,001s",PASSED
+vCuenta = null,Chrome 114.0.0.0,,,2023-06-29 15:19:37,2023-06-29 15:19:37,"0,001s",PASSED
+vFavorita = null,Chrome 114.0.0.0,,,2023-06-29 15:19:37,2023-06-29 15:19:37,"0,000s",PASSED
+vMoneda = null,Chrome 114.0.0.0,,,2023-06-29 15:19:37,2023-06-29 15:19:37,"0,000s",PASSED
+vSaldo = null,Chrome 114.0.0.0,,,2023-06-29 15:19:37,2023-06-29 15:19:37,"0,000s",PASSED
+pkgDatabase.kwySQL.connectDB(),Chrome 114.0.0.0,,,2023-06-29 15:19:37,2023-06-29 15:19:40,"2,863s",PASSED
+vResult = pkgDatabase.kwySQL.executeQuery(vQuery),Chrome 114.0.0.0,,,2023-06-29 15:19:40,2023-06-29 15:19:40,"0,270s",PASSED
+vResult2 = pkgDatabase.kwySQL.executeQuery(vQuery2),Chrome 114.0.0.0,,,2023-06-29 15:19:40,2023-06-29 15:19:40,"0,175s",PASSED
+vResult3 = pkgDatabase.kwySQL.executeQuery(vQuery3),Chrome 114.0.0.0,,,2023-06-29 15:19:40,2023-06-29 15:19:41,"0,180s",PASSED
+vResult4 = pkgDatabase.kwySQL.executeQuery(vQuery4),Chrome 114.0.0.0,,,2023-06-29 15:19:41,2023-06-29 15:19:41,"0,180s",PASSED
+vResult5 = pkgDatabase.kwySQL.executeQuery(vQuery5),Chrome 114.0.0.0,,,2023-06-29 15:19:41,2023-06-29 15:19:41,"0,165s",PASSED
+vDNI = vResult.getString(2),Chrome 114.0.0.0,,,2023-06-29 15:19:41,2023-06-29 15:19:41,"0,001s",PASSED
+vUsuario = vResult.getString(3),Chrome 114.0.0.0,,,2023-06-29 15:19:41,2023-06-29 15:19:41,"0,001s",PASSED
+vClave = vResult.getString(4),Chrome 114.0.0.0,,,2023-06-29 15:19:41,2023-06-29 15:19:41,"0,001s",PASSED
+vCuenta = vResult2.getString(3),Chrome 114.0.0.0,,,2023-06-29 15:19:41,2023-06-29 15:19:41,"0,001s",PASSED
+vFavorita = vResult3.getString(3),Chrome 114.0.0.0,,,2023-06-29 15:19:41,2023-06-29 15:19:41,"0,001s",PASSED
+vMoneda = vResult4.getString(3),Chrome 114.0.0.0,,,2023-06-29 15:19:41,2023-06-29 15:19:41,"0,001s",PASSED
+vSaldo = vResult5.getString(3),Chrome 114.0.0.0,,,2023-06-29 15:19:41,2023-06-29 15:19:41,"0,001s",PASSED
+pkgDatabase.kwySQL.closeDatabaseConnection(),Chrome 114.0.0.0,,,2023-06-29 15:19:41,2023-06-29 15:19:41,"0,004s",PASSED
+"pkgUtilities.kwyUtility.Server(""Internet"")",Chrome 114.0.0.0,,,2023-06-29 15:19:41,2023-06-29 15:19:41,"0,516s",PASSED
+"pkgUtilities.kwyUtility.Login(vDNI, vClave, vUsuario)",Chrome 114.0.0.0,,,2023-06-29 15:19:41,2023-06-29 15:19:51,"9,698s",PASSED
+"click(findTestObject(""Object Repository/02-Dashboard/lnkDsbCuentas""))",Chrome 114.0.0.0,,,2023-06-29 15:19:51,2023-06-29 15:19:58,"7,008s",PASSED
+"verifyElementText(findTestObject(""Object Repository/03-Cuentas/lblCtaTituloCuentaTabla""), vCuenta, CONTINUE_ON_FAILURE)",Chrome 114.0.0.0,,,2023-06-29 15:19:58,2023-06-29 15:20:00,"1,595s",PASSED
+"verifyElementText(findTestObject(""Object Repository/03-Cuentas/lblCtaTituloFavoritaTabla""), vFavorita, CONTINUE_ON_FAILURE)",Chrome 114.0.0.0,,,2023-06-29 15:20:00,2023-06-29 15:20:00,"0,340s",PASSED
+"verifyElementText(findTestObject(""Object Repository/03-Cuentas/lblCtaTituloMonedaTabla""), vMoneda, CONTINUE_ON_FAILURE)",Chrome 114.0.0.0,,,2023-06-29 15:20:00,2023-06-29 15:20:00,"0,355s",PASSED
+"pkgUtilities.kwyUtility.Server(""Internet"")",Chrome 114.0.0.0,,,2023-06-29 15:20:00,2023-06-29 15:20:00,"0,002s",PASSED
+"verifyElementText(findTestObject(""Object Repository/03-Cuentas/lblCtaTituloSaldoTabla""), vSaldo, CONTINUE_ON_FAILURE)",Chrome 114.0.0.0,,,2023-06-29 15:20:00,2023-06-29 15:20:01,"0,343s",PASSED
+"click(findTestObject(""Object Repository/03-Cuentas/icoCtaAtras""))",Chrome 114.0.0.0,,,2023-06-29 15:20:01,2023-06-29 15:20:02,"1,398s",PASSED
+"click(findTestObject(""Object Repository/02-Dashboard/lnkDsbCuentasInicio""))",Chrome 114.0.0.0,,,2023-06-29 15:20:02,2023-06-29 15:20:04,"1,689s",PASSED
+"verifyElementText(findTestObject(""Object Repository/03-Cuentas/lblCtaTituloCuentaTabla""), vCuenta, CONTINUE_ON_FAILURE)",Chrome 114.0.0.0,,,2023-06-29 15:20:04,2023-06-29 15:20:05,"0,852s",PASSED
+"verifyElementText(findTestObject(""Object Repository/03-Cuentas/lblCtaTituloFavoritaTabla""), vFavorita, CONTINUE_ON_FAILURE)",Chrome 114.0.0.0,,,2023-06-29 15:20:05,2023-06-29 15:20:05,"0,372s",PASSED
+"verifyElementText(findTestObject(""Object Repository/03-Cuentas/lblCtaTituloMonedaTabla""), vMoneda, CONTINUE_ON_FAILURE)",Chrome 114.0.0.0,,,2023-06-29 15:20:05,2023-06-29 15:20:05,"0,359s",PASSED
+"verifyElementText(findTestObject(""Object Repository/03-Cuentas/lblCtaTituloSaldoTabla""), vSaldo, CONTINUE_ON_FAILURE)",Chrome 114.0.0.0,,,2023-06-29 15:20:05,2023-06-29 15:20:06,"0,354s",PASSED
+Start tear down : fPassScript,Chrome 114.0.0.0,,,2023-06-29 15:20:06,2023-06-29 15:20:37,"31,344s",PASSED
+,,,,,,,
+Test Cases/03-Cuentas/CTA02-Copiar CBU POS,Chrome 114.0.0.0,,,2023-06-29 15:20:37,2023-06-29 15:20:58,"21,052s",PASSED
+"vQuery = ""SELECT * FROM UsuariosRMobile WHERE NroDNI = 20144835""",Chrome 114.0.0.0,,,2023-06-29 15:20:38,2023-06-29 15:20:38,"0,000s",PASSED
+"vQuery2 = ""SELECT * FROM Toast WHERE idToast = 'Toa-005'""",Chrome 114.0.0.0,,,2023-06-29 15:20:38,2023-06-29 15:20:38,"0,001s",PASSED
+vDNI = null,Chrome 114.0.0.0,,,2023-06-29 15:20:38,2023-06-29 15:20:38,"0,000s",PASSED
+vClave = null,Chrome 114.0.0.0,,,2023-06-29 15:20:38,2023-06-29 15:20:38,"0,000s",PASSED
+vUsuario = null,Chrome 114.0.0.0,,,2023-06-29 15:20:38,2023-06-29 15:20:38,"0,000s",PASSED
+vCbuToast = null,Chrome 114.0.0.0,,,2023-06-29 15:20:38,2023-06-29 15:20:38,"0,000s",PASSED
+pkgDatabase.kwySQL.connectDB(),Chrome 114.0.0.0,,,2023-06-29 15:20:38,2023-06-29 15:20:39,"1,284s",PASSED
+vResult = pkgDatabase.kwySQL.executeQuery(vQuery),Chrome 114.0.0.0,,,2023-06-29 15:20:39,2023-06-29 15:20:39,"0,176s",PASSED
+vResult2 = pkgDatabase.kwySQL.executeQuery(vQuery2),Chrome 114.0.0.0,,,2023-06-29 15:20:39,2023-06-29 15:20:39,"0,168s",PASSED
+vDNI = vResult.getString(2),Chrome 114.0.0.0,,,2023-06-29 15:20:39,2023-06-29 15:20:39,"0,000s",PASSED
+vUsuario = vResult.getString(3),Chrome 114.0.0.0,,,2023-06-29 15:20:39,2023-06-29 15:20:39,"0,000s",PASSED
+vClave = vResult.getString(4),Chrome 114.0.0.0,,,2023-06-29 15:20:39,2023-06-29 15:20:39,"0,000s",PASSED
+vCbuToast = vResult2.getString(2),Chrome 114.0.0.0,,,2023-06-29 15:20:39,2023-06-29 15:20:39,"0,000s",PASSED
+pkgDatabase.kwySQL.closeDatabaseConnection(),Chrome 114.0.0.0,,,2023-06-29 15:20:39,2023-06-29 15:20:39,"0,002s",PASSED
+"pkgUtilities.kwyUtility.Server(""Internet"")",Chrome 114.0.0.0,,,2023-06-29 15:20:39,2023-06-29 15:20:39,"0,000s",PASSED
+"pkgUtilities.kwyUtility.Login(vDNI, vClave, vUsuario)",Chrome 114.0.0.0,,,2023-06-29 15:20:39,2023-06-29 15:20:49,"9,489s",PASSED
+"click(findTestObject(""Object Repository/03-Cuentas/lnkCtaMenuInicio""))",Chrome 114.0.0.0,,,2023-06-29 15:20:49,2023-06-29 15:20:55,"6,715s",PASSED
+"click(findTestObject(""Object Repository/03-Cuentas/lnkCtaCopiarCBU""))",Chrome 114.0.0.0,,,2023-06-29 15:20:55,2023-06-29 15:20:56,"0,580s",PASSED
+"verifyElementText(findTestObject(""Object Repository/03-Cuentas/lblCtaToastCopiaCBU""), vCbuToast, CONTINUE_ON_FAILURE)",Chrome 114.0.0.0,,,2023-06-29 15:20:56,2023-06-29 15:20:56,"0,466s",PASSED
+Start tear down : fPassScript,Chrome 114.0.0.0,,,2023-06-29 15:20:56,2023-06-29 15:20:58,"1,769s",PASSED
+,,,,,,,
+Test Cases/03-Cuentas/CTA03-Consulta CBU y Alias POS,Chrome 114.0.0.0,,,2023-06-29 15:20:58,2023-06-29 15:21:55,"57,105s",FAILED
+"vQuery = ""SELECT * FROM UsuariosRMobile WHERE NroDNI = 20144835""",Chrome 114.0.0.0,,,2023-06-29 15:20:59,2023-06-29 15:20:59,"0,001s",PASSED
+"vQuery2 = ""SELECT * FROM Labels where Id = 6""",Chrome 114.0.0.0,,,2023-06-29 15:20:59,2023-06-29 15:20:59,"0,000s",PASSED
+"vQuery3 = ""SELECT * FROM Labels where Id = 7""",Chrome 114.0.0.0,,,2023-06-29 15:20:59,2023-06-29 15:20:59,"0,001s",PASSED
+vDNI = null,Chrome 114.0.0.0,,,2023-06-29 15:20:59,2023-06-29 15:20:59,"0,000s",PASSED
+vClave = null,Chrome 114.0.0.0,,,2023-06-29 15:20:59,2023-06-29 15:20:59,"0,001s",PASSED
+vUsuario = null,Chrome 114.0.0.0,,,2023-06-29 15:20:59,2023-06-29 15:20:59,"0,000s",PASSED
+vCbuCta = null,Chrome 114.0.0.0,,,2023-06-29 15:20:59,2023-06-29 15:20:59,"0,000s",PASSED
+vALiasCta = null,Chrome 114.0.0.0,,,2023-06-29 15:20:59,2023-06-29 15:20:59,"0,001s",PASSED
+pkgDatabase.kwySQL.connectDB(),Chrome 114.0.0.0,,,2023-06-29 15:20:59,2023-06-29 15:21:00,"1,269s",PASSED
+vResult = pkgDatabase.kwySQL.executeQuery(vQuery),Chrome 114.0.0.0,,,2023-06-29 15:21:00,2023-06-29 15:21:00,"0,186s",PASSED
+vResult2 = pkgDatabase.kwySQL.executeQuery(vQuery2),Chrome 114.0.0.0,,,2023-06-29 15:21:00,2023-06-29 15:21:00,"0,182s",PASSED
+vResult3 = pkgDatabase.kwySQL.executeQuery(vQuery3),Chrome 114.0.0.0,,,2023-06-29 15:21:00,2023-06-29 15:21:00,"0,177s",PASSED
+vDNI = vResult.getString(2),Chrome 114.0.0.0,,,2023-06-29 15:21:00,2023-06-29 15:21:00,"0,001s",PASSED
+vUsuario = vResult.getString(3),Chrome 114.0.0.0,,,2023-06-29 15:21:00,2023-06-29 15:21:00,"0,000s",PASSED
+vClave = vResult.getString(4),Chrome 114.0.0.0,,,2023-06-29 15:21:00,2023-06-29 15:21:00,"0,000s",PASSED
+vCbuCta = vResult2.getString(3),Chrome 114.0.0.0,,,2023-06-29 15:21:00,2023-06-29 15:21:00,"0,000s",PASSED
+vALiasCta = vResult3.getString(3),Chrome 114.0.0.0,,,2023-06-29 15:21:00,2023-06-29 15:21:00,"0,001s",PASSED
+pkgDatabase.kwySQL.closeDatabaseConnection(),Chrome 114.0.0.0,,,2023-06-29 15:21:00,2023-06-29 15:21:00,"0,002s",PASSED
+"pkgUtilities.kwyUtility.Server(""Internet"")",Chrome 114.0.0.0,,,2023-06-29 15:21:00,2023-06-29 15:21:00,"0,001s",PASSED
+"pkgUtilities.kwyUtility.Login(vDNI, vClave, vUsuario)",Chrome 114.0.0.0,,,2023-06-29 15:21:00,2023-06-29 15:21:09,"8,684s",PASSED
+"click(findTestObject(""Object Repository/02-Dashboard/lnkDsbCuentas""))",Chrome 114.0.0.0,,,2023-06-29 15:21:09,2023-06-29 15:21:16,"6,513s",PASSED
+"click(findTestObject(""Object Repository/03-Cuentas/mnuCtaConsultaDesplegable""))",Chrome 114.0.0.0,,,2023-06-29 15:21:16,2023-06-29 15:21:17,"1,665s",PASSED
+"click(findTestObject(""Object Repository/03-Cuentas/txtCtaConsultarAliasCBU""))",Chrome 114.0.0.0,,,2023-06-29 15:21:17,2023-06-29 15:21:18,"0,522s",PASSED
+"verifyElementText(findTestObject(""Object Repository/03-Cuentas/txtCtaNumeroCBU""), vCbuCta, CONTINUE_ON_FAILURE)",Chrome 114.0.0.0,,,2023-06-29 15:21:18,2023-06-29 15:21:20,"2,086s",PASSED
+"verifyElementText(findTestObject(""Object Repository/03-Cuentas/txtCtaNombreAlias""), vALiasCta, CONTINUE_ON_FAILURE)",Chrome 114.0.0.0,,,2023-06-29 15:21:20,2023-06-29 15:21:51,"31,245s",FAILED
+Start tear down : fTakeFailScreenshot,Chrome 114.0.0.0,,,2023-06-29 15:21:51,2023-06-29 15:21:55,"4,158s",PASSED
+,,,,,,,
+Test Cases/03-Cuentas/CTA04-Marcar Desmarcar Cta Favorita POS,Chrome 114.0.0.0,,,2023-06-29 15:21:55,2023-06-29 15:23:08,"1m - 12,299s",PASSED
+"vQuery = ""SELECT * FROM UsuariosRMobile WHERE NroDNI = 13976407""",Chrome 114.0.0.0,,,2023-06-29 15:21:56,2023-06-29 15:21:56,"0,000s",PASSED
+"vQuery2 = ""SELECT * FROM Toast WHERE idToast = 'Toa-CuentaFavorita'""",Chrome 114.0.0.0,,,2023-06-29 15:21:56,2023-06-29 15:21:56,"0,000s",PASSED
+vDNI = null,Chrome 114.0.0.0,,,2023-06-29 15:21:56,2023-06-29 15:21:56,"0,000s",PASSED
+vClave = null,Chrome 114.0.0.0,,,2023-06-29 15:21:56,2023-06-29 15:21:56,"0,000s",PASSED
+vUsuario = null,Chrome 114.0.0.0,,,2023-06-29 15:21:56,2023-06-29 15:21:56,"0,000s",PASSED
+vCtaToast = null,Chrome 114.0.0.0,,,2023-06-29 15:21:56,2023-06-29 15:21:56,"0,000s",PASSED
+pkgDatabase.kwySQL.connectDB(),Chrome 114.0.0.0,,,2023-06-29 15:21:56,2023-06-29 15:21:57,"1,407s",PASSED
+vResult = pkgDatabase.kwySQL.executeQuery(vQuery),Chrome 114.0.0.0,,,2023-06-29 15:21:57,2023-06-29 15:21:57,"0,168s",PASSED
+vResult2 = pkgDatabase.kwySQL.executeQuery(vQuery2),Chrome 114.0.0.0,,,2023-06-29 15:21:57,2023-06-29 15:21:57,"0,169s",PASSED
+vDNI = vResult.getString(2),Chrome 114.0.0.0,,,2023-06-29 15:21:57,2023-06-29 15:21:57,"0,000s",PASSED
+vUsuario = vResult.getString(3),Chrome 114.0.0.0,,,2023-06-29 15:21:57,2023-06-29 15:21:57,"0,000s",PASSED
+vClave = vResult.getString(4),Chrome 114.0.0.0,,,2023-06-29 15:21:57,2023-06-29 15:21:57,"0,000s",PASSED
+vCtaToast = vResult2.getString(2),Chrome 114.0.0.0,,,2023-06-29 15:21:57,2023-06-29 15:21:57,"0,000s",PASSED
+pkgDatabase.kwySQL.closeDatabaseConnection(),Chrome 114.0.0.0,,,2023-06-29 15:21:57,2023-06-29 15:21:57,"0,000s",PASSED
+"pkgUtilities.kwyUtility.Server(""Internet"")",Chrome 114.0.0.0,,,2023-06-29 15:21:57,2023-06-29 15:21:57,"0,000s",PASSED
+"pkgUtilities.kwyUtility.Login(vDNI, vClave, vUsuario)",Chrome 114.0.0.0,,,2023-06-29 15:21:57,2023-06-29 15:22:06,"8,557s",PASSED
+"verifyElementVisible(findTestObject(""Object Repository/02-Dashboard/lnkDsbCuentas""))",Chrome 114.0.0.0,,,2023-06-29 15:22:06,2023-06-29 15:22:32,"25,674s",PASSED
+"click(findTestObject(""Object Repository/02-Dashboard/lnkDsbCuentas""))",Chrome 114.0.0.0,,,2023-06-29 15:22:32,2023-06-29 15:22:32,"0,422s",PASSED
+"verifyElementVisible(findTestObject(""Object Repository/03-Cuentas/lblCtaCuentasTitulo""))",Chrome 114.0.0.0,,,2023-06-29 15:22:32,2023-06-29 15:22:34,"1,797s",PASSED
+"click(findTestObject(""Object Repository/03-Cuentas/icoCtaFavoritoCC""))",Chrome 114.0.0.0,,,2023-06-29 15:22:34,2023-06-29 15:22:34,"0,425s",PASSED
+"verifyElementText(findTestObject(""Object Repository/03-Cuentas/lblCtaCuentaFavoritaActualizada""), vCtaToast, CONTINUE_ON_FAILURE)",Chrome 114.0.0.0,,,2023-06-29 15:22:34,2023-06-29 15:22:35,"0,850s",PASSED
+"click(findTestObject(""Object Repository/03-Cuentas/icoCtaFavoritoCA""))",Chrome 114.0.0.0,,,2023-06-29 15:22:35,2023-06-29 15:22:36,"0,414s",PASSED
+"verifyElementText(findTestObject(""Object Repository/03-Cuentas/lblCtaCuentaFavoritaActualizada""), vCtaToast, CONTINUE_ON_FAILURE)",Chrome 114.0.0.0,,,2023-06-29 15:22:36,2023-06-29 15:22:36,"0,734s",PASSED
+Start tear down : fPassScript,Chrome 114.0.0.0,,,2023-06-29 15:22:36,2023-06-29 15:23:08,"31,325s",PASSED
+,,,,,,,
+Test Cases/03-Cuentas/CTA05-Modificar Nombre Etiqueta Cta POS,Chrome 114.0.0.0,,,2023-06-29 15:23:08,2023-06-29 15:24:12,"1m - 4,128s",PASSED
+"vQuery = ""SELECT * FROM UsuariosRMobile WHERE NroDNI = 1776391""",Chrome 114.0.0.0,,,2023-06-29 15:23:08,2023-06-29 15:23:08,"0,000s",PASSED
+"vQuery2 = ""SELECT * FROM Parametros WHERE Nombre = 'Nombre Cuenta'""",Chrome 114.0.0.0,,,2023-06-29 15:23:08,2023-06-29 15:23:08,"0,000s",PASSED
+"vQuery3 = ""SELECT * FROM Toast WHERE idToast = 'Toa-ctas'""",Chrome 114.0.0.0,,,2023-06-29 15:23:08,2023-06-29 15:23:08,"0,000s",PASSED
+vDNI = null,Chrome 114.0.0.0,,,2023-06-29 15:23:08,2023-06-29 15:23:08,"0,000s",PASSED
+vClave = null,Chrome 114.0.0.0,,,2023-06-29 15:23:08,2023-06-29 15:23:08,"0,000s",PASSED
+vUsuario = null,Chrome 114.0.0.0,,,2023-06-29 15:23:08,2023-06-29 15:23:08,"0,000s",PASSED
+"vNombre = ""Nombre Cuenta""",Chrome 114.0.0.0,,,2023-06-29 15:23:08,2023-06-29 15:23:08,"0,000s",PASSED
+vNombreModif = null,Chrome 114.0.0.0,,,2023-06-29 15:23:08,2023-06-29 15:23:08,"0,000s",PASSED
+vMjeExito = null,Chrome 114.0.0.0,,,2023-06-29 15:23:08,2023-06-29 15:23:08,"0,000s",PASSED
+pkgDatabase.kwySQL.connectDB(),Chrome 114.0.0.0,,,2023-06-29 15:23:08,2023-06-29 15:23:09,"1,411s",PASSED
+vResult = pkgDatabase.kwySQL.executeQuery(vQuery),Chrome 114.0.0.0,,,2023-06-29 15:23:09,2023-06-29 15:23:10,"0,163s",PASSED
+vResult2 = pkgDatabase.kwySQL.executeQuery(vQuery2),Chrome 114.0.0.0,,,2023-06-29 15:23:10,2023-06-29 15:23:10,"0,194s",PASSED
+vResult3 = pkgDatabase.kwySQL.executeQuery(vQuery3),Chrome 114.0.0.0,,,2023-06-29 15:23:10,2023-06-29 15:23:10,"0,207s",PASSED
+vDNI = vResult.getString(2),Chrome 114.0.0.0,,,2023-06-29 15:23:10,2023-06-29 15:23:10,"0,000s",PASSED
+vUsuario = vResult.getString(3),Chrome 114.0.0.0,,,2023-06-29 15:23:10,2023-06-29 15:23:10,"0,000s",PASSED
+vClave = vResult.getString(4),Chrome 114.0.0.0,,,2023-06-29 15:23:10,2023-06-29 15:23:10,"0,000s",PASSED
+vNombreModif = vResult2.getString(2),Chrome 114.0.0.0,,,2023-06-29 15:23:10,2023-06-29 15:23:10,"0,000s",PASSED
+vMjeExito = vResult3.getString(2),Chrome 114.0.0.0,,,2023-06-29 15:23:10,2023-06-29 15:23:10,"0,000s",PASSED
+pkgDatabase.kwySQL.closeDatabaseConnection(),Chrome 114.0.0.0,,,2023-06-29 15:23:10,2023-06-29 15:23:10,"0,000s",PASSED
+"pkgUtilities.kwyUtility.Server(""Internet"")",Chrome 114.0.0.0,,,2023-06-29 15:23:10,2023-06-29 15:23:10,"0,000s",PASSED
+"pkgUtilities.kwyUtility.Login(vDNI, vClave, vUsuario)",Chrome 114.0.0.0,,,2023-06-29 15:23:10,2023-06-29 15:23:20,"9,595s",PASSED
+"click(findTestObject(""Object Repository/02-Dashboard/lnkDsbCuentas""))",Chrome 114.0.0.0,,,2023-06-29 15:23:20,2023-06-29 15:23:26,"6,600s",PASSED
+"click(findTestObject(""Object Repository/03-Cuentas/lnkCtaNombreEtiqueta""))",Chrome 114.0.0.0,,,2023-06-29 15:23:26,2023-06-29 15:23:28,"1,517s",PASSED
+"click(findTestObject(""Object Repository/03-Cuentas/mnuCtaNombre""))",Chrome 114.0.0.0,,,2023-06-29 15:23:28,2023-06-29 15:23:29,"1,687s",PASSED
+"click(findTestObject(""Object Repository/03-Cuentas/txtCtaCambiarNombre""))",Chrome 114.0.0.0,,,2023-06-29 15:23:29,2023-06-29 15:23:30,"0,536s",PASSED
+"setText(findTestObject(""Object Repository/03-Cuentas/txtCtaModificacionNombre""), vNombre, CONTINUE_ON_FAILURE)",Chrome 114.0.0.0,,,2023-06-29 15:23:30,2023-06-29 15:23:31,"0,763s",PASSED
+"click(findTestObject(""Object Repository/03-Cuentas/lnkCtaConsultarAliasCBU""))",Chrome 114.0.0.0,,,2023-06-29 15:23:31,2023-06-29 15:23:31,"0,436s",PASSED
+"verifyElementText(findTestObject(""Object Repository/03-Cuentas/txtCtaMsjeNombreActualizado""), vMjeExito, CONTINUE_ON_FAILURE)",Chrome 114.0.0.0,,,2023-06-29 15:23:31,2023-06-29 15:23:33,"2,187s",PASSED
+"click(findTestObject(""Object Repository/03-Cuentas/btnCtaCerrarConsultaAliasCBU""))",Chrome 114.0.0.0,,,2023-06-29 15:23:33,2023-06-29 15:23:34,"0,386s",PASSED
+delay(5),Chrome 114.0.0.0,,,2023-06-29 15:23:34,2023-06-29 15:23:39,"5,006s",PASSED
+"click(findTestObject(""Object Repository/03-Cuentas/mnuCtaNombre""))",Chrome 114.0.0.0,,,2023-06-29 15:23:39,2023-06-29 15:23:39,"0,424s",PASSED
+"click(findTestObject(""Object Repository/03-Cuentas/txtCtaCambiarNombreModificado""))",Chrome 114.0.0.0,,,2023-06-29 15:23:39,2023-06-29 15:23:40,"0,522s",PASSED
+"setText(findTestObject(""Object Repository/03-Cuentas/txtCtaModificacionNombre""), vNombreModif, CONTINUE_ON_FAILURE)",Chrome 114.0.0.0,,,2023-06-29 15:23:40,2023-06-29 15:23:40,"0,767s",PASSED
+Start tear down : fPassScript,Chrome 114.0.0.0,,,2023-06-29 15:23:40,2023-06-29 15:24:12,"31,357s",PASSED

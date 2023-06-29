@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>NF01-Administrar Alertas de Seguridad POS-X</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d03be3a0-764d-48ba-bf1d-28bc1d9b4ec7</testCaseGuid>
+</TestCaseEntity>

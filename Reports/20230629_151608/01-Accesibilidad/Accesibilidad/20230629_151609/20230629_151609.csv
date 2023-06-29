@@ -1,0 +1,35 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Accesibilidad,Chrome 114.0.0.0,,,2023-06-29 15:16:28,2023-06-29 15:17:06,"38,160s",FAILED
+,,,,,,,
+Test Cases/01-Login/LGN01-Login,Chrome 114.0.0.0,,Login,2023-06-29 15:16:28,2023-06-29 15:16:46,"17,727s",FAILED
+"vQuery = ""SELECT * FROM UsuariosRMobile WHERE NroDNI = 20144835""",Chrome 114.0.0.0,,,2023-06-29 15:16:29,2023-06-29 15:16:29,"0,003s",PASSED
+vDNI = null,Chrome 114.0.0.0,,,2023-06-29 15:16:29,2023-06-29 15:16:29,"0,001s",PASSED
+vClave = null,Chrome 114.0.0.0,,,2023-06-29 15:16:29,2023-06-29 15:16:29,"0,000s",PASSED
+vUsuario = null,Chrome 114.0.0.0,,,2023-06-29 15:16:29,2023-06-29 15:16:29,"0,000s",PASSED
+pkgDatabase.kwySQL.connectDB(),Chrome 114.0.0.0,,,2023-06-29 15:16:29,2023-06-29 15:16:32,"3,013s",PASSED
+vResult = pkgDatabase.kwySQL.executeQuery(vQuery),Chrome 114.0.0.0,,,2023-06-29 15:16:32,2023-06-29 15:16:32,"0,287s",PASSED
+vDNI = vResult.getString(2),Chrome 114.0.0.0,,,2023-06-29 15:16:32,2023-06-29 15:16:32,"0,001s",PASSED
+vUsuario = vResult.getString(3),Chrome 114.0.0.0,,,2023-06-29 15:16:32,2023-06-29 15:16:32,"0,000s",PASSED
+vClave = vResult.getString(4),Chrome 114.0.0.0,,,2023-06-29 15:16:32,2023-06-29 15:16:32,"0,001s",PASSED
+pkgDatabase.kwySQL.closeDatabaseConnection(),Chrome 114.0.0.0,,,2023-06-29 15:16:32,2023-06-29 15:16:32,"0,005s",PASSED
+"pkgUtilities.kwyUtility.Server(""Internet"")",Chrome 114.0.0.0,,,2023-06-29 15:16:32,2023-06-29 15:16:32,"0,077s",PASSED
+openBrowser(ServerUsado),Chrome 114.0.0.0,,,2023-06-29 15:16:32,2023-06-29 15:16:42,"9,777s",FAILED
+Start tear down : fTakeFailScreenshot,Chrome 114.0.0.0,,,2023-06-29 15:16:42,2023-06-29 15:16:46,"3,978s",PASSED
+,,,,,,,
+Test Cases/01-Login/LGN03-Cambio de clave NEG,Chrome 114.0.0.0,,,2023-06-29 15:16:46,2023-06-29 15:17:06,"20,072s",FAILED
+"vQuery = ""SELECT * FROM UsuariosRMobile WHERE NroDNI = 10833645""",Chrome 114.0.0.0,,,2023-06-29 15:16:46,2023-06-29 15:16:46,"0,000s",PASSED
+vDNI = null,Chrome 114.0.0.0,,,2023-06-29 15:16:46,2023-06-29 15:16:46,"0,002s",PASSED
+vClave = null,Chrome 114.0.0.0,,,2023-06-29 15:16:46,2023-06-29 15:16:46,"0,001s",PASSED
+vUsuario = null,Chrome 114.0.0.0,,,2023-06-29 15:16:46,2023-06-29 15:16:46,"0,000s",PASSED
+"vClave1 = ""Testing7""",Chrome 114.0.0.0,,,2023-06-29 15:16:46,2023-06-29 15:16:46,"0,000s",PASSED
+"vClave2 = ""Testing8""",Chrome 114.0.0.0,,,2023-06-29 15:16:46,2023-06-29 15:16:46,"0,000s",PASSED
+"vtxtNoCoincide = """"",Chrome 114.0.0.0,,,2023-06-29 15:16:46,2023-06-29 15:16:46,"0,001s",PASSED
+pkgDatabase.kwySQL.connectDB(),Chrome 114.0.0.0,,,2023-06-29 15:16:46,2023-06-29 15:16:48,"1,398s",PASSED
+vResult = pkgDatabase.kwySQL.executeQuery(vQuery),Chrome 114.0.0.0,,,2023-06-29 15:16:48,2023-06-29 15:16:48,"0,186s",PASSED
+vDNI = vResult.getString(2),Chrome 114.0.0.0,,,2023-06-29 15:16:48,2023-06-29 15:16:48,"0,000s",PASSED
+vUsuario = vResult.getString(3),Chrome 114.0.0.0,,,2023-06-29 15:16:48,2023-06-29 15:16:48,"0,000s",PASSED
+vClave = vResult.getString(4),Chrome 114.0.0.0,,,2023-06-29 15:16:48,2023-06-29 15:16:48,"0,001s",PASSED
+pkgDatabase.kwySQL.closeDatabaseConnection(),Chrome 114.0.0.0,,,2023-06-29 15:16:48,2023-06-29 15:16:48,"0,002s",PASSED
+"pkgUtilities.kwyUtility.Server(""Internet"")",Chrome 114.0.0.0,,,2023-06-29 15:16:48,2023-06-29 15:16:48,"0,001s",PASSED
+openBrowser(ServerUsado),Chrome 114.0.0.0,,,2023-06-29 15:16:48,2023-06-29 15:16:58,"9,859s",FAILED
+Start tear down : fTakeFailScreenshot,Chrome 114.0.0.0,,,2023-06-29 15:16:58,2023-06-29 15:17:06,"8,179s",PASSED

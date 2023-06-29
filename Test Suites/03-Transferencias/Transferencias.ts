@@ -151,4 +151,18 @@
       <testCaseId>Test Cases/04-Transferencias/TRF19-ABM Beneficiario con Cuenta POS</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>54712b15-e98a-4123-a14e-7f718491a3fe</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/04-Transferencias/TRF20-Transferencia Postdatada Completa POS</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6075db0d-514a-42ed-a546-5afff3eaebfc</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/04-Transferencias/TRF21-Transferencias Inmediatas Completas POS</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

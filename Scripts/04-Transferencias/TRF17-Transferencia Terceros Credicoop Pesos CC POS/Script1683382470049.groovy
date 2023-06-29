@@ -70,9 +70,8 @@ WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkTrxCuentaBene
 WebUI.click(findTestObject('Object Repository/04-Transferencias/lnkTrxIniciarTransferenciaBeneficiario'))
 
 //Selecciona Cuenta Corriente
-//NOTA: Agregar el atributo con "innerHTML"
 WebUI.click(findTestObject('Object Repository/04-Transferencias/mnuTrxCuentaDebito'))
-WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxCuentaDebito'))
+WebUI.click(findTestObject('Object Repository/04-Transferencias/txtTrxTercerosCCForm'))
 
 /*String vCuentaCorriente = findTestObject('Object Repository/04-Transferencias/mnuTrxCuentaDebito')
 String vAtributo = vCuentaCorriente.getAttribute("innerHTML")*/
@@ -97,8 +96,8 @@ WebUI.setText(findTestObject('Object Repository/04-Transferencias/txtTrxClaveByp
 //Confirma Operación
 WebUI.click(findTestObject('Object Repository/04-Transferencias/02-Nueva Transferencia/btnTrxConfirmarBypass'))
 
-//Valida Destinatario
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Transferencias/txtTrxBeneficiarioDestino'), FailureHandling.CONTINUE_ON_FAILURE)
+//Valida Numero de operacion y monto Exitoso
+CustomKeywords.'pkgUtilities.kwyUtility.comparacionNroOperacionTercerosPesos'(60)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

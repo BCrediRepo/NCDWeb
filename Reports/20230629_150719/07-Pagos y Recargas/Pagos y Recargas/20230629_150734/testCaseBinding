@@ -1,0 +1,6 @@
+{"testCaseName":"Test Cases/08-Pagos y Recargas/PYR01-Sin Servicios a Pagar ni Pagados NEG","testCaseId":"Test Cases/08-Pagos y Recargas/PYR01-Sin Servicios a Pagar ni Pagados NEG","iterationVariableName":""}
+{"testCaseName":"Test Cases/08-Pagos y Recargas/PYR02-Validacion Monto Elegido Erroneo NEG","testCaseId":"Test Cases/08-Pagos y Recargas/PYR02-Validacion Monto Elegido Erroneo NEG","iterationVariableName":""}
+{"testCaseName":"Test Cases/08-Pagos y Recargas/PYR03-Pago Servicio Sin Base POS","testCaseId":"Test Cases/08-Pagos y Recargas/PYR03-Pago Servicio Sin Base POS","iterationVariableName":""}
+{"testCaseName":"Test Cases/08-Pagos y Recargas/PYR05-ABM Entes POS","testCaseId":"Test Cases/08-Pagos y Recargas/PYR05-ABM Entes POS","iterationVariableName":""}
+{"testCaseName":"Test Cases/08-Pagos y Recargas/PYR06-Adherir Ente Ingresar Pagar POS","testCaseId":"Test Cases/08-Pagos y Recargas/PYR06-Adherir Ente Ingresar Pagar POS","iterationVariableName":""}
+{"testCaseName":"Test Cases/08-Pagos y Recargas/PYR08-Consultar Pagos","testCaseId":"Test Cases/08-Pagos y Recargas/PYR08-Consultar Pagos","iterationVariableName":""}

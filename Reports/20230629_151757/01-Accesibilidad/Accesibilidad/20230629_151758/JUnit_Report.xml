@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Accesibilidad" time="61.538" tests="2" failures="1" errors="0">
+   <testsuite name="Accesibilidad" tests="2" failures="1" errors="0" time="61.538" skipped="0" timestamp="2023-06-29 15:18:16" hostname="natalia.heit - AR-NB-490.tsoftglobal.com" id="Test Suites/01-Accesibilidad/Accesibilidad">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\natalia.heit\\Katalon Studio\\NCDWeb\\Reports\\20230629_151757\\01-Accesibilidad\\Accesibilidad\\20230629_151758"/>
+         <property name="logFiles" value="C:\\Users\\natalia.heit\\Katalon Studio\\NCDWeb\\Reports\\20230629_151757\\01-Accesibilidad\\Accesibilidad\\20230629_151758\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\natalia.heit\\Katalon Studio\\NCDWeb\\Reports\\20230629_151757\\01-Accesibilidad\\Accesibilidad\\20230629_151758\\1688062753775.png, C:\\Users\\natalia.heit\\Katalon Studio\\NCDWeb\\Reports\\20230629_151757\\01-Accesibilidad\\Accesibilidad\\20230629_151758\\Screenshot/Fails/LGN03-CambioPasswordNEG.png"/>
+         <property name="hostName" value="natalia.heit - AR-NB-490.tsoftglobal.com"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.6.0.208"/>
+         <property name="browser" value="Chrome 114.0.0.0"/>
+         <property name="hostAddress" value="172.16.245.250"/>
+         <property name="sessionId" value="d4d06a1fad244f489ecb0510edfbf9f2"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/01-Login/LGN01-Login" time="22.52" classname="Test Cases/01-Login/LGN01-Login" status="PASSED">
+         <system-out><![CDATA[2023-06-29 15:18:16 - [TEST_CASE][PASSED] - Test Cases/01-Login/LGN01-Login: Test Cases/01-Login/LGN01-Login
+
+2023-06-29 15:18:17 - [TEST_STEP][PASSED] - vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 20144835": null
+
+2023-06-29 15:18:17 - [TEST_STEP][PASSED] - vDNI = null: null
+
+2023-06-29 15:18:17 - [TEST_STEP][PASSED] - vClave = null: null
+
+2023-06-29 15:18:17 - [TEST_STEP][PASSED] - vUsuario = null: null
+
+2023-06-29 15:18:17 - [TEST_STEP][PASSED] - pkgDatabase.kwySQL.connectDB(): pkgDatabase.kwySQL.connectDB is PASSED
+
+2023-06-29 15:18:20 - [MESSAGE][PASSED] - pkgDatabase.kwySQL.connectDB is PASSED
+
+2023-06-29 15:18:20 - [TEST_STEP][PASSED] - vResult = pkgDatabase.kwySQL.executeQuery(vQuery): pkgDatabase.kwySQL.executeQuery is PASSED
+
+2023-06-29 15:18:20 - [MESSAGE][PASSED] - pkgDatabase.kwySQL.executeQuery is PASSED
+
+2023-06-29 15:18:20 - [TEST_STEP][PASSED] - vDNI = vResult.getString(2): null
+
+2023-06-29 15:18:20 - [TEST_STEP][PASSED] - vUsuario = vResult.getString(3): null
+
+2023-06-29 15:18:20 - [TEST_STEP][PASSED] - vClave = vResult.getString(4): null
+
+2023-06-29 15:18:20 - [TEST_STEP][PASSED] - pkgDatabase.kwySQL.closeDatabaseConnection(): pkgDatabase.kwySQL.closeDatabaseConnection is PASSED
+
+2023-06-29 15:18:20 - [MESSAGE][PASSED] - pkgDatabase.kwySQL.closeDatabaseConnection is PASSED
+
+2023-06-29 15:18:20 - [TEST_STEP][PASSED] - pkgUtilities.kwyUtility.Server("Internet"): pkgUtilities.kwyUtility.Server is PASSED
+
+2023-06-29 15:18:21 - [MESSAGE][PASSED] - pkgUtilities.kwyUtility.Server is PASSED
+
+2023-06-29 15:18:21 - [TEST_STEP][PASSED] - openBrowser(ServerUsado): Browser is opened with url: 'https://ncdtesting.bancocredicoop.coop/apps/NCDBC/#_frmLogin'
+
+2023-06-29 15:18:21 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2023-06-29 15:18:21 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2023-06-29 15:18:27 - [MESSAGE][PASSED] - Browser is opened with url: 'https://ncdtesting.bancocredicoop.coop/apps/NCDBC/#_frmLogin'
+
+2023-06-29 15:18:27 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2023-06-29 15:18:27 - [MESSAGE][PASSED] - Current window maximized
+
+2023-06-29 15:18:27 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/01-Login/btnLgnCerrarBanner")): Object: 'Object Repository/01-Login/btnLgnCerrarBanner' is clicked on
+
+2023-06-29 15:18:28 - [MESSAGE][PASSED] - Object: 'Object Repository/01-Login/btnLgnCerrarBanner' is clicked on
+
+2023-06-29 15:18:28 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/01-Login/txtLgnDNI"), vDNI, CONTINUE_ON_FAILURE): Text '20144835' is set on object 'Object Repository/01-Login/txtLgnDNI'
+
+2023-06-29 15:18:29 - [MESSAGE][PASSED] - Text '20144835' is set on object 'Object Repository/01-Login/txtLgnDNI'
+
+2023-06-29 15:18:29 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/01-Login/txtLgnClave"), vClave, CONTINUE_ON_FAILURE): Text 'testing9' is set on object 'Object Repository/01-Login/txtLgnClave'
+
+2023-06-29 15:18:30 - [MESSAGE][PASSED] - Text 'testing9' is set on object 'Object Repository/01-Login/txtLgnClave'
+
+2023-06-29 15:18:30 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/01-Login/txtLgnUsuario"), vUsuario, CONTINUE_ON_FAILURE): Text 'edie02' is set on object 'Object Repository/01-Login/txtLgnUsuario'
+
+2023-06-29 15:18:31 - [MESSAGE][PASSED] - Text 'edie02' is set on object 'Object Repository/01-Login/txtLgnUsuario'
+
+2023-06-29 15:18:31 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/01-Login/btnLgnIngresar")): Object: 'Object Repository/01-Login/btnLgnIngresar' is clicked on
+
+2023-06-29 15:18:31 - [MESSAGE][PASSED] - Object: 'Object Repository/01-Login/btnLgnIngresar' is clicked on
+
+2023-06-29 15:18:31 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/02-Dashboard/icoDsbSalir")): Object: 'Object Repository/02-Dashboard/icoDsbSalir' is clicked on
+
+2023-06-29 15:18:38 - [MESSAGE][PASSED] - Object: 'Object Repository/02-Dashboard/icoDsbSalir' is clicked on
+
+2023-06-29 15:18:38 - [TEST_STEP][PASSED] - Start tear down : fPassScript: Method 'fPassScript' complete successfully
+
+2023-06-29 15:18:38 - [TEST_STEP][PASSED] - pkgUtilities.kwyUtility.fLoginPassStatus(): pkgUtilities.kwyUtility.fLoginPassStatus is PASSED
+
+2023-06-29 15:18:39 - [MESSAGE][PASSED] - Browser is closed
+
+2023-06-29 15:18:39 - [MESSAGE][PASSED] - pkgUtilities.kwyUtility.fLoginPassStatus is PASSED
+
+2023-06-29 15:18:39 - [MESSAGE][PASSED] - Method 'fPassScript' complete successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/01-Login/LGN03-Cambio de clave NEG" time="38.698" classname="Test Cases/01-Login/LGN03-Cambio de clave NEG" status="FAILED">
+         <failure type="FAILED" message="Test Cases/01-Login/LGN03-Cambio de clave NEG FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Actual text 'La clave ingresada no coincide con la anterior.' and expected text '' of test object 'Object Repository/01-Login/lblLgnClaveNoCoincide' are NOT matched. (Root cause: com.kms.katalon.core.exception.StepFailedException: Actual text 'La clave ingresada no coincide con la anterior.' and expected text '' of test object 'Object Repository/01-Login/lblLgnClaveNoCoincide' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4733)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$4.call(Unknown Source)
+	at LGN03-Cambio de clave NEG.run(LGN03-Cambio de clave NEG:78)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1688062678378.run(TempTestSuite1688062678378.groovy:36)
+)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4733)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$4.call(Unknown Source)
+	at LGN03-Cambio de clave NEG.run(LGN03-Cambio de clave NEG:78)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1688062678378.run(TempTestSuite1688062678378.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'La clave ingresada no coincide con la anterior.' and expected text '' of test object 'Object Repository/01-Login/lblLgnClaveNoCoincide' are NOT matched.
+	... 23 more
+"/>
+         <system-out><![CDATA[2023-06-29 15:18:39 - [TEST_CASE][FAILED] - Test Cases/01-Login/LGN03-Cambio de clave NEG: Test Cases/01-Login/LGN03-Cambio de clave NEG FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Actual text 'La clave ingresada no coincide con la anterior.' and expected text '' of test object 'Object Repository/01-Login/lblLgnClaveNoCoincide' are NOT matched. (Root cause: com.kms.katalon.core.exception.StepFailedException: Actual text 'La clave ingresada no coincide con la anterior.' and expected text '' of test object 'Object Repository/01-Login/lblLgnClaveNoCoincide' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4733)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$4.call(Unknown Source)
+	at LGN03-Cambio de clave NEG.run(LGN03-Cambio de clave NEG:78)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1688062678378.run(TempTestSuite1688062678378.groovy:36)
+)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4733)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$4.call(Unknown Source)
+	at LGN03-Cambio de clave NEG.run(LGN03-Cambio de clave NEG:78)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1688062678378.run(TempTestSuite1688062678378.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'La clave ingresada no coincide con la anterior.' and expected text '' of test object 'Object Repository/01-Login/lblLgnClaveNoCoincide' are NOT matched.
+	... 23 more
+
+
+2023-06-29 15:18:39 - [TEST_STEP][PASSED] - vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 10833645": null
+
+2023-06-29 15:18:39 - [TEST_STEP][PASSED] - vDNI = null: null
+
+2023-06-29 15:18:39 - [TEST_STEP][PASSED] - vClave = null: null
+
+2023-06-29 15:18:39 - [TEST_STEP][PASSED] - vUsuario = null: null
+
+2023-06-29 15:18:39 - [TEST_STEP][PASSED] - vClave1 = "Testing7": null
+
+2023-06-29 15:18:39 - [TEST_STEP][PASSED] - vClave2 = "Testing8": null
+
+2023-06-29 15:18:39 - [TEST_STEP][PASSED] - vtxtNoCoincide = "": null
+
+2023-06-29 15:18:39 - [TEST_STEP][PASSED] - pkgDatabase.kwySQL.connectDB(): pkgDatabase.kwySQL.connectDB is PASSED
+
+2023-06-29 15:18:41 - [MESSAGE][PASSED] - pkgDatabase.kwySQL.connectDB is PASSED
+
+2023-06-29 15:18:41 - [TEST_STEP][PASSED] - vResult = pkgDatabase.kwySQL.executeQuery(vQuery): pkgDatabase.kwySQL.executeQuery is PASSED
+
+2023-06-29 15:18:41 - [MESSAGE][PASSED] - pkgDatabase.kwySQL.executeQuery is PASSED
+
+2023-06-29 15:18:41 - [TEST_STEP][PASSED] - vDNI = vResult.getString(2): null
+
+2023-06-29 15:18:41 - [TEST_STEP][PASSED] - vUsuario = vResult.getString(3): null
+
+2023-06-29 15:18:41 - [TEST_STEP][PASSED] - vClave = vResult.getString(4): null
+
+2023-06-29 15:18:41 - [TEST_STEP][PASSED] - pkgDatabase.kwySQL.closeDatabaseConnection(): pkgDatabase.kwySQL.closeDatabaseConnection is PASSED
+
+2023-06-29 15:18:41 - [MESSAGE][PASSED] - pkgDatabase.kwySQL.closeDatabaseConnection is PASSED
+
+2023-06-29 15:18:41 - [TEST_STEP][PASSED] - pkgUtilities.kwyUtility.Server("Internet"): pkgUtilities.kwyUtility.Server is PASSED
+
+2023-06-29 15:18:41 - [MESSAGE][PASSED] - pkgUtilities.kwyUtility.Server is PASSED
+
+2023-06-29 15:18:41 - [TEST_STEP][PASSED] - openBrowser(ServerUsado): Browser is opened with url: 'https://ncdtesting.bancocredicoop.coop/apps/NCDBC/#_frmLogin'
+
+2023-06-29 15:18:41 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2023-06-29 15:18:41 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2023-06-29 15:18:46 - [MESSAGE][PASSED] - Browser is opened with url: 'https://ncdtesting.bancocredicoop.coop/apps/NCDBC/#_frmLogin'
+
+2023-06-29 15:18:46 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2023-06-29 15:18:46 - [MESSAGE][PASSED] - Current window maximized
+
+2023-06-29 15:18:46 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/01-Login/btnLgnCerrarBanner")): Object: 'Object Repository/01-Login/btnLgnCerrarBanner' is clicked on
+
+2023-06-29 15:18:47 - [MESSAGE][PASSED] - Object: 'Object Repository/01-Login/btnLgnCerrarBanner' is clicked on
+
+2023-06-29 15:18:47 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/01-Login/txtLgnDNI"), vDNI, CONTINUE_ON_FAILURE): Text '10833645' is set on object 'Object Repository/01-Login/txtLgnDNI'
+
+2023-06-29 15:18:48 - [MESSAGE][PASSED] - Text '10833645' is set on object 'Object Repository/01-Login/txtLgnDNI'
+
+2023-06-29 15:18:48 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/01-Login/txtLgnClave"), vClave, CONTINUE_ON_FAILURE): Text 'testing7' is set on object 'Object Repository/01-Login/txtLgnClave'
+
+2023-06-29 15:18:49 - [MESSAGE][PASSED] - Text 'testing7' is set on object 'Object Repository/01-Login/txtLgnClave'
+
+2023-06-29 15:18:49 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/01-Login/txtLgnUsuario"), vUsuario, CONTINUE_ON_FAILURE): Text 'robert0' is set on object 'Object Repository/01-Login/txtLgnUsuario'
+
+2023-06-29 15:18:50 - [MESSAGE][PASSED] - Text 'robert0' is set on object 'Object Repository/01-Login/txtLgnUsuario'
+
+2023-06-29 15:18:50 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/01-Login/btnLgnIngresar")): Object: 'Object Repository/01-Login/btnLgnIngresar' is clicked on
+
+2023-06-29 15:18:50 - [MESSAGE][PASSED] - Object: 'Object Repository/01-Login/btnLgnIngresar' is clicked on
+
+2023-06-29 15:18:50 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/01-Login/mnuLgnUsuario")): Object: 'Object Repository/01-Login/mnuLgnUsuario' is clicked on
+
+2023-06-29 15:19:07 - [MESSAGE][PASSED] - Object: 'Object Repository/01-Login/mnuLgnUsuario' is clicked on
+
+2023-06-29 15:19:07 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/01-Login/txtLgnCambioClave")): Object: 'Object Repository/01-Login/txtLgnCambioClave' is clicked on
+
+2023-06-29 15:19:07 - [MESSAGE][PASSED] - Object: 'Object Repository/01-Login/txtLgnCambioClave' is clicked on
+
+2023-06-29 15:19:07 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/01-Login/txtLgnClaveActual")): Object: 'Object Repository/01-Login/txtLgnClaveActual' is clicked on
+
+2023-06-29 15:19:09 - [MESSAGE][PASSED] - Object: 'Object Repository/01-Login/txtLgnClaveActual' is clicked on
+
+2023-06-29 15:19:09 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/01-Login/txtLgnClaveActual"), vClave, CONTINUE_ON_FAILURE): Text 'testing7' is set on object 'Object Repository/01-Login/txtLgnClaveActual'
+
+2023-06-29 15:19:10 - [MESSAGE][PASSED] - Text 'testing7' is set on object 'Object Repository/01-Login/txtLgnClaveActual'
+
+2023-06-29 15:19:10 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/01-Login/txtLgnNuevaClave")): Object: 'Object Repository/01-Login/txtLgnNuevaClave' is clicked on
+
+2023-06-29 15:19:10 - [MESSAGE][PASSED] - Object: 'Object Repository/01-Login/txtLgnNuevaClave' is clicked on
+
+2023-06-29 15:19:10 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/01-Login/txtLgnNuevaClave"), vClave1, CONTINUE_ON_FAILURE): Text 'Testing7' is set on object 'Object Repository/01-Login/txtLgnNuevaClave'
+
+2023-06-29 15:19:11 - [MESSAGE][PASSED] - Text 'Testing7' is set on object 'Object Repository/01-Login/txtLgnNuevaClave'
+
+2023-06-29 15:19:11 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/01-Login/txtLgnReingresarClave")): Object: 'Object Repository/01-Login/txtLgnReingresarClave' is clicked on
+
+2023-06-29 15:19:12 - [MESSAGE][PASSED] - Object: 'Object Repository/01-Login/txtLgnReingresarClave' is clicked on
+
+2023-06-29 15:19:12 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/01-Login/txtLgnReingresarClave"), vClave2, CONTINUE_ON_FAILURE): Text 'Testing8' is set on object 'Object Repository/01-Login/txtLgnReingresarClave'
+
+2023-06-29 15:19:13 - [MESSAGE][PASSED] - Text 'Testing8' is set on object 'Object Repository/01-Login/txtLgnReingresarClave'
+
+2023-06-29 15:19:13 - [TEST_STEP][FAILED] - verifyElementText(findTestObject("Object Repository/01-Login/lblLgnClaveNoCoincide"), vtxtNoCoincide, CONTINUE_ON_FAILURE): Actual text 'La clave ingresada no coincide con la anterior.' and expected text '' of test object 'Object Repository/01-Login/lblLgnClaveNoCoincide' are NOT matched. (Root cause: com.kms.katalon.core.exception.StepFailedException: Actual text 'La clave ingresada no coincide con la anterior.' and expected text '' of test object 'Object Repository/01-Login/lblLgnClaveNoCoincide' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4733)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$4.call(Unknown Source)
+	at LGN03-Cambio de clave NEG.run(LGN03-Cambio de clave NEG:78)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1688062678378.run(TempTestSuite1688062678378.groovy:36)
+)
+
+2023-06-29 15:19:13 - [MESSAGE][FAILED] - Actual text 'La clave ingresada no coincide con la anterior.' and expected text '' of test object 'Object Repository/01-Login/lblLgnClaveNoCoincide' are NOT matched. (Root cause: com.kms.katalon.core.exception.StepFailedException: Actual text 'La clave ingresada no coincide con la anterior.' and expected text '' of test object 'Object Repository/01-Login/lblLgnClaveNoCoincide' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4733)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$4.call(Unknown Source)
+	at LGN03-Cambio de clave NEG.run(LGN03-Cambio de clave NEG:78)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1688062678378.run(TempTestSuite1688062678378.groovy:36)
+)
+[[ATTACHMENT|C:\\Users\\natalia.heit\\Katalon Studio\\NCDWeb\\Reports\\20230629_151757\\01-Accesibilidad\\Accesibilidad\\20230629_151758\\1688062753775.png]]
+
+2023-06-29 15:19:13 - [TEST_STEP][PASSED] - Start tear down : fTakeFailScreenshot: Method 'fTakeFailScreenshot' complete successfully
+
+2023-06-29 15:19:13 - [TEST_STEP][PASSED] - pkgUtilities.kwyUtility.fFailStatus("Screenshot/Fails/LGN03-CambioPasswordNEG.png"): pkgUtilities.kwyUtility.fFailStatus is PASSED
+
+2023-06-29 15:19:14 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\natalia.heit\\Katalon Studio\\NCDWeb\\Reports\\20230629_151757\\01-Accesibilidad\\Accesibilidad\\20230629_151758\\Screenshot/Fails/LGN03-CambioPasswordNEG.png]]
+
+2023-06-29 15:19:17 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2023-06-29 15:19:18 - [MESSAGE][PASSED] - Browser is closed
+
+2023-06-29 15:19:18 - [MESSAGE][PASSED] - pkgUtilities.kwyUtility.fFailStatus is PASSED
+
+2023-06-29 15:19:18 - [MESSAGE][PASSED] - Method 'fTakeFailScreenshot' complete successfully]]></system-out>
+         <system-err><![CDATA[2023-06-29 15:18:39 - [TEST_CASE][FAILED] - Test Cases/01-Login/LGN03-Cambio de clave NEG: Test Cases/01-Login/LGN03-Cambio de clave NEG FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Actual text 'La clave ingresada no coincide con la anterior.' and expected text '' of test object 'Object Repository/01-Login/lblLgnClaveNoCoincide' are NOT matched. (Root cause: com.kms.katalon.core.exception.StepFailedException: Actual text 'La clave ingresada no coincide con la anterior.' and expected text '' of test object 'Object Repository/01-Login/lblLgnClaveNoCoincide' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4733)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$4.call(Unknown Source)
+	at LGN03-Cambio de clave NEG.run(LGN03-Cambio de clave NEG:78)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1688062678378.run(TempTestSuite1688062678378.groovy:36)
+)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4733)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$4.call(Unknown Source)
+	at LGN03-Cambio de clave NEG.run(LGN03-Cambio de clave NEG:78)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1688062678378.run(TempTestSuite1688062678378.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'La clave ingresada no coincide con la anterior.' and expected text '' of test object 'Object Repository/01-Login/lblLgnClaveNoCoincide' are NOT matched.
+	... 23 more]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2023-06-29 15:18:16 - [TEST_SUITE][FAILED] - Accesibilidad: Test Cases/01-Login/LGN03-Cambio de clave NEG FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Actual text 'La clave ingresada no coincide con la anterior.' and expected text '' of test object 'Object Repository/01-Login/lblLgnClaveNoCoincide' are NOT matched. (Root cause: com.kms.katalon.core.exception.StepFailedException: Actual text 'La clave ingresada no coincide con la anterior.' and expected text '' of test object 'Object Repository/01-Login/lblLgnClaveNoCoincide' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4733)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$4.call(Unknown Source)
+	at LGN03-Cambio de clave NEG.run(LGN03-Cambio de clave NEG:78)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1688062678378.run(TempTestSuite1688062678378.groovy:36)
+)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4733)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$4.call(Unknown Source)
+	at LGN03-Cambio de clave NEG.run(LGN03-Cambio de clave NEG:78)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1688062678378.run(TempTestSuite1688062678378.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'La clave ingresada no coincide con la anterior.' and expected text '' of test object 'Object Repository/01-Login/lblLgnClaveNoCoincide' are NOT matched.
+	... 23 more]]></system-out>
+      <system-err><![CDATA[2023-06-29 15:18:16 - [TEST_SUITE][FAILED] - Accesibilidad: Test Cases/01-Login/LGN03-Cambio de clave NEG FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Actual text 'La clave ingresada no coincide con la anterior.' and expected text '' of test object 'Object Repository/01-Login/lblLgnClaveNoCoincide' are NOT matched. (Root cause: com.kms.katalon.core.exception.StepFailedException: Actual text 'La clave ingresada no coincide con la anterior.' and expected text '' of test object 'Object Repository/01-Login/lblLgnClaveNoCoincide' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4733)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$4.call(Unknown Source)
+	at LGN03-Cambio de clave NEG.run(LGN03-Cambio de clave NEG:78)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1688062678378.run(TempTestSuite1688062678378.groovy:36)
+)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4733)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$4.call(Unknown Source)
+	at LGN03-Cambio de clave NEG.run(LGN03-Cambio de clave NEG:78)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1688062678378.run(TempTestSuite1688062678378.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'La clave ingresada no coincide con la anterior.' and expected text '' of test object 'Object Repository/01-Login/lblLgnClaveNoCoincide' are NOT matched.
+	... 23 more]]></system-err>
+   </testsuite>
+</testsuites>

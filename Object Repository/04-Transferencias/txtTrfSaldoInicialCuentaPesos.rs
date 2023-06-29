@@ -6,19 +6,18 @@
    <elementGuidId>e6ca33e6-f819-42c3-be66-fa92d9b63bf7</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>((//div[@id='flxAccountDashboardRow_flxAmountCointainer']/div/div)[2]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
       <entry>
          <key>BASIC</key>
          <value>//*[@id = 'flxAccountDashboardRow_lblAccountAmount' and (text() = '$ 23,21' or . = '$ 23,21')]</value>
       </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>(//div[@id='flxAccountDashboardRow_lblAccountAmount'])[2]</value>
-      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -26,7 +25,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>c2a799fa-b87e-4676-8e75-0d213af5d6f5</webElementGuid>
+      <webElementGuid>3276b19b-548d-497c-82d6-5bf10da2e9a7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -34,7 +33,7 @@
       <name>id</name>
       <type>Main</type>
       <value>flxAccountDashboardRow_lblAccountAmount</value>
-      <webElementGuid>3ad1d432-b871-47ac-b84b-105af7617e7a</webElementGuid>
+      <webElementGuid>d66775ce-b14d-4d1c-9e85-d29e683a005b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -42,7 +41,7 @@
       <name>kwidgettype</name>
       <type>Main</type>
       <value>Label</value>
-      <webElementGuid>9ba65552-b1da-434f-80e4-5d5c3e303a77</webElementGuid>
+      <webElementGuid>f0c5b978-fe86-418d-851a-8d985c5263c9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -50,7 +49,7 @@
       <name>kformname</name>
       <type>Main</type>
       <value>flxAccountDashboardRow</value>
-      <webElementGuid>f6e9dc87-c0a7-4d1d-a34d-f0961cfe909c</webElementGuid>
+      <webElementGuid>5cb6f7ab-b306-4c85-bb96-5423eae408b0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -58,7 +57,7 @@
       <name>kcontainerid</name>
       <type>Main</type>
       <value>segProduct</value>
-      <webElementGuid>b462a8ae-db6f-4481-af95-1c8fdfbc8f09</webElementGuid>
+      <webElementGuid>c8bd2862-df28-4f77-906b-e3ab4af87ef5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -66,7 +65,7 @@
       <name>kuid</name>
       <type>Main</type>
       <value>6A2E74FF-905E-43ED-A18D-FA4B6D2ABEED</value>
-      <webElementGuid>b3824ad8-858b-4b52-90b6-e70a0bdfe3f3</webElementGuid>
+      <webElementGuid>f15cd729-58a5-4205-8f2b-c0ed39741a44</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -74,7 +73,7 @@
       <name>class</name>
       <type>Main</type>
       <value> sknLblAccountAmountDashboard cnttopleftalign disableSelection</value>
-      <webElementGuid>5b6871b9-d06c-4119-b0ed-f6af8b967a96</webElementGuid>
+      <webElementGuid>a37e8bc1-e2fd-4f94-8735-2fecede3a211</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -82,7 +81,7 @@
       <name>text</name>
       <type>Main</type>
       <value>$ 23,21</value>
-      <webElementGuid>d937d4b1-7363-4ca3-9a03-87322f2818f5</webElementGuid>
+      <webElementGuid>cf6083ef-d4ca-420e-88bf-4d60c5778f0d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -90,7 +89,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;frmAccountsLanding_AccountContainer_segProduct&quot;)/ul[1]/li[@class=&quot;seg2Normal&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxAccountDashboardRow_flxAccountDashboardRow&quot;]/div[@class=&quot;kcell middlecenteralign&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxAccountDashboardRow_flxAmountCointainer&quot;]/div[@class=&quot;kcell middlecenteralignsknLblAccountAmountDashboard&quot;]/div[@id=&quot;flxAccountDashboardRow_lblAccountAmount&quot;]</value>
-      <webElementGuid>aa77cc5c-dd18-4474-9827-e48c4d78b915</webElementGuid>
+      <webElementGuid>3cdfbbc5-552b-4b7e-8a1f-099c47cdfb7a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -98,7 +97,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//div[@id='flxAccountDashboardRow_lblAccountAmount'])[2]</value>
-      <webElementGuid>1a9d9416-e536-4835-9afa-ae28debdc839</webElementGuid>
+      <webElementGuid>24253fed-7bd0-4447-bc45-5c7e38f7e036</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -106,7 +105,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>(//div[@id='flxAccountDashboardRow_flxAmountCointainer']/div/div)[2]</value>
-      <webElementGuid>d10ff697-4829-4b5f-8f8e-2a5bbd24558e</webElementGuid>
+      <webElementGuid>e576f09c-b0cf-42ed-859b-3708c21194cf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -114,7 +113,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='CA $ 060-006575/5'])[1]/following::div[5]</value>
-      <webElementGuid>d57ce52a-bac1-44fc-977c-d17f1dd1201d</webElementGuid>
+      <webElementGuid>542511b4-0adf-4860-887c-7228baa33a81</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -122,7 +121,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)=''])[2]/following::div[7]</value>
-      <webElementGuid>ee9b95f2-fe72-4e18-87f6-443fec1dd535</webElementGuid>
+      <webElementGuid>e2904817-048a-43a6-bc6a-d0bbe979fab6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -130,7 +129,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)=''])[2]/preceding::div[1]</value>
-      <webElementGuid>8235cdf9-c825-41c1-bfb1-4958d2a8fce4</webElementGuid>
+      <webElementGuid>c92b5ec8-b4f7-4805-9365-1c2859c820ba</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -138,7 +137,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Caja de Ahorro U$S 1'])[1]/preceding::div[6]</value>
-      <webElementGuid>0e223e4b-176b-4e66-9668-754aac868529</webElementGuid>
+      <webElementGuid>bbdc9598-366e-49e7-a751-bc17de301621</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -146,7 +145,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='$ 23,21']/parent::*</value>
-      <webElementGuid>a9c23235-4c2d-47cd-b08f-429ad8ddb398</webElementGuid>
+      <webElementGuid>f2bbffe9-0e0c-4635-92d6-9f24878d54f6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -154,7 +153,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div/div/div/div/div/div/ul/li[2]/div/div/div[2]/div/div/div/div</value>
-      <webElementGuid>61315db5-934b-4ee6-8375-ef54dbc2aa78</webElementGuid>
+      <webElementGuid>2d9692bc-774b-4cc4-81ae-6047bfb426b0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -162,6 +161,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[@id = 'flxAccountDashboardRow_lblAccountAmount' and (text() = '$ 23,21' or . = '$ 23,21')]</value>
-      <webElementGuid>62c19220-0e7e-489f-ae83-929fe2d31785</webElementGuid>
+      <webElementGuid>8041e045-d231-4677-8a4c-6de49aa96e9d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

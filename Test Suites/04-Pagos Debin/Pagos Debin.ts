@@ -35,7 +35,7 @@
    <testCaseLink>
       <guid>1c860b84-749c-4970-82d1-9982556adcf5</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/05-Pagos Debin/DBN04-Aceptar Eliminar Rechazar Debin POS</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>

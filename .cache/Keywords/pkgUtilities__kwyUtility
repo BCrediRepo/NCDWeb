@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "943BC3CA1079E0CD4B9261D775715A86",
+  "keywordFileContentHash": "2DD551B1554F98BE591000D2B8BB266E",
   "keywordClasses": [
     {
       "name": "pkgUtilities.kwyUtility",
@@ -20,8 +20,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "Login",
@@ -65,8 +64,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "fFailStatus",
@@ -84,18 +82,15 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "fPassStatus",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "fLoginPassStatus",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "comparacionOrigenDetalle",
@@ -113,8 +108,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "comparacionListaDetallePago",
@@ -132,8 +126,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "comparacionListadoTrxPropiasPesos",
@@ -151,8 +144,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "comparacionListadoTrxPropiasDolares",
@@ -170,8 +162,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "comparacionMontoTrxPropias",
@@ -189,8 +180,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "comparacionNumeroOperacionTrxPropias",
@@ -208,8 +198,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "comparacionNroOperacionTrxPropiasDolares",
@@ -227,8 +216,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "comparacionNroOperacionTercerosPesos",
@@ -246,8 +234,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "comparacionNroOperacionTrxJudicialesCredicoop",
@@ -265,8 +252,25 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
+        },
+        {
+          "name": "comparacionOperacionTrxTercerosCredicoopDolar",
+          "parameters": [
+            {
+              "name": "vTiempo",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
         },
         {
           "name": "comparacionNroOperacionTrxJudicialesOtrosBancos",
@@ -284,8 +288,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "comparacionDatosExitoPosdatadaPesos",
@@ -303,8 +306,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "comparacionDatosExitoPosdatadaDolares",
@@ -322,8 +324,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "comparacionListaDetallePlazoFijo",
@@ -341,8 +342,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "comparacionSimularCrearPlazoFijo",
@@ -360,8 +360,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "ValidacionComprobanteCrearPlazoFijo",
@@ -379,8 +378,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "comparacionDetalleTarjetaVisa",
@@ -398,8 +396,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "comparacionCuentaDetalle",
@@ -417,8 +414,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "comparacionDebinRecibidosDetalleCuenta",
@@ -436,8 +432,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "comparacionDebinRecibidosDetalleEstado",
@@ -455,8 +450,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "comparacionDebinGeneradosDetalleCuenta",
@@ -474,8 +468,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "comparacionDebinGeneradosDetalleEstado",
@@ -493,11 +486,10 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

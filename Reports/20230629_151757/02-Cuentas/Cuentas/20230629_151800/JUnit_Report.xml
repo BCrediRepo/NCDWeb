@@ -1,0 +1,1073 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Cuentas" time="275.508" tests="5" failures="1" errors="0">
+   <testsuite name="Cuentas" tests="5" failures="1" errors="0" time="275.508" skipped="0" timestamp="2023-06-29 15:19:36" hostname="natalia.heit - AR-NB-490.tsoftglobal.com" id="Test Suites/02-Cuentas/Cuentas">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\natalia.heit\\Katalon Studio\\NCDWeb\\Reports\\20230629_151757\\02-Cuentas\\Cuentas\\20230629_151800"/>
+         <property name="logFiles" value="C:\\Users\\natalia.heit\\Katalon Studio\\NCDWeb\\Reports\\20230629_151757\\02-Cuentas\\Cuentas\\20230629_151800\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\natalia.heit\\Katalon Studio\\NCDWeb\\Reports\\20230629_151757\\02-Cuentas\\Cuentas\\20230629_151800\\1688062837477.png, C:\\Users\\natalia.heit\\Katalon Studio\\NCDWeb\\Reports\\20230629_151757\\02-Cuentas\\Cuentas\\20230629_151800\\1688062911523.png, C:\\Users\\natalia.heit\\Katalon Studio\\NCDWeb\\Reports\\20230629_151757\\02-Cuentas\\Cuentas\\20230629_151800\\Screenshot/Fails/CTA03-ConsultaCBUyAliasPOS.png, C:\\Users\\natalia.heit\\Katalon Studio\\NCDWeb\\Reports\\20230629_151757\\02-Cuentas\\Cuentas\\20230629_151800\\1688062987991.png, C:\\Users\\natalia.heit\\Katalon Studio\\NCDWeb\\Reports\\20230629_151757\\02-Cuentas\\Cuentas\\20230629_151800\\1688063052120.png"/>
+         <property name="hostName" value="natalia.heit - AR-NB-490.tsoftglobal.com"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.6.0.208"/>
+         <property name="browser" value="Chrome 114.0.0.0"/>
+         <property name="hostAddress" value="172.16.245.250"/>
+         <property name="sessionId" value="b3270271990f82e682846dca9fd8d999"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/03-Cuentas/CTA01-Acceder Home Cuentas POS" time="60.624" classname="Test Cases/03-Cuentas/CTA01-Acceder Home Cuentas POS" status="PASSED">
+         <system-out><![CDATA[2023-06-29 15:19:36 - [TEST_CASE][PASSED] - Test Cases/03-Cuentas/CTA01-Acceder Home Cuentas POS: Test Cases/03-Cuentas/CTA01-Acceder Home Cuentas POS
+
+2023-06-29 15:19:37 - [TEST_STEP][PASSED] - vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 20144835": null
+
+2023-06-29 15:19:37 - [TEST_STEP][PASSED] - vQuery2 = "SELECT * FROM Labels WHERE Id = 2": null
+
+2023-06-29 15:19:37 - [TEST_STEP][PASSED] - vQuery3 = "SELECT * FROM Labels WHERE Id = 3": null
+
+2023-06-29 15:19:37 - [TEST_STEP][PASSED] - vQuery4 = "SELECT * FROM Labels WHERE Id = 4": null
+
+2023-06-29 15:19:37 - [TEST_STEP][PASSED] - vQuery5 = "SELECT * FROM Labels WHERE Id = 5": null
+
+2023-06-29 15:19:37 - [TEST_STEP][PASSED] - vDNI = null: null
+
+2023-06-29 15:19:37 - [TEST_STEP][PASSED] - vClave = null: null
+
+2023-06-29 15:19:37 - [TEST_STEP][PASSED] - vUsuario = null: null
+
+2023-06-29 15:19:37 - [TEST_STEP][PASSED] - vCuenta = null: null
+
+2023-06-29 15:19:37 - [TEST_STEP][PASSED] - vFavorita = null: null
+
+2023-06-29 15:19:37 - [TEST_STEP][PASSED] - vMoneda = null: null
+
+2023-06-29 15:19:37 - [TEST_STEP][PASSED] - vSaldo = null: null
+
+2023-06-29 15:19:37 - [TEST_STEP][PASSED] - pkgDatabase.kwySQL.connectDB(): pkgDatabase.kwySQL.connectDB is PASSED
+
+2023-06-29 15:19:40 - [MESSAGE][PASSED] - pkgDatabase.kwySQL.connectDB is PASSED
+
+2023-06-29 15:19:40 - [TEST_STEP][PASSED] - vResult = pkgDatabase.kwySQL.executeQuery(vQuery): pkgDatabase.kwySQL.executeQuery is PASSED
+
+2023-06-29 15:19:40 - [MESSAGE][PASSED] - pkgDatabase.kwySQL.executeQuery is PASSED
+
+2023-06-29 15:19:40 - [TEST_STEP][PASSED] - vResult2 = pkgDatabase.kwySQL.executeQuery(vQuery2): pkgDatabase.kwySQL.executeQuery is PASSED
+
+2023-06-29 15:19:40 - [MESSAGE][PASSED] - pkgDatabase.kwySQL.executeQuery is PASSED
+
+2023-06-29 15:19:40 - [TEST_STEP][PASSED] - vResult3 = pkgDatabase.kwySQL.executeQuery(vQuery3): pkgDatabase.kwySQL.executeQuery is PASSED
+
+2023-06-29 15:19:41 - [MESSAGE][PASSED] - pkgDatabase.kwySQL.executeQuery is PASSED
+
+2023-06-29 15:19:41 - [TEST_STEP][PASSED] - vResult4 = pkgDatabase.kwySQL.executeQuery(vQuery4): pkgDatabase.kwySQL.executeQuery is PASSED
+
+2023-06-29 15:19:41 - [MESSAGE][PASSED] - pkgDatabase.kwySQL.executeQuery is PASSED
+
+2023-06-29 15:19:41 - [TEST_STEP][PASSED] - vResult5 = pkgDatabase.kwySQL.executeQuery(vQuery5): pkgDatabase.kwySQL.executeQuery is PASSED
+
+2023-06-29 15:19:41 - [MESSAGE][PASSED] - pkgDatabase.kwySQL.executeQuery is PASSED
+
+2023-06-29 15:19:41 - [TEST_STEP][PASSED] - vDNI = vResult.getString(2): null
+
+2023-06-29 15:19:41 - [TEST_STEP][PASSED] - vUsuario = vResult.getString(3): null
+
+2023-06-29 15:19:41 - [TEST_STEP][PASSED] - vClave = vResult.getString(4): null
+
+2023-06-29 15:19:41 - [TEST_STEP][PASSED] - vCuenta = vResult2.getString(3): null
+
+2023-06-29 15:19:41 - [TEST_STEP][PASSED] - vFavorita = vResult3.getString(3): null
+
+2023-06-29 15:19:41 - [TEST_STEP][PASSED] - vMoneda = vResult4.getString(3): null
+
+2023-06-29 15:19:41 - [TEST_STEP][PASSED] - vSaldo = vResult5.getString(3): null
+
+2023-06-29 15:19:41 - [TEST_STEP][PASSED] - pkgDatabase.kwySQL.closeDatabaseConnection(): pkgDatabase.kwySQL.closeDatabaseConnection is PASSED
+
+2023-06-29 15:19:41 - [MESSAGE][PASSED] - pkgDatabase.kwySQL.closeDatabaseConnection is PASSED
+
+2023-06-29 15:19:41 - [TEST_STEP][PASSED] - pkgUtilities.kwyUtility.Server("Internet"): pkgUtilities.kwyUtility.Server is PASSED
+
+2023-06-29 15:19:41 - [MESSAGE][PASSED] - pkgUtilities.kwyUtility.Server is PASSED
+
+2023-06-29 15:19:41 - [TEST_STEP][PASSED] - pkgUtilities.kwyUtility.Login(vDNI, vClave, vUsuario): pkgUtilities.kwyUtility.Login is PASSED
+
+2023-06-29 15:19:42 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2023-06-29 15:19:42 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2023-06-29 15:19:47 - [MESSAGE][PASSED] - Browser is opened with url: 'https://ncdtesting.bancocredicoop.coop/apps/NCDBC/#_frmLogin'
+
+2023-06-29 15:19:47 - [MESSAGE][PASSED] - Current window maximized
+
+2023-06-29 15:19:48 - [MESSAGE][PASSED] - Object: 'Object Repository/01-Login/btnLgnCerrarBanner' is clicked on
+
+2023-06-29 15:19:49 - [MESSAGE][PASSED] - Text '20144835' is set on object 'Object Repository/01-Login/txtLgnDNI'
+
+2023-06-29 15:19:50 - [MESSAGE][PASSED] - Text 'testing9' is set on object 'Object Repository/01-Login/txtLgnClave'
+
+2023-06-29 15:19:51 - [MESSAGE][PASSED] - Text 'edie02' is set on object 'Object Repository/01-Login/txtLgnUsuario'
+
+2023-06-29 15:19:51 - [MESSAGE][PASSED] - Object: 'Object Repository/01-Login/btnLgnIngresar' is clicked on
+
+2023-06-29 15:19:51 - [MESSAGE][PASSED] - pkgUtilities.kwyUtility.Login is PASSED
+
+2023-06-29 15:19:51 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/02-Dashboard/lnkDsbCuentas")): Object: 'Object Repository/02-Dashboard/lnkDsbCuentas' is clicked on
+
+2023-06-29 15:19:58 - [MESSAGE][PASSED] - Object: 'Object Repository/02-Dashboard/lnkDsbCuentas' is clicked on
+
+2023-06-29 15:19:58 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/03-Cuentas/lblCtaTituloCuentaTabla"), vCuenta, CONTINUE_ON_FAILURE): Actual text and expected text of test object 'Object Repository/03-Cuentas/lblCtaTituloCuentaTabla' are matched.
+
+2023-06-29 15:20:00 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/03-Cuentas/lblCtaTituloCuentaTabla' are matched.
+
+2023-06-29 15:20:00 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/03-Cuentas/lblCtaTituloFavoritaTabla"), vFavorita, CONTINUE_ON_FAILURE): Actual text and expected text of test object 'Object Repository/03-Cuentas/lblCtaTituloFavoritaTabla' are matched.
+
+2023-06-29 15:20:00 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/03-Cuentas/lblCtaTituloFavoritaTabla' are matched.
+
+2023-06-29 15:20:00 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/03-Cuentas/lblCtaTituloMonedaTabla"), vMoneda, CONTINUE_ON_FAILURE): Actual text and expected text of test object 'Object Repository/03-Cuentas/lblCtaTituloMonedaTabla' are matched.
+
+2023-06-29 15:20:00 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/03-Cuentas/lblCtaTituloMonedaTabla' are matched.
+
+2023-06-29 15:20:00 - [TEST_STEP][PASSED] - pkgUtilities.kwyUtility.Server("Internet"): pkgUtilities.kwyUtility.Server is PASSED
+
+2023-06-29 15:20:00 - [MESSAGE][PASSED] - pkgUtilities.kwyUtility.Server is PASSED
+
+2023-06-29 15:20:00 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/03-Cuentas/lblCtaTituloSaldoTabla"), vSaldo, CONTINUE_ON_FAILURE): Actual text and expected text of test object 'Object Repository/03-Cuentas/lblCtaTituloSaldoTabla' are matched.
+
+2023-06-29 15:20:01 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/03-Cuentas/lblCtaTituloSaldoTabla' are matched.
+
+2023-06-29 15:20:01 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/03-Cuentas/icoCtaAtras")): Object: 'Object Repository/03-Cuentas/icoCtaAtras' is clicked on
+
+2023-06-29 15:20:02 - [MESSAGE][PASSED] - Object: 'Object Repository/03-Cuentas/icoCtaAtras' is clicked on
+
+2023-06-29 15:20:02 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/02-Dashboard/lnkDsbCuentasInicio")): Object: 'Object Repository/02-Dashboard/lnkDsbCuentasInicio' is clicked on
+
+2023-06-29 15:20:04 - [MESSAGE][PASSED] - Object: 'Object Repository/02-Dashboard/lnkDsbCuentasInicio' is clicked on
+
+2023-06-29 15:20:04 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/03-Cuentas/lblCtaTituloCuentaTabla"), vCuenta, CONTINUE_ON_FAILURE): Actual text and expected text of test object 'Object Repository/03-Cuentas/lblCtaTituloCuentaTabla' are matched.
+
+2023-06-29 15:20:05 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/03-Cuentas/lblCtaTituloCuentaTabla' are matched.
+
+2023-06-29 15:20:05 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/03-Cuentas/lblCtaTituloFavoritaTabla"), vFavorita, CONTINUE_ON_FAILURE): Actual text and expected text of test object 'Object Repository/03-Cuentas/lblCtaTituloFavoritaTabla' are matched.
+
+2023-06-29 15:20:05 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/03-Cuentas/lblCtaTituloFavoritaTabla' are matched.
+
+2023-06-29 15:20:05 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/03-Cuentas/lblCtaTituloMonedaTabla"), vMoneda, CONTINUE_ON_FAILURE): Actual text and expected text of test object 'Object Repository/03-Cuentas/lblCtaTituloMonedaTabla' are matched.
+
+2023-06-29 15:20:05 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/03-Cuentas/lblCtaTituloMonedaTabla' are matched.
+
+2023-06-29 15:20:05 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/03-Cuentas/lblCtaTituloSaldoTabla"), vSaldo, CONTINUE_ON_FAILURE): Actual text and expected text of test object 'Object Repository/03-Cuentas/lblCtaTituloSaldoTabla' are matched.
+
+2023-06-29 15:20:06 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/03-Cuentas/lblCtaTituloSaldoTabla' are matched.
+
+2023-06-29 15:20:06 - [TEST_STEP][PASSED] - Start tear down : fPassScript: Error occurred when try to run method 'fPassScript' (Root cause: com.kms.katalon.core.exception.StepFailedException - com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir')
+
+2023-06-29 15:20:06 - [TEST_STEP][FAILED] - pkgUtilities.kwyUtility.fPassStatus(): Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir'
+
+2023-06-29 15:20:37 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[@id='frmAccountsLanding_customhamburger_LogOutlblAccounts']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2023-06-29 15:20:37 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$1.call(Unknown Source)
+	at pkgUtilities.kwyUtility.fPassStatus(kwyUtility.groovy:120)
+	at pkgUtilities.kwyUtility.invokeMethod(kwyUtility.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at CTA01-Acceder Home Cuentas POS.fPassScript(CTA01-Acceder Home Cuentas POS:101)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptMethodAsRawText(ScriptEngine.java:133)
+	at com.kms.katalon.core.main.TestCaseExecutor.runMethod(TestCaseExecutor.java:458)
+	at com.kms.katalon.core.main.TestCaseExecutor.runMethod(TestCaseExecutor.java:580)
+	at com.kms.katalon.core.main.TestCaseExecutor.internallyRunMethods(TestCaseExecutor.java:565)
+	at com.kms.katalon.core.main.TestCaseExecutor.onExecutionComplete(TestCaseExecutor.java:135)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1688062680350.run(TempTestSuite1688062680350.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/02-Dashboard/lnkDsbSalir' located by '//div[@id='frmAccountsLanding_customhamburger_LogOutlblAccounts']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1376)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:65)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$1.call(Unknown Source)
+	at pkgUtilities.kwyUtility.fPassStatus(kwyUtility.groovy:120)
+	at pkgUtilities.kwyUtility.invokeMethod(kwyUtility.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Script1680718890508.fPassScript(Script1680718890508.groovy:101)
+	... 14 more
+)
+[[ATTACHMENT|C:\\Users\\natalia.heit\\Katalon Studio\\NCDWeb\\Reports\\20230629_151757\\02-Cuentas\\Cuentas\\20230629_151800\\1688062837477.png]]
+
+2023-06-29 15:20:37 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir'
+
+2023-06-29 15:20:37 - [MESSAGE][WARNING] - Error occurred when try to run method 'fPassScript' (Root cause: com.kms.katalon.core.exception.StepFailedException - com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir')]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/03-Cuentas/CTA02-Copiar CBU POS" time="21.052" classname="Test Cases/03-Cuentas/CTA02-Copiar CBU POS" status="PASSED">
+         <system-out><![CDATA[2023-06-29 15:20:37 - [TEST_CASE][PASSED] - Test Cases/03-Cuentas/CTA02-Copiar CBU POS: Test Cases/03-Cuentas/CTA02-Copiar CBU POS
+
+2023-06-29 15:20:38 - [TEST_STEP][PASSED] - vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 20144835": null
+
+2023-06-29 15:20:38 - [TEST_STEP][PASSED] - vQuery2 = "SELECT * FROM Toast WHERE idToast = 'Toa-005'": null
+
+2023-06-29 15:20:38 - [TEST_STEP][PASSED] - vDNI = null: null
+
+2023-06-29 15:20:38 - [TEST_STEP][PASSED] - vClave = null: null
+
+2023-06-29 15:20:38 - [TEST_STEP][PASSED] - vUsuario = null: null
+
+2023-06-29 15:20:38 - [TEST_STEP][PASSED] - vCbuToast = null: null
+
+2023-06-29 15:20:38 - [TEST_STEP][PASSED] - pkgDatabase.kwySQL.connectDB(): pkgDatabase.kwySQL.connectDB is PASSED
+
+2023-06-29 15:20:39 - [MESSAGE][PASSED] - pkgDatabase.kwySQL.connectDB is PASSED
+
+2023-06-29 15:20:39 - [TEST_STEP][PASSED] - vResult = pkgDatabase.kwySQL.executeQuery(vQuery): pkgDatabase.kwySQL.executeQuery is PASSED
+
+2023-06-29 15:20:39 - [MESSAGE][PASSED] - pkgDatabase.kwySQL.executeQuery is PASSED
+
+2023-06-29 15:20:39 - [TEST_STEP][PASSED] - vResult2 = pkgDatabase.kwySQL.executeQuery(vQuery2): pkgDatabase.kwySQL.executeQuery is PASSED
+
+2023-06-29 15:20:39 - [MESSAGE][PASSED] - pkgDatabase.kwySQL.executeQuery is PASSED
+
+2023-06-29 15:20:39 - [TEST_STEP][PASSED] - vDNI = vResult.getString(2): null
+
+2023-06-29 15:20:39 - [TEST_STEP][PASSED] - vUsuario = vResult.getString(3): null
+
+2023-06-29 15:20:39 - [TEST_STEP][PASSED] - vClave = vResult.getString(4): null
+
+2023-06-29 15:20:39 - [TEST_STEP][PASSED] - vCbuToast = vResult2.getString(2): null
+
+2023-06-29 15:20:39 - [TEST_STEP][PASSED] - pkgDatabase.kwySQL.closeDatabaseConnection(): pkgDatabase.kwySQL.closeDatabaseConnection is PASSED
+
+2023-06-29 15:20:39 - [MESSAGE][PASSED] - pkgDatabase.kwySQL.closeDatabaseConnection is PASSED
+
+2023-06-29 15:20:39 - [TEST_STEP][PASSED] - pkgUtilities.kwyUtility.Server("Internet"): pkgUtilities.kwyUtility.Server is PASSED
+
+2023-06-29 15:20:39 - [MESSAGE][PASSED] - pkgUtilities.kwyUtility.Server is PASSED
+
+2023-06-29 15:20:39 - [TEST_STEP][PASSED] - pkgUtilities.kwyUtility.Login(vDNI, vClave, vUsuario): pkgUtilities.kwyUtility.Login is PASSED
+
+2023-06-29 15:20:39 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2023-06-29 15:20:40 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2023-06-29 15:20:40 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2023-06-29 15:20:45 - [MESSAGE][PASSED] - Browser is opened with url: 'https://ncdtesting.bancocredicoop.coop/apps/NCDBC/#_frmLogin'
+
+2023-06-29 15:20:45 - [MESSAGE][PASSED] - Current window maximized
+
+2023-06-29 15:20:46 - [MESSAGE][PASSED] - Object: 'Object Repository/01-Login/btnLgnCerrarBanner' is clicked on
+
+2023-06-29 15:20:46 - [MESSAGE][PASSED] - Text '20144835' is set on object 'Object Repository/01-Login/txtLgnDNI'
+
+2023-06-29 15:20:47 - [MESSAGE][PASSED] - Text 'testing9' is set on object 'Object Repository/01-Login/txtLgnClave'
+
+2023-06-29 15:20:48 - [MESSAGE][PASSED] - Text 'edie02' is set on object 'Object Repository/01-Login/txtLgnUsuario'
+
+2023-06-29 15:20:49 - [MESSAGE][PASSED] - Object: 'Object Repository/01-Login/btnLgnIngresar' is clicked on
+
+2023-06-29 15:20:49 - [MESSAGE][PASSED] - pkgUtilities.kwyUtility.Login is PASSED
+
+2023-06-29 15:20:49 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/03-Cuentas/lnkCtaMenuInicio")): Object: 'Object Repository/03-Cuentas/lnkCtaMenuInicio' is clicked on
+
+2023-06-29 15:20:55 - [MESSAGE][PASSED] - Object: 'Object Repository/03-Cuentas/lnkCtaMenuInicio' is clicked on
+
+2023-06-29 15:20:55 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/03-Cuentas/lnkCtaCopiarCBU")): Object: 'Object Repository/03-Cuentas/lnkCtaCopiarCBU' is clicked on
+
+2023-06-29 15:20:56 - [MESSAGE][PASSED] - Object: 'Object Repository/03-Cuentas/lnkCtaCopiarCBU' is clicked on
+
+2023-06-29 15:20:56 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/03-Cuentas/lblCtaToastCopiaCBU"), vCbuToast, CONTINUE_ON_FAILURE): Actual text and expected text of test object 'Object Repository/03-Cuentas/lblCtaToastCopiaCBU' are matched.
+
+2023-06-29 15:20:56 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/03-Cuentas/lblCtaToastCopiaCBU' are matched.
+
+2023-06-29 15:20:56 - [TEST_STEP][PASSED] - Start tear down : fPassScript: Method 'fPassScript' complete successfully
+
+2023-06-29 15:20:56 - [TEST_STEP][PASSED] - pkgUtilities.kwyUtility.fPassStatus(): pkgUtilities.kwyUtility.fPassStatus is PASSED
+
+2023-06-29 15:20:57 - [MESSAGE][PASSED] - Object: 'Object Repository/02-Dashboard/lnkDsbSalir' is clicked on
+
+2023-06-29 15:20:57 - [MESSAGE][PASSED] - Object: 'Object Repository/02-Dashboard/btnDsbSalirMsgConfirmacionAceptar' is clicked on
+
+2023-06-29 15:20:58 - [MESSAGE][PASSED] - Browser is closed
+
+2023-06-29 15:20:58 - [MESSAGE][PASSED] - pkgUtilities.kwyUtility.fPassStatus is PASSED
+
+2023-06-29 15:20:58 - [MESSAGE][PASSED] - Method 'fPassScript' complete successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/03-Cuentas/CTA03-Consulta CBU y Alias POS" time="57.105" classname="Test Cases/03-Cuentas/CTA03-Consulta CBU y Alias POS" status="FAILED">
+         <failure type="FAILED" message="Test Cases/03-Cuentas/CTA03-Consulta CBU y Alias POS FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/03-Cuentas/txtCtaNombreAlias' located by 'id(&quot;frmCbuAliasBccl_segCbuAlias&quot;)/ul[1]/li[@class=&quot;seg2Normal&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxCbuAliasRow_flxCbuAliasRow&quot;]/div[@class=&quot;kcell middlecenteralignsknLblProductTableNumberData&quot;]/div[@id=&quot;flxCbuAliasRow_lblAlias&quot;][count(. | //*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')]) = count(//*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')])]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/03-Cuentas/txtCtaNombreAlias' located by 'id(&quot;frmCbuAliasBccl_segCbuAlias&quot;)/ul[1]/li[@class=&quot;seg2Normal&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxCbuAliasRow_flxCbuAliasRow&quot;]/div[@class=&quot;kcell middlecenteralignsknLblProductTableNumberData&quot;]/div[@id=&quot;flxCbuAliasRow_lblAlias&quot;][count(. | //*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')]) = count(//*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')])]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4733)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$3.call(Unknown Source)
+	at CTA03-Consulta CBU y Alias POS.run(CTA03-Consulta CBU y Alias POS:70)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1688062680350.run(TempTestSuite1688062680350.groovy:36)
+)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4733)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$3.call(Unknown Source)
+	at CTA03-Consulta CBU y Alias POS.run(CTA03-Consulta CBU y Alias POS:70)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1688062680350.run(TempTestSuite1688062680350.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/03-Cuentas/txtCtaNombreAlias' located by 'id(&quot;frmCbuAliasBccl_segCbuAlias&quot;)/ul[1]/li[@class=&quot;seg2Normal&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxCbuAliasRow_flxCbuAliasRow&quot;]/div[@class=&quot;kcell middlecenteralignsknLblProductTableNumberData&quot;]/div[@id=&quot;flxCbuAliasRow_lblAlias&quot;][count(. | //*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')]) = count(//*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')])]' not found
+	... 23 more
+"/>
+         <system-out><![CDATA[2023-06-29 15:20:58 - [TEST_CASE][FAILED] - Test Cases/03-Cuentas/CTA03-Consulta CBU y Alias POS: Test Cases/03-Cuentas/CTA03-Consulta CBU y Alias POS FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/03-Cuentas/txtCtaNombreAlias' located by 'id("frmCbuAliasBccl_segCbuAlias")/ul[1]/li[@class="seg2Normal"]/div[@id="flexcontainer_wrapper"]/div[@id="flxCbuAliasRow_flxCbuAliasRow"]/div[@class="kcell middlecenteralignsknLblProductTableNumberData"]/div[@id="flxCbuAliasRow_lblAlias"][count(. | //*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')]) = count(//*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')])]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/03-Cuentas/txtCtaNombreAlias' located by 'id("frmCbuAliasBccl_segCbuAlias")/ul[1]/li[@class="seg2Normal"]/div[@id="flexcontainer_wrapper"]/div[@id="flxCbuAliasRow_flxCbuAliasRow"]/div[@class="kcell middlecenteralignsknLblProductTableNumberData"]/div[@id="flxCbuAliasRow_lblAlias"][count(. | //*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')]) = count(//*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')])]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4733)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$3.call(Unknown Source)
+	at CTA03-Consulta CBU y Alias POS.run(CTA03-Consulta CBU y Alias POS:70)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1688062680350.run(TempTestSuite1688062680350.groovy:36)
+)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4733)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$3.call(Unknown Source)
+	at CTA03-Consulta CBU y Alias POS.run(CTA03-Consulta CBU y Alias POS:70)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1688062680350.run(TempTestSuite1688062680350.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/03-Cuentas/txtCtaNombreAlias' located by 'id("frmCbuAliasBccl_segCbuAlias")/ul[1]/li[@class="seg2Normal"]/div[@id="flexcontainer_wrapper"]/div[@id="flxCbuAliasRow_flxCbuAliasRow"]/div[@class="kcell middlecenteralignsknLblProductTableNumberData"]/div[@id="flxCbuAliasRow_lblAlias"][count(. | //*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')]) = count(//*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')])]' not found
+	... 23 more
+
+
+2023-06-29 15:20:59 - [TEST_STEP][PASSED] - vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 20144835": null
+
+2023-06-29 15:20:59 - [TEST_STEP][PASSED] - vQuery2 = "SELECT * FROM Labels where Id = 6": null
+
+2023-06-29 15:20:59 - [TEST_STEP][PASSED] - vQuery3 = "SELECT * FROM Labels where Id = 7": null
+
+2023-06-29 15:20:59 - [TEST_STEP][PASSED] - vDNI = null: null
+
+2023-06-29 15:20:59 - [TEST_STEP][PASSED] - vClave = null: null
+
+2023-06-29 15:20:59 - [TEST_STEP][PASSED] - vUsuario = null: null
+
+2023-06-29 15:20:59 - [TEST_STEP][PASSED] - vCbuCta = null: null
+
+2023-06-29 15:20:59 - [TEST_STEP][PASSED] - vALiasCta = null: null
+
+2023-06-29 15:20:59 - [TEST_STEP][PASSED] - pkgDatabase.kwySQL.connectDB(): pkgDatabase.kwySQL.connectDB is PASSED
+
+2023-06-29 15:21:00 - [MESSAGE][PASSED] - pkgDatabase.kwySQL.connectDB is PASSED
+
+2023-06-29 15:21:00 - [TEST_STEP][PASSED] - vResult = pkgDatabase.kwySQL.executeQuery(vQuery): pkgDatabase.kwySQL.executeQuery is PASSED
+
+2023-06-29 15:21:00 - [MESSAGE][PASSED] - pkgDatabase.kwySQL.executeQuery is PASSED
+
+2023-06-29 15:21:00 - [TEST_STEP][PASSED] - vResult2 = pkgDatabase.kwySQL.executeQuery(vQuery2): pkgDatabase.kwySQL.executeQuery is PASSED
+
+2023-06-29 15:21:00 - [MESSAGE][PASSED] - pkgDatabase.kwySQL.executeQuery is PASSED
+
+2023-06-29 15:21:00 - [TEST_STEP][PASSED] - vResult3 = pkgDatabase.kwySQL.executeQuery(vQuery3): pkgDatabase.kwySQL.executeQuery is PASSED
+
+2023-06-29 15:21:00 - [MESSAGE][PASSED] - pkgDatabase.kwySQL.executeQuery is PASSED
+
+2023-06-29 15:21:00 - [TEST_STEP][PASSED] - vDNI = vResult.getString(2): null
+
+2023-06-29 15:21:00 - [TEST_STEP][PASSED] - vUsuario = vResult.getString(3): null
+
+2023-06-29 15:21:00 - [TEST_STEP][PASSED] - vClave = vResult.getString(4): null
+
+2023-06-29 15:21:00 - [TEST_STEP][PASSED] - vCbuCta = vResult2.getString(3): null
+
+2023-06-29 15:21:00 - [TEST_STEP][PASSED] - vALiasCta = vResult3.getString(3): null
+
+2023-06-29 15:21:00 - [TEST_STEP][PASSED] - pkgDatabase.kwySQL.closeDatabaseConnection(): pkgDatabase.kwySQL.closeDatabaseConnection is PASSED
+
+2023-06-29 15:21:00 - [MESSAGE][PASSED] - pkgDatabase.kwySQL.closeDatabaseConnection is PASSED
+
+2023-06-29 15:21:00 - [TEST_STEP][PASSED] - pkgUtilities.kwyUtility.Server("Internet"): pkgUtilities.kwyUtility.Server is PASSED
+
+2023-06-29 15:21:00 - [MESSAGE][PASSED] - pkgUtilities.kwyUtility.Server is PASSED
+
+2023-06-29 15:21:00 - [TEST_STEP][PASSED] - pkgUtilities.kwyUtility.Login(vDNI, vClave, vUsuario): pkgUtilities.kwyUtility.Login is PASSED
+
+2023-06-29 15:21:00 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2023-06-29 15:21:00 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2023-06-29 15:21:05 - [MESSAGE][PASSED] - Browser is opened with url: 'https://ncdtesting.bancocredicoop.coop/apps/NCDBC/#_frmLogin'
+
+2023-06-29 15:21:05 - [MESSAGE][PASSED] - Current window maximized
+
+2023-06-29 15:21:06 - [MESSAGE][PASSED] - Object: 'Object Repository/01-Login/btnLgnCerrarBanner' is clicked on
+
+2023-06-29 15:21:07 - [MESSAGE][PASSED] - Text '20144835' is set on object 'Object Repository/01-Login/txtLgnDNI'
+
+2023-06-29 15:21:08 - [MESSAGE][PASSED] - Text 'testing9' is set on object 'Object Repository/01-Login/txtLgnClave'
+
+2023-06-29 15:21:09 - [MESSAGE][PASSED] - Text 'edie02' is set on object 'Object Repository/01-Login/txtLgnUsuario'
+
+2023-06-29 15:21:09 - [MESSAGE][PASSED] - Object: 'Object Repository/01-Login/btnLgnIngresar' is clicked on
+
+2023-06-29 15:21:09 - [MESSAGE][PASSED] - pkgUtilities.kwyUtility.Login is PASSED
+
+2023-06-29 15:21:09 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/02-Dashboard/lnkDsbCuentas")): Object: 'Object Repository/02-Dashboard/lnkDsbCuentas' is clicked on
+
+2023-06-29 15:21:16 - [MESSAGE][PASSED] - Object: 'Object Repository/02-Dashboard/lnkDsbCuentas' is clicked on
+
+2023-06-29 15:21:16 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/03-Cuentas/mnuCtaConsultaDesplegable")): Object: 'Object Repository/03-Cuentas/mnuCtaConsultaDesplegable' is clicked on
+
+2023-06-29 15:21:17 - [MESSAGE][PASSED] - Object: 'Object Repository/03-Cuentas/mnuCtaConsultaDesplegable' is clicked on
+
+2023-06-29 15:21:17 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/03-Cuentas/txtCtaConsultarAliasCBU")): Object: 'Object Repository/03-Cuentas/txtCtaConsultarAliasCBU' is clicked on
+
+2023-06-29 15:21:18 - [MESSAGE][PASSED] - Object: 'Object Repository/03-Cuentas/txtCtaConsultarAliasCBU' is clicked on
+
+2023-06-29 15:21:18 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/03-Cuentas/txtCtaNumeroCBU"), vCbuCta, CONTINUE_ON_FAILURE): Actual text and expected text of test object 'Object Repository/03-Cuentas/txtCtaNumeroCBU' are matched.
+
+2023-06-29 15:21:20 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/03-Cuentas/txtCtaNumeroCBU' are matched.
+
+2023-06-29 15:21:20 - [TEST_STEP][FAILED] - verifyElementText(findTestObject("Object Repository/03-Cuentas/txtCtaNombreAlias"), vALiasCta, CONTINUE_ON_FAILURE): com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/03-Cuentas/txtCtaNombreAlias' located by 'id("frmCbuAliasBccl_segCbuAlias")/ul[1]/li[@class="seg2Normal"]/div[@id="flexcontainer_wrapper"]/div[@id="flxCbuAliasRow_flxCbuAliasRow"]/div[@class="kcell middlecenteralignsknLblProductTableNumberData"]/div[@id="flxCbuAliasRow_lblAlias"][count(. | //*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')]) = count(//*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')])]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/03-Cuentas/txtCtaNombreAlias' located by 'id("frmCbuAliasBccl_segCbuAlias")/ul[1]/li[@class="seg2Normal"]/div[@id="flexcontainer_wrapper"]/div[@id="flxCbuAliasRow_flxCbuAliasRow"]/div[@class="kcell middlecenteralignsknLblProductTableNumberData"]/div[@id="flxCbuAliasRow_lblAlias"][count(. | //*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')]) = count(//*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')])]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4733)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$3.call(Unknown Source)
+	at CTA03-Consulta CBU y Alias POS.run(CTA03-Consulta CBU y Alias POS:70)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1688062680350.run(TempTestSuite1688062680350.groovy:36)
+)
+
+2023-06-29 15:21:51 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: id("frmCbuAliasBccl_segCbuAlias")/ul[1]/li[@class="seg2Normal"]/div[@id="flexcontainer_wrapper"]/div[@id="flxCbuAliasRow_flxCbuAliasRow"]/div[@class="kcell middlecenteralignsknLblProductTableNumberData"]/div[@id="flxCbuAliasRow_lblAlias"][count(. | //*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')]) = count(//*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')])]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2023-06-29 15:21:51 - [MESSAGE][FAILED] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/03-Cuentas/txtCtaNombreAlias' located by 'id("frmCbuAliasBccl_segCbuAlias")/ul[1]/li[@class="seg2Normal"]/div[@id="flexcontainer_wrapper"]/div[@id="flxCbuAliasRow_flxCbuAliasRow"]/div[@class="kcell middlecenteralignsknLblProductTableNumberData"]/div[@id="flxCbuAliasRow_lblAlias"][count(. | //*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')]) = count(//*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')])]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/03-Cuentas/txtCtaNombreAlias' located by 'id("frmCbuAliasBccl_segCbuAlias")/ul[1]/li[@class="seg2Normal"]/div[@id="flexcontainer_wrapper"]/div[@id="flxCbuAliasRow_flxCbuAliasRow"]/div[@class="kcell middlecenteralignsknLblProductTableNumberData"]/div[@id="flxCbuAliasRow_lblAlias"][count(. | //*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')]) = count(//*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')])]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4733)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$3.call(Unknown Source)
+	at CTA03-Consulta CBU y Alias POS.run(CTA03-Consulta CBU y Alias POS:70)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1688062680350.run(TempTestSuite1688062680350.groovy:36)
+)
+[[ATTACHMENT|C:\\Users\\natalia.heit\\Katalon Studio\\NCDWeb\\Reports\\20230629_151757\\02-Cuentas\\Cuentas\\20230629_151800\\1688062911523.png]]
+
+2023-06-29 15:21:51 - [TEST_STEP][PASSED] - Start tear down : fTakeFailScreenshot: Method 'fTakeFailScreenshot' complete successfully
+
+2023-06-29 15:21:51 - [TEST_STEP][PASSED] - pkgUtilities.kwyUtility.fFailStatus("Screenshot/Fails/CTA03-ConsultaCBUyAliasPOS.png"): pkgUtilities.kwyUtility.fFailStatus is PASSED
+
+2023-06-29 15:21:52 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\natalia.heit\\Katalon Studio\\NCDWeb\\Reports\\20230629_151757\\02-Cuentas\\Cuentas\\20230629_151800\\Screenshot/Fails/CTA03-ConsultaCBUyAliasPOS.png]]
+
+2023-06-29 15:21:55 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2023-06-29 15:21:55 - [MESSAGE][PASSED] - Browser is closed
+
+2023-06-29 15:21:55 - [MESSAGE][PASSED] - pkgUtilities.kwyUtility.fFailStatus is PASSED
+
+2023-06-29 15:21:55 - [MESSAGE][PASSED] - Method 'fTakeFailScreenshot' complete successfully]]></system-out>
+         <system-err><![CDATA[2023-06-29 15:20:58 - [TEST_CASE][FAILED] - Test Cases/03-Cuentas/CTA03-Consulta CBU y Alias POS: Test Cases/03-Cuentas/CTA03-Consulta CBU y Alias POS FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/03-Cuentas/txtCtaNombreAlias' located by 'id("frmCbuAliasBccl_segCbuAlias")/ul[1]/li[@class="seg2Normal"]/div[@id="flexcontainer_wrapper"]/div[@id="flxCbuAliasRow_flxCbuAliasRow"]/div[@class="kcell middlecenteralignsknLblProductTableNumberData"]/div[@id="flxCbuAliasRow_lblAlias"][count(. | //*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')]) = count(//*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')])]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/03-Cuentas/txtCtaNombreAlias' located by 'id("frmCbuAliasBccl_segCbuAlias")/ul[1]/li[@class="seg2Normal"]/div[@id="flexcontainer_wrapper"]/div[@id="flxCbuAliasRow_flxCbuAliasRow"]/div[@class="kcell middlecenteralignsknLblProductTableNumberData"]/div[@id="flxCbuAliasRow_lblAlias"][count(. | //*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')]) = count(//*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')])]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4733)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$3.call(Unknown Source)
+	at CTA03-Consulta CBU y Alias POS.run(CTA03-Consulta CBU y Alias POS:70)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1688062680350.run(TempTestSuite1688062680350.groovy:36)
+)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4733)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$3.call(Unknown Source)
+	at CTA03-Consulta CBU y Alias POS.run(CTA03-Consulta CBU y Alias POS:70)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1688062680350.run(TempTestSuite1688062680350.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/03-Cuentas/txtCtaNombreAlias' located by 'id("frmCbuAliasBccl_segCbuAlias")/ul[1]/li[@class="seg2Normal"]/div[@id="flexcontainer_wrapper"]/div[@id="flxCbuAliasRow_flxCbuAliasRow"]/div[@class="kcell middlecenteralignsknLblProductTableNumberData"]/div[@id="flxCbuAliasRow_lblAlias"][count(. | //*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')]) = count(//*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')])]' not found
+	... 23 more]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/03-Cuentas/CTA04-Marcar Desmarcar Cta Favorita POS" time="72.299" classname="Test Cases/03-Cuentas/CTA04-Marcar Desmarcar Cta Favorita POS" status="PASSED">
+         <system-out><![CDATA[2023-06-29 15:21:55 - [TEST_CASE][PASSED] - Test Cases/03-Cuentas/CTA04-Marcar Desmarcar Cta Favorita POS: Test Cases/03-Cuentas/CTA04-Marcar Desmarcar Cta Favorita POS
+
+2023-06-29 15:21:56 - [TEST_STEP][PASSED] - vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 13976407": null
+
+2023-06-29 15:21:56 - [TEST_STEP][PASSED] - vQuery2 = "SELECT * FROM Toast WHERE idToast = 'Toa-CuentaFavorita'": null
+
+2023-06-29 15:21:56 - [TEST_STEP][PASSED] - vDNI = null: null
+
+2023-06-29 15:21:56 - [TEST_STEP][PASSED] - vClave = null: null
+
+2023-06-29 15:21:56 - [TEST_STEP][PASSED] - vUsuario = null: null
+
+2023-06-29 15:21:56 - [TEST_STEP][PASSED] - vCtaToast = null: null
+
+2023-06-29 15:21:56 - [TEST_STEP][PASSED] - pkgDatabase.kwySQL.connectDB(): pkgDatabase.kwySQL.connectDB is PASSED
+
+2023-06-29 15:21:57 - [MESSAGE][PASSED] - pkgDatabase.kwySQL.connectDB is PASSED
+
+2023-06-29 15:21:57 - [TEST_STEP][PASSED] - vResult = pkgDatabase.kwySQL.executeQuery(vQuery): pkgDatabase.kwySQL.executeQuery is PASSED
+
+2023-06-29 15:21:57 - [MESSAGE][PASSED] - pkgDatabase.kwySQL.executeQuery is PASSED
+
+2023-06-29 15:21:57 - [TEST_STEP][PASSED] - vResult2 = pkgDatabase.kwySQL.executeQuery(vQuery2): pkgDatabase.kwySQL.executeQuery is PASSED
+
+2023-06-29 15:21:57 - [MESSAGE][PASSED] - pkgDatabase.kwySQL.executeQuery is PASSED
+
+2023-06-29 15:21:57 - [TEST_STEP][PASSED] - vDNI = vResult.getString(2): null
+
+2023-06-29 15:21:57 - [TEST_STEP][PASSED] - vUsuario = vResult.getString(3): null
+
+2023-06-29 15:21:57 - [TEST_STEP][PASSED] - vClave = vResult.getString(4): null
+
+2023-06-29 15:21:57 - [TEST_STEP][PASSED] - vCtaToast = vResult2.getString(2): null
+
+2023-06-29 15:21:57 - [TEST_STEP][PASSED] - pkgDatabase.kwySQL.closeDatabaseConnection(): pkgDatabase.kwySQL.closeDatabaseConnection is PASSED
+
+2023-06-29 15:21:57 - [MESSAGE][PASSED] - pkgDatabase.kwySQL.closeDatabaseConnection is PASSED
+
+2023-06-29 15:21:57 - [TEST_STEP][PASSED] - pkgUtilities.kwyUtility.Server("Internet"): pkgUtilities.kwyUtility.Server is PASSED
+
+2023-06-29 15:21:57 - [MESSAGE][PASSED] - pkgUtilities.kwyUtility.Server is PASSED
+
+2023-06-29 15:21:57 - [TEST_STEP][PASSED] - pkgUtilities.kwyUtility.Login(vDNI, vClave, vUsuario): pkgUtilities.kwyUtility.Login is PASSED
+
+2023-06-29 15:21:57 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2023-06-29 15:21:57 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2023-06-29 15:22:02 - [MESSAGE][PASSED] - Browser is opened with url: 'https://ncdtesting.bancocredicoop.coop/apps/NCDBC/#_frmLogin'
+
+2023-06-29 15:22:02 - [MESSAGE][PASSED] - Current window maximized
+
+2023-06-29 15:22:03 - [MESSAGE][PASSED] - Object: 'Object Repository/01-Login/btnLgnCerrarBanner' is clicked on
+
+2023-06-29 15:22:04 - [MESSAGE][PASSED] - Text '13976407' is set on object 'Object Repository/01-Login/txtLgnDNI'
+
+2023-06-29 15:22:05 - [MESSAGE][PASSED] - Text 'testing0' is set on object 'Object Repository/01-Login/txtLgnClave'
+
+2023-06-29 15:22:05 - [MESSAGE][PASSED] - Text 'ale14' is set on object 'Object Repository/01-Login/txtLgnUsuario'
+
+2023-06-29 15:22:06 - [MESSAGE][PASSED] - Object: 'Object Repository/01-Login/btnLgnIngresar' is clicked on
+
+2023-06-29 15:22:06 - [MESSAGE][PASSED] - pkgUtilities.kwyUtility.Login is PASSED
+
+2023-06-29 15:22:06 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Object Repository/02-Dashboard/lnkDsbCuentas")): Object 'Object Repository/02-Dashboard/lnkDsbCuentas' is visible
+
+2023-06-29 15:22:32 - [MESSAGE][PASSED] - Object 'Object Repository/02-Dashboard/lnkDsbCuentas' is visible
+
+2023-06-29 15:22:32 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/02-Dashboard/lnkDsbCuentas")): Object: 'Object Repository/02-Dashboard/lnkDsbCuentas' is clicked on
+
+2023-06-29 15:22:32 - [MESSAGE][PASSED] - Object: 'Object Repository/02-Dashboard/lnkDsbCuentas' is clicked on
+
+2023-06-29 15:22:32 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Object Repository/03-Cuentas/lblCtaCuentasTitulo")): Object 'Object Repository/03-Cuentas/lblCtaCuentasTitulo' is visible
+
+2023-06-29 15:22:34 - [MESSAGE][PASSED] - Object 'Object Repository/03-Cuentas/lblCtaCuentasTitulo' is visible
+
+2023-06-29 15:22:34 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/03-Cuentas/icoCtaFavoritoCC")): Object: 'Object Repository/03-Cuentas/icoCtaFavoritoCC' is clicked on
+
+2023-06-29 15:22:34 - [MESSAGE][PASSED] - Object: 'Object Repository/03-Cuentas/icoCtaFavoritoCC' is clicked on
+
+2023-06-29 15:22:34 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/03-Cuentas/lblCtaCuentaFavoritaActualizada"), vCtaToast, CONTINUE_ON_FAILURE): Actual text and expected text of test object 'Object Repository/03-Cuentas/lblCtaCuentaFavoritaActualizada' are matched.
+
+2023-06-29 15:22:35 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/03-Cuentas/lblCtaCuentaFavoritaActualizada' are matched.
+
+2023-06-29 15:22:35 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/03-Cuentas/icoCtaFavoritoCA")): Object: 'Object Repository/03-Cuentas/icoCtaFavoritoCA' is clicked on
+
+2023-06-29 15:22:36 - [MESSAGE][PASSED] - Object: 'Object Repository/03-Cuentas/icoCtaFavoritoCA' is clicked on
+
+2023-06-29 15:22:36 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/03-Cuentas/lblCtaCuentaFavoritaActualizada"), vCtaToast, CONTINUE_ON_FAILURE): Actual text and expected text of test object 'Object Repository/03-Cuentas/lblCtaCuentaFavoritaActualizada' are matched.
+
+2023-06-29 15:22:36 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/03-Cuentas/lblCtaCuentaFavoritaActualizada' are matched.
+
+2023-06-29 15:22:36 - [TEST_STEP][PASSED] - Start tear down : fPassScript: Error occurred when try to run method 'fPassScript' (Root cause: com.kms.katalon.core.exception.StepFailedException - com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir')
+
+2023-06-29 15:22:36 - [TEST_STEP][FAILED] - pkgUtilities.kwyUtility.fPassStatus(): Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir'
+
+2023-06-29 15:23:07 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[@id='frmAccountsLanding_customhamburger_LogOutlblAccounts']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2023-06-29 15:23:08 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$1.call(Unknown Source)
+	at pkgUtilities.kwyUtility.fPassStatus(kwyUtility.groovy:120)
+	at pkgUtilities.kwyUtility.invokeMethod(kwyUtility.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at CTA04-Marcar Desmarcar Cta Favorita POS.fPassScript(CTA04-Marcar Desmarcar Cta Favorita POS:91)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptMethodAsRawText(ScriptEngine.java:133)
+	at com.kms.katalon.core.main.TestCaseExecutor.runMethod(TestCaseExecutor.java:458)
+	at com.kms.katalon.core.main.TestCaseExecutor.runMethod(TestCaseExecutor.java:580)
+	at com.kms.katalon.core.main.TestCaseExecutor.internallyRunMethods(TestCaseExecutor.java:565)
+	at com.kms.katalon.core.main.TestCaseExecutor.onExecutionComplete(TestCaseExecutor.java:135)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1688062680350.run(TempTestSuite1688062680350.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/02-Dashboard/lnkDsbSalir' located by '//div[@id='frmAccountsLanding_customhamburger_LogOutlblAccounts']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1376)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:65)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$1.call(Unknown Source)
+	at pkgUtilities.kwyUtility.fPassStatus(kwyUtility.groovy:120)
+	at pkgUtilities.kwyUtility.invokeMethod(kwyUtility.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Script1680718867511.fPassScript(Script1680718867511.groovy:91)
+	... 14 more
+)
+[[ATTACHMENT|C:\\Users\\natalia.heit\\Katalon Studio\\NCDWeb\\Reports\\20230629_151757\\02-Cuentas\\Cuentas\\20230629_151800\\1688062987991.png]]
+
+2023-06-29 15:23:08 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir'
+
+2023-06-29 15:23:08 - [MESSAGE][WARNING] - Error occurred when try to run method 'fPassScript' (Root cause: com.kms.katalon.core.exception.StepFailedException - com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir')]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/03-Cuentas/CTA05-Modificar Nombre Etiqueta Cta POS" time="64.128" classname="Test Cases/03-Cuentas/CTA05-Modificar Nombre Etiqueta Cta POS" status="PASSED">
+         <system-out><![CDATA[2023-06-29 15:23:08 - [TEST_CASE][PASSED] - Test Cases/03-Cuentas/CTA05-Modificar Nombre Etiqueta Cta POS: Test Cases/03-Cuentas/CTA05-Modificar Nombre Etiqueta Cta POS
+
+2023-06-29 15:23:08 - [TEST_STEP][PASSED] - vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 1776391": null
+
+2023-06-29 15:23:08 - [TEST_STEP][PASSED] - vQuery2 = "SELECT * FROM Parametros WHERE Nombre = 'Nombre Cuenta'": null
+
+2023-06-29 15:23:08 - [TEST_STEP][PASSED] - vQuery3 = "SELECT * FROM Toast WHERE idToast = 'Toa-ctas'": null
+
+2023-06-29 15:23:08 - [TEST_STEP][PASSED] - vDNI = null: null
+
+2023-06-29 15:23:08 - [TEST_STEP][PASSED] - vClave = null: null
+
+2023-06-29 15:23:08 - [TEST_STEP][PASSED] - vUsuario = null: null
+
+2023-06-29 15:23:08 - [TEST_STEP][PASSED] - vNombre = "Nombre Cuenta": null
+
+2023-06-29 15:23:08 - [TEST_STEP][PASSED] - vNombreModif = null: null
+
+2023-06-29 15:23:08 - [TEST_STEP][PASSED] - vMjeExito = null: null
+
+2023-06-29 15:23:08 - [TEST_STEP][PASSED] - pkgDatabase.kwySQL.connectDB(): pkgDatabase.kwySQL.connectDB is PASSED
+
+2023-06-29 15:23:09 - [MESSAGE][PASSED] - pkgDatabase.kwySQL.connectDB is PASSED
+
+2023-06-29 15:23:09 - [TEST_STEP][PASSED] - vResult = pkgDatabase.kwySQL.executeQuery(vQuery): pkgDatabase.kwySQL.executeQuery is PASSED
+
+2023-06-29 15:23:10 - [MESSAGE][PASSED] - pkgDatabase.kwySQL.executeQuery is PASSED
+
+2023-06-29 15:23:10 - [TEST_STEP][PASSED] - vResult2 = pkgDatabase.kwySQL.executeQuery(vQuery2): pkgDatabase.kwySQL.executeQuery is PASSED
+
+2023-06-29 15:23:10 - [MESSAGE][PASSED] - pkgDatabase.kwySQL.executeQuery is PASSED
+
+2023-06-29 15:23:10 - [TEST_STEP][PASSED] - vResult3 = pkgDatabase.kwySQL.executeQuery(vQuery3): pkgDatabase.kwySQL.executeQuery is PASSED
+
+2023-06-29 15:23:10 - [MESSAGE][PASSED] - pkgDatabase.kwySQL.executeQuery is PASSED
+
+2023-06-29 15:23:10 - [TEST_STEP][PASSED] - vDNI = vResult.getString(2): null
+
+2023-06-29 15:23:10 - [TEST_STEP][PASSED] - vUsuario = vResult.getString(3): null
+
+2023-06-29 15:23:10 - [TEST_STEP][PASSED] - vClave = vResult.getString(4): null
+
+2023-06-29 15:23:10 - [TEST_STEP][PASSED] - vNombreModif = vResult2.getString(2): null
+
+2023-06-29 15:23:10 - [TEST_STEP][PASSED] - vMjeExito = vResult3.getString(2): null
+
+2023-06-29 15:23:10 - [TEST_STEP][PASSED] - pkgDatabase.kwySQL.closeDatabaseConnection(): pkgDatabase.kwySQL.closeDatabaseConnection is PASSED
+
+2023-06-29 15:23:10 - [MESSAGE][PASSED] - pkgDatabase.kwySQL.closeDatabaseConnection is PASSED
+
+2023-06-29 15:23:10 - [TEST_STEP][PASSED] - pkgUtilities.kwyUtility.Server("Internet"): pkgUtilities.kwyUtility.Server is PASSED
+
+2023-06-29 15:23:10 - [MESSAGE][PASSED] - pkgUtilities.kwyUtility.Server is PASSED
+
+2023-06-29 15:23:10 - [TEST_STEP][PASSED] - pkgUtilities.kwyUtility.Login(vDNI, vClave, vUsuario): pkgUtilities.kwyUtility.Login is PASSED
+
+2023-06-29 15:23:10 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2023-06-29 15:23:11 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2023-06-29 15:23:11 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2023-06-29 15:23:16 - [MESSAGE][PASSED] - Browser is opened with url: 'https://ncdtesting.bancocredicoop.coop/apps/NCDBC/#_frmLogin'
+
+2023-06-29 15:23:16 - [MESSAGE][PASSED] - Current window maximized
+
+2023-06-29 15:23:16 - [MESSAGE][PASSED] - Object: 'Object Repository/01-Login/btnLgnCerrarBanner' is clicked on
+
+2023-06-29 15:23:17 - [MESSAGE][PASSED] - Text '1776391' is set on object 'Object Repository/01-Login/txtLgnDNI'
+
+2023-06-29 15:23:18 - [MESSAGE][PASSED] - Text 'testing1' is set on object 'Object Repository/01-Login/txtLgnClave'
+
+2023-06-29 15:23:19 - [MESSAGE][PASSED] - Text 'elsa12' is set on object 'Object Repository/01-Login/txtLgnUsuario'
+
+2023-06-29 15:23:20 - [MESSAGE][PASSED] - Object: 'Object Repository/01-Login/btnLgnIngresar' is clicked on
+
+2023-06-29 15:23:20 - [MESSAGE][PASSED] - pkgUtilities.kwyUtility.Login is PASSED
+
+2023-06-29 15:23:20 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/02-Dashboard/lnkDsbCuentas")): Object: 'Object Repository/02-Dashboard/lnkDsbCuentas' is clicked on
+
+2023-06-29 15:23:26 - [MESSAGE][PASSED] - Object: 'Object Repository/02-Dashboard/lnkDsbCuentas' is clicked on
+
+2023-06-29 15:23:26 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/03-Cuentas/lnkCtaNombreEtiqueta")): Object: 'Object Repository/03-Cuentas/lnkCtaNombreEtiqueta' is clicked on
+
+2023-06-29 15:23:28 - [MESSAGE][PASSED] - Object: 'Object Repository/03-Cuentas/lnkCtaNombreEtiqueta' is clicked on
+
+2023-06-29 15:23:28 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/03-Cuentas/mnuCtaNombre")): Object: 'Object Repository/03-Cuentas/mnuCtaNombre' is clicked on
+
+2023-06-29 15:23:29 - [MESSAGE][PASSED] - Object: 'Object Repository/03-Cuentas/mnuCtaNombre' is clicked on
+
+2023-06-29 15:23:29 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/03-Cuentas/txtCtaCambiarNombre")): Object: 'Object Repository/03-Cuentas/txtCtaCambiarNombre' is clicked on
+
+2023-06-29 15:23:30 - [MESSAGE][PASSED] - Object: 'Object Repository/03-Cuentas/txtCtaCambiarNombre' is clicked on
+
+2023-06-29 15:23:30 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/03-Cuentas/txtCtaModificacionNombre"), vNombre, CONTINUE_ON_FAILURE): Text 'Nombre Cuenta' is set on object 'Object Repository/03-Cuentas/txtCtaModificacionNombre'
+
+2023-06-29 15:23:31 - [MESSAGE][PASSED] - Text 'Nombre Cuenta' is set on object 'Object Repository/03-Cuentas/txtCtaModificacionNombre'
+
+2023-06-29 15:23:31 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/03-Cuentas/lnkCtaConsultarAliasCBU")): Object: 'Object Repository/03-Cuentas/lnkCtaConsultarAliasCBU' is clicked on
+
+2023-06-29 15:23:31 - [MESSAGE][PASSED] - Object: 'Object Repository/03-Cuentas/lnkCtaConsultarAliasCBU' is clicked on
+
+2023-06-29 15:23:31 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/03-Cuentas/txtCtaMsjeNombreActualizado"), vMjeExito, CONTINUE_ON_FAILURE): Actual text and expected text of test object 'Object Repository/03-Cuentas/txtCtaMsjeNombreActualizado' are matched.
+
+2023-06-29 15:23:33 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/03-Cuentas/txtCtaMsjeNombreActualizado' are matched.
+
+2023-06-29 15:23:33 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/03-Cuentas/btnCtaCerrarConsultaAliasCBU")): Object: 'Object Repository/03-Cuentas/btnCtaCerrarConsultaAliasCBU' is clicked on
+
+2023-06-29 15:23:34 - [MESSAGE][PASSED] - Object: 'Object Repository/03-Cuentas/btnCtaCerrarConsultaAliasCBU' is clicked on
+
+2023-06-29 15:23:34 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2023-06-29 15:23:39 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2023-06-29 15:23:39 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/03-Cuentas/mnuCtaNombre")): Object: 'Object Repository/03-Cuentas/mnuCtaNombre' is clicked on
+
+2023-06-29 15:23:39 - [MESSAGE][PASSED] - Object: 'Object Repository/03-Cuentas/mnuCtaNombre' is clicked on
+
+2023-06-29 15:23:39 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/03-Cuentas/txtCtaCambiarNombreModificado")): Object: 'Object Repository/03-Cuentas/txtCtaCambiarNombreModificado' is clicked on
+
+2023-06-29 15:23:40 - [MESSAGE][PASSED] - Object: 'Object Repository/03-Cuentas/txtCtaCambiarNombreModificado' is clicked on
+
+2023-06-29 15:23:40 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/03-Cuentas/txtCtaModificacionNombre"), vNombreModif, CONTINUE_ON_FAILURE): Text 'Nombre Cuenta Modificacion' is set on object 'Object Repository/03-Cuentas/txtCtaModificacionNombre'
+
+2023-06-29 15:23:40 - [MESSAGE][PASSED] - Text 'Nombre Cuenta Modificacion' is set on object 'Object Repository/03-Cuentas/txtCtaModificacionNombre'
+
+2023-06-29 15:23:40 - [TEST_STEP][PASSED] - Start tear down : fPassScript: Error occurred when try to run method 'fPassScript' (Root cause: com.kms.katalon.core.exception.StepFailedException - com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir')
+
+2023-06-29 15:23:40 - [TEST_STEP][FAILED] - pkgUtilities.kwyUtility.fPassStatus(): Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir'
+
+2023-06-29 15:24:12 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[@id='frmAccountsLanding_customhamburger_LogOutlblAccounts']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2023-06-29 15:24:12 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$1.call(Unknown Source)
+	at pkgUtilities.kwyUtility.fPassStatus(kwyUtility.groovy:120)
+	at pkgUtilities.kwyUtility.invokeMethod(kwyUtility.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at CTA05-Modificar Nombre Etiqueta Cta POS.fPassScript(CTA05-Modificar Nombre Etiqueta Cta POS:93)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptMethodAsRawText(ScriptEngine.java:133)
+	at com.kms.katalon.core.main.TestCaseExecutor.runMethod(TestCaseExecutor.java:458)
+	at com.kms.katalon.core.main.TestCaseExecutor.runMethod(TestCaseExecutor.java:580)
+	at com.kms.katalon.core.main.TestCaseExecutor.internallyRunMethods(TestCaseExecutor.java:565)
+	at com.kms.katalon.core.main.TestCaseExecutor.onExecutionComplete(TestCaseExecutor.java:135)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1688062680350.run(TempTestSuite1688062680350.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/02-Dashboard/lnkDsbSalir' located by '//div[@id='frmAccountsLanding_customhamburger_LogOutlblAccounts']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1376)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:65)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$1.call(Unknown Source)
+	at pkgUtilities.kwyUtility.fPassStatus(kwyUtility.groovy:120)
+	at pkgUtilities.kwyUtility.invokeMethod(kwyUtility.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Script1683486145511.fPassScript(Script1683486145511.groovy:93)
+	... 14 more
+)
+[[ATTACHMENT|C:\\Users\\natalia.heit\\Katalon Studio\\NCDWeb\\Reports\\20230629_151757\\02-Cuentas\\Cuentas\\20230629_151800\\1688063052120.png]]
+
+2023-06-29 15:24:12 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir'
+
+2023-06-29 15:24:12 - [MESSAGE][WARNING] - Error occurred when try to run method 'fPassScript' (Root cause: com.kms.katalon.core.exception.StepFailedException - com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/02-Dashboard/lnkDsbSalir')]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2023-06-29 15:19:36 - [TEST_SUITE][FAILED] - Cuentas: Test Cases/03-Cuentas/CTA03-Consulta CBU y Alias POS FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/03-Cuentas/txtCtaNombreAlias' located by 'id("frmCbuAliasBccl_segCbuAlias")/ul[1]/li[@class="seg2Normal"]/div[@id="flexcontainer_wrapper"]/div[@id="flxCbuAliasRow_flxCbuAliasRow"]/div[@class="kcell middlecenteralignsknLblProductTableNumberData"]/div[@id="flxCbuAliasRow_lblAlias"][count(. | //*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')]) = count(//*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')])]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/03-Cuentas/txtCtaNombreAlias' located by 'id("frmCbuAliasBccl_segCbuAlias")/ul[1]/li[@class="seg2Normal"]/div[@id="flexcontainer_wrapper"]/div[@id="flxCbuAliasRow_flxCbuAliasRow"]/div[@class="kcell middlecenteralignsknLblProductTableNumberData"]/div[@id="flxCbuAliasRow_lblAlias"][count(. | //*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')]) = count(//*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')])]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4733)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$3.call(Unknown Source)
+	at CTA03-Consulta CBU y Alias POS.run(CTA03-Consulta CBU y Alias POS:70)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1688062680350.run(TempTestSuite1688062680350.groovy:36)
+)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4733)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$3.call(Unknown Source)
+	at CTA03-Consulta CBU y Alias POS.run(CTA03-Consulta CBU y Alias POS:70)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1688062680350.run(TempTestSuite1688062680350.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/03-Cuentas/txtCtaNombreAlias' located by 'id("frmCbuAliasBccl_segCbuAlias")/ul[1]/li[@class="seg2Normal"]/div[@id="flexcontainer_wrapper"]/div[@id="flxCbuAliasRow_flxCbuAliasRow"]/div[@class="kcell middlecenteralignsknLblProductTableNumberData"]/div[@id="flxCbuAliasRow_lblAlias"][count(. | //*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')]) = count(//*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')])]' not found
+	... 23 more]]></system-out>
+      <system-err><![CDATA[2023-06-29 15:19:36 - [TEST_SUITE][FAILED] - Cuentas: Test Cases/03-Cuentas/CTA03-Consulta CBU y Alias POS FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/03-Cuentas/txtCtaNombreAlias' located by 'id("frmCbuAliasBccl_segCbuAlias")/ul[1]/li[@class="seg2Normal"]/div[@id="flexcontainer_wrapper"]/div[@id="flxCbuAliasRow_flxCbuAliasRow"]/div[@class="kcell middlecenteralignsknLblProductTableNumberData"]/div[@id="flxCbuAliasRow_lblAlias"][count(. | //*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')]) = count(//*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')])]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/03-Cuentas/txtCtaNombreAlias' located by 'id("frmCbuAliasBccl_segCbuAlias")/ul[1]/li[@class="seg2Normal"]/div[@id="flexcontainer_wrapper"]/div[@id="flxCbuAliasRow_flxCbuAliasRow"]/div[@class="kcell middlecenteralignsknLblProductTableNumberData"]/div[@id="flxCbuAliasRow_lblAlias"][count(. | //*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')]) = count(//*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')])]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4733)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$3.call(Unknown Source)
+	at CTA03-Consulta CBU y Alias POS.run(CTA03-Consulta CBU y Alias POS:70)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1688062680350.run(TempTestSuite1688062680350.groovy:36)
+)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4733)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$3.call(Unknown Source)
+	at CTA03-Consulta CBU y Alias POS.run(CTA03-Consulta CBU y Alias POS:70)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1688062680350.run(TempTestSuite1688062680350.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/03-Cuentas/txtCtaNombreAlias' located by 'id("frmCbuAliasBccl_segCbuAlias")/ul[1]/li[@class="seg2Normal"]/div[@id="flexcontainer_wrapper"]/div[@id="flxCbuAliasRow_flxCbuAliasRow"]/div[@class="kcell middlecenteralignsknLblProductTableNumberData"]/div[@id="flxCbuAliasRow_lblAlias"][count(. | //*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')]) = count(//*[@id = 'flxCbuAliasRow_lblAlias' and (text() = 'cielo.estrella.mar' or . = 'cielo.estrella.mar')])]' not found
+	... 23 more]]></system-err>
+   </testsuite>
+</testsuites>
