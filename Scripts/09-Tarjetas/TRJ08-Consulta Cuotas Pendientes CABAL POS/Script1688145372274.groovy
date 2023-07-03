@@ -25,29 +25,20 @@ import java.sql.Statement
 import javax.swing.JOptionPane
 
 //-------------------Conecta a base de datos--------------------------------------------
-def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 1776391"
-def vQuery2 = "SELECT * FROM Parametros WHERE Nombre = 'Nombre Cuenta'"
-def vQuery3 = "SELECT * FROM Toast WHERE idToast = 'Toa-ctas'"
+def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 13976407"
 
 String vDNI = null
 String vClave = null
 String vUsuario = null
-String vNombre = "Nombre Cuenta"
-String vNombreModif = null
-String vMjeExito = null
 
 CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
 
 //Consulta a la base de datos
 ResultSet vResult = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery)
-ResultSet vResult2 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery2)
-ResultSet vResult3 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery3)
 
 vDNI = vResult.getString(2)
 vUsuario = vResult.getString(3)
 vClave = vResult.getString(4)
-vNombreModif = vResult2.getString(2)
-vMjeExito = vResult3.getString(2)
 
 //Cierre de la conexion
 CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
@@ -59,37 +50,31 @@ CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
 //Se loguea con el usuario seleccionado
 CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 
-//Ingresa al módulo de Cuentas desde menú lateral y mapea los campos
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbCuentas'))
+//Ingresa al módulo de Tarjetas
+WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTarjetas'))
 
-//Cliquea sobre el nombre de la cuenta
-WebUI.click(findTestObject('Object Repository/03-Cuentas/lnkCtaNombreEtiqueta'))
+//Cliquea en la Card Visa y Selecciona Solapa Cuotas Pendientes
+WebUI.click(findTestObject('Object Repository/09-Tarjetas/lblTrjTarjetaCabal'))
+WebUI.click(findTestObject('Object Repository/09-Tarjetas/lblTrjCuotasPendientes'))
 
-//Cliquea en menu y selecciona Cambiar Nombre Cuenta
-WebUI.click(findTestObject('Object Repository/03-Cuentas/mnuCtaNombre'))
-WebUI.click(findTestObject('Object Repository/03-Cuentas/txtCtaCambiarNombre'))
-
-//Ingresa nuevo Nombre
-WebUI.setText(findTestObject('Object Repository/03-Cuentas/txtCtaModificacionNombre'), vNombre, FailureHandling.CONTINUE_ON_FAILURE)
-WebUI.click(findTestObject('Object Repository/03-Cuentas/txtCTAModificacionBuscarConcepto'))
-WebUI.verifyElementText(findTestObject('Object Repository/03-Cuentas/txtCtaMsjeNombreActualizado'), vMjeExito, FailureHandling.CONTINUE_ON_FAILURE)
-WebUI.delay(5)
-WebUI.click(findTestObject('Object Repository/03-Cuentas/mnuCtaNombre'))
-WebUI.click(findTestObject('Object Repository/03-Cuentas/txtCtaCambiarNombreModificado'))
-WebUI.setText(findTestObject('Object Repository/03-Cuentas/txtCtaModificacionNombre'), vNombreModif, FailureHandling.CONTINUE_ON_FAILURE)
-WebUI.click(findTestObject('Object Repository/03-Cuentas/txtCTAModificacionBuscarConcepto'))
+//Valida datos
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjCPFecha'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjCPDescripcion'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjCPNombre'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjCPCuotas'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjCPValorCuota'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Tarjetas/txtTrjCPSaldo'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 //---------------------------------------------------------------------------------------------------------------------
-
 //Control de fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/CTA05-ModificarNombreEtiquetaCtaPOS.png')
+	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/TRJ04-ConsultaCuotasPendientesVisaPOS.png')
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgUtilities.kwyUtility.fPassStatus'()
 }
-	
+

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>txtTrjMes</name>
+   <name>txtOprTablaMonto</name>
    <tag></tag>
-   <elementGuidId>0ecf98f9-5a9b-4469-ad3c-2d0b0d180e63</elementGuidId>
+   <elementGuidId>fe6d96fb-38d4-4350-8041-aba7e795c8b1</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='-k-w-c-month-cmp-02-2023']/div/div/div/div[2]</value>
+         <value>//div[@id='flxOperationsRow_lblImport']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>div.-kony-w-c-cell.-kony-w-c-yemo.-kony-w-c-yemo-skin</value>
+         <value>#flxOperationsRow_lblImport</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,134 +22,134 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>6bc405b5-aa75-4cfc-8721-8cf2e08f52b6</webElementGuid>
+      <webElementGuid>3742ba55-b284-431e-9711-f67647e30c04</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>w-type</name>
+      <name>id</name>
       <type>Main</type>
-      <value>Calendar</value>
-      <webElementGuid>8e6c7492-54ad-4eac-b164-17f23d8712d6</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>kmasterid</name>
-      <type>Main</type>
-      <value>DateFilter</value>
-      <webElementGuid>a1b7e8a1-9c39-42e6-8882-021705a7284b</webElementGuid>
+      <value>flxOperationsRow_lblImport</value>
+      <webElementGuid>0aa35709-8320-46f5-9ba2-7bc6fdcd1699</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>kwidgettype</name>
       <type>Main</type>
-      <value>Calendar</value>
-      <webElementGuid>242c12bf-b729-4d6e-8b24-3101796e4817</webElementGuid>
+      <value>Label</value>
+      <webElementGuid>cd508ae3-8b85-4490-9456-7113412860f8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>kformname</name>
+      <type>Main</type>
+      <value>flxOperationsRow</value>
+      <webElementGuid>0d5ab278-f1a6-4bf8-8d4b-cc80d4283639</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>kcontainerid</name>
+      <type>Main</type>
+      <value>segOperations</value>
+      <webElementGuid>68eb6773-818a-476e-a7ef-12b206d09355</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>kuid</name>
+      <type>Main</type>
+      <value>4F6A5D74-B2EF-4D1F-A81A-0B69F1F5F022</value>
+      <webElementGuid>07a36f0c-8162-4895-9734-f7b8b5cf74fc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>-kony-w-c-cell -kony-w-c-yemo  -kony-w-c-yemo-skin</value>
-      <webElementGuid>bca31a72-23f7-4f1e-884b-d13e96cdcb8c</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>tabindex</name>
-      <type>Main</type>
-      <value>1</value>
-      <webElementGuid>adf07257-5000-40ad-9314-9e8353fb4316</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>k-w-c-id</name>
-      <type>Main</type>
-      <value>frmBcclCardDetails_DateFilter_calendarDateFilterFrom</value>
-      <webElementGuid>5045258e-ac7b-43af-8fe3-6980a7793462</webElementGuid>
+      <value> sknLblProductTableNumberData cntmiddlerightalign disableSelection</value>
+      <webElementGuid>3db00284-c391-4448-82ee-2440a0b18544</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Febrero, 2023</value>
-      <webElementGuid>18e806b6-4467-4c22-a0d1-de3c1c31ec11</webElementGuid>
+      <value>$ 1,00</value>
+      <webElementGuid>828ad9b3-48e4-45eb-a3f3-9b24c2dc6fa1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;-k-w-c-month-cmp-02-2023&quot;)/div[@class=&quot;-kony-w-c-topSection&quot;]/div[@class=&quot;-kony-w-c-table&quot;]/div[@class=&quot;-kony-w-c-row&quot;]/div[@class=&quot;-kony-w-c-cell -kony-w-c-yemo  -kony-w-c-yemo-skin&quot;]</value>
-      <webElementGuid>96b117ba-df10-420d-afd2-4415b85dcd27</webElementGuid>
+      <value>id(&quot;frmOperationsHomeBccl_segOperations&quot;)/ul[1]/li[@class=&quot;seg2Normal&quot;]/div[@id=&quot;flexcontainer_wrapper&quot;]/div[@id=&quot;flxOperationsRow_flxOperationsRow&quot;]/div[@class=&quot;kcell middlecenteralignsknLblProductTableNumberData&quot;]/div[@id=&quot;flxOperationsRow_lblImport&quot;]</value>
+      <webElementGuid>a91d93f7-63e8-4885-9ccf-948440818dd1</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//div[@id='flxOperationsRow_lblImport']</value>
+      <webElementGuid>7f6ba225-1380-4657-8e4d-e79561c9f475</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='-k-w-c-month-cmp-02-2023']/div/div/div/div[2]</value>
-      <webElementGuid>15545137-976b-4b47-9f64-49ce00cdfe5d</webElementGuid>
+      <value>//div[@id='flxOperationsRow_flxOperationsRow']/div[7]/div</value>
+      <webElementGuid>3624efb1-dfb1-4133-a665-ccc42e6aeda8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)=''])[2]/following::div[15]</value>
-      <webElementGuid>74428979-f5f6-4fe3-af8d-9643a832f762</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CBU 19101196-55111901183599'])[1]/following::div[2]</value>
+      <webElementGuid>209d8bcd-c25e-42d4-a22d-d989148114bb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Descargar'])[1]/following::div[17]</value>
-      <webElementGuid>f0e53510-1f1c-4899-b9f5-3e9c80dcdf80</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)=''])[2]/preceding::div[1]</value>
+      <webElementGuid>7a35ae43-893b-4ba0-808a-60c90c54a599</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Dom'])[1]/preceding::div[2]</value>
-      <webElementGuid>15d063ff-0771-4030-97f8-d9664ff2d0e2</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Transferencia entre cuentas propias'])[4]/preceding::div[13]</value>
+      <webElementGuid>4754963e-d985-40b6-b465-a5d99fc4b247</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Lun'])[1]/preceding::div[3]</value>
-      <webElementGuid>50241f7f-e1c1-4358-a05a-9a3d1d08c631</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Febrero, 2023']/parent::*</value>
-      <webElementGuid>77c07935-0038-41e7-99ca-0c101dbac39c</webElementGuid>
+      <value>//*/text()[normalize-space(.)='$ 1,00']/parent::*</value>
+      <webElementGuid>987dea2c-7475-4690-b350-dba940b03b66</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/div/div/div/div/div[2]</value>
-      <webElementGuid>988d6cd4-4e3f-45b3-bb9e-49eeaf30ca1b</webElementGuid>
+      <value>//li/div/div/div[7]/div</value>
+      <webElementGuid>6afa6491-8028-4195-8b8d-ba8a37838a80</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[(text() = 'Febrero, 2023' or . = 'Febrero, 2023')]</value>
-      <webElementGuid>9ae8624e-f84a-4ced-baf5-7b8fa935ac36</webElementGuid>
+      <value>//div[@id = 'flxOperationsRow_lblImport' and (text() = '$ 1,00' or . = '$ 1,00')]</value>
+      <webElementGuid>f667a3f9-fb5e-4a0d-bdd5-c10c1ae70952</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

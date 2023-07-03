@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>txtTrjMes</name>
+   <name>mnuOprTipoOperacion</name>
    <tag></tag>
-   <elementGuidId>0ecf98f9-5a9b-4469-ad3c-2d0b0d180e63</elementGuidId>
+   <elementGuidId>7f8845df-5680-4026-99f4-7dea02dc0605</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='-k-w-c-month-cmp-02-2023']/div/div/div/div[2]</value>
+         <value>//div[@id='frmOperationsHomeBccl_Filter_DropDownFilterType_lblDropDownIcon']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>div.-kony-w-c-cell.-kony-w-c-yemo.-kony-w-c-yemo-skin</value>
+         <value>#frmOperationsHomeBccl_Filter_DropDownFilterType_lblDropDownIcon</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,134 +22,134 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>6bc405b5-aa75-4cfc-8721-8cf2e08f52b6</webElementGuid>
+      <webElementGuid>db8d193f-b01c-4b25-bdcb-dabf9cf1fba5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>w-type</name>
+      <name>id</name>
       <type>Main</type>
-      <value>Calendar</value>
-      <webElementGuid>8e6c7492-54ad-4eac-b164-17f23d8712d6</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>kmasterid</name>
-      <type>Main</type>
-      <value>DateFilter</value>
-      <webElementGuid>a1b7e8a1-9c39-42e6-8882-021705a7284b</webElementGuid>
+      <value>frmOperationsHomeBccl_Filter_DropDownFilterType_lblDropDownIcon</value>
+      <webElementGuid>73de204a-e8ab-4609-ab4c-ddc995eddcc8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>kwidgettype</name>
       <type>Main</type>
-      <value>Calendar</value>
-      <webElementGuid>242c12bf-b729-4d6e-8b24-3101796e4817</webElementGuid>
+      <value>Label</value>
+      <webElementGuid>954f1d5e-a5ca-4e61-af84-3c99b6cd2ea5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>kformname</name>
+      <type>Main</type>
+      <value>frmOperationsHomeBccl</value>
+      <webElementGuid>d4cee7af-f1e9-471d-8019-2ca4a38b13e7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>kmasterid</name>
+      <type>Main</type>
+      <value>Filter_DropDownFilterType</value>
+      <webElementGuid>8530c4d7-c541-455c-9316-443b8be9ac70</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>kdisabled</name>
+      <type>Main</type>
+      <value>false</value>
+      <webElementGuid>1e023014-c295-4637-aecc-624302bff17a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>-kony-w-c-cell -kony-w-c-yemo  -kony-w-c-yemo-skin</value>
-      <webElementGuid>bca31a72-23f7-4f1e-884b-d13e96cdcb8c</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>tabindex</name>
-      <type>Main</type>
-      <value>1</value>
-      <webElementGuid>adf07257-5000-40ad-9314-9e8353fb4316</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>k-w-c-id</name>
-      <type>Main</type>
-      <value>frmBcclCardDetails_DateFilter_calendarDateFilterFrom</value>
-      <webElementGuid>5045258e-ac7b-43af-8fe3-6980a7793462</webElementGuid>
+      <value>cntmiddlecenteralign disableSelection sknLblDropDownChevronAccounts</value>
+      <webElementGuid>afa65d77-38bc-490c-890d-235beb6f73a6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Febrero, 2023</value>
-      <webElementGuid>18e806b6-4467-4c22-a0d1-de3c1c31ec11</webElementGuid>
+      <value></value>
+      <webElementGuid>41c826f1-d845-4ab9-8f2a-d62080eff739</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;-k-w-c-month-cmp-02-2023&quot;)/div[@class=&quot;-kony-w-c-topSection&quot;]/div[@class=&quot;-kony-w-c-table&quot;]/div[@class=&quot;-kony-w-c-row&quot;]/div[@class=&quot;-kony-w-c-cell -kony-w-c-yemo  -kony-w-c-yemo-skin&quot;]</value>
-      <webElementGuid>96b117ba-df10-420d-afd2-4415b85dcd27</webElementGuid>
+      <value>id(&quot;frmOperationsHomeBccl_Filter_DropDownFilterType_lblDropDownIcon&quot;)</value>
+      <webElementGuid>a056e37b-9d25-4597-9472-aedb8500a267</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//div[@id='frmOperationsHomeBccl_Filter_DropDownFilterType_lblDropDownIcon']</value>
+      <webElementGuid>94215d75-76f8-462d-9898-7b1b87fecd37</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='-k-w-c-month-cmp-02-2023']/div/div/div/div[2]</value>
-      <webElementGuid>15545137-976b-4b47-9f64-49ce00cdfe5d</webElementGuid>
+      <value>//div[@id='frmOperationsHomeBccl_Filter_DropDownFilterType_flxOptionCommon']/div[2]/div</value>
+      <webElementGuid>ae798d39-7314-4df9-991e-ad362f60ecbf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)=''])[2]/following::div[15]</value>
-      <webElementGuid>74428979-f5f6-4fe3-af8d-9643a832f762</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Todas'])[2]/following::div[2]</value>
+      <webElementGuid>ae9494b9-ceac-4266-a4d9-1592847227ff</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Descargar'])[1]/following::div[17]</value>
-      <webElementGuid>f0e53510-1f1c-4899-b9f5-3e9c80dcdf80</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tipo de Operación'])[1]/following::div[13]</value>
+      <webElementGuid>1cbb8206-f12e-48de-a0aa-2040d75354e8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Dom'])[1]/preceding::div[2]</value>
-      <webElementGuid>15d063ff-0771-4030-97f8-d9664ff2d0e2</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Todas'])[3]/preceding::div[1]</value>
+      <webElementGuid>c993daa0-54b8-4916-90e5-77be8e17945f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Lun'])[1]/preceding::div[3]</value>
-      <webElementGuid>50241f7f-e1c1-4358-a05a-9a3d1d08c631</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Febrero, 2023']/parent::*</value>
-      <webElementGuid>77c07935-0038-41e7-99ca-0c101dbac39c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)=''])[19]/preceding::div[6]</value>
+      <webElementGuid>640e140f-4ce0-4769-93b4-d6e0913ae288</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/div/div/div/div/div[2]</value>
-      <webElementGuid>988d6cd4-4e3f-45b3-bb9e-49eeaf30ca1b</webElementGuid>
+      <value>//div[2]/div/div/div/div/div/div/div/div/div[2]/div/div/div[2]/div/div/div/div/div/div[2]/div</value>
+      <webElementGuid>43d756f8-71e8-42de-b857-6f6c120a7aca</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[(text() = 'Febrero, 2023' or . = 'Febrero, 2023')]</value>
-      <webElementGuid>9ae8624e-f84a-4ced-baf5-7b8fa935ac36</webElementGuid>
+      <value>//div[@id = 'frmOperationsHomeBccl_Filter_DropDownFilterType_lblDropDownIcon' and (text() = '' or . = '')]</value>
+      <webElementGuid>ebf04719-86a7-439c-a242-bcbd49c5bba9</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

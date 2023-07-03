@@ -95,16 +95,6 @@
             <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>false</runEnabled>
-         <testSuiteEntity>Test Suites/09-Fecha COB/Fecha COB</testSuiteEntity>
-      </TestSuiteRunConfiguration>
-      <TestSuiteRunConfiguration>
-         <configuration>
-            <groupName>Web Desktop</groupName>
-            <profileName>default</profileName>
-            <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Chrome</runConfigurationId>
-         </configuration>
-         <runEnabled>false</runEnabled>
          <testSuiteEntity>Test Suites/10-Notificaciones/Notificaciones</testSuiteEntity>
       </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>

@@ -15,7 +15,7 @@
       <guid>291ba608-e501-4dfb-8e9b-3526fc5b6964</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/07-Operaciones/OPR01-Filtrar Operaciones POS-X</testCaseId>
+      <testCaseId>Test Cases/07-Operaciones/OPR01-Filtrar Operaciones POS</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

@@ -43,7 +43,7 @@
       <guid>1a1be0f8-b782-4d05-8af2-fed05f9fa740</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/09-Tarjetas/TRJ05-Consulta Pendientes de Autorizacion POS</testCaseId>
+      <testCaseId>Test Cases/09-Tarjetas/TRJ05-Consulta Pendientes de Autorizacion VISA POS</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

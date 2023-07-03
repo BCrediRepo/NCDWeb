@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "2DD551B1554F98BE591000D2B8BB266E",
+  "keywordFileContentHash": "44A7BDC83099A3DE78A443A3B14B8EC9",
   "keywordClasses": [
     {
       "name": "pkgUtilities.kwyUtility",
@@ -20,7 +20,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "Login",
@@ -64,7 +65,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "fFailStatus",
@@ -82,15 +84,18 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "fPassStatus",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "fLoginPassStatus",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "comparacionOrigenDetalle",
@@ -108,7 +113,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "comparacionListaDetallePago",
@@ -126,7 +132,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "comparacionListadoTrxPropiasPesos",
@@ -144,7 +151,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "comparacionListadoTrxPropiasDolares",
@@ -162,7 +170,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "comparacionMontoTrxPropias",
@@ -180,7 +189,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "comparacionNumeroOperacionTrxPropias",
@@ -198,7 +208,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "comparacionNroOperacionTrxPropiasDolares",
@@ -216,7 +227,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "comparacionNroOperacionTercerosPesos",
@@ -234,7 +246,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "comparacionNroOperacionTrxJudicialesCredicoop",
@@ -252,7 +265,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "comparacionOperacionTrxTercerosCredicoopDolar",
@@ -270,7 +284,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "comparacionNroOperacionTrxJudicialesOtrosBancos",
@@ -288,7 +303,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "comparacionDatosExitoPosdatadaPesos",
@@ -306,7 +322,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "comparacionDatosExitoPosdatadaDolares",
@@ -324,7 +341,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "comparacionListaDetallePlazoFijo",
@@ -342,7 +360,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "comparacionSimularCrearPlazoFijo",
@@ -360,7 +379,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "ValidacionComprobanteCrearPlazoFijo",
@@ -378,7 +398,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "comparacionDetalleTarjetaVisa",
@@ -396,7 +417,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "comparacionCuentaDetalle",
@@ -414,7 +436,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "comparacionDebinRecibidosDetalleCuenta",
@@ -432,7 +455,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "comparacionDebinRecibidosDetalleEstado",
@@ -450,7 +474,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "comparacionDebinGeneradosDetalleCuenta",
@@ -468,7 +493,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "comparacionDebinGeneradosDetalleEstado",
@@ -486,10 +512,11 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         }
       ]
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

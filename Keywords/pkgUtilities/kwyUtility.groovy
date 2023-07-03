@@ -113,8 +113,9 @@ public class kwyUtility {
 
 	@Keyword
 	def fPassStatus(){
-		WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbSalir'))
-		WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDsbSalirMsgConfirmacionAceptar'))
+		WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbIconoSalir'))
+		WebUI.delay(3)
+		WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDsbAceptarSalir'))
 		WebUI.closeBrowser()
 	}
 

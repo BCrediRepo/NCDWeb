@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TRJ05-Consulta Pendientes de Autorizacion POS</name>
+   <name>TRJ09-Consulta Resumenes CABAL POS</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>1d01a32c-ff78-42a8-ad33-39164df42cb3</testCaseGuid>
+   <testCaseGuid>7acc5d0d-5b78-4c44-8918-bb525ee27e97</testCaseGuid>
 </TestCaseEntity>

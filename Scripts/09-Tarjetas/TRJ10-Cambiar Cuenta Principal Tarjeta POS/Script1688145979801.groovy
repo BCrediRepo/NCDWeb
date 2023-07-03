@@ -24,41 +24,22 @@ import java.sql.Statement
 
 import javax.swing.JOptionPane
 
-
 //-------------------Conecta a base de datos--------------------------------------------
-def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 20144835"
-def vQuery2 = "SELECT * FROM Labels WHERE id = 10"
+def vQuery = "SELECT * FROM UsuariosRMobile WHERE NroDNI = 13976407"
 
 String vDNI = null
 String vClave = null
 String vUsuario = null
-String vTodas = null
-String vTodas = null
 
 CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
 
 //Consulta a la base de datos
 ResultSet vResult = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery)
-ResultSet vResult2 = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery2)
 
 vDNI = vResult.getString(2)
 vUsuario = vResult.getString(3)
 vClave = vResult.getString(4)
-/*
-vTodas = vResult2.getString(3)
-vTransferencias = vResult2.getString(3)
-vExtracciones = vResult2.getString(3)
-vModo = vResult2.getString(3)
-vCheques = vResult2.getString(3)
-vAcceso = vResult2.getString(3)
-vPagos = vResult2.getString(3)
-vTarjetas = vResult2.getString(3)
-vAhorro = vResult2.getString(3)
-vDebin = vResult2.getString(3)
-vAfip = vResult2.getString(3)
-vRecargas = vResult2.getString(3)
-vSolicitudes = vResult2.getString(3)
-*/
+
 //Cierre de la conexion
 CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
 //---------------------------------------------------------------------------------------------------------------------
@@ -69,36 +50,46 @@ CustomKeywords.'pkgUtilities.kwyUtility.Server'('Internet')
 //Se loguea con el usuario seleccionado
 CustomKeywords.'pkgUtilities.kwyUtility.Login'(vDNI, vClave, vUsuario)
 
-//Ingresa al módulo de Operaciones
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbMisOperaciones'))
+//Ingresa al módulo de Tarjetas
+WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDsbTarjetas'))
 
-//Cliquea en el menú desplegable de Operaciones y valida opciones
-WebUI.click(findTestObject('Object Repository/07-Operaciones/mnuOprOperacion'))
+//Cliquea menu desplegable de tarjeta debito y selecciona Cambiar cuenta principal
+WebUI.click(findTestObject('Object Repository/09-Tarjetas/mnuTrjDebitoDesplegable'))
+WebUI.click(findTestObject('Object Repository/09-Tarjetas/lblTrjMenuDebitoModificarCuentaPrincipal'))
+
+//Selecciona una cuenta como principal
+WebUI.click(findTestObject('Object Repository/09-Tarjetas/radTrjListaCuentaPrincipal'))
+
+//Cliquea en guardar y valida toast
+WebUI.click(findTestObject('Object Repository/09-Tarjetas/btnTrjListaCuentaPrincipalGuardar'))
+WebUI.sendKeys(findTestObject('Object Repository/09-Tarjetas/txtTrjListaCuentaPrincipalClaveBypass'), vClave)
+WebUI.click(findTestObject('Object Repository/09-Tarjetas/btnTrjListaCuentaPrincipalConfirmar'))
+
+//Valida Toast
+
+
 /*
-WebUI.verifyElementText(findTestObject('Object Repository/07-Operaciones/txtOprTodas'), vTodas)
-WebUI.verifyElementText(findTestObject('Object Repository/07-Operaciones/txtOprTransferencias'), vTransferencias)
-WebUI.verifyElementText(findTestObject('Object Repository/07-Operaciones/txtOprTodas'), vExtracciones)
-WebUI.verifyElementText(findTestObject('Object Repository/07-Operaciones/txtOprTodas'), vModo)
-WebUI.verifyElementText(findTestObject('Object Repository/07-Operaciones/txtOprTodas'), vCheques)
-WebUI.verifyElementText(findTestObject('Object Repository/07-Operaciones/txtOprTodas'), vAcceso)
-WebUI.verifyElementText(findTestObject('Object Repository/07-Operaciones/txtOprTodas'), vPagos)
-WebUI.verifyElementText(findTestObject('Object Repository/07-Operaciones/txtOprTodas'), vTarjetas)
-WebUI.verifyElementText(findTestObject('Object Repository/07-Operaciones/txtOprTodas'), vAhorro)
-WebUI.verifyElementText(findTestObject('Object Repository/07-Operaciones/txtOprTodas'), vDebin)
-WebUI.verifyElementText(findTestObject('Object Repository/07-Operaciones/txtOprTodas'), vAfip)
-WebUI.verifyElementText(findTestObject('Object Repository/07-Operaciones/txtOprTodas'), vRecargas)
-WebUI.verifyElementText(findTestObject('Object Repository/07-Operaciones/txtOprTodas'), vSolicitudes)
-*/
+WebUI.click(findTestObject('Object Repository/09-Tarjetas/mnuTrjDebitoDesplegable'))
+WebUI.click(findTestObject('Object Repository/09-Tarjetas/lblTrjMenuDebitoModificarCuentaPrincipal'))
+WebUI.click(findTestObject('Object Repository/09-Tarjetas/radTrjListaCuentaPrincipal2'))
+
+WebUI.click(findTestObject('Object Repository/09-Tarjetas/btnTrjListaCuentaPrincipalGuardar'))
+WebUI.sendKeys(findTestObject('Object Repository/09-Tarjetas/txtTrjListaCuentaPrincipalClaveBypass'), vClave)
+WebUI.click(findTestObject('Object Repository/09-Tarjetas/btnTrjListaCuentaPrincipalConfirmar'))
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/OPR01-Filtrar Operaciones POS.png')
+	CustomKeywords.'pkgUtilities.kwyUtility.fFailStatus'('Screenshot/Fails/TRJ10-CambiarCuentaPrincipalTarjetaPOS.png')
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgUtilities.kwyUtility.fPassStatus'()
 }
+
+*/
+
+
